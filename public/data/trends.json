@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T17:43:25.474Z",
+  "generatedAt": "2026-07-02T18:21:34.383Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,7 +8,7 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "rising",
-      "momentum": 57,
+      "momentum": 1,
       "weeklyCounts": [
         57
       ]
@@ -19,7 +19,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "rising",
-      "momentum": 56,
+      "momentum": 1,
       "weeklyCounts": [
         56
       ]
@@ -30,20 +30,9 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "rising",
-      "momentum": 12,
+      "momentum": 1,
       "weeklyCounts": [
         12
-      ]
-    },
-    {
-      "id": "protein-design",
-      "label": "Protein Design",
-      "category": "biotech",
-      "stage": "research",
-      "trajectory": "rising",
-      "momentum": 3,
-      "weeklyCounts": [
-        3
       ]
     },
     {
@@ -52,9 +41,20 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "rising",
-      "momentum": 2,
+      "momentum": 1,
       "weeklyCounts": [
         2
+      ]
+    },
+    {
+      "id": "protein-design",
+      "label": "Protein Design",
+      "category": "biotech",
+      "stage": "research",
+      "trajectory": "rising",
+      "momentum": 1,
+      "weeklyCounts": [
+        3
       ]
     }
   ]

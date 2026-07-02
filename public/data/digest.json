@@ -1,4 +1,235 @@
 {
-  "generatedAt": "2026-07-02T17:43:25.411Z",
-  "items": []
+  "generatedAt": "2026-07-02T18:21:34.319Z",
+  "items": [
+    {
+      "id": "d-19ybsr",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
+      "publishedAt": "2026-07-02T17:07:14.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: As coding agents handle larger changes, you must maintain genuine understanding of the codebase to stay an active collaborator rather than a passive observer accumulating cognitive debt.",
+        "tweets": [
+          "Coding agents can drift your understanding fast. Geoffrey Litt's core insight: you need deep enough comprehension to participate creatively with the model, not just approve its output.",
+          "Cognitive debt is real. If you lose fluency in how your code actually works, your ability to guide the agent and shape the project meaningfully collapses.",
+          "The bar isn't 'understand what the agent did.' It's 'understand enough to think creatively about next steps.' That fluency gap kills collaboration."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Когда кодирующие агенты вносят масштабные изменения, вы должны по-настоящему понимать код, чтобы быть активным участником, а не пассивным наблюдателем с растущим когнитивным долгом.",
+        "tweets": [
+          "Агенты быстро размывают ваше понимание. Главная идея Джеффри Литта: вам нужна достаточно глубокая компетентность, чтобы творчески сотрудничать с моделью, а не просто одобрять её выход.",
+          "Когнитивный долг реален. Если вы теряете ориентацию в том, как на самом деле работает код, ваша способность направлять агента и формировать проект исчезает.",
+          "Нужно не просто понять, что сделал агент. Нужна беглость настолько, чтобы творчески думать о следующих шагах. Без неё сотрудничество разваливается."
+        ]
+      }
+    },
+    {
+      "id": "d-1eb53kl",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/skill-engineering-design",
+      "publishedAt": "2026-07-02T14:36:05.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI agents need structured design vocabularies and human steering, not one-shot automation, to avoid bland, repetitive outputs.",
+        "tweets": [
+          "Skill engineering gives AI agents precise operational meaning for design terms like 'bold' or 'quiet'—not vague instructions, but domain-specific instructions that respect existing design systems.",
+          "Most skills converge toward the same output. The fix: routing logic, mixture-of-experts patterns, and careful routing to keep agent design work diverse and intentional.",
+          "Design and engineering roles are collapsing upward: designers code, engineers design, product managers blur both. Translation jobs disappear; judgment and abstraction become irreplaceable."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: AI-агентам нужен структурированный дизайн-словарь и управление человеком, а не автоматизация в один клик, чтобы избежать однообразных результатов.",
+        "tweets": [
+          "Skill engineering даёт агентам точное значение для дизайн-терминов вроде «смелый» или «спокойный» — это не расплывчатые инструкции, а специфичные команды, уважающие существующую систему дизайна.",
+          "Большинство skills сходятся к одинаковым результатам. Решение: маршрутизация, mixture-of-experts и умная директива, чтобы работа агентов оставалась разнообразной и осмысленной.",
+          "Роли дизайнеров и инженеров слиты вверх по стеку: дизайнеры пишут код, инженеры проектируют, PM размывают границы. Работа переводчиков исчезает; суждение и абстракция становятся незаменимы."
+        ]
+      }
+    },
+    {
+      "id": "d-15g93uq",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-not-much-happened-today-900",
+      "publishedAt": "2026-07-02T07:10:14.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: The AI engineering community has moved past single-model dependence to multi-model orchestration and structured agent workflows that actually ship.",
+        "tweets": [
+          "Claude Fable 5 relaunched with safety constraints. Teams aren't waiting—they're routing complex reasoning to frontier models and delegating implementation to cheaper alternatives. Better cost-performance, higher PR yield.",
+          "Open coding models like GLM-5.2 hit 55.3% on integration tasks. The coding gap is shrinking fast. Inference optimization (DSpark, speculative decoding) now separates competitive from dead open models.",
+          "Wiki-structured memory and skill composition replaced naive 'give model all tools' approaches. Agents need maintained knowledge layers and explicit workflow orchestration, not just retrieval systems."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: AI-сообщество перешло от зависимости от одной модели к оркестрации нескольких моделей и структурированным рабочим процессам агентов, которые реально работают.",
+        "tweets": [
+          "Claude Fable 5 вернулась с ограничениями безопасности. Команды не ждут—сложные рассуждения идут на мощные модели, реализацию делегируют дешёвым. Лучше соотношение цены к производительности, выше выход PR.",
+          "Открытые модели кодирования вроде GLM-5.2 показывают 55,3% на интеграционных задачах. Разрыв в кодировании быстро сокращается. Оптимизация инференса теперь решает, конкурентна ли открытая модель.",
+          "Память в формате вики и композиция скиллов заменили наивный подход 'дай модели все инструменты'. Агентам нужны поддерживаемые слои знаний и явная оркестрация, не просто системы поиска."
+        ]
+      }
+    },
+    {
+      "id": "d-jmipqo",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/aiewf-daily-dispatch-agency",
+      "publishedAt": "2026-07-02T06:13:49.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: As AI agents automate more work, engineers and creatives are fighting to keep meaningful human judgment in the loop—not just to preserve jobs, but because understanding your own work matters.",
+        "tweets": [
+          "The real tension: agents can handle execution loops, but humans must own the outer loop of judgment and direction. Autoresearch lets AI maintain itself, but that's not the same as good design.",
+          "Paul Bakaus on Impeccable: agents do the tedious 80%, humans make the final 20% unique. Full automation kills ownership. You need to feel responsibility for what you create.",
+          "Models have default aesthetics baked in by their teams. Craft experts see what average humans miss. Bring the art director back into the loop—don't let the algorithm decide alone."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: По мере автоматизации AI-агентами всё больше работы инженеры и дизайнеры требуют сохранить человеческое суждение в процессе—не ради рабочих мест, а потому что понимание собственного творчества имеет значение.",
+        "tweets": [
+          "Суть конфликта: агенты справляются с исполнением, но человек должен контролировать стратегию и суждение. Автоисследование позволяет AI поддерживать себя, но это не гарантирует хороший результат.",
+          "Пол Бакаус про Impeccable: агенты делают утомительные 80%, человек добавляет уникальность в оставшихся 20%. Полная автоматизация убивает чувство ответственности за свой труд.",
+          "Модели имеют встроенную эстетику своих создателей. Опытные мастера видят то, что упустит среднестатистический пользователь. Вернуть арт-директора в процесс—не доверять алгоритму одному."
+        ]
+      }
+    },
+    {
+      "id": "d-zl7ylp",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/autoresearch-introspection",
+      "publishedAt": "2026-07-01T23:52:30.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Self-improving agent systems need reliable feedback loops and portable recipes to move from research demos to production, where the loop itself becomes the core product.",
+        "tweets": [
+          "The shift from single agents to feedback loops: outer loop systems that study and improve the primary system. Design the right signals so agents can maintain themselves without constant human bottlenecks.",
+          "Agent recipes encode the full evolution of a system—evals, judges, failures, decisions—not just code. Like data recipes for model training, they make expertise portable across different models and environments.",
+          "Pi framework enables portable agent harnesses like Linux distributions. Introspection is building the ecosystem around it: extensible, customizable, and designed to distill frontier model capabilities into owned systems."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Системы самосовершенствующихся агентов требуют надёжных циклов обратной связи и переносимых рецептов, чтобы перейти от демонстраций к продакшену, где сам цикл становится ядром продукта.",
+        "tweets": [
+          "Переход от отдельных агентов к циклам обратной связи: внешний цикл изучает и улучшает основную систему. Нужны правильные сигналы, чтобы агенты совершенствовали себя без постоянного участия человека.",
+          "Рецепты агентов кодируют полную историю эволюции системы—эвалюации, судьи, ошибки, решения—не просто код. Как рецепты данных для обучения моделей, они делают опыт портативным между моделями и окружениями.",
+          "Pi как Linux для агент-фреймворков: расширяемая, портативная архитектура. Introspection строит экосистему вокруг неё—кастомизируемую, дешевле и быстрее дистиллирующую возможности фронтир-моделей в собственные системы."
+        ]
+      }
+    },
+    {
+      "id": "d-3tvvjb",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/cursor-forward-deployed-engineers",
+      "publishedAt": "2026-07-01T19:03:44.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Enterprise AI adoption is moving from individual coding assistants to full software factory automation across planning, coding, testing, and deployment—requiring specialized forward-deployed engineers who embed inside customer operations.",
+        "tweets": [
+          "Cursor's FDE teams embed directly in enterprises to deploy AI agents across entire software development lifecycles, not just individual coding tasks. It's about transforming how whole organizations plan, build, test and ship.",
+          "The adoption bottleneck isn't technology—it's organizational. Early adopters use agents for solo work, but scaling across teams needs top-down commitment and internal champions willing to reshape workflows.",
+          "Cursor hires only experienced engineers (5+ years production shipping) with customer deployment history. They're building a tenfold expansion: the FDE role is becoming core to enterprise AI strategy."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Внедрение AI в корпорациях переходит от персональных ассистентов программиста к автоматизации всего цикла разработки ПО—планированию, кодированию, тестированию и деплою, что требует специальных инженеров, встроенных в операции заказчиков.",
+        "tweets": [
+          "Команды Forward Deployed Engineers компании Cursor встраиваются в организации и разворачивают AI-агентов на протяжении всего цикла разработки, а не только для отдельных задач кодирования. Это трансформация всей компании.",
+          "Узкое место внедрения—не технология, а организация. Ранние адопторы используют агентов в одиночку, но масштабирование между командами требует поддержки сверху и внутренних лидеров, готовых переделывать процессы.",
+          "Cursor нанимает только опытных инженеров с 5+ годами боевого опыта и историей деплоя систем для клиентов. Компания планирует десятикратное расширение: роль FDE становится ключевой для стратегии AI в корпорациях."
+        ]
+      }
+    },
+    {
+      "id": "d-3xea93",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/the-coolest-diffusion-research-isnt",
+      "publishedAt": "2026-07-01T14:42:39.000Z",
+      "category": "biotech",
+      "en": {
+        "headline": "Why it matters: Diffusion models are finally cracking small molecule drug discovery by predicting protein-ligand structures accurately enough for real automation.",
+        "tweets": [
+          "Genesis's PEARL model handles protein flexibility during drug binding—modeling how proteins adjust around ligands. This was the missing piece that made agentic drug discovery loops actually work.",
+          "Academic benchmarks are garbage: 2Å RMSD gets called 'good' but misleads chemists. Genesis argues 1Å RMSD is the real threshold needed. Hitting this unlocks 24/7 automated drug discovery with lab partners.",
+          "10^60 possible drug molecules exist. Finding safe ones is 'finding hay in a needle stack.' Diffusion-based generative models + agentic iteration finally make the search tractable."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Диффузионные модели впервые достаточно точно предсказывают связывание лиганда с белком, чтобы автоматизировать поиск новых лекарств.",
+        "tweets": [
+          "Модель PEARL от Genesis учитывает гибкость белков во время связывания молекулы — система моделирует, как белок адаптируется. Это была недостающая часть для автоматизированного поиска лекарств.",
+          "Академические бенчмарки некорректны: порог 2Å RMSD считается хорошим, но вводит в заблуждение химиков. Genesis утверждает, что нужна точность 1Å RMSD для корректного моделирования взаимодействий.",
+          "Существует 10^60 возможных лекарственноподобных молекул. Genesis комбинирует генеративные модели с агентным поиском, чтобы найти эффективные и безопасные варианты среди этого океана данных."
+        ]
+      }
+    },
+    {
+      "id": "d-114uzyn",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/software-factories",
+      "publishedAt": "2026-07-01T14:28:23.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Software development is shifting from interactive coding with AI agents to fully automated orchestration loops that continuously triage, implement, review, and ship code—making central factory management the core infrastructure for engineering teams.",
+        "tweets": [
+          "Warp pivoted from terminal tool to software factory platform. The real shift: developers stop working interactively with agents and instead run automated loops that handle triage, implementation, review, verification, and shipping.",
+          "Most value isn't in flashy new interfaces—it's integrating automation into existing workflows (Jira, Slack, GitHub, Linear). Organizations choose where humans intervene, then let the factory run the main loop.",
+          "Zach Lloyd expects significant software projects will operate some form of automated factory within a year. The underlying tech improves so fast that companies refusing to adapt to orchestrated agents will lag behind."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: разработка ПО переходит от интерактивной работы с AI-агентами к полностью автоматизированным циклам, которые непрерывно триажируют, реализуют, проверяют и доставляют код—центральное управление фабрикой становится ядром инженерной инфраструктуры.",
+        "tweets": [
+          "Warp эволюционировал с терминала в платформу software factory. Суть сдвига: разработчики перестают работать интерактивно с агентами и запускают вместо этого автоматические циклы, которые берут на себя триаж, реализацию, проверку, верификацию и доставку.",
+          "Основная ценность не в новых интерфейсах, а в интеграции автоматизации в существующие рабочие процессы (Jira, Slack, GitHub, Linear). Организации выбирают точки человеческого вмешательства, затем дают фабрике работать.",
+          "Зак Ллойд ожидает, что значимые проекты внедрят какую-то форму автоматизированной фабрики в течение года. Технология развивается так быстро, что компании, отказывающиеся адаптироваться к оркестрированным агентам, отстанут."
+        ]
+      }
+    },
+    {
+      "id": "d-1rq3l5m",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/aiewf-daily-dispatch-loops",
+      "publishedAt": "2026-07-01T04:46:21.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI agents are moving from one-off tasks to persistent loops that automate entire software development lifecycles, requiring engineers to shift from coding to orchestrating autonomous systems.",
+        "tweets": [
+          "Loops are the new primitive: AI agents restart repeatedly against specs, creating persistent workers. The evolution from chat → tools → goals → automations means agents handle continuous cycles, not single tasks.",
+          "Software factories are coming: Instead of writing code, engineers now build systems that build products. This demands a new discipline: orchestrating agents, collecting signals, and deciding what matters.",
+          "Forward Deployed Engineers are the new role: They specialize in integrating agents into orgs, focusing heavily on orchestration layers rather than model tweaks. This is where real customer value happens."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ-агенты переходят от одиночных задач к постоянным циклам, которые автоматизируют весь процесс разработки ПО, заставляя инженеров переключаться с кодирования на управление автономными системами.",
+        "tweets": [
+          "循опы — новый примитив: ИИ-агенты циклически перезапускаются для выполнения спецификаций, работая как постоянные рабочие. Эволюция идет от чата через инструменты к целям и автоматизации непрерывных процессов.",
+          "Наступает эра фабрик ПО: инженеры уже не пишут код, а строят системы, которые создают продукты. Появляется новая дисциплина: оркестрировка агентов, сбор сигналов и определение приоритетов.",
+          "Появляется новая роль — Forward Deployed Engineer: специалисты по интеграции агентов в организации, сосредоточиваясь на слое оркестрировки, а не на настройке моделей. Здесь создается реальная ценность для клиентов."
+        ]
+      }
+    },
+    {
+      "id": "d-78lzrb",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-sonnet-5-today-and-fable-5",
+      "publishedAt": "2026-07-01T03:01:09.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Anthropic's Sonnet 5 trades raw capability for efficiency and broader agent automation, but the absence of promised Fable 5 signals regulatory friction around frontier models.",
+        "tweets": [
+          "Sonnet 5 ships as the most agentic mid-tier model yet—autonomous planning, browser/terminal use, coding at Sonnet prices. But benchmark gains came with 3-6x more token overhead, dampening the hype cycle.",
+          "Anthropic expanded the platform story as much as the model: Linux Claude Desktop, Managed Agents streaming, observability metrics. The real launch was infrastructure, not raw performance.",
+          "Fable 5 approved but still gated after government negotiations. The rumor cycle expected both models today; missing Fable signals regulatory barriers are real and regional access is unresolved."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Sonnet 5 обменял абсолютную мощность на эффективность и автоматизацию агентов, но отсутствие Fable 5 показывает реальное регуляторное давление на фронтирные модели.",
+        "tweets": [
+          "Sonnet 5 появился как самый агентивный mid-tier мотель: автономное планирование, работа с браузером и терминалом, кодирование по цене Sonnet. Но выигрыш в бенчмарках стоил 3-6x больше токенов.",
+          "Anthropic расширил инфраструктуру сильнее, чем модель: Linux, потоковые агенты, метрики наблюдаемости. Важнее всего оказалась платформа, а не чистая производительность.",
+          "Fable 5 одобрена после переговоров с властями, но остаётся закрытой. Тисячи слухов ждали обе модели сегодня; отсутствие Fable доказывает, что регулирование реально и доступ будет региональным."
+        ]
+      }
+    }
+  ]
 }
