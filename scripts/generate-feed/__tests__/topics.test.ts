@@ -9,6 +9,14 @@ describe('tagTopics', () => {
   it('returns [] when nothing matches', () => {
     expect(tagTopics('an unrelated cooking blog')).toEqual([])
   })
+  it('does not tag on substring-only matches (word boundaries)', () => {
+    expect(tagTopics('We upgraded our storage backend')).not.toContain('rag')
+    expect(tagTopics('The dragon flew over')).not.toContain('rag')
+  })
+  it('still tags real RAG mentions', () => {
+    expect(tagTopics('a new RAG pipeline')).toContain('rag')
+    expect(tagTopics('retrieval augmented generation')).toContain('rag')
+  })
 })
 
 describe('snapshotFromTexts', () => {

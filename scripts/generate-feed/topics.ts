@@ -11,11 +11,15 @@ export const TOPIC_LABELS: Record<string, { label: string; category: string; sta
   'protein-design': { label: 'Protein Design', category: 'biotech', stage: 'research', keywords: ['alphafold', 'protein design', 'protein folding'] },
 }
 
+function escapeRegExp(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
 export function tagTopics(text: string): string[] {
-  const t = (text || '').toLowerCase()
+  const t = text || ''
   const ids: string[] = []
   for (const [id, def] of Object.entries(TOPIC_LABELS)) {
-    if (def.keywords.some((kw) => t.includes(kw))) ids.push(id)
+    if (def.keywords.some((kw) => new RegExp('\\b' + escapeRegExp(kw) + '\\b', 'i').test(t))) ids.push(id)
   }
   return ids
 }
