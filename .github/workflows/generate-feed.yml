@@ -32,5 +32,16 @@ jobs:
             echo "No data changes"
           else
             git commit -m "chore(data): daily feed regeneration [skip ci]"
-            git push
+            # Push is race-safe: another actor may advance main between checkout
+            # and push, so rebase onto the latest remote and retry.
+            for i in 1 2 3 4 5; do
+              if git pull --rebase --autostash origin main && git push; then
+                echo "pushed on attempt $i"
+                exit 0
+              fi
+              echo "push attempt $i failed; re-fetching and retrying..."
+              sleep 5
+            done
+            echo "push failed after 5 attempts" >&2
+            exit 1
           fi
