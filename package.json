@@ -13,9 +13,12 @@
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "generate:routes": "tsr generate",
+    "generate:feed": "bun run scripts/generate-feed/index.ts",
+    "check:secrets": "bun run scripts/check-no-secrets.ts",
     "clean": "rm -rf .ouptut dist node_modules/.vite .nitro .tanstack"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.109.1",
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
@@ -60,6 +63,7 @@
     "cmdk": "^1.1.1",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
+    "fast-xml-parser": "^5.9.3",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.544.0",
     "motion": "^12.23.22",
