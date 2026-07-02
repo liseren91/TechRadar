@@ -25,5 +25,7 @@ export class BoundedCache {
       this.map.delete(oldest)
     }
   }
-  get size() { return this.map.size }
+  get size() {
+    return this.map.size
+  }
 }

@@ -4,7 +4,9 @@ import { BoundedCache } from '../lru-cache.js'
 describe('BoundedCache', () => {
   it('evicts oldest beyond maxEntries', () => {
     const c = new BoundedCache(2, 60000)
-    c.set('a', 1); c.set('b', 2); c.set('c', 3)
+    c.set('a', 1)
+    c.set('b', 2)
+    c.set('c', 3)
     expect(c.get('a')).toBeUndefined()
     expect(c.get('c')).toBe(3)
     expect(c.size).toBe(2)
