@@ -40,7 +40,7 @@ export function computeTrends(
     const weekly = bucketByWeek(history, id)
     const last = weekly[weekly.length - 1] ?? 0
     const prev = weekly[weekly.length - 2] ?? 0
-    const momentum = prev === 0 ? (last > 0 ? last : 0) : (last - prev) / prev
+    const momentum = prev === 0 ? (last > 0 ? 1 : 0) : (last - prev) / prev
     let trajectory: Topic['trajectory'] = 'stable'
     if (last > prev) trajectory = 'rising'
     else if (last < prev) trajectory = 'cooling'

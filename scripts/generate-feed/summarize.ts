@@ -49,6 +49,18 @@ Rules:
 - Plain human language, no marketing. RU must be natural Russian, not a literal machine translation.
 - No markdown, no backticks, JSON only.`
 
+export function extractJsonObject(text: string): string {
+  let t = (text ?? '').trim()
+  // Strip a surrounding ```json ... ``` or ``` ... ``` fence if present.
+  const fence = t.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i)
+  if (fence) t = fence[1].trim()
+  // Fallback: take the outermost { ... } span.
+  const first = t.indexOf('{')
+  const last = t.lastIndexOf('}')
+  if (first !== -1 && last !== -1 && last > first) t = t.slice(first, last + 1)
+  return t
+}
+
 export async function summarizePost(
   post: RawPost,
   client: { create: (args: any) => Promise<any> },
@@ -64,7 +76,7 @@ export async function summarizePost(
     .filter((b: any) => b.type === 'text')
     .map((b: any) => b.text)
     .join('')
-  const json = JSON.parse(text)
+  const json = JSON.parse(extractJsonObject(text))
   const parsed = ModelResponseSchema.parse(json)
   return { en: parsed.en, ru: parsed.ru, category: parsed.category }
 }

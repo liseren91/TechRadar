@@ -27,4 +27,10 @@ describe('computeTrends', () => {
     const [t] = computeTrends(history, labels)
     expect(t.trajectory).toBe('stable')
   })
+  it('caps momentum at +100% for a brand-new topic (cold start)', () => {
+    const history = [{ date: '2026-06-15', topics: { 'llm-agents': 57 } }]
+    const [t] = computeTrends(history, labels)
+    expect(t.momentum).toBe(1)
+    expect(t.trajectory).toBe('rising')
+  })
 })
