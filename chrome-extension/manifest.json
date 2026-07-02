@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Tech Evolution Radar",
+  "short_name": "TechRadar",
+  "version": "1.0.0",
+  "description": "Replace your new tab with a live tech evolution radar. Track how tech noise becomes trends - data from GitHub, arXiv & Hacker News.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.github.com/*",
+    "https://export.arxiv.org/*",
+    "https://hacker-news.firebaseio.com/*",
+    "https://api.semanticscholar.org/*",
+    "https://eutils.ncbi.nlm.nih.gov/*",
+    "https://api.archives-ouvertes.fr/*",
+    "https://cir.nii.ac.jp/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Tech Evolution Radar"
+  }
+}

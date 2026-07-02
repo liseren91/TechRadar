@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Evolution Radar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #0a0a0f;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .fallback {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: white;
+            font-family: 'Space Grotesk', system-ui, sans-serif;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .fallback.visible {
+            display: flex;
+        }
+        
+        .fallback h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00f0ff, #ff00aa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .fallback p {
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 2rem;
+        }
+        
+        .fallback a {
+            padding: 1rem 2rem;
+            background: #00f0ff;
+            color: #0a0a0f;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .fallback a:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        IFRAME VERSION
+        ==============
+        This version loads the deployed Tech Evolution Radar app in an iframe.
+        
+        To use this version:
+        1. Deploy your TanStack Start app
+        2. Update the DEPLOYED_URL below with your app's URL
+        3. Rename this file to newtab.html (backup the standalone version first)
+    -->
+    
+    <iframe 
+        id="radar-frame" 
+        src="" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+        loading="eager"
+    ></iframe>
+    
+    <div id="fallback" class="fallback">
+        <h1>Tech Evolution Radar</h1>
+        <p>Unable to load the radar. The app might be offline or the URL needs to be configured.</p>
+        <a href="#" id="open-link">Open in New Tab</a>
+    </div>
+    
+    <script>
+        // =====================================================
+        // CONFIGURATION - Update this URL after deploying your app
+        // =====================================================
+        const DEPLOYED_URL = 'YOUR_DEPLOYED_APP_URL_HERE';
+        // Example: const DEPLOYED_URL = 'https://tech-radar.example.com';
+        // =====================================================
+        
+        const iframe = document.getElementById('radar-frame');
+        const fallback = document.getElementById('fallback');
+        const openLink = document.getElementById('open-link');
+        
+        // Check if URL is configured
+        if (DEPLOYED_URL === 'YOUR_DEPLOYED_APP_URL_HERE' || !DEPLOYED_URL) {
+            // URL not configured - show fallback with instructions
+            iframe.style.display = 'none';
+            fallback.classList.add('visible');
+            fallback.querySelector('p').textContent = 
+                'Please configure the DEPLOYED_URL in newtab-iframe.html with your app\'s URL.';
+            openLink.style.display = 'none';
+        } else {
+            // Try to load the iframe
+            iframe.src = DEPLOYED_URL;
+            openLink.href = DEPLOYED_URL;
+            
+            // Handle iframe load errors
+            iframe.onerror = () => {
+                iframe.style.display = 'none';
+                fallback.classList.add('visible');
+            };
+            
+            // Timeout fallback if iframe doesn't load
+            setTimeout(() => {
+                try {
+                    // Check if iframe loaded successfully
+                    if (!iframe.contentWindow || !iframe.contentWindow.document) {
+                        throw new Error('Failed to load');
+                    }
+                } catch (e) {
+                    // Cross-origin or load error
+                    // Keep iframe visible as it might still work
+                }
+            }, 5000);
+        }
+    </script>
+</body>
+</html>

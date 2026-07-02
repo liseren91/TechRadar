@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff00aa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="#0a0a0f"/>
+  
+  <!-- Outer ring -->
+  <circle cx="64" cy="64" r="48" fill="none" stroke="url(#grad)" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Middle ring -->
+  <circle cx="64" cy="64" r="32" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Inner ring -->
+  <circle cx="64" cy="64" r="16" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Center dot -->
+  <circle cx="64" cy="64" r="6" fill="#00f0ff"/>
+  
+  <!-- Radar sweep line -->
+  <line x1="64" y1="64" x2="64" y2="16" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Data points -->
+  <circle cx="85" cy="40" r="4" fill="#ff00aa"/>
+  <circle cx="45" cy="75" r="3" fill="#a855f7"/>
+  <circle cx="90" cy="70" r="3.5" fill="#22c55e"/>
+  <circle cx="38" cy="50" r="3" fill="#ffaa00"/>
+</svg>
