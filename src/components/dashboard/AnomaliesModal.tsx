@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import {
   X,
@@ -9,8 +8,6 @@ import {
   Clock,
   Flame,
   Globe,
-  History,
-  List,
 } from 'lucide-react'
 import { useLanguage } from '@/lib/i18n'
 import {
@@ -21,8 +18,6 @@ import {
   type TechCategory,
 } from '@/lib/tech-categories'
 import { formatDistanceToNow } from 'date-fns'
-import { AnomalyTrendHistory } from './AnomalyTrendHistory'
-import { useSaveAnomalies } from '@/hooks/use-anomaly-history'
 
 interface AnomaliesModalProps {
   isOpen: boolean
@@ -30,60 +25,18 @@ interface AnomaliesModalProps {
   anomalies: TechItem[]
 }
 
-type TabType = 'current' | 'history'
-
 export function AnomaliesModal({
   isOpen,
   onClose,
   anomalies,
 }: AnomaliesModalProps) {
   const { language } = useLanguage()
-  const [activeTab, setActiveTab] = useState<TabType>('current')
-  const saveAnomalies = useSaveAnomalies()
-
-  // Auto-save new anomalies to history when modal opens
-  useEffect(() => {
-    if (isOpen && anomalies.length > 0) {
-      const anomaliesToSave = anomalies.map((item) => ({
-        category: item.category,
-        source: item.source,
-        title: item.title,
-        summary: item.summary,
-        impactScore: item.impactScore,
-        weeklyGrowth: item.weeklyGrowth ?? null,
-        maturityStage: item.maturityStage,
-        sourceUrl: item.sourceUrl,
-        detectedAt: item.publishedAt.toISOString(),
-        anomalyType:
-          item.weeklyGrowth && item.weeklyGrowth > 50
-            ? 'growth-spike'
-            : 'unusual-activity',
-      }))
-
-      // Save in background - don't block UI
-      saveAnomalies.mutate(anomaliesToSave)
-    }
-  }, [isOpen, anomalies.length])
 
   if (!isOpen) return null
 
   const getTimeAgo = (date: Date) => {
     return formatDistanceToNow(date, { addSuffix: true })
   }
-
-  const tabs = [
-    {
-      id: 'current' as TabType,
-      label: language === 'ru' ? 'Текущие' : 'Current',
-      icon: <List className="w-4 h-4" />,
-      count: anomalies.length,
-    },
-    {
-      id: 'history' as TabType,
-      label: language === 'ru' ? 'История' : 'History',
-      icon: <History className="w-4 h-4" />,
-    },
-  ]
 
   return (
     <AnimatePresence>
@@ -156,49 +109,11 @@ export function AnomaliesModal({
                   </p>
                 </div>
               </div>
-
-              {/* Tabs */}
-              <div className="flex gap-2">
-                {tabs.map((tab) => (
-                  <button
-                    key={tab.id}
-                    onClick={() => setActiveTab(tab.id)}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                      activeTab === tab.id
-                        ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
-                        : 'bg-white/5 text-white/60 border border-white/10 hover:bg-white/10'
-                    }`}
-                  >
-                    {tab.icon}
-                    <span>{tab.label}</span>
-                    {tab.count !== undefined && (
-                      <span
-                        className={`px-1.5 py-0.5 rounded-full text-xs ${
-                          activeTab === tab.id
-                            ? 'bg-amber-500/30'
-                            : 'bg-white/10'
-                        }`}
-                      >
-                        {tab.count}
-                      </span>
-                    )}
-                  </button>
-                ))}
-              </div>
             </div>
 
-            {/* Tab content */}
-            <AnimatePresence mode="wait">
-              {activeTab === 'current' ? (
-                <motion.div
-                  key="current"
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: 20 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  {/* Anomalies list */}
-                  <div className="space-y-4">
+            {/* Anomalies list */}
+            <div>
+              <div className="space-y-4">
                     {anomalies.length === 0 ? (
                       <div className="text-center py-12">
                         <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/5 flex items-center justify-center">
@@ -389,19 +304,7 @@ export function AnomaliesModal({
                       </p>
                     </motion.div>
                   )}
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="history"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <AnomalyTrendHistory />
-                </motion.div>
-              )}
-            </AnimatePresence>
+            </div>
 
             {/* Close button */}
             <div className="mt-6 flex justify-end">
