@@ -1445,3 +1445,6 @@ html, body {
 .error-icon { font-size:2rem; margin-bottom:.5rem; }
 .retry-btn { margin-top:1rem; padding:.5rem 1rem; border-radius:8px; cursor:pointer;
   background:rgba(0,240,255,.12); border:1px solid rgba(0,240,255,.3); color:#00f0ff; }
+
+.chain-sparkline { font-family:'JetBrains Mono',monospace; font-size:1rem; letter-spacing:1px; margin-top:.5rem; opacity:.85; }
+.chain-traj { font-size:.8rem; }

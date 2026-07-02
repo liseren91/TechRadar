@@ -6,6 +6,7 @@ import {
   DATA_BASE_URL, DIGEST_TTL_MS, TRENDS_TTL_MS,
   TRANSLATION_CACHE_MAX, TRANSLATION_TTL_MS,
 } from './lib/config.js'
+import { nextStage, trajectoryMeta, sparkline } from './lib/trends-view.js'
 
 /**
  * Tech Evolution Radar - Chrome Extension
@@ -193,6 +194,8 @@ let state = {
     expandedChain: null,
     translations: {}, // Cache for translated items: { itemId: { title, summary } }
     translatingItems: new Set(), // Items currently being translated
+    trends: [],
+    trendsFetchedAt: null,
 };
 
 // ============================================
@@ -659,6 +662,28 @@ async function fetchAllData() {
     }
 }
 
+async function fetchTrends() {
+    try {
+        const cachedRaw = await new Promise((resolve) => {
+            if (chrome?.storage?.local) chrome.storage.local.get(['techRadarTrends'], (r) => resolve(r.techRadarTrends || null))
+            else resolve(JSON.parse(localStorage.getItem('techRadarTrends') || 'null'))
+        })
+        if (cachedRaw && Date.now() - cachedRaw.timestamp < TRENDS_TTL_MS) {
+            state.trends = cachedRaw.topics || []
+            return
+        }
+        const res = await fetch(`${DATA_BASE_URL}/trends.json`, { cache: 'no-cache' })
+        if (!res.ok) return
+        const data = await res.json()
+        state.trends = data.topics || []
+        const toStore = { topics: state.trends, timestamp: Date.now() }
+        if (chrome?.storage?.local) chrome.storage.local.set({ techRadarTrends: toStore })
+        else localStorage.setItem('techRadarTrends', JSON.stringify(toStore))
+    } catch (e) {
+        console.warn('trends fetch failed', e)
+    }
+}
+
 async function getCachedData() {
     return new Promise(resolve => {
         if (chrome?.storage?.local) {
@@ -756,59 +781,6 @@ function generateAIInsight() {
 }
 
 // ============================================
-// EVOLUTION CHAINS GENERATION
-// ============================================
-
-function generateEvolutionChains() {
-    if (state.items.length === 0) return [];
-
-    const categoryGroups = state.items.reduce((acc, item) => {
-        if (!acc[item.category]) acc[item.category] = [];
-        acc[item.category].push(item);
-        return acc;
-    }, {});
-
-    const chains = [];
-    const maturityOrder = ['research', 'prototype', 'early-adopter', 'mass-market'];
-
-    Object.entries(categoryGroups).forEach(([category, categoryItems]) => {
-        if (categoryItems.length >= 2) {
-            const sortedItems = [...categoryItems].sort(
-                (a, b) => a.publishedAt.getTime() - b.publishedAt.getTime()
-            );
-
-            const recentItems = sortedItems.filter(
-                item => new Date().getTime() - item.publishedAt.getTime() < 7 * 24 * 60 * 60 * 1000
-            );
-            const hasAnomalies = sortedItems.some(item => item.isAnomaly);
-            const trajectory = hasAnomalies || recentItems.length > 1 ? 'rising' : 'stable';
-
-            const currentStage = sortedItems.reduce((highest, item) => {
-                const currentIndex = maturityOrder.indexOf(item.maturityStage);
-                const highestIndex = maturityOrder.indexOf(highest);
-                return currentIndex > highestIndex ? item.maturityStage : highest;
-            }, 'research');
-
-            const config = CATEGORY_CONFIG[category];
-            const localizedLabel = getLocalizedCategory(category);
-            const t = translations[state.language];
-
-            chains.push({
-                id: `chain-${category}`,
-                name: `${localizedLabel} ${t.evolution}`,
-                description: `${t.trackingSignals} ${categoryItems.length} ${t.signals} ${localizedLabel.toLowerCase()} ${t.fromResearchToAdoption}`,
-                category,
-                items: sortedItems.slice(0, 5),
-                currentStage,
-                trajectory,
-            });
-        }
-    });
-
-    return chains.sort((a, b) => b.items.length - a.items.length);
-}
-
-// ============================================
 // RENDERING
 // ============================================
 
@@ -898,138 +870,54 @@ function renderAIInsight() {
 }
 
 function renderEvolutionChains() {
-    const chains = generateEvolutionChains();
-    const t = translations[state.language];
-    
-    elements.chainCount.textContent = `(${chains.length} ${t.active})`;
-    
-    if (state.isLoading && chains.length === 0) {
-        elements.evolutionChains.innerHTML = `
-            <div class="evolution-skeleton">
-                <div class="skeleton-line short"></div>
-                <div class="skeleton-line medium"></div>
-                <div class="skeleton-line long"></div>
-            </div>
-            <div class="evolution-skeleton">
-                <div class="skeleton-line short"></div>
-                <div class="skeleton-line medium"></div>
-                <div class="skeleton-line long"></div>
-            </div>
-        `;
-        return;
-    }
-    
-    if (chains.length === 0) {
+    const t = translations[state.language]
+    const topics = [...state.trends].sort((a, b) => b.momentum - a.momentum).slice(0, 6)
+    elements.chainCount.textContent = `(${topics.length} ${t.active})`
+
+    if (topics.length === 0) {
         elements.evolutionChains.innerHTML = `
             <div class="evolution-empty">
                 <div class="evolution-empty-icon">🔗</div>
-                <p>${t.evolutionChainsWillAppear}</p>
-            </div>
-        `;
-        return;
+                <p>${escapeHtml(t.evolutionChainsWillAppear)}</p>
+            </div>`
+        return
     }
-    
-    elements.evolutionChains.innerHTML = chains.map(chain => {
-        const categoryConfig = CATEGORY_CONFIG[chain.category];
-        const maturityConfig = MATURITY_CONFIG[chain.currentStage];
-        const isExpanded = state.expandedChain === chain.id;
-        const localizedMaturityLabel = getLocalizedMaturity(chain.currentStage);
-        
-        const trajectoryIcon = chain.trajectory === 'rising' 
-            ? '<svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" style="width:16px;height:16px"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>'
-            : '<svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" style="width:16px;height:16px"><line x1="5" y1="12" x2="19" y2="12"/></svg>';
-        
-        const timelinePreview = chain.items.map((item, i) => `
-            <div class="timeline-dot" style="background-color: ${MATURITY_CONFIG[item.maturityStage].color}20"></div>
-            ${i < chain.items.length - 1 ? '<div class="timeline-line"></div>' : ''}
-        `).join('');
-        
-        const expandedContent = isExpanded ? `
-            <div class="chain-expanded-content" style="display: block;">
-                <div class="chain-timeline">
-                    ${chain.items.map((item, i) => {
-                        const itemMaturity = MATURITY_CONFIG[item.maturityStage];
-                        const itemMaturityLabel = getLocalizedMaturity(item.maturityStage);
-                        const daysAgo = Math.floor((new Date().getTime() - item.publishedAt.getTime()) / (1000 * 60 * 60 * 24));
-                        
-                        return `
-                            <div class="timeline-item">
-                                <div class="timeline-item-dot" style="background-color: ${itemMaturity.color}20">
-                                    <div class="timeline-item-dot-inner" style="background-color: ${itemMaturity.color}"></div>
-                                </div>
-                                <div class="timeline-item-content">
-                                    <div class="timeline-item-meta">
-                                        <span class="timeline-item-stage" style="color: ${itemMaturity.color}">${itemMaturityLabel}</span>
-                                        <span class="timeline-item-time">${daysAgo}${t.daysAgo}</span>
-                                        ${item.isAnomaly ? `<span class="timeline-item-anomaly">🔥${item.weeklyGrowth != null ? ' +' + item.weeklyGrowth + '%' : ''}</span>` : ''}
-                                    </div>
-                                    <p class="timeline-item-title">${escapeHtml(item.title.slice(0, 80))}${item.title.length > 80 ? '...' : ''}</p>
-                                </div>
-                            </div>
-                        `;
-                    }).join('')}
-                </div>
-                <div class="chain-prediction">
-                    <p class="chain-prediction-label">${t.trajectoryAnalysis}</p>
-                    <p class="chain-prediction-text">
-                        ${chain.trajectory === 'rising' 
-                            ? `${t.strongMomentumDetected} ${chain.items.filter(i => i.isAnomaly).length} ${t.anomaliesDetected}. ${t.expectedToAdvance} ${getNextStageName(chain.currentStage)} 6-12 ${t.months}.`
-                            : `${t.stableActivity} ${getLocalizedCategory(chain.category)}. ${t.monitoringForBreakthrough}`
-                        }
-                    </p>
-                </div>
-            </div>
-        ` : '<div class="chain-expanded-content"></div>';
-        
+
+    elements.evolutionChains.innerHTML = topics.map((topic) => {
+        const cfg = CATEGORY_CONFIG[topic.category] || { color: '#00f0ff', icon: '' }
+        const maturity = MATURITY_CONFIG[topic.stage] || MATURITY_CONFIG.research
+        const traj = trajectoryMeta(topic.trajectory)
+        const isExpanded = state.expandedChain === topic.id
+        const pct = Math.round((topic.momentum || 0) * 100)
+        const momentumText = topic.trajectory === 'rising'
+            ? `${t.strongMomentumDetected} +${pct}%. ${t.expectedToAdvance} ${getLocalizedMaturity(nextStage(topic.stage))} 6-12 ${t.months}.`
+            : `${t.stableActivity} ${escapeHtml(topic.label)}. ${t.monitoringForBreakthrough}`
         return `
-            <div class="evolution-chain ${isExpanded ? 'expanded' : ''}" data-chain-id="${chain.id}">
+            <div class="evolution-chain ${isExpanded ? 'expanded' : ''}" data-chain-id="${escapeHtml(topic.id)}">
                 <div class="chain-header">
                     <div>
                         <div class="chain-badges">
-                            <span class="chain-badge" style="background-color: ${categoryConfig.color}15; color: ${categoryConfig.color}">
-                                ${categoryConfig.icon}
-                            </span>
-                            <span class="chain-badge" style="background-color: ${maturityConfig.bgColor}; color: ${maturityConfig.color}">
-                                ${localizedMaturityLabel}
-                            </span>
-                            ${trajectoryIcon}
+                            <span class="chain-badge" style="background-color:${cfg.color}15;color:${cfg.color}">${cfg.icon}</span>
+                            <span class="chain-badge" style="background-color:${maturity.bgColor};color:${maturity.color}">${escapeHtml(getLocalizedMaturity(topic.stage))}</span>
+                            <span class="chain-traj chain-traj-${traj.icon}" style="color:${traj.color}">${traj.icon === 'up' ? '▲' : traj.icon === 'down' ? '▼' : '—'}</span>
                         </div>
-                        <h3 class="chain-title">${escapeHtml(chain.name)}</h3>
-                        <p class="chain-description">${escapeHtml(chain.description)}</p>
+                        <h3 class="chain-title">${escapeHtml(topic.label)}</h3>
+                        <p class="chain-description">${escapeHtml(getLocalizedCategory(topic.category))} · ${topic.weeklyCounts.reduce((a, b) => a + b, 0)} ${t.signals}</p>
                     </div>
-                    <div class="chain-expand">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 18l6-6-6-6"/>
-                        </svg>
-                    </div>
+                    <div class="chain-expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
                 </div>
-                <div class="chain-timeline-preview">
-                    ${timelinePreview}
-                    <span class="chain-signal-count">${chain.items.length} ${t.signals}</span>
-                </div>
-                ${expandedContent}
-            </div>
-        `;
-    }).join('');
-    
-    // Add click handlers for expansion
-    elements.evolutionChains.querySelectorAll('.evolution-chain').forEach(el => {
-        el.addEventListener('click', () => {
-            const chainId = el.dataset.chainId;
-            state.expandedChain = state.expandedChain === chainId ? null : chainId;
-            renderEvolutionChains();
-        });
-    });
-}
+                <div class="chain-sparkline" style="color:${cfg.color}">${sparkline(topic.weeklyCounts)}</div>
+                ${isExpanded ? `<div class="chain-prediction"><p class="chain-prediction-label">${t.trajectoryAnalysis}</p><p class="chain-prediction-text">${escapeHtml(momentumText)}</p></div>` : ''}
+            </div>`
+    }).join('')
 
-function getNextStageName(currentStage) {
-    const stageMap = {
-        research: getLocalizedMaturity('prototype'),
-        prototype: getLocalizedMaturity('early-adopter'),
-        'early-adopter': getLocalizedMaturity('mass-market'),
-        'mass-market': getLocalizedMaturity('mass-market'),
-    };
-    return stageMap[currentStage];
+    elements.evolutionChains.querySelectorAll('.evolution-chain').forEach((el) => {
+        el.addEventListener('click', () => {
+            const id = el.dataset.chainId
+            state.expandedChain = state.expandedChain === id ? null : id
+            renderEvolutionChains()
+        })
+    })
 }
 
 function renderFeed() {
@@ -1301,6 +1189,8 @@ function setupEventListeners() {
     elements.refreshBtn.addEventListener('click', async () => {
         elements.refreshBtn.classList.add('spinning');
         await fetchAllData();
+        await fetchTrends();
+        render();
         elements.refreshBtn.classList.remove('spinning');
     });
 
@@ -1391,6 +1281,8 @@ async function init() {
 
     setupEventListeners();
     await fetchAllData();
+    await fetchTrends();
+    render();
 
     // Set up auto-refresh
     setInterval(fetchAllData, CONFIG.REFRESH_INTERVAL);
