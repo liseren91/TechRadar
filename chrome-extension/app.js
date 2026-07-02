@@ -962,8 +962,8 @@ function renderEvolutionChains() {
                             </span>
                             ${trajectoryIcon}
                         </div>
-                        <h3 class="chain-title">${chain.name}</h3>
-                        <p class="chain-description">${chain.description}</p>
+                        <h3 class="chain-title">${escapeHtml(chain.name)}</h3>
+                        <p class="chain-description">${escapeHtml(chain.description)}</p>
                     </div>
                     <div class="chain-expand">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1068,7 +1068,7 @@ function renderFeed() {
                         ${SOURCE_CONFIG[item.source]?.icon || '📄'} ${SOURCE_CONFIG[item.source]?.label || item.source}
                     </span>
                     <span class="feed-category" style="color: ${CATEGORY_CONFIG[item.category]?.color || '#fff'}">
-                        ${CATEGORY_CONFIG[item.category]?.icon || ''} ${item.category}
+                        ${CATEGORY_CONFIG[item.category]?.icon || ''} ${escapeHtml(item.category)}
                     </span>
                     <span class="feed-time">${formatTimeAgo(item.publishedAt)}</span>
                     <span class="feed-impact">
