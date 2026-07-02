@@ -7,6 +7,7 @@ import {
   TRANSLATION_CACHE_MAX, TRANSLATION_TTL_MS,
 } from './lib/config.js'
 import { nextStage, trajectoryMeta, sparkline } from './lib/trends-view.js'
+import { pickDigestText, SOURCE_META } from './lib/digest.js'
 
 /**
  * Tech Evolution Radar - Chrome Extension
@@ -92,6 +93,10 @@ const translations = {
         translating: 'Translating...',
         showOriginal: 'Show original',
         translated: 'Translated',
+        newsDigest: 'AI Blog Digest',
+        newsSubtitle: 'Engineering blogs, in human',
+        readOriginal: 'Read original',
+        newsEmpty: 'Digest will appear after the next daily update',
     },
     ru: {
         totalSignals: 'Всего сигналов',
@@ -132,6 +137,10 @@ const translations = {
         translating: 'Перевод...',
         showOriginal: 'Оригинал',
         translated: 'Переведено',
+        newsDigest: 'Дайджест ИИ-блогов',
+        newsSubtitle: 'Инженерные блоги — по-человечески',
+        readOriginal: 'Читать оригинал',
+        newsEmpty: 'Дайджест появится после следующего суточного обновления',
     },
 };
 
@@ -196,6 +205,8 @@ let state = {
     translatingItems: new Set(), // Items currently being translated
     trends: [],
     trendsFetchedAt: null,
+    digest: [],
+    digestFetchedAt: null,
 };
 
 // ============================================
@@ -224,6 +235,7 @@ const elements = {
     aiStats: document.getElementById('ai-stats'),
     evolutionChains: document.getElementById('evolution-chains'),
     chainCount: document.getElementById('chain-count'),
+    newsList: document.getElementById('news-list'),
     infoBtn: document.getElementById('info-btn'),
     infoModal: document.getElementById('info-modal'),
     modalClose: document.getElementById('modal-close'),
@@ -684,6 +696,28 @@ async function fetchTrends() {
     }
 }
 
+async function fetchDigest() {
+    try {
+        const cachedRaw = await new Promise((resolve) => {
+            if (chrome?.storage?.local) chrome.storage.local.get(['techRadarDigest'], (r) => resolve(r.techRadarDigest || null))
+            else resolve(JSON.parse(localStorage.getItem('techRadarDigest') || 'null'))
+        })
+        if (cachedRaw && Date.now() - cachedRaw.timestamp < DIGEST_TTL_MS) {
+            state.digest = cachedRaw.items || []
+            return
+        }
+        const res = await fetch(`${DATA_BASE_URL}/digest.json`, { cache: 'no-cache' })
+        if (!res.ok) return
+        const data = await res.json()
+        state.digest = data.items || []
+        const toStore = { items: state.digest, timestamp: Date.now() }
+        if (chrome?.storage?.local) chrome.storage.local.set({ techRadarDigest: toStore })
+        else localStorage.setItem('techRadarDigest', JSON.stringify(toStore))
+    } catch (e) {
+        console.warn('digest fetch failed', e)
+    }
+}
+
 async function getCachedData() {
     return new Promise(resolve => {
         if (chrome?.storage?.local) {
@@ -804,6 +838,7 @@ function render() {
     renderStats();
     renderAIInsight();
     renderEvolutionChains();
+    renderNews();
     renderFeed();
     renderRadar();
     updateTranslations();
@@ -918,6 +953,32 @@ function renderEvolutionChains() {
             renderEvolutionChains()
         })
     })
+}
+
+function renderNews() {
+    if (!elements.newsList) return
+    const t = translations[state.language]
+    if (!state.digest || state.digest.length === 0) {
+        elements.newsList.innerHTML = `<div class="news-empty">${escapeHtml(t.newsEmpty)}</div>`
+        return
+    }
+    elements.newsList.innerHTML = state.digest.map((item) => {
+        const meta = SOURCE_META[item.source] || { label: item.source, icon: '📄' }
+        const { headline, tweets } = pickDigestText(item, state.language)
+        const when = formatTimeAgo(new Date(item.publishedAt))
+        return `
+            <article class="news-card">
+                <div class="news-card-meta">
+                    <span>${meta.icon} ${escapeHtml(meta.label)}</span>
+                    <span>· ${escapeHtml(when)}</span>
+                </div>
+                <div class="news-headline">${escapeHtml(headline)}</div>
+                <ul class="news-tweets">
+                    ${tweets.slice(0, 3).map((tw) => `<li>${escapeHtml(tw)}</li>`).join('')}
+                </ul>
+                <a class="news-read" href="${encodeURI(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.readOriginal)} ↗</a>
+            </article>`
+    }).join('')
 }
 
 function renderFeed() {
@@ -1190,6 +1251,7 @@ function setupEventListeners() {
         elements.refreshBtn.classList.add('spinning');
         await fetchAllData();
         await fetchTrends();
+        await fetchDigest();
         render();
         elements.refreshBtn.classList.remove('spinning');
     });
@@ -1282,6 +1344,7 @@ async function init() {
     setupEventListeners();
     await fetchAllData();
     await fetchTrends();
+    await fetchDigest();
     render();
 
     // Set up auto-refresh
