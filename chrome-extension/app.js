@@ -891,7 +891,7 @@ function renderEvolutionChains() {
         const pct = Math.round((topic.momentum || 0) * 100)
         const momentumText = topic.trajectory === 'rising'
             ? `${t.strongMomentumDetected} +${pct}%. ${t.expectedToAdvance} ${getLocalizedMaturity(nextStage(topic.stage))} 6-12 ${t.months}.`
-            : `${t.stableActivity} ${escapeHtml(topic.label)}. ${t.monitoringForBreakthrough}`
+            : `${t.stableActivity} ${topic.label}. ${t.monitoringForBreakthrough}`
         return `
             <div class="evolution-chain ${isExpanded ? 'expanded' : ''}" data-chain-id="${escapeHtml(topic.id)}">
                 <div class="chain-header">
@@ -902,11 +902,11 @@ function renderEvolutionChains() {
                             <span class="chain-traj chain-traj-${traj.icon}" style="color:${traj.color}">${traj.icon === 'up' ? '▲' : traj.icon === 'down' ? '▼' : '—'}</span>
                         </div>
                         <h3 class="chain-title">${escapeHtml(topic.label)}</h3>
-                        <p class="chain-description">${escapeHtml(getLocalizedCategory(topic.category))} · ${topic.weeklyCounts.reduce((a, b) => a + b, 0)} ${t.signals}</p>
+                        <p class="chain-description">${escapeHtml(getLocalizedCategory(topic.category))} · ${(topic.weeklyCounts || []).reduce((a, b) => a + b, 0)} ${t.signals}</p>
                     </div>
                     <div class="chain-expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
                 </div>
-                <div class="chain-sparkline" style="color:${cfg.color}">${sparkline(topic.weeklyCounts)}</div>
+                <div class="chain-sparkline" style="color:${cfg.color}">${sparkline(topic.weeklyCounts || [])}</div>
                 ${isExpanded ? `<div class="chain-prediction"><p class="chain-prediction-label">${t.trajectoryAnalysis}</p><p class="chain-prediction-text">${escapeHtml(momentumText)}</p></div>` : ''}
             </div>`
     }).join('')
