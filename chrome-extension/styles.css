@@ -1448,3 +1448,18 @@ html, body {
 
 .chain-sparkline { font-family:'JetBrains Mono',monospace; font-size:1rem; letter-spacing:1px; margin-top:.5rem; opacity:.85; }
 .chain-traj { font-size:.8rem; }
+
+.news-section { margin-bottom:1.5rem; }
+.news-subtitle { font-size:.75rem; color:rgba(255,255,255,.4); }
+.news-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1rem; }
+.news-card { background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08);
+  border-radius:12px; padding:1rem; display:flex; flex-direction:column; gap:.6rem; }
+.news-card-meta { display:flex; align-items:center; gap:.5rem; font-size:.72rem; color:rgba(255,255,255,.5); }
+.news-headline { font-weight:600; line-height:1.35; color:rgba(255,255,255,.92); }
+.news-tweets { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.35rem; }
+.news-tweets li { position:relative; padding-left:1rem; font-size:.82rem; color:rgba(255,255,255,.7); line-height:1.4; }
+.news-tweets li::before { content:'•'; position:absolute; left:0; color:#00f0ff; }
+.news-read { align-self:flex-start; margin-top:.25rem; font-size:.75rem; color:#93c5fd; text-decoration:none;
+  border:1px solid rgba(59,130,246,.25); border-radius:6px; padding:.3rem .55rem; }
+.news-read:hover { background:rgba(59,130,246,.12); }
+.news-empty { color:rgba(255,255,255,.4); font-size:.85rem; padding:1rem 0; }
