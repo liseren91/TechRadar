@@ -204,9 +204,7 @@ let state = {
     translations: {}, // Cache for translated items: { itemId: { title, summary } }
     translatingItems: new Set(), // Items currently being translated
     trends: [],
-    trendsFetchedAt: null,
     digest: [],
-    digestFetchedAt: null,
 };
 
 // ============================================
@@ -1061,7 +1059,7 @@ function renderFeed() {
                 </div>
                 <div class="feed-item-actions">
                     ${translateBtnHtml}
-                    <a href="${escapeHtml(safeUrl(item.sourceUrl))}" target="_blank" rel="noopener noreferrer" class="feed-link-btn" onclick="event.stopPropagation()">
+                    <a href="${escapeHtml(safeUrl(item.sourceUrl))}" target="_blank" rel="noopener noreferrer" class="feed-link-btn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                             <polyline points="15 3 21 3 21 9"/>

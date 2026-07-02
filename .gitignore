@@ -10,7 +10,8 @@ count.txt
 .output
 .vinxi
 todos.json
-.eslintcache.superpowers/
+.eslintcache
+.superpowers/
 .env.*
 *.key
 public/data/*.local.json
