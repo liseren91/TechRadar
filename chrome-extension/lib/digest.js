@@ -10,6 +10,10 @@ export const SOURCE_META = {
 }
 
 export function pickDigestText(item, lang) {
-  const block = (item && item[lang]) || (item && item.en) || { headline: '', tweets: [] }
-  return { headline: block.headline || '', tweets: Array.isArray(block.tweets) ? block.tweets : [] }
+  const block = (item && item[lang]) ||
+    (item && item.en) || { headline: '', tweets: [] }
+  return {
+    headline: block.headline || '',
+    tweets: Array.isArray(block.tweets) ? block.tweets : [],
+  }
 }
