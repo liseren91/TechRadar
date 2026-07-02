@@ -16,5 +16,7 @@ const BLOCKS = ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█']
 export function sparkline(weeklyCounts) {
   if (!weeklyCounts || weeklyCounts.length === 0) return ''
   const max = Math.max(1, ...weeklyCounts)
-  return weeklyCounts.map((c) => BLOCKS[Math.round((c / max) * (BLOCKS.length - 1))]).join('')
+  return weeklyCounts
+    .map((c) => BLOCKS[Math.round((c / max) * (BLOCKS.length - 1))])
+    .join('')
 }
