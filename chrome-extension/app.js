@@ -464,7 +464,11 @@ async function fetchGitHubTrending() {
                 hypeVolume: repo.stargazers_count + repo.forks_count * 2,
                 publishedAt: new Date(repo.created_at),
                 isAnomaly: repo.stargazers_count > 1000,
-                weeklyGrowth: repo.stargazers_count > 500 ? Math.floor(Math.random() * 100) + 20 : null,
+                weeklyGrowth: (() => {
+                    const days = Math.max(1, (Date.now() - new Date(repo.created_at).getTime()) / 86400000)
+                    const perWeek = Math.round((repo.stargazers_count / days) * 7)
+                    return perWeek >= 10 ? Math.min(999, perWeek) : null
+                })(),
             }));
     } catch (error) {
         console.error('GitHub API error:', error);
@@ -509,8 +513,8 @@ async function fetchArxivPapers() {
             sourceUrl: entry.id.replace('http://', 'https://'),
             category: categorizeByKeywords(entry.title + ' ' + entry.summary),
             maturityStage: 'research',
-            impactScore: Math.floor(Math.random() * 4) + 6,
-            hypeVolume: Math.floor(Math.random() * 5000) + 500,
+            impactScore: 6,
+            hypeVolume: 0,
             publishedAt: new Date(entry.published),
             isAnomaly: false,
             weeklyGrowth: null,
@@ -553,7 +557,7 @@ async function fetchHackerNews() {
             hypeVolume: story.score * 10 + (story.descendants || 0) * 5,
             publishedAt: new Date(story.time * 1000),
             isAnomaly: story.score > 500,
-            weeklyGrowth: story.score > 300 ? Math.floor(Math.random() * 80) + 10 : null,
+            weeklyGrowth: null,
         }));
     } catch (error) {
         console.error('Hacker News API error:', error);
@@ -925,7 +929,7 @@ function renderEvolutionChains() {
                                     <div class="timeline-item-meta">
                                         <span class="timeline-item-stage" style="color: ${itemMaturity.color}">${itemMaturityLabel}</span>
                                         <span class="timeline-item-time">${daysAgo}${t.daysAgo}</span>
-                                        ${item.isAnomaly ? `<span class="timeline-item-anomaly">🔥 +${item.weeklyGrowth}%</span>` : ''}
+                                        ${item.isAnomaly ? `<span class="timeline-item-anomaly">🔥${item.weeklyGrowth != null ? ' +' + item.weeklyGrowth + '%' : ''}</span>` : ''}
                                     </div>
                                     <p class="timeline-item-title">${escapeHtml(item.title.slice(0, 80))}${item.title.length > 80 ? '...' : ''}</p>
                                 </div>
