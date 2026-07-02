@@ -1438,3 +1438,10 @@ html, body {
         font-size: 1.25rem;
     }
 }
+
+.error-state { display:flex; align-items:center; justify-content:center; min-height:60vh; }
+.error-state.hidden { display:none; }
+.error-inner { text-align:center; color:rgba(255,255,255,.7); }
+.error-icon { font-size:2rem; margin-bottom:.5rem; }
+.retry-btn { margin-top:1rem; padding:.5rem 1rem; border-radius:8px; cursor:pointer;
+  background:rgba(0,240,255,.12); border:1px solid rgba(0,240,255,.3); color:#00f0ff; }

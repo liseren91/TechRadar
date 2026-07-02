@@ -438,6 +438,10 @@ async function fetchGitHubTrending() {
                 }
             );
 
+            if (response.status === 403 || response.status === 429) {
+                console.warn('GitHub rate limit hit; skipping remaining GitHub queries');
+                break;
+            }
             if (response.ok) {
                 const data = await response.json();
                 allRepos.push(...(data.items || []));
@@ -815,6 +819,13 @@ function render() {
         return;
     }
 
+    if (state.error && state.items.length === 0) {
+        elements.loading.classList.add('hidden');
+        elements.mainContent.classList.add('hidden');
+        showErrorState();
+        return;
+    }
+
     elements.loading.classList.add('hidden');
     elements.mainContent.classList.remove('hidden');
 
@@ -824,6 +835,27 @@ function render() {
     renderFeed();
     renderRadar();
     updateTranslations();
+}
+
+function showErrorState() {
+    let host = document.getElementById('error-state');
+    if (!host) {
+        host = document.createElement('div');
+        host.id = 'error-state';
+        host.className = 'error-state';
+        document.getElementById('app').appendChild(host);
+    }
+    host.classList.remove('hidden');
+    host.innerHTML = `
+        <div class="error-inner">
+            <div class="error-icon">📡</div>
+            <p>${escapeHtml(getTranslation('error'))}</p>
+            <button id="error-retry" class="retry-btn">${escapeHtml(getTranslation('retry'))}</button>
+        </div>`;
+    host.querySelector('#error-retry').addEventListener('click', async () => {
+        host.classList.add('hidden');
+        await fetchAllData();
+    });
 }
 
 function renderStats() {
