@@ -589,6 +589,7 @@ async function fetchHackerNews() {
 // ============================================
 
 function formatTimeAgo(date) {
+    if (!(date instanceof Date) || isNaN(date.getTime())) return ''
     const now = new Date();
     const diff = now - date;
     const minutes = Math.floor(diff / 60000);
@@ -976,7 +977,7 @@ function renderNews() {
                 <ul class="news-tweets">
                     ${tweets.slice(0, 3).map((tw) => `<li>${escapeHtml(tw)}</li>`).join('')}
                 </ul>
-                <a class="news-read" href="${encodeURI(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.readOriginal)} ↗</a>
+                <a class="news-read" href="${escapeHtml(safeUrl(item.sourceUrl))}" target="_blank" rel="noopener noreferrer">${escapeHtml(t.readOriginal)} ↗</a>
             </article>`
     }).join('')
 }
@@ -1033,8 +1034,8 @@ function renderFeed() {
         }
         
         return `
-            <article class="feed-item fade-in fade-in-delay-${Math.min(index, 4)}" 
-                     data-url="${item.sourceUrl}"
+            <article class="feed-item fade-in fade-in-delay-${Math.min(index, 4)}"
+                     data-url="${escapeHtml(safeUrl(item.sourceUrl))}"
                      data-id="${item.id}"
                      data-show-translation="false">
                 <div class="feed-item-header">
@@ -1060,7 +1061,7 @@ function renderFeed() {
                 </div>
                 <div class="feed-item-actions">
                     ${translateBtnHtml}
-                    <a href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer" class="feed-link-btn" onclick="event.stopPropagation()">
+                    <a href="${escapeHtml(safeUrl(item.sourceUrl))}" target="_blank" rel="noopener noreferrer" class="feed-link-btn" onclick="event.stopPropagation()">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                             <polyline points="15 3 21 3 21 9"/>
@@ -1096,7 +1097,7 @@ function renderFeed() {
             if (e.target.closest('.translate-btn') || e.target.closest('.feed-link-btn')) {
                 return;
             }
-            window.open(el.dataset.url, '_blank');
+            window.open(safeUrl(el.dataset.url), '_blank');
         });
     });
 }
@@ -1239,6 +1240,12 @@ function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+}
+
+function safeUrl(url) {
+    if (typeof url !== 'string') return '#'
+    const u = url.trim()
+    return /^https?:\/\//i.test(u) ? u : '#'
 }
 
 // ============================================
