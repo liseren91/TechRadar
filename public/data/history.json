@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2026-07-02",
+    "topics": {
+      "llm-agents": 57,
+      "open-models": 56,
+      "rag": 12,
+      "fusion": 2,
+      "protein-design": 3
+    }
+  }
+]
