@@ -11,6 +11,8 @@
 - **Multilingual**: English and Russian language support
 - **Offline Caching**: Works offline with cached data
 - **Two Modes**: Standalone (works offline) or iframe (connects to deployed app)
+- **AI Blog Digest**: Daily LLM-summarized digest of top AI engineering blogs (hook headline + 3 tweet-style bullets), EN/RU, fetched from the project's public data feed.
+- **Honest Evolution Chains**: Real week-over-week topic momentum from accumulated snapshots (no fabricated metrics).
 
 ## 🚀 Quick Installation
 
