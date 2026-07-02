@@ -2,7 +2,7 @@
 
 Дашборд для отслеживания технологических сигналов: как «шум» превращается в тренды. Приложение агрегирует данные из открытых источников, классифицирует их по категориям и стадиям зрелости, выявляет аномалии и показывает эволюционные цепочки технологий.
 
-Доступны веб-интерфейс и расширение для Chrome, которое заменяет страницу новой вкладки.
+Доступны публичный веб-дашборд (без входа и серверного хранилища) и расширение для Chrome, которое заменяет страницу новой вкладки.
 
 ## Возможности
 
@@ -10,7 +10,7 @@
 - **Tech Feed** — лента событий с фильтрацией по источникам, категориям и языку
 - **AI Insight** — автоматическая сводка по текущим данным, трендам и аномалиям
 - **Evolution Chains** — цепочки развития технологий от research до mass-market
-- **Anomaly Detection** — выявление необычных всплесков активности с историей
+- **Anomaly Detection** — выявление необычных всплесков активности
 - **Daily Digest** — ежедневный AI-дайджест блогов (Anthropic, OpenAI, DeepMind и др.)
 - **Мультиязычность** — интерфейс и контент на английском и русском
 - **Chrome Extension** — та же аналитика на странице новой вкладки
@@ -22,7 +22,6 @@
 | Frontend | React 19, TanStack Router, TanStack Query, Tailwind CSS 4, shadcn/ui, Recharts, Motion |
 | Backend | TanStack Start (SSR), server functions |
 | Runtime | Bun, Vite |
-| Хранилище | Appwrite (auth, БД, файлы) |
 | AI | Anthropic API (генерация дайджеста в CI) |
 | Тесты | Vitest, Testing Library |
 
@@ -63,18 +62,11 @@ bun run serve
 
 ## Переменные окружения
 
-Скопируйте `.env.example` в `.env` и задайте значения:
+Дашборд публичный и не требует секретов для запуска. Опционально скопируйте `.env.example` в `.env`:
 
 | Переменная | Описание |
 |------------|----------|
-| `APPWRITE_ENDPOINT` | URL инстанса Appwrite |
-| `APPWRITE_PROJECT_ID` | ID проекта Appwrite |
-| `APPWRITE_API_KEY` | API-ключ с правами на проект |
-| `APPWRITE_BUCKET_ID` | ID storage bucket для файлов |
-| `APPWRITE_DB_ID` | ID базы данных Appwrite (для auth и persistence) |
 | `VITE_INSTRUMENTATION_SCRIPT_SRC` | URL скрипта аналитики (опционально) |
-
-Без Appwrite-переменных аутентификация и работа с хранилищем будут недоступны.
 
 ### CI / генерация дайджеста
 
@@ -138,14 +130,12 @@ TechRadar/
 ├── src/
 │   ├── components/
 │   │   ├── dashboard/        # UI дашборда (Radar, Feed, AI Insight…)
-│   │   ├── auth/             # Формы входа/регистрации
 │   │   └── ui/               # shadcn/ui компоненты
-│   ├── hooks/                # React hooks (feed, auth, anomaly history)
+│   ├── hooks/                # React hooks (feed, anomaly)
 │   ├── lib/                  # Категории, i18n, утилиты
 │   ├── routes/               # File-based routing (TanStack Router)
 │   └── server/
-│       ├── functions/        # Server functions (feed, auth, translation…)
-│       ├── lib/              # Appwrite клиент, storage, db
+│       ├── functions/        # Server functions (feed, translation…)
 │       └── utils/            # Кэш, fetch helpers
 ├── server.ts                 # Production-сервер на Bun
 └── .github/workflows/        # CI (generate-feed)
@@ -189,8 +179,6 @@ gh secret set ANTHROPIC_API_KEY
 File-based routing в `src/routes/`:
 
 - `_public/` — публичный дашборд (`/`)
-- `_auth/` — вход, регистрация, выход
-- `_protected/` — защищённые страницы (требуют auth)
 - `_api/` — API-эндпоинты
 
 ### shadcn/ui

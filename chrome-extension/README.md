@@ -10,7 +10,7 @@
 - **Anomaly Detection**: Highlights trending items with unusual growth
 - **Multilingual**: English and Russian language support
 - **Offline Caching**: Works offline with cached data
-- **Two Modes**: Standalone (works offline) or iframe (connects to deployed app)
+- **Standalone**: Runs entirely in the new tab page, no server or login required
 - **AI Blog Digest**: Daily LLM-summarized digest of top AI engineering blogs (hook headline + 3 tweet-style bullets), EN/RU, fetched from the project's public data feed.
 - **Honest Evolution Chains**: Real week-over-week topic momentum from accumulated snapshots (no fabricated metrics).
 
@@ -45,8 +45,7 @@ convert icon.svg -resize 128x128 icon128.png
 ```
 chrome-extension/
 ├── manifest.json          # Extension configuration
-├── newtab.html            # Standalone new tab page (default)
-├── newtab-iframe.html     # Alternative: loads deployed app in iframe
+├── newtab.html            # Standalone new tab page
 ├── styles.css             # Styles for standalone version
 ├── app.js                 # Main application logic
 ├── generate-icons.js      # Node.js icon generator
@@ -62,8 +61,6 @@ chrome-extension/
 
 ## 🔧 Configuration
 
-### Standalone Mode (Default)
-
 The extension works completely offline, fetching data directly from APIs:
 - GitHub Trending Repositories
 - arXiv Research Papers
@@ -78,20 +75,6 @@ const CONFIG = {
     MAX_FEED_ITEMS: 20,               // Max items in feed
 };
 ```
-
-### Iframe Mode (Connected to Deployed App)
-
-If you've deployed the full TanStack Start app:
-
-1. Rename `newtab.html` to `newtab-standalone.html`
-2. Rename `newtab-iframe.html` to `newtab.html`
-3. Edit `newtab.html` and set your deployed URL:
-
-```javascript
-const DEPLOYED_URL = 'https://your-deployed-app.com';
-```
-
-4. Reload the extension in Chrome
 
 ## 🎨 Customization
 
@@ -165,7 +148,6 @@ const CATEGORY_KEYWORDS = {
 
 ### CORS errors
 - The standalone version uses direct API calls which should work
-- If using iframe mode, ensure your deployed app allows embedding
 
 ## 📊 Data Sources
 

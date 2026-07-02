@@ -10,26 +10,12 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as PublicRouteImport } from './routes/_public'
-import { Route as ProtectedRouteImport } from './routes/_protected'
-import { Route as AuthRouteImport } from './routes/_auth'
 import { Route as PublicIndexRouteImport } from './routes/_public/index'
 import { Route as PublicTestParsersRouteImport } from './routes/_public/test-parsers'
-import { Route as ProtectedExampleProtectedRouteRouteImport } from './routes/_protected/example-protected-route'
-import { Route as AuthSignUpRouteImport } from './routes/_auth/sign-up'
-import { Route as AuthSignOutRouteImport } from './routes/_auth/sign-out'
-import { Route as AuthSignInRouteImport } from './routes/_auth/sign-in'
 import { Route as ApiHelloRouteImport } from './routes/_api/hello'
 
 const PublicRoute = PublicRouteImport.update({
   id: '/_public',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProtectedRoute = ProtectedRouteImport.update({
-  id: '/_protected',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AuthRoute = AuthRouteImport.update({
-  id: '/_auth',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PublicIndexRoute = PublicIndexRouteImport.update({
@@ -42,27 +28,6 @@ const PublicTestParsersRoute = PublicTestParsersRouteImport.update({
   path: '/test-parsers',
   getParentRoute: () => PublicRoute,
 } as any)
-const ProtectedExampleProtectedRouteRoute =
-  ProtectedExampleProtectedRouteRouteImport.update({
-    id: '/example-protected-route',
-    path: '/example-protected-route',
-    getParentRoute: () => ProtectedRoute,
-  } as any)
-const AuthSignUpRoute = AuthSignUpRouteImport.update({
-  id: '/sign-up',
-  path: '/sign-up',
-  getParentRoute: () => AuthRoute,
-} as any)
-const AuthSignOutRoute = AuthSignOutRouteImport.update({
-  id: '/sign-out',
-  path: '/sign-out',
-  getParentRoute: () => AuthRoute,
-} as any)
-const AuthSignInRoute = AuthSignInRouteImport.update({
-  id: '/sign-in',
-  path: '/sign-in',
-  getParentRoute: () => AuthRoute,
-} as any)
 const ApiHelloRoute = ApiHelloRouteImport.update({
   id: '/_api/hello',
   path: '/hello',
@@ -70,72 +35,36 @@ const ApiHelloRoute = ApiHelloRouteImport.update({
 } as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof PublicIndexRoute
   '/hello': typeof ApiHelloRoute
-  '/sign-in': typeof AuthSignInRoute
-  '/sign-out': typeof AuthSignOutRoute
-  '/sign-up': typeof AuthSignUpRoute
-  '/example-protected-route': typeof ProtectedExampleProtectedRouteRoute
   '/test-parsers': typeof PublicTestParsersRoute
+  '/': typeof PublicIndexRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof PublicIndexRoute
   '/hello': typeof ApiHelloRoute
-  '/sign-in': typeof AuthSignInRoute
-  '/sign-out': typeof AuthSignOutRoute
-  '/sign-up': typeof AuthSignUpRoute
-  '/example-protected-route': typeof ProtectedExampleProtectedRouteRoute
   '/test-parsers': typeof PublicTestParsersRoute
+  '/': typeof PublicIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/_auth': typeof AuthRouteWithChildren
-  '/_protected': typeof ProtectedRouteWithChildren
   '/_public': typeof PublicRouteWithChildren
   '/_api/hello': typeof ApiHelloRoute
-  '/_auth/sign-in': typeof AuthSignInRoute
-  '/_auth/sign-out': typeof AuthSignOutRoute
-  '/_auth/sign-up': typeof AuthSignUpRoute
-  '/_protected/example-protected-route': typeof ProtectedExampleProtectedRouteRoute
   '/_public/test-parsers': typeof PublicTestParsersRoute
   '/_public/': typeof PublicIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/hello'
-    | '/sign-in'
-    | '/sign-out'
-    | '/sign-up'
-    | '/example-protected-route'
-    | '/test-parsers'
+  fullPaths: '/hello' | '/test-parsers' | '/'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/hello'
-    | '/sign-in'
-    | '/sign-out'
-    | '/sign-up'
-    | '/example-protected-route'
-    | '/test-parsers'
+  to: '/hello' | '/test-parsers' | '/'
   id:
     | '__root__'
-    | '/_auth'
-    | '/_protected'
     | '/_public'
     | '/_api/hello'
-    | '/_auth/sign-in'
-    | '/_auth/sign-out'
-    | '/_auth/sign-up'
-    | '/_protected/example-protected-route'
     | '/_public/test-parsers'
     | '/_public/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  AuthRoute: typeof AuthRouteWithChildren
-  ProtectedRoute: typeof ProtectedRouteWithChildren
   PublicRoute: typeof PublicRouteWithChildren
   ApiHelloRoute: typeof ApiHelloRoute
 }
@@ -145,22 +74,8 @@ declare module '@tanstack/react-router' {
     '/_public': {
       id: '/_public'
       path: ''
-      fullPath: '/'
+      fullPath: ''
       preLoaderRoute: typeof PublicRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_protected': {
-      id: '/_protected'
-      path: ''
-      fullPath: '/'
-      preLoaderRoute: typeof ProtectedRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_auth': {
-      id: '/_auth'
-      path: ''
-      fullPath: '/'
-      preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/_public/': {
@@ -177,34 +92,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PublicTestParsersRouteImport
       parentRoute: typeof PublicRoute
     }
-    '/_protected/example-protected-route': {
-      id: '/_protected/example-protected-route'
-      path: '/example-protected-route'
-      fullPath: '/example-protected-route'
-      preLoaderRoute: typeof ProtectedExampleProtectedRouteRouteImport
-      parentRoute: typeof ProtectedRoute
-    }
-    '/_auth/sign-up': {
-      id: '/_auth/sign-up'
-      path: '/sign-up'
-      fullPath: '/sign-up'
-      preLoaderRoute: typeof AuthSignUpRouteImport
-      parentRoute: typeof AuthRoute
-    }
-    '/_auth/sign-out': {
-      id: '/_auth/sign-out'
-      path: '/sign-out'
-      fullPath: '/sign-out'
-      preLoaderRoute: typeof AuthSignOutRouteImport
-      parentRoute: typeof AuthRoute
-    }
-    '/_auth/sign-in': {
-      id: '/_auth/sign-in'
-      path: '/sign-in'
-      fullPath: '/sign-in'
-      preLoaderRoute: typeof AuthSignInRouteImport
-      parentRoute: typeof AuthRoute
-    }
     '/_api/hello': {
       id: '/_api/hello'
       path: '/hello'
@@ -214,32 +101,6 @@ declare module '@tanstack/react-router' {
     }
   }
 }
-
-interface AuthRouteChildren {
-  AuthSignInRoute: typeof AuthSignInRoute
-  AuthSignOutRoute: typeof AuthSignOutRoute
-  AuthSignUpRoute: typeof AuthSignUpRoute
-}
-
-const AuthRouteChildren: AuthRouteChildren = {
-  AuthSignInRoute: AuthSignInRoute,
-  AuthSignOutRoute: AuthSignOutRoute,
-  AuthSignUpRoute: AuthSignUpRoute,
-}
-
-const AuthRouteWithChildren = AuthRoute._addFileChildren(AuthRouteChildren)
-
-interface ProtectedRouteChildren {
-  ProtectedExampleProtectedRouteRoute: typeof ProtectedExampleProtectedRouteRoute
-}
-
-const ProtectedRouteChildren: ProtectedRouteChildren = {
-  ProtectedExampleProtectedRouteRoute: ProtectedExampleProtectedRouteRoute,
-}
-
-const ProtectedRouteWithChildren = ProtectedRoute._addFileChildren(
-  ProtectedRouteChildren,
-)
 
 interface PublicRouteChildren {
   PublicTestParsersRoute: typeof PublicTestParsersRoute
@@ -255,8 +116,6 @@ const PublicRouteWithChildren =
   PublicRoute._addFileChildren(PublicRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
-  AuthRoute: AuthRouteWithChildren,
-  ProtectedRoute: ProtectedRouteWithChildren,
   PublicRoute: PublicRouteWithChildren,
   ApiHelloRoute: ApiHelloRoute,
 }
