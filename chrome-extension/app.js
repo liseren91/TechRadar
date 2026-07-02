@@ -1,3 +1,12 @@
+import { calculateMaturity, calculateImpact } from './lib/scoring.js'
+import { categorizeByKeywords, CATEGORY_KEYWORDS } from './lib/categorize.js'
+import { seededJitter } from './lib/jitter.js'
+import { BoundedCache } from './lib/lru-cache.js'
+import {
+  DATA_BASE_URL, DIGEST_TTL_MS, TRENDS_TTL_MS,
+  TRANSLATION_CACHE_MAX, TRANSLATION_TTL_MS,
+} from './lib/config.js'
+
 /**
  * Tech Evolution Radar - Chrome Extension
  * Full Dashboard Version with AI Insight & Evolution Chains
@@ -36,17 +45,6 @@ const SOURCE_CONFIG = {
     github: { label: 'GitHub', icon: '📦' },
     arxiv: { label: 'arXiv', icon: '📄' },
     hackernews: { label: 'Hacker News', icon: '🔶' },
-};
-
-const CATEGORY_KEYWORDS = {
-    ai: ['ai', 'gpt', 'llm', 'machine learning', 'neural', 'openai', 'anthropic', 'claude', 'chatgpt', 'transformer', 'deep learning', 'nlp', 'computer vision'],
-    quantum: ['quantum', 'qubit', 'qiskit', 'quantum computing'],
-    robotics: ['robot', 'humanoid', 'autonomous', 'tesla bot', 'optimus', 'drone'],
-    web3: ['blockchain', 'crypto', 'ethereum', 'bitcoin', 'defi', 'nft', 'web3', 'solana'],
-    cybersecurity: ['security', 'hack', 'vulnerability', 'zero-day', 'ransomware', 'encryption', 'malware'],
-    biotech: ['crispr', 'gene', 'biotech', 'drug', 'fda', 'clinical trial', 'protein', 'alphafold', 'dna'],
-    energy: ['fusion', 'solar', 'battery', 'renewable', 'nuclear', 'energy storage', 'ev', 'electric vehicle'],
-    space: ['spacex', 'nasa', 'rocket', 'satellite', 'starship', 'mars', 'moon', 'orbit'],
 };
 
 // ============================================
@@ -232,7 +230,7 @@ const elements = {
 // TRANSLATION API
 // ============================================
 
-const translationCache = new Map();
+const translationCache = new BoundedCache(TRANSLATION_CACHE_MAX, TRANSLATION_TTL_MS);
 
 function getTranslationCacheKey(text, toLang) {
     return `${toLang}:${text.slice(0, 100)}`;
@@ -243,10 +241,9 @@ async function translateText(text, toLang = 'ru') {
     
     // Check cache
     const cacheKey = getTranslationCacheKey(text, toLang);
-    if (translationCache.has(cacheKey)) {
-        return translationCache.get(cacheKey);
-    }
-    
+    const cached = translationCache.get(cacheKey);
+    if (cached !== undefined) return cached;
+
     try {
         // Truncate very long texts (API limit)
         const truncatedText = text.slice(0, 500);
@@ -567,36 +564,6 @@ async function fetchHackerNews() {
 // ============================================
 // HELPER FUNCTIONS
 // ============================================
-
-function categorizeByKeywords(text) {
-    const lowerText = (text || '').toLowerCase();
-    for (const [category, keywords] of Object.entries(CATEGORY_KEYWORDS)) {
-        if (keywords.some(kw => lowerText.includes(kw))) {
-            return category;
-        }
-    }
-    return 'ai';
-}
-
-function calculateMaturity(popularity) {
-    if (popularity > 10000) return 'mass-market';
-    if (popularity > 1000) return 'early-adopter';
-    if (popularity > 100) return 'prototype';
-    return 'research';
-}
-
-function calculateImpact(stars, forks = 0) {
-    const combined = stars + forks * 2;
-    if (combined > 50000) return 10;
-    if (combined > 20000) return 9;
-    if (combined > 10000) return 8;
-    if (combined > 5000) return 7;
-    if (combined > 2000) return 6;
-    if (combined > 1000) return 5;
-    if (combined > 500) return 4;
-    if (combined > 100) return 3;
-    return 2;
-}
 
 function formatTimeAgo(date) {
     const now = new Date();
@@ -1207,7 +1174,7 @@ function renderRadar() {
         
         // Distribute items around the ring
         const angle = (index / filteredItems.length) * Math.PI * 2 - Math.PI / 2;
-        const jitter = (Math.random() - 0.5) * (ringRadius * 0.3);
+        const jitter = seededJitter(item.id, index) * (ringRadius * 0.3);
         const x = centerX + Math.cos(angle) * (ringRadius - 20 + jitter);
         const y = centerY + Math.sin(angle) * (ringRadius - 20 + jitter);
 
