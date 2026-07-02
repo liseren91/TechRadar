@@ -13,14 +13,17 @@ const WEEK_MS = 7 * 24 * 60 * 60 * 1000
 
 function bucketByWeek(history: SignalSnapshot[], topicId: string): number[] {
   if (history.length === 0) return []
-  const sorted = [...history].sort((a, b) => +new Date(a.date) - +new Date(b.date))
+  const sorted = [...history].sort(
+    (a, b) => +new Date(a.date) - +new Date(b.date),
+  )
   const start = +new Date(sorted[0].date)
   const weeks: number[] = []
   for (const snap of sorted) {
     const idx = Math.floor((+new Date(snap.date) - start) / WEEK_MS)
     weeks[idx] = (weeks[idx] ?? 0) + (snap.topics[topicId] ?? 0)
   }
-  for (let i = 0; i < weeks.length; i++) if (weeks[i] === undefined) weeks[i] = 0
+  for (let i = 0; i < weeks.length; i++)
+    if (weeks[i] === undefined) weeks[i] = 0
   return weeks
 }
 
@@ -42,8 +45,13 @@ export function computeTrends(
     if (last > prev) trajectory = 'rising'
     else if (last < prev) trajectory = 'cooling'
     topics.push({
-      id, label: meta.label, category: meta.category, stage: meta.stage,
-      trajectory, momentum: Math.round(momentum * 100) / 100, weeklyCounts: weekly,
+      id,
+      label: meta.label,
+      category: meta.category,
+      stage: meta.stage,
+      trajectory,
+      momentum: Math.round(momentum * 100) / 100,
+      weeklyCounts: weekly,
     })
   }
   return topics.sort((a, b) => b.momentum - a.momentum)

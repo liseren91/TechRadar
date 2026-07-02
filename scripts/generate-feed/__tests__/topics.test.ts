@@ -21,7 +21,10 @@ describe('tagTopics', () => {
 
 describe('snapshotFromTexts', () => {
   it('counts topic occurrences per day', () => {
-    const snap = snapshotFromTexts(['llm agent', 'llm agent tools'], '2026-06-15')
+    const snap = snapshotFromTexts(
+      ['llm agent', 'llm agent tools'],
+      '2026-06-15',
+    )
     expect(snap.date).toBe('2026-06-15')
     expect(snap.topics['llm-agents']).toBe(2)
   })

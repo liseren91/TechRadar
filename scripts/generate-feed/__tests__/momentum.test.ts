@@ -1,7 +1,9 @@
 import { describe, it, expect } from 'vitest'
 import { computeTrends } from '../momentum'
 
-const labels = { 'llm-agents': { label: 'LLM Agents', category: 'ai', stage: 'prototype' } }
+const labels = {
+  'llm-agents': { label: 'LLM Agents', category: 'ai', stage: 'prototype' },
+}
 
 describe('computeTrends', () => {
   it('marks a topic rising when recent week exceeds prior week', () => {

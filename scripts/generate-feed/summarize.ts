@@ -1,8 +1,15 @@
 import { z } from 'zod'
 import type { RawPost } from './sources'
 
-const TweetTriple = z.tuple([z.string().min(1), z.string().min(1), z.string().min(1)])
-const LangBlockSchema = z.object({ headline: z.string().min(1), tweets: TweetTriple })
+const TweetTriple = z.tuple([
+  z.string().min(1),
+  z.string().min(1),
+  z.string().min(1),
+])
+const LangBlockSchema = z.object({
+  headline: z.string().min(1),
+  tweets: TweetTriple,
+})
 
 export const DigestItemSchema = z.object({
   id: z.string(),
@@ -16,7 +23,16 @@ export const DigestItemSchema = z.object({
 export type DigestItem = z.infer<typeof DigestItemSchema>
 
 const ModelResponseSchema = z.object({
-  category: z.enum(['ai','quantum','robotics','web3','cybersecurity','biotech','energy','space']),
+  category: z.enum([
+    'ai',
+    'quantum',
+    'robotics',
+    'web3',
+    'cybersecurity',
+    'biotech',
+    'energy',
+    'space',
+  ]),
   en: LangBlockSchema,
   ru: LangBlockSchema,
 })
@@ -44,7 +60,10 @@ export async function summarizePost(
     system: DIGEST_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: user }],
   })
-  const text = (resp.content ?? []).filter((b: any) => b.type === 'text').map((b: any) => b.text).join('')
+  const text = (resp.content ?? [])
+    .filter((b: any) => b.type === 'text')
+    .map((b: any) => b.text)
+    .join('')
   const json = JSON.parse(text)
   const parsed = ModelResponseSchema.parse(json)
   return { en: parsed.en, ru: parsed.ru, category: parsed.category }

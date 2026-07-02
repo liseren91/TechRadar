@@ -10,7 +10,10 @@ const DIGEST_MAX = 10
 
 function stableId(url: string): string {
   let h = 2166136261
-  for (let i = 0; i < url.length; i++) { h ^= url.charCodeAt(i); h = Math.imul(h, 16777619) }
+  for (let i = 0; i < url.length; i++) {
+    h ^= url.charCodeAt(i)
+    h = Math.imul(h, 16777619)
+  }
   return 'd-' + (h >>> 0).toString(36)
 }
 
@@ -21,7 +24,10 @@ function todayIso(): string {
 
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY
-  if (!apiKey) throw new Error('ANTHROPIC_API_KEY is required (set as a GitHub Actions secret)')
+  if (!apiKey)
+    throw new Error(
+      'ANTHROPIC_API_KEY is required (set as a GitHub Actions secret)',
+    )
   mkdirSync(DATA_DIR, { recursive: true })
 
   const posts = await fetchAllPosts()
@@ -37,15 +43,23 @@ async function main() {
     try {
       const s = await summarizePost(p, client)
       const item = DigestItemSchema.parse({
-        id: stableId(p.url), source: p.source, sourceUrl: p.url,
-        publishedAt: p.publishedAt, category: s.category, en: s.en, ru: s.ru,
+        id: stableId(p.url),
+        source: p.source,
+        sourceUrl: p.url,
+        publishedAt: p.publishedAt,
+        category: s.category,
+        en: s.en,
+        ru: s.ru,
       })
       items.push(item)
     } catch (e) {
       console.warn(`[digest] skip ${p.url}:`, (e as Error).message)
     }
   }
-  writeFileSync(`${DATA_DIR}/digest.json`, JSON.stringify({ generatedAt: new Date().toISOString(), items }, null, 2))
+  writeFileSync(
+    `${DATA_DIR}/digest.json`,
+    JSON.stringify({ generatedAt: new Date().toISOString(), items }, null, 2),
+  )
 
   // 2) Trend snapshot + history (append today)
   const historyPath = `${DATA_DIR}/history.json`
@@ -60,12 +74,27 @@ async function main() {
   writeFileSync(historyPath, JSON.stringify(trimmed, null, 2))
 
   const labels = Object.fromEntries(
-    Object.entries(TOPIC_LABELS).map(([id, d]) => [id, { label: d.label, category: d.category, stage: d.stage }]),
+    Object.entries(TOPIC_LABELS).map(([id, d]) => [
+      id,
+      { label: d.label, category: d.category, stage: d.stage },
+    ]),
   )
   const topics = computeTrends(trimmed, labels)
-  writeFileSync(`${DATA_DIR}/trends.json`, JSON.stringify({ generatedAt: new Date().toISOString(), window: 'rolling-120d', topics }, null, 2))
+  writeFileSync(
+    `${DATA_DIR}/trends.json`,
+    JSON.stringify(
+      { generatedAt: new Date().toISOString(), window: 'rolling-120d', topics },
+      null,
+      2,
+    ),
+  )
 
-  console.log(`[generate-feed] digest items: ${items.length}, topics: ${topics.length}`)
+  console.log(
+    `[generate-feed] digest items: ${items.length}, topics: ${topics.length}`,
+  )
 }
 
-main().catch((e) => { console.error(e); process.exit(1) })
+main().catch((e) => {
+  console.error(e)
+  process.exit(1)
+})
