@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T18:21:34.383Z",
+  "generatedAt": "2026-07-03T09:35:54.755Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -10,7 +10,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        57
+        116
       ]
     },
     {
@@ -21,7 +21,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        56
+        110
       ]
     },
     {
@@ -32,7 +32,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        12
+        24
       ]
     },
     {
@@ -43,7 +43,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        2
+        4
       ]
     },
     {
@@ -54,7 +54,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        3
+        6
       ]
     }
   ]
