@@ -35,8 +35,16 @@
 
 ```bash
 bun install
+bun run dev
+```
+
+Файл `.env` **не обязателен** — дашборд работает без секретов, данные берутся из публичных API.
+
+Опционально (аналитика):
+
+```bash
 cp .env.example .env
-# Заполните переменные окружения (см. ниже)
+# задайте VITE_INSTRUMENTATION_SCRIPT_SRC, если нужен скрипт метрик
 ```
 
 ### Разработка
@@ -62,19 +70,53 @@ bun run serve
 
 ## Переменные окружения
 
-Дашборд публичный и не требует секретов для запуска. Опционально скопируйте `.env.example` в `.env`:
+### Что нужно для запуска
 
-| Переменная | Описание |
-|------------|----------|
-| `VITE_INSTRUMENTATION_SCRIPT_SRC` | URL скрипта аналитики (опционально) |
+| Сценарий | Нужны ли секреты? |
+|----------|-------------------|
+| `bun run dev` — локальная разработка | **Нет** |
+| `bun run build` + `bun run start` — production | **Нет** |
+| Chrome Extension | **Нет** (данные из публичных API и GitHub raw) |
+| `bun run generate:feed` — локальная генерация дайджеста | **Да** — `ANTHROPIC_API_KEY` |
+| CI (`generate-feed` workflow) | **Да** — secret `ANTHROPIC_API_KEY` в GitHub |
 
-### CI / генерация дайджеста
+Приложение **не использует** внешнюю БД, Appwrite или другие платформы с API-ключами. Кэш live-данных — in-memory на сервере.
 
-| Переменная | Где используется |
-|------------|------------------|
-| `ANTHROPIC_API_KEY` | GitHub Actions secret для `bun run generate:feed` |
+### Опционально (`.env`)
 
-> **Важно:** `ANTHROPIC_API_KEY` не должен попадать в репозиторий, клиентский код или артефакты расширения. Используется только в CI.
+Скопируйте `.env.example` → `.env` только если нужны дополнительные настройки:
+
+| Переменная | Обязательна | Описание |
+|------------|-------------|----------|
+| `VITE_INSTRUMENTATION_SCRIPT_SRC` | Нет | URL скрипта аналитики/инструментации в `<head>` |
+
+### Генерация дайджеста
+
+| Переменная | Обязательна | Где |
+|------------|-------------|-----|
+| `ANTHROPIC_API_KEY` | Да, только для `generate:feed` | Локально в `.env` или GitHub Actions secret |
+
+```bash
+# Локальный прогон пайплайна (не нужен для dev-сервера)
+ANTHROPIC_API_KEY=sk-ant-... bun run generate:feed
+```
+
+> **Важно:** `ANTHROPIC_API_KEY` не должен попадать в репозиторий, клиентский код, `public/data/*.json` или расширение Chrome. Скрипт `check:secrets` проверяет артефакты перед коммитом в CI.
+
+### Production-сервер (`server.ts`)
+
+Все переменные ниже опциональны — есть разумные значения по умолчанию:
+
+| Переменная | По умолчанию | Описание |
+|------------|--------------|----------|
+| `PORT` | `3000` | Порт HTTP-сервера |
+| `ASSET_PRELOAD_MAX_SIZE` | `5242880` (5 MB) | Макс. размер файла для preload в память |
+| `ASSET_PRELOAD_INCLUDE_PATTERNS` | все файлы | Glob-паттерны для preload |
+| `ASSET_PRELOAD_EXCLUDE_PATTERNS` | — | Исключения из preload |
+| `ASSET_PRELOAD_VERBOSE_LOGGING` | `false` | Подробные логи preload |
+| `ASSET_PRELOAD_ENABLE_ETAG` | `true` | ETag для статики |
+| `ASSET_PRELOAD_ENABLE_GZIP` | `true` | Gzip для статики |
+| `IMAGINE_PREVIEW` | `false` | Отключить кэширование (preview-режим) |
 
 ## Источники данных
 
@@ -108,7 +150,7 @@ bun run serve
 
 ## Chrome Extension
 
-Расширение находится в `chrome-extension/` и заменяет страницу новой вкладки (`chrome_url_overrides.newtab`).
+Расширение находится в `chrome-extension/` и заменяет стандартную страницу новой вкладки.
 
 ### Установка вручную
 
@@ -116,7 +158,107 @@ bun run serve
 2. Включите «Режим разработчика»
 3. Нажмите «Загрузить распакованное расширение» и выберите папку `chrome-extension/`
 
-Или скачайте ZIP через баннер на дашборде (server function `downloadExtensionFn`).
+Или скачайте ZIP через баннер на веб-дашборде (server function `downloadExtensionFn`).
+
+### Как расширение показывает дашборд во вкладке браузера
+
+**Короткий ответ:** расширение не «подключается» к сайту и не обновляет его. Оно **подменяет** страницу новой вкладки собственным дашбордом и самостоятельно загружает данные из открытых API и статических JSON-файлов репозитория.
+
+#### 1. Подмена новой вкладки
+
+В `manifest.json` задано:
+
+```json
+"chrome_url_overrides": { "newtab": "newtab.html" }
+```
+
+После установки каждый раз, когда вы открываете новую вкладку (`Ctrl+T`), Chrome вместо пустой страницы или Google загружает `chrome-extension://<id>/newtab.html` — локальную HTML-страницу расширения с тем же UI, что и веб-дашборд (радар, лента, AI Insight, цепочки эволюции).
+
+#### 2. Загрузка данных при открытии вкладки
+
+При загрузке страницы `app.js` запускает `init()`:
+
+```javascript
+await fetchAllData()   // GitHub, arXiv, Hacker News
+await fetchTrends()    // trends.json из репозитория
+await fetchDigest()    // digest.json из репозитория
+render()
+setInterval(fetchAllData, 10 * 60 * 1000)  // автообновление каждые 10 мин
+```
+
+То есть **каждая новая вкладка** — это свежий запуск дашборда: сначала проверяется кэш, затем при необходимости идут сетевые запросы.
+
+#### 3. Откуда берутся данные
+
+| Тип данных | Источник | Как обновляется |
+|------------|----------|-----------------|
+| Live-сигналы (радар, лента, статистика) | Прямые запросы из браузера к `api.github.com`, `export.arxiv.org`, `hacker-news.firebaseio.com` | При каждом открытии вкладки (если кэш старше 5 мин) + автообновление каждые 10 мин + кнопка Refresh |
+| AI Blog Digest | `digest.json` на GitHub (`raw.githubusercontent.com/.../public/data/digest.json`) | Ежедневно через CI (`generate-feed` workflow) |
+| Тренды по темам | `trends.json` — тот же путь | Ежедневно через CI |
+| Переводы EN→RU | MyMemory Translation API | По запросу пользователя, с LRU-кэшем |
+
+Расширение **не ходит на ваш сервер** (`localhost:3000` или production). Оно работает автономно: live-данные — напрямую из публичных API, дайджест и тренды — из статики в репозитории.
+
+#### 4. Кэширование в браузере
+
+Чтобы не перегружать API при частом открытии вкладок, данные сохраняются в `chrome.storage.local`:
+
+| Ключ | TTL | Содержимое |
+|------|-----|------------|
+| `techRadarCache` | 5 мин | Сигналы GitHub/arXiv/HN + статистика |
+| `techRadarDigest` | 6 ч | AI-дайджест блогов |
+| `techRadarTrends` | 6 ч | Тренды по темам |
+| `techRadarLanguage` | — | Выбранный язык (EN/RU) |
+
+Если кэш ещё свежий — вкладка отрисовывается мгновенно из локального хранилища. Если устарел — идёт фоновый fetch и UI перерисовывается.
+
+#### 5. Связь с веб-дашбордом
+
+Веб-сайт и расширение — **два независимых клиента** с похожим интерфейсом:
+
+```mermaid
+flowchart TB
+    subgraph ext [Chrome Extension — новая вкладка]
+        NT[newtab.html + app.js]
+        CS[chrome.storage.local]
+        NT --> CS
+    end
+
+    subgraph web [Веб-дашборд]
+        React[React + TanStack Start]
+        SF[server functions + кэш]
+        React --> SF
+    end
+
+    subgraph sources [Общие источники]
+        GH[GitHub API]
+        AX[arXiv API]
+        HN[Hacker News API]
+        JSON["public/data/*.json\n(digest, trends)"]
+    end
+
+    NT -->|fetch напрямую| GH
+    NT -->|fetch напрямую| AX
+    NT -->|fetch напрямую| HN
+    NT -->|fetch| JSON
+
+    SF --> GH
+    SF --> AX
+    SF --> HN
+    SF --> JSON
+
+    CI[GitHub Actions\ngenerate:feed] -->|commit daily| JSON
+```
+
+| | Веб-дашборд | Chrome Extension |
+|---|-------------|------------------|
+| Где работает | Сайт (SSR + server functions) | Локально в браузере |
+| Live-источники | GitHub, arXiv, HN + Semantic Scholar, PubMed, HAL… | GitHub, arXiv, HN |
+| Дайджест/тренды | Через server functions / static | Напрямую с GitHub raw |
+| Кэш | Серверный (in-memory) | `chrome.storage.local` |
+| Обновление | TanStack Query + кнопка в Parser Control | При открытии вкладки + interval 10 мин |
+
+**Итого:** установив расширение, вы получаете живой дашборд **на каждой новой вкладке** — Chrome подставляет его вместо стандартной страницы, а `app.js` сам подтягивает и кэширует данные. Веб-сайт при этом не меняется; оба клиента параллельно читают одни и те же внешние источники.
 
 ## Структура проекта
 
