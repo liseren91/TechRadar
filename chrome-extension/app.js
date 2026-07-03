@@ -673,13 +673,13 @@ async function fetchAllData() {
     }
 }
 
-async function fetchTrends() {
+async function fetchTrends(force = false) {
     try {
         const cachedRaw = await new Promise((resolve) => {
             if (chrome?.storage?.local) chrome.storage.local.get(['techRadarTrends'], (r) => resolve(r.techRadarTrends || null))
             else resolve(JSON.parse(localStorage.getItem('techRadarTrends') || 'null'))
         })
-        if (cachedRaw && Date.now() - cachedRaw.timestamp < TRENDS_TTL_MS) {
+        if (!force && cachedRaw && Date.now() - cachedRaw.timestamp < TRENDS_TTL_MS) {
             state.trends = cachedRaw.topics || []
             return
         }
@@ -695,13 +695,13 @@ async function fetchTrends() {
     }
 }
 
-async function fetchDigest() {
+async function fetchDigest(force = false) {
     try {
         const cachedRaw = await new Promise((resolve) => {
             if (chrome?.storage?.local) chrome.storage.local.get(['techRadarDigest'], (r) => resolve(r.techRadarDigest || null))
             else resolve(JSON.parse(localStorage.getItem('techRadarDigest') || 'null'))
         })
-        if (cachedRaw && Date.now() - cachedRaw.timestamp < DIGEST_TTL_MS) {
+        if (!force && cachedRaw && Date.now() - cachedRaw.timestamp < DIGEST_TTL_MS) {
             state.digest = cachedRaw.items || []
             return
         }
@@ -1264,8 +1264,8 @@ function setupEventListeners() {
     elements.refreshBtn.addEventListener('click', async () => {
         elements.refreshBtn.classList.add('spinning');
         await fetchAllData();
-        await fetchTrends();
-        await fetchDigest();
+        await fetchTrends(true);
+        await fetchDigest(true);
         render();
         elements.refreshBtn.classList.remove('spinning');
     });
