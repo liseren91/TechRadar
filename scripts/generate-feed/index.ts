@@ -3,7 +3,7 @@ import Anthropic from '@anthropic-ai/sdk'
 import { fetchAllPosts } from './sources'
 import { summarizePost, DigestItemSchema, type DigestItem } from './summarize'
 import { computeTrends, type SignalSnapshot } from './momentum'
-import { TOPIC_LABELS, snapshotFromTexts } from './topics'
+import { TOPIC_LABELS, snapshotFromTexts, collectTopicSignals } from './topics'
 
 const DATA_DIR = 'public/data'
 const DIGEST_MAX = 10
@@ -80,6 +80,8 @@ async function main() {
     ]),
   )
   const topics = computeTrends(trimmed, labels)
+  const signalsByTopic = collectTopicSignals(posts, 5)
+  for (const t of topics) t.signals = signalsByTopic[t.id] ?? []
   writeFileSync(
     `${DATA_DIR}/trends.json`,
     JSON.stringify(

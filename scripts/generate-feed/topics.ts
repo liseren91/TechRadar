@@ -1,4 +1,4 @@
-import type { SignalSnapshot } from './momentum'
+import type { SignalSnapshot, Signal } from './momentum'
 
 export const TOPIC_LABELS: Record<
   string,
@@ -94,4 +94,23 @@ export function snapshotFromTexts(
     for (const id of tagTopics(text)) topics[id] = (topics[id] ?? 0) + 1
   }
   return { date, topics }
+}
+
+export function collectTopicSignals(
+  posts: Array<{ title: string; url: string; source: string; publishedAt: string; contentText?: string }>,
+  maxPerTopic = 5,
+): Record<string, Signal[]> {
+  const byTopic: Record<string, Signal[]> = {}
+  for (const p of posts) {
+    const ids = tagTopics(`${p.title} ${p.contentText ?? ''}`)
+    for (const id of ids) {
+      if (!byTopic[id]) byTopic[id] = []
+      byTopic[id].push({ title: p.title, url: p.url, source: p.source, publishedAt: p.publishedAt })
+    }
+  }
+  for (const id of Object.keys(byTopic)) {
+    byTopic[id].sort((a, b) => +new Date(b.publishedAt) - +new Date(a.publishedAt))
+    byTopic[id] = byTopic[id].slice(0, maxPerTopic)
+  }
+  return byTopic
 }

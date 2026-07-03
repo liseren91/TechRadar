@@ -1,4 +1,5 @@
 export type SignalSnapshot = { date: string; topics: Record<string, number> }
+export type Signal = { title: string; url: string; source: string; publishedAt: string }
 export type Topic = {
   id: string
   label: string
@@ -7,6 +8,7 @@ export type Topic = {
   trajectory: 'rising' | 'stable' | 'cooling'
   momentum: number
   weeklyCounts: number[]
+  signals?: Signal[]
 }
 
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000
