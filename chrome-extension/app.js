@@ -926,6 +926,14 @@ function renderEvolutionChains() {
         const momentumText = topic.trajectory === 'rising'
             ? `${t.strongMomentumDetected} +${pct}%. ${t.expectedToAdvance} ${getLocalizedMaturity(nextStage(topic.stage))} 6-12 ${t.months}.`
             : `${t.stableActivity} ${topic.label}. ${t.monitoringForBreakthrough}`
+        const signals = Array.isArray(topic.signals) ? topic.signals : []
+        const signalsHtml = signals.length
+            ? `<div class="chain-signals">${signals.map((s) => `
+                <a class="chain-signal" href="${escapeHtml(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">
+                    <span class="chain-signal-title">${escapeHtml(s.title)}</span>
+                    <span class="chain-signal-meta">${escapeHtml((SOURCE_META[s.source] && SOURCE_META[s.source].label) || s.source)} · ${escapeHtml(formatTimeAgo(new Date(s.publishedAt)))}</span>
+                </a>`).join('')}</div>`
+            : `<p class="chain-signal-empty">${escapeHtml(t.noItems)}</p>`
         return `
             <div class="evolution-chain ${isExpanded ? 'expanded' : ''}" data-chain-id="${escapeHtml(topic.id)}">
                 <div class="chain-header">
@@ -941,12 +949,13 @@ function renderEvolutionChains() {
                     <div class="chain-expand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div>
                 </div>
                 <div class="chain-sparkline" style="color:${cfg.color}">${sparkline(topic.weeklyCounts || [])}</div>
-                ${isExpanded ? `<div class="chain-prediction"><p class="chain-prediction-label">${t.trajectoryAnalysis}</p><p class="chain-prediction-text">${escapeHtml(momentumText)}</p></div>` : ''}
+                ${isExpanded ? `<div class="chain-expanded">${signalsHtml}<div class="chain-prediction"><p class="chain-prediction-label">${t.trajectoryAnalysis}</p><p class="chain-prediction-text">${escapeHtml(momentumText)}</p></div></div>` : ''}
             </div>`
     }).join('')
 
     elements.evolutionChains.querySelectorAll('.evolution-chain').forEach((el) => {
-        el.addEventListener('click', () => {
+        el.addEventListener('click', (e) => {
+            if (e.target.closest('.chain-signal')) return
             const id = el.dataset.chainId
             state.expandedChain = state.expandedChain === id ? null : id
             renderEvolutionChains()
