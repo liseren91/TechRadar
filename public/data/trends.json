@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T09:35:54.755Z",
+  "generatedAt": "2026-07-03T09:39:51.891Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -11,6 +11,38 @@
       "momentum": 1,
       "weeklyCounts": [
         116
+      ],
+      "signals": [
+        {
+          "title": "AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+          "url": "https://www.latent.space/p/aiewf-daily-dispatch-locomotives",
+          "source": "latent-space",
+          "publishedAt": "2026-07-03T05:11:43.000Z"
+        },
+        {
+          "title": "Vercel's Andrew Qu on why agents are a new kind of software",
+          "url": "https://www.latent.space/p/vercel-agents-new-software",
+          "source": "latent-space",
+          "publishedAt": "2026-07-03T00:08:18.000Z"
+        },
+        {
+          "title": "The website of the future may assemble itself for every visitor",
+          "url": "https://www.latent.space/p/the-website-of-the-future",
+          "source": "latent-space",
+          "publishedAt": "2026-07-02T21:25:14.000Z"
+        },
+        {
+          "title": "llm-coding-agent 0.1a0",
+          "url": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-02T19:33:12.000Z"
+        },
+        {
+          "title": "Skill engineering and the case against one-shot AI design",
+          "url": "https://www.latent.space/p/skill-engineering-design",
+          "source": "latent-space",
+          "publishedAt": "2026-07-02T14:36:05.000Z"
+        }
       ]
     },
     {
@@ -22,6 +54,38 @@
       "momentum": 1,
       "weeklyCounts": [
         110
+      ],
+      "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-900",
+          "source": "latent-space",
+          "publishedAt": "2026-07-02T07:10:14.000Z"
+        },
+        {
+          "title": "🔬 The Coolest Diffusion Research Isn't in LLMs — Evan Feinberg & Sergey Edunov, Genesis Molecular AI",
+          "url": "https://www.latent.space/p/the-coolest-diffusion-research-isnt",
+          "source": "latent-space",
+          "publishedAt": "2026-07-01T14:42:39.000Z"
+        },
+        {
+          "title": "AIEWF Daily Dispatch: Loops, Software Factories & Forward Deployed Engineers",
+          "url": "https://www.latent.space/p/aiewf-daily-dispatch-loops",
+          "source": "latent-space",
+          "publishedAt": "2026-07-01T04:46:21.000Z"
+        },
+        {
+          "title": "[AINews] Sonnet 5 today, and Fable 5 tomorrow",
+          "url": "https://www.latent.space/p/ainews-sonnet-5-today-and-fable-5",
+          "source": "latent-space",
+          "publishedAt": "2026-07-01T03:01:09.000Z"
+        },
+        {
+          "title": "Hugging Face and Cerebras bring Gemma 4 to real-time voice AI",
+          "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+          "source": "hf",
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        }
       ]
     },
     {
@@ -33,6 +97,38 @@
       "momentum": 1,
       "weeklyCounts": [
         24
+      ],
+      "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-07e",
+          "source": "latent-space",
+          "publishedAt": "2026-06-30T06:47:27.000Z"
+        },
+        {
+          "title": "[AINews] OpenAI reports median internal Codex output tokens grew 56x in Research, 32x in Customer Support, 27x in Engineering, and 13x in Legal since November 2025.",
+          "url": "https://www.latent.space/p/ainews-openai-reports-median-internal",
+          "source": "latent-space",
+          "publishedAt": "2026-06-26T01:12:30.000Z"
+        },
+        {
+          "title": "Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks",
+          "url": "https://www.latent.space/p/databricks",
+          "source": "latent-space",
+          "publishedAt": "2026-06-24T18:53:16.000Z"
+        },
+        {
+          "title": "[AINews] Claude Tag: Multiplayer, Proactive, Persistent Agents in Slack",
+          "url": "https://www.latent.space/p/ainews-claude-tag-multiplayer-proactive",
+          "source": "latent-space",
+          "publishedAt": "2026-06-24T07:14:26.000Z"
+        },
+        {
+          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+          "source": "hf",
+          "publishedAt": "2026-05-14T18:55:01.000Z"
+        }
       ]
     },
     {
@@ -44,6 +140,20 @@
       "momentum": 1,
       "weeklyCounts": [
         4
+      ],
+      "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-07e",
+          "source": "latent-space",
+          "publishedAt": "2026-06-30T06:47:27.000Z"
+        },
+        {
+          "title": "Bringing AI to the next generation of fusion energy",
+          "url": "https://deepmind.google/blog/bringing-ai-to-the-next-generation-of-fusion-energy/",
+          "source": "deepmind",
+          "publishedAt": "2025-10-23T22:04:14.000Z"
+        }
       ]
     },
     {
@@ -55,6 +165,26 @@
       "momentum": 1,
       "weeklyCounts": [
         6
+      ],
+      "signals": [
+        {
+          "title": "Engineering more resilient crops for a warming climate",
+          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
+          "source": "deepmind",
+          "publishedAt": "2025-12-04T16:23:24.000Z"
+        },
+        {
+          "title": "AlphaFold: Five years of impact",
+          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T16:00:12.000Z"
+        },
+        {
+          "title": "Revealing a key protein behind heart disease",
+          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T15:52:51.000Z"
+        }
       ]
     }
   ]
