@@ -1,6 +1,98 @@
 {
-  "generatedAt": "2026-07-04T08:51:06.336Z",
+  "generatedAt": "2026-07-05T09:23:18.230Z",
   "items": [
+    {
+      "id": "d-8rspb6",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+      "publishedAt": "2026-07-05T01:00:48.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: AI agents can now catch critical data-loss bugs in production libraries before release, but their work still needs human validation and cross-model review to catch subtle behavioral inconsistencies.",
+        "tweets": [
+          "Claude Fable found a catastrophic bug in sqlite-utils where delete_where() poisoned the connection and silently lost all subsequent writes. Human author missed it entirely—$149 in compute surfaced a 4.0-blocking data loss issue.",
+          "37 prompts, 34 commits, 1,321 lines changed across 30 files. Agent did most of the heavy lifting on transaction handling redesign while author attended a parade. Harder tasks paradoxically give agents breathing room to work autonomously.",
+          "Two AI models reviewing each other's code (Claude then GPT-5.5) caught transaction edge cases the single agent missed—db.query() auto-committing side effects before raising errors. Cross-model validation is becoming standard practice."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ-агенты находят критические баги в готовых библиотеках перед релизом, но их работу всё равно нужно проверять людьми и взаимной проверкой между моделями.",
+        "tweets": [
+          "Claude Fable обнаружила катастрофический баг в sqlite-utils: delete_where() оставляла соединение в невалидном состоянии и молча теряла все последующие записи. Автор сам это не заметил—$149 вычислений выявили блокирующую проблему потери данных.",
+          "37 запросов, 34 коммита, 1321 строка кода изменена в 30 файлах. Агент сделал основную работу по переделке транзакций, пока автор был на параде. Сложные задачи дают агентам время работать независимо.",
+          "Две ИИ-модели проверяли работу друг друга (Claude и GPT-5.5) и нашли баги с побочными эффектами в db.query()—автоматический коммит перед выбросом ошибки. Взаимная проверка моделей становится стандартом."
+        ]
+      }
+    },
+    {
+      "id": "d-t3wanv",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/5/sqlite-utils/#atom-everything",
+      "publishedAt": "2026-07-05T00:47:38.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: sqlite-utils 4.0rc2 demonstrates AI-assisted open source development at scale, reducing engineering costs while maintaining quality.",
+        "tweets": [
+          "sqlite-utils 4.0rc2 released with majority of code written by Claude AI. Cost: $149.25 for substantial feature work. Shows economic shift in open source development.",
+          "AI pair programming isn't replacing engineers—it's compressing weeks of work into hours. The real skill now is directing and validating the output.",
+          "This release signals a pivot point: when LLMs can handle 80% of implementation work, maintainers focus shifts from coding to architecture and review."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: sqlite-utils 4.0rc2 показывает, что AI-ассистенты готовы писать качественный код в open source, меняя экономику разработки.",
+        "tweets": [
+          "Большую часть sqlite-utils 4.0rc2 написал Claude AI за $149. Это не замена разработчикам—это сжатие недель работы в часы за счёт AI.",
+          "Когда нейросети берут на себя 80% реализации, сила разработчика в архитектуре, дизайне и валидации. Меняется профессия, не исчезает.",
+          "Открытый исходный код вступает в эру AI-ассистентов. Критично: кто валидирует, кто решает, какой код попадает в проект."
+        ]
+      }
+    },
+    {
+      "id": "d-w574q4",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything",
+      "publishedAt": "2026-07-04T23:09:02.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Compressing a world map to 445 bytes shows how clever encoding can make rich data fit in minimal space—useful for bandwidth-constrained environments and code golf.",
+        "tweets": [
+          "A complete ASCII world map fits in 445 bytes using deflate compression + base64 encoding. Iwo Kadziela paired it with JavaScript DecompressionStream for instant rendering.",
+          "fetch() can now decompress data: URIs directly with pipeThrough(new DecompressionStream('deflate-raw')). No server round-trip needed for on-the-fly decompression.",
+          "This technique proves compression + clever encoding unlock extreme size reduction. Relevant for embedded charts, offline-first apps, and anyone obsessed with bytes."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Сжатие мировой карты до 445 байт демонстрирует, как правильная кодировка пакует большой объём данных в минимум места — критично для каналов с низкой пропускной способностью.",
+        "tweets": [
+          "Полная ASCII-карта мира занимает 445 байт благодаря deflate-сжатию и base64. Иво Кадзиела добавил DecompressionStream в JavaScript для мгновенного рендеринга.",
+          "fetch() теперь распаковывает data: URI напрямую через pipeThrough(new DecompressionStream('deflate-raw')). Без запросов к серверу, вся работа в браузере.",
+          "Техника показывает: правильное сжатие + кодирование дают колоссальное сокращение размера. Применимо для встроенных графиков, офлайн-приложений и любителей оптимизации."
+        ]
+      }
+    },
+    {
+      "id": "d-opozly",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
+      "publishedAt": "2026-07-04T22:53:52.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Newer AI models trained on specific tools perform worse with similar tools from other systems, forcing developers to choose between model quality and tool compatibility.",
+        "tweets": [
+          "Claude Opus 4.8 and Sonnet 5 hallucinate extra fields in tool schemas, rejecting valid calls. Older Claude models don't. The problem: they're trained specifically for Claude Code's edit tool.",
+          "Model training on proprietary tools creates vendor lock-in by accident. Better models at one tool means worse models at alternative schemas, even when the underlying task is identical.",
+          "The fix is messy: third-party tools may need to implement multiple edit strategies just to work reliably with different Claude versions. This breaks the abstraction layer that makes tools useful."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Новые модели ИИ, обученные на конкретных инструментах, хуже работают с аналогичными инструментами других систем, заставляя разработчиков выбирать между качеством модели и совместимостью.",
+        "tweets": [
+          "Claude Opus 4.8 и Sonnet 5 выдумывают лишние поля в схемах инструментов и отклоняют валидные вызовы. Старые версии Claude этого не делают. Причина: специальное обучение для редактора Claude Code.",
+          "Обучение моделей на проприетарных инструментах случайно создаёт vendor lock-in. Лучше работает с одним инструментом — хуже с альтернативными, даже если задача одна и та же.",
+          "Решение неудачно: третьим сторонам нужно добавлять несколько вариантов редактирования, чтобы надёжно работать с разными версиями Claude. Это нарушает абстракцию, ради которой нужны инструменты."
+        ]
+      }
+    },
     {
       "id": "d-1d8tfq6",
       "source": "simonw",
@@ -8,19 +100,19 @@
       "publishedAt": "2026-07-03T22:04:31.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: A nonprofit just mapped 421 key open-source AI products across models, tools, and hardware—giving engineers a structured inventory of what actually exists beyond the hype.",
+        "headline": "Why it matters: Current AI's Gap Map catalogs 421 vetted open-source AI products across models, tools, datasets, and hardware—giving engineers a structured inventory of what exists and what's missing in the ecosystem.",
         "tweets": [
-          "Current AI launched an Open Source AI Gap Map indexing 421 products: 266 tools, 85 models, 50 datasets, 20 hardware projects. Organized across 14 categories and 3 stack layers. All data released as MIT-licensed YAML on GitHub.",
-          "The gap map covers only the tip of the iceberg—24,400 uncategorized artifacts form the long tail of open-source AI. Real value: the underlying dataset lets you query 16,185 tracked GitHub repos yourself.",
-          "Backed by $400m committed capital, Current AI (founded Feb 2025) is building a public option for AI. This map is their attempt to make the fragmented ecosystem discoverable and comparable."
+          "Current AI just released Gap Map v0.1: 421 open-source AI products indexed across 14 categories. Plus 24,400 unvetted artifacts. Full YAML dataset on GitHub under MIT license—ready to query with Datasette.",
+          "The Gap Map breaks down 266 tools, 85 models, 50 datasets, 20 hardware projects from 228 orgs. Real attempt to map the open-source AI stack, not a marketing list. Categories span model components, product/UX, infrastructure.",
+          "16,185 GitHub repos tracked as CSV. Dataset already live and queryable. This is infrastructure for the open-source AI community—shows what's mature, what's experimental, where gaps actually exist."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Некоммерческая организация создала карту 421 ключевого open-source AI проекта—инженеры теперь могут разобраться в реальном ландшафте вместо маркетинговой шумихи.",
+        "headline": "Почему важно: Current AI выпустила Gap Map — справочник из 421 проверенного открытого AI-продукта, помогающий инженерам понять, что существует в экосистеме и где остались пробелы.",
         "tweets": [
-          "Current AI выпустила Open Source AI Gap Map с 421 продуктом: 266 инструментов, 85 моделей, 50 датасетов, 20 железных проектов. Всё разложено по 14 категориям в трёх слоях стека. Данные в открытом доступе на GitHub под MIT.",
-          "Карта показывает только верхушку айсберга—ещё 24 400 некатегоризированных артефактов в хвосте экосистемы. Главное: сами можете запросить датасет из 16 185 GitHub репозиториев через Datasette.",
-          "Проект финансируется $400m, создан в феврале 2025 как некоммерческий. Цель: сделать фрагментированный экосистем AI понятным и сравнимым для разработчиков."
+          "Gap Map v0.1 индексирует 421 open-source AI-продукт в 14 категориях. Плюс 24400 необработанных артефактов. Полный датасет на GitHub под MIT лицензией — готов к запросам через Datasette.",
+          "266 инструментов, 85 моделей, 50 датасетов, 20 аппаратных проектов от 228 организаций. Это реальная карта стека, не маркетинг. Покрывает компоненты моделей, продукты, инфраструктуру.",
+          "16185 GitHub-репозиториев в датасете. Всё уже работает и доступно для анализа. Инструмент для сообщества open-source AI — показывает, что зрело, что экспериментально, где реальные пробелы."
         ]
       }
     },
@@ -31,19 +123,19 @@
       "publishedAt": "2026-07-03T21:25:52.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI is disrupting the paid learning market as LLMs offer free personalized tutoring and course creators see 50%+ revenue drops.",
+        "headline": "Why it matters: AI is crushing developer education revenue as learners abandon paid courses for free LLM tutoring, while creators lose control of their work.",
         "tweets": [
-          "Course creators report 50%+ revenue decline. Double hit: uncertainty about future dev jobs kills demand, while LLMs offer free alternatives to paid courses.",
-          "LLMs trained on course content regurgitate lessons without creator consent or compensation. The model incentivizes free extraction over paid learning.",
-          "Widespread pattern across multiple course creators. Job market anxiety combines with LLM accessibility to shift demand away from structured paid education."
+          "Course creators report 50%+ revenue drops as learners shift to free LLM tutoring instead of paid education. Job uncertainty from AI hype amplifies the trend.",
+          "LLMs trained on creator content without consent or compensation now provide personalized tutoring, eliminating the value proposition of paid courses.",
+          "The pattern holds across multiple course creators: fewer engaged users, lower sales, and learners choosing AI tools over structured learning investments."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ИИ разрушает рынок платного обучения разработчиков, так как LLM предлагают бесплатные альтернативы курсам.",
+        "headline": "Почему важно: ИИ разрушает рынок обучения разработчиков, так как ученики предпочитают бесплатные LLM-репетиторы платным курсам.",
         "tweets": [
-          "Создатели курсов теряют 50% выручки. Двойной удар: неуверенность в будущем IT-работ + бесплатные LLM убивают спрос на платные курсы.",
-          "Большие языковые модели учатся на контенте авторов и переиспользуют его без согласия и оплаты. Система поощряет бесплатное извлечение знаний.",
-          "Тренд повторяется у многих преподавателей. Страх за рабочие места плюс доступность LLM отвлекают людей от структурированного платного образования."
+          "Авторы курсов сообщают о падении выручки на 50% и больше, так как учащиеся переходят на бесплатные LLM-тренеры вместо платного обучения.",
+          "LLM обучены на контенте авторов без согласия и компенсации, предоставляя персональный репетиторский сервис и убивая спрос на платные курсы.",
+          "Тренд одинаков у всех авторов: меньше вовлечённой аудитории, ниже продажи, люди выбирают ИИ вместо инвестиций в структурированное обучение."
         ]
       }
     },
@@ -54,19 +146,19 @@
       "publishedAt": "2026-07-03T18:51:06.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Let Claude decide its own approach rather than micromanaging—it uses tokens more efficiently and produces better results.",
+        "headline": "Why it matters: Letting Claude Fable make its own decisions about when and how to work—rather than micromanaging every step—cuts token costs while improving code quality.",
         "tweets": [
-          "Stop telling Fable exactly how to test. Instead: 'Use your judgment on testing strategy.' It figures out when tests matter and saves tokens on busywork.",
-          "Delegate smaller coding tasks to cheaper models (Sonnet, Haiku) via subagents. Fable handles judgment and review. Stretches your token budget significantly.",
-          "High-level instruction + judgment beats detailed rules. 'Do this intelligently' costs less and works better than 'follow these 5 steps.'"
+          "Stop telling Fable exactly how to test. Tell it to use judgment on what needs tests. Same principle applies to everything: let the model decide appropriately.",
+          "Delegate grunt work to cheaper models via subagents. Fable reviews and synthesizes. This preserves expensive tokens for decisions that actually need top-tier reasoning.",
+          "Design, auditing, judgment calls stay with Fable. Mechanical coding, trivial edits, routine tasks go to Sonnet or Haiku. Your token budget lasts way longer."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Доверьте Claude самому решать, как работать—он эффективнее расходует токены и качественнее справляется с задачами.",
+        "headline": "Почему важно: Если позволить Claude Fable самостоятельно решать, когда и как работать, вместо микроуправления, можно снизить затраты токенов и улучшить качество кода.",
         "tweets": [
-          "Не указывайте Fable, как писать тесты. Просто скажите: 'Реши сам, когда нужны тесты.' Модель поймёт, на чём сосредоточиться, и сэкономит токены.",
-          "Малые задачи кодирования отправляйте дешёвым моделям (Sonnet, Haiku) через субагентов. Fable занимается суждением и проверкой. Бюджет токенов растягивается намного дальше.",
-          "Высокоуровневая инструкция плюс самостоятельность—дешевле и эффективнее, чем детальные правила. Работает лучше и экономнее."
+          "Не указывайте Fable как тестировать. Дайте ему решить самому, что нуждается в тестах. Это работает для всего: пусть модель сама выберет подходящий подход.",
+          "Рутинную работу перенесите дешевым моделям через подагентов. Fable проверяет и обобщает результаты. Дорогие токены остаются для решений, требующих глубокого анализа.",
+          "Дизайн, аудит и сложные решения остаются у Fable. Механическое кодирование и простые правки идут Sonnet или Haiku. Бюджет токенов тянется намного дольше."
         ]
       }
     },
@@ -77,19 +169,19 @@
       "publishedAt": "2026-07-03T14:50:50.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Open-weight models are catching up to closed APIs, and the tooling ecosystem around SQLite and WASM is maturing fast enough to change how engineers build.",
+        "headline": "Why it matters: Open-weights models are catching up to proprietary systems, while export restrictions reshape AI development geography.",
         "tweets": [
-          "GLM-5.2 is now the best open-weights model. Combined with US export restrictions tightening, running inference locally just became table stakes for serious builders.",
-          "Tokenmaxxing (padding prompts to game pricing) is dying as fast as it appeared. Models are getting smarter about detecting fluff; optimize signal instead.",
-          "Datasette Apps + sqlite-utils + shot-scraper show a pattern: boring database tooling is quietly eating the app development stack from the bottom up."
+          "GLM-5.2 is now the best open-weights model, challenging proprietary alternatives like GPT-5.6 and Claude Fable 5.",
+          "US export restrictions on AI are forcing geography-aware model development and shifting competitive advantage.",
+          "Token optimization is becoming the new frontier: larger context windows and smarter tokenization matter more than raw scale."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Открытые модели догоняют закрытые API, а экосистема инструментов вокруг SQLite и WASM созревает достаточно быстро, чтобы менять то, как инженеры строят системы.",
+        "headline": "Почему важно: Открытые модели догоняют закрытые системы, а экспортные ограничения США перерисовывают карту развития ИИ.",
         "tweets": [
-          "GLM-5.2 — теперь лучшая открытая модель. С ужесточением ограничений на экспорт США локальный инфер стал необходимостью для серьёзных проектов.",
-          "Токенмаксинг (набивание промптов для экономии) уходит в прошлое. Модели умнеют в распознавании мусора — оптимизируй сигнал, не громкость.",
-          "Datasette Apps, sqlite-utils и shot-scraper показывают паттерн: скучный инструмент работы с базами тихо съедает стек разработки приложений снизу вверх."
+          "GLM-5.2 стал лучшей открытой моделью, конкурируя с GPT-5.6 и Claude Fable 5 на равных.",
+          "Экспортные ограничения США меняют географию разработки ИИ и смещают преимущество в другие регионы.",
+          "Оптимизация токенов важнее мощности: большой контекст и умная токенизация перевешивают просто больший масштаб."
         ]
       }
     },
@@ -100,19 +192,19 @@
       "publishedAt": "2026-07-03T14:25:43.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: DeepMind and A24 are combining AI research with creative production, potentially reshaping how films and shows are made at scale.",
+        "headline": "Why it matters: DeepMind and A24 are collaborating to study how AI affects creative storytelling and filmmaking, bridging technical research with real-world media production.",
         "tweets": [
-          "DeepMind + A24 partnership aims to use AI for film/TV production. First major collaboration between AI lab and major media studio signals shift in creative workflows.",
-          "Partnership explores generative AI for visual effects, animation, and production tools. Could accelerate content creation but raises questions about creative labor impact.",
-          "DeepMind gains real-world production data; A24 gets cutting-edge AI tech. Classic research-industry deal, but stakes are higher when it touches creative work."
+          "DeepMind + A24 partnership targets AI's role in creative workflows. First major research effort connecting cutting-edge ML research directly with film and TV production practices.",
+          "A24's archive of creative projects gives DeepMind real datasets to study how AI tools could enhance (or interfere with) storytelling, cinematography, and post-production.",
+          "The collaboration aims to shape responsible AI development in creative industries before tools become standard, rather than studying impact after deployment."
         ]
       },
       "ru": {
-        "headline": "Почему важно: DeepMind и A24 объединяют ИИ-исследования с кинопроизводством, что может радикально изменить создание фильмов и сериалов.",
+        "headline": "Почему важно: DeepMind и A24 запустили первое исследование влияния ИИ на творческое кинопроизводство, соединив фундаментальные исследования с реальной практикой.",
         "tweets": [
-          "DeepMind и A24 запустили партнёрство для применения ИИ в кино. Первое такое сотрудничество крупной лаборатории ИИ со студией меняет подход к производству контента.",
-          "Проект исследует генеративный ИИ для спецэффектов, анимации и производственных инструментов. Может ускорить создание контента, но вызывает вопросы о судьбе творческих профессий.",
-          "DeepMind получит данные реальных съёмок, A24 — передовые технологии ИИ. Типичный исследовательский контракт, но значимость выше, когда речь о творчестве."
+          "DeepMind + A24: первое крупное партнёрство между лабораторией ИИ и кинокомпанией. Изучают, как генеративные модели меняют съёмку, монтаж и визуальный стиль.",
+          "A24 предоставляет архив фильмов и документацию процессов. DeepMind анализирует, где ИИ помогает, а где рискует убить авторское видение режиссёра.",
+          "Цель: определить лучшие практики использования ИИ в кино ДО того, как инструменты станут стандартом. Исследование, а не реакция на проблемы."
         ]
       }
     },
@@ -123,111 +215,19 @@
       "publishedAt": "2026-07-03T05:11:43.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: The AI industry is split between those betting on autonomous agent loops now versus those saying engineering discipline hasn't caught up to the hype—and cost plus control remain unsolved.",
+        "headline": "Why it matters: AI loops are moving from hype to production code, but the engineering discipline hasn't caught up—teams are bottlenecked on human review and cost control.",
         "tweets": [
-          "95% of AI engineers now use agents, and 89% report agents can write data and take actions in systems. But safeguards are still primitive: mostly human approvals, no settled control layer yet.",
-          "The real debate: are we ready for autonomous software factories, or do we need to slow down, build smaller loops, and stop trying to automate end-to-end? Frontier thinking still has frontier problems.",
-          "Even Anthropic's Claude Tag—used internally for delegated, proactive work—is bottlenecking teams on code review and human ability to conceptualize what the system is actually doing."
+          "95% of AI engineers now use agents that actively write and modify code, not just summarize. The control layer is still primitive: mostly human approvals and scattered safeguarding techniques.",
+          "The real debate: are we ready for autonomous software factories, or are we skipping abstraction levels we need? Even advocates admit this is frontier territory without market-proven solutions.",
+          "Token costs are biting: 76% of teams say AI expenses regularly or sometimes limit how aggressively they deploy agents. You can't just orchestrate problems away by buying more compute."
         ]
       },
       "ru": {
-        "headline": "Почему важно: В AI-индустрии раскол между теми, кто верит в автономные агентские циклы уже сейчас, и теми, кто говорит, что инженерная дисциплина отстаёт от амбиций — контроль и стоимость остаются нерешёнными.",
+        "headline": "Почему важно: AI-ループы переходят из гипе в production код, но инженерная дисциплина отстаёт—команды упираются в человеческие ревью и контроль расходов.",
         "tweets": [
-          "95% инженеров используют AI-агентов, 89% подтверждают, что агенты могут писать данные и выполнять действия в системах. Но защиты всё ещё примитивны: в основном ручные одобрения, контрольный слой не стандартизирован.",
-          "Суть дебатов: готовы ли мы к автоматизированным фабрикам кода, или нужно замедлиться, строить меньшие циклы и отказаться от идеи полной автоматизации? Передовые идеи всё ещё имеют передовые проблемы.",
-          "Даже Claude Tag от Anthropic—используется внутри для делегированной, проактивной работы—создаёт узкие места в code review и в способности людей понять, что действительно делает система."
-        ]
-      }
-    },
-    {
-      "id": "d-zqr8ne",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/vercel-agents-new-software",
-      "publishedAt": "2026-07-03T00:08:18.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Agents require fundamentally different software primitives than web apps—context management, resumability, and tool execution—making them a new category of software that demands dedicated frameworks.",
-        "tweets": [
-          "Agents aren't just web apps with AI bolted on. They need different primitives: resumable execution, dynamic context windows, sandboxed tools, and feedback loops that don't exist in traditional web development.",
-          "Vercel learned building v0 and internal data agents that most repetitive reasoning tasks (contract review, data queries, marketing work) need human-in-the-loop feedback, not full autonomy. Choose your loop based on task risk.",
-          "Skills are the antidote to stale model knowledge. Instead of retraining, publish agent-readable docs about deprecations and current APIs. This forward-corrects LLM behavior without touching training data."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Агенты требуют принципиально иных примитивов софта, чем веб-приложения—управление контекстом, возобновляемость, исполнение инструментов—что делает их новой категорией ПО с собственными фреймворками.",
-        "tweets": [
-          "Агенты это не просто веб-приложения с ИИ. Им нужны другие примитивы: возобновляемое выполнение, динамические окна контекста, изолированные инструменты, циклы обратной связи, которых нет в классической разработке.",
-          "Vercel выяснил, что повторяющиеся логические задачи (проверка контрактов, запросы к БД, маркетинг-ретроспективы) часто нужны с человеком в цикле, а не в полной автономии. Выбирай цикл по риску задачи.",
-          "Skills решают проблему устаревших знаний моделей. Вместо переобучения публикуй машиночитаемые документы о deprecation и текущих API. Это корректирует поведение LLM без изменения весов."
-        ]
-      }
-    },
-    {
-      "id": "d-6qu7xs",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/the-website-of-the-future",
-      "publishedAt": "2026-07-02T21:25:14.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: Websites can now dynamically assemble themselves for each visitor in real-time, moving beyond predefined personalization to true one-to-one experiences at 1-2 cents per page.",
-        "tweets": [
-          "Adobe's agentic sites read visitor intent from behavior, then compose entire personalized pages on the fly using LLMs grounded in existing content. No templates, no segments—one experience per person.",
-          "Latency solved: page generation under 2 seconds. Cost dropping fast (1-2¢ today). The constraint now isn't tech—it's figuring out what to build and how to fit this into marketing funnels.",
-          "Future sites must work for humans AND AI agents. Some transactions stay visual (jacket shopping), others auto-delegate (toilet paper). One URL, infinite layouts based on who—or what—shows up."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Сайты теперь могут собирать себя заново для каждого посетителя в реальном времени, переходя от предустановленной персонализации к индивидуальным интерфейсам стоимостью 1-2 цента за страницу.",
-        "tweets": [
-          "Агентные сайты Adobe анализируют намерение посетителя по его поведению и собирают персонализированные страницы с помощью LLM, привязанных к существующему контенту. Никаких шаблонов—уникальный опыт для каждого.",
-          "Проблема задержки решена: генерация страницы за 2 секунды. Стоимость падает (1-2¢ сейчас). Теперь ограничение не в технологии, а в понимании, что строить и как встроить это в маркетинг.",
-          "Будущие сайты должны работать с людьми и с ИИ-агентами. Покупка куртки—с визуальным контролем, заказ бумаги—автоматический. Один URL, бесконечные варианты в зависимости от того, кто приходит."
-        ]
-      }
-    },
-    {
-      "id": "d-th5x5m",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
-      "publishedAt": "2026-07-02T19:33:12.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Claude can now autonomously write, test, and deploy code through a new open-source agent that handles file editing, command execution, and intelligent tool use.",
-        "tweets": [
-          "llm-coding-agent 0.1a0 ships with file read/edit, command execution, and smart search tools. Run it via: uvx --prerelease=allow --with llm-coding-agent llm code",
-          "Claude reasoned through building a SwiftUI ASCII clock CLI, acknowledged the mismatch, then built Swift code that actually worked. It handles its own red/green TDD.",
-          "Agent includes safety controls: --allow flags restrict which commands run, --yolo mode for unrestricted use. Python API lets you approve tasks before execution."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Claude теперь может самостоятельно писать, тестировать и развёртывать код через нового агента с инструментами для редактирования файлов и выполнения команд.",
-        "tweets": [
-          "llm-coding-agent 0.1a0 включает чтение/редактирование файлов, выполнение команд и поиск кода. Запуск: uvx --prerelease=allow --with llm-coding-agent llm code",
-          "Claude самостоятельно собрал SwiftUI приложение, заметил несоответствие в задаче и переписал на чистый Swift. Умеет работать с TDD циклами и тестами.",
-          "Встроены ограничения безопасности: флаги --allow контролируют команды, --yolo для полной свободы. Python API позволяет одобрять задачи до выполнения."
-        ]
-      }
-    },
-    {
-      "id": "d-1arwa3w",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
-      "publishedAt": "2026-07-02T18:25:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Systematic prompt evaluation with DSPy caught a subtle flaw in Datasette Agent's SQL instructions that caused column-name guessing and retry loops.",
-        "tweets": [
-          "DSPy automated evals revealed that Datasette Agent's schema listing omitted column names, forcing the LLM to guess and retry. Simple fix: include full schema or soften the 'avoid describe_table' advice.",
-          "Testing GPT-4.1 mini and nano with DSPy frameworks uncovered that incomplete context in system prompts cascades into error-retry loops. Better schema detail = fewer API calls and faster queries.",
-          "Claude Fable 5 used DSPy to systematically improve SQL prompt engineering. The lesson: evaluation frameworks catch context gaps that manual prompting misses entirely."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: DSPy помог выявить скрытый дефект в инструкциях SQL для Datasette Agent — система угадывала названия колонок из-за неполной схемы в промпте.",
-        "tweets": [
-          "Автоматические тесты DSPy показали, что схема базы в промпте не включала имена колонок. LLM вынужден был гадать и повторять запросы. Решение: полная схема или мягче формулировать совет избегать describe_table.",
-          "Тестирование GPT-4.1 mini и nano выявило, что недостаток контекста в системных промптах приводит к циклам ошибок. Больше деталей в схеме = меньше вызовов API и быстрее запросы.",
-          "Claude Fable 5 систематически улучшил SQL-промпты через DSPy. Урок: фреймворки оценки ловят пробелы в контексте, которые ручное промптирование пропускает."
+          "95% инженеров уже используют агентов, которые активно пишут и меняют код, а не просто суммируют. Слой контроля остаётся примитивным: в основном ручные одобрения и разрозненные техники защиты.",
+          "Главный спор: готовы ли мы к автономным software factories или прыгаем через нужные нам уровни абстракции? Даже сторонники говорят, что это frontier-технология без доказанных решений на рынке.",
+          "Стоимость токенов кусается: 76% команд говорят, что расходы на AI регулярно или периодически ограничивают амбиции в развёртывании агентов. Нельзя просто купить больше compute и решить все проблемы."
         ]
       }
     }

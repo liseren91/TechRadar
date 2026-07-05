@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T08:51:06.456Z",
+  "generatedAt": "2026-07-05T09:23:18.359Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -10,9 +10,15 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        174
+        233
       ],
       "signals": [
+        {
+          "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+          "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-05T01:00:48.000Z"
+        },
         {
           "title": "AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
           "url": "https://www.latent.space/p/aiewf-daily-dispatch-locomotives",
@@ -36,12 +42,6 @@
           "url": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
           "source": "simonw",
           "publishedAt": "2026-07-02T19:33:12.000Z"
-        },
-        {
-          "title": "Skill engineering and the case against one-shot AI design",
-          "url": "https://www.latent.space/p/skill-engineering-design",
-          "source": "latent-space",
-          "publishedAt": "2026-07-02T14:36:05.000Z"
         }
       ]
     },
@@ -53,7 +53,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        163
+        216
       ],
       "signals": [
         {
@@ -96,7 +96,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        36
+        48
       ],
       "signals": [
         {
@@ -139,7 +139,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        6
+        8
       ],
       "signals": [
         {
@@ -164,7 +164,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        9
+        12
       ],
       "signals": [
         {
