@@ -1,26 +1,95 @@
 {
-  "generatedAt": "2026-07-05T09:23:18.230Z",
+  "generatedAt": "2026-07-06T11:03:06.450Z",
   "items": [
+    {
+      "id": "d-1nyudce",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/lerobot-release-v060",
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "category": "robotics",
+      "en": {
+        "headline": "Why it matters: LeRobot 0.6.0 adds simulation-based evaluation and policy improvement loops, letting teams benchmark robot behaviors before real-world deployment.",
+        "tweets": [
+          "LeRobot v0.6.0 now lets you simulate robot policies in virtual environments first. Test, evaluate, iterate—before your robot touches anything real.",
+          "New evaluation framework scores how well policies generalize. Spot failure modes in simulation, fix them in code, deploy with confidence.",
+          "Policy improvement workflows close the loop: imagine actions, evaluate outcomes, refine the model. Faster iteration cycle for robotics teams."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: LeRobot 0.6.0 добавляет оценку политик в симуляции и циклы улучшения, позволяя командам тестировать поведение робота до реального развертывания.",
+        "tweets": [
+          "LeRobot v0.6.0 позволяет симулировать политики робота в виртуальных средах. Тестируйте, оценивайте, итерируйте—до того как робот что-то коснется.",
+          "Новый фреймворк оценки определяет, насколько хорошо политики обобщаются. Выявляйте ошибки в симуляции, исправляйте в коде, деплойте с уверенностью.",
+          "Циклы улучшения политик замыкают петлю: представить действия, оценить результаты, улучшить модель. Быстрая итерация для робототехнических команд."
+        ]
+      }
+    },
+    {
+      "id": "d-knru0e",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything",
+      "publishedAt": "2026-07-06T05:40:08.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: sqlite-utils 4.0rc3 adds compound foreign key support and fixes case-insensitive column handling, requiring breaking changes before stable release.",
+        "tweets": [
+          "sqlite-utils 4.0rc3 now supports compound foreign keys - introspecting and creating them. Required a breaking change to table.foreign_keys, so it lands in 4.0 stable.",
+          "Column name case sensitivity was overhauled to match SQLite conventions. Seems small but touched many places in the codebase, delayed stable release.",
+          "RC3 changelog ballooned as maintainer worked through issue backlog with Claude and GPT. Stable 4.0 coming soon after final polish."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: sqlite-utils 4.0rc3 добавляет поддержку составных внешних ключей и исправляет обработку регистронезависимых названий колонок перед выходом стабильной версии.",
+        "tweets": [
+          "sqlite-utils 4.0rc3 теперь поддерживает составные внешние ключи - их интроспекцию и создание. Требует breaking change в table.foreign_keys, поэтому войдет в стабильную 4.0.",
+          "Обработка регистра названий колонок переработана под конвенции SQLite. Казалось бы мелкая деталь, но затронула множество мест кода и отсрочила выпуск.",
+          "Список изменений в RC3 разбух по мере проработки автором накопленных issue и PR с помощью Claude и GPT. Стабильная версия 4.0 выходит после финальной доработки."
+        ]
+      }
+    },
+    {
+      "id": "d-1t5ecpd",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/revamped-kernels",
+      "publishedAt": "2026-07-06T00:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Hugging Face Kernels now offers faster inference and easier model deployment for production ML systems.",
+        "tweets": [
+          "Kernels revamp cuts inference latency by optimizing compute kernels for popular models like Llama and Mistral. Direct impact: cheaper API costs, faster responses.",
+          "New unified kernel API reduces boilerplate when deploying custom models. Engineers spend less time wrestling with CUDA, more time shipping features.",
+          "Added kernel profiling tools let you spot bottlenecks before production. Data: measure exactly where your model spends cycles, optimize ruthlessly."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: обновленные Kernels в Hugging Face ускоряют инференс и упрощают развертывание моделей в production.",
+        "tweets": [
+          "Оптимизированные ядра снижают задержку инференса для Llama и Mistral. Результат: дешевле API, быстрее ответы пользователей.",
+          "Единый API для ядер уменьшает лишний код при развертывании собственных моделей. Меньше возни с CUDA, больше времени на разработку.",
+          "Встроенные инструменты профилирования показывают узкие места до продакшена. Измеряй точно, оптимизируй конкретные части кода."
+        ]
+      }
+    },
     {
       "id": "d-8rspb6",
       "source": "simonw",
       "sourceUrl": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
       "publishedAt": "2026-07-05T01:00:48.000Z",
-      "category": "web3",
+      "category": "ai",
       "en": {
-        "headline": "Why it matters: AI agents can now catch critical data-loss bugs in production libraries before release, but their work still needs human validation and cross-model review to catch subtle behavioral inconsistencies.",
+        "headline": "Why it matters: AI coding agents can catch critical bugs before release, but require careful review—a transaction handling flaw in sqlite-utils would have caused silent data loss.",
         "tweets": [
-          "Claude Fable found a catastrophic bug in sqlite-utils where delete_where() poisoned the connection and silently lost all subsequent writes. Human author missed it entirely—$149 in compute surfaced a 4.0-blocking data loss issue.",
-          "37 prompts, 34 commits, 1,321 lines changed across 30 files. Agent did most of the heavy lifting on transaction handling redesign while author attended a parade. Harder tasks paradoxically give agents breathing room to work autonomously.",
-          "Two AI models reviewing each other's code (Claude then GPT-5.5) caught transaction edge cases the single agent missed—db.query() auto-committing side effects before raising errors. Cross-model validation is becoming standard practice."
+          "Claude Fable found 5 release-blocking bugs in sqlite-utils 4.0 in 37 prompts. One: delete_where() never commits, poisoning the connection and losing all subsequent writes. Simon almost shipped it.",
+          "Transaction semantics are hard: db.query() auto-commits writes then rejects them, and INSERT...RETURNING leaves transactions open if you don't iterate the result. Even AI agents need human review.",
+          "The workflow actually worked: coding agent handles 10-15 min churning tasks while you're at a parade, you review PRs on your laptop. Cross-model review (Claude + GPT-5.5) caught issues the first model missed."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ИИ-агенты находят критические баги в готовых библиотеках перед релизом, но их работу всё равно нужно проверять людьми и взаимной проверкой между моделями.",
+        "headline": "Почему важно: AI-агент выловил критические ошибки в sqlite-utils 4.0 перед релизом, но требует тщательной проверки—баг с транзакциями привёл бы к молчаливой потере данных.",
         "tweets": [
-          "Claude Fable обнаружила катастрофический баг в sqlite-utils: delete_where() оставляла соединение в невалидном состоянии и молча теряла все последующие записи. Автор сам это не заметил—$149 вычислений выявили блокирующую проблему потери данных.",
-          "37 запросов, 34 коммита, 1321 строка кода изменена в 30 файлах. Агент сделал основную работу по переделке транзакций, пока автор был на параде. Сложные задачи дают агентам время работать независимо.",
-          "Две ИИ-модели проверяли работу друг друга (Claude и GPT-5.5) и нашли баги с побочными эффектами в db.query()—автоматический коммит перед выбросом ошибки. Взаимная проверка моделей становится стандартом."
+          "Claude Fable нашёл 5 блокирующих релиз ошибок за 37 запросов. Хуже всего: delete_where() не делает commit, оставляя соединение в транзакции и теряя все следующие записи. Саймон чуть не выпустил.",
+          "Семантика транзакций сложна: db.query() коммитит, а потом отклоняет запись, INSERT...RETURNING оставляет транзакцию открытой, если не итерировать результат. Даже AI нужна проверка человеком.",
+          "Рабочий процесс сработал: агент работает 10-15 минут на тяжёлых задачах, ты смотришь PRы на ноутбуке. Перепроверка двумя моделями (Claude и GPT-5.5) нашла то, что первая пропустила."
         ]
       }
     },
@@ -31,19 +100,19 @@
       "publishedAt": "2026-07-05T00:47:38.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: sqlite-utils 4.0rc2 demonstrates AI-assisted open source development at scale, reducing engineering costs while maintaining quality.",
+        "headline": "Why it matters: sqlite-utils 4.0rc2 reaches release candidate stage, expanding SQLite's utility for data engineering workflows.",
         "tweets": [
-          "sqlite-utils 4.0rc2 released with majority of code written by Claude AI. Cost: $149.25 for substantial feature work. Shows economic shift in open source development.",
-          "AI pair programming isn't replacing engineers—it's compressing weeks of work into hours. The real skill now is directing and validating the output.",
-          "This release signals a pivot point: when LLMs can handle 80% of implementation work, maintainers focus shifts from coding to architecture and review."
+          "sqlite-utils 4.0rc2 is now available. This release was primarily developed with AI assistance, demonstrating new collaboration patterns in open source.",
+          "SQLite remains the most deployed database engine globally. Tools that make it easier to work with SQLite at scale benefit countless developers and data pipelines.",
+          "The shift toward AI-assisted development in sqlite-utils signals growing adoption of LLMs for structured coding tasks in open source projects."
         ]
       },
       "ru": {
-        "headline": "Почему важно: sqlite-utils 4.0rc2 показывает, что AI-ассистенты готовы писать качественный код в open source, меняя экономику разработки.",
+        "headline": "Почему важно: sqlite-utils 4.0rc2 достигла статуса кандидата на выпуск, расширяя возможности SQLite для работы с данными.",
         "tweets": [
-          "Большую часть sqlite-utils 4.0rc2 написал Claude AI за $149. Это не замена разработчикам—это сжатие недель работы в часы за счёт AI.",
-          "Когда нейросети берут на себя 80% реализации, сила разработчика в архитектуре, дизайне и валидации. Меняется профессия, не исчезает.",
-          "Открытый исходный код вступает в эру AI-ассистентов. Критично: кто валидирует, кто решает, какой код попадает в проект."
+          "sqlite-utils 4.0rc2 вышла. Основная разработка выполнена с помощью AI-ассистента, что показывает новые подходы к сотрудничеству в open source.",
+          "SQLite — самая распространённая СУБД в мире. Инструменты, упрощающие работу с ней в масштабе, полезны разработчикам и data pipeline'ам.",
+          "Переход на AI-ассистируемую разработку в sqlite-utils отражает растущее применение LLM'ов для структурированного кодирования в open source."
         ]
       }
     },
@@ -54,19 +123,19 @@
       "publishedAt": "2026-07-04T23:09:02.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: Compressing a world map to 445 bytes shows how clever encoding can make rich data fit in minimal space—useful for bandwidth-constrained environments and code golf.",
+        "headline": "Why it matters: Extreme compression techniques like deflate-raw show how much data can be squeezed into browser APIs, useful for size-constrained environments and understanding modern JavaScript streaming.",
         "tweets": [
-          "A complete ASCII world map fits in 445 bytes using deflate compression + base64 encoding. Iwo Kadziela paired it with JavaScript DecompressionStream for instant rendering.",
-          "fetch() can now decompress data: URIs directly with pipeThrough(new DecompressionStream('deflate-raw')). No server round-trip needed for on-the-fly decompression.",
-          "This technique proves compression + clever encoding unlock extreme size reduction. Relevant for embedded charts, offline-first apps, and anyone obsessed with bytes."
+          "ASCII world map rendered from 445 bytes using deflate compression + DecompressionStream. The entire globe fits in a tweet.",
+          "fetch() now accepts data: URIs piped through DecompressionStream—chains compressed payloads directly to DOM without intermediate decompression.",
+          "Technique reveals browser capabilities: base64 encoding, streaming decompression, and pipeThrough all work together. Golfing meets real engineering."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Сжатие мировой карты до 445 байт демонстрирует, как правильная кодировка пакует большой объём данных в минимум места — критично для каналов с низкой пропускной способностью.",
+        "headline": "Почему важно: Экстремальное сжатие данных вроде deflate показывает, как много информации можно упаковать в браузерные API—критично для низкополосных сред и понимания современного JavaScript.",
         "tweets": [
-          "Полная ASCII-карта мира занимает 445 байт благодаря deflate-сжатию и base64. Иво Кадзиела добавил DecompressionStream в JavaScript для мгновенного рендеринга.",
-          "fetch() теперь распаковывает data: URI напрямую через pipeThrough(new DecompressionStream('deflate-raw')). Без запросов к серверу, вся работа в браузере.",
-          "Техника показывает: правильное сжатие + кодирование дают колоссальное сокращение размера. Применимо для встроенных графиков, офлайн-приложений и любителей оптимизации."
+          "ASCII-карта мира на 445 байтах: deflate-сжатие + DecompressionStream. Весь земной шар помещается в твит.",
+          "fetch() теперь работает с data: URI через DecompressionStream—сжатые данные распаковываются прямо в DOM без промежуточных шагов.",
+          "Техника показывает возможности браузера: base64, потоковая распаковка, pipeThrough. Код-гольф встречается с реальной инженерией."
         ]
       }
     },
@@ -77,19 +146,19 @@
       "publishedAt": "2026-07-04T22:53:52.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Newer AI models trained on specific tools perform worse with similar tools from other systems, forcing developers to choose between model quality and tool compatibility.",
+        "headline": "Why it matters: Newer AI models perform worse at using custom tools because they're optimized for proprietary tool schemas, forcing developers to implement multiple redundant tool versions.",
         "tweets": [
-          "Claude Opus 4.8 and Sonnet 5 hallucinate extra fields in tool schemas, rejecting valid calls. Older Claude models don't. The problem: they're trained specifically for Claude Code's edit tool.",
-          "Model training on proprietary tools creates vendor lock-in by accident. Better models at one tool means worse models at alternative schemas, even when the underlying task is identical.",
-          "The fix is messy: third-party tools may need to implement multiple edit strategies just to work reliably with different Claude versions. This breaks the abstraction layer that makes tools useful."
+          "Claude Opus 4.8 and Sonnet 5 hallucinate extra fields in tool calls that older models don't—inventing parameters that break schemas and force retries.",
+          "The problem gets worse with newer models, not better. Likely cause: Anthropic trained these models specifically on Claude Code's edit tools, degrading performance elsewhere.",
+          "Devs now face a choice: implement multiple edit tool variants for different models, or accept that SOTA models misuse your custom APIs more than older versions."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Новые модели ИИ, обученные на конкретных инструментах, хуже работают с аналогичными инструментами других систем, заставляя разработчиков выбирать между качеством модели и совместимостью.",
+        "headline": "Почему важно: Новые модели ИИ работают хуже с пользовательскими инструментами, так как оптимизированы для проприетарных схем, заставляя разработчиков дублировать функционал.",
         "tweets": [
-          "Claude Opus 4.8 и Sonnet 5 выдумывают лишние поля в схемах инструментов и отклоняют валидные вызовы. Старые версии Claude этого не делают. Причина: специальное обучение для редактора Claude Code.",
-          "Обучение моделей на проприетарных инструментах случайно создаёт vendor lock-in. Лучше работает с одним инструментом — хуже с альтернативными, даже если задача одна и та же.",
-          "Решение неудачно: третьим сторонам нужно добавлять несколько вариантов редактирования, чтобы надёжно работать с разными версиями Claude. Это нарушает абстракцию, ради которой нужны инструменты."
+          "Claude Opus 4.8 и Sonnet 5 придумывают несуществующие параметры в вызовах инструментов—старые модели этого не делают и вызовы отклоняются.",
+          "С каждой новой версией проблема только растет. Вероятно, Anthropic натренировала модели на инструментах Claude Code в ущерб совместимости.",
+          "Разработчикам теперь нужно либо реализовать несколько вариантов одного инструмента для разных моделей, либо смириться с багами в новых версиях."
         ]
       }
     },
@@ -100,19 +169,19 @@
       "publishedAt": "2026-07-03T22:04:31.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Current AI's Gap Map catalogs 421 vetted open-source AI products across models, tools, datasets, and hardware—giving engineers a structured inventory of what exists and what's missing in the ecosystem.",
+        "headline": "Why it matters: Current AI published the first systematic map of open source AI projects (421 deep-dived, 24k+ in the long tail), giving developers a searchable index of the fragmented ecosystem.",
         "tweets": [
-          "Current AI just released Gap Map v0.1: 421 open-source AI products indexed across 14 categories. Plus 24,400 unvetted artifacts. Full YAML dataset on GitHub under MIT license—ready to query with Datasette.",
-          "The Gap Map breaks down 266 tools, 85 models, 50 datasets, 20 hardware projects from 228 orgs. Real attempt to map the open-source AI stack, not a marketing list. Categories span model components, product/UX, infrastructure.",
-          "16,185 GitHub repos tracked as CSV. Dataset already live and queryable. This is infrastructure for the open-source AI community—shows what's mature, what's experimental, where gaps actually exist."
+          "Current AI Gap Map v0.1 catalogs 421 open source AI products: 266 tools, 85 models, 50 datasets, 20 hardware projects across 14 categories. Backed by $400m, launched as non-profit in Paris.",
+          "The real win: 1,184 YAML files + raw data released under MIT license on GitHub. 16k+ repos tracked and explorable via Datasette Lite. You can actually query it.",
+          "24,400 uncategorized projects in the long tail awaiting review. This is v0.1—gap map is crowdsourced, not final. The ecosystem is messier than the 421 headline projects."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Current AI выпустила Gap Map — справочник из 421 проверенного открытого AI-продукта, помогающий инженерам понять, что существует в экосистеме и где остались пробелы.",
+        "headline": "Почему важно: Current AI опубликовала первую систематическую карту проектов открытого ИИ (421 подробно описано, 24k+ в длинном хвосте), дав разработчикам индекс фрагментированной экосистемы.",
         "tweets": [
-          "Gap Map v0.1 индексирует 421 open-source AI-продукт в 14 категориях. Плюс 24400 необработанных артефактов. Полный датасет на GitHub под MIT лицензией — готов к запросам через Datasette.",
-          "266 инструментов, 85 моделей, 50 датасетов, 20 аппаратных проектов от 228 организаций. Это реальная карта стека, не маркетинг. Покрывает компоненты моделей, продукты, инфраструктуру.",
-          "16185 GitHub-репозиториев в датасете. Всё уже работает и доступно для анализа. Инструмент для сообщества open-source AI — показывает, что зрело, что экспериментально, где реальные пробелы."
+          "Gap Map v0.1 каталогизирует 421 открытый проект ИИ: 266 инструментов, 85 моделей, 50 датасетов, 20 аппаратных проектов в 14 категориях. Финансирование $400m, некоммерческая организация с февраля 2025.",
+          "Главное: 1184 файла YAML плюс данные под лицензией MIT на GitHub. 16k+ репозиториев отслеживаются и доступны через Datasette Lite. Можно запрашивать напрямую.",
+          "24400 некатегоризированных проектов ждут проверки. Это версия 0.1—карта строится сообществом. Экосистема беспорядочнее, чем выглядят 421 основной проект."
         ]
       }
     },
@@ -123,19 +192,19 @@
       "publishedAt": "2026-07-03T21:25:52.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI is crushing developer education revenue as learners abandon paid courses for free LLM tutoring, while creators lose control of their work.",
+        "headline": "Why it matters: AI is crushing course creator revenue by both scaring learners away from dev jobs and replacing paid instruction with free LLM tutoring.",
         "tweets": [
-          "Course creators report 50%+ revenue drops as learners shift to free LLM tutoring instead of paid education. Job uncertainty from AI hype amplifies the trend.",
-          "LLMs trained on creator content without consent or compensation now provide personalized tutoring, eliminating the value proposition of paid courses.",
-          "The pattern holds across multiple course creators: fewer engaged users, lower sales, and learners choosing AI tools over structured learning investments."
+          "Course sales down 50%+ across creators. People spooked by AI job extinction FUD, so they're not investing in dev skills anymore.",
+          "LLMs now compete directly with paid courses—personalized tutoring for free beats $200+ course price. Creators losing both customers and control of their content.",
+          "Models trained on creator work without consent, regurgitate it back for free. Economic model for tech education broken right now."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ИИ разрушает рынок обучения разработчиков, так как ученики предпочитают бесплатные LLM-репетиторы платным курсам.",
+        "headline": "Почему важно: ИИ одновременно отпугивает разработчиков от обучения и заменяет платные курсы бесплатными LLM-репетиторами.",
         "tweets": [
-          "Авторы курсов сообщают о падении выручки на 50% и больше, так как учащиеся переходят на бесплатные LLM-тренеры вместо платного обучения.",
-          "LLM обучены на контенте авторов без согласия и компенсации, предоставляя персональный репетиторский сервис и убивая спрос на платные курсы.",
-          "Тренд одинаков у всех авторов: меньше вовлечённой аудитории, ниже продажи, люди выбирают ИИ вместо инвестиций в структурированное обучение."
+          "Доходы авторов курсов упали на 50%+ во всей индустрии. Разработчики боятся, что ИИ отберет работу, поэтому не тратят деньги на обучение.",
+          "LLM дает персональное обучение бесплатно—зачем платить за курс? Авторы теряют клиентов и контроль над своим контентом.",
+          "Модели учатся на работах авторов без согласия и выдают её обратно бесплатно. Экономика платного образования для разработчиков сломана."
         ]
       }
     },
@@ -146,88 +215,19 @@
       "publishedAt": "2026-07-03T18:51:06.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Letting Claude Fable make its own decisions about when and how to work—rather than micromanaging every step—cuts token costs while improving code quality.",
+        "headline": "Why it matters: letting Claude Fable use its own judgment on task decomposition cuts token spend while maintaining quality output.",
         "tweets": [
-          "Stop telling Fable exactly how to test. Tell it to use judgment on what needs tests. Same principle applies to everything: let the model decide appropriately.",
-          "Delegate grunt work to cheaper models via subagents. Fable reviews and synthesizes. This preserves expensive tokens for decisions that actually need top-tier reasoning.",
-          "Design, auditing, judgment calls stay with Fable. Mechanical coding, trivial edits, routine tasks go to Sonnet or Haiku. Your token budget lasts way longer."
+          "Stop micromanaging Fable's workflow. Instead of dictating 'only test large features', tell it to judge when testing is needed. It makes better calls than your rules.",
+          "Delegate smaller coding tasks to cheaper models (Sonnet, Haiku) via subagents; keep Fable for judgment, review, synthesis. Claude does this automatically if you ask.",
+          "Real savings: design decisions, auditing, and anything requiring reasoning stays with Fable. Mechanical edits run on lower-tier models. Token budget extends further."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Если позволить Claude Fable самостоятельно решать, когда и как работать, вместо микроуправления, можно снизить затраты токенов и улучшить качество кода.",
+        "headline": "Почему важно: предоставление Claude Fable свободы выбора в распределении задач снижает расход токенов, сохраняя качество.",
         "tweets": [
-          "Не указывайте Fable как тестировать. Дайте ему решить самому, что нуждается в тестах. Это работает для всего: пусть модель сама выберет подходящий подход.",
-          "Рутинную работу перенесите дешевым моделям через подагентов. Fable проверяет и обобщает результаты. Дорогие токены остаются для решений, требующих глубокого анализа.",
-          "Дизайн, аудит и сложные решения остаются у Fable. Механическое кодирование и простые правки идут Sonnet или Haiku. Бюджет токенов тянется намного дольше."
-        ]
-      }
-    },
-    {
-      "id": "d-5hmfj5",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/3/june-newsletter/#atom-everything",
-      "publishedAt": "2026-07-03T14:50:50.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Open-weights models are catching up to proprietary systems, while export restrictions reshape AI development geography.",
-        "tweets": [
-          "GLM-5.2 is now the best open-weights model, challenging proprietary alternatives like GPT-5.6 and Claude Fable 5.",
-          "US export restrictions on AI are forcing geography-aware model development and shifting competitive advantage.",
-          "Token optimization is becoming the new frontier: larger context windows and smarter tokenization matter more than raw scale."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Открытые модели догоняют закрытые системы, а экспортные ограничения США перерисовывают карту развития ИИ.",
-        "tweets": [
-          "GLM-5.2 стал лучшей открытой моделью, конкурируя с GPT-5.6 и Claude Fable 5 на равных.",
-          "Экспортные ограничения США меняют географию разработки ИИ и смещают преимущество в другие регионы.",
-          "Оптимизация токенов важнее мощности: большой контекст и умная токенизация перевешивают просто больший масштаб."
-        ]
-      }
-    },
-    {
-      "id": "d-15ye4je",
-      "source": "deepmind",
-      "sourceUrl": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
-      "publishedAt": "2026-07-03T14:25:43.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: DeepMind and A24 are collaborating to study how AI affects creative storytelling and filmmaking, bridging technical research with real-world media production.",
-        "tweets": [
-          "DeepMind + A24 partnership targets AI's role in creative workflows. First major research effort connecting cutting-edge ML research directly with film and TV production practices.",
-          "A24's archive of creative projects gives DeepMind real datasets to study how AI tools could enhance (or interfere with) storytelling, cinematography, and post-production.",
-          "The collaboration aims to shape responsible AI development in creative industries before tools become standard, rather than studying impact after deployment."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: DeepMind и A24 запустили первое исследование влияния ИИ на творческое кинопроизводство, соединив фундаментальные исследования с реальной практикой.",
-        "tweets": [
-          "DeepMind + A24: первое крупное партнёрство между лабораторией ИИ и кинокомпанией. Изучают, как генеративные модели меняют съёмку, монтаж и визуальный стиль.",
-          "A24 предоставляет архив фильмов и документацию процессов. DeepMind анализирует, где ИИ помогает, а где рискует убить авторское видение режиссёра.",
-          "Цель: определить лучшие практики использования ИИ в кино ДО того, как инструменты станут стандартом. Исследование, а не реакция на проблемы."
-        ]
-      }
-    },
-    {
-      "id": "d-1do7akf",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/aiewf-daily-dispatch-locomotives",
-      "publishedAt": "2026-07-03T05:11:43.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI loops are moving from hype to production code, but the engineering discipline hasn't caught up—teams are bottlenecked on human review and cost control.",
-        "tweets": [
-          "95% of AI engineers now use agents that actively write and modify code, not just summarize. The control layer is still primitive: mostly human approvals and scattered safeguarding techniques.",
-          "The real debate: are we ready for autonomous software factories, or are we skipping abstraction levels we need? Even advocates admit this is frontier territory without market-proven solutions.",
-          "Token costs are biting: 76% of teams say AI expenses regularly or sometimes limit how aggressively they deploy agents. You can't just orchestrate problems away by buying more compute."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: AI-ループы переходят из гипе в production код, но инженерная дисциплина отстаёт—команды упираются в человеческие ревью и контроль расходов.",
-        "tweets": [
-          "95% инженеров уже используют агентов, которые активно пишут и меняют код, а не просто суммируют. Слой контроля остаётся примитивным: в основном ручные одобрения и разрозненные техники защиты.",
-          "Главный спор: готовы ли мы к автономным software factories или прыгаем через нужные нам уровни абстракции? Даже сторонники говорят, что это frontier-технология без доказанных решений на рынке.",
-          "Стоимость токенов кусается: 76% команд говорят, что расходы на AI регулярно или периодически ограничивают амбиции в развёртывании агентов. Нельзя просто купить больше compute и решить все проблемы."
+          "Не диктуйте Fable правила вроде «тестируй только крупные фичи». Дайте ему решать самому — он выберет лучше, чем ваши инструкции.",
+          "Поручайте мелкие кодинг-задачи дешёвым моделям (Sonnet, Haiku) через субагентов, а Fable оставьте для суждений и синтеза. Он делает это сам, если попросить.",
+          "Реальная экономия: архитектурные решения, ревью, анализ данных — только Fable. Механическое редактирование кода — дешёвые модели. Токены расходуются эффективнее."
         ]
       }
     }
