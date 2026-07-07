@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T11:03:06.559Z",
+  "generatedAt": "2026-07-07T10:01:22.764Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -10,9 +10,15 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        292
+        351
       ],
       "signals": [
+        {
+          "title": "[AINews] The Field Guide to Fable",
+          "url": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
+          "source": "latent-space",
+          "publishedAt": "2026-07-07T04:44:53.000Z"
+        },
         {
           "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
           "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
@@ -36,12 +42,6 @@
           "url": "https://www.latent.space/p/the-website-of-the-future",
           "source": "latent-space",
           "publishedAt": "2026-07-02T21:25:14.000Z"
-        },
-        {
-          "title": "llm-coding-agent 0.1a0",
-          "url": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-02T19:33:12.000Z"
         }
       ]
     },
@@ -53,9 +53,15 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        269
+        322
       ],
       "signals": [
+        {
+          "title": "[AINews] The Field Guide to Fable",
+          "url": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
+          "source": "latent-space",
+          "publishedAt": "2026-07-07T04:44:53.000Z"
+        },
         {
           "title": "[AINews] not much happened today",
           "url": "https://www.latent.space/p/ainews-not-much-happened-today-900",
@@ -79,12 +85,6 @@
           "url": "https://www.latent.space/p/ainews-sonnet-5-today-and-fable-5",
           "source": "latent-space",
           "publishedAt": "2026-07-01T03:01:09.000Z"
-        },
-        {
-          "title": "Hugging Face and Cerebras bring Gemma 4 to real-time voice AI",
-          "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
-          "source": "hf",
-          "publishedAt": "2026-07-01T00:00:00.000Z"
         }
       ]
     },
@@ -96,7 +96,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        60
+        71
       ],
       "signals": [
         {
@@ -118,16 +118,16 @@
           "publishedAt": "2026-06-24T18:53:16.000Z"
         },
         {
-          "title": "[AINews] Claude Tag: Multiplayer, Proactive, Persistent Agents in Slack",
-          "url": "https://www.latent.space/p/ainews-claude-tag-multiplayer-proactive",
-          "source": "latent-space",
-          "publishedAt": "2026-06-24T07:14:26.000Z"
-        },
-        {
           "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
           "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
           "source": "hf",
           "publishedAt": "2026-05-14T18:55:01.000Z"
+        },
+        {
+          "title": "Expert Support case study: Bolstering a RAG app with LLM-as-a-Judge",
+          "url": "https://huggingface.co/blog/digital-green-llm-judge",
+          "source": "hf",
+          "publishedAt": "2024-10-28T00:00:00.000Z"
         }
       ]
     },
@@ -139,7 +139,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        10
+        12
       ],
       "signals": [
         {
@@ -164,7 +164,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        15
+        18
       ],
       "signals": [
         {

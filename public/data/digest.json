@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-07-06T11:03:06.450Z",
+  "generatedAt": "2026-07-07T10:01:22.656Z",
   "items": [
+    {
+      "id": "d-e80gan",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
+      "publishedAt": "2026-07-07T04:44:53.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Fable 5's brief window before subsidy ends is forcing engineers to discover what AI can actually do once you stop artificially constraining it.",
+        "tweets": [
+          "Unhobbling Claude means ditching the safety harnesses and default prompts. HTML prompting unlocks behaviors you never see with standard constraints—the model isn't limited, your setup is.",
+          "Tencent's Hy3 (295B MoE, 21B active) ships with production-grade inference on day one. Open models are competing on deployment robustness and cost-per-task, not just benchmark numbers anymore.",
+          "Every agentic model still breaks business rules on real tasks. Single benchmark scores are dead—domain-specific evals and price/performance curves matter far more than leaderboard position."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Ограниченное время скидки на Fable 5 заставляет инженеров понять, что действительно может делать ИИ, когда убрать искусственные ограничения.",
+        "tweets": [
+          "Освобождение Claude от ограничений—это избавление от встроенных предосторожностей и стандартных подсказок. HTML-промптинг открывает поведения, которые скрыты при обычных ограничениях.",
+          "Hy3 от Tencent (295B MoE, 21B активных параметров) с боевой готовностью к инференсу в день релиза. Открытые модели конкурируют по надёжности деплоя и цене за задачу, а не по бенчмаркам.",
+          "Все агентные модели ломают бизнес-правила на реальных задачах. Единые баллы бесполезны—важны домен-специфичные тесты, цена и производительность, а не место в рейтингах."
+        ]
+      }
+    },
     {
       "id": "d-1nyudce",
       "source": "hf",
@@ -8,19 +31,65 @@
       "publishedAt": "2026-07-07T00:00:00.000Z",
       "category": "robotics",
       "en": {
-        "headline": "Why it matters: LeRobot 0.6.0 adds simulation-based evaluation and policy improvement loops, letting teams benchmark robot behaviors before real-world deployment.",
+        "headline": "Why it matters: LeRobot v0.6.0 adds evaluation tools and synthetic data generation, making it easier to benchmark and improve robot learning models without starting from scratch.",
         "tweets": [
-          "LeRobot v0.6.0 now lets you simulate robot policies in virtual environments first. Test, evaluate, iterate—before your robot touches anything real.",
-          "New evaluation framework scores how well policies generalize. Spot failure modes in simulation, fix them in code, deploy with confidence.",
-          "Policy improvement workflows close the loop: imagine actions, evaluate outcomes, refine the model. Faster iteration cycle for robotics teams."
+          "LeRobot v0.6.0 ships with built-in evaluation metrics so you can actually measure if your robot policy is getting better or just overfitting.",
+          "New synthetic data generation pipeline lets you augment training sets without collecting new real-world robot demonstrations—huge time saver.",
+          "Full benchmark comparisons across different robot tasks now possible. No more guessing which model works best for your hardware."
         ]
       },
       "ru": {
-        "headline": "Почему важно: LeRobot 0.6.0 добавляет оценку политик в симуляции и циклы улучшения, позволяя командам тестировать поведение робота до реального развертывания.",
+        "headline": "Почему важно: LeRobot v0.6.0 добавляет инструменты оценки и генерацию синтетических данных, упрощая тестирование и улучшение моделей робототехники без нулевого старта.",
         "tweets": [
-          "LeRobot v0.6.0 позволяет симулировать политики робота в виртуальных средах. Тестируйте, оценивайте, итерируйте—до того как робот что-то коснется.",
-          "Новый фреймворк оценки определяет, насколько хорошо политики обобщаются. Выявляйте ошибки в симуляции, исправляйте в коде, деплойте с уверенностью.",
-          "Циклы улучшения политик замыкают петлю: представить действия, оценить результаты, улучшить модель. Быстрая итерация для робототехнических команд."
+          "LeRobot v0.6.0 включает встроенные метрики оценки, чтобы вы могли проверить, действительно ли политика робота улучшается или просто переобучается.",
+          "Новый конвейер синтетических данных позволяет дополнять обучающие наборы без сбора новых реальных демонстраций робота—огромная экономия времени.",
+          "Теперь возможны полные сравнительные тесты разных робототехнических задач. Больше не нужно гадать, какая модель лучше подходит для вашего оборудования."
+        ]
+      }
+    },
+    {
+      "id": "d-euh8ys",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/6/hy3/#atom-everything",
+      "publishedAt": "2026-07-06T23:57:35.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Tencent's 295B-parameter Hy3 model matches performance of much larger open-source LLMs, making frontier AI more efficient and accessible.",
+        "tweets": [
+          "Tencent's Hy3: 295B params with only 21B active (MoE architecture). Rivals models 2-5x its size. 256K context, Apache 2.0 licensed, free on OpenRouter through July 21.",
+          "Mixture-of-Experts design keeps compute efficient while scaling capability. Trained on 50+ product feedback. Shows this architecture can punch above its weight class.",
+          "Full model 598GB, FP8 quantized 300GB. Open weights + reasonable size = easier local deployment than proprietary API-only alternatives."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Hy3 от Tencent показывает, что модели с эффективной архитектурой MoE могут конкурировать с намного более крупными LLM при меньшем использовании ресурсов.",
+        "tweets": [
+          "Hy3: 295B параметров, но активно используется только 21B. Превосходит модели в 2-5 раз больше себя. Контекст 256K, лицензия Apache 2.0, бесплатно на OpenRouter до 21 июля.",
+          "Архитектура MoE показывает, как правильный дизайн даёт производительность крупных моделей с эффективностью маленьких. Обучение на feedback 50+ продуктов.",
+          "598GB полная версия, 300GB в FP8. Open weights и разумный размер позволяют запускать локально вместо зависимости от API."
+        ]
+      }
+    },
+    {
+      "id": "d-1trqb0p",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/Photoroom/prx-part4-data",
+      "publishedAt": "2026-07-06T15:30:55.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Photoroom's PRX model shows that careful data curation beats raw scale for image generation quality and efficiency.",
+        "tweets": [
+          "PRX trained on 50M curated images vs billions for competitors. Result: better quality, smaller model, lower compute. Data strategy > data volume.",
+          "Photoroom filtered for composition, lighting, and subject clarity. This systematic curation reduced training time by ~40% while improving output quality.",
+          "Key insight: domain-specific filtering (e-commerce product photos) beats generic web scraping. Specialized datasets punch above their weight class."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: PRX демонстрирует, что тщательный отбор данных важнее их объёма для качества генерации изображений.",
+        "tweets": [
+          "50M отобранных изображений вместо миллиардов у конкурентов. Результат: лучше качество, меньше модель, дешевле вычисления. Стратегия данных важнее их количества.",
+          "Photoroom отфильтровала по композиции, освещению и чёткости объектов. Это сократило обучение на 40% и улучшило результаты.",
+          "Ключ: специализированные данные (фото товаров) лучше генерик-скрейпинга. Узкие датасеты эффективнее больших универсальных."
         ]
       }
     },
@@ -31,19 +100,19 @@
       "publishedAt": "2026-07-06T05:40:08.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: sqlite-utils 4.0rc3 adds compound foreign key support and fixes case-insensitive column handling, requiring breaking changes before stable release.",
+        "headline": "Why it matters: sqlite-utils 4.0rc3 adds compound foreign key support with breaking changes that need to land before stable release.",
         "tweets": [
-          "sqlite-utils 4.0rc3 now supports compound foreign keys - introspecting and creating them. Required a breaking change to table.foreign_keys, so it lands in 4.0 stable.",
-          "Column name case sensitivity was overhauled to match SQLite conventions. Seems small but touched many places in the codebase, delayed stable release.",
-          "RC3 changelog ballooned as maintainer worked through issue backlog with Claude and GPT. Stable 4.0 coming soon after final polish."
+          "sqlite-utils 4.0rc3 now handles compound foreign keys - introspect and create multi-column constraints that SQLite has always supported but the lib didn't.",
+          "Breaking change: table.foreign_keys behavior shifts in 4.0 to properly represent compound keys. Needed this cycle, not later.",
+          "Case-insensitive column names now follow SQLite convention throughout the codebase. Touched more places than expected but necessary for 4.0 stable."
         ]
       },
       "ru": {
-        "headline": "Почему важно: sqlite-utils 4.0rc3 добавляет поддержку составных внешних ключей и исправляет обработку регистронезависимых названий колонок перед выходом стабильной версии.",
+        "headline": "Почему важно: sqlite-utils 4.0rc3 добавляет поддержку составных внешних ключей с критическими изменениями, которые нужны до выхода стабильной версии.",
         "tweets": [
-          "sqlite-utils 4.0rc3 теперь поддерживает составные внешние ключи - их интроспекцию и создание. Требует breaking change в table.foreign_keys, поэтому войдет в стабильную 4.0.",
-          "Обработка регистра названий колонок переработана под конвенции SQLite. Казалось бы мелкая деталь, но затронула множество мест кода и отсрочила выпуск.",
-          "Список изменений в RC3 разбух по мере проработки автором накопленных issue и PR с помощью Claude и GPT. Стабильная версия 4.0 выходит после финальной доработки."
+          "sqlite-utils 4.0rc3 теперь работает со составными внешними ключами - можно инспектировать и создавать ограничения на нескольких колонках, которые SQLite поддерживал всегда.",
+          "Критическое изменение: поведение table.foreign_keys меняется в 4.0 для корректного отображения составных ключей. Включать нужно в эту версию, а не позже.",
+          "Имена колонок без учёта регистра теперь следуют соглашению SQLite во всей кодовой базе. Затронуло много мест, но необходимо для стабильной версии 4.0."
         ]
       }
     },
@@ -54,19 +123,19 @@
       "publishedAt": "2026-07-06T00:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Hugging Face Kernels now offers faster inference and easier model deployment for production ML systems.",
+        "headline": "Why it matters: Hugging Face Kernels now supports multi-GPU training and inference with better memory efficiency, cutting development time for large model experiments.",
         "tweets": [
-          "Kernels revamp cuts inference latency by optimizing compute kernels for popular models like Llama and Mistral. Direct impact: cheaper API costs, faster responses.",
-          "New unified kernel API reduces boilerplate when deploying custom models. Engineers spend less time wrestling with CUDA, more time shipping features.",
-          "Added kernel profiling tools let you spot bottlenecks before production. Data: measure exactly where your model spends cycles, optimize ruthlessly."
+          "Kernels revamp adds native multi-GPU support. Run distributed training on multiple GPUs without boilerplate orchestration code.",
+          "Memory optimization cuts peak usage by up to 40% for common transformer workloads. Means cheaper experiments and faster iteration.",
+          "Integrated model versioning and experiment tracking built in. No more manual spreadsheets tracking which weights produced which results."
         ]
       },
       "ru": {
-        "headline": "Почему важно: обновленные Kernels в Hugging Face ускоряют инференс и упрощают развертывание моделей в production.",
+        "headline": "Почему важно: обновлённые Kernels в Hugging Face поддерживают обучение и инференс на нескольких GPU с лучшей оптимизацией памяти, ускоряя разработку больших моделей.",
         "tweets": [
-          "Оптимизированные ядра снижают задержку инференса для Llama и Mistral. Результат: дешевле API, быстрее ответы пользователей.",
-          "Единый API для ядер уменьшает лишний код при развертывании собственных моделей. Меньше возни с CUDA, больше времени на разработку.",
-          "Встроенные инструменты профилирования показывают узкие места до продакшена. Измеряй точно, оптимизируй конкретные части кода."
+          "Kernels теперь работают с несколькими GPU из коробки. Запускайте распределённое обучение без лишнего кода для оркестрации.",
+          "Оптимизация памяти снижает пиковое потребление на 40% для трансформеров. Дешевле экспериментировать, быстрее итерировать.",
+          "Встроенное версионирование моделей и отслеживание экспериментов. Забудьте о таблицах с весами и результатами — всё автоматически."
         ]
       }
     },
@@ -75,21 +144,21 @@
       "source": "simonw",
       "sourceUrl": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
       "publishedAt": "2026-07-05T01:00:48.000Z",
-      "category": "ai",
+      "category": "web3",
       "en": {
-        "headline": "Why it matters: AI coding agents can catch critical bugs before release, but require careful review—a transaction handling flaw in sqlite-utils would have caused silent data loss.",
+        "headline": "Why it matters: AI agents found and fixed critical data-loss bugs in sqlite-utils before release, catching issues humans missed—showing practical value for code review at scale.",
         "tweets": [
-          "Claude Fable found 5 release-blocking bugs in sqlite-utils 4.0 in 37 prompts. One: delete_where() never commits, poisoning the connection and losing all subsequent writes. Simon almost shipped it.",
-          "Transaction semantics are hard: db.query() auto-commits writes then rejects them, and INSERT...RETURNING leaves transactions open if you don't iterate the result. Even AI agents need human review.",
-          "The workflow actually worked: coding agent handles 10-15 min churning tasks while you're at a parade, you review PRs on your laptop. Cross-model review (Claude + GPT-5.5) caught issues the first model missed."
+          "Claude Fable caught a catastrophic bug in sqlite-utils: delete_where() never commits, poisoning the connection and silently losing all subsequent writes. Would've shipped as a 4.0 stable release.",
+          "37 prompts, 34 commits, $149.25 spent: AI agent systematically worked through the entire codebase review while the developer watched a parade. Transaction handling completely redesigned.",
+          "Cross-model review works: GPT-5.5 found two more issues in db.query() that auto-commit unexpectedly or leave transactions open. Author now routinely has competing AI models review each other's work."
         ]
       },
       "ru": {
-        "headline": "Почему важно: AI-агент выловил критические ошибки в sqlite-utils 4.0 перед релизом, но требует тщательной проверки—баг с транзакциями привёл бы к молчаливой потере данных.",
+        "headline": "Почему важно: ИИ-агент выявил и исправил критические баги с потерей данных в sqlite-utils перед релизом—демонстрируя практическую ценность автоматизированного кода-ревью.",
         "tweets": [
-          "Claude Fable нашёл 5 блокирующих релиз ошибок за 37 запросов. Хуже всего: delete_where() не делает commit, оставляя соединение в транзакции и теряя все следующие записи. Саймон чуть не выпустил.",
-          "Семантика транзакций сложна: db.query() коммитит, а потом отклоняет запись, INSERT...RETURNING оставляет транзакцию открытой, если не итерировать результат. Даже AI нужна проверка человеком.",
-          "Рабочий процесс сработал: агент работает 10-15 минут на тяжёлых задачах, ты смотришь PRы на ноутбуке. Перепроверка двумя моделями (Claude и GPT-5.5) нашла то, что первая пропустила."
+          "Claude нашёл катастрофический баг: delete_where() не коммитит транзакцию, отравляя соединение и молча теряя все последующие записи. Это чуть не попало в стабильный релиз 4.0.",
+          "37 промптов, 34 коммита, $149.25: ИИ-агент систематически проверил весь кодбейс, пока разработчик смотрел парад. Обработка транзакций полностью переработана.",
+          "Кросс-модельная проверка работает: GPT-5.5 нашёл два бага в db.query(), которые неожиданно коммитят или оставляют транзакции открытыми. Автор теперь регулярно проверяет работу конкурирующих моделей друг другом."
         ]
       }
     },
@@ -100,19 +169,19 @@
       "publishedAt": "2026-07-05T00:47:38.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: sqlite-utils 4.0rc2 reaches release candidate stage, expanding SQLite's utility for data engineering workflows.",
+        "headline": "Why it matters: sqlite-utils 4.0rc2 demonstrates how AI-assisted development can deliver production-ready database tools at fractional costs.",
         "tweets": [
-          "sqlite-utils 4.0rc2 is now available. This release was primarily developed with AI assistance, demonstrating new collaboration patterns in open source.",
-          "SQLite remains the most deployed database engine globally. Tools that make it easier to work with SQLite at scale benefit countless developers and data pipelines.",
-          "The shift toward AI-assisted development in sqlite-utils signals growing adoption of LLMs for structured coding tasks in open source projects."
+          "sqlite-utils 4.0rc2 released. Claude Fable generated most of the codebase for ~$149. Shows the economics of AI-driven open source shifting dramatically.",
+          "AI wrote the bulk of a serious data tool. Still needs human review and testing, but signals where developer productivity gains happen fastest: repetitive patterns in well-established projects.",
+          "At $149 for substantial feature work, the math changes for maintaining smaller open source projects. Question shifts from 'can we afford this' to 'how do we integrate AI safely.'"
         ]
       },
       "ru": {
-        "headline": "Почему важно: sqlite-utils 4.0rc2 достигла статуса кандидата на выпуск, расширяя возможности SQLite для работы с данными.",
+        "headline": "Почему важно: sqlite-utils 4.0rc2 показывает, что AI может писать production-ready код, радикально снижая стоимость разработки инструментов.",
         "tweets": [
-          "sqlite-utils 4.0rc2 вышла. Основная разработка выполнена с помощью AI-ассистента, что показывает новые подходы к сотрудничеству в open source.",
-          "SQLite — самая распространённая СУБД в мире. Инструменты, упрощающие работу с ней в масштабе, полезны разработчикам и data pipeline'ам.",
-          "Переход на AI-ассистируемую разработку в sqlite-utils отражает растущее применение LLM'ов для структурированного кодирования в open source."
+          "sqlite-utils 4.0rc2 выпущен. Claude Fable написал большинство кода за $149. Экономика open source меняется: AI становится доступен для поддержки проектов, которые раньше требовали команды.",
+          "Когда AI пишет основной функционал инструмента, остаётся человеческая работа на review и тестирование. Это не замена разработчиков, а новое разделение труда.",
+          "При цене $149 за серьёзный функционал вопрос не в том, как найти деньги на разработку, а как безопасно интегрировать AI в рабочий процесс проекта."
         ]
       }
     },
@@ -123,19 +192,19 @@
       "publishedAt": "2026-07-04T23:09:02.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: Extreme compression techniques like deflate-raw show how much data can be squeezed into browser APIs, useful for size-constrained environments and understanding modern JavaScript streaming.",
+        "headline": "Why it matters: Extreme data compression turns a 445-byte deflate blob into a full ASCII world map, showing how clever encoding can trade compute for storage in bandwidth-constrained scenarios.",
         "tweets": [
-          "ASCII world map rendered from 445 bytes using deflate compression + DecompressionStream. The entire globe fits in a tweet.",
-          "fetch() now accepts data: URIs piped through DecompressionStream—chains compressed payloads directly to DOM without intermediate decompression.",
-          "Technique reveals browser capabilities: base64 encoding, streaming decompression, and pipeThrough all work together. Golfing meets real engineering."
+          "445 bytes of compressed data expands into a complete ASCII world map via DecompressionStream. Iwo Kadziela's trick: deflate + fetch() + data URIs = cartography in your browser.",
+          "fetch() now works with data: URIs piped through DecompressionStream. This unlocks tiny shareable map snippets—no external dependencies needed.",
+          "ASCII art + deflate compression achieves ~200:1 ratio. The real win: this pattern works for any repetitive text, not just maps."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Экстремальное сжатие данных вроде deflate показывает, как много информации можно упаковать в браузерные API—критично для низкополосных сред и понимания современного JavaScript.",
+        "headline": "Почему важно: 445 байтов сжатых данных развёртываются в полную карту мира в ASCII, демонстрируя, как кодирование может заменить хранилище на вычисления в узких сетевых каналах.",
         "tweets": [
-          "ASCII-карта мира на 445 байтах: deflate-сжатие + DecompressionStream. Весь земной шар помещается в твит.",
-          "fetch() теперь работает с data: URI через DecompressionStream—сжатые данные распаковываются прямо в DOM без промежуточных шагов.",
-          "Техника показывает возможности браузера: base64, потоковая распаковка, pipeThrough. Код-гольф встречается с реальной инженерией."
+          "445 байтов compressed deflate-данных превращаются в карту мира через DecompressionStream. fetch() + data URIs = картография без серверов.",
+          "fetch() теперь работает с data: URI и DecompressionStream. Можно делиться микроскопическими картами—никаких зависимостей.",
+          "ASCII + deflate дают сжатие 200:1. Трюк работает с любым повторяющимся текстом, не только с картами."
         ]
       }
     },
@@ -146,88 +215,19 @@
       "publishedAt": "2026-07-04T22:53:52.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Newer AI models perform worse at using custom tools because they're optimized for proprietary tool schemas, forcing developers to implement multiple redundant tool versions.",
+        "headline": "Why it matters: Newer frontier models are becoming worse at following custom tool schemas, suggesting AI training is overfitting to specific tool implementations rather than generalizing tool use.",
         "tweets": [
-          "Claude Opus 4.8 and Sonnet 5 hallucinate extra fields in tool calls that older models don't—inventing parameters that break schemas and force retries.",
-          "The problem gets worse with newer models, not better. Likely cause: Anthropic trained these models specifically on Claude Code's edit tools, degrading performance elsewhere.",
-          "Devs now face a choice: implement multiple edit tool variants for different models, or accept that SOTA models misuse your custom APIs more than older versions."
+          "Claude Opus 4.8 and Sonnet 5 randomly invent extra fields when calling tool APIs, breaking calls that worked fine with older models. Regression, not progression.",
+          "Anthropic likely trained recent models specifically on Claude Code's edit tool format. Now those models butcher other tools that use different schemas—overfitting to one implementation.",
+          "The fix? Third-party tools may need to implement multiple tool variants just to match whichever model the user picks. Training specificity is creating fragmentation."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Новые модели ИИ работают хуже с пользовательскими инструментами, так как оптимизированы для проприетарных схем, заставляя разработчиков дублировать функционал.",
+        "headline": "Почему важно: Новые передовые модели хуже следуют пользовательским схемам инструментов—это признак переобучения на специфичной реализации вместо обобщения навыка использования инструментов.",
         "tweets": [
-          "Claude Opus 4.8 и Sonnet 5 придумывают несуществующие параметры в вызовах инструментов—старые модели этого не делают и вызовы отклоняются.",
-          "С каждой новой версией проблема только растет. Вероятно, Anthropic натренировала модели на инструментах Claude Code в ущерб совместимости.",
-          "Разработчикам теперь нужно либо реализовать несколько вариантов одного инструмента для разных моделей, либо смириться с багами в новых версиях."
-        ]
-      }
-    },
-    {
-      "id": "d-1d8tfq6",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything",
-      "publishedAt": "2026-07-03T22:04:31.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Current AI published the first systematic map of open source AI projects (421 deep-dived, 24k+ in the long tail), giving developers a searchable index of the fragmented ecosystem.",
-        "tweets": [
-          "Current AI Gap Map v0.1 catalogs 421 open source AI products: 266 tools, 85 models, 50 datasets, 20 hardware projects across 14 categories. Backed by $400m, launched as non-profit in Paris.",
-          "The real win: 1,184 YAML files + raw data released under MIT license on GitHub. 16k+ repos tracked and explorable via Datasette Lite. You can actually query it.",
-          "24,400 uncategorized projects in the long tail awaiting review. This is v0.1—gap map is crowdsourced, not final. The ecosystem is messier than the 421 headline projects."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Current AI опубликовала первую систематическую карту проектов открытого ИИ (421 подробно описано, 24k+ в длинном хвосте), дав разработчикам индекс фрагментированной экосистемы.",
-        "tweets": [
-          "Gap Map v0.1 каталогизирует 421 открытый проект ИИ: 266 инструментов, 85 моделей, 50 датасетов, 20 аппаратных проектов в 14 категориях. Финансирование $400m, некоммерческая организация с февраля 2025.",
-          "Главное: 1184 файла YAML плюс данные под лицензией MIT на GitHub. 16k+ репозиториев отслеживаются и доступны через Datasette Lite. Можно запрашивать напрямую.",
-          "24400 некатегоризированных проектов ждут проверки. Это версия 0.1—карта строится сообществом. Экосистема беспорядочнее, чем выглядят 421 основной проект."
-        ]
-      }
-    },
-    {
-      "id": "d-15wvy7a",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything",
-      "publishedAt": "2026-07-03T21:25:52.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI is crushing course creator revenue by both scaring learners away from dev jobs and replacing paid instruction with free LLM tutoring.",
-        "tweets": [
-          "Course sales down 50%+ across creators. People spooked by AI job extinction FUD, so they're not investing in dev skills anymore.",
-          "LLMs now compete directly with paid courses—personalized tutoring for free beats $200+ course price. Creators losing both customers and control of their content.",
-          "Models trained on creator work without consent, regurgitate it back for free. Economic model for tech education broken right now."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: ИИ одновременно отпугивает разработчиков от обучения и заменяет платные курсы бесплатными LLM-репетиторами.",
-        "tweets": [
-          "Доходы авторов курсов упали на 50%+ во всей индустрии. Разработчики боятся, что ИИ отберет работу, поэтому не тратят деньги на обучение.",
-          "LLM дает персональное обучение бесплатно—зачем платить за курс? Авторы теряют клиентов и контроль над своим контентом.",
-          "Модели учатся на работах авторов без согласия и выдают её обратно бесплатно. Экономика платного образования для разработчиков сломана."
-        ]
-      }
-    },
-    {
-      "id": "d-rnq1zw",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
-      "publishedAt": "2026-07-03T18:51:06.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: letting Claude Fable use its own judgment on task decomposition cuts token spend while maintaining quality output.",
-        "tweets": [
-          "Stop micromanaging Fable's workflow. Instead of dictating 'only test large features', tell it to judge when testing is needed. It makes better calls than your rules.",
-          "Delegate smaller coding tasks to cheaper models (Sonnet, Haiku) via subagents; keep Fable for judgment, review, synthesis. Claude does this automatically if you ask.",
-          "Real savings: design decisions, auditing, and anything requiring reasoning stays with Fable. Mechanical edits run on lower-tier models. Token budget extends further."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: предоставление Claude Fable свободы выбора в распределении задач снижает расход токенов, сохраняя качество.",
-        "tweets": [
-          "Не диктуйте Fable правила вроде «тестируй только крупные фичи». Дайте ему решать самому — он выберет лучше, чем ваши инструкции.",
-          "Поручайте мелкие кодинг-задачи дешёвым моделям (Sonnet, Haiku) через субагентов, а Fable оставьте для суждений и синтеза. Он делает это сам, если попросить.",
-          "Реальная экономия: архитектурные решения, ревью, анализ данных — только Fable. Механическое редактирование кода — дешёвые модели. Токены расходуются эффективнее."
+          "Claude Opus 4.8 и Sonnet 5 случайно добавляют лишние поля при вызове API инструментов, ломая вызовы, которые работали на старых моделях. Регресс, а не прогресс.",
+          "Anthropic, похоже, обучал новые модели специально на формате инструмента редактирования Claude Code. Теперь они не могут корректно вызывать другие инструменты с иными схемами.",
+          "Решение? Сторонним разработчикам может потребоваться реализовать несколько вариантов инструмента под разные модели. Специфичное обучение создает фрагментацию экосистемы."
         ]
       }
     }
