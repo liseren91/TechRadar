@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T10:01:22.764Z",
+  "generatedAt": "2026-07-08T08:44:24.586Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -10,9 +10,21 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        351
+        411
       ],
       "signals": [
+        {
+          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
+          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
+          "source": "latent-space",
+          "publishedAt": "2026-07-08T02:20:25.000Z"
+        },
+        {
+          "title": "sqlite-utils 4.0, now with database schema migrations",
+          "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-07T19:32:57.000Z"
+        },
         {
           "title": "[AINews] The Field Guide to Fable",
           "url": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
@@ -30,18 +42,6 @@
           "url": "https://www.latent.space/p/aiewf-daily-dispatch-locomotives",
           "source": "latent-space",
           "publishedAt": "2026-07-03T05:11:43.000Z"
-        },
-        {
-          "title": "Vercel's Andrew Qu on why agents are a new kind of software",
-          "url": "https://www.latent.space/p/vercel-agents-new-software",
-          "source": "latent-space",
-          "publishedAt": "2026-07-03T00:08:18.000Z"
-        },
-        {
-          "title": "The website of the future may assemble itself for every visitor",
-          "url": "https://www.latent.space/p/the-website-of-the-future",
-          "source": "latent-space",
-          "publishedAt": "2026-07-02T21:25:14.000Z"
         }
       ]
     },
@@ -53,9 +53,15 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        322
+        375
       ],
       "signals": [
+        {
+          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
+          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
+          "source": "latent-space",
+          "publishedAt": "2026-07-08T02:20:25.000Z"
+        },
         {
           "title": "[AINews] The Field Guide to Fable",
           "url": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
@@ -79,12 +85,6 @@
           "url": "https://www.latent.space/p/aiewf-daily-dispatch-loops",
           "source": "latent-space",
           "publishedAt": "2026-07-01T04:46:21.000Z"
-        },
-        {
-          "title": "[AINews] Sonnet 5 today, and Fable 5 tomorrow",
-          "url": "https://www.latent.space/p/ainews-sonnet-5-today-and-fable-5",
-          "source": "latent-space",
-          "publishedAt": "2026-07-01T03:01:09.000Z"
         }
       ]
     },
@@ -96,7 +96,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        71
+        81
       ],
       "signals": [
         {
@@ -112,12 +112,6 @@
           "publishedAt": "2026-06-26T01:12:30.000Z"
         },
         {
-          "title": "Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks",
-          "url": "https://www.latent.space/p/databricks",
-          "source": "latent-space",
-          "publishedAt": "2026-06-24T18:53:16.000Z"
-        },
-        {
           "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
           "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
           "source": "hf",
@@ -128,6 +122,12 @@
           "url": "https://huggingface.co/blog/digital-green-llm-judge",
           "source": "hf",
           "publishedAt": "2024-10-28T00:00:00.000Z"
+        },
+        {
+          "title": "Building Cost-Efficient Enterprise RAG applications with Intel Gaudi 2 and Intel Xeon",
+          "url": "https://huggingface.co/blog/cost-efficient-rag-applications-with-intel",
+          "source": "hf",
+          "publishedAt": "2024-05-09T00:00:00.000Z"
         }
       ]
     },
@@ -139,7 +139,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        12
+        14
       ],
       "signals": [
         {
@@ -164,7 +164,7 @@
       "trajectory": "rising",
       "momentum": 1,
       "weeklyCounts": [
-        18
+        21
       ],
       "signals": [
         {
@@ -184,6 +184,25 @@
           "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
           "source": "deepmind",
           "publishedAt": "2025-11-25T15:52:51.000Z"
+        }
+      ]
+    },
+    {
+      "id": "humanoids",
+      "label": "Humanoid Robots",
+      "category": "robotics",
+      "stage": "prototype",
+      "trajectory": "rising",
+      "momentum": 1,
+      "weeklyCounts": [
+        1
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
+          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
+          "source": "latent-space",
+          "publishedAt": "2026-07-08T02:20:25.000Z"
         }
       ]
     }
