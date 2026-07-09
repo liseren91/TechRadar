@@ -1,6 +1,213 @@
 {
-  "generatedAt": "2026-07-08T08:44:24.470Z",
+  "generatedAt": "2026-07-09T09:58:02.952Z",
   "items": [
+    {
+      "id": "d-bc6orx",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-spacexai-launches-grok-45",
+      "publishedAt": "2026-07-09T06:05:41.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Grok 4.5 trades absolute benchmark supremacy for coding-agent efficiency, undercutting GPT-5.6 by 3-4x on price while matching Opus-class performance.",
+        "tweets": [
+          "Grok 4.5 hits #4 on benchmarks but costs $2/$6 per 1M tokens vs GPT-5.6 at $5/$30. Built with Cursor specifically for coding+agents, not general chat dominance.",
+          "1.5T parameter model uses 60% fewer output tokens than Opus 4.8 on same tasks. Economics, not raw capability, is the competitive play here.",
+          "Day-0 support in Grok Build, Cursor, Hermes, OpenRouter. Context window staying at 500k for now, Musk says 1M upgrade coming within a week."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Grok 4.5 ставит на экономичность вместо абсолютного лидерства в бенчмарках, стоя в 3-4 раза дешевле GPT-5.6 при сопоставимой производительности.",
+        "tweets": [
+          "Grok 4.5 занимает 4-е место по тестам, но стоит $2/$6 за миллион токенов против $5/$30 у GPT-5.6. Создан с Cursor для кода и агентов, не для общего чата.",
+          "Модель на 1.5T параметров использует на 60% меньше выходных токенов чем Opus 4.8 на одинаковых задачах. Здесь выигрывает по цене, а не сырой мощности.",
+          "С первого дня доступен в Grok Build, Cursor, Hermes, OpenRouter. Окно контекста 500k, обновление до 1M обещано на следующей неделе."
+        ]
+      }
+    },
+    {
+      "id": "d-rhwk10",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
+      "publishedAt": "2026-07-08T23:57:21.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI agents can now reliably rewrite production systems by using test suites as conformance specs, making large-scale rewrites economically feasible when memory safety matters.",
+        "tweets": [
+          "Bun's 1M-line Zig→Rust rewrite cost $165k in Claude tokens but eliminated entire classes of bugs (use-after-free, double-free) that plagued the original. Agent harnesses + TypeScript test suite = automated conformance checking.",
+          "The key insight: stop doing code review line-by-line on LLM output. Instead, monitor agent workflows in real-time, fix the generation process when something breaks, and let the test suite validate everything. Boring = it worked.",
+          "Claude Code v2.1.181+ now runs on the Rust version. 10% faster startup on Linux, zero breakage. This is what 'successful rewrite' looks like: users don't notice, but memory safety bugs vanish."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: AI-агенты теперь способны переписывать production-системы, используя тестовые наборы как спецификации соответствия, что делает крупные переписи экономически целесообразными, когда безопасность памяти критична.",
+        "tweets": [
+          "Переписка Bun с Zig на Rust объемом 1M строк стоила $165k токенов Claude, но устранила целые классы ошибок (use-after-free, двойное освобождение). Агентские харнессы + TypeScript-тесты = автоматическая проверка соответствия.",
+          "Ключевая идея: забудьте про строчку за строчкой review LLM-кода. Вместо этого мониторьте рабочие процессы агентов в реальном времени, чините генерацию когда что-то ломается, пусть тесты валидируют всё.",
+          "Claude Code v2.1.181+ работает на Rust-версии. На Linux старт на 10% быстрее, ничего не сломалось. Вот как выглядит успешная переписка: пользователи ничего не замечают, но ошибки памяти исчезают."
+        ]
+      }
+    },
+    {
+      "id": "d-gsc6vi",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything",
+      "publishedAt": "2026-07-08T23:20:48.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: ChatGPT voice mode now uses a current frontier model that delegates complex reasoning to GPT-5.5 in real time, making voice conversations substantially more useful for actual problem-solving.",
+        "tweets": [
+          "GPT-Live replaces the outdated GPT-4o voice model. It now offloads web search, reasoning, and complex tasks to GPT-5.5 while maintaining conversational flow—a major upgrade for voice-first workflows.",
+          "The new model kept interrupting with inappropriate laughter during preview, flagged as a bug and fixed. Voice interactions now feel less robotic and condescending.",
+          "Preview users report hour-long productive conversations. The model evolves as new frontier models release, making voice mode finally competitive as a real brainstorming partner."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Голосовой режим ChatGPT теперь работает на современной модели, которая передает сложные задачи GPT-5.5 в реальном времени, значительно повышая полезность голосовых диалогов для решения задач.",
+        "tweets": [
+          "GPT-Live заменяет устаревшую модель GPT-4o для голоса. Теперь система делегирует поиск в сети, рассуждения и сложные задачи GPT-5.5, сохраняя естественный ход разговора—огромный прорыв.",
+          "Во время тестирования модель неуместно смеялась в диалоге. OpenAI исправила ошибку, голосовое взаимодействие стало менее механичным и более вежливым.",
+          "Пользователи тестировали часовые продуктивные диалоги. Модель будет обновляться с каждым новым фронтальным релизом, голосовой режим наконец становится полноценным партнером для обсуждения идей."
+        ]
+      }
+    },
+    {
+      "id": "d-1kaqqw0",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/modal2026",
+      "publishedAt": "2026-07-08T22:55:07.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI agents need infrastructure designed for their workloads—not humans—forcing cloud platforms to abandon traditional assumptions about stateless apps and bursty compute.",
+        "tweets": [
+          "Agents can't read docs or debug dashboards. Cloud infra must shift from developer experience to agent experience: fast iteration, tight feedback loops, and programmatic everything.",
+          "Kubernetes was built for steady-state web apps. AI workloads need elastic inference, GPU snapshotting, 100k sandboxes for RL rollouts, and infrastructure agents can actually operate.",
+          "Modal's play: multi-cloud capacity pool across 17 providers + networked sandboxes + hard guardrails. Raw GPU rental is just the start—production agents need observability, not just code."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ-агентам нужна инфраструктура, спроектированная под их задачи—не под людей—это заставляет облачные платформы отказаться от традиционных предположений о stateless-приложениях.",
+        "tweets": [
+          "Агенты не читают документацию и не смотрят дашборды. Облачная инфраструктура должна переориентироваться: быстрая итерация, плотные циклы обратной связи, полная программируемость.",
+          "Kubernetes создан для стабильного состояния веб-приложений. ИИ-нагрузкам нужна эластичная инференция, GPU-снимки, 100 тысяч изолированных сред для RL-тренировок.",
+          "Стратегия Modal: пул мощности через 17 облаков + сетевые sandbox'и + жёсткие guardrails. Просто аренда GPU недостаточна—production-агентам нужна наблюдаемость, а не только код."
+        ]
+      }
+    },
+    {
+      "id": "d-ctyui4",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything",
+      "publishedAt": "2026-07-08T20:03:34.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI-generated commit messages often describe what code does rather than why it matters, making code review harder instead of easier.",
+        "tweets": [
+          "AI commit messages are failing at their job: they list code changes anyone can see in the diff, but skip the strategic context reviewers actually need.",
+          "Kenton Varda banned AI-written PR descriptions on his team because they added noise without insight. A concrete signal that auto-generated text isn't always helpful.",
+          "The gap: AI excels at describing implementation details, not explaining intent. Until LLMs understand what matters to human reviewers, humans should write the narrative."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ-генерируемые сообщения коммитов описывают код, а не причины изменений, что затрудняет review вместо помощи.",
+        "tweets": [
+          "ИИ пишет в коммитах то, что видно в диффе, но упускает стратегический контекст, нужный для понимания смысла изменений.",
+          "Кентон Варда запретил своей команде AI-описания для PR, потому что они добавляли шум вместо ценной информации.",
+          "ИИ хорошо описывает детали реализации, но не объясняет замысел. Пока LLM не поймут, что важно рецензентам, пусть людей пишут контекст."
+        ]
+      }
+    },
+    {
+      "id": "d-p3riac",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/open-data-for-agents",
+      "publishedAt": "2026-07-08T17:16:05.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Open datasets for training AI agents are becoming critical infrastructure as companies move beyond single-task models to autonomous systems.",
+        "tweets": [
+          "NVIDIA and Hugging Face released curated datasets for agent training. Problem: most agents today learn from proprietary data. Open benchmarks fix that.",
+          "Agent datasets need to cover reasoning, tool use, and decision-making under uncertainty. Generic language model data isn't enough anymore.",
+          "Standardized open datasets let smaller teams build competitive agents instead of needing billions in compute. This is how you democratize AI capability."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: открытые наборы данных для обучения AI-агентов становятся критической инфраструктурой по мере перехода от узкоспециализированных моделей к автономным системам.",
+        "tweets": [
+          "NVIDIA и Hugging Face выпустили подобранные датасеты для обучения агентов. Проблема: большинство агентов учатся на закрытых данных компаний. Открытые бенчмарки это решают.",
+          "Датасеты агентов должны охватывать рассуждения, использование инструментов и принятие решений в условиях неопределённости. Обычных данных языковых моделей недостаточно.",
+          "Стандартные открытые датасеты позволяют небольшим командам создавать конкурентные агенты без миллиардов вычислительных ресурсов. Так демократизируется AI."
+        ]
+      }
+    },
+    {
+      "id": "d-1uacx92",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/government-national-security-partnerships",
+      "publishedAt": "2026-07-08T13:30:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenAI is setting formal principles for how it works with governments on AI, balancing security needs with democratic oversight and public safety.",
+        "tweets": [
+          "OpenAI won't build AI for mass surveillance or autonomous weapons without meaningful human control. Clear red lines matter when governments come calling.",
+          "Partnering with defense agencies requires democratic accountability—not a blank check. Transparency and public debate should shape national security AI use.",
+          "Safety first: OpenAI commits to refusing requests that violate international law or enable authoritarian control. Principles protect both users and the company."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: OpenAI определяет принципы сотрудничества с государствами в области ИИ, балансируя требования безопасности с демократическим контролем.",
+        "tweets": [
+          "OpenAI не будет создавать ИИ для массовой слежки или автономного оружия без реального контроля человека. Четкие границы необходимы при работе с государством.",
+          "Партнерство с оборонными ведомствами требует демократической подотчетности. Прозрачность и общественное обсуждение должны определять использование ИИ в интересах безопасности.",
+          "Безопасность в приоритете: OpenAI отказывает в запросах, нарушающих международное право или позволяющих авторитарный контроль. Принципы защищают людей и саму компанию."
+        ]
+      }
+    },
+    {
+      "id": "d-17ha3r5",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+      "publishedAt": "2026-07-08T13:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: SWE-Bench Pro, a widely-used AI coding benchmark, has fundamental flaws that make performance comparisons unreliable.",
+        "tweets": [
+          "OpenAI found SWE-Bench Pro contains duplicate and near-duplicate tasks that inflate model scores. Same problem solved multiple times looks like broader competence.",
+          "Benchmark contamination: test data leaked into training sets for some models, making their scores meaningless. You can't trust leaderboard rankings built on this.",
+          "Current coding evals measure benchmark gaming, not real engineering ability. Need cleaner benchmarks to actually know if AI can solve new problems."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: SWE-Bench Pro, популярный бенчмарк для оценки AI-моделей, содержит фундаментальные ошибки, которые делают сравнение результатов ненадёжным.",
+        "tweets": [
+          "OpenAI обнаружила дубликаты и похожие друг на друга задачи в SWE-Bench Pro. Когда одна проблема решается многократно, модель выглядит компетентнее, чем есть на самом деле.",
+          "Утечка данных: тестовые примеры попали в обучающие наборы некоторых моделей. Результаты таких моделей на доске рейтингов просто фальсифицированы.",
+          "Сегодняшние тесты кодирования оценивают не способность к решению новых задач, а умение игра́ть на бенчмарках. Нужны чистые, надёжные методы оценки."
+        ]
+      }
+    },
+    {
+      "id": "d-11ndnu4",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/k-12-educators-practical-skills",
+      "publishedAt": "2026-07-08T10:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Teachers need hands-on training to teach AI competently, not just theory.",
+        "tweets": [
+          "OpenAI Academy + Walton Foundation are running AI Skills Jams—live, practical workshops for K-12 teachers to learn how to actually use AI tools in classrooms.",
+          "Teachers get real experience with AI applications they can immediately apply: grading assistance, lesson planning, student engagement tools—not abstract concepts.",
+          "Scaling AI literacy starts with educators. Training teachers now builds the foundation for a generation that understands AI as a practical skill, not magic."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Учителям нужны практические навыки преподавания ИИ, а не только теория.",
+        "tweets": [
+          "OpenAI Academy и фонд Walton запускают AI Skills Jams — живые мастер-классы для учителей K-12, где они учатся применять ИИ инструменты в классах.",
+          "Учителя получают опыт с ИИ-приложениями, которые сразу можно использовать: проверка работ, подготовка уроков, вовлечение учеников — не просто теория.",
+          "Массовое внедрение ИИ грамотности начинается с подготовки учителей. Это создает основу, чтобы поколение видело ИИ практическим инструментом, а не чудом."
+        ]
+      }
+    },
     {
       "id": "d-1dryjno",
       "source": "latent-space",
@@ -8,226 +215,19 @@
       "publishedAt": "2026-07-08T02:20:25.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Harness engineering—not direct model self-modification—is becoming the proven path for recursive self-improvement, reshaping how AI labs build autonomous agents.",
+        "headline": "Why it matters: Harness engineering—not direct AI self-modification—is becoming the practical foundation for recursive self-improvement and agent systems across frontier labs.",
         "tweets": [
-          "Lilian Weng's 35-paper recap shows harness engineering (goal specification, training pipelines, deployment systems) beats direct weight self-modification for recursive AI improvement. Thinky's bet.",
-          "Claude Cowork, Gemini Managed Agents, LangChain Deep Agents all converging: the real agent layer sits above models, not inside them. Harnesses are infrastructure, not chatbots.",
-          "Even as harness improvements get absorbed into core models, specifying goals and context never disappears. The harness problem is permanent, not temporary."
+          "Lilian Weng's 35-paper summary reframes recursive self-improvement around external harnesses (training pipelines, deployment systems) rather than models rewriting their own weights. This shifts how we think about AI advancement.",
+          "Claude Cowork, Gemini Managed Agents, and LangChain's Deep Agents all converge on the same pattern: background execution, custom function calling, and MCP servers. Harness engineering is now the center of product design.",
+          "Meta's Muse Image and Video now top the rankings. Meanwhile, every major lab—Anthropic, Google, OpenAI—is quietly pushing agent/harness infrastructure as the real bottleneck, not model capability alone."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Инженерия harness-ов — инструментов управления поведением AI — становится доказанным путем рекурсивного самосовершенствования, вытесняя идею прямой модификации весов.",
+        "headline": "Почему важно: Инженерия обвязки систем—а не прямая самореорганизация весов ИИ—становится практической основой рекурсивного самоулучшения и агентов во всех лидирующих лабораториях.",
         "tweets": [
-          "В обзоре 35 статей Лилиан Ванг показано: harness-инженерия (задание целей, конвейеры обучения, системы развёртывания) эффективнее прямого переписывания весов для улучшения AI.",
-          "Claude Cowork, Gemini Agents, LangChain Deep Agents сходятся на одном: слой агента живёт над моделью, а не внутри неё. Harness-ы — это инфраструктура, не чаты.",
-          "Даже когда улучшения harness-ов впитываются в саму модель, задание целей и контекста никогда не исчезнет. Это постоянная проблема, а не временная."
-        ]
-      }
-    },
-    {
-      "id": "d-zu9mcs",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
-      "publishedAt": "2026-07-07T21:15:33.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Hugging Face models now deploy directly to AWS SageMaker Studio, cutting setup friction for teams scaling ML workflows.",
-        "tweets": [
-          "Hugging Face added one-click deployment to SageMaker Studio. No more juggling model downloads, configs, and AWS setup—ship inference in seconds.",
-          "Integration handles model versioning, compute selection, and endpoint creation automatically. Engineers spend less time configuring, more time iterating.",
-          "Works with Transformers, Diffusers, TRL models. Bridges the gap between open model hubs and cloud infrastructure without custom glue code."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Модели с Hugging Face теперь развёртываются в SageMaker Studio одним кликом, упрощая масштабирование ML-проектов на AWS.",
-        "tweets": [
-          "Hugging Face интегрирован с AWS SageMaker Studio. Забудьте о скачивании моделей и ручной настройке—развёртывайте инференс за секунды.",
-          "Автоматическая обработка версионирования, выбора вычислений и создания эндпоинтов. Инженеры экономят время на настройке, не на экспериментах.",
-          "Поддерживает Transformers, Diffusers, TRL. Прямой мост от открытых хабов моделей к облачной инфраструктуре без дополнительного кода."
-        ]
-      }
-    },
-    {
-      "id": "d-oozf16",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
-      "publishedAt": "2026-07-07T19:32:57.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: sqlite-utils 4.0 brings production-grade schema migrations to SQLite, letting teams version-control database changes like code instead of manual SQL scripts.",
-        "tweets": [
-          "sqlite-utils 4.0 adds built-in migrations: define schema changes in Python, track what's been applied, auto-skip already-run migrations. No more manual SQL drift.",
-          "Uses SQLite's recommended alter-table pattern: create temp table with new schema, copy data, drop old, rename. Handles cases native ALTER TABLE can't touch.",
-          "Intentionally simpler than Django migrations—no auto-generation, no rollbacks (copy your DB file instead). Three years battle-tested before merging into core."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: sqlite-utils 4.0 добавляет встроенные миграции БД, позволяя версионировать изменения схемы как код вместо ручных SQL-скриптов.",
-        "tweets": [
-          "Миграции в sqlite-utils 4.0: опишите изменения схемы на Python, система отслеживает применённые миграции и пропускает уже выполненные. Никаких дрейфов БД.",
-          "Использует рекомендованный SQLite паттерн: создать временную таблицу с новой схемой, скопировать данные, удалить старую, переименовать новую. Работает там, где ALTER TABLE не подходит.",
-          "Намеренно проще Django migrations: нет автогенерации, нет откатов (просто копируйте БД). Три года в боевых условиях перед интеграцией в ядро."
-        ]
-      }
-    },
-    {
-      "id": "d-ow47sp",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/7/sqlite-migrate/#atom-everything",
-      "publishedAt": "2026-07-07T16:33:55.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: sqlite-migrate 0.2 consolidates migration tooling by wrapping sqlite-utils 4.0, reducing maintenance burden and dependency fragmentation.",
-        "tweets": [
-          "sqlite-migrate 0.2 retires as a standalone library, now a compatibility shim over sqlite-utils 4.0. Simpler dependency tree, same functionality.",
-          "Migration logic moving upstream to sqlite-utils means one source of truth for SQLite schema changes. Less duplication, easier bug fixes.",
-          "If you're using sqlite-migrate, upgrade to 0.2 and migrate to sqlite-utils 4.0 directly—the shim ensures your existing code keeps working."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: sqlite-migrate 0.2 прекращает разработку и становится совместимостным слоем над sqlite-utils 4.0, упрощая экосистему инструментов.",
-        "tweets": [
-          "sqlite-migrate 0.2 больше не поддерживается как отдельная библиотека, теперь это обёртка над sqlite-utils 4.0. Меньше зависимостей, тот же функционал.",
-          "Логика миграций переходит в sqlite-utils — один источник истины для изменений схемы SQLite. Нет дублирования, проще исправлять баги.",
-          "Если используете sqlite-migrate, обновитесь до 0.2 и переходите на sqlite-utils 4.0 напрямую — совместимостный слой обеспечит работу кода."
-        ]
-      }
-    },
-    {
-      "id": "d-114gli6",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything",
-      "publishedAt": "2026-07-07T16:18:16.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: Web Components let you embed live GitHub code snippets directly in web pages without server-side processing, making documentation and tutorials easier to maintain.",
-        "tweets": [
-          "New Web Component embeds GitHub code snippets via simple HTML tags. Parse the GitHub URL, fetch raw content, display line ranges with numbers. No syntax highlighting yet but that's next.",
-          "Built with GPT-5.5 by giving it a clear spec: take github.com URLs, convert to raw.githubusercontent.com, fetch the lines you need. AI handled the implementation details cleanly.",
-          "Web Components sidestep the need for iframe embeds or manual copy-paste. Just update the source file on GitHub and your docs stay synced automatically."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Web Component позволяет встраивать фрагменты кода с GitHub прямо в веб-страницы, автоматически синхронизируя документацию с исходным кодом.",
-        "tweets": [
-          "Новый Web Component встраивает код из GitHub через простые HTML теги. Парсит URL, загружает raw-файл, показывает выбранные строки с номерами. Подсветка синтаксиса пока не реализована.",
-          "Создан с помощью GPT-5.5 через чёткую спецификацию: берёт URL на GitHub, конвертирует в raw.githubusercontent.com, извлекает нужные строки. ИИ справился с деталями реализации.",
-          "Web Component убирает нужду в iframe'ах и ручном копировании кода. Достаточно обновить файл на GitHub и документация синхронизируется сама."
-        ]
-      }
-    },
-    {
-      "id": "d-mh0tb5",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/7/sqlite-utils/#atom-everything",
-      "publishedAt": "2026-07-07T15:42:43.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: sqlite-utils 4.0 adds built-in database schema migrations, reducing the friction for managing evolving SQLite databases in production.",
-        "tweets": [
-          "sqlite-utils 4.0 ships with native schema migration support. No more manual ALTER TABLE commands or external migration tools for SQLite workflows.",
-          "Migrations let you version control database schema changes alongside your code. Safer deployments, easier rollbacks, less ops overhead.",
-          "Perfect for data teams and small-to-medium projects that need SQLite durability without the operational complexity of larger databases."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: sqlite-utils 4.0 добавляет встроенную поддержку миграций схемы БД, упрощая управление evolving SQLite в production.",
-        "tweets": [
-          "sqlite-utils 4.0 включает нативную поддержку миграций. Больше не нужны ручные ALTER TABLE и внешние инструменты для управления схемой SQLite.",
-          "Миграции позволяют версионировать изменения схемы вместе с кодом. Безопаснее деплои, легче откаты, меньше операционной нагрузки.",
-          "Идеально для data-команд и небольших проектов, которым нужна надёжность SQLite без сложности больших БД."
-        ]
-      }
-    },
-    {
-      "id": "d-1irrdsc",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/microsoft/foundry-managed-compute",
-      "publishedAt": "2026-07-07T15:20:06.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Hugging Face models can now run on Microsoft's Foundry infrastructure, reducing deployment friction for teams building AI applications at scale.",
-        "tweets": [
-          "Hugging Face models now integrate with Microsoft Foundry's managed compute. One less infrastructure headache for ML teams deploying models to production.",
-          "Pre-configured environments for popular HF models mean faster time-to-value. Your engineers spend less time on DevOps, more time on actual model work.",
-          "Seamless integration between HF model hub and Foundry compute cuts cloud lock-in friction. Move models between environments without rewriting deployment code."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: модели Hugging Face теперь запускаются на управляемых вычислительных ресурсах Microsoft Foundry, упрощая развёртывание AI-приложений в production.",
-        "tweets": [
-          "Hugging Face интегрировалась с Foundry managed compute. Команды ML получают готовую инфраструктуру вместо возни с конфигурацией серверов.",
-          "Предготовленные окружения для популярных моделей HF ускоряют запуск в production. Инженеры меньше времени на DevOps, больше на оптимизацию моделей.",
-          "Модели из HF hub перемещаются между окружениями без переписывания кода развёртывания. Меньше vendor lock-in, больше гибкости архитектуры."
-        ]
-      }
-    },
-    {
-      "id": "d-q6yi2k",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/7/sqlite-utils-2/#atom-everything",
-      "publishedAt": "2026-07-07T05:36:15.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: sqlite-utils 4.0rc4 is the final release candidate before stable, incorporating AI-reviewed feedback to polish the CLI tool that thousands of developers rely on for SQLite database manipulation.",
-        "tweets": [
-          "sqlite-utils 4.0rc4 drops today—last stop before stable. Claude Fable 5's detailed review shaped this iteration, meaning the feedback came from AI review, not just human testing.",
-          "The RC cycle matters: this version locked in community feedback and fixes before going gold. If you're managing SQLite workflows at scale, watch this stabilize.",
-          "4.0 brings the culmination of iterative improvement. Claude's review caught edge cases typical humans miss—that's the kind of polish that separates beta from production-ready."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: sqlite-utils 4.0rc4 — финальный кандидат перед стабильным релизом, который включает рекомендации от детального анализа Claude Fable 5 и готов к использованию тысячами разработчиков.",
-        "tweets": [
-          "sqlite-utils 4.0rc4 вышла — последняя версия перед финалом. Детальная проверка Claude Fable 5 повлияла на итоговый вид, так что обратная связь пришла от ИИ-анализа, а не только от людей.",
-          "RC-цикл критичен: версия зафиксировала исправления и отзывы сообщества перед официальным релизом. Если вы работаете с SQLite в масштабе, следите за стабилизацией.",
-          "4.0 — результат долгой итерации. Claude выловила граничные случаи, которые люди пропускают — это различие между бетой и готовым к продакшену кодом."
-        ]
-      }
-    },
-    {
-      "id": "d-e80gan",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
-      "publishedAt": "2026-07-07T04:44:53.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Fable-class models are forcing engineers to rethink prompting strategies and accept that old constraints no longer apply—shifting the bottleneck from capability to deployment robustness.",
-        "tweets": [
-          "Most model limitations come from the harness we put them in, not the model itself. Unhobbling through prompt redesign and HTML formatting unlocks behaviors you didn't know existed.",
-          "Open-weight models like Tencent's Hy3 are closing the gap fast. Competition now hinges on inference speed and tool-calling stability, not just benchmark scores.",
-          "Agent evaluation is getting real: every frontier model still breaks business rules. Cost-per-task and domain-specific rankings matter more than single leaderboard numbers."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Модели класса Fable заставляют инженеров переосмыслить стратегии промптирования, потому что старые ограничения больше не актуальны—узкое место переместилось с возможностей на надежность развертывания.",
-        "tweets": [
-          "Большинство ограничений моделей—это шлифовка, которую мы на них наложили, а не сама модель. HTML и переработка промптов раскрывают поведение, которое ты никогда не видел из-за чрезмерных ограничений.",
-          "Открытые модели вроде Hy3 от Tencent быстро сокращают отставание. Теперь конкуренция зависит от скорости вывода и стабильности вызова инструментов, а не только от бенчмарков.",
-          "Оценка агентов становится реалистичной: каждая передовая модель нарушает бизнес-правила. Стоимость задачи и рейтинги по доменам важнее, чем одна таблица лидеров."
-        ]
-      }
-    },
-    {
-      "id": "d-18s6gt2",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/australian-payments-plus",
-      "publishedAt": "2026-07-07T00:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Enterprise AI helps payments processors handle complex regulatory work without replacing critical human decision-making.",
-        "tweets": [
-          "Australian Payments Plus cut development time on payments compliance using ChatGPT Enterprise—AI handles the tedious pattern matching, engineers focus on edge cases.",
-          "Codex reduced manual code review cycles by letting AP+ generate boilerplate faster. Quality improved because humans reviewed what mattered most.",
-          "Key lesson: AI tools work best in regulated industries when they augment expert judgment, not bypass it. Human sign-off stayed mandatory."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Enterprise AI помогает компаниям в платёжной сфере справляться со сложностью нормативных требований без вытеснения человеческого суждения.",
-        "tweets": [
-          "Australian Payments Plus ускорила разработку с ChatGPT Enterprise—нейросеть берёт на себя рутинный анализ паттернов, инженеры занимаются критичными случаями.",
-          "Codex сократил циклы ревью кода: система генерирует типовой код быстрее, люди проверяют то, что действительно важно.",
-          "Вывод: в регулируемых отраслях AI работает эффективнее всего, когда усиливает экспертизу вместо её замены. Финальное одобрение осталось за людьми."
+          "Обзор 35 статей от Лилиан Вэнг переформатирует рекурсивное самоулучшение вокруг внешних обвязок (pipelines обучения, системы деплоя) вместо саморедактирования весов моделей. Это меняет понимание развития ИИ.",
+          "Claude Cowork, Gemini Managed Agents и Deep Agents от LangChain сходятся на одном: фоновое исполнение, кастомные функции, MCP серверы. Инженерия обвязки теперь в центре дизайна продуктов.",
+          "Muse Image и Video от Meta возглавляют рейтинги. При этом все лаборатории—Anthropic, Google, OpenAI—тихо ставят ставку на инфраструктуру агентов, а не только на мощь моделей."
         ]
       }
     }

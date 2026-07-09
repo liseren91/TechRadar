@@ -1,18 +1,51 @@
 {
-  "generatedAt": "2026-07-08T08:44:24.586Z",
+  "generatedAt": "2026-07-09T09:58:03.063Z",
   "window": "rolling-120d",
   "topics": [
+    {
+      "id": "humanoids",
+      "label": "Humanoid Robots",
+      "category": "robotics",
+      "stage": "prototype",
+      "trajectory": "stable",
+      "momentum": 0,
+      "weeklyCounts": [
+        1,
+        1
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
+          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
+          "source": "latent-space",
+          "publishedAt": "2026-07-08T02:20:25.000Z"
+        }
+      ]
+    },
     {
       "id": "llm-agents",
       "label": "LLM Agents",
       "category": "ai",
       "stage": "prototype",
-      "trajectory": "rising",
-      "momentum": 1,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
-        411
+        411,
+        59
       ],
       "signals": [
+        {
+          "title": "Rewriting Bun in Rust",
+          "url": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-08T23:57:21.000Z"
+        },
+        {
+          "title": "Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal CTO",
+          "url": "https://www.latent.space/p/modal2026",
+          "source": "latent-space",
+          "publishedAt": "2026-07-08T22:55:07.000Z"
+        },
         {
           "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
           "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
@@ -30,18 +63,6 @@
           "url": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
           "source": "latent-space",
           "publishedAt": "2026-07-07T04:44:53.000Z"
-        },
-        {
-          "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
-          "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-05T01:00:48.000Z"
-        },
-        {
-          "title": "AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
-          "url": "https://www.latent.space/p/aiewf-daily-dispatch-locomotives",
-          "source": "latent-space",
-          "publishedAt": "2026-07-03T05:11:43.000Z"
         }
       ]
     },
@@ -50,12 +71,19 @@
       "label": "Open Models",
       "category": "ai",
       "stage": "early-adopter",
-      "trajectory": "rising",
-      "momentum": 1,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
-        375
+        375,
+        52
       ],
       "signals": [
+        {
+          "title": "Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal CTO",
+          "url": "https://www.latent.space/p/modal2026",
+          "source": "latent-space",
+          "publishedAt": "2026-07-08T22:55:07.000Z"
+        },
         {
           "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
           "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
@@ -79,55 +107,6 @@
           "url": "https://www.latent.space/p/the-coolest-diffusion-research-isnt",
           "source": "latent-space",
           "publishedAt": "2026-07-01T14:42:39.000Z"
-        },
-        {
-          "title": "AIEWF Daily Dispatch: Loops, Software Factories & Forward Deployed Engineers",
-          "url": "https://www.latent.space/p/aiewf-daily-dispatch-loops",
-          "source": "latent-space",
-          "publishedAt": "2026-07-01T04:46:21.000Z"
-        }
-      ]
-    },
-    {
-      "id": "rag",
-      "label": "Retrieval-Augmented Generation",
-      "category": "ai",
-      "stage": "early-adopter",
-      "trajectory": "rising",
-      "momentum": 1,
-      "weeklyCounts": [
-        81
-      ],
-      "signals": [
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-07e",
-          "source": "latent-space",
-          "publishedAt": "2026-06-30T06:47:27.000Z"
-        },
-        {
-          "title": "[AINews] OpenAI reports median internal Codex output tokens grew 56x in Research, 32x in Customer Support, 27x in Engineering, and 13x in Legal since November 2025.",
-          "url": "https://www.latent.space/p/ainews-openai-reports-median-internal",
-          "source": "latent-space",
-          "publishedAt": "2026-06-26T01:12:30.000Z"
-        },
-        {
-          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-          "source": "hf",
-          "publishedAt": "2026-05-14T18:55:01.000Z"
-        },
-        {
-          "title": "Expert Support case study: Bolstering a RAG app with LLM-as-a-Judge",
-          "url": "https://huggingface.co/blog/digital-green-llm-judge",
-          "source": "hf",
-          "publishedAt": "2024-10-28T00:00:00.000Z"
-        },
-        {
-          "title": "Building Cost-Efficient Enterprise RAG applications with Intel Gaudi 2 and Intel Xeon",
-          "url": "https://huggingface.co/blog/cost-efficient-rag-applications-with-intel",
-          "source": "hf",
-          "publishedAt": "2024-05-09T00:00:00.000Z"
         }
       ]
     },
@@ -136,10 +115,11 @@
       "label": "Fusion Energy",
       "category": "energy",
       "stage": "research",
-      "trajectory": "rising",
-      "momentum": 1,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
-        14
+        14,
+        2
       ],
       "signals": [
         {
@@ -161,10 +141,11 @@
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "rising",
-      "momentum": 1,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
-        21
+        21,
+        3
       ],
       "signals": [
         {
@@ -188,21 +169,46 @@
       ]
     },
     {
-      "id": "humanoids",
-      "label": "Humanoid Robots",
-      "category": "robotics",
-      "stage": "prototype",
-      "trajectory": "rising",
-      "momentum": 1,
+      "id": "rag",
+      "label": "Retrieval-Augmented Generation",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.89,
       "weeklyCounts": [
-        1
+        81,
+        9
       ],
       "signals": [
         {
-          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
-          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-07e",
           "source": "latent-space",
-          "publishedAt": "2026-07-08T02:20:25.000Z"
+          "publishedAt": "2026-06-30T06:47:27.000Z"
+        },
+        {
+          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+          "source": "hf",
+          "publishedAt": "2026-05-14T18:55:01.000Z"
+        },
+        {
+          "title": "Expert Support case study: Bolstering a RAG app with LLM-as-a-Judge",
+          "url": "https://huggingface.co/blog/digital-green-llm-judge",
+          "source": "hf",
+          "publishedAt": "2024-10-28T00:00:00.000Z"
+        },
+        {
+          "title": "Building Cost-Efficient Enterprise RAG applications with Intel Gaudi 2 and Intel Xeon",
+          "url": "https://huggingface.co/blog/cost-efficient-rag-applications-with-intel",
+          "source": "hf",
+          "publishedAt": "2024-05-09T00:00:00.000Z"
+        },
+        {
+          "title": "CPU Optimized Embeddings with 🤗 Optimum Intel and fastRAG",
+          "url": "https://huggingface.co/blog/intel-fast-embedding",
+          "source": "hf",
+          "publishedAt": "2024-03-15T00:00:00.000Z"
         }
       ]
     }
