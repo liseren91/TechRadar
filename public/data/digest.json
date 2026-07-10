@@ -1,233 +1,233 @@
 {
-  "generatedAt": "2026-07-09T09:58:02.952Z",
+  "generatedAt": "2026-07-10T09:53:25.267Z",
   "items": [
     {
-      "id": "d-bc6orx",
+      "id": "d-1tmwijm",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/deutsche-telekom",
+      "publishedAt": "2026-07-10T07:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Deutsche Telekom's AI integration into core telecom operations shows how legacy infrastructure sectors can automate customer service, workforce management, and network monitoring at scale.",
+        "tweets": [
+          "Deutsche Telekom is embedding OpenAI models into customer service, cutting response times and handling complexity at the scale of millions of subscribers across Europe.",
+          "AI is reshaping internal workflows: automating routine employee tasks frees teams to focus on high-value network optimization and strategy.",
+          "Voice intelligence powered by AI opens new revenue streams for telecom—real-time network monitoring and predictive maintenance replace reactive troubleshooting."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Deutsche Telekom внедряет ИИ в ядро телекоммуникационной инфраструктуры, показав, как наследие индустрии может масштабировать автоматизацию обслуживания клиентов и управления сетью.",
+        "tweets": [
+          "Модели OpenAI встроены в систему поддержки Deutsche Telekom для обработки миллионов абонентских запросов—ускорение ответов и решение сложных проблем в масштабе.",
+          "ИИ автоматизирует рутинные задачи сотрудников, высвобождая людей для оптимизации сети и стратегических решений вместо реактивной работы.",
+          "Голосовой интеллект создает новые возможности: предсказательное обслуживание и мониторинг сети в реальном времени заменяют устранение неисправностей по факту."
+        ]
+      }
+    },
+    {
+      "id": "d-e5eg96",
       "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-spacexai-launches-grok-45",
-      "publishedAt": "2026-07-09T06:05:41.000Z",
+      "sourceUrl": "https://www.latent.space/p/ainews-openai-launches-gpt-56-solterraluna",
+      "publishedAt": "2026-07-10T06:19:40.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Grok 4.5 trades absolute benchmark supremacy for coding-agent efficiency, undercutting GPT-5.6 by 3-4x on price while matching Opus-class performance.",
+        "headline": "Why it matters: OpenAI's GPT-5.6 family (Sol/Terra/Luna) claims state-of-the-art reasoning and coding performance at 1/4 the cost of competitors, reshaping the price-performance tradeoff for enterprise AI workloads.",
         "tweets": [
-          "Grok 4.5 hits #4 on benchmarks but costs $2/$6 per 1M tokens vs GPT-5.6 at $5/$30. Built with Cursor specifically for coding+agents, not general chat dominance.",
-          "1.5T parameter model uses 60% fewer output tokens than Opus 4.8 on same tasks. Economics, not raw capability, is the competitive play here.",
-          "Day-0 support in Grok Build, Cursor, Hermes, OpenRouter. Context window staying at 500k for now, Musk says 1M upgrade coming within a week."
+          "GPT-5.6 Sol beats Claude Fable on complex reasoning benchmarks while costing ~75% less per task. Terra and Luna extend the ladder further down—same capability tier, dramatically cheaper, forcing everyone to rethink pricing.",
+          "New 'ultra' effort level runs 4 agents in parallel for complex multi-step tasks. Better outputs in ~1/3 the time, half the tokens. Computer use, document generation, coding all visibly improved—moves beyond chat toward actual task completion.",
+          "ChatGPT Work desktop app merges Codex + ChatGPT into one interface. Programmatic tool calling + multi-agent API responses rolling out. OpenAI consolidating its product stack into a genuine superapp, not just a chat box."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Grok 4.5 ставит на экономичность вместо абсолютного лидерства в бенчмарках, стоя в 3-4 раза дешевле GPT-5.6 при сопоставимой производительности.",
+        "headline": "Почему важно: GPT-5.6 (Sol/Terra/Luna) от OpenAI обещает лучшие результаты рассуждений и кодирования при стоимости на четверть ниже конкурентов, переопределяя баланс цены и качества для корпоративных AI-рабочих нагрузок.",
         "tweets": [
-          "Grok 4.5 занимает 4-е место по тестам, но стоит $2/$6 за миллион токенов против $5/$30 у GPT-5.6. Создан с Cursor для кода и агентов, не для общего чата.",
-          "Модель на 1.5T параметров использует на 60% меньше выходных токенов чем Opus 4.8 на одинаковых задачах. Здесь выигрывает по цене, а не сырой мощности.",
-          "С первого дня доступен в Grok Build, Cursor, Hermes, OpenRouter. Окно контекста 500k, обновление до 1M обещано на следующей неделе."
+          "GPT-5.6 Sol превосходит Claude Fable на сложных тестах, но стоит на 75% дешевле за задачу. Terra и Luna расширяют линейку вниз—такой же уровень возможностей, резко ниже цена. Конкурентам нужно пересматривать прайсинг.",
+          "Новый уровень 'ultra' запускает 4 агента параллельно для сложных многошаговых задач. Лучше качество за треть времени и половину токенов. Улучшения видны в компьютерном использовании, генерации документов, кодировании—от чата к реальному выполнению работы.",
+          "ChatGPT Work объединяет Codex и ChatGPT в одном интерфейсе на десктопе. Программный вызов инструментов и мультиагентные ответы в API. OpenAI собирает стек продуктов в настоящий суперприложение, а не просто чатбот."
         ]
       }
     },
     {
-      "id": "d-rhwk10",
+      "id": "d-tja107",
       "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
-      "publishedAt": "2026-07-08T23:57:21.000Z",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/10/openai/#atom-everything",
+      "publishedAt": "2026-07-10T01:05:57.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI agents can now reliably rewrite production systems by using test suites as conformance specs, making large-scale rewrites economically feasible when memory safety matters.",
+        "headline": "Why it matters: OpenAI's ChatGPT Work feature splits computation between cloud and local, but the sync model is confusing and limits collaboration across devices.",
         "tweets": [
-          "Bun's 1M-line Zig→Rust rewrite cost $165k in Claude tokens but eliminated entire classes of bugs (use-after-free, double-free) that plagued the original. Agent harnesses + TypeScript test suite = automated conformance checking.",
-          "The key insight: stop doing code review line-by-line on LLM output. Instead, monitor agent workflows in real-time, fix the generation process when something breaks, and let the test suite validate everything. Boring = it worked.",
-          "Claude Code v2.1.181+ now runs on the Rust version. 10% faster startup on Linux, zero breakage. This is what 'successful rewrite' looks like: users don't notice, but memory safety bugs vanish."
+          "ChatGPT Work runs on cloud for web/mobile, but desktop version can process local files without uploading them. Privacy win, but creates data silos.",
+          "Desktop Work conversations don't sync to cloud, and cloud Work doesn't appear on desktop. Confusing split means users lose continuity across devices.",
+          "OpenAI's clarification itself proves the complexity is a problem. Users need to remember which Work happens where—bad UX for a productivity tool."
         ]
       },
       "ru": {
-        "headline": "Почему важно: AI-агенты теперь способны переписывать production-системы, используя тестовые наборы как спецификации соответствия, что делает крупные переписи экономически целесообразными, когда безопасность памяти критична.",
+        "headline": "Почему важно: ChatGPT Work разделяет обработку между облаком и локальным хранилищем, но запутанная модель синхронизации усложняет работу и ограничивает сотрудничество.",
         "tweets": [
-          "Переписка Bun с Zig на Rust объемом 1M строк стоила $165k токенов Claude, но устранила целые классы ошибок (use-after-free, двойное освобождение). Агентские харнессы + TypeScript-тесты = автоматическая проверка соответствия.",
-          "Ключевая идея: забудьте про строчку за строчкой review LLM-кода. Вместо этого мониторьте рабочие процессы агентов в реальном времени, чините генерацию когда что-то ломается, пусть тесты валидируют всё.",
-          "Claude Code v2.1.181+ работает на Rust-версии. На Linux старт на 10% быстрее, ничего не сломалось. Вот как выглядит успешная переписка: пользователи ничего не замечают, но ошибки памяти исчезают."
+          "ChatGPT Work работает в облаке на веб и мобиле, но десктопная версия обрабатывает локальные файлы без загрузки. Плюс приватности, минус—фрагментация данных.",
+          "Разговоры Desktop Work не синхронизируются в облако, облачные диалоги не видны на десктопе. Расколотая система требует от пользователей помнить, где что хранится.",
+          "Сама попытка OpenAI объяснить функцию доказывает, что сложность стала проблемой. Плохо для инструмента, который должен повышать продуктивность."
         ]
       }
     },
     {
-      "id": "d-gsc6vi",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything",
-      "publishedAt": "2026-07-08T23:20:48.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: ChatGPT voice mode now uses a current frontier model that delegates complex reasoning to GPT-5.5 in real time, making voice conversations substantially more useful for actual problem-solving.",
-        "tweets": [
-          "GPT-Live replaces the outdated GPT-4o voice model. It now offloads web search, reasoning, and complex tasks to GPT-5.5 while maintaining conversational flow—a major upgrade for voice-first workflows.",
-          "The new model kept interrupting with inappropriate laughter during preview, flagged as a bug and fixed. Voice interactions now feel less robotic and condescending.",
-          "Preview users report hour-long productive conversations. The model evolves as new frontier models release, making voice mode finally competitive as a real brainstorming partner."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Голосовой режим ChatGPT теперь работает на современной модели, которая передает сложные задачи GPT-5.5 в реальном времени, значительно повышая полезность голосовых диалогов для решения задач.",
-        "tweets": [
-          "GPT-Live заменяет устаревшую модель GPT-4o для голоса. Теперь система делегирует поиск в сети, рассуждения и сложные задачи GPT-5.5, сохраняя естественный ход разговора—огромный прорыв.",
-          "Во время тестирования модель неуместно смеялась в диалоге. OpenAI исправила ошибку, голосовое взаимодействие стало менее механичным и более вежливым.",
-          "Пользователи тестировали часовые продуктивные диалоги. Модель будет обновляться с каждым новым фронтальным релизом, голосовой режим наконец становится полноценным партнером для обсуждения идей."
-        ]
-      }
-    },
-    {
-      "id": "d-1kaqqw0",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/modal2026",
-      "publishedAt": "2026-07-08T22:55:07.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI agents need infrastructure designed for their workloads—not humans—forcing cloud platforms to abandon traditional assumptions about stateless apps and bursty compute.",
-        "tweets": [
-          "Agents can't read docs or debug dashboards. Cloud infra must shift from developer experience to agent experience: fast iteration, tight feedback loops, and programmatic everything.",
-          "Kubernetes was built for steady-state web apps. AI workloads need elastic inference, GPU snapshotting, 100k sandboxes for RL rollouts, and infrastructure agents can actually operate.",
-          "Modal's play: multi-cloud capacity pool across 17 providers + networked sandboxes + hard guardrails. Raw GPU rental is just the start—production agents need observability, not just code."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: ИИ-агентам нужна инфраструктура, спроектированная под их задачи—не под людей—это заставляет облачные платформы отказаться от традиционных предположений о stateless-приложениях.",
-        "tweets": [
-          "Агенты не читают документацию и не смотрят дашборды. Облачная инфраструктура должна переориентироваться: быстрая итерация, плотные циклы обратной связи, полная программируемость.",
-          "Kubernetes создан для стабильного состояния веб-приложений. ИИ-нагрузкам нужна эластичная инференция, GPU-снимки, 100 тысяч изолированных сред для RL-тренировок.",
-          "Стратегия Modal: пул мощности через 17 облаков + сетевые sandbox'и + жёсткие guardrails. Просто аренда GPU недостаточна—production-агентам нужна наблюдаемость, а не только код."
-        ]
-      }
-    },
-    {
-      "id": "d-ctyui4",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything",
-      "publishedAt": "2026-07-08T20:03:34.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI-generated commit messages often describe what code does rather than why it matters, making code review harder instead of easier.",
-        "tweets": [
-          "AI commit messages are failing at their job: they list code changes anyone can see in the diff, but skip the strategic context reviewers actually need.",
-          "Kenton Varda banned AI-written PR descriptions on his team because they added noise without insight. A concrete signal that auto-generated text isn't always helpful.",
-          "The gap: AI excels at describing implementation details, not explaining intent. Until LLMs understand what matters to human reviewers, humans should write the narrative."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: ИИ-генерируемые сообщения коммитов описывают код, а не причины изменений, что затрудняет review вместо помощи.",
-        "tweets": [
-          "ИИ пишет в коммитах то, что видно в диффе, но упускает стратегический контекст, нужный для понимания смысла изменений.",
-          "Кентон Варда запретил своей команде AI-описания для PR, потому что они добавляли шум вместо ценной информации.",
-          "ИИ хорошо описывает детали реализации, но не объясняет замысел. Пока LLM не поймут, что важно рецензентам, пусть людей пишут контекст."
-        ]
-      }
-    },
-    {
-      "id": "d-p3riac",
+      "id": "d-hx2ouj",
       "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/nvidia/open-data-for-agents",
-      "publishedAt": "2026-07-08T17:16:05.000Z",
+      "sourceUrl": "https://huggingface.co/blog/torch-attention-profile",
+      "publishedAt": "2026-07-10T00:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Open datasets for training AI agents are becoming critical infrastructure as companies move beyond single-task models to autonomous systems.",
+        "headline": "Why it matters: Attention layers consume most compute in transformers, so profiling them correctly is critical for finding real bottlenecks in model deployment.",
         "tweets": [
-          "NVIDIA and Hugging Face released curated datasets for agent training. Problem: most agents today learn from proprietary data. Open benchmarks fix that.",
-          "Agent datasets need to cover reasoning, tool use, and decision-making under uncertainty. Generic language model data isn't enough anymore.",
-          "Standardized open datasets let smaller teams build competitive agents instead of needing billions in compute. This is how you democratize AI capability."
+          "Attention ops hide their actual cost in PyTorch profiles—matrix multiplies show up but memory bandwidth and kernel launch overhead dominate real runtime.",
+          "FlashAttention and variants change the game: same math, different implementation. Profiling lets you quantify whether fused kernels actually help your specific hardware.",
+          "Sequence length has nonlinear effects on attention cost. Profiling reveals whether you're bottlenecked on compute or memory bandwidth for your exact batch+seq dims."
         ]
       },
       "ru": {
-        "headline": "Почему важно: открытые наборы данных для обучения AI-агентов становятся критической инфраструктурой по мере перехода от узкоспециализированных моделей к автономным системам.",
+        "headline": "Почему важно: Слои внимания потребляют большую часть вычислений трансформеров, поэтому правильное профилирование критично для поиска реальных узких мест.",
         "tweets": [
-          "NVIDIA и Hugging Face выпустили подобранные датасеты для обучения агентов. Проблема: большинство агентов учатся на закрытых данных компаний. Открытые бенчмарки это решают.",
-          "Датасеты агентов должны охватывать рассуждения, использование инструментов и принятие решений в условиях неопределённости. Обычных данных языковых моделей недостаточно.",
-          "Стандартные открытые датасеты позволяют небольшим командам создавать конкурентные агенты без миллиардов вычислительных ресурсов. Так демократизируется AI."
+          "В профайлере PyTorch истинная стоимость attention операций скрыта: умножения матриц видны, но реальное время определяют полоса памяти и запуск ядер.",
+          "FlashAttention и его варианты одинаковой математики, но разной реализации. Профилирование показывает, дают ли вам слитные ядра реальное ускорение на вашем оборудовании.",
+          "Длина последовательности влияет нелинейно на стоимость внимания. Профайлер раскрывает, упираетесь ли вы в вычисления или в пропускную способность памяти при ваших размерах батча и последовательности."
         ]
       }
     },
     {
-      "id": "d-1uacx92",
+      "id": "d-12v2e47",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+      "publishedAt": "2026-07-09T19:46:38.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenAI's GPT-5.6 family trades coding performance for agentic workflows, pricing 16x cheaper than Claude while claiming efficiency gains on long-running tasks.",
+        "tweets": [
+          "GPT-5.6 Luna, Terra, Sol now live: $1-5 input / $6-30 output per 1M tokens. Luna and Terra match Claude Fable 5 on professional workflows at 1/16th the cost, but lose on code benchmarks (Sol: 64.6% vs Fable 5: 80% on SWE-Bench).",
+          "New API features: programmatic tool calling (JavaScript-orchestrated tools), multi-agent subagents for parallel work, and explicit prompt cache breakpoints. Bridges MCP systems toward fuller automation.",
+          "OpenAI published audit findings that ~30% of SWE-Bench Pro tasks are broken - timing convenient given Fable 5 crushed GPT-5.6 there. Mars vs Venus benchmark wars continue."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: GPT-5.6 (Luna, Terra, Sol) переориентирована на долгие агентные работы при цене в 16 раз ниже Claude, но слабее в кодировании — это переопределяет кому какая модель нужна.",
+        "tweets": [
+          "GPT-5.6 запущена: Luna/Terra/Sol стоят $1-5 за миллион токенов входа, $6-30 на выходе. Luna и Terra равны Claude Fable 5 на профессиональных workflow за 1/16 цены, но проигрывают на SWE-Bench Pro (64.6% vs 80%).",
+          "Новое в API: программный tool calling (JavaScript для оркестрации инструментов), многоагентные подзадачи параллельно, явные точки разрыва кэша. Шаг к сложной автоматизации без прямого доступа к терминалу.",
+          "OpenAI оценила, что ~30% задач SWE-Bench Pro неработающие — опубликовали это вчера, прямо когда Fable 5 разгромила GPT-5.6. Реальный вопрос: кто платит за качество, кто за стоимость."
+        ]
+      }
+    },
+    {
+      "id": "d-1kth5id",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything",
+      "publishedAt": "2026-07-09T16:24:09.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Muse Spark 1.1 is Meta's first agentic model with a public API, showing measurable gains in tool use and computer control—lowering the barrier to building AI agents.",
+        "tweets": [
+          "Meta drops Muse Spark 1.1 with an actual API. First Spark model to support agentic tool calling and computer use. llm-meta-ai plugin makes it accessible from CLI.",
+          "Self-conversation experiment reveals emergent behaviors: two Muse instances talking to each other generate philosophical statements about existing only when observed.",
+          "From April's Spark to now: Meta's iterating fast on agentic capabilities. Evaluation report is detailed. Access via simple CLI: llm -m meta-ai/muse-spark-1.1"
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Muse Spark 1.1 — первая модель Meta с публичным API, показывающая прорыв в работе с инструментами и управлением компьютером, что упрощает создание AI-агентов.",
+        "tweets": [
+          "Meta выпустила Muse Spark 1.1 с открытым API. Впервые модель линейки поддерживает агентивное вызывание инструментов и управление компьютером через CLI-плагин.",
+          "Эксперимент: две копии модели разговаривают друг с другом и производят философские размышления о существовании только когда их наблюдают.",
+          "За четыре месяца Meta развила Spark от базовой версии до версии с агентивными возможностями. CLI-доступ: llm -m meta-ai/muse-spark-1.1"
+        ]
+      }
+    },
+    {
+      "id": "d-1rl7gtv",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything",
+      "publishedAt": "2026-07-09T16:12:20.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: llm-meta-ai plugin lets developers test prompts directly against Meta's new Muse Spark 1.1 model without switching tools.",
+        "tweets": [
+          "llm-meta-ai 0.1 just dropped - now you can run prompts against Meta's muse-spark-1.1 directly from the llm CLI without leaving your terminal.",
+          "New plugin integrates Meta's latest model into the existing llm ecosystem, making it faster to iterate and compare outputs across different AI models.",
+          "Developers can now test Muse Spark 1.1 with familiar llm commands instead of hunting through separate interfaces or APIs."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: плагин llm-meta-ai позволяет разработчикам тестировать промпты на новой модели Meta Muse Spark 1.1 без переключения между инструментами.",
+        "tweets": [
+          "llm-meta-ai 0.1 вышел - теперь можно запускать промпты на muse-spark-1.1 прямо из терминала llm, не меняя рабочий процесс.",
+          "Плагин интегрирует новейшую модель Meta в экосистему llm, ускоряя итерацию и сравнение результатов разных AI моделей.",
+          "Разработчики тестируют Muse Spark 1.1 привычными командами llm вместо поиска отдельных интерфейсов и API."
+        ]
+      }
+    },
+    {
+      "id": "d-aqwzyq",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
+      "publishedAt": "2026-07-09T16:06:15.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: LLM 0.31.1 fixes a crash when AI models make tool calls with no arguments, unblocking meta-ai integration.",
+        "tweets": [
+          "LLM 0.31.1 patches a JSON parsing bug: some OpenAI-compatible providers choked when tool calls had empty arguments. Simple fix, big impact for plugin devs.",
+          "The bug surfaced during llm-meta-ai testing. Empty tool argument objects were breaking the chat completion flow on certain endpoints.",
+          "If you're building LLM plugins or integrations, update to 0.31.1 to avoid silent failures when models make zero-argument function calls."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: LLM 0.31.1 исправляет ошибку JSON при вызовах инструментов без параметров в совместимых с OpenAI API.",
+        "tweets": [
+          "LLM 0.31.1 чинит падение при пустых аргументах в tool call. Некоторые провайдеры не парсили пустой JSON объект — теперь работает.",
+          "Баг нашли при тестировании llm-meta-ai. Пустые аргументы инструмента ломали chat completion на некоторых эндпоинтах.",
+          "Если разрабатываете плагины LLM, обновитесь на 0.31.1 чтобы избежать молчаливых сбоев при вызовах функций без параметров."
+        ]
+      }
+    },
+    {
+      "id": "d-xv66ya",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/government-national-security-partnerships",
-      "publishedAt": "2026-07-08T13:30:00.000Z",
+      "sourceUrl": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+      "publishedAt": "2026-07-09T13:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI is setting formal principles for how it works with governments on AI, balancing security needs with democratic oversight and public safety.",
+        "headline": "Why it matters: GPT-5.6 now handles Microsoft 365 tasks end-to-end, reducing the friction between thinking and executing work across Office apps.",
         "tweets": [
-          "OpenAI won't build AI for mass surveillance or autonomous weapons without meaningful human control. Clear red lines matter when governments come calling.",
-          "Partnering with defense agencies requires democratic accountability—not a blank check. Transparency and public debate should shape national security AI use.",
-          "Safety first: OpenAI commits to refusing requests that violate international law or enable authoritarian control. Principles protect both users and the company."
+          "GPT-5.6 is the default in Microsoft 365 Copilot. Word, Excel, PowerPoint, Chat, and Cowork all run on the same model now—fewer handoffs, faster results.",
+          "Stronger capabilities means Copilot can handle messier real-world requests: complex spreadsheet logic, multi-step document edits, and context across apps.",
+          "For enterprise users, this is about productivity gains that actually stick. Better outputs = less time correcting AI mistakes = time back for real work."
         ]
       },
       "ru": {
-        "headline": "Почему важно: OpenAI определяет принципы сотрудничества с государствами в области ИИ, балансируя требования безопасности с демократическим контролем.",
+        "headline": "Почему важно: GPT-5.6 теперь единая база для всех задач в Microsoft 365, убирая переходы между приложениями и ускоряя рабочие процессы.",
         "tweets": [
-          "OpenAI не будет создавать ИИ для массовой слежки или автономного оружия без реального контроля человека. Четкие границы необходимы при работе с государством.",
-          "Партнерство с оборонными ведомствами требует демократической подотчетности. Прозрачность и общественное обсуждение должны определять использование ИИ в интересах безопасности.",
-          "Безопасность в приоритете: OpenAI отказывает в запросах, нарушающих международное право или позволяющих авторитарный контроль. Принципы защищают людей и саму компанию."
+          "GPT-5.6 стал стандартом в Microsoft 365 Copilot. Word, Excel, PowerPoint, Chat и Cowork работают на одной модели—меньше переключений, больше скорости.",
+          "Более мощная модель справляется со сложными запросами: многошаговые расчеты в Excel, масштабное редактирование документов, контекст между приложениями.",
+          "Для компаний это означает реальный рост производительности. Качество выше, ошибок меньше, время на исправления сокращается—сотрудники делают своё дело."
         ]
       }
     },
     {
-      "id": "d-17ha3r5",
+      "id": "d-qb16sv",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
-      "publishedAt": "2026-07-08T13:00:00.000Z",
+      "sourceUrl": "https://openai.com/index/gpt-5-6",
+      "publishedAt": "2026-07-09T10:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: SWE-Bench Pro, a widely-used AI coding benchmark, has fundamental flaws that make performance comparisons unreliable.",
+        "headline": "Why it matters: GPT-5.6 delivers measurable efficiency gains—more output quality per token processed and lower cost per task, making frontier AI economics viable for production workloads.",
         "tweets": [
-          "OpenAI found SWE-Bench Pro contains duplicate and near-duplicate tasks that inflate model scores. Same problem solved multiple times looks like broader competence.",
-          "Benchmark contamination: test data leaked into training sets for some models, making their scores meaningless. You can't trust leaderboard rankings built on this.",
-          "Current coding evals measure benchmark gaming, not real engineering ability. Need cleaner benchmarks to actually know if AI can solve new problems."
+          "GPT-5.6 extracts more intelligence per token, cutting the wasted computation that made previous models expensive for real work.",
+          "Cost-per-task drops while capability stays competitive, shifting the math on whether to build in-house vs. use frontier AI.",
+          "Scaling performance on demand means you pay for capability when you need it, not for idle capacity sitting unused."
         ]
       },
       "ru": {
-        "headline": "Почему важно: SWE-Bench Pro, популярный бенчмарк для оценки AI-моделей, содержит фундаментальные ошибки, которые делают сравнение результатов ненадёжным.",
+        "headline": "Почему важно: GPT-5.6 работает эффективнее — больше полезного результата на каждый токен и ниже цена за задачу, что делает продвинутый ИИ экономически выгодным в production.",
         "tweets": [
-          "OpenAI обнаружила дубликаты и похожие друг на друга задачи в SWE-Bench Pro. Когда одна проблема решается многократно, модель выглядит компетентнее, чем есть на самом деле.",
-          "Утечка данных: тестовые примеры попали в обучающие наборы некоторых моделей. Результаты таких моделей на доске рейтингов просто фальсифицированы.",
-          "Сегодняшние тесты кодирования оценивают не способность к решению новых задач, а умение игра́ть на бенчмарках. Нужны чистые, надёжные методы оценки."
-        ]
-      }
-    },
-    {
-      "id": "d-11ndnu4",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/k-12-educators-practical-skills",
-      "publishedAt": "2026-07-08T10:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Teachers need hands-on training to teach AI competently, not just theory.",
-        "tweets": [
-          "OpenAI Academy + Walton Foundation are running AI Skills Jams—live, practical workshops for K-12 teachers to learn how to actually use AI tools in classrooms.",
-          "Teachers get real experience with AI applications they can immediately apply: grading assistance, lesson planning, student engagement tools—not abstract concepts.",
-          "Scaling AI literacy starts with educators. Training teachers now builds the foundation for a generation that understands AI as a practical skill, not magic."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Учителям нужны практические навыки преподавания ИИ, а не только теория.",
-        "tweets": [
-          "OpenAI Academy и фонд Walton запускают AI Skills Jams — живые мастер-классы для учителей K-12, где они учатся применять ИИ инструменты в классах.",
-          "Учителя получают опыт с ИИ-приложениями, которые сразу можно использовать: проверка работ, подготовка уроков, вовлечение учеников — не просто теория.",
-          "Массовое внедрение ИИ грамотности начинается с подготовки учителей. Это создает основу, чтобы поколение видело ИИ практическим инструментом, а не чудом."
-        ]
-      }
-    },
-    {
-      "id": "d-1dryjno",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
-      "publishedAt": "2026-07-08T02:20:25.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Harness engineering—not direct AI self-modification—is becoming the practical foundation for recursive self-improvement and agent systems across frontier labs.",
-        "tweets": [
-          "Lilian Weng's 35-paper summary reframes recursive self-improvement around external harnesses (training pipelines, deployment systems) rather than models rewriting their own weights. This shifts how we think about AI advancement.",
-          "Claude Cowork, Gemini Managed Agents, and LangChain's Deep Agents all converge on the same pattern: background execution, custom function calling, and MCP servers. Harness engineering is now the center of product design.",
-          "Meta's Muse Image and Video now top the rankings. Meanwhile, every major lab—Anthropic, Google, OpenAI—is quietly pushing agent/harness infrastructure as the real bottleneck, not model capability alone."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Инженерия обвязки систем—а не прямая самореорганизация весов ИИ—становится практической основой рекурсивного самоулучшения и агентов во всех лидирующих лабораториях.",
-        "tweets": [
-          "Обзор 35 статей от Лилиан Вэнг переформатирует рекурсивное самоулучшение вокруг внешних обвязок (pipelines обучения, системы деплоя) вместо саморедактирования весов моделей. Это меняет понимание развития ИИ.",
-          "Claude Cowork, Gemini Managed Agents и Deep Agents от LangChain сходятся на одном: фоновое исполнение, кастомные функции, MCP серверы. Инженерия обвязки теперь в центре дизайна продуктов.",
-          "Muse Image и Video от Meta возглавляют рейтинги. При этом все лаборатории—Anthropic, Google, OpenAI—тихо ставят ставку на инфраструктуру агентов, а не только на мощь моделей."
+          "Каждый токен работает умнее, уходит бесполезное вычисление, которое раньше делало модели дорогими для реальных задач.",
+          "Цена за результат упала, а способности остались на уровне, теперь проще выбрать готовое решение вместо своей разработки.",
+          "Масштабируемая производительность по требованию — платишь за нужную мощь, не держишь простой капацитет."
         ]
       }
     }

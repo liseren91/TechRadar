@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T09:58:03.063Z",
+  "generatedAt": "2026-07-10T09:53:25.386Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -7,11 +7,11 @@
       "label": "Humanoid Robots",
       "category": "robotics",
       "stage": "prototype",
-      "trajectory": "stable",
-      "momentum": 0,
+      "trajectory": "rising",
+      "momentum": 1,
       "weeklyCounts": [
         1,
-        1
+        2
       ],
       "signals": [
         {
@@ -28,12 +28,30 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         411,
-        59
+        118
       ],
       "signals": [
+        {
+          "title": "[AINews] OpenAI launches GPT 5.6 Sol/Terra/Luna, Codex becomes ChatGPT superapp",
+          "url": "https://www.latent.space/p/ainews-openai-launches-gpt-56-solterraluna",
+          "source": "latent-space",
+          "publishedAt": "2026-07-10T06:19:40.000Z"
+        },
+        {
+          "title": "The new GPT-5.6 family: Luna, Terra, Sol",
+          "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-09T19:46:38.000Z"
+        },
+        {
+          "title": "Introducing Muse Spark 1.1",
+          "url": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-09T16:24:09.000Z"
+        },
         {
           "title": "Rewriting Bun in Rust",
           "url": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
@@ -45,68 +63,6 @@
           "url": "https://www.latent.space/p/modal2026",
           "source": "latent-space",
           "publishedAt": "2026-07-08T22:55:07.000Z"
-        },
-        {
-          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
-          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
-          "source": "latent-space",
-          "publishedAt": "2026-07-08T02:20:25.000Z"
-        },
-        {
-          "title": "sqlite-utils 4.0, now with database schema migrations",
-          "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-07T19:32:57.000Z"
-        },
-        {
-          "title": "[AINews] The Field Guide to Fable",
-          "url": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
-          "source": "latent-space",
-          "publishedAt": "2026-07-07T04:44:53.000Z"
-        }
-      ]
-    },
-    {
-      "id": "open-models",
-      "label": "Open Models",
-      "category": "ai",
-      "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.86,
-      "weeklyCounts": [
-        375,
-        52
-      ],
-      "signals": [
-        {
-          "title": "Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal CTO",
-          "url": "https://www.latent.space/p/modal2026",
-          "source": "latent-space",
-          "publishedAt": "2026-07-08T22:55:07.000Z"
-        },
-        {
-          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
-          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
-          "source": "latent-space",
-          "publishedAt": "2026-07-08T02:20:25.000Z"
-        },
-        {
-          "title": "[AINews] The Field Guide to Fable",
-          "url": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
-          "source": "latent-space",
-          "publishedAt": "2026-07-07T04:44:53.000Z"
-        },
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-900",
-          "source": "latent-space",
-          "publishedAt": "2026-07-02T07:10:14.000Z"
-        },
-        {
-          "title": "🔬 The Coolest Diffusion Research Isn't in LLMs — Evan Feinberg & Sergey Edunov, Genesis Molecular AI",
-          "url": "https://www.latent.space/p/the-coolest-diffusion-research-isnt",
-          "source": "latent-space",
-          "publishedAt": "2026-07-01T14:42:39.000Z"
         }
       ]
     },
@@ -116,10 +72,10 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         14,
-        2
+        4
       ],
       "signals": [
         {
@@ -142,10 +98,10 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         21,
-        3
+        6
       ],
       "signals": [
         {
@@ -169,15 +125,59 @@
       ]
     },
     {
+      "id": "open-models",
+      "label": "Open Models",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.73,
+      "weeklyCounts": [
+        375,
+        103
+      ],
+      "signals": [
+        {
+          "title": "[AINews] OpenAI launches GPT 5.6 Sol/Terra/Luna, Codex becomes ChatGPT superapp",
+          "url": "https://www.latent.space/p/ainews-openai-launches-gpt-56-solterraluna",
+          "source": "latent-space",
+          "publishedAt": "2026-07-10T06:19:40.000Z"
+        },
+        {
+          "title": "Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal CTO",
+          "url": "https://www.latent.space/p/modal2026",
+          "source": "latent-space",
+          "publishedAt": "2026-07-08T22:55:07.000Z"
+        },
+        {
+          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
+          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
+          "source": "latent-space",
+          "publishedAt": "2026-07-08T02:20:25.000Z"
+        },
+        {
+          "title": "[AINews] The Field Guide to Fable",
+          "url": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
+          "source": "latent-space",
+          "publishedAt": "2026-07-07T04:44:53.000Z"
+        },
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-900",
+          "source": "latent-space",
+          "publishedAt": "2026-07-02T07:10:14.000Z"
+        }
+      ]
+    },
+    {
       "id": "rag",
       "label": "Retrieval-Augmented Generation",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.89,
+      "momentum": -0.78,
       "weeklyCounts": [
         81,
-        9
+        18
       ],
       "signals": [
         {
