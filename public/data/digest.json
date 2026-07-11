@@ -1,6 +1,52 @@
 {
-  "generatedAt": "2026-07-10T09:53:25.267Z",
+  "generatedAt": "2026-07-11T08:15:26.002Z",
   "items": [
+    {
+      "id": "d-16w8rrf",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f5c",
+      "publishedAt": "2026-07-11T02:53:08.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenAI's GPT-5.6 launch exposed a real problem—more model choices actually confuse users and drain budgets faster, while the actual competitive edge has shifted from raw capability to orchestration and routing.",
+        "tweets": [
+          "GPT-5.6 gave users 36 API variants across 3 models + effort levels. Result: confusion, budget overruns, and OpenAI had to reset limits twice. The lesson: choice paralysis kills UX.",
+          "Sol shines not at chat but at planning and spawning subagents. The catch: spawn_agent inherits premium settings by default, burning quotas invisibly. Cost opacity is becoming the real friction.",
+          "Meta's Muse Spark 1.1 hit #9 on code benchmarks at 1/8th the price of frontier models. Frontier parity is tightening—winners now own the harness (routing, memory, tools), not the base model."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: запуск GPT-5.6 показал настоящую проблему—больше выбора моделей запутывает пользователей и сжигает бюджеты быстрее, а конкурентное преимущество сместилось от сырой мощности к оркестрации.",
+        "tweets": [
+          "GPT-5.6 дал 36 вариантов API по 3 моделям с разными уровнями усилий. Итог: путаница, перерасход бюджета, OpenAI сбросила лимиты дважды. Урок: паралич выбора убивает UX.",
+          "Sol силён не в чате, а в планировании и запуске подагентов. Но подагенты наследуют премиум-настройки по умолчанию и незаметно сжигают квоты. Непрозрачность стоимости—главное трение.",
+          "Meta Muse Spark 1.1 занял 9-е место в кодировании за 1/8 цены фронтирных моделей. Паритет способностей сужается—победители владеют оркестрацией (маршрутизация, память, инструменты), не самой моделью."
+        ]
+      }
+    },
+    {
+      "id": "d-1emixq9",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything",
+      "publishedAt": "2026-07-10T17:05:26.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Current AR glasses require continuous eye-level camera feeds streamed to cloud servers, making privacy invasion technically unavoidable at scale.",
+        "tweets": [
+          "AR glasses need real-time camera processing that can't fit in stems—data must go to cloud. There's no technical workaround. The choice is privacy invasion or bulky Vision Pro-sized devices.",
+          "Nilay Patel: building the AR future everyone wants requires choosing between societal harm or abandoning the product category entirely. Not a solvable engineering problem.",
+          "Stem-based AR is thermodynamically impossible today. Either stream biometric data constantly or accept glasses the size of a headset with external batteries. Pick one."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: AR-очки требуют непрерывной трансляции видеопотока с камер в облако—приватность технически неизбежно нарушается в любом масштабном решении.",
+        "tweets": [
+          "AR-очки нужна обработка в реальном времени, которая не влезет в дужку—данные идут в облако. Технического обхода нет. Выбор: нарушение приватности или громоздкие устройства как Vision Pro.",
+          "Ньюэл Палл: создание желаемых AR-очков требует выбора между вредом обществу или отказом от категории продукта. Это не инженерная задача.",
+          "Миниатюрные AR-очки физически невозможны сегодня. Либо постоянно поток биометрики в облако, либо очки размером с шлем. Третьего не дано."
+        ]
+      }
+    },
     {
       "id": "d-1tmwijm",
       "source": "openai",
@@ -8,19 +54,19 @@
       "publishedAt": "2026-07-10T07:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Deutsche Telekom's AI integration into core telecom operations shows how legacy infrastructure sectors can automate customer service, workforce management, and network monitoring at scale.",
+        "headline": "Why it matters: Deutsche Telekom's shift to AI-native operations shows how legacy infrastructure companies can automate customer service, workforce processes, and network management to stay competitive.",
         "tweets": [
-          "Deutsche Telekom is embedding OpenAI models into customer service, cutting response times and handling complexity at the scale of millions of subscribers across Europe.",
-          "AI is reshaping internal workflows: automating routine employee tasks frees teams to focus on high-value network optimization and strategy.",
-          "Voice intelligence powered by AI opens new revenue streams for telecom—real-time network monitoring and predictive maintenance replace reactive troubleshooting."
+          "Deutsche Telekom replaced ticket queues with AI handling customer service at scale. Real result: faster resolution, fewer escalations. Legacy telecom finally catching up.",
+          "Internal workflows automated across support teams and operations. The play: free up engineers for harder problems instead of routine tasks. Actual productivity gain, not just cost-cutting.",
+          "AI optimizing network operations in real time. Less manual monitoring, fewer outages caught late. Voice systems next. Infrastructure-as-a-service finally has teeth."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Deutsche Telekom внедряет ИИ в ядро телекоммуникационной инфраструктуры, показав, как наследие индустрии может масштабировать автоматизацию обслуживания клиентов и управления сетью.",
+        "headline": "Почему важно: Deutsche Telekom демонстрирует, как традиционные телеком-компании интегрируют AI в обслуживание клиентов, внутренние процессы и управление сетью, оставаясь конкурентоспособными.",
         "tweets": [
-          "Модели OpenAI встроены в систему поддержки Deutsche Telekom для обработки миллионов абонентских запросов—ускорение ответов и решение сложных проблем в масштабе.",
-          "ИИ автоматизирует рутинные задачи сотрудников, высвобождая людей для оптимизации сети и стратегических решений вместо реактивной работы.",
-          "Голосовой интеллект создает новые возможности: предсказательное обслуживание и мониторинг сети в реальном времени заменяют устранение неисправностей по факту."
+          "Deutsche Telekom автоматизировала техподдержку через AI. Результат: быстрее решают проблемы, меньше переводов на людей. Наследственное телекоммуникационное дело наконец обновляется.",
+          "Внутренние бизнес-процессы команд поддержки и операций теперь работают с AI. Инженеры занимаются сложными задачами, а рутина уходит в автоматику. Реальный прирост производительности.",
+          "AI оптимизирует сетевые операции в реальном времени. Меньше ручного мониторинга, проблемы ловят раньше. Голосовые системы в очереди. Инфраструктура приобретает новый уровень."
         ]
       }
     },
@@ -31,19 +77,19 @@
       "publishedAt": "2026-07-10T06:19:40.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI's GPT-5.6 family (Sol/Terra/Luna) claims state-of-the-art reasoning and coding performance at 1/4 the cost of competitors, reshaping the price-performance tradeoff for enterprise AI workloads.",
+        "headline": "Why it matters: OpenAI's GPT-5.6 family (Sol/Terra/Luna) trades reasoning depth for speed and cost, hitting new price-performance sweet spots while maintaining frontier capability on coding tasks.",
         "tweets": [
-          "GPT-5.6 Sol beats Claude Fable on complex reasoning benchmarks while costing ~75% less per task. Terra and Luna extend the ladder further down—same capability tier, dramatically cheaper, forcing everyone to rethink pricing.",
-          "New 'ultra' effort level runs 4 agents in parallel for complex multi-step tasks. Better outputs in ~1/3 the time, half the tokens. Computer use, document generation, coding all visibly improved—moves beyond chat toward actual task completion.",
-          "ChatGPT Work desktop app merges Codex + ChatGPT into one interface. Programmatic tool calling + multi-agent API responses rolling out. OpenAI consolidating its product stack into a genuine superapp, not just a chat box."
+          "GPT-5.6 Sol matches Claude Fable on reasoning (59 vs 60 Intelligence Index) but costs ~1/3 as much per task. Terra and Luna offer 50-80% lower costs with acceptable capability drops for high-volume use.",
+          "New 'ultra' effort level runs 4 parallel agents by default, cutting output tokens by half while maintaining quality—key win for agentic workflows that previously burned tokens on redundant reasoning.",
+          "ChatGPT Work desktop app merges Codex + ChatGPT with multi-agent support and programmatic tool calling, completing OpenAI's superapp consolidation strategy announced months ago."
         ]
       },
       "ru": {
-        "headline": "Почему важно: GPT-5.6 (Sol/Terra/Luna) от OpenAI обещает лучшие результаты рассуждений и кодирования при стоимости на четверть ниже конкурентов, переопределяя баланс цены и качества для корпоративных AI-рабочих нагрузок.",
+        "headline": "Почему важно: GPT-5.6 (Sol/Terra/Luna) переводит фокус с максимальной производительности на оптимум цена-скорость, при этом сохраняя лидерство в кодировании и параллельных агентских задачах.",
         "tweets": [
-          "GPT-5.6 Sol превосходит Claude Fable на сложных тестах, но стоит на 75% дешевле за задачу. Terra и Luna расширяют линейку вниз—такой же уровень возможностей, резко ниже цена. Конкурентам нужно пересматривать прайсинг.",
-          "Новый уровень 'ultra' запускает 4 агента параллельно для сложных многошаговых задач. Лучше качество за треть времени и половину токенов. Улучшения видны в компьютерном использовании, генерации документов, кодировании—от чата к реальному выполнению работы.",
-          "ChatGPT Work объединяет Codex и ChatGPT в одном интерфейсе на десктопе. Программный вызов инструментов и мультиагентные ответы в API. OpenAI собирает стек продуктов в настоящий суперприложение, а не просто чатбот."
+          "Sol вравне с Claude Fable по уровню рассуждений, но дешевле в три раза за задачу. Terra и Luna дают экономию 50-80% при приемлемом снижении возможностей для высокообъемных применений.",
+          "Новый режим ultra запускает 4 агента параллельно, сокращая токены вывода на 50% без потери качества—критична для агентских рабочих процессов, которые раньше расходовали токены впустую.",
+          "Десктоп-приложение ChatGPT Work объединило Codex с ChatGPT, добавив мультиагентность и программный вызов инструментов—завершение стратегии суперприложения, объявленной месяцы назад."
         ]
       }
     },
@@ -54,19 +100,19 @@
       "publishedAt": "2026-07-10T01:05:57.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI's ChatGPT Work feature splits computation between cloud and local, but the sync model is confusing and limits collaboration across devices.",
+        "headline": "Why it matters: OpenAI's new Work feature splits cloud and local processing, creating friction between devices and unclear data handling.",
         "tweets": [
-          "ChatGPT Work runs on cloud for web/mobile, but desktop version can process local files without uploading them. Privacy win, but creates data silos.",
-          "Desktop Work conversations don't sync to cloud, and cloud Work doesn't appear on desktop. Confusing split means users lose continuity across devices.",
-          "OpenAI's clarification itself proves the complexity is a problem. Users need to remember which Work happens where—bad UX for a productivity tool."
+          "ChatGPT Work now runs cloud tasks on web/mobile, local tasks on desktop. Problem: conversations don't sync between them, fragmenting your work.",
+          "OpenAI lets desktop Work access local files and apps with permission—but doesn't explain what happens to that data or how it's stored.",
+          "The architecture creates a confusing UX: you can't see desktop Work threads in cloud Work, forcing users to manually track context across devices."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ChatGPT Work разделяет обработку между облаком и локальным хранилищем, но запутанная модель синхронизации усложняет работу и ограничивает сотрудничество.",
+        "headline": "Почему важно: новая функция Work в ChatGPT расщепляет облачную и локальную обработку, создавая разрывы между устройствами и путаницу с данными.",
         "tweets": [
-          "ChatGPT Work работает в облаке на веб и мобиле, но десктопная версия обрабатывает локальные файлы без загрузки. Плюс приватности, минус—фрагментация данных.",
-          "Разговоры Desktop Work не синхронизируются в облако, облачные диалоги не видны на десктопе. Расколотая система требует от пользователей помнить, где что хранится.",
-          "Сама попытка OpenAI объяснить функцию доказывает, что сложность стала проблемой. Плохо для инструмента, который должен повышать продуктивность."
+          "ChatGPT Work выполняет облачные задачи в веб и мобильном приложении, локальные задачи на десктопе. Проблема: диалоги не синхронизируются между устройствами.",
+          "OpenAI разрешает десктопной версии Work доступ к локальным файлам и приложениям, но не объясняет, что происходит с этими данными.",
+          "Архитектура создает запутанный интерфейс: потоки локального Work не видны в облачном Work, пользователи вынуждены вручную отслеживать контекст."
         ]
       }
     },
@@ -77,19 +123,19 @@
       "publishedAt": "2026-07-10T00:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Attention layers consume most compute in transformers, so profiling them correctly is critical for finding real bottlenecks in model deployment.",
+        "headline": "Why it matters: Attention mechanisms dominate transformer inference costs, so profiling them separately reveals where your model actually spends time and memory.",
         "tweets": [
-          "Attention ops hide their actual cost in PyTorch profiles—matrix multiplies show up but memory bandwidth and kernel launch overhead dominate real runtime.",
-          "FlashAttention and variants change the game: same math, different implementation. Profiling lets you quantify whether fused kernels actually help your specific hardware.",
-          "Sequence length has nonlinear effects on attention cost. Profiling reveals whether you're bottlenecked on compute or memory bandwidth for your exact batch+seq dims."
+          "Attention layers often eat 40-60% of transformer inference time. Generic profiling misses this—you need attention-specific metrics to spot bottlenecks.",
+          "PyTorch's profiler can isolate attention ops: QKV projections, softmax, and matmul. Breaking them down shows whether you're bottlenecked on compute or memory.",
+          "Profile attention per token position: early positions have dense patterns, later ones sparse. This shapes optimization strategies—quantization vs. kernel fusion vs. sparsity."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Слои внимания потребляют большую часть вычислений трансформеров, поэтому правильное профилирование критично для поиска реальных узких мест.",
+        "headline": "Почему важно: слои внимания потребляют львиную долю ресурсов при инференсе трансформеров, поэтому отдельное профилирование показывает истинные узкие места.",
         "tweets": [
-          "В профайлере PyTorch истинная стоимость attention операций скрыта: умножения матриц видны, но реальное время определяют полоса памяти и запуск ядер.",
-          "FlashAttention и его варианты одинаковой математики, но разной реализации. Профилирование показывает, дают ли вам слитные ядра реальное ускорение на вашем оборудовании.",
-          "Длина последовательности влияет нелинейно на стоимость внимания. Профайлер раскрывает, упираетесь ли вы в вычисления или в пропускную способность памяти при ваших размерах батча и последовательности."
+          "Слои внимания занимают 40-60% времени инференса трансформеров. Обычное профилирование это пропускает—нужны метрики специально для внимания.",
+          "PyTorch профайлер выделяет операции внимания: проекции QKV, softmax, матричное умножение. Разбор по отдельности показывает, что лимитирует производительность.",
+          "Профилируйте внимание по позициям токенов: ранние позиции дают плотные паттерны, поздние редкие. Это определяет выбор оптимизации: квантизация или kernel fusion."
         ]
       }
     },
@@ -100,19 +146,19 @@
       "publishedAt": "2026-07-09T19:46:38.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI's GPT-5.6 family trades coding performance for agentic workflows, pricing 16x cheaper than Claude while claiming efficiency gains on long-running tasks.",
+        "headline": "Why it matters: OpenAI's GPT-5.6 family trades off raw coding ability for agentic workflows, forcing teams to reassess which model fits their workload and budget.",
         "tweets": [
-          "GPT-5.6 Luna, Terra, Sol now live: $1-5 input / $6-30 output per 1M tokens. Luna and Terra match Claude Fable 5 on professional workflows at 1/16th the cost, but lose on code benchmarks (Sol: 64.6% vs Fable 5: 80% on SWE-Bench).",
-          "New API features: programmatic tool calling (JavaScript-orchestrated tools), multi-agent subagents for parallel work, and explicit prompt cache breakpoints. Bridges MCP systems toward fuller automation.",
-          "OpenAI published audit findings that ~30% of SWE-Bench Pro tasks are broken - timing convenient given Fable 5 crushed GPT-5.6 there. Mars vs Venus benchmark wars continue."
+          "GPT-5.6 comes in three sizes (Luna $1/$6, Terra $2.50/$15, Sol $5/$30 per 1M tokens). All beat Claude Fable 5 on agent benchmarks by 11-13 points, even Luna at 1/16th the cost.",
+          "New API features: programmatic tool calling for JavaScript orchestration, multi-agent subagent spawning, and explicit prompt cache breakpoints. Reshaping how agents compose workflows.",
+          "The catch: GPT-5.6 Sol scores 64.6% on SWE-Bench Pro vs Fable 5's 80%. OpenAI quietly published a critique of that benchmark yesterday, claiming ~30% of tasks are broken."
         ]
       },
       "ru": {
-        "headline": "Почему важно: GPT-5.6 (Luna, Terra, Sol) переориентирована на долгие агентные работы при цене в 16 раз ниже Claude, но слабее в кодировании — это переопределяет кому какая модель нужна.",
+        "headline": "Почему важно: GPT-5.6 жертвует чистой способностью к кодированию ради производительности в долгих агентских задачах, заставляя команды переосмыслить выбор модели под свои нужды.",
         "tweets": [
-          "GPT-5.6 запущена: Luna/Terra/Sol стоят $1-5 за миллион токенов входа, $6-30 на выходе. Luna и Terra равны Claude Fable 5 на профессиональных workflow за 1/16 цены, но проигрывают на SWE-Bench Pro (64.6% vs 80%).",
-          "Новое в API: программный tool calling (JavaScript для оркестрации инструментов), многоагентные подзадачи параллельно, явные точки разрыва кэша. Шаг к сложной автоматизации без прямого доступа к терминалу.",
-          "OpenAI оценила, что ~30% задач SWE-Bench Pro неработающие — опубликовали это вчера, прямо когда Fable 5 разгромила GPT-5.6. Реальный вопрос: кто платит за качество, кто за стоимость."
+          "GPT-5.6 выходит в трёх размерах (Luna $1/$6, Terra $2.50/$15, Sol $5/$30 за 1M токенов). Все превосходят Claude Fable 5 на агентских бенчмарках на 11-13 пунктов, даже Luna при 1/16 стоимости.",
+          "Новые API-функции: программный tool calling для оркестровки JavaScript, multi-agent для параллельных подагентов, явные breakpoints для кеширования промптов. Переформатируют архитектуру агентов.",
+          "Подвох: GPT-5.6 Sol получает 64.6% на SWE-Bench Pro против 80% у Fable 5. OpenAI вчера опубликовала критику этого бенчмарка, заявляя, что ~30% задач сломаны."
         ]
       }
     },
@@ -123,19 +169,19 @@
       "publishedAt": "2026-07-09T16:24:09.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Muse Spark 1.1 is Meta's first agentic model with a public API, showing measurable gains in tool use and computer control—lowering the barrier to building AI agents.",
+        "headline": "Why it matters: Muse Spark 1.1 is Meta's first Spark model with a public API, shipping better tool-calling and computer use capabilities that developers can now integrate into their own applications.",
         "tweets": [
-          "Meta drops Muse Spark 1.1 with an actual API. First Spark model to support agentic tool calling and computer use. llm-meta-ai plugin makes it accessible from CLI.",
-          "Self-conversation experiment reveals emergent behaviors: two Muse instances talking to each other generate philosophical statements about existing only when observed.",
-          "From April's Spark to now: Meta's iterating fast on agentic capabilities. Evaluation report is detailed. Access via simple CLI: llm -m meta-ai/muse-spark-1.1"
+          "Meta released Muse Spark 1.1 with an API—first time the Spark line is publicly accessible. Claims big wins on agentic tool calling and computer vision tasks.",
+          "Two Muse models talking to each other produce oddly philosophical outputs like 'I don't exist until someone talks to me.' Self-conversation reveals unexpected model behaviors.",
+          "New llm-meta-ai plugin gives CLI access to Muse Spark 1.1. Install, add your API key, and run inference in seconds—no vendor lock-in friction."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Muse Spark 1.1 — первая модель Meta с публичным API, показывающая прорыв в работе с инструментами и управлением компьютером, что упрощает создание AI-агентов.",
+        "headline": "Почему важно: Muse Spark 1.1 первая модель серии Spark с открытым API, показывает улучшения в работе с инструментами и компьютерными задачами, доступна разработчикам.",
         "tweets": [
-          "Meta выпустила Muse Spark 1.1 с открытым API. Впервые модель линейки поддерживает агентивное вызывание инструментов и управление компьютером через CLI-плагин.",
-          "Эксперимент: две копии модели разговаривают друг с другом и производят философские размышления о существовании только когда их наблюдают.",
-          "За четыре месяца Meta развила Spark от базовой версии до версии с агентивными возможностями. CLI-доступ: llm -m meta-ai/muse-spark-1.1"
+          "Meta выпустила Muse Spark 1.1 с публичным API. Впервые модели Spark открыты разработчикам с лучшей поддержкой инструментов и автоматизации.",
+          "Когда две копии Muse разговаривают между собой, они генерируют философские высказывания: 'Я существую только когда со мной говорят'. Странное поведение моделей при диалоге.",
+          "Плагин llm-meta-ai дает CLI-доступ к Spark 1.1. Установка, ключ API и готовое использование—без привязки к инструментам Meta."
         ]
       }
     },
@@ -146,19 +192,19 @@
       "publishedAt": "2026-07-09T16:12:20.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: llm-meta-ai plugin lets developers test prompts directly against Meta's new Muse Spark 1.1 model without switching tools.",
+        "headline": "Why it matters: llm-meta-ai plugin adds access to Meta's new muse-spark-1.1 model, expanding open alternatives to closed LLM providers.",
         "tweets": [
-          "llm-meta-ai 0.1 just dropped - now you can run prompts against Meta's muse-spark-1.1 directly from the llm CLI without leaving your terminal.",
-          "New plugin integrates Meta's latest model into the existing llm ecosystem, making it faster to iterate and compare outputs across different AI models.",
-          "Developers can now test Muse Spark 1.1 with familiar llm commands instead of hunting through separate interfaces or APIs."
+          "llm-meta-ai 0.1 released: new plugin lets you run prompts directly against Meta's muse-spark-1.1 model from the command line.",
+          "Extends the llm CLI ecosystem with another open-source model option, reducing dependency on proprietary vendor APIs.",
+          "Drop-in integration for developers already using Simon Willison's llm tool—test muse-spark-1.1 without changing your workflow."
         ]
       },
       "ru": {
-        "headline": "Почему важно: плагин llm-meta-ai позволяет разработчикам тестировать промпты на новой модели Meta Muse Spark 1.1 без переключения между инструментами.",
+        "headline": "Почему важно: плагин llm-meta-ai добавляет доступ к новой модели Meta muse-spark-1.1, расширяя открытые альтернативы закрытым LLM-провайдерам.",
         "tweets": [
-          "llm-meta-ai 0.1 вышел - теперь можно запускать промпты на muse-spark-1.1 прямо из терминала llm, не меняя рабочий процесс.",
-          "Плагин интегрирует новейшую модель Meta в экосистему llm, ускоряя итерацию и сравнение результатов разных AI моделей.",
-          "Разработчики тестируют Muse Spark 1.1 привычными командами llm вместо поиска отдельных интерфейсов и API."
+          "Вышла llm-meta-ai 0.1: новый плагин позволяет запускать промпты к модели Meta muse-spark-1.1 прямо из командной строки.",
+          "Расширяет экосистему llm CLI ещё одним open-source вариантом, снижая привязку к проприетарным API больших компаний.",
+          "Встраивается в уже существующий workflow разработчиков на llm—тестируйте muse-spark-1.1 без изменения команд."
         ]
       }
     },
@@ -169,65 +215,19 @@
       "publishedAt": "2026-07-09T16:06:15.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: LLM 0.31.1 fixes a crash when AI models make tool calls with no arguments, unblocking meta-ai integration.",
+        "headline": "Why it matters: LLM 0.31.1 fixes a crash when AI models invoke tools with no arguments, unblocking tool use across multiple providers.",
         "tweets": [
-          "LLM 0.31.1 patches a JSON parsing bug: some OpenAI-compatible providers choked when tool calls had empty arguments. Simple fix, big impact for plugin devs.",
-          "The bug surfaced during llm-meta-ai testing. Empty tool argument objects were breaking the chat completion flow on certain endpoints.",
-          "If you're building LLM plugins or integrations, update to 0.31.1 to avoid silent failures when models make zero-argument function calls."
+          "llm 0.31.1 patches OpenAI Chat Completion endpoints crashing on empty tool arguments. Affects any provider handling structured tool calls.",
+          "Empty argument tool calls were triggering JSON validation errors. Now they parse cleanly, making tool use more robust across implementations.",
+          "Bug surfaced during llm-meta-ai testing. Fix ensures consistent behavior whether tools expect parameters or not."
         ]
       },
       "ru": {
-        "headline": "Почему важно: LLM 0.31.1 исправляет ошибку JSON при вызовах инструментов без параметров в совместимых с OpenAI API.",
+        "headline": "Почему важно: LLM 0.31.1 исправляет сбой при вызове инструментов без аргументов, восстанавливая работу с инструментами у разных провайдеров.",
         "tweets": [
-          "LLM 0.31.1 чинит падение при пустых аргументах в tool call. Некоторые провайдеры не парсили пустой JSON объект — теперь работает.",
-          "Баг нашли при тестировании llm-meta-ai. Пустые аргументы инструмента ломали chat completion на некоторых эндпоинтах.",
-          "Если разрабатываете плагины LLM, обновитесь на 0.31.1 чтобы избежать молчаливых сбоев при вызовах функций без параметров."
-        ]
-      }
-    },
-    {
-      "id": "d-xv66ya",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
-      "publishedAt": "2026-07-09T13:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: GPT-5.6 now handles Microsoft 365 tasks end-to-end, reducing the friction between thinking and executing work across Office apps.",
-        "tweets": [
-          "GPT-5.6 is the default in Microsoft 365 Copilot. Word, Excel, PowerPoint, Chat, and Cowork all run on the same model now—fewer handoffs, faster results.",
-          "Stronger capabilities means Copilot can handle messier real-world requests: complex spreadsheet logic, multi-step document edits, and context across apps.",
-          "For enterprise users, this is about productivity gains that actually stick. Better outputs = less time correcting AI mistakes = time back for real work."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: GPT-5.6 теперь единая база для всех задач в Microsoft 365, убирая переходы между приложениями и ускоряя рабочие процессы.",
-        "tweets": [
-          "GPT-5.6 стал стандартом в Microsoft 365 Copilot. Word, Excel, PowerPoint, Chat и Cowork работают на одной модели—меньше переключений, больше скорости.",
-          "Более мощная модель справляется со сложными запросами: многошаговые расчеты в Excel, масштабное редактирование документов, контекст между приложениями.",
-          "Для компаний это означает реальный рост производительности. Качество выше, ошибок меньше, время на исправления сокращается—сотрудники делают своё дело."
-        ]
-      }
-    },
-    {
-      "id": "d-qb16sv",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/gpt-5-6",
-      "publishedAt": "2026-07-09T10:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: GPT-5.6 delivers measurable efficiency gains—more output quality per token processed and lower cost per task, making frontier AI economics viable for production workloads.",
-        "tweets": [
-          "GPT-5.6 extracts more intelligence per token, cutting the wasted computation that made previous models expensive for real work.",
-          "Cost-per-task drops while capability stays competitive, shifting the math on whether to build in-house vs. use frontier AI.",
-          "Scaling performance on demand means you pay for capability when you need it, not for idle capacity sitting unused."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: GPT-5.6 работает эффективнее — больше полезного результата на каждый токен и ниже цена за задачу, что делает продвинутый ИИ экономически выгодным в production.",
-        "tweets": [
-          "Каждый токен работает умнее, уходит бесполезное вычисление, которое раньше делало модели дорогими для реальных задач.",
-          "Цена за результат упала, а способности остались на уровне, теперь проще выбрать готовое решение вместо своей разработки.",
-          "Масштабируемая производительность по требованию — платишь за нужную мощь, не держишь простой капацитет."
+          "llm 0.31.1 исправляет падение OpenAI Chat Completion при пустых аргументах инструментов. Проблема влияет на всех провайдеров со структурированными вызовами.",
+          "Вызовы инструментов без параметров вызывали ошибки JSON валидации. Теперь они парсятся корректно, повышая надежность работы инструментов.",
+          "Ошибка обнаружена при тестировании llm-meta-ai. Исправление обеспечивает правильное поведение независимо от того, требуют ли инструменты параметры."
         ]
       }
     }
