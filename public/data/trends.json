@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T09:48:04.990Z",
+  "generatedAt": "2026-07-14T08:28:18.202Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,10 +8,10 @@
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "rising",
-      "momentum": 4,
+      "momentum": 5,
       "weeklyCounts": [
         1,
-        5
+        6
       ],
       "signals": [
         {
@@ -28,12 +28,18 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.27,
+      "momentum": -0.13,
       "weeklyCounts": [
         411,
-        298
+        358
       ],
       "signals": [
+        {
+          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
+          "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
+          "source": "latent-space",
+          "publishedAt": "2026-07-14T01:22:27.000Z"
+        },
         {
           "title": "[AINews] not much happened today",
           "url": "https://www.latent.space/p/ainews-not-much-happened-today-f5c",
@@ -57,12 +63,6 @@
           "url": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything",
           "source": "simonw",
           "publishedAt": "2026-07-09T16:24:09.000Z"
-        },
-        {
-          "title": "Rewriting Bun in Rust",
-          "url": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-08T23:57:21.000Z"
         }
       ]
     },
@@ -72,10 +72,10 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.29,
+      "momentum": -0.14,
       "weeklyCounts": [
         21,
-        15
+        18
       ],
       "signals": [
         {
@@ -104,12 +104,18 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.32,
+      "momentum": -0.18,
       "weeklyCounts": [
         375,
-        256
+        307
       ],
       "signals": [
+        {
+          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
+          "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
+          "source": "latent-space",
+          "publishedAt": "2026-07-14T01:22:27.000Z"
+        },
         {
           "title": "[AINews] not much happened today",
           "url": "https://www.latent.space/p/ainews-not-much-happened-today-f5c",
@@ -133,12 +139,32 @@
           "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
           "source": "latent-space",
           "publishedAt": "2026-07-08T02:20:25.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fusion",
+      "label": "Fusion Energy",
+      "category": "energy",
+      "stage": "research",
+      "trajectory": "cooling",
+      "momentum": -0.36,
+      "weeklyCounts": [
+        14,
+        9
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
+          "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
+          "source": "latent-space",
+          "publishedAt": "2026-07-14T01:22:27.000Z"
         },
         {
-          "title": "[AINews] The Field Guide to Fable",
-          "url": "https://www.latent.space/p/ainews-the-field-guide-to-fable",
-          "source": "latent-space",
-          "publishedAt": "2026-07-07T04:44:53.000Z"
+          "title": "Bringing AI to the next generation of fusion energy",
+          "url": "https://deepmind.google/blog/bringing-ai-to-the-next-generation-of-fusion-energy/",
+          "source": "deepmind",
+          "publishedAt": "2025-10-23T22:04:14.000Z"
         }
       ]
     },
@@ -148,12 +174,18 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.48,
+      "momentum": -0.37,
       "weeklyCounts": [
         81,
-        42
+        51
       ],
       "signals": [
+        {
+          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
+          "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
+          "source": "latent-space",
+          "publishedAt": "2026-07-14T01:22:27.000Z"
+        },
         {
           "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
           "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
@@ -177,32 +209,6 @@
           "url": "https://huggingface.co/blog/intel-fast-embedding",
           "source": "hf",
           "publishedAt": "2024-03-15T00:00:00.000Z"
-        },
-        {
-          "title": "Getting Started With Embeddings",
-          "url": "https://huggingface.co/blog/getting-started-with-embeddings",
-          "source": "hf",
-          "publishedAt": "2022-06-23T00:00:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "fusion",
-      "label": "Fusion Energy",
-      "category": "energy",
-      "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.5,
-      "weeklyCounts": [
-        14,
-        7
-      ],
-      "signals": [
-        {
-          "title": "Bringing AI to the next generation of fusion energy",
-          "url": "https://deepmind.google/blog/bringing-ai-to-the-next-generation-of-fusion-energy/",
-          "source": "deepmind",
-          "publishedAt": "2025-10-23T22:04:14.000Z"
         }
       ]
     }
