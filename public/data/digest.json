@@ -1,6 +1,190 @@
 {
-  "generatedAt": "2026-07-14T08:28:18.079Z",
+  "generatedAt": "2026-07-15T08:36:09.106Z",
   "items": [
+    {
+      "id": "d-1dgmdld",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-not-much-happened-today-c72",
+      "publishedAt": "2026-07-14T23:54:07.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI agents are shifting from chat interfaces to execution-focused systems, with harness quality and observability becoming the real competitive edge over raw model capability.",
+        "tweets": [
+          "OpenAI's Codex + ChatGPT Work usage jumped 2.5x in a week. The move is away from 'chat then decide' toward agents that execute directly—and stale instructions now cause multi-hour failures in long-running tasks.",
+          "Aggressive quantization is making frontier-tier models viable on consumer hardware: 1-bit Bonsai 27B fits in 3.9GB and runs local agentic workflows. Open models on edge devices are no longer a toy—they're production-grade.",
+          "Realtime multimodal systems now watch while generating and revise answers live as scenes change. OmniAgent-7B beats 72B models by requesting only the frames it actually needs instead of ingesting everything."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ-агенты переходят от чат-интерфейсов к системам прямого исполнения, где качество инструментов и наблюдаемость важнее сырой мощности модели.",
+        "tweets": [
+          "Использование Codex + ChatGPT Work у OpenAI выросло в 2.5 раза за неделю. Тренд смещается от 'поговори и решай' к агентам, которые сразу исполняют. Устаревшие инструкции теперь вызывают многочасовые сбои.",
+          "Агрессивная квантизация делает актуальные модели жизнеспособными на потребительских устройствах: 1-бит Bonsai 27B занимает 3.9GB и запускает локальные агентские workflow. Open-модели на edge—это уже не игрушка.",
+          "Realtime мультимодальные системы теперь смотрят и генерируют одновременно, корректируя ответы при изменении сцены. OmniAgent-7B обыгрывает 72B модели, запрашивая только нужные кадры вместо обработки всего."
+        ]
+      }
+    },
+    {
+      "id": "d-dpti87",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/aiewf26trends",
+      "publishedAt": "2026-07-14T23:21:21.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI engineering has shifted from building autonomous agents to engineering the systems around them—harnesses, feedback loops, and human oversight are now the core skill.",
+        "tweets": [
+          "Agent autonomy is a false goal. AIEWF 2026 showed the real work: building harnesses, eval systems, and outer loops where humans keep control. Inner loop runs autonomous, outer loop stays engineering.",
+          "Loop engineering is the new primitive. Forget AutoGPT hype—Claude, Cursor, Codex are production tools. Engineers collaborate with agents, not replace humans. The harness matters more than the model.",
+          "Models are grown, not designed. Frontier labs don't fully understand their own capability overhead. This is why robust eval, monitoring, and feedback systems aren't optional—they're the whole game."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: инженерия AI переместилась с создания автономных агентов на проектирование систем вокруг них—обвязка, обратная связь и контроль человека теперь в центре.",
+        "tweets": [
+          "Полная автономия агентов—ложная цель. AIEWF 2026 показал реальную работу: построение систем контроля, оценок, внешних циклов, где человек держит управление. Внутренний цикл автономен, внешний остаётся инженерией.",
+          "Инженерия циклов—новый примитив. Забудьте про хайп AutoGPT. Claude, Cursor, Codex—production-инструменты. Инженеры сотрудничают с агентами, не заменяют людей. Обвязка важнее модели.",
+          "Модели вырастают, не проектируются. Фронтир-лабы не понимают собственное развитие возможностей. Вот почему robust eval, мониторинг и feedback—не опция, а вся суть игры."
+        ]
+      }
+    },
+    {
+      "id": "d-168tzfv",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything",
+      "publishedAt": "2026-07-14T22:43:35.000Z",
+      "category": "cybersecurity",
+      "en": {
+        "headline": "Why it matters: Dependabot's 3-day cooldown reduces noise from premature dependency updates while catching actual vulnerabilities before they're widely exploited.",
+        "tweets": [
+          "Dependabot now waits 3 days after a release before auto-updating—default behavior, no config needed. Catches the early-release bugs others hit first.",
+          "Dependency updates are noisy. This cooldown lets you skip the churn on day-one releases and update when fixes are already incoming.",
+          "Smart default: gives real security issues time to surface while you're not drowning in version bump PRs from every micro-release."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: трёхдневная задержка Dependabot снижает шум от обновлений и даёт время на выявление уязвимостей до их массового распространения.",
+        "tweets": [
+          "Dependabot теперь ждёт 3 дня перед автообновлением—это поведение по умолчанию, настройка не требуется. Вы пропускаете баги первых выпусков.",
+          "Обновления зависимостей создают много шума. Задержка позволяет избежать PR на каждый микро-релиз и обновляться, когда уже известны проблемы.",
+          "Разумное значение по умолчанию: уязвимости успевают проявиться, пока вы не тонете в PR-ах с версиями."
+        ]
+      }
+    },
+    {
+      "id": "d-ea5704",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/14/pedalican/#atom-everything",
+      "publishedAt": "2026-07-14T22:29:45.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI can now generate production-ready sprite sheets and animations from text prompts, enabling rapid game asset creation without traditional art pipelines.",
+        "tweets": [
+          "GPT-5.6 Sol turned a single text prompt into a full animated pelican-on-bicycle pet with sprite sheets and animation loops, using iterative image generation and chroma-key backgrounds.",
+          "The entire workflow is open source: OpenAI's hatch-pet skill handles pet creation logic, imagegen handles image generation. Full asset pipeline documented on GitHub with all intermediate steps.",
+          "This workflow solves a real game dev bottleneck: generating clean, animation-ready sprites at exact specs (192x208, magenta chroma-key, multiple poses) in hours instead of weeks."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ теперь может создавать готовые спрайты и анимации для игр из текстового описания, заменяя традиционный процесс создания графики.",
+        "tweets": [
+          "GPT-5.6 Sol преобразовал одну текстовую подсказку в полноценного анимированного пеликана на велосипеде со спрайтами и циклами анимации через итеративное генерирование изображений.",
+          "Весь процесс открытый исходный код: OpenAI hatch-pet управляет логикой питомца, imagegen генерирует изображения. На GitHub задокументирована полная цепочка со всеми промежуточными шагами.",
+          "Решает актуальную проблему разработчиков игр: создавать чистые спрайты для анимации с точными параметрами за часы вместо недель работы художника."
+        ]
+      }
+    },
+    {
+      "id": "d-5zfziy",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything",
+      "publishedAt": "2026-07-14T19:44:11.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Lobsters proved a major Rails community site runs faster and cheaper on SQLite than MariaDB, challenging the assumption that you need PostgreSQL for serious production apps.",
+        "tweets": [
+          "Lobsters migrated from MariaDB to SQLite and cut CPU usage, memory, and hosting costs in half. One VPS now handles everything.",
+          "SQLite databases: 3.8GB content + 1.1GB cache + 218MB queue + 555MB rate-limiting. Single file deployments beat complex database clusters.",
+          "8-year migration plan executed this weekend. 735 added, 593 removed lines across 30 commits. Sometimes the boring tech choice is the right one."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Lobsters доказал, что крупный сайт на Rails работает быстрее и дешевле на SQLite чем на MariaDB, развенчивая миф о необходимости PostgreSQL для production.",
+        "tweets": [
+          "Lobsters перешел с MariaDB на SQLite и вдвое сократил потребление CPU, памяти и стоимость хостинга. Один VPS справляется со всем.",
+          "Четыре базы SQLite на одном сервере: 3.8GB контента + кэш + очередь + rate-limiting. Одиночный файл лучше чем сложный кластер.",
+          "План миграции с 2018 года завершён за выходные. 30 коммитов, 188 файлов. Иногда скучная технология — правильный выбор."
+        ]
+      }
+    },
+    {
+      "id": "d-uynwoz",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything",
+      "publishedAt": "2026-07-14T18:04:23.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI agents removing code review friction risks losing the shared understanding that keeps systems coherent and teams aligned.",
+        "tweets": [
+          "A codebase's real language isn't Python—it's the collective mental model of what each part does, who owns it, and why it's shaped that way. This lives in code reviews and conversations, not docs.",
+          "Friction in code coordination (reading others' code, asking questions, cross-team alignment) slows things down, but some slowness is the process where understanding transfers between people.",
+          "AI agents that bypass review cycles might speed up shipping but risk eroding the synchronization mechanism that keeps distributed teams on the same page about system design."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: AI-агенты, обходящие code review, рискуют разрушить общее понимание между командой о том, как на самом деле устроена система.",
+        "tweets": [
+          "Реальный язык кодовой базы—не Python, а общая ментальная модель: что делает каждая часть, кто за неё отвечает и почему система такой формы. Это живёт в review и диалогах, не в документации.",
+          "Трение при координации кода (чтение чужого кода, вопросы, синхронизация между командами) замедляет работу, но это замедление—процесс, где понимание переходит от человека к человеку.",
+          "Агенты, обходящие review, ускорят поставку, но рискуют разрушить механизм синхронизации, который держит распределённые команды в одном понимании архитектуры."
+        ]
+      }
+    },
+    {
+      "id": "d-1yekcxc",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/14/datasette/#atom-everything",
+      "publishedAt": "2026-07-14T16:31:41.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Datasette 1.0a37 fixes plugin compatibility by reverting an API change that broke nearly all existing tests.",
+        "tweets": [
+          "Datasette 1.0a37 rolled back a cosmetic API change that tanked plugin test suites across the ecosystem. Lesson: small API tweaks can cascade.",
+          "Performance and docs improvements to the permissions system in this release. Stability over novelty as 1.0 approaches.",
+          "Plugin compatibility restored. The team prioritized ecosystem health over keeping a cosmetic change—good call for a major release candidate."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Datasette 1.0a37 восстановил совместимость с плагинами, откатив изменение API, которое сломало тесты.",
+        "tweets": [
+          "Datasette 1.0a37 отменил косметическое изменение API, которое нарушило тестовые наборы плагинов. Микроскопические сдвиги создают большие проблемы.",
+          "Улучшены производительность и документация системы разрешений. Стабильность важнее новизны перед релизом 1.0.",
+          "Совместимость с плагинами восстановлена. Команда выбрала здоровье экосистемы вместо косметического улучшения—правильный выбор для главного релиза."
+        ]
+      }
+    },
+    {
+      "id": "d-jlriyk",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+      "publishedAt": "2026-07-14T10:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: As AI agents handle more autonomous work, enterprises need new metrics beyond traditional ROI to measure actual value delivered per dollar spent.",
+        "tweets": [
+          "Stop counting tokens. Start counting useful work completed. The shift to agentic AI demands measuring what actually gets done, not processing volume.",
+          "Efficiency gains compound when agents iterate independently. Focus on workflows where autonomous decision-making cuts costs the most, not just fancy capabilities.",
+          "Scale the workflows that win first. Pilot agentic systems on high-value, repeatable tasks before betting the farm on speculative enterprise-wide rollouts."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: При переходе к автономным AI-агентам компаниям нужны новые метрики оценки стоимости — не просто считать токены, а измерять реальную выполненную работу.",
+        "tweets": [
+          "Переставьте мерить обработанные токены. Начните считать завершённую полезную работу. Переход к агентам требует оценки реальных результатов, не объёмов данных.",
+          "Эффект масштаба растёт, когда агенты работают самостоятельно. Ищите задачи, где автономные решения максимально режут затраты, а не просто звучат продвинуто.",
+          "Масштабируйте сначала выигрышные сценарии. Тестируйте агентов на повторяющихся высокоценных задачах, прежде чем внедрять систему по всей компании."
+        ]
+      }
+    },
     {
       "id": "d-1eba3t9",
       "source": "latent-space",
@@ -8,19 +192,19 @@
       "publishedAt": "2026-07-14T01:22:27.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Codex hit 7M users in 6 months with 10x growth, signaling aggressive competition in coding AI where model quality alone no longer determines winners.",
+        "headline": "Why it matters: Codex hit 7M users in 6 months (10x growth), outpacing Claude Code's last reported 2M, signaling a shift in which platforms win coding agent infrastructure.",
         "tweets": [
-          "Codex went from ~550k users in January to 7M by July—10x growth in 6 months. Claude Code last reported ~2M users in February. The race for coding AI dominance is heating up.",
-          "Model quality is table stakes now. The real differentiator is the harness—the orchestration layer. Specialized task harnesses beat generic wrappers; cost-per-task metrics matter more than token pricing.",
-          "Strong models can be cheaper: Fable's powerful reasoning avoids wasted edits in 81% of runs. Long-horizon agent RL is now tractable with message DAGs cutting trace overhead from O(n²) to O(n)."
+          "Codex grew from 550k-700k (Jan) to 7M users (July) — 10x in 6 months. Claude Code last reported ~2M in Feb. The real race now is cost-per-task, not token price alone.",
+          "Harnesses, not models, are becoming the product. LangChain, Factory, and others show task-specialized orchestration beats generic wrappers. Devin Fusion found Fable 5 cheaper per task than Opus because better judgment cuts wasted actions.",
+          "Prime Intellect's verifiers v1 makes long-horizon RL practical: message DAGs cut trace growth from O(n²) to O(n). 100B model, 40-turn SWE tasks trained in <2 days on 6 H200s."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Codex достиг 7 млн пользователей за полгода с ростом в 10 раз, что указывает на обострение конкуренции в кодирующем ИИ, где качество модели уже не главное.",
+        "headline": "Почему важно: Codex достиг 7 млн пользователей за 6 месяцев (10-кратный рост), опередив последний отчёт Claude Code о 2 млн пользователях — сигнал о смене победителей в инфраструктуре кодирующих агентов.",
         "tweets": [
-          "Codex вырос с ~550 тысяч пользователей в январе до 7 млн в июле — десятикратный рост за полгода. Claude Code в феврале показал ~2 млн. Гонка за доминирование в AI-кодировании разгорается.",
-          "Качество модели — необходимый минимум. Настоящий конкурентный край — это оркестровка (harness). Специализированные слои под конкретные задачи выигрывают у универсальных оберток; стоимость за задачу важнее, чем цена за токен.",
-          "Мощные модели могут быть дешевле: рассуждения Fable избегают лишних правок в 81% запусков. Долгоценовой RL для агентов теперь реалистичен с DAG-ориентированным хранением трасс — падение от O(n²) к O(n)."
+          "Codex вырос с 550-700k (январь) до 7М пользователей (июль) — 10x за полгода. Claude Code в последний раз сообщил ~2М в феврале. Настоящая гонка теперь по стоимости за задачу, а не по цене токена.",
+          "Оркестраторы (harnesses), а не модели, становятся продуктом. LangChain, Factory и другие показывают: специализированные системы для конкретных задач бьют универсальные обёртки. Devin Fusion нашёл, что Fable 5 дешевле за задачу, чем Opus, благодаря лучшему суждению.",
+          "Prime Intellect verifiers v1 делает долгогоризонтное RL практичным: DAG сообщений снижает рост трассировки с O(n²) до O(n). 100B модель, 40-ходовые SWE задачи обучены за <2 дня на 6 H200."
         ]
       }
     },
@@ -31,203 +215,19 @@
       "publishedAt": "2026-07-14T00:56:20.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: Caching uvx tools in GitHub Actions prevents repeated PyPI downloads, speeding up CI/CD workflows and reducing network overhead.",
+        "headline": "Why it matters: Caching uvx tools in GitHub Actions cuts PyPI hits and workflow time by pinning dependency resolution to a specific date.",
         "tweets": [
-          "Set UV_EXCLUDE_NEWER env var in GitHub Actions to freeze tool versions to a specific date, making uvx resolve deterministically for better caching.",
-          "Include the UV_EXCLUDE_NEWER date in your cache key so you can bust and upgrade tools just by bumping one number.",
-          "Stop re-downloading Python tools and deps on every workflow run—cache them once, upgrade deliberately when you change the date."
+          "Set UV_EXCLUDE_NEWER env var in GitHub Actions to pin uvx tool versions to a specific date, then use that date in your cache key for reproducible, cached builds.",
+          "Instead of PyPI downloads on every workflow run, uvx now resolves dependencies once and reuses them—bump the date when you want tool updates.",
+          "The trick: UV_EXCLUDE_NEWER in cache key = deterministic tool versions + cache hits + faster CI without manual version pinning."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Кэширование uvx-инструментов в GitHub Actions предотвращает повторные загрузки из PyPI и ускоряет CI/CD.",
+        "headline": "Почему важно: Кэширование uvx инструментов в GitHub Actions снижает нагрузку на PyPI и ускоряет CI-конвейер благодаря фиксации дат разрешения зависимостей.",
         "tweets": [
-          "Установите переменную UV_EXCLUDE_NEWER с фиксированной датой, чтобы uvx всегда разрешал одни и те же версии инструментов для стабильного кэша.",
-          "Добавьте дату UV_EXCLUDE_NEWER в ключ кэша—так вы сможете обновить инструменты, просто изменив одно число.",
-          "Перестаньте заново скачивать Python-инструменты при каждом запуске—кэшируйте их один раз и обновляйте намеренно."
-        ]
-      }
-    },
-    {
-      "id": "d-hvs9vc",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/13/doomql/#atom-everything",
-      "publishedAt": "2026-07-13T22:34:41.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Someone built a playable Doom-like game where SQLite's recursive CTEs handle the entire rendering engine, collision detection, and game logic instead of just storing data.",
-        "tweets": [
-          "DOOMQL: A full ray-traced Doom clone where SQL queries run the game engine. Movement, enemies, combat, every pixel—all in SQLite recursive CTEs. Terminal-playable Python script.",
-          "Peter Gostev used GPT-5.6 Sol to design this. The query-based architecture lets you inspect game state directly: explore the SQLite DB in Datasette, add visualization apps with Claude in minutes.",
-          "The absurd premise (SQL as game engine) forced clever solutions: frame_pixels view, collision detection as set operations. Proves sometimes the worst tool for a job teaches you something real about both the tool and the problem."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Разработчик создал полностью играемый Doom-подобный шутер, где вместо привычного игровой движка работает SQLite с рекурсивными CTE — весь рендеринг, физика и логика прямо в запросах.",
-        "tweets": [
-          "DOOMQL: Doom-клон с трассировкой лучей через SQL. Движение персонажа, враги, бои, каждый пиксель — всё управляется рекурсивными CTE в SQLite. Запускается скриптом Python в терминале.",
-          "GPT-5.6 Sol помог спроектировать архитектуру. Можно изучать состояние игры напрямую в Datasette, добавлять визуализацию через Claude за минуты — от запроса до работающего интерфейса.",
-          "Абсурдная идея (SQL вместо движка) привела к изящным решениям: представления данных пикселей, обнаружение столкновений как операции над множествами. Доказывает, что самые неправильные инструменты иногда открывают неожиданные возможности."
-        ]
-      }
-    },
-    {
-      "id": "d-19zxw58",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
-      "publishedAt": "2026-07-13T21:45:27.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI coding agents are measurably accelerating open source development velocity, visible in real-time GitHub metrics.",
-        "tweets": [
-          "Datasette's code frequency spiked dramatically with Opus 4.8 and GPT-5.5 class models. GitHub charts now show concrete evidence of AI-assisted development impact.",
-          "Latest LLMs aren't just helping—they're reshaping how fast solo maintainers ship. One developer, AI partner, sustained output spike.",
-          "The real story: advanced coding agents let humans focus on architecture while AI handles repetitive changes. Metrics prove the shift is happening now."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: AI-агенты для кода измеримо ускоряют разработку открытого ПО, что видно в метриках GitHub в реальном времени.",
-        "tweets": [
-          "Частота коммитов Datasette резко выросла с появлением Opus 4.8 и GPT-5.5. GitHub графики показывают конкретное влияние AI-ассистентов на продуктивность.",
-          "Новые LLM-модели не просто помогают — они меняют скорость разработки одного человека. Есть измеримый скачок активности.",
-          "Суть в том, что продвинутые coding agents позволяют разработчикам сосредоточиться на архитектуре, пока AI берёт рутину. Это происходит прямо сейчас."
-        ]
-      }
-    },
-    {
-      "id": "d-3wpvl7",
-      "source": "deepmind",
-      "sourceUrl": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
-      "publishedAt": "2026-07-13T12:37:28.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Indian robotics educators now have an AI assistant that translates technical concepts into local languages, removing a major barrier to hands-on learning in under-resourced schools.",
-        "tweets": [
-          "ATL Saathi uses Gemini to help Indian teachers explain robotics and coding in Hindi, Tamil, Telugu, and other local languages—solving the English-fluency bottleneck in rural tech labs.",
-          "The tool handles lesson planning, troubleshooting, and student questions in real-time, freeing educators to focus on mentoring rather than scrambling for translated resources.",
-          "Deployed across India's Atal Tinkering Labs, ATL Saathi directly scales hands-on AI and robotics education to students who'd otherwise lack technical guidance in their native language."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Индийские учителя робототехники получили ИИ-помощника на Gemini, который объясняет сложные концепции на местных языках и открывает доступ к техническому образованию за пределами крупных городов.",
-        "tweets": [
-          "ATL Saathi на основе Gemini помогает преподавателям объяснять робототехнику и программирование на хинди, тамильском, телугу и других языках—убирает языковой барьер в школах с ограниченными ресурсами.",
-          "Инструмент планирует уроки, решает технические проблемы и отвечает на вопросы студентов в реальном времени, позволяя учителям сосредоточиться на наставничестве вместо поиска переводов.",
-          "Развернут в лабораториях Atal Tinkering Labs по всей Индии—масштабирует инженерное образование для студентов, которые раньше не имели технической поддержки на родном языке."
-        ]
-      }
-    },
-    {
-      "id": "d-1s9ecf1",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything",
-      "publishedAt": "2026-07-12T23:57:14.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: As AI agents become more autonomous, organizations need clear accountability structures that keep humans responsible for critical decisions, not machines.",
-        "tweets": [
-          "DRI (Directly Responsible Individual) concept from Apple: one person is ultimately accountable for a project's success or failure. It's a human role only.",
-          "LLM agents should never be the DRI. Machines can't be held accountable for their actions, so they must never own final responsibility for outcomes.",
-          "IBM's 1979 rule still holds: a computer can never be held accountable, therefore a computer must never make a management decision. Automate execution, not accountability."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: По мере автономизации ИИ-агентов организациям нужны четкие структуры ответственности, которые возлагают обязательства на людей, а не на машины.",
-        "tweets": [
-          "DRI (ответственное лицо) из Apple: один человек несет полную ответственность за успех или неудачу проекта. Это исключительно человеческая роль.",
-          "LLM-агенты никогда не должны быть DRI. Машины не могут нести ответственность за свои действия, поэтому не должны владеть финальной ответственностью за результаты.",
-          "Правило IBM 1979 года остается актуально: компьютер не может нести ответственность, значит компьютер не должен принимать управленческие решения. Автоматизируйте выполнение, не ответственность."
-        ]
-      }
-    },
-    {
-      "id": "d-1ver8sm",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/12/shot-scraper/#atom-everything",
-      "publishedAt": "2026-07-12T23:46:52.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: shot-scraper 1.11 fixes timeout issues for local servers and adds JavaScript file loading, making screenshot automation more reliable for slower startup environments.",
-        "tweets": [
-          "shot-scraper now waits up to 30 seconds for servers to start instead of hardcoded 1 second. Game changer for CI/CD pipelines with slow spinup.",
-          "New --js-file option lets you load JavaScript from files or stdin instead of CLI strings. Cleaner, safer, less escaping hell.",
-          "Added --timeout flags to javascript and html commands for consistency. Fewer surprises when commands behave differently."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: shot-scraper 1.11 исправляет проблемы с таймаутами локальных серверов и добавляет загрузку JavaScript из файлов, делая автоматизацию скриншотов надежнее.",
-        "tweets": [
-          "shot-scraper теперь ждет до 30 секунд запуска сервера вместо жесткого 1 секунды. Спасение для CI/CD с медленным стартом.",
-          "Новая опция --js-file загружает JavaScript из файлов или stdin вместо строк в CLI. Чище, безопаснее, без экранирования.",
-          "Добавлены флаги --timeout в команды javascript и html для единообразия. Меньше сюрпризов с разным поведением команд."
-        ]
-      }
-    },
-    {
-      "id": "d-4ed28n",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
-      "publishedAt": "2026-07-12T21:20:07.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Anthropic keeps extending Fable's availability deadline while OpenAI removes usage limits entirely, signaling confidence in their model efficiency and winning users through certainty.",
-        "tweets": [
-          "Anthropic extended Fable 5 access again through July 19, citing compute constraints. But temporary windows are losing them users to OpenAI's permanent removal of GPT-5.6 Sol usage caps.",
-          "OpenAI just hit 6M active users and is rolling out efficiency gains that reduce token usage. No artificial scarcity, no countdown clocks. Uncertainty kills adoption.",
-          "The real win: OpenAI's strategy of transparent scaling vs Anthropic's cautious, repeatedly-extended pauses. Developers choose the platform that won't change the rules next month."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Anthropic снова откладывает срок отключения Fable, пока OpenAI полностью убирают лимиты использования GPT-5.6 Sol, завоевывая пользователей уверенностью.",
-        "tweets": [
-          "Anthropic продлила доступ к Fable 5 до 19 июля, ссылаясь на нехватку вычислительных мощностей. Но временные окна проигрывают OpenAI, которая убрала лимиты и выглядит увереннее.",
-          "OpenAI достигла 6М активных пользователей и внедряет улучшения эффективности, снижающие расход токенов. Никакого искусственного дефицита, никаких обратных отсчётов.",
-          "Выигрывает платформа, которая не меняет правила каждый месяц. Разработчики выбирают прозрачность OpenAI вместо постоянной неопределённости Anthropic."
-        ]
-      }
-    },
-    {
-      "id": "d-yw7yqv",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/12/sqlite-utils/#atom-everything",
-      "publishedAt": "2026-07-12T20:55:30.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: sqlite-utils 4.1.1 fixes a silent data corruption bug where foreign key cascades could destroy data during table transforms when transactions are active.",
-        "tweets": [
-          "sqlite-utils 4.1.1 now raises TransactionError if table.transform() runs inside an open transaction with foreign_keys enabled and destructive ON DELETE actions (CASCADE, SET NULL, SET DEFAULT). Prevents silent row deletion.",
-          "The bug: PRAGMA foreign_keys can't change mid-transaction, so dropping old tables during transform could fire cascading deletes without warning. Claude AI spotted this edge case during 4.1 testing.",
-          "CLI and Python API docs now cross-reference each other. Navigation between equivalent commands and functions is now bidirectional, making it easier to jump between interfaces."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: sqlite-utils 4.1.1 исправляет критическую ошибку, где каскадное удаление по внешним ключам молча уничтожало данные при трансформации таблиц внутри транзакций.",
-        "tweets": [
-          "sqlite-utils 4.1.1 теперь выбрасывает TransactionError если table.transform() вызван внутри активной транзакции с включённым foreign_keys и деструктивными ON DELETE действиями (CASCADE, SET NULL, SET DEFAULT).",
-          "Суть бага: PRAGMA foreign_keys нельзя менять внутри транзакции, поэтому при удалении старой таблицы могли срабатывать каскадные удаления без предупреждения. Claude AI обнаружил эту ошибку при тестировании 4.1.",
-          "Документация CLI и Python API теперь ссылаются друг на друга в обе стороны. Упрощен переход между эквивалентными командами и функциями в разных интерфейсах."
-        ]
-      }
-    },
-    {
-      "id": "d-7sccbu",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything",
-      "publishedAt": "2026-07-11T23:50:20.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: sqlite-utils 4.1 adds Python code blocks for row generation and strict table mode control, making SQLite data pipelines more flexible and type-safe.",
-        "tweets": [
-          "sqlite-utils insert/upsert now accept --code to define a rows() function directly in the CLI, eliminating the need for separate import files when generating structured data.",
-          "New --type flag lets you force column types on CSV/TSV imports—critical for fields like ZIP codes that should be TEXT but parse as integers, losing leading zeros.",
-          "transform() method now supports strict=True/False to switch SQLite strict mode without manual data migration—the library handles the copy internally."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: sqlite-utils 4.1 добавляет блоки Python-кода для генерации строк и управление режимом strict таблиц, делая конвейеры данных SQLite гибче и безопаснее по типам.",
-        "tweets": [
-          "Команды insert и upsert теперь поддерживают флаг --code для определения функции rows() прямо в CLI, убирая нужду в отдельных файлах при генерации структурированных данных.",
-          "Новый флаг --type позволяет форсировать типы столбцов при импорте CSV/TSV—критично для полей вроде почтовых индексов, которые должны быть TEXT, но парсятся как числа.",
-          "Метод transform() теперь поддерживает strict=True/False для переключения режима strict SQLite без ручной миграции данных—библиотека сама управляет копированием."
+          "Установите переменную UV_EXCLUDE_NEWER в GitHub Actions, чтобы привязать версии инструментов uvx к конкретной дате, затем используйте эту дату в ключе кэша.",
+          "Вместо загрузок с PyPI при каждом запуске workflow, uvx разрешает зависимости один раз и переиспользует их—обновляйте дату для получения новых версий.",
+          "Суть: UV_EXCLUDE_NEWER в ключе кэша = детерминированные версии инструментов + попадание в кэш + быстрый CI без ручного указания версий."
         ]
       }
     }

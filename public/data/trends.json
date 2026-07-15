@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T08:28:18.202Z",
+  "generatedAt": "2026-07-15T08:36:09.229Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,10 +8,10 @@
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "rising",
-      "momentum": 5,
+      "momentum": 6,
       "weeklyCounts": [
         1,
-        6
+        7
       ],
       "signals": [
         {
@@ -27,42 +27,42 @@
       "label": "LLM Agents",
       "category": "ai",
       "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.13,
+      "trajectory": "rising",
+      "momentum": 0.02,
       "weeklyCounts": [
         411,
-        358
+        420
       ],
       "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-c72",
+          "source": "latent-space",
+          "publishedAt": "2026-07-14T23:54:07.000Z"
+        },
+        {
+          "title": "5 Trends That Defined AI Engineering at World’s Fair 2026",
+          "url": "https://www.latent.space/p/aiewf26trends",
+          "source": "latent-space",
+          "publishedAt": "2026-07-14T23:21:21.000Z"
+        },
+        {
+          "title": "Quoting Armin Ronacher",
+          "url": "https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-14T18:04:23.000Z"
+        },
+        {
+          "title": "How to manage AI investments in the agentic era",
+          "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+          "source": "openai",
+          "publishedAt": "2026-07-14T10:00:00.000Z"
+        },
         {
           "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
           "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
           "source": "latent-space",
           "publishedAt": "2026-07-14T01:22:27.000Z"
-        },
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-f5c",
-          "source": "latent-space",
-          "publishedAt": "2026-07-11T02:53:08.000Z"
-        },
-        {
-          "title": "[AINews] OpenAI launches GPT 5.6 Sol/Terra/Luna, Codex becomes ChatGPT superapp",
-          "url": "https://www.latent.space/p/ainews-openai-launches-gpt-56-solterraluna",
-          "source": "latent-space",
-          "publishedAt": "2026-07-10T06:19:40.000Z"
-        },
-        {
-          "title": "The new GPT-5.6 family: Luna, Terra, Sol",
-          "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-09T19:46:38.000Z"
-        },
-        {
-          "title": "Introducing Muse Spark 1.1",
-          "url": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-09T16:24:09.000Z"
         }
       ]
     },
@@ -71,11 +71,11 @@
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.14,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         21,
-        18
+        21
       ],
       "signals": [
         {
@@ -104,12 +104,18 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.18,
+      "momentum": -0.05,
       "weeklyCounts": [
         375,
-        307
+        358
       ],
       "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-c72",
+          "source": "latent-space",
+          "publishedAt": "2026-07-14T23:54:07.000Z"
+        },
         {
           "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
           "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
@@ -133,12 +139,6 @@
           "url": "https://www.latent.space/p/modal2026",
           "source": "latent-space",
           "publishedAt": "2026-07-08T22:55:07.000Z"
-        },
-        {
-          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
-          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
-          "source": "latent-space",
-          "publishedAt": "2026-07-08T02:20:25.000Z"
         }
       ]
     },
@@ -148,10 +148,10 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.36,
+      "momentum": -0.21,
       "weeklyCounts": [
         14,
-        9
+        11
       ],
       "signals": [
         {
@@ -174,10 +174,10 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.37,
+      "momentum": -0.26,
       "weeklyCounts": [
         81,
-        51
+        60
       ],
       "signals": [
         {
