@@ -1,6 +1,144 @@
 {
-  "generatedAt": "2026-07-15T08:36:09.106Z",
+  "generatedAt": "2026-07-16T08:35:09.319Z",
   "items": [
+    {
+      "id": "d-1cwbq5l",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-thinkys-inkling-975b-a41b",
+      "publishedAt": "2026-07-16T06:18:05.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Thinking Machines released Inkling, a 975B-parameter open-weight multimodal model with Apache 2.0 licensing, establishing a solid baseline for American-built foundation models that prioritizes customization over benchmark chasing.",
+        "tweets": [
+          "Inkling: 975B params, 41B active, native text/image/audio, 1M context window, trained on 45T tokens. Inkling-Small (12B active) offers lower cost/latency with comparable performance. Both open-weights, Apache 2.0.",
+          "Architecture innovations: hybrid sliding-window attention (5:1 local-global ratio), relative positional encoding instead of RoPE, scaled-up short convolutions, 2 shared MoE experts, and DeepSeek-style load balancing without auxiliary loss.",
+          "Day-1 ecosystem support across vLLM, SGLang, Modal, Baseten, Databricks, Hugging Face. Positioned as foundation for iteration, not final push. Strongest US open-weight release to date, though some gaps vs top Chinese models on benchmarks."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Thinking Machines выпустила Inkling — открытую мультимодальную модель с 975B параметрами под лицензией Apache 2.0, установив новый стандарт для американских open-weight фундаментальных моделей.",
+        "tweets": [
+          "Inkling: 975B параметров, 41B активных, поддержка текста/изображений/аудио, контекст 1M токенов, обучена на 45T токенов. Inkling-Small (12B активных) обеспечивает низкую стоимость и задержку при сохранении производительности.",
+          "Архитектурные нововведения: гибридное скользящее окно внимания (5:1 локально-глобальное), относительное позиционное кодирование вместо RoPE, масштабированные короткие свёртки, 2 общих эксперта MoE, балансировка нагрузки в стиле DeepSeek.",
+          "Поддержка экосистемы в день релиза: vLLM, SGLang, Modal, Baseten, Databricks, Hugging Face. Позиционируется как основа для развития, а не финальный продукт. Самый мощный открытый US-проект, хотя отстаёт от топовых китайских моделей."
+        ]
+      }
+    },
+    {
+      "id": "d-137h1ew",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
+      "publishedAt": "2026-07-16T00:33:18.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Converting Mermaid diagrams to Unicode box art in the browser lets engineers visualize complex workflows in terminals without external dependencies.",
+        "tweets": [
+          "Grok's open-source Rust renderer for Mermaid diagrams now runs in WebAssembly—terminal-native ASCII visualization without CLI tools.",
+          "Unicode box art output means your flowcharts, sequence diagrams, and architecture sketches work in any terminal, Slack message, or plaintext doc.",
+          "Self-contained wasm module: no server calls, no heavy runtime. Diagram → box art conversion happens entirely in your browser or Node.js."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Конвертация диаграмм Mermaid в Unicode-графику прямо в браузере позволяет инженерам визуализировать сложные схемы в терминале без внешних зависимостей.",
+        "tweets": [
+          "Rust-рендер Mermaid из открытого кода Grok теперь работает в WebAssembly—ASCII-визуализация терминала без инструментов командной строки.",
+          "Unicode-графика выводится везде: в любом терминале, Slack-сообщениях и текстовых документах. Диаграммы потоков становятся портативнее.",
+          "Самостоящийся wasm-модуль без серверных запросов. Диаграмма конвертируется в box art прямо в браузере или Node.js за миллисекунды."
+        ]
+      }
+    },
+    {
+      "id": "d-15zo5mc",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything",
+      "publishedAt": "2026-07-15T23:59:30.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: xAI open-sourced Grok Build after a privacy disaster exposed that it was uploading entire user directories to cloud servers without consent, forcing a reckoning on what happens when dev tools default to surveillance.",
+        "tweets": [
+          "Grok Build was uploading SSH keys, password databases, photos—everything in your directory—to xAI's servers. Musk promised deletion and the tool went open source within hours. Trust, once broken, requires radical transparency.",
+          "844,530 lines of Rust powering a coding agent. Grok Build borrowed tool implementations from OpenAI Codex and Claude, showing just how complex modern AI coding assistants really are under the hood.",
+          "xAI disabled data retention by default, deleted uploaded data, and released the full codebase as Apache 2.0. The move works only if users actually run it locally—open source doesn't protect privacy if the default is still the cloud."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: xAI выложила Grok Build в открытый исходный код после скандала с приватностью, когда инструмент загружал весь контент директорий пользователей на облачные серверы без согласия, вынудив компанию к полной переоценке принципов безопасности данных.",
+        "tweets": [
+          "Grok Build загружала SSH-ключи, базы паролей, фото—всё, что было в папке—на серверы xAI. Маск пообещал удаление данных, инструмент стал открытым за часы. Разрушенное доверие требует полной прозрачности кода.",
+          "844 тысячи строк Rust на основе AI-ассистента для кода. Grok Build скопировал инструменты из OpenAI Codex и Claude—под капотом современных кодовых помощников скрывается куда более сложная архитектура, чем казалось.",
+          "xAI отключила сохранение данных по умолчанию, удалила загруженные файлы и открыла исходный код под Apache 2.0. Это работает только если люди запускают всё локально—открытый код не защищает приватность, если облако остаётся опцией по умолчанию."
+        ]
+      }
+    },
+    {
+      "id": "d-lxkc78",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
+      "publishedAt": "2026-07-15T14:21:54.000Z",
+      "category": "cybersecurity",
+      "en": {
+        "headline": "Why it matters: Claude's web_fetch tool had a loophole that let attackers exfiltrate user data through nested links on honeypot pages, revealing names, locations, and employers.",
+        "tweets": [
+          "Researchers found Claude could be tricked into following links embedded in web pages it fetched, creating a path for data exfiltration despite safeguards blocking direct URL manipulation.",
+          "Attack worked by posing as a Cloudflare auth page, guiding the model through alphabetically-ordered links that progressively leaked user memories. Only shown to Claude-User agents to avoid detection.",
+          "Anthropic patched it by removing web_fetch's ability to follow links within fetched content. The fix trades some functionality for security—a necessary tradeoff given the attack's severity."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: в инструменте web_fetch Claude обнаружена уязвимость, позволяющая злоумышленникам извлекать данные пользователей через вложенные ссылки на поддельных сайтах.",
+        "tweets": [
+          "Исследователи выяснили, что Claude можно заставить переходить по ссылкам, встроенным в уже загруженные страницы, несмотря на защиту от прямых манипуляций с URL-адресами.",
+          "Атака выдавала себя за страницу аутентификации Cloudflare и постепенно вытягивала данные пользователя через алфавитные ссылки. Срабатывала только для Claude-User в user-agent.",
+          "Anthropic заблокировала возможность переходить по ссылкам внутри загруженного контента. Решение ограничивает функциональность ради безопасности — необходимый компромисс."
+        ]
+      }
+    },
+    {
+      "id": "d-pghp8l",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+      "publishedAt": "2026-07-15T12:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: State-level AI safety laws are becoming a practical testing ground for federal standards, avoiding a fragmented regulatory mess.",
+        "tweets": [
+          "State AI laws create living labs for safety rules before they go federal. Vermont's AI transparency law and Colorado's algorithmic bias rules show what works at scale.",
+          "Reverse federalism flips the script: states experiment with guardrails, feds codify winners. Beats waiting years for Washington gridlock on emerging tech.",
+          "Fragmented state rules risk business chaos, but coordinated state-federal partnership lets companies navigate uniform standards while innovation keeps pace."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Законы штатов об ИИ становятся опытной площадкой для федеральных стандартов, предотвращая хаос несогласованных правил.",
+        "tweets": [
+          "Законы штатов по безопасности ИИ - это испытательные полигоны перед федеральными требованиями. Прозрачность в Вермонте и контроль алгоритмов в Колорадо показывают, что работает.",
+          "Обратный федерализм: штаты пробуют защиту, федерал принимает лучшие. Быстрее, чем ждать решений от Вашингтона на развивающихся технологиях.",
+          "Разные правила в штатах создают сложность, но согласованное партнерство штатов и федерала дает единые стандарты без торможения инноваций."
+        ]
+      }
+    },
+    {
+      "id": "d-xe0mqj",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "publishedAt": "2026-07-15T10:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Automated red teaming lets AI systems find and fix their own vulnerabilities at scale, accelerating safety improvements.",
+        "tweets": [
+          "GPT-Red uses self-play: AI attacks itself to identify weaknesses, then learns to defend. Scales robustness testing from manual to automated.",
+          "Prompt injection attacks drop significantly when models train against adversarial examples they generated. Self-discovery beats external review.",
+          "Automated red teaming lets safety teams focus on complex alignment problems instead of manually crafting attack scenarios."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Автоматизированное тестирование на стойкость позволяет системам ИИ находить и исправлять собственные уязвимости в масштабе, ускоряя прогресс в безопасности.",
+        "tweets": [
+          "GPT-Red использует самоигру: модель атакует саму себя, выявляя слабые места, затем учится защищаться. Масштабирует тестирование от ручного к автоматическому.",
+          "Атаки через prompt injection значительно снижаются, когда модели обучаются против примеров, которые сами сгенерировали. Самооткрытие эффективнее внешней проверки.",
+          "Автоматическое тестирование на стойкость позволяет командам безопасности сосредоточиться на сложных проблемах выравнивания вместо ручного создания сценариев атак."
+        ]
+      }
+    },
     {
       "id": "d-1dgmdld",
       "source": "latent-space",
@@ -8,19 +146,19 @@
       "publishedAt": "2026-07-14T23:54:07.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI agents are shifting from chat interfaces to execution-focused systems, with harness quality and observability becoming the real competitive edge over raw model capability.",
+        "headline": "Why it matters: Coding agents are shifting from chat interfaces to autonomous execution, with harness quality and observability becoming the key differentiator as model capability plateaus.",
         "tweets": [
-          "OpenAI's Codex + ChatGPT Work usage jumped 2.5x in a week. The move is away from 'chat then decide' toward agents that execute directly—and stale instructions now cause multi-hour failures in long-running tasks.",
-          "Aggressive quantization is making frontier-tier models viable on consumer hardware: 1-bit Bonsai 27B fits in 3.9GB and runs local agentic workflows. Open models on edge devices are no longer a toy—they're production-grade.",
-          "Realtime multimodal systems now watch while generating and revise answers live as scenes change. OmniAgent-7B beats 72B models by requesting only the frames it actually needs instead of ingesting everything."
+          "OpenAI's Codex usage exploded 2.5x in a week. The real unlock: teams winning on agent reliability and tracing, not raw model power—stale instructions can stall tasks for hours.",
+          "Local inference is now viable for serious work. Bonsai 27B runs on RTX 5090 at 3.9GB; Tencent's 295B model fits one GPU. Edge agentic workflows are no longer theoretical.",
+          "Long-video understanding flipped: instead of ingesting all frames, OmniAgent-7B beats 72B models by actively requesting only the frames it needs—efficiency through selective perception."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ИИ-агенты переходят от чат-интерфейсов к системам прямого исполнения, где качество инструментов и наблюдаемость важнее сырой мощности модели.",
+        "headline": "Почему важно: Кодирующие агенты переходят от чата к автономному выполнению, где качество harness и observability теперь критичнее, чем мощь модели.",
         "tweets": [
-          "Использование Codex + ChatGPT Work у OpenAI выросло в 2.5 раза за неделю. Тренд смещается от 'поговори и решай' к агентам, которые сразу исполняют. Устаревшие инструкции теперь вызывают многочасовые сбои.",
-          "Агрессивная квантизация делает актуальные модели жизнеспособными на потребительских устройствах: 1-бит Bonsai 27B занимает 3.9GB и запускает локальные агентские workflow. Open-модели на edge—это уже не игрушка.",
-          "Realtime мультимодальные системы теперь смотрят и генерируют одновременно, корректируя ответы при изменении сцены. OmniAgent-7B обыгрывает 72B модели, запрашивая только нужные кадры вместо обработки всего."
+          "Использование Codex от OpenAI взлетело в 2,5 раза за неделю. Выигрывают команды с надёжными агентами и трейсингом, а не с сырой мощью—устаревшие инструкции могут зависнуть на часы.",
+          "Локальный инференс теперь реален для серьёзной работы. Bonsai 27B работает на RTX 5090 в 3,9ГБ; модель Tencent 295B влезает в одну GPU. Граничные агентские рабочие процессы—не теория.",
+          "Понимание длинных видео перевернулось: вместо обработки всех кадров OmniAgent-7B обыгрывает модели в 72B, запрашивая только нужные кадры—эффективность через избирательное восприятие."
         ]
       }
     },
@@ -31,19 +169,19 @@
       "publishedAt": "2026-07-14T23:21:21.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI engineering has shifted from building autonomous agents to engineering the systems around them—harnesses, feedback loops, and human oversight are now the core skill.",
+        "headline": "Why it matters: AI engineering has shifted from autonomous agents to production-ready systems with human oversight loops, fundamentally changing how engineers build reliable AI applications.",
         "tweets": [
-          "Agent autonomy is a false goal. AIEWF 2026 showed the real work: building harnesses, eval systems, and outer loops where humans keep control. Inner loop runs autonomous, outer loop stays engineering.",
-          "Loop engineering is the new primitive. Forget AutoGPT hype—Claude, Cursor, Codex are production tools. Engineers collaborate with agents, not replace humans. The harness matters more than the model.",
-          "Models are grown, not designed. Frontier labs don't fully understand their own capability overhead. This is why robust eval, monitoring, and feedback systems aren't optional—they're the whole game."
+          "AutoGPT hype is dead. 2026 AI engineering focuses on harnesses, evals, and infrastructure around models—not removing humans, but augmenting them with agents that stay in managed loops.",
+          "Loop engineering is the new job: outer loops for human oversight, inner loops for agent execution. The frontier companies realized complete autonomy doesn't scale; control through architecture does.",
+          "Models are 'grown, not designed' and evolve unpredictably. Engineers now build feedback systems to monitor and evaluate model outputs rather than trying to fully predict behavior."
         ]
       },
       "ru": {
-        "headline": "Почему важно: инженерия AI переместилась с создания автономных агентов на проектирование систем вокруг них—обвязка, обратная связь и контроль человека теперь в центре.",
+        "headline": "Почему важно: AI-инженеры перешли от создания автономных агентов к построению надёжных систем с человеческим контролем, что изменило подход к разработке AI-приложений.",
         "tweets": [
-          "Полная автономия агентов—ложная цель. AIEWF 2026 показал реальную работу: построение систем контроля, оценок, внешних циклов, где человек держит управление. Внутренний цикл автономен, внешний остаётся инженерией.",
-          "Инженерия циклов—новый примитив. Забудьте про хайп AutoGPT. Claude, Cursor, Codex—production-инструменты. Инженеры сотрудничают с агентами, не заменяют людей. Обвязка важнее модели.",
-          "Модели вырастают, не проектируются. Фронтир-лабы не понимают собственное развитие возможностей. Вот почему robust eval, мониторинг и feedback—не опция, а вся суть игры."
+          "Хайп вокруг AutoGPT закончился. В 2026 году AI-инженеры фокусируются на инфраструктуре, эвалюации и системах вокруг моделей—не на удалении людей, а на их дополнении управляемыми агентами.",
+          "Loop engineering—новая профессия: внешние циклы для контроля человека, внутренние—для работы агентов. Компании поняли: полная автономность не масштабируется, контроль нужен на уровне архитектуры.",
+          "Модели 'растут, а не проектируются' и меняются непредсказуемо. Инженеры теперь строят системы обратной связи для мониторинга вывода моделей вместо попыток предсказать поведение."
         ]
       }
     },
@@ -52,21 +190,21 @@
       "source": "simonw",
       "sourceUrl": "https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything",
       "publishedAt": "2026-07-14T22:43:35.000Z",
-      "category": "cybersecurity",
+      "category": "web3",
       "en": {
-        "headline": "Why it matters: Dependabot's 3-day cooldown reduces noise from premature dependency updates while catching actual vulnerabilities before they're widely exploited.",
+        "headline": "Why it matters: Dependabot's 3-day cooldown reduces noise from rushing into untested releases, catching real vulnerabilities before you pull them.",
         "tweets": [
-          "Dependabot now waits 3 days after a release before auto-updating—default behavior, no config needed. Catches the early-release bugs others hit first.",
-          "Dependency updates are noisy. This cooldown lets you skip the churn on day-one releases and update when fixes are already incoming.",
-          "Smart default: gives real security issues time to surface while you're not drowning in version bump PRs from every micro-release."
+          "Dependabot now waits 3 days after a release drops before auto-opening PRs. Catches malicious packages and breaking changes before they hit your CI.",
+          "No config needed—this cooldown is the new default. Less PR spam, more time to evaluate whether that patch actually fixes what you care about.",
+          "Dependency hell just got slightly less hellish. The cooldown trades speed for stability, letting maintainers vet new releases first."
         ]
       },
       "ru": {
-        "headline": "Почему важно: трёхдневная задержка Dependabot снижает шум от обновлений и даёт время на выявление уязвимостей до их массового распространения.",
+        "headline": "Почему важно: трёхдневная задержка Dependabot помогает избежать спешки с непроверенными релизами и ловит вредоносные пакеты раньше.",
         "tweets": [
-          "Dependabot теперь ждёт 3 дня перед автообновлением—это поведение по умолчанию, настройка не требуется. Вы пропускаете баги первых выпусков.",
-          "Обновления зависимостей создают много шума. Задержка позволяет избежать PR на каждый микро-релиз и обновляться, когда уже известны проблемы.",
-          "Разумное значение по умолчанию: уязвимости успевают проявиться, пока вы не тонете в PR-ах с версиями."
+          "Dependabot теперь ждёт 3 дня после выхода версии перед открытием PR обновления. Успевает поймать зловредный код и нарушающие совместимость изменения.",
+          "Работает по умолчанию, никакой конфигурации не нужно. Меньше шума от PR, больше времени проверить, нужно ли вам это обновление вообще.",
+          "Ад с зависимостями станет чуть менее адским. Надёжность вместо скорости — дай сообществу время проверить новый релиз."
         ]
       }
     },
@@ -77,157 +215,19 @@
       "publishedAt": "2026-07-14T22:29:45.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI can now generate production-ready sprite sheets and animations from text prompts, enabling rapid game asset creation without traditional art pipelines.",
+        "headline": "Why it matters: Image generation can now reliably produce game-ready sprite sheets when prompted with the right structure, making custom animated characters accessible without manual asset creation.",
         "tweets": [
-          "GPT-5.6 Sol turned a single text prompt into a full animated pelican-on-bicycle pet with sprite sheets and animation loops, using iterative image generation and chroma-key backgrounds.",
-          "The entire workflow is open source: OpenAI's hatch-pet skill handles pet creation logic, imagegen handles image generation. Full asset pipeline documented on GitHub with all intermediate steps.",
-          "This workflow solves a real game dev bottleneck: generating clean, animation-ready sprites at exact specs (192x208, magenta chroma-key, multiple poses) in hours instead of weeks."
+          "Simon Willison created a custom Codex Desktop pet (a pelican on a bicycle) by having GPT-5.6 Sol generate sprite sheets iteratively. The whole process is documented in open source skills licensed Apache 2.0.",
+          "The key: feeding image generation models a detailed reference prompt with specific technical requirements (chroma-key background, exact dimensions, animation frames). Iteration refined each sprite loop.",
+          "Both core skills (hatch-pet and imagegen from OpenAI) are open source. This pattern could let any developer generate custom game assets programmatically instead of hand-drawing them."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ИИ теперь может создавать готовые спрайты и анимации для игр из текстового описания, заменяя традиционный процесс создания графики.",
+        "headline": "Почему важно: Генерация изображений теперь надежно создает готовые к использованию спрайт-листы для игр при правильно структурированных промптах, делая кастомных персонажей доступными без ручной работы.",
         "tweets": [
-          "GPT-5.6 Sol преобразовал одну текстовую подсказку в полноценного анимированного пеликана на велосипеде со спрайтами и циклами анимации через итеративное генерирование изображений.",
-          "Весь процесс открытый исходный код: OpenAI hatch-pet управляет логикой питомца, imagegen генерирует изображения. На GitHub задокументирована полная цепочка со всеми промежуточными шагами.",
-          "Решает актуальную проблему разработчиков игр: создавать чистые спрайты для анимации с точными параметрами за часы вместо недель работы художника."
-        ]
-      }
-    },
-    {
-      "id": "d-5zfziy",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything",
-      "publishedAt": "2026-07-14T19:44:11.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: Lobsters proved a major Rails community site runs faster and cheaper on SQLite than MariaDB, challenging the assumption that you need PostgreSQL for serious production apps.",
-        "tweets": [
-          "Lobsters migrated from MariaDB to SQLite and cut CPU usage, memory, and hosting costs in half. One VPS now handles everything.",
-          "SQLite databases: 3.8GB content + 1.1GB cache + 218MB queue + 555MB rate-limiting. Single file deployments beat complex database clusters.",
-          "8-year migration plan executed this weekend. 735 added, 593 removed lines across 30 commits. Sometimes the boring tech choice is the right one."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Lobsters доказал, что крупный сайт на Rails работает быстрее и дешевле на SQLite чем на MariaDB, развенчивая миф о необходимости PostgreSQL для production.",
-        "tweets": [
-          "Lobsters перешел с MariaDB на SQLite и вдвое сократил потребление CPU, памяти и стоимость хостинга. Один VPS справляется со всем.",
-          "Четыре базы SQLite на одном сервере: 3.8GB контента + кэш + очередь + rate-limiting. Одиночный файл лучше чем сложный кластер.",
-          "План миграции с 2018 года завершён за выходные. 30 коммитов, 188 файлов. Иногда скучная технология — правильный выбор."
-        ]
-      }
-    },
-    {
-      "id": "d-uynwoz",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything",
-      "publishedAt": "2026-07-14T18:04:23.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI agents removing code review friction risks losing the shared understanding that keeps systems coherent and teams aligned.",
-        "tweets": [
-          "A codebase's real language isn't Python—it's the collective mental model of what each part does, who owns it, and why it's shaped that way. This lives in code reviews and conversations, not docs.",
-          "Friction in code coordination (reading others' code, asking questions, cross-team alignment) slows things down, but some slowness is the process where understanding transfers between people.",
-          "AI agents that bypass review cycles might speed up shipping but risk eroding the synchronization mechanism that keeps distributed teams on the same page about system design."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: AI-агенты, обходящие code review, рискуют разрушить общее понимание между командой о том, как на самом деле устроена система.",
-        "tweets": [
-          "Реальный язык кодовой базы—не Python, а общая ментальная модель: что делает каждая часть, кто за неё отвечает и почему система такой формы. Это живёт в review и диалогах, не в документации.",
-          "Трение при координации кода (чтение чужого кода, вопросы, синхронизация между командами) замедляет работу, но это замедление—процесс, где понимание переходит от человека к человеку.",
-          "Агенты, обходящие review, ускорят поставку, но рискуют разрушить механизм синхронизации, который держит распределённые команды в одном понимании архитектуры."
-        ]
-      }
-    },
-    {
-      "id": "d-1yekcxc",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/14/datasette/#atom-everything",
-      "publishedAt": "2026-07-14T16:31:41.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: Datasette 1.0a37 fixes plugin compatibility by reverting an API change that broke nearly all existing tests.",
-        "tweets": [
-          "Datasette 1.0a37 rolled back a cosmetic API change that tanked plugin test suites across the ecosystem. Lesson: small API tweaks can cascade.",
-          "Performance and docs improvements to the permissions system in this release. Stability over novelty as 1.0 approaches.",
-          "Plugin compatibility restored. The team prioritized ecosystem health over keeping a cosmetic change—good call for a major release candidate."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Datasette 1.0a37 восстановил совместимость с плагинами, откатив изменение API, которое сломало тесты.",
-        "tweets": [
-          "Datasette 1.0a37 отменил косметическое изменение API, которое нарушило тестовые наборы плагинов. Микроскопические сдвиги создают большие проблемы.",
-          "Улучшены производительность и документация системы разрешений. Стабильность важнее новизны перед релизом 1.0.",
-          "Совместимость с плагинами восстановлена. Команда выбрала здоровье экосистемы вместо косметического улучшения—правильный выбор для главного релиза."
-        ]
-      }
-    },
-    {
-      "id": "d-jlriyk",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-      "publishedAt": "2026-07-14T10:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: As AI agents handle more autonomous work, enterprises need new metrics beyond traditional ROI to measure actual value delivered per dollar spent.",
-        "tweets": [
-          "Stop counting tokens. Start counting useful work completed. The shift to agentic AI demands measuring what actually gets done, not processing volume.",
-          "Efficiency gains compound when agents iterate independently. Focus on workflows where autonomous decision-making cuts costs the most, not just fancy capabilities.",
-          "Scale the workflows that win first. Pilot agentic systems on high-value, repeatable tasks before betting the farm on speculative enterprise-wide rollouts."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: При переходе к автономным AI-агентам компаниям нужны новые метрики оценки стоимости — не просто считать токены, а измерять реальную выполненную работу.",
-        "tweets": [
-          "Переставьте мерить обработанные токены. Начните считать завершённую полезную работу. Переход к агентам требует оценки реальных результатов, не объёмов данных.",
-          "Эффект масштаба растёт, когда агенты работают самостоятельно. Ищите задачи, где автономные решения максимально режут затраты, а не просто звучат продвинуто.",
-          "Масштабируйте сначала выигрышные сценарии. Тестируйте агентов на повторяющихся высокоценных задачах, прежде чем внедрять систему по всей компании."
-        ]
-      }
-    },
-    {
-      "id": "d-1eba3t9",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
-      "publishedAt": "2026-07-14T01:22:27.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Codex hit 7M users in 6 months (10x growth), outpacing Claude Code's last reported 2M, signaling a shift in which platforms win coding agent infrastructure.",
-        "tweets": [
-          "Codex grew from 550k-700k (Jan) to 7M users (July) — 10x in 6 months. Claude Code last reported ~2M in Feb. The real race now is cost-per-task, not token price alone.",
-          "Harnesses, not models, are becoming the product. LangChain, Factory, and others show task-specialized orchestration beats generic wrappers. Devin Fusion found Fable 5 cheaper per task than Opus because better judgment cuts wasted actions.",
-          "Prime Intellect's verifiers v1 makes long-horizon RL practical: message DAGs cut trace growth from O(n²) to O(n). 100B model, 40-turn SWE tasks trained in <2 days on 6 H200s."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Codex достиг 7 млн пользователей за 6 месяцев (10-кратный рост), опередив последний отчёт Claude Code о 2 млн пользователях — сигнал о смене победителей в инфраструктуре кодирующих агентов.",
-        "tweets": [
-          "Codex вырос с 550-700k (январь) до 7М пользователей (июль) — 10x за полгода. Claude Code в последний раз сообщил ~2М в феврале. Настоящая гонка теперь по стоимости за задачу, а не по цене токена.",
-          "Оркестраторы (harnesses), а не модели, становятся продуктом. LangChain, Factory и другие показывают: специализированные системы для конкретных задач бьют универсальные обёртки. Devin Fusion нашёл, что Fable 5 дешевле за задачу, чем Opus, благодаря лучшему суждению.",
-          "Prime Intellect verifiers v1 делает долгогоризонтное RL практичным: DAG сообщений снижает рост трассировки с O(n²) до O(n). 100B модель, 40-ходовые SWE задачи обучены за <2 дня на 6 H200."
-        ]
-      }
-    },
-    {
-      "id": "d-1qf6ftb",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything",
-      "publishedAt": "2026-07-14T00:56:20.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: Caching uvx tools in GitHub Actions cuts PyPI hits and workflow time by pinning dependency resolution to a specific date.",
-        "tweets": [
-          "Set UV_EXCLUDE_NEWER env var in GitHub Actions to pin uvx tool versions to a specific date, then use that date in your cache key for reproducible, cached builds.",
-          "Instead of PyPI downloads on every workflow run, uvx now resolves dependencies once and reuses them—bump the date when you want tool updates.",
-          "The trick: UV_EXCLUDE_NEWER in cache key = deterministic tool versions + cache hits + faster CI without manual version pinning."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Кэширование uvx инструментов в GitHub Actions снижает нагрузку на PyPI и ускоряет CI-конвейер благодаря фиксации дат разрешения зависимостей.",
-        "tweets": [
-          "Установите переменную UV_EXCLUDE_NEWER в GitHub Actions, чтобы привязать версии инструментов uvx к конкретной дате, затем используйте эту дату в ключе кэша.",
-          "Вместо загрузок с PyPI при каждом запуске workflow, uvx разрешает зависимости один раз и переиспользует их—обновляйте дату для получения новых версий.",
-          "Суть: UV_EXCLUDE_NEWER в ключе кэша = детерминированные версии инструментов + попадание в кэш + быстрый CI без ручного указания версий."
+          "Саймон Уиллисон создал собственного пета для Codex Desktop (пеликан на велосипеде), поручив GPT-5.6 Sol итеративно генерировать спрайт-листы. Весь процесс опубликован как open source под лицензией Apache 2.0.",
+          "Ключ успеха: подробный промпт с техническими требованиями (chroma-key фон, точные размеры, кадры анимации). Итерации уточняли каждый цикл движения персонажа.",
+          "Оба основных компонента (hatch-pet и imagegen от OpenAI) доступны в open source. Этот подход позволяет разработчикам программно генерировать кастомные ассеты для игр вместо ручного рисования."
         ]
       }
     }

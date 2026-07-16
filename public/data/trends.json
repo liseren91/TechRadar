@@ -1,68 +1,31 @@
 {
-  "generatedAt": "2026-07-15T08:36:09.229Z",
+  "generatedAt": "2026-07-16T08:35:09.390Z",
   "window": "rolling-120d",
   "topics": [
     {
-      "id": "humanoids",
-      "label": "Humanoid Robots",
-      "category": "robotics",
-      "stage": "prototype",
-      "trajectory": "rising",
-      "momentum": 6,
+      "id": "fusion",
+      "label": "Fusion Energy",
+      "category": "energy",
+      "stage": "research",
+      "trajectory": "cooling",
+      "momentum": -0.82,
       "weeklyCounts": [
-        1,
-        7
+        14,
+        11,
+        2
       ],
       "signals": [
-        {
-          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
-          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
-          "source": "latent-space",
-          "publishedAt": "2026-07-08T02:20:25.000Z"
-        }
-      ]
-    },
-    {
-      "id": "llm-agents",
-      "label": "LLM Agents",
-      "category": "ai",
-      "stage": "prototype",
-      "trajectory": "rising",
-      "momentum": 0.02,
-      "weeklyCounts": [
-        411,
-        420
-      ],
-      "signals": [
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-c72",
-          "source": "latent-space",
-          "publishedAt": "2026-07-14T23:54:07.000Z"
-        },
-        {
-          "title": "5 Trends That Defined AI Engineering at World’s Fair 2026",
-          "url": "https://www.latent.space/p/aiewf26trends",
-          "source": "latent-space",
-          "publishedAt": "2026-07-14T23:21:21.000Z"
-        },
-        {
-          "title": "Quoting Armin Ronacher",
-          "url": "https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-14T18:04:23.000Z"
-        },
-        {
-          "title": "How to manage AI investments in the agentic era",
-          "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-          "source": "openai",
-          "publishedAt": "2026-07-14T10:00:00.000Z"
-        },
         {
           "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
           "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
           "source": "latent-space",
           "publishedAt": "2026-07-14T01:22:27.000Z"
+        },
+        {
+          "title": "Bringing AI to the next generation of fusion energy",
+          "url": "https://deepmind.google/blog/bringing-ai-to-the-next-generation-of-fusion-energy/",
+          "source": "deepmind",
+          "publishedAt": "2025-10-23T22:04:14.000Z"
         }
       ]
     },
@@ -71,11 +34,12 @@
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
         21,
-        21
+        21,
+        3
       ],
       "signals": [
         {
@@ -99,17 +63,90 @@
       ]
     },
     {
+      "id": "humanoids",
+      "label": "Humanoid Robots",
+      "category": "robotics",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.86,
+      "weeklyCounts": [
+        1,
+        7,
+        1
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
+          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
+          "source": "latent-space",
+          "publishedAt": "2026-07-08T02:20:25.000Z"
+        }
+      ]
+    },
+    {
+      "id": "llm-agents",
+      "label": "LLM Agents",
+      "category": "ai",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.87,
+      "weeklyCounts": [
+        411,
+        420,
+        54
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Thinky's Inkling: 975B-A41B multimodal, new best American Apache 2.0 open model (with Inkling-Small, 276B-A12B)",
+          "url": "https://www.latent.space/p/ainews-thinkys-inkling-975b-a41b",
+          "source": "latent-space",
+          "publishedAt": "2026-07-16T06:18:05.000Z"
+        },
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-c72",
+          "source": "latent-space",
+          "publishedAt": "2026-07-14T23:54:07.000Z"
+        },
+        {
+          "title": "5 Trends That Defined AI Engineering at World’s Fair 2026",
+          "url": "https://www.latent.space/p/aiewf26trends",
+          "source": "latent-space",
+          "publishedAt": "2026-07-14T23:21:21.000Z"
+        },
+        {
+          "title": "Quoting Armin Ronacher",
+          "url": "https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-14T18:04:23.000Z"
+        },
+        {
+          "title": "How to manage AI investments in the agentic era",
+          "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+          "source": "openai",
+          "publishedAt": "2026-07-14T10:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "open-models",
       "label": "Open Models",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.05,
+      "momentum": -0.94,
       "weeklyCounts": [
         375,
-        358
+        358,
+        21
       ],
       "signals": [
+        {
+          "title": "[AINews] Thinky's Inkling: 975B-A41B multimodal, new best American Apache 2.0 open model (with Inkling-Small, 276B-A12B)",
+          "url": "https://www.latent.space/p/ainews-thinkys-inkling-975b-a41b",
+          "source": "latent-space",
+          "publishedAt": "2026-07-16T06:18:05.000Z"
+        },
         {
           "title": "[AINews] not much happened today",
           "url": "https://www.latent.space/p/ainews-not-much-happened-today-c72",
@@ -133,38 +170,6 @@
           "url": "https://www.latent.space/p/ainews-openai-launches-gpt-56-solterraluna",
           "source": "latent-space",
           "publishedAt": "2026-07-10T06:19:40.000Z"
-        },
-        {
-          "title": "Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal CTO",
-          "url": "https://www.latent.space/p/modal2026",
-          "source": "latent-space",
-          "publishedAt": "2026-07-08T22:55:07.000Z"
-        }
-      ]
-    },
-    {
-      "id": "fusion",
-      "label": "Fusion Energy",
-      "category": "energy",
-      "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.21,
-      "weeklyCounts": [
-        14,
-        11
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
-          "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
-          "source": "latent-space",
-          "publishedAt": "2026-07-14T01:22:27.000Z"
-        },
-        {
-          "title": "Bringing AI to the next generation of fusion energy",
-          "url": "https://deepmind.google/blog/bringing-ai-to-the-next-generation-of-fusion-energy/",
-          "source": "deepmind",
-          "publishedAt": "2025-10-23T22:04:14.000Z"
         }
       ]
     },
@@ -174,10 +179,11 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.26,
+      "momentum": -0.95,
       "weeklyCounts": [
         81,
-        60
+        60,
+        3
       ],
       "signals": [
         {
@@ -187,28 +193,16 @@
           "publishedAt": "2026-07-14T01:22:27.000Z"
         },
         {
-          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-          "source": "hf",
-          "publishedAt": "2026-05-14T18:55:01.000Z"
+          "title": "Introducing text and code embeddings",
+          "url": "https://openai.com/index/introducing-text-and-code-embeddings",
+          "source": "openai",
+          "publishedAt": "2022-01-25T08:00:00.000Z"
         },
         {
-          "title": "Expert Support case study: Bolstering a RAG app with LLM-as-a-Judge",
-          "url": "https://huggingface.co/blog/digital-green-llm-judge",
-          "source": "hf",
-          "publishedAt": "2024-10-28T00:00:00.000Z"
-        },
-        {
-          "title": "Building Cost-Efficient Enterprise RAG applications with Intel Gaudi 2 and Intel Xeon",
-          "url": "https://huggingface.co/blog/cost-efficient-rag-applications-with-intel",
-          "source": "hf",
-          "publishedAt": "2024-05-09T00:00:00.000Z"
-        },
-        {
-          "title": "CPU Optimized Embeddings with 🤗 Optimum Intel and fastRAG",
-          "url": "https://huggingface.co/blog/intel-fast-embedding",
-          "source": "hf",
-          "publishedAt": "2024-03-15T00:00:00.000Z"
+          "title": "Text and code embeddings by contrastive pre-training",
+          "url": "https://openai.com/index/text-and-code-embeddings-by-contrastive-pre-training",
+          "source": "openai",
+          "publishedAt": "2022-01-24T08:00:00.000Z"
         }
       ]
     }
