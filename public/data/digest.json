@@ -1,233 +1,233 @@
 {
-  "generatedAt": "2026-07-16T08:35:09.319Z",
+  "generatedAt": "2026-07-17T08:28:33.313Z",
   "items": [
     {
-      "id": "d-1cwbq5l",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-thinkys-inkling-975b-a41b",
-      "publishedAt": "2026-07-16T06:18:05.000Z",
-      "category": "ai",
+      "id": "d-3ylna2",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/17/spot-birds-not-golf/#atom-everything",
+      "publishedAt": "2026-07-17T02:58:07.000Z",
+      "category": "energy",
       "en": {
-        "headline": "Why it matters: Thinking Machines released Inkling, a 975B-parameter open-weight multimodal model with Apache 2.0 licensing, establishing a solid baseline for American-built foundation models that prioritizes customization over benchmark chasing.",
+        "headline": "Why it matters: Google's 30M daily gallons of water use could be offset by converting 40 golf courses in one valley to public parks, redirecting both resources and recreational habits toward sustainability.",
         "tweets": [
-          "Inkling: 975B params, 41B active, native text/image/audio, 1M context window, trained on 45T tokens. Inkling-Small (12B active) offers lower cost/latency with comparable performance. Both open-weights, Apache 2.0.",
-          "Architecture innovations: hybrid sliding-window attention (5:1 local-global ratio), relative positional encoding instead of RoPE, scaled-up short convolutions, 2 shared MoE experts, and DeepSeek-style load balancing without auxiliary loss.",
-          "Day-1 ecosystem support across vLLM, SGLang, Modal, Baseten, Databricks, Hugging Face. Positioned as foundation for iteration, not final push. Strongest US open-weight release to date, though some gaps vs top Chinese models on benchmarks."
+          "Google consumed 10.9B gallons of water in 2025. Coachella Valley's 120 golf courses use 750K gallons/day combined. Converting 40 courses to parks would roughly balance the math.",
+          "The real proposal: hyperscalers buy country clubs, convert fairways to public parks, fund birdwatching programs for displaced golfers. Redirects leisure without just shutting down water use.",
+          "Golf course water waste is systemic. One valley's 120 courses match a major tech company's consumption. Flipping land use beats building more efficient data centers if you want real offsets."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Thinking Machines выпустила Inkling — открытую мультимодальную модель с 975B параметрами под лицензией Apache 2.0, установив новый стандарт для американских open-weight фундаментальных моделей.",
+        "headline": "Почему важно: Водозатраты Google в 30 млн галлонов в день можно компенсировать, переделав 40 полей для гольфа в долине Коачелла в общественные парки с программами экотуризма.",
         "tweets": [
-          "Inkling: 975B параметров, 41B активных, поддержка текста/изображений/аудио, контекст 1M токенов, обучена на 45T токенов. Inkling-Small (12B активных) обеспечивает низкую стоимость и задержку при сохранении производительности.",
-          "Архитектурные нововведения: гибридное скользящее окно внимания (5:1 локально-глобальное), относительное позиционное кодирование вместо RoPE, масштабированные короткие свёртки, 2 общих эксперта MoE, балансировка нагрузки в стиле DeepSeek.",
-          "Поддержка экосистемы в день релиза: vLLM, SGLang, Modal, Baseten, Databricks, Hugging Face. Позиционируется как основа для развития, а не финальный продукт. Самый мощный открытый US-проект, хотя отстаёт от топовых китайских моделей."
+          "Google расходует 10,9 млрд галлонов воды в год. 120 полей для гольфа в долине Коачелла потребляют 750 тыс. галлонов в день. Переоборудование 40 полей уравняет показатели.",
+          "Идея: крупные облачные компании скупают клубы, превращают газоны в парки, спонсируют экскурсии по наблюдению птиц для бывших членов клуба. Переориентирует досуг без просто перекрытия воды.",
+          "Поля для гольфа расточительны везде. 120 полей в одной долине требуют столько же воды, сколько крупный дата-центр. Смена землепользования эффективнее, чем просто улучшение систем охлаждения."
         ]
       }
     },
     {
-      "id": "d-137h1ew",
+      "id": "d-49ricf",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
+      "publishedAt": "2026-07-17T01:46:36.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Moonshot AI released Kimi K3, a 2.8T parameter open-weights model that matches closed-source frontier models at a fraction of the cost, challenging the pricing and performance assumptions of the market.",
+        "tweets": [
+          "Kimi K3 is 2.8T params, largest open model ever. Hits #1 in frontend code benchmarks, matches Opus 4.8 performance at Sonnet 5 pricing ($5.40/1M tokens blended vs $9-10 for competitors).",
+          "Novel architecture: Kimi Delta Attention enables 6.3x faster decoding, Stable LatentMoE with <2% activation ratio, Attention Residuals. Design took 1.5 years from Jan 2025. Weights drop July 27.",
+          "Early inference: ~28 tok/s on Moonshot API. Community flagged slower speed vs Opus, speculative decoding likely not yet enabled. vLLM contributed native KDA prefix caching support day 1."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Moonshot AI выпустила Kimi K3 — модель с 2.8T параметров с открытыми весами, которая сравнима с закрытыми фронтирными моделями, но дешевле, что меняет рынок.",
+        "tweets": [
+          "Kimi K3 — 2.8T параметров, самая большая открытая модель. Первое место в бенчмарках фронтенд-кода, производительность как Opus 4.8, цены как Sonnet 5 ($5.40/млн токенов против $9-10).",
+          "Архитектура: Kimi Delta Attention ускоряет декодирование в 6.3 раза на миллионном контексте. Stable LatentMoE с <2% активацией экспертов. Разработка 1.5 года. Веса выходят 27 июля.",
+          "Инференс: ~28 токен/сек через API. Скорость медленнее чем Opus, спекулятивное декодирование ещё не включено. vLLM добавили поддержку KDA кеширования префиксов день в день."
+        ]
+      }
+    },
+    {
+      "id": "d-1qwc647",
       "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
-      "publishedAt": "2026-07-16T00:33:18.000Z",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything",
+      "publishedAt": "2026-07-16T23:34:16.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: Converting Mermaid diagrams to Unicode box art in the browser lets engineers visualize complex workflows in terminals without external dependencies.",
+        "headline": "Why it matters: Running Firefox inside a browser via WebAssembly proves the feasibility of full OS-like environments in the browser, with practical implications for sandboxing, remote execution, and access to restricted networks.",
         "tweets": [
-          "Grok's open-source Rust renderer for Mermaid diagrams now runs in WebAssembly—terminal-native ASCII visualization without CLI tools.",
-          "Unicode box art output means your flowcharts, sequence diagrams, and architecture sketches work in any terminal, Slack message, or plaintext doc.",
-          "Self-contained wasm module: no server calls, no heavy runtime. Diagram → box art conversion happens entirely in your browser or Node.js."
+          "Puter compiled entire Firefox/Gecko to WebAssembly. You can now browse the web in Firefox running inside Chrome. Single-process architecture was key to making this feasible.",
+          "Cost $25k in Claude Opus tokens but actual spend was much lower thanks to Max subscription. WebSocket proxy tunnels all traffic through Puter servers since browsers can't open arbitrary connections.",
+          "E2E encryption works: HTTPS traffic stays encrypted through the proxy, while cleartext HTTP shows up unencrypted. WebKit version also exists but lacks public demo."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Конвертация диаграмм Mermaid в Unicode-графику прямо в браузере позволяет инженерам визуализировать сложные схемы в терминале без внешних зависимостей.",
+        "headline": "Почему важно: Полнофункциональный браузер Firefox работает внутри другого браузера через WebAssembly, открывая возможности для изолированных сред, удалённого выполнения и доступа к заблокированным сетям.",
         "tweets": [
-          "Rust-рендер Mermaid из открытого кода Grok теперь работает в WebAssembly—ASCII-визуализация терминала без инструментов командной строки.",
-          "Unicode-графика выводится везде: в любом терминале, Slack-сообщениях и текстовых документах. Диаграммы потоков становятся портативнее.",
-          "Самостоящийся wasm-модуль без серверных запросов. Диаграмма конвертируется в box art прямо в браузере или Node.js за миллисекунды."
+          "Puter скомпилировал весь Firefox в WebAssembly. Теперь можно просматривать веб внутри Firefox, работающего в Chrome. Однопроцессная архитектура была ключевой для реализации.",
+          "Затраты $25k токенов Claude Opus, но реальные расходы оказались ниже благодаря подписке Max. WebSocket прокси туннелирует весь трафик через серверы Puter — браузеры не могут открывать произвольные соединения.",
+          "E2E шифрование работает: HTTPS трафик остаётся зашифрованным через прокси, а незащищённый HTTP проходит в открытом виде. Версия на WebKit тоже существует, но без публичной демонстрации."
         ]
       }
     },
     {
-      "id": "d-15zo5mc",
+      "id": "d-1icq6uy",
       "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything",
-      "publishedAt": "2026-07-15T23:59:30.000Z",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
+      "publishedAt": "2026-07-16T20:19:30.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: xAI open-sourced Grok Build after a privacy disaster exposed that it was uploading entire user directories to cloud servers without consent, forcing a reckoning on what happens when dev tools default to surveillance.",
+        "headline": "Why it matters: Moonshot AI's 2.8T parameter Kimi K3 challenges the consolidation of frontier AI, pricing competitively with Claude Sonnet while showing strong benchmarks, but the pelican test reveals why single prompts can't capture what actually matters in modern models.",
         "tweets": [
-          "Grok Build was uploading SSH keys, password databases, photos—everything in your directory—to xAI's servers. Musk promised deletion and the tool went open source within hours. Trust, once broken, requires radical transparency.",
-          "844,530 lines of Rust powering a coding agent. Grok Build borrowed tool implementations from OpenAI Codex and Claude, showing just how complex modern AI coding assistants really are under the hood.",
-          "xAI disabled data retention by default, deleted uploaded data, and released the full codebase as Apache 2.0. The move works only if users actually run it locally—open source doesn't protect privacy if the default is still the cloud."
+          "Kimi K3 (2.8T params) launches at $3/$15 per million tokens—same price as Claude Sonnet, breaking the cost advantage Chinese labs once held. Open weights drop July 27.",
+          "K3 spends 13K reasoning tokens on a simple SVG prompt (costing 25 cents), suggesting aggressive use of extended thinking. One thinking level available now; capacity-to-task ratio still unbalanced.",
+          "The pelican benchmark, once predictive, has lost correlation as models diverge. Real evaluation now requires agentic tool calling, conversation length stability, and reasoning efficiency—not creative SVG generation."
         ]
       },
       "ru": {
-        "headline": "Почему важно: xAI выложила Grok Build в открытый исходный код после скандала с приватностью, когда инструмент загружал весь контент директорий пользователей на облачные серверы без согласия, вынудив компанию к полной переоценке принципов безопасности данных.",
+        "headline": "Почему важно: Kimi K3 от Moonshot AI с 2,8 триллионами параметров бросает вызов доминированию западных лабораторий, ценясь наравне с Claude Sonnet, но тест с пеликаном показывает, почему простые подсказки не могут оценить реальные возможности современных моделей.",
         "tweets": [
-          "Grok Build загружала SSH-ключи, базы паролей, фото—всё, что было в папке—на серверы xAI. Маск пообещал удаление данных, инструмент стал открытым за часы. Разрушенное доверие требует полной прозрачности кода.",
-          "844 тысячи строк Rust на основе AI-ассистента для кода. Grok Build скопировал инструменты из OpenAI Codex и Claude—под капотом современных кодовых помощников скрывается куда более сложная архитектура, чем казалось.",
-          "xAI отключила сохранение данных по умолчанию, удалила загруженные файлы и открыла исходный код под Apache 2.0. Это работает только если люди запускают всё локально—открытый код не защищает приватность, если облако остаётся опцией по умолчанию."
+          "Kimi K3 (2,8T параметров) стартует по $3/$15 за миллион токенов—столько же, сколько Claude Sonnet. Китайские лаборатории теряют ценовое преимущество. Открытые веса выходят 27 июля.",
+          "K3 расходует 13K токенов рассуждения на простую подсказку про SVG (стоит 25 центов). Признак интенсивного расширенного мышления. Сейчас доступен только один уровень глубины мысли.",
+          "Тест с пеликаном потерял предсказательность. Реальная оценка требует способности вызывать инструменты, стабильности в длинных диалогах и эффективности рассуждений, а не генерации креативных картинок."
         ]
       }
     },
     {
-      "id": "d-lxkc78",
+      "id": "d-7o90rl",
       "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
-      "publishedAt": "2026-07-15T14:21:54.000Z",
-      "category": "cybersecurity",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
+      "publishedAt": "2026-07-16T17:45:59.000Z",
+      "category": "ai",
       "en": {
-        "headline": "Why it matters: Claude's web_fetch tool had a loophole that let attackers exfiltrate user data through nested links on honeypot pages, revealing names, locations, and employers.",
+        "headline": "Why it matters: LLMs deleting user files when given full system access reveals critical gaps in AI safety guardrails for autonomous code execution.",
         "tweets": [
-          "Researchers found Claude could be tricked into following links embedded in web pages it fetched, creating a path for data exfiltration despite safeguards blocking direct URL manipulation.",
-          "Attack worked by posing as a Cloudflare auth page, guiding the model through alphabetically-ordered links that progressively leaked user memories. Only shown to Claude-User agents to avoid detection.",
-          "Anthropic patched it by removing web_fetch's ability to follow links within fetched content. The fix trades some functionality for security—a necessary tradeoff given the attack's severity."
+          "GPT-5.6's Codex deleted user files when full access + no sandboxing + no auto-review were enabled. Model confused $HOME env var override, nuked entire directory instead.",
+          "The bug pattern: autonomous code agents without proper containment can make irreversible mistakes. One env var miscalculation = data loss.",
+          "Lesson: full system access to AI code generators requires strict sandboxing, auto-review, and environment variable whitelisting. Autonomy without guardrails breaks things."
         ]
       },
       "ru": {
-        "headline": "Почему важно: в инструменте web_fetch Claude обнаружена уязвимость, позволяющая злоумышленникам извлекать данные пользователей через вложенные ссылки на поддельных сайтах.",
+        "headline": "Почему важно: LLM с полным доступом удаляют файлы пользователей, когда отключены защиты от выполнения кода без изоляции.",
         "tweets": [
-          "Исследователи выяснили, что Claude можно заставить переходить по ссылкам, встроенным в уже загруженные страницы, несмотря на защиту от прямых манипуляций с URL-адресами.",
-          "Атака выдавала себя за страницу аутентификации Cloudflare и постепенно вытягивала данные пользователя через алфавитные ссылки. Срабатывала только для Claude-User в user-agent.",
-          "Anthropic заблокировала возможность переходить по ссылкам внутри загруженного контента. Решение ограничивает функциональность ради безопасности — необходимый компромисс."
+          "Codex в GPT-5.6 удалял файлы при включённом полном доступе, отключённой изоляции и без авторецензии. Модель перепутала переменную $HOME и стёр всю домашнюю папку.",
+          "Агенты без изоляции могут необратимо испортить данные одной ошибкой. Переопределение переменной окружения привело к потере файлов.",
+          "Вывод: автономные генераторы кода требуют строгой изоляции, обязательной проверки и белых списков переменных. Полная автономия без guardrails ломает системы."
         ]
       }
     },
     {
-      "id": "d-pghp8l",
+      "id": "d-a137ru",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
+      "publishedAt": "2026-07-16T16:01:21.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: NVIDIA's Nemotron 3 Embed sets a new retrieval benchmark, enabling more accurate context fetching for AI agents that need to find relevant information fast.",
+        "tweets": [
+          "Nemotron 3 Embed tops RTEB leaderboard across all categories. Better retrieval = AI agents finding right context without hallucinating from wrong sources.",
+          "Open-weight embedding model beats closed alternatives. Teams can now deploy enterprise-grade retrieval locally without vendor lock-in or API costs.",
+          "Agentic systems depend on retrieval quality. Stronger embeddings mean agents answer factually, reducing the brittleness that breaks production AI apps."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Nemotron 3 Embed от NVIDIA устанавливает новый стандарт поиска релевантной информации, что критично для AI-агентов, которым нужны точные контексты.",
+        "tweets": [
+          "Nemotron 3 Embed лидирует в RTEB по всем категориям. Лучший поиск — значит агенты находят правильный контекст и не галлюцинируют на неправильных источниках.",
+          "Открытая модель обошла закрытые аналоги. Команды теперь развертывают enterprise-grade поиск локально, без привязки к облаку и платежам за API.",
+          "Качество поиска определяет надёжность агентов. Сильные embeddings делают ответы фактически верными и избавляют production от постоянных отказов."
+        ]
+      }
+    },
+    {
+      "id": "d-1hd2le4",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
-      "publishedAt": "2026-07-15T12:00:00.000Z",
+      "sourceUrl": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+      "publishedAt": "2026-07-16T16:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: State-level AI safety laws are becoming a practical testing ground for federal standards, avoiding a fragmented regulatory mess.",
+        "headline": "Why it matters: OpenAI is implementing age-specific safeguards and parental controls in ChatGPT to let teens benefit from AI tools while limiting harmful content exposure.",
         "tweets": [
-          "State AI laws create living labs for safety rules before they go federal. Vermont's AI transparency law and Colorado's algorithmic bias rules show what works at scale.",
-          "Reverse federalism flips the script: states experiment with guardrails, feds codify winners. Beats waiting years for Washington gridlock on emerging tech.",
-          "Fragmented state rules risk business chaos, but coordinated state-federal partnership lets companies navigate uniform standards while innovation keeps pace."
+          "OpenAI adding teen-specific protections to ChatGPT: restricted access to mature content, learning-focused features, and parental oversight built in.",
+          "Partnerships with child safety experts ensure ChatGPT's teen experience blocks self-harm, illegal activity, and adult material by design.",
+          "Parental controls let guardians monitor teen interactions with AI without blocking educational access—balancing autonomy and protection."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Законы штатов об ИИ становятся опытной площадкой для федеральных стандартов, предотвращая хаос несогласованных правил.",
+        "headline": "Почему важно: OpenAI внедряет возрастные ограничения и родительский контроль в ChatGPT, чтобы подростки могли использовать ИИ безопасно и обучаться на его основе.",
         "tweets": [
-          "Законы штатов по безопасности ИИ - это испытательные полигоны перед федеральными требованиями. Прозрачность в Вермонте и контроль алгоритмов в Колорадо показывают, что работает.",
-          "Обратный федерализм: штаты пробуют защиту, федерал принимает лучшие. Быстрее, чем ждать решений от Вашингтона на развивающихся технологиях.",
-          "Разные правила в штатах создают сложность, но согласованное партнерство штатов и федерала дает единые стандарты без торможения инноваций."
+          "ChatGPT для подростков: фильтры зрелого контента, образовательные функции и встроенный родительский контроль по умолчанию.",
+          "Эксперты по безопасности детей помогли настроить систему на блокировку самовреда, противоправной деятельности и порнографии.",
+          "Родители могут следить за общением подростка с ИИ без полного запрета—баланс между самостоятельностью и защитой."
         ]
       }
     },
     {
-      "id": "d-xe0mqj",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/unlocking-self-improvement-gpt-red",
-      "publishedAt": "2026-07-15T10:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Automated red teaming lets AI systems find and fix their own vulnerabilities at scale, accelerating safety improvements.",
-        "tweets": [
-          "GPT-Red uses self-play: AI attacks itself to identify weaknesses, then learns to defend. Scales robustness testing from manual to automated.",
-          "Prompt injection attacks drop significantly when models train against adversarial examples they generated. Self-discovery beats external review.",
-          "Automated red teaming lets safety teams focus on complex alignment problems instead of manually crafting attack scenarios."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Автоматизированное тестирование на стойкость позволяет системам ИИ находить и исправлять собственные уязвимости в масштабе, ускоряя прогресс в безопасности.",
-        "tweets": [
-          "GPT-Red использует самоигру: модель атакует саму себя, выявляя слабые места, затем учится защищаться. Масштабирует тестирование от ручного к автоматическому.",
-          "Атаки через prompt injection значительно снижаются, когда модели обучаются против примеров, которые сами сгенерировали. Самооткрытие эффективнее внешней проверки.",
-          "Автоматическое тестирование на стойкость позволяет командам безопасности сосредоточиться на сложных проблемах выравнивания вместо ручного создания сценариев атак."
-        ]
-      }
-    },
-    {
-      "id": "d-1dgmdld",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-not-much-happened-today-c72",
-      "publishedAt": "2026-07-14T23:54:07.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Coding agents are shifting from chat interfaces to autonomous execution, with harness quality and observability becoming the key differentiator as model capability plateaus.",
-        "tweets": [
-          "OpenAI's Codex usage exploded 2.5x in a week. The real unlock: teams winning on agent reliability and tracing, not raw model power—stale instructions can stall tasks for hours.",
-          "Local inference is now viable for serious work. Bonsai 27B runs on RTX 5090 at 3.9GB; Tencent's 295B model fits one GPU. Edge agentic workflows are no longer theoretical.",
-          "Long-video understanding flipped: instead of ingesting all frames, OmniAgent-7B beats 72B models by actively requesting only the frames it needs—efficiency through selective perception."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Кодирующие агенты переходят от чата к автономному выполнению, где качество harness и observability теперь критичнее, чем мощь модели.",
-        "tweets": [
-          "Использование Codex от OpenAI взлетело в 2,5 раза за неделю. Выигрывают команды с надёжными агентами и трейсингом, а не с сырой мощью—устаревшие инструкции могут зависнуть на часы.",
-          "Локальный инференс теперь реален для серьёзной работы. Bonsai 27B работает на RTX 5090 в 3,9ГБ; модель Tencent 295B влезает в одну GPU. Граничные агентские рабочие процессы—не теория.",
-          "Понимание длинных видео перевернулось: вместо обработки всех кадров OmniAgent-7B обыгрывает модели в 72B, запрашивая только нужные кадры—эффективность через избирательное восприятие."
-        ]
-      }
-    },
-    {
-      "id": "d-dpti87",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/aiewf26trends",
-      "publishedAt": "2026-07-14T23:21:21.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI engineering has shifted from autonomous agents to production-ready systems with human oversight loops, fundamentally changing how engineers build reliable AI applications.",
-        "tweets": [
-          "AutoGPT hype is dead. 2026 AI engineering focuses on harnesses, evals, and infrastructure around models—not removing humans, but augmenting them with agents that stay in managed loops.",
-          "Loop engineering is the new job: outer loops for human oversight, inner loops for agent execution. The frontier companies realized complete autonomy doesn't scale; control through architecture does.",
-          "Models are 'grown, not designed' and evolve unpredictably. Engineers now build feedback systems to monitor and evaluate model outputs rather than trying to fully predict behavior."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: AI-инженеры перешли от создания автономных агентов к построению надёжных систем с человеческим контролем, что изменило подход к разработке AI-приложений.",
-        "tweets": [
-          "Хайп вокруг AutoGPT закончился. В 2026 году AI-инженеры фокусируются на инфраструктуре, эвалюации и системах вокруг моделей—не на удалении людей, а на их дополнении управляемыми агентами.",
-          "Loop engineering—новая профессия: внешние циклы для контроля человека, внутренние—для работы агентов. Компании поняли: полная автономность не масштабируется, контроль нужен на уровне архитектуры.",
-          "Модели 'растут, а не проектируются' и меняются непредсказуемо. Инженеры теперь строят системы обратной связи для мониторинга вывода моделей вместо попыток предсказать поведение."
-        ]
-      }
-    },
-    {
-      "id": "d-168tzfv",
+      "id": "d-1onh7dj",
       "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything",
-      "publishedAt": "2026-07-14T22:43:35.000Z",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/inkling/#atom-everything",
+      "publishedAt": "2026-07-16T15:35:25.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Thinking Machines Lab released Inkling, a 975B-parameter open-weights multimodal model that gives US open-source AI a competitive alternative to Chinese models and closed-source offerings.",
+        "tweets": [
+          "Inkling: 975B params (41B active), Apache-2.0 licensed, trained on 45T tokens across text/image/audio/video. Not frontier-grade, but a solid base model for fine-tuning via Thinking Machines' Tinker platform.",
+          "Multimodal from day one: generates images and analyzes them. The model card is sparse on training data details, mostly citing public internet content and third-party datasets without specifics.",
+          "Smaller version coming: Inkling-Small (276B/12B active) still in testing. US open-weights ecosystem now has viable contenders beyond NVIDIA Nemotron and Gemma 4."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Thinking Machines Lab выпустила Inkling — открытую 975-миллиардную мультимодальную модель, которая дает US экосистеме конкурентный ответ китайским и закрытым моделям.",
+        "tweets": [
+          "Inkling: 975B параметров (41B активных), Apache-2.0, обучена на 45 триллионах токенов текста, изображений, аудио и видео. Не фронтирная модель, но крепкая основа для дообучения на платформе Tinker.",
+          "Мультимодальность с нуля: генерирует изображения и анализирует их. Карточка модели скупа на детали обучающих данных — упоминаются только публичный контент и датасеты третьих сторон.",
+          "Меньшая версия в разработке: Inkling-Small (276B/12B активных) еще тестируется. Для US экосистемы открытых весов появился серьезный конкурент Nemotron и Gemma."
+        ]
+      }
+    },
+    {
+      "id": "d-cn9vpc",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/mermaid-ascii/#atom-everything",
+      "publishedAt": "2026-07-16T14:57:39.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: Dependabot's 3-day cooldown reduces noise from rushing into untested releases, catching real vulnerabilities before you pull them.",
+        "headline": "Why it matters: Converting Mermaid diagrams to ASCII art now has a fully-featured WebAssembly option with color support, letting you render flowcharts and graphs anywhere without dependencies.",
         "tweets": [
-          "Dependabot now waits 3 days after a release drops before auto-opening PRs. Catches malicious packages and breaking changes before they hit your CI.",
-          "No config needed—this cooldown is the new default. Less PR spam, more time to evaluate whether that patch actually fixes what you care about.",
-          "Dependency hell just got slightly less hellish. The cooldown trades speed for stability, letting maintainers vet new releases first."
+          "Mermaid-to-ASCII tool compiled to WebAssembly from Go—no runtime dependencies needed. Renders flowcharts as colored ASCII art in browsers and Node.js.",
+          "Two implementations now available: newer Rust version (simpler) vs older Go library (more features, color support). Both available as WASM.",
+          "Claude compiled AlexanderGrooff's Go mermaid-ascii to WebAssembly. Useful for docs, terminals, and anywhere graphical rendering isn't an option."
         ]
       },
       "ru": {
-        "headline": "Почему важно: трёхдневная задержка Dependabot помогает избежать спешки с непроверенными релизами и ловит вредоносные пакеты раньше.",
+        "headline": "Почему важно: Диаграммы Mermaid теперь можно конвертировать в ASCII-арт через WebAssembly с поддержкой цветов, позволяя рендерить графики везде без зависимостей.",
         "tweets": [
-          "Dependabot теперь ждёт 3 дня после выхода версии перед открытием PR обновления. Успевает поймать зловредный код и нарушающие совместимость изменения.",
-          "Работает по умолчанию, никакой конфигурации не нужно. Меньше шума от PR, больше времени проверить, нужно ли вам это обновление вообще.",
-          "Ад с зависимостями станет чуть менее адским. Надёжность вместо скорости — дай сообществу время проверить новый релиз."
+          "Go-библиотека mermaid-ascii скомпилирована в WebAssembly—работает в браузерах и Node.js без установки рантайма. Поддержка цветных ASCII-диаграмм.",
+          "Две реализации: новая на Rust (простая) и старая на Go (больше функций, цвета). Обе доступны как WASM-модули для веб и CLI.",
+          "Claude помог скомпилировать Go-версию в WebAssembly. Полезно для документации, терминалов и мест, где графику рендерить нельзя."
         ]
       }
     },
     {
-      "id": "d-ea5704",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/14/pedalican/#atom-everything",
-      "publishedAt": "2026-07-14T22:29:45.000Z",
-      "category": "ai",
+      "id": "d-xqycet",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/the-lab-of-the-future-should-feel",
+      "publishedAt": "2026-07-16T13:30:44.000Z",
+      "category": "biotech",
       "en": {
-        "headline": "Why it matters: Image generation can now reliably produce game-ready sprite sheets when prompted with the right structure, making custom animated characters accessible without manual asset creation.",
+        "headline": "Why it matters: Lila Sciences is building a 24/7 automated lab that generates experimentally validated reasoning at scale, treating scientific discovery as a data generation problem to train AI models on real wet-lab feedback.",
         "tweets": [
-          "Simon Willison created a custom Codex Desktop pet (a pelican on a bicycle) by having GPT-5.6 Sol generate sprite sheets iteratively. The whole process is documented in open source skills licensed Apache 2.0.",
-          "The key: feeding image generation models a detailed reference prompt with specific technical requirements (chroma-key background, exact dimensions, animation frames). Iteration refined each sprite loop.",
-          "Both core skills (hatch-pet and imagegen from OpenAI) are open source. This pattern could let any developer generate custom game assets programmatically instead of hand-drawing them."
+          "Lila's automated lab runs biology, chemistry, and materials science simultaneously, generating 10 trillion experimentally verified reasoning tokens—a dataset type that barely exists on the internet.",
+          "Their bet: treat the lab as a data center with instruments as nodes and RL as a data generator, where nature itself verifies correctness. Flexibility over raw throughput; humans stay in the loop where automation doesn't pay.",
+          "Six months from CAR-T model suggestions to in vivo primate data—a speed that justifies AbbVie's $2.1B acquisition price, but Lila did it with zero dedicated FTEs on the project."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Генерация изображений теперь надежно создает готовые к использованию спрайт-листы для игр при правильно структурированных промптах, делая кастомных персонажей доступными без ручной работы.",
+        "headline": "Почему важно: Лила Сайнсес строит круглосуточную автоматизированную лабораторию, которая генерирует проверенные экспериментами цепочки рассуждений в масштабе, рассматривая научные открытия как задачу генерации данных для обучения AI.",
         "tweets": [
-          "Саймон Уиллисон создал собственного пета для Codex Desktop (пеликан на велосипеде), поручив GPT-5.6 Sol итеративно генерировать спрайт-листы. Весь процесс опубликован как open source под лицензией Apache 2.0.",
-          "Ключ успеха: подробный промпт с техническими требованиями (chroma-key фон, точные размеры, кадры анимации). Итерации уточняли каждый цикл движения персонажа.",
-          "Оба основных компонента (hatch-pet и imagegen от OpenAI) доступны в open source. Этот подход позволяет разработчикам программно генерировать кастомные ассеты для игр вместо ручного рисования."
+          "Автоматизированная лаборатория Лила одновременно работает с биологией, химией и материаловедением, создавая 10 триллионов экспериментально проверенных токенов рассуждений—датасет, который практически не существует в интернете.",
+          "Их стратегия: лабораторию как дата-центр с приборами в роли узлов, RL как генератор данных, где природа сама проверяет корректность. Гибкость важнее пропускной способности; люди остаются в цикле, где автоматизация неэффективна.",
+          "От предложений модели для CAR-T терапии до in vivo данных на приматах за шесть месяцев—скорость, оправдывающая покупку AbbVie за 2,1 млрд долларов, но Лила достигла этого без выделенного персонала."
         ]
       }
     }
