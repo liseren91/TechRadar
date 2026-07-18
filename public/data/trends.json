@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T08:28:33.436Z",
+  "generatedAt": "2026-07-18T08:08:37.966Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,11 +8,11 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.64,
+      "momentum": -0.45,
       "weeklyCounts": [
         14,
         11,
-        4
+        6
       ],
       "signals": [
         {
@@ -30,16 +30,61 @@
       ]
     },
     {
+      "id": "llm-agents",
+      "label": "LLM Agents",
+      "category": "ai",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.57,
+      "weeklyCounts": [
+        411,
+        420,
+        180
+      ],
+      "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-830",
+          "source": "latent-space",
+          "publishedAt": "2026-07-18T04:30:21.000Z"
+        },
+        {
+          "title": "[AINews] Kimi K3 2.8T-A50B: the largest open model ever released; Opus 4.8-class at Sonnet 5 pricing",
+          "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
+          "source": "latent-space",
+          "publishedAt": "2026-07-17T01:46:36.000Z"
+        },
+        {
+          "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+          "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-16T20:19:30.000Z"
+        },
+        {
+          "title": "[AINews] Thinky's Inkling: 975B-A41B multimodal, new best American Apache 2.0 open model (with Inkling-Small, 276B-A12B)",
+          "url": "https://www.latent.space/p/ainews-thinkys-inkling-975b-a41b",
+          "source": "latent-space",
+          "publishedAt": "2026-07-16T06:18:05.000Z"
+        },
+        {
+          "title": "How Cars24 scales conversations and builds faster with OpenAI",
+          "url": "https://openai.com/index/cars24",
+          "source": "openai",
+          "publishedAt": "2026-07-16T00:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "protein-design",
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.57,
       "weeklyCounts": [
         21,
         21,
-        6
+        9
       ],
       "signals": [
         {
@@ -68,11 +113,11 @@
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.57,
       "weeklyCounts": [
         1,
         7,
-        2
+        3
       ],
       "signals": [
         {
@@ -84,63 +129,24 @@
       ]
     },
     {
-      "id": "llm-agents",
-      "label": "LLM Agents",
-      "category": "ai",
-      "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.72,
-      "weeklyCounts": [
-        411,
-        420,
-        118
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Kimi K3 2.8T-A50B: the largest open model ever released; Opus 4.8-class at Sonnet 5 pricing",
-          "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
-          "source": "latent-space",
-          "publishedAt": "2026-07-17T01:46:36.000Z"
-        },
-        {
-          "title": "Kimi K3, and what we can still learn from the pelican benchmark",
-          "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-16T20:19:30.000Z"
-        },
-        {
-          "title": "NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval",
-          "url": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
-          "source": "hf",
-          "publishedAt": "2026-07-16T16:01:21.000Z"
-        },
-        {
-          "title": "[AINews] Thinky's Inkling: 975B-A41B multimodal, new best American Apache 2.0 open model (with Inkling-Small, 276B-A12B)",
-          "url": "https://www.latent.space/p/ainews-thinkys-inkling-975b-a41b",
-          "source": "latent-space",
-          "publishedAt": "2026-07-16T06:18:05.000Z"
-        },
-        {
-          "title": "How Cars24 scales conversations and builds faster with OpenAI",
-          "url": "https://openai.com/index/cars24",
-          "source": "openai",
-          "publishedAt": "2026-07-16T00:00:00.000Z"
-        }
-      ]
-    },
-    {
       "id": "open-models",
       "label": "Open Models",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.79,
+      "momentum": -0.64,
       "weeklyCounts": [
         375,
         358,
-        74
+        128
       ],
       "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-830",
+          "source": "latent-space",
+          "publishedAt": "2026-07-18T04:30:21.000Z"
+        },
         {
           "title": "[AINews] Kimi K3 2.8T-A50B: the largest open model ever released; Opus 4.8-class at Sonnet 5 pricing",
           "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
@@ -164,12 +170,6 @@
           "url": "https://www.latent.space/p/ainews-thinkys-inkling-975b-a41b",
           "source": "latent-space",
           "publishedAt": "2026-07-16T06:18:05.000Z"
-        },
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-c72",
-          "source": "latent-space",
-          "publishedAt": "2026-07-14T23:54:07.000Z"
         }
       ]
     },
@@ -179,11 +179,11 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.8,
+      "momentum": -0.65,
       "weeklyCounts": [
         81,
         60,
-        12
+        21
       ],
       "signals": [
         {
