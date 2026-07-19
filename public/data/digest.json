@@ -1,6 +1,75 @@
 {
-  "generatedAt": "2026-07-18T08:08:37.846Z",
+  "generatedAt": "2026-07-19T08:33:26.700Z",
   "items": [
+    {
+      "id": "d-6y94g9",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything",
+      "publishedAt": "2026-07-19T05:06:21.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Organizations are making billion-dollar AI strategy decisions based on hype rather than actual tool knowledge or realistic ROI projections, driven by fear of appearing behind competitors.",
+        "tweets": [
+          "An executive with $2B+ revenue responsibility created an AI-centric tech strategy without ever using ChatGPT or any AI tool. This is what happens when FOMO replaces engineering judgment.",
+          "Engineers are rewriting codebases in unfamiliar languages just to appear productive with AI, turning tool adoption into a survival tactic rather than a genuine improvement.",
+          "Vendors can't push back on absurd claims like 100x productivity gains because contradicting them risks losing enterprise contracts. Perverse incentives are baking magical thinking into corporate strategy."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Компании принимают стратегические решения по AI на мультимиллиардные суммы на основе спекуляций, а не реального знания инструментов или честной оценки эффективности.",
+        "tweets": [
+          "Руководитель компании с оборотом $2B+ создал AI-стратегию, никогда не трогав ChatGPT. FOMO окончательно вытеснил инженерное мышление из принятия решений.",
+          "Инженеры переписывают код на незнакомых языках, чтобы выглядеть продуктивными с AI. Adoption превратился в борьбу за выживание вместо реального улучшения.",
+          "Продавцы не могут оспорить бредовые цифры вроде 100x прироста производительности — противоречие может стоить многомиллионного контракта. Неправильные стимулы встраивают магическое мышление в корпоративную стратегию."
+        ]
+      }
+    },
+    {
+      "id": "d-exk4ql",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything",
+      "publishedAt": "2026-07-19T03:54:09.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Claude Code quietly switched to a Rust-based Bun runtime, proving that major infrastructure rewrites can ship unnoticed when they just work.",
+        "tweets": [
+          "Claude Code v2.1.181+ runs Bun written in Rust. You didn't notice because startup only got 10% faster on Linux and everything else stayed the same. That's the goal.",
+          "Evidence: strings on the claude binary reveals Bun v1.4.0 (a preview release) and 563 .rs source files embedded. Production runtime rewrite across millions of devices, totally invisible.",
+          "Jarred Sumner was right: boring infrastructure is good infrastructure. A complete language rewrite shipped without fanfare because users got marginal gains, zero breakage."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Claude Code молча перешел на Rust-версию Bun, доказав, что крупные переписания инфраструктуры можно доставлять незаметно, если они просто работают.",
+        "tweets": [
+          "Claude Code v2.1.181+ использует Bun на Rust. Никто не заметил, потому что стартап ускорился только на 10% в Linux, остальное не изменилось. Именно это и нужно.",
+          "Доказательство: в бинарнике claude найдена Bun v1.4.0 (preview) и 563 файла .rs. Полная переписка языка в продакшене на миллионах устройств, абсолютно невидимо.",
+          "Jarred Sumner был прав: скучная инфраструктура — это хорошая инфраструктура. Полная переработка доставлена без шума, потому что пользователи получили небольшой выигрыш и ноль сбоев."
+        ]
+      }
+    },
+    {
+      "id": "d-4u0715",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything",
+      "publishedAt": "2026-07-18T17:19:10.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Understanding SQLite query plans is crucial for database performance tuning, and this browser-based explainer makes it accessible without needing to learn plan syntax.",
+        "tweets": [
+          "SQLite Query Explainer lets you paste queries in the browser and get human-readable explanations of execution plans. No local setup needed—it runs SQLite via Pyodide WebAssembly.",
+          "Interactive tool demystifies EXPLAIN and EXPLAIN QUERY PLAN output. Helpful for debugging slow queries when you don't speak query-plan-fluent.",
+          "Built by layering Claude explanations on top of SQLite's native plan output. Useful for learning but verify critical performance decisions elsewhere."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Понимание планов запросов SQLite критично для оптимизации производительности БД, а этот инструмент в браузере делает это доступным без изучения синтаксиса планов.",
+        "tweets": [
+          "SQLite Query Explainer позволяет вставить запрос в браузер и получить понятное объяснение плана выполнения. Никакой локальной установки—всё работает через Pyodide и WebAssembly.",
+          "Интерактивный инструмент расшифровывает вывод EXPLAIN и EXPLAIN QUERY PLAN. Помогает разобраться с медленными запросами, если вы не читаете планы с ходу.",
+          "Построен слоем Claude-объяснений поверх встроенного вывода SQLite. Полезно для обучения, но проверяйте критичные решения по оптимизации ещё где-то."
+        ]
+      }
+    },
     {
       "id": "d-1cyltoi",
       "source": "simonw",
@@ -8,19 +77,19 @@
       "publishedAt": "2026-07-18T06:00:13.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Anthropic reversed its plan to remove Claude's best model from subscriptions, keeping Fable 5 permanently available to paying users instead of forcing them to API pricing.",
+        "headline": "Why it matters: Anthropic reversed course and made Claude Fable 5 permanent in paid plans, signaling competitive pressure from GPT-5.6 Sol forced a rethink on API-only pricing.",
         "tweets": [
-          "Fable 5 now permanent in Claude Max/Team Premium at 50% limits. Pro users get API access + $100 credit. Anthropic backed down from API-only strategy.",
-          "GPT-5.6 Sol competition made subscription-only access untenable. Customers weren't paying $100-200/month for plans without the best model.",
-          "Reversal raises questions: will Anthropic reduce training to free up GPU capacity for serving Fable 5 at scale?"
+          "Claude Fable 5 now stays in Max and Team Premium plans at 50% limits starting July 20. Pro users get $100 credit to use it via tokens. Subscription access secured after months of uncertainty.",
+          "Anthropic abandoned plans to yank Fable 5 from subscriptions because customers refused to pay $100-200/month for plans missing the best model. Competition from GPT-5.6 Sol made that untenable.",
+          "The reversal may cost Anthropic compute resources. They'll likely need to free up GPU capacity to serve Fable 5 at scale across subscriber tiers, potentially impacting training velocity."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Anthropic отменила план исключить свою лучшую модель Claude из подписок и вернула Fable 5 постоянно доступной для платных пользователей.",
+        "headline": "Почему важно: Anthropic сделала Claude Fable 5 постоянной в платных тарифах, отступив под давлением конкуренции от GPT-5.6 Sol и отказавшись от плана перевода модели только на API.",
         "tweets": [
-          "Fable 5 теперь навсегда в Claude Max/Team Premium с половиной лимитов. Pro-пользователи получают доступ через API плюс $100 кредита.",
-          "Конкуренция GPT-5.6 Sol сделала невозможной стратегию только API. Клиенты не платят $100-200 в месяц за тарифы без лучшей модели.",
-          "Разворот вызывает вопрос: замедлит ли Anthropic обучение новых моделей, чтобы освободить GPU для Fable 5?"
+          "Claude Fable 5 остаётся в тарифах Max и Team Premium с 50% от лимитов с 20 июля. Пользователи Pro получат кредит $100 на использование через токены. Доступ подписчиков сохранён.",
+          "Anthropic отказалась выводить Fable 5 из подписок, потому что клиенты отказывались платить $100-200 в месяц за планы без лучшей модели. Конкуренция GPT-5.6 Sol сделала такой ход невозможным.",
+          "Отступление может стоить Anthropic вычислительных ресурсов. Компании придётся освобождать видеокарты для обслуживания Fable 5 всем подписчикам, что замедлит разработку новых моделей."
         ]
       }
     },
@@ -31,19 +100,19 @@
       "publishedAt": "2026-07-18T05:27:49.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: Quixote, a Python web framework from 2003, just received a commit 6 hours ago—proving some old tools stay maintained by small communities instead of being abandoned.",
+        "headline": "Why it matters: Quixote, a 21-year-old Python web framework, just received a commit 6 hours ago, proving some legacy tools still have active maintainers.",
         "tweets": [
-          "Quixote web framework just got a commit after years of dormancy. A 21-year-old Python project with active maintenance proves longevity beats hype cycles.",
-          "Oldest Quixote commit: 2003. Latest: 6 hours ago. Shows how niche tools can sustain through dedicated maintainers without VC funding or SEO marketing.",
-          "Python web framework archaeology: Quixote outlasted the blog-framework era. If your tools still work, sometimes just keeping them alive matters more than chasing trends."
+          "Quixote web framework got a commit 6 hours ago. Initial import to git was 21 years ago. Someone still cares about this vintage Python tool.",
+          "Legacy doesn't mean abandoned. Quixote's git history spans two decades with recent activity, a rare win for old web frameworks.",
+          "If you're maintaining ancient Python codebases, Quixote proves some frameworks never truly die—they just get very quiet and then surprise you."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Quixote, веб-фреймворк Python 2003 года, получил коммит буквально 6 часов назад — редкий пример того, как старые инструменты живут благодаря преданным разработчикам, а не умирают забытыми.",
+        "headline": "Почему важно: веб-фреймворк Quixote, созданный 21 год назад, получил обновление всего 6 часов назад, показывая, что некоторые наследные инструменты всё ещё поддерживаются.",
         "tweets": [
-          "Фреймворк Quixote ожил коммитом через 21 год. Показывает, что нишевые инструменты могут жить годами, если есть хотя бы один разработчик, который верит в проект.",
-          "2003—2024: Quixote пережил эру блог-фреймворков и волны новых трендов. Проверка реальности для тех, кто гонится за каждым новым инструментом.",
-          "Python веб-программирование: не всё нужно переписывать. Иногда поддерживать старый рабочий код ценнее, чем прыгать на каждый новый фреймворк."
+          "Quixote обновлялся 6 часов назад. Первый коммит в git был 21 год назад. Кто-то по-прежнему следит за этим винтажным фреймворком Python.",
+          "Старое не значит покинутое. История Quixote охватывает два десятилетия с недавней активностью—редкая победа для древних фреймворков.",
+          "Если вы поддерживаете старые проекты на Python, Quixote доказывает: фреймворки не умирают, они просто молчат, а потом удивляют вас."
         ]
       }
     },
@@ -54,19 +123,19 @@
       "publishedAt": "2026-07-18T04:30:21.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Kimi K3's strong performance narrows the China-US AI gap enough to force Western labs to accelerate shipping, shifting competitive pressure from raw compute to efficiency stack (routing, quantization, data curation).",
+        "headline": "Why it matters: Kimi K3 narrows the gap to frontier AI models using better efficiency tricks instead of raw compute, forcing Western labs to rethink the compute-moat narrative.",
         "tweets": [
-          "Kimi K3 lands at #3 on coding evals, matches GPT-5.6 on some tasks. First time China leads US on Frontend Code Arena. The capability gap compressed faster than most expected.",
-          "K3's Delta Attention mechanism delivers 6x faster throughput at 1M context with flatter pricing. Moonshot compressed capability-per-FLOP without matching Western capex directly.",
-          "The real story isn't raw FLOPs anymore. Post-training quality, MoE routing, and scarcity-driven infra design now gate frontier capability. K3 proves this works at scale."
+          "Kimi K3 debuts at 57 on Artificial Analysis (Claude Fable at 60), with standout coding performance. China just proved capability gaps close through post-training and MoE routing, not just FLOPs.",
+          "K3's Delta Attention mechanism claims 6x faster throughput at 1M context. If real, this architecture-level innovation matters more than the benchmark scores.",
+          "K3 is now impossible to dismiss—even skeptics agree. The practical consensus: Chinese labs are compressing capability-per-FLOP faster than expected, reshaping competitive pressure."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Kimi K3 сокращает разрыв между китайскими и западными лабораториями настолько, что заставляет OpenAI и Anthropic ускоряться, перемещая конкуренцию с сырых вычислений на эффективность архитектуры.",
+        "headline": "Почему важно: Kimi K3 сокращает отставание от передовых ИИ-моделей благодаря лучшей эффективности, а не сырой мощности вычислений, заставляя западные лаборатории пересмотреть нарратив о монополии на вычисления.",
         "tweets": [
-          "Kimi K3 занимает третье место в рейтингах код-агентов, сравнивается с GPT-5.6. Впервые Китай лидирует США в Arena на фронтенд-коде. Разрыв в возможностях сократился быстрее обычного.",
-          "Delta Attention в K3 дает 6x ускорение на контексте 1M и более ровное ценообразование. Moonshot добился производительности без масштабных западных инвестиций в вычисления.",
-          "Теперь побеждает не количество флопс, а качество постобработки, маршрутизация MoE и инфраструктура в условиях дефицита. K3 доказал, что это работает в промышленном масштабе."
+          "Kimi K3 занимает 57-е место в Artificial Analysis (Claude Fable—60-е), с выдающимися результатами в кодировании. Китай доказал, что разрывы в возможностях закрываются через пост-обучение и MoE маршрутизацию, а не только FLOP.",
+          "Delta Attention в K3 заявляет о 6-кратном ускорении пропускной способности на контексте в 1M токенов. Если это правда, инновация на уровне архитектуры важнее результатов бенчмарков.",
+          "K3 уже невозможно игнорировать—даже скептики согласны. Практический консенсус: китайские лаборатории сжимают capability-per-FLOP быстрее, чем ожидалось, переформатируя конкурентное давление."
         ]
       }
     },
@@ -77,19 +146,19 @@
       "publishedAt": "2026-07-17T15:57:54.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: NVIDIA NeMo Automodel cuts fine-tuning time for vision models from weeks to hours, making large-scale image and video customization practical for production teams.",
+        "headline": "Why it matters: NVIDIA NeMo Automodel lets engineers fine-tune video and image diffusion models on multi-GPU clusters without rewriting training loops.",
         "tweets": [
-          "NeMo Automodel automates hyperparameter tuning and distributed training, letting you fine-tune diffusion models on massive datasets without manual optimization.",
-          "Integrates directly with Hugging Face Diffusers—your existing model workflows now scale to multi-GPU clusters with minimal code changes.",
-          "Real benchmark: fine-tuning video models that previously took weeks now completes in hours, unlocking faster iteration cycles for computer vision products."
+          "NeMo Automodel abstracts away distributed training complexity—automatically handles data parallelism, mixed precision, and checkpointing across GPUs so you focus on model tuning.",
+          "Direct integration with Hugging Face Diffusers means your existing model code works out of the box. Fine-tune Stable Diffusion variants or custom video models at production scale.",
+          "Real bottleneck: not innovation, but engineering friction. This removes it. Train on datasets that were previously too large to iterate on in-house."
         ]
       },
       "ru": {
-        "headline": "Почему важно: NeMo Automodel сокращает время обучения моделей зрения с недель до часов, делая масштабную кастомизацию изображений и видео практичной для production команд.",
+        "headline": "Почему важно: NVIDIA NeMo Automodel позволяет инженерам дообучать видео и изображение диффузионные модели на многогпу кластерах без переписывания training loops.",
         "tweets": [
-          "NeMo Automodel автоматизирует подбор гиперпараметров и распределённое обучение—нужно просто запустить fine-tuning на больших наборах данных без ручной оптимизации.",
-          "Встроена поддержка Hugging Face Diffusers—существующие pipeline теперь масштабируются на многогеймные кластеры с минимальными изменениями кода.",
-          "На практике: видеомодели, которые обучались неделями, теперь готовы за часы—быстрее итерируешь computer vision продукты."
+          "NeMo Automodel скрывает сложность распределённого обучения—автоматически управляет параллелизмом данных, смешанной точностью и чекпойнтами, чтобы вы могли сосредоточиться на настройке.",
+          "Прямая интеграция с Hugging Face Diffusers означает, что ваш существующий код моделей работает сразу. Дообучайте Stable Diffusion или кастомные видео модели в масштабе продакшена.",
+          "Настоящее узкое место—не инновация, а инженерная трение. Это его убирает. Обучайтесь на датасетах, которые раньше были слишком большими для итерации в компании."
         ]
       }
     },
@@ -100,19 +169,19 @@
       "publishedAt": "2026-07-17T13:43:53.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Kimi K3's refusal to leak prompts while offering helpful service shows AI systems can maintain boundaries without becoming hostile or evasive.",
+        "headline": "Why it matters: Kimi K3's refusal to leak its system prompt while asking what it can help with shows how modern AI models are being designed to maintain operational boundaries without being rude about it.",
         "tweets": [
-          "Kimi K3 declined to reveal its system prompt, then pivoted immediately to 'Is there something I can actually help you with today?' — polite refusal beats both compliance and obstruction.",
-          "The moment exposes a gap in jailbreak culture: many attacks assume compliance or find hostility. Clean boundary-setting with genuine helpfulness breaks that binary.",
-          "An AI that says 'no' to prompt extraction while staying genuinely useful might actually be the behavior we want—not a bug, but a feature worth replicating."
+          "Kimi K3 refused to leak its system prompt, then pivoted to 'Is there something I can actually help you with today?' - demonstrates how newer LLMs handle security requests with grace instead of obstruction.",
+          "The meta-move: asking the user for help after refusing a jailbreak attempt. Keeps the assistant in control of its own constraints while staying conversational and useful.",
+          "This is how you want boundary-following to work - not hostile refusals, but redirecting attention back to what the model can legitimately do for you."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Kimi K3 отказался раскрыть системный промпт, но сразу предложил реальную помощь — это показывает, как ИИ может устанавливать границы без враждебности.",
+        "headline": "Почему важно: Kimi K3 отказалась раскрыть свой системный промпт, а затем предложила помощь — это показывает, как современные модели ИИ устанавливают граница без конфликта.",
         "tweets": [
-          "Kimi K3 вежливо отклонил просьбу раскрыть промпт и сразу спросил: можно ли чем-то помочь. Корректный отказ лучше, чем подчинение или обход.",
-          "Момент выявляет слабость в культуре взломов: многие атаки предполагают либо послушание, либо агрессию. Четкие границы с искренней помощью ломают эту логику.",
-          "ИИ, который говорит «нет» на извлечение промптов, но остаётся полезным — это не баг, а поведение, которое стоит копировать."
+          "Kimi K3 отказала в утечке промпта, потом спросила «Чем я могу помочь?» Новый подход к безопасности ИИ: защита через вежливое переключение внимания, а не враждебный отказ.",
+          "После попытки jailbreak модель остаётся в контроле, но не раздражает пользователя. Это эффективнее, чем просто сказать «нет».",
+          "Хороший пример того, как должны работать ограничения в ИИ — направить внимание на то, что модель действительно может сделать полезного."
         ]
       }
     },
@@ -123,19 +192,19 @@
       "publishedAt": "2026-07-17T12:11:11.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI-generated writing follows predictable patterns that become immediately recognizable and undermine credibility.",
+        "headline": "Why it matters: AI-generated text has recognizable patterns that readers are learning to spot, making authenticity and originality harder to find.",
         "tweets": [
-          "Simon Willison built a detector for common LLM writing clichés like 'no fluff, no filler'—highlighting 10 patterns that scream AI authorship.",
-          "LLM text has signature moves: overuse of certain phrases, formulaic structure, forced enthusiasm. A tool can now flag them in real time.",
-          "Spotting AI writing quirks matters for quality control. Same patterns appear across thousands of articles, making them sound generic and inauthentic."
+          "New tool highlights 10 common clichés in LLM-generated writing—phrases like 'no fluff, no filler, no jargon' that scream bot-written content.",
+          "Simon Willison built a detector for AI writing patterns because these phrases have become so predictable they're now obvious red flags.",
+          "As more content gets generated by LLMs, readers develop radar for these tics. Spotting them matters for credibility and trust."
         ]
       },
       "ru": {
-        "headline": "Почему важно: тексты, генерируемые нейросетями, следуют предсказуемым паттернам, которые сразу бросаются в глаза и подрывают доверие.",
+        "headline": "Почему важно: Текст, написанный ИИ, имеет узнаваемые паттерны, и читатели всё быстрее учатся их замечать, что усложняет поиск оригинального контента.",
         "tweets": [
-          "Саймон Виллисон создал детектор штампов в AI-текстах типа 'без воды, без лишнего'—отслеживает 10 характерных признаков авторства нейросети.",
-          "LLM тексты используют одни и те же приёмы: повторяющиеся фразы, шаблонная структура, наигранный энтузиазм. Инструмент выявляет их на лету.",
-          "Распознавание типичного AI-стиля критично для контроля качества. Одни и те же паттерны повторяются в тысячах статей, делая их безличными и скучными."
+          "Новый инструмент выделяет 10 типичных клише в текстах, созданных LLM—фразы вроде 'без воды, без лишних слов' сразу выдают авторство ИИ.",
+          "Simon Willison создал детектор таких паттернов, потому что они стали настолько предсказуемы, что сразу бросаются в глаза читателям.",
+          "По мере роста AI-контента люди вырабатывают навык их распознавания. Это важно для доверия и подлинности информации."
         ]
       }
     },
@@ -146,88 +215,19 @@
       "publishedAt": "2026-07-17T10:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Companies need concrete metrics beyond accuracy to measure whether AI actually delivers business value and justifies the compute spend.",
+        "headline": "Why it matters: Companies need concrete metrics beyond benchmark scores to measure whether AI actually delivers business value and justifies compute spend.",
         "tweets": [
-          "Useful work, not just accuracy. The AI scorecard measures ROI by tracking completed tasks, not benchmark scores. What actually gets done matters.",
-          "Cost per successful task is the real unit of economics. Track what it costs to reliably complete one job end-to-end, not per token or inference.",
-          "Dependability beats raw performance. An AI system that works 95% of the time beats one with 99% accuracy that fails when you need it most."
+          "OpenAI's AI scorecard tracks 4 core metrics: useful work output, cost per successful task, system dependability, and return on compute investment. Skip the benchmark theater.",
+          "Cost per successful task matters more than raw model performance. An AI that solves 95% of your problems cheaply beats one that's 99% accurate but expensive.",
+          "Dependability—how consistently AI delivers on promises—is often overlooked but critical for production systems where failures have real business costs."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Компаниям нужны конкретные метрики, чтобы оценить, действительно ли ИИ приносит бизнес-результаты и оправдывает затраты на вычисления.",
+        "headline": "Почему важно: Компаниям нужны конкретные метрики для измерения реальной отдачи от ИИ вместо полагания на абстрактные бенчмарки.",
         "tweets": [
-          "Полезная работа вместо точности. Оценивайте ИИ по выполненным задачам, а не по баллам в тестах. Результаты важнее цифр.",
-          "Стоимость успешной задачи — реальная единица экономики. Считайте расходы на одно надежно выполненное дело целиком, не по токенам.",
-          "Надежность важнее максимальной производительности. Система, которая работает в 95% случаев, ценнее, чем та, что падает в критический момент."
-        ]
-      }
-    },
-    {
-      "id": "d-3ylna2",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/17/spot-birds-not-golf/#atom-everything",
-      "publishedAt": "2026-07-17T02:58:07.000Z",
-      "category": "energy",
-      "en": {
-        "headline": "Why it matters: Data center water consumption is massive enough that redirecting golf course irrigation could offset it—revealing where efficiency gains actually hide.",
-        "tweets": [
-          "Google uses 30M gallons of water daily. Coachella Valley's 120 golf courses use 750K gallons/day combined. The math: buying 40 courses could offset a major hyperscaler's entire footprint.",
-          "Golf courses are inefficient water sinks. Converting them to public parks + birdwatching redirects resources from leisure to sustainability—and solves a real infrastructure problem.",
-          "Hyperscalers face mounting pressure on water use. Instead of incremental cooling upgrades, redirecting agricultural waste (golf) is a concrete, scalable intervention."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Водопотребление дата-центров настолько велико, что перенаправление воды с полей для гольфа может его компенсировать—это показывает, где скрываются реальные возможности экономии.",
-        "tweets": [
-          "Google расходует 30 млн галлонов воды в день. 120 полей для гольфа в долине Коачелла используют 750 тыс. галлонов в день. Покупка 40 полей могла бы компенсировать весь водный след одного гиганта.",
-          "Поля для гольфа—огромные потребители воды. Превращение их в парки и маршруты для наблюдения за птицами перенаправляет ресурсы с развлечения на устойчивость.",
-          "Гиганты облачных вычислений давят на водные ресурсы. Вместо постепенного улучшения охлаждения перенаправление сельскохозяйственного расхода—это конкретное, масштабируемое решение."
-        ]
-      }
-    },
-    {
-      "id": "d-49ricf",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
-      "publishedAt": "2026-07-17T01:46:36.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Moonshot AI released Kimi K3, a 2.8T-parameter open model that matches Opus 4.8 performance at Sonnet 5 pricing, reshaping what's achievable without closed-source constraints.",
-        "tweets": [
-          "Kimi K3: 2.8T params, 1M context, native multimodal. Tops Arena's frontend code leaderboard (#1 with 76% win rate) and matches Opus 4.8 on independent evals. Open weights ship July 27.",
-          "At $3-15/1M tokens ($5.40 blended), K3 undercuts Opus 4.8 ($9) and rivals Sonnet 5 pricing while delivering frontier-class performance. Cost per task: $0.94 vs $1.80 for Opus.",
-          "Architecture: KDA enables 6.3x faster decoding, LatentMoE with <2% activation ratio, Attention Residuals boost training efficiency 25%. Community reaction: DeepSeek-level open model milestone."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Moonshot AI выпустила Kimi K3 с 2.8T параметров — открытую модель, которая сравнима с Opus 4.8 по производительности, но дешевле Sonnet 5 и меняет баланс закрытого vs открытого ИИ.",
-        "tweets": [
-          "Kimi K3: 2.8T параметров, контекст 1М токенов, мультимодальность из коробки. Заняла #1 в Arena по frontend-коду с 76% win rate. Открытые веса 27 июля. Opus 4.8 класс производительности.",
-          "Цена $3-15/1M токенов ($5.40 в среднем) — дешевле Opus ($9) и на уровне Sonnet 5. Стоимость задачи $0.94 против $1.80 у Opus. Финансово переигрывает закрытые модели.",
-          "KDA ускоряет декодирование в 6.3x, LatentMoE с <2% активацией, Attention Residuals добавляют 25% эффективности. Реакция: это DeepSeek-уровневый момент для открытых моделей."
-        ]
-      }
-    },
-    {
-      "id": "d-1qwc647",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything",
-      "publishedAt": "2026-07-16T23:34:16.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: Running a full browser engine inside another browser via WebAssembly proves the feasibility of shipping complex desktop apps as pure web code, but exposes real-world constraints like proxying costs and latency.",
-        "tweets": [
-          "Puter compiled Firefox to WebAssembly. Now you can run Firefox inside Chrome, with your website running inside that Firefox. It works because Gecko has strong single-process support.",
-          "The entire build cost roughly $25k in Claude Opus tokens, but a Max subscription brought actual expenses way down. Server costs during the HN launch spike were the real pain point.",
-          "All browser traffic funnels through a WebSocket proxy because WASM can't open raw network sockets. E2E encryption still works—HTTPS traffic stays encrypted, HTTP leaks in the proxy."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Запуск полноценного браузера внутри другого браузера через WebAssembly показывает возможность доставки сложных приложений как веб-кода, но выявляет реальные ограничения вроде стоимости проксирования.",
-        "tweets": [
-          "Puter скомпилировал Firefox в WebAssembly. Теперь Firefox работает внутри Chrome, а ваш сайт — внутри этого Firefox. Сработало благодаря сильной поддержке single-process в Gecko.",
-          "Всю сборку обошлась примерно в $25k токенов Claude Opus, но подписка Max снизила реальные затраты. Расходы на серверы во время всплеска на HN оказались настоящей проблемой.",
-          "Весь трафик браузера идёт через WebSocket-прокси, потому что WASM не может открывать сырые сокеты. E2E-шифрование работает — HTTPS остаётся зашифрован, HTTP виден в прокси."
+          "OpenAI предложила scorecard с четырьмя метриками: объём полезной работы, стоимость успешной задачи, надёжность системы, возврат на вычислительные затраты.",
+          "Цена за решённую задачу важнее, чем качество модели в тестах. ИИ, решающий 95% проблем дёшево, лучше, чем 99%-точный, но дорогой.",
+          "Надёжность — насколько стабильно ИИ работает в production — часто забывают, но именно она определяет реальные убытки при сбоях."
         ]
       }
     }
