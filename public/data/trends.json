@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T08:44:46.263Z",
+  "generatedAt": "2026-07-22T08:44:33.369Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,11 +8,11 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "rising",
-      "momentum": 0.09,
+      "momentum": 0.27,
       "weeklyCounts": [
         14,
         11,
-        12
+        14
       ],
       "signals": [
         {
@@ -34,14 +34,26 @@
       "label": "LLM Agents",
       "category": "ai",
       "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.13,
+      "trajectory": "rising",
+      "momentum": 0.01,
       "weeklyCounts": [
         411,
         420,
-        364
+        426
       ],
       "signals": [
+        {
+          "title": "[AINews] AI Cybersecurity becomes top of mind",
+          "url": "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
+          "source": "latent-space",
+          "publishedAt": "2026-07-22T03:27:29.000Z"
+        },
+        {
+          "title": "A Fireside Chat with Cat and Thariq from the Claude Code team",
+          "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-21T12:54:02.000Z"
+        },
         {
           "title": "[AINews] not much happened today",
           "url": "https://www.latent.space/p/ainews-not-much-happened-today-173",
@@ -59,18 +71,6 @@
           "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
           "source": "latent-space",
           "publishedAt": "2026-07-17T01:46:36.000Z"
-        },
-        {
-          "title": "Kimi K3, and what we can still learn from the pelican benchmark",
-          "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-16T20:19:30.000Z"
-        },
-        {
-          "title": "[AINews] Thinky's Inkling: 975B-A41B multimodal, new best American Apache 2.0 open model (with Inkling-Small, 276B-A12B)",
-          "url": "https://www.latent.space/p/ainews-thinkys-inkling-975b-a41b",
-          "source": "latent-space",
-          "publishedAt": "2026-07-16T06:18:05.000Z"
         }
       ]
     },
@@ -79,12 +79,12 @@
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.14,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         21,
         21,
-        18
+        21
       ],
       "signals": [
         {
@@ -112,12 +112,12 @@
       "label": "Humanoid Robots",
       "category": "robotics",
       "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.14,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         1,
         7,
-        6
+        7
       ],
       "signals": [
         {
@@ -134,13 +134,19 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.18,
+      "momentum": -0.03,
       "weeklyCounts": [
         375,
         358,
-        292
+        348
       ],
       "signals": [
+        {
+          "title": "[AINews] AI Cybersecurity becomes top of mind",
+          "url": "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
+          "source": "latent-space",
+          "publishedAt": "2026-07-22T03:27:29.000Z"
+        },
         {
           "title": "[AINews] not much happened today",
           "url": "https://www.latent.space/p/ainews-not-much-happened-today-173",
@@ -164,12 +170,6 @@
           "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
           "source": "latent-space",
           "publishedAt": "2026-07-17T01:46:36.000Z"
-        },
-        {
-          "title": "Kimi K3, and what we can still learn from the pelican benchmark",
-          "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-16T20:19:30.000Z"
         }
       ]
     },
@@ -179,11 +179,11 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.2,
+      "momentum": -0.05,
       "weeklyCounts": [
         81,
         60,
-        48
+        57
       ],
       "signals": [
         {
