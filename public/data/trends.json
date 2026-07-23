@@ -1,18 +1,157 @@
 {
-  "generatedAt": "2026-07-22T08:44:33.369Z",
+  "generatedAt": "2026-07-23T08:44:56.133Z",
   "window": "rolling-120d",
   "topics": [
+    {
+      "id": "rag",
+      "label": "Retrieval-Augmented Generation",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.82,
+      "weeklyCounts": [
+        81,
+        60,
+        57,
+        10
+      ],
+      "signals": [
+        {
+          "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
+          "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
+          "source": "latent-space",
+          "publishedAt": "2026-07-23T05:18:47.000Z"
+        },
+        {
+          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
+          "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
+          "source": "latent-space",
+          "publishedAt": "2026-07-14T01:22:27.000Z"
+        },
+        {
+          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+          "source": "hf",
+          "publishedAt": "2026-05-14T18:55:01.000Z"
+        },
+        {
+          "title": "Expert Support case study: Bolstering a RAG app with LLM-as-a-Judge",
+          "url": "https://huggingface.co/blog/digital-green-llm-judge",
+          "source": "hf",
+          "publishedAt": "2024-10-28T00:00:00.000Z"
+        },
+        {
+          "title": "Building Cost-Efficient Enterprise RAG applications with Intel Gaudi 2 and Intel Xeon",
+          "url": "https://huggingface.co/blog/cost-efficient-rag-applications-with-intel",
+          "source": "hf",
+          "publishedAt": "2024-05-09T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "open-models",
+      "label": "Open Models",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.83,
+      "weeklyCounts": [
+        375,
+        358,
+        348,
+        58
+      ],
+      "signals": [
+        {
+          "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
+          "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
+          "source": "latent-space",
+          "publishedAt": "2026-07-23T05:18:47.000Z"
+        },
+        {
+          "title": "Inside the Model Factory — Eiso Kant, Poolside AI",
+          "url": "https://www.latent.space/p/poolside",
+          "source": "latent-space",
+          "publishedAt": "2026-07-23T05:09:14.000Z"
+        },
+        {
+          "title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
+          "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-22T23:51:33.000Z"
+        },
+        {
+          "title": "[AINews] AI Cybersecurity becomes top of mind",
+          "url": "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
+          "source": "latent-space",
+          "publishedAt": "2026-07-22T03:27:29.000Z"
+        },
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-173",
+          "source": "latent-space",
+          "publishedAt": "2026-07-21T03:58:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "llm-agents",
+      "label": "LLM Agents",
+      "category": "ai",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.85,
+      "weeklyCounts": [
+        411,
+        420,
+        426,
+        63
+      ],
+      "signals": [
+        {
+          "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
+          "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
+          "source": "latent-space",
+          "publishedAt": "2026-07-23T05:18:47.000Z"
+        },
+        {
+          "title": "Inside the Model Factory — Eiso Kant, Poolside AI",
+          "url": "https://www.latent.space/p/poolside",
+          "source": "latent-space",
+          "publishedAt": "2026-07-23T05:09:14.000Z"
+        },
+        {
+          "title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
+          "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-22T23:51:33.000Z"
+        },
+        {
+          "title": "Introducing OpenAI Presence",
+          "url": "https://openai.com/index/introducing-openai-presence",
+          "source": "openai",
+          "publishedAt": "2026-07-22T05:30:00.000Z"
+        },
+        {
+          "title": "[AINews] AI Cybersecurity becomes top of mind",
+          "url": "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
+          "source": "latent-space",
+          "publishedAt": "2026-07-22T03:27:29.000Z"
+        }
+      ]
+    },
     {
       "id": "fusion",
       "label": "Fusion Energy",
       "category": "energy",
       "stage": "research",
-      "trajectory": "rising",
-      "momentum": 0.27,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
         14,
         11,
-        14
+        14,
+        2
       ],
       "signals": [
         {
@@ -30,61 +169,17 @@
       ]
     },
     {
-      "id": "llm-agents",
-      "label": "LLM Agents",
-      "category": "ai",
-      "stage": "prototype",
-      "trajectory": "rising",
-      "momentum": 0.01,
-      "weeklyCounts": [
-        411,
-        420,
-        426
-      ],
-      "signals": [
-        {
-          "title": "[AINews] AI Cybersecurity becomes top of mind",
-          "url": "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
-          "source": "latent-space",
-          "publishedAt": "2026-07-22T03:27:29.000Z"
-        },
-        {
-          "title": "A Fireside Chat with Cat and Thariq from the Claude Code team",
-          "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-21T12:54:02.000Z"
-        },
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-173",
-          "source": "latent-space",
-          "publishedAt": "2026-07-21T03:58:00.000Z"
-        },
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-830",
-          "source": "latent-space",
-          "publishedAt": "2026-07-18T04:30:21.000Z"
-        },
-        {
-          "title": "[AINews] Kimi K3 2.8T-A50B: the largest open model ever released; Opus 4.8-class at Sonnet 5 pricing",
-          "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
-          "source": "latent-space",
-          "publishedAt": "2026-07-17T01:46:36.000Z"
-        }
-      ]
-    },
-    {
       "id": "protein-design",
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
         21,
         21,
-        21
+        21,
+        3
       ],
       "signals": [
         {
@@ -112,12 +207,13 @@
       "label": "Humanoid Robots",
       "category": "robotics",
       "stage": "prototype",
-      "trajectory": "stable",
-      "momentum": 0,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
         1,
         7,
-        7
+        7,
+        1
       ],
       "signals": [
         {
@@ -125,96 +221,6 @@
           "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
           "source": "latent-space",
           "publishedAt": "2026-07-08T02:20:25.000Z"
-        }
-      ]
-    },
-    {
-      "id": "open-models",
-      "label": "Open Models",
-      "category": "ai",
-      "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.03,
-      "weeklyCounts": [
-        375,
-        358,
-        348
-      ],
-      "signals": [
-        {
-          "title": "[AINews] AI Cybersecurity becomes top of mind",
-          "url": "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
-          "source": "latent-space",
-          "publishedAt": "2026-07-22T03:27:29.000Z"
-        },
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-173",
-          "source": "latent-space",
-          "publishedAt": "2026-07-21T03:58:00.000Z"
-        },
-        {
-          "title": "Who’s Afraid of Chinese Models?",
-          "url": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-20T17:09:19.000Z"
-        },
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-830",
-          "source": "latent-space",
-          "publishedAt": "2026-07-18T04:30:21.000Z"
-        },
-        {
-          "title": "[AINews] Kimi K3 2.8T-A50B: the largest open model ever released; Opus 4.8-class at Sonnet 5 pricing",
-          "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
-          "source": "latent-space",
-          "publishedAt": "2026-07-17T01:46:36.000Z"
-        }
-      ]
-    },
-    {
-      "id": "rag",
-      "label": "Retrieval-Augmented Generation",
-      "category": "ai",
-      "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.05,
-      "weeklyCounts": [
-        81,
-        60,
-        57
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
-          "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
-          "source": "latent-space",
-          "publishedAt": "2026-07-14T01:22:27.000Z"
-        },
-        {
-          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-          "source": "hf",
-          "publishedAt": "2026-05-14T18:55:01.000Z"
-        },
-        {
-          "title": "Expert Support case study: Bolstering a RAG app with LLM-as-a-Judge",
-          "url": "https://huggingface.co/blog/digital-green-llm-judge",
-          "source": "hf",
-          "publishedAt": "2024-10-28T00:00:00.000Z"
-        },
-        {
-          "title": "Building Cost-Efficient Enterprise RAG applications with Intel Gaudi 2 and Intel Xeon",
-          "url": "https://huggingface.co/blog/cost-efficient-rag-applications-with-intel",
-          "source": "hf",
-          "publishedAt": "2024-05-09T00:00:00.000Z"
-        },
-        {
-          "title": "CPU Optimized Embeddings with 🤗 Optimum Intel and fastRAG",
-          "url": "https://huggingface.co/blog/intel-fast-embedding",
-          "source": "hf",
-          "publishedAt": "2024-03-15T00:00:00.000Z"
         }
       ]
     }
