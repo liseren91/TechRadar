@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T08:44:56.133Z",
+  "generatedAt": "2026-07-24T08:42:24.194Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,14 +8,20 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.82,
+      "momentum": -0.63,
       "weeklyCounts": [
         81,
         60,
         57,
-        10
+        21
       ],
       "signals": [
+        {
+          "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
+          "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+          "source": "latent-space",
+          "publishedAt": "2026-07-24T04:30:12.000Z"
+        },
         {
           "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
           "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
@@ -39,12 +45,6 @@
           "url": "https://huggingface.co/blog/digital-green-llm-judge",
           "source": "hf",
           "publishedAt": "2024-10-28T00:00:00.000Z"
-        },
-        {
-          "title": "Building Cost-Efficient Enterprise RAG applications with Intel Gaudi 2 and Intel Xeon",
-          "url": "https://huggingface.co/blog/cost-efficient-rag-applications-with-intel",
-          "source": "hf",
-          "publishedAt": "2024-05-09T00:00:00.000Z"
         }
       ]
     },
@@ -54,14 +54,20 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.83,
+      "momentum": -0.66,
       "weeklyCounts": [
         375,
         358,
         348,
-        58
+        117
       ],
       "signals": [
+        {
+          "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
+          "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+          "source": "latent-space",
+          "publishedAt": "2026-07-24T04:30:12.000Z"
+        },
         {
           "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
           "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
@@ -85,12 +91,6 @@
           "url": "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
           "source": "latent-space",
           "publishedAt": "2026-07-22T03:27:29.000Z"
-        },
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-173",
-          "source": "latent-space",
-          "publishedAt": "2026-07-21T03:58:00.000Z"
         }
       ]
     },
@@ -100,14 +100,26 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.85,
+      "momentum": -0.7,
       "weeklyCounts": [
         411,
         420,
         426,
-        63
+        127
       ],
       "signals": [
+        {
+          "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
+          "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+          "source": "latent-space",
+          "publishedAt": "2026-07-24T04:30:12.000Z"
+        },
+        {
+          "title": "The first known runaway AI agent - or a very bad marketing stunt?",
+          "url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-23T22:53:08.000Z"
+        },
         {
           "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
           "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
@@ -125,18 +137,6 @@
           "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
           "source": "simonw",
           "publishedAt": "2026-07-22T23:51:33.000Z"
-        },
-        {
-          "title": "Introducing OpenAI Presence",
-          "url": "https://openai.com/index/introducing-openai-presence",
-          "source": "openai",
-          "publishedAt": "2026-07-22T05:30:00.000Z"
-        },
-        {
-          "title": "[AINews] AI Cybersecurity becomes top of mind",
-          "url": "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
-          "source": "latent-space",
-          "publishedAt": "2026-07-22T03:27:29.000Z"
         }
       ]
     },
@@ -146,12 +146,12 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         14,
         11,
         14,
-        2
+        4
       ],
       "signals": [
         {
@@ -174,12 +174,12 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         21,
         21,
         21,
-        3
+        6
       ],
       "signals": [
         {
@@ -208,12 +208,12 @@
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         1,
         7,
         7,
-        1
+        2
       ],
       "signals": [
         {
