@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T08:42:24.194Z",
+  "generatedAt": "2026-07-25T08:24:23.946Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,12 +8,12 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.63,
+      "momentum": -0.44,
       "weeklyCounts": [
         81,
         60,
         57,
-        21
+        32
       ],
       "signals": [
         {
@@ -54,14 +54,20 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.66,
+      "momentum": -0.49,
       "weeklyCounts": [
         375,
         358,
         348,
-        117
+        177
       ],
       "signals": [
+        {
+          "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
+          "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
+          "source": "latent-space",
+          "publishedAt": "2026-07-25T07:25:38.000Z"
+        },
         {
           "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
           "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
@@ -85,12 +91,6 @@
           "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
           "source": "simonw",
           "publishedAt": "2026-07-22T23:51:33.000Z"
-        },
-        {
-          "title": "[AINews] AI Cybersecurity becomes top of mind",
-          "url": "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
-          "source": "latent-space",
-          "publishedAt": "2026-07-22T03:27:29.000Z"
         }
       ]
     },
@@ -100,14 +100,20 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.7,
+      "momentum": -0.55,
       "weeklyCounts": [
         411,
         420,
         426,
-        127
+        191
       ],
       "signals": [
+        {
+          "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
+          "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
+          "source": "latent-space",
+          "publishedAt": "2026-07-25T07:25:38.000Z"
+        },
         {
           "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
           "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
@@ -131,12 +137,6 @@
           "url": "https://www.latent.space/p/poolside",
           "source": "latent-space",
           "publishedAt": "2026-07-23T05:09:14.000Z"
-        },
-        {
-          "title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
-          "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-22T23:51:33.000Z"
         }
       ]
     },
@@ -146,12 +146,12 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.57,
       "weeklyCounts": [
         14,
         11,
         14,
-        4
+        6
       ],
       "signals": [
         {
@@ -174,12 +174,12 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.57,
       "weeklyCounts": [
         21,
         21,
         21,
-        6
+        9
       ],
       "signals": [
         {
@@ -208,12 +208,12 @@
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.57,
       "weeklyCounts": [
         1,
         7,
         7,
-        2
+        3
       ],
       "signals": [
         {
