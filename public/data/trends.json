@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T10:08:55.666Z",
+  "generatedAt": "2026-07-28T08:51:46.746Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -7,13 +7,13 @@
       "label": "Retrieval-Augmented Generation",
       "category": "ai",
       "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.05,
+      "trajectory": "rising",
+      "momentum": 0.14,
       "weeklyCounts": [
         81,
         60,
         57,
-        54
+        65
       ],
       "signals": [
         {
@@ -53,15 +53,21 @@
       "label": "Open Models",
       "category": "ai",
       "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.15,
+      "trajectory": "rising",
+      "momentum": 0.03,
       "weeklyCounts": [
         375,
         358,
         348,
-        297
+        357
       ],
       "signals": [
+        {
+          "title": "[AINews] Much ado about Open Weights",
+          "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
+          "source": "latent-space",
+          "publishedAt": "2026-07-28T06:20:13.000Z"
+        },
         {
           "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
           "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
@@ -85,12 +91,6 @@
           "url": "https://www.latent.space/p/poolside",
           "source": "latent-space",
           "publishedAt": "2026-07-23T05:09:14.000Z"
-        },
-        {
-          "title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
-          "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-22T23:51:33.000Z"
         }
       ]
     },
@@ -100,14 +100,26 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.25,
+      "momentum": -0.1,
       "weeklyCounts": [
         411,
         420,
         426,
-        319
+        384
       ],
       "signals": [
+        {
+          "title": "[AINews] Much ado about Open Weights",
+          "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
+          "source": "latent-space",
+          "publishedAt": "2026-07-28T06:20:13.000Z"
+        },
+        {
+          "title": "An opinionated guide to which AI to use to do stuff",
+          "url": "https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-27T21:55:53.000Z"
+        },
         {
           "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
           "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
@@ -125,18 +137,6 @@
           "url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything",
           "source": "simonw",
           "publishedAt": "2026-07-23T22:53:08.000Z"
-        },
-        {
-          "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
-          "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
-          "source": "latent-space",
-          "publishedAt": "2026-07-23T05:18:47.000Z"
-        },
-        {
-          "title": "Inside the Model Factory — Eiso Kant, Poolside AI",
-          "url": "https://www.latent.space/p/poolside",
-          "source": "latent-space",
-          "publishedAt": "2026-07-23T05:09:14.000Z"
         }
       ]
     },
@@ -146,12 +146,12 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.29,
+      "momentum": -0.14,
       "weeklyCounts": [
         14,
         11,
         14,
-        10
+        12
       ],
       "signals": [
         {
@@ -174,12 +174,12 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.29,
+      "momentum": -0.14,
       "weeklyCounts": [
         21,
         21,
         21,
-        15
+        18
       ],
       "signals": [
         {
@@ -208,12 +208,12 @@
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.29,
+      "momentum": -0.14,
       "weeklyCounts": [
         1,
         7,
         7,
-        5
+        6
       ],
       "signals": [
         {
