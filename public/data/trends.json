@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T08:51:46.746Z",
+  "generatedAt": "2026-07-29T09:08:15.902Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,12 +8,12 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "rising",
-      "momentum": 0.14,
+      "momentum": 0.33,
       "weeklyCounts": [
         81,
         60,
         57,
-        65
+        76
       ],
       "signals": [
         {
@@ -54,14 +54,20 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "rising",
-      "momentum": 0.03,
+      "momentum": 0.19,
       "weeklyCounts": [
         375,
         358,
         348,
-        357
+        414
       ],
       "signals": [
+        {
+          "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
+          "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
+          "source": "latent-space",
+          "publishedAt": "2026-07-29T00:46:52.000Z"
+        },
         {
           "title": "[AINews] Much ado about Open Weights",
           "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
@@ -85,12 +91,6 @@
           "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
           "source": "latent-space",
           "publishedAt": "2026-07-23T05:18:47.000Z"
-        },
-        {
-          "title": "Inside the Model Factory — Eiso Kant, Poolside AI",
-          "url": "https://www.latent.space/p/poolside",
-          "source": "latent-space",
-          "publishedAt": "2026-07-23T05:09:14.000Z"
         }
       ]
     },
@@ -99,15 +99,33 @@
       "label": "LLM Agents",
       "category": "ai",
       "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.1,
+      "trajectory": "rising",
+      "momentum": 0.05,
       "weeklyCounts": [
         411,
         420,
         426,
-        384
+        449
       ],
       "signals": [
+        {
+          "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
+          "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
+          "source": "latent-space",
+          "publishedAt": "2026-07-29T00:46:52.000Z"
+        },
+        {
+          "title": "Scientific computing in the age of agentic AI",
+          "url": "https://openai.com/index/scientific-computing-agentic-ai",
+          "source": "openai",
+          "publishedAt": "2026-07-28T17:00:00.000Z"
+        },
+        {
+          "title": "Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI",
+          "url": "https://www.latent.space/p/chatgpt-work",
+          "source": "latent-space",
+          "publishedAt": "2026-07-28T15:26:30.000Z"
+        },
         {
           "title": "[AINews] Much ado about Open Weights",
           "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
@@ -119,24 +137,6 @@
           "url": "https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything",
           "source": "simonw",
           "publishedAt": "2026-07-27T21:55:53.000Z"
-        },
-        {
-          "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
-          "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
-          "source": "latent-space",
-          "publishedAt": "2026-07-25T07:25:38.000Z"
-        },
-        {
-          "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
-          "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
-          "source": "latent-space",
-          "publishedAt": "2026-07-24T04:30:12.000Z"
-        },
-        {
-          "title": "The first known runaway AI agent - or a very bad marketing stunt?",
-          "url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-23T22:53:08.000Z"
         }
       ]
     },
@@ -145,13 +145,13 @@
       "label": "Fusion Energy",
       "category": "energy",
       "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.14,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         14,
         11,
         14,
-        12
+        14
       ],
       "signals": [
         {
@@ -173,13 +173,13 @@
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.14,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         21,
         21,
         21,
-        18
+        21
       ],
       "signals": [
         {
@@ -215,14 +215,7 @@
         7,
         6
       ],
-      "signals": [
-        {
-          "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
-          "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
-          "source": "latent-space",
-          "publishedAt": "2026-07-08T02:20:25.000Z"
-        }
-      ]
+      "signals": []
     }
   ]
 }
