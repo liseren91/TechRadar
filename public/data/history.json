@@ -299,5 +299,16 @@
       "fusion": 2,
       "protein-design": 3
     }
+  },
+  {
+    "date": "2026-07-30",
+    "topics": {
+      "open-models": 58,
+      "post-quantum": 1,
+      "llm-agents": 66,
+      "rag": 11,
+      "fusion": 2,
+      "protein-design": 3
+    }
   }
 ]

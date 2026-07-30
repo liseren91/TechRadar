@@ -1,19 +1,137 @@
 {
-  "generatedAt": "2026-07-29T09:08:15.902Z",
+  "generatedAt": "2026-07-30T08:49:39.295Z",
   "window": "rolling-120d",
   "topics": [
+    {
+      "id": "post-quantum",
+      "label": "Post-Quantum Crypto",
+      "category": "cybersecurity",
+      "stage": "research",
+      "trajectory": "rising",
+      "momentum": 1,
+      "weeklyCounts": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signals": [
+        {
+          "title": "Quoting Matthew Green",
+          "url": "https://simonwillison.net/2026/Jul/29/matthew-green/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-29T18:18:15.000Z"
+        }
+      ]
+    },
+    {
+      "id": "llm-agents",
+      "label": "LLM Agents",
+      "category": "ai",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.85,
+      "weeklyCounts": [
+        411,
+        420,
+        426,
+        449,
+        66
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
+          "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
+          "source": "latent-space",
+          "publishedAt": "2026-07-29T00:46:52.000Z"
+        },
+        {
+          "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+          "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+          "source": "openai",
+          "publishedAt": "2026-07-29T00:00:00.000Z"
+        },
+        {
+          "title": "Scientific computing in the age of agentic AI",
+          "url": "https://openai.com/index/scientific-computing-agentic-ai",
+          "source": "openai",
+          "publishedAt": "2026-07-28T17:00:00.000Z"
+        },
+        {
+          "title": "Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI",
+          "url": "https://www.latent.space/p/chatgpt-work",
+          "source": "latent-space",
+          "publishedAt": "2026-07-28T15:26:30.000Z"
+        },
+        {
+          "title": "[AINews] Much ado about Open Weights",
+          "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
+          "source": "latent-space",
+          "publishedAt": "2026-07-28T06:20:13.000Z"
+        }
+      ]
+    },
+    {
+      "id": "open-models",
+      "label": "Open Models",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.86,
+      "weeklyCounts": [
+        375,
+        358,
+        348,
+        414,
+        58
+      ],
+      "signals": [
+        {
+          "title": "[AINews] AI is eating Finance; AIE NYC now open",
+          "url": "https://www.latent.space/p/ainews-ai-is-eating-finance-aie-nyc",
+          "source": "latent-space",
+          "publishedAt": "2026-07-29T23:32:12.000Z"
+        },
+        {
+          "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
+          "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
+          "source": "latent-space",
+          "publishedAt": "2026-07-29T00:46:52.000Z"
+        },
+        {
+          "title": "[AINews] Much ado about Open Weights",
+          "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
+          "source": "latent-space",
+          "publishedAt": "2026-07-28T06:20:13.000Z"
+        },
+        {
+          "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
+          "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
+          "source": "latent-space",
+          "publishedAt": "2026-07-25T07:25:38.000Z"
+        },
+        {
+          "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
+          "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+          "source": "latent-space",
+          "publishedAt": "2026-07-24T04:30:12.000Z"
+        }
+      ]
+    },
     {
       "id": "rag",
       "label": "Retrieval-Augmented Generation",
       "category": "ai",
       "stage": "early-adopter",
-      "trajectory": "rising",
-      "momentum": 0.33,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
         81,
         60,
         57,
-        76
+        76,
+        11
       ],
       "signals": [
         {
@@ -49,109 +167,18 @@
       ]
     },
     {
-      "id": "open-models",
-      "label": "Open Models",
-      "category": "ai",
-      "stage": "early-adopter",
-      "trajectory": "rising",
-      "momentum": 0.19,
-      "weeklyCounts": [
-        375,
-        358,
-        348,
-        414
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
-          "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
-          "source": "latent-space",
-          "publishedAt": "2026-07-29T00:46:52.000Z"
-        },
-        {
-          "title": "[AINews] Much ado about Open Weights",
-          "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
-          "source": "latent-space",
-          "publishedAt": "2026-07-28T06:20:13.000Z"
-        },
-        {
-          "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
-          "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
-          "source": "latent-space",
-          "publishedAt": "2026-07-25T07:25:38.000Z"
-        },
-        {
-          "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
-          "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
-          "source": "latent-space",
-          "publishedAt": "2026-07-24T04:30:12.000Z"
-        },
-        {
-          "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
-          "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
-          "source": "latent-space",
-          "publishedAt": "2026-07-23T05:18:47.000Z"
-        }
-      ]
-    },
-    {
-      "id": "llm-agents",
-      "label": "LLM Agents",
-      "category": "ai",
-      "stage": "prototype",
-      "trajectory": "rising",
-      "momentum": 0.05,
-      "weeklyCounts": [
-        411,
-        420,
-        426,
-        449
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
-          "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
-          "source": "latent-space",
-          "publishedAt": "2026-07-29T00:46:52.000Z"
-        },
-        {
-          "title": "Scientific computing in the age of agentic AI",
-          "url": "https://openai.com/index/scientific-computing-agentic-ai",
-          "source": "openai",
-          "publishedAt": "2026-07-28T17:00:00.000Z"
-        },
-        {
-          "title": "Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI",
-          "url": "https://www.latent.space/p/chatgpt-work",
-          "source": "latent-space",
-          "publishedAt": "2026-07-28T15:26:30.000Z"
-        },
-        {
-          "title": "[AINews] Much ado about Open Weights",
-          "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
-          "source": "latent-space",
-          "publishedAt": "2026-07-28T06:20:13.000Z"
-        },
-        {
-          "title": "An opinionated guide to which AI to use to do stuff",
-          "url": "https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-27T21:55:53.000Z"
-        }
-      ]
-    },
-    {
       "id": "fusion",
       "label": "Fusion Energy",
       "category": "energy",
       "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
         14,
         11,
         14,
-        14
+        14,
+        2
       ],
       "signals": [
         {
@@ -173,13 +200,14 @@
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
         21,
         21,
         21,
-        21
+        21,
+        3
       ],
       "signals": [
         {
@@ -208,12 +236,13 @@
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.14,
+      "momentum": -1,
       "weeklyCounts": [
         1,
         7,
         7,
-        6
+        6,
+        0
       ],
       "signals": []
     }
