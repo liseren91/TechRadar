@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T08:49:39.295Z",
+  "generatedAt": "2026-07-31T09:16:00.324Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -14,7 +14,7 @@
         0,
         0,
         0,
-        1
+        2
       ],
       "signals": [
         {
@@ -31,15 +31,27 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.85,
+      "momentum": -0.71,
       "weeklyCounts": [
         411,
         420,
         426,
         449,
-        66
+        132
       ],
       "signals": [
+        {
+          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
+          "source": "latent-space",
+          "publishedAt": "2026-07-31T04:40:54.000Z"
+        },
+        {
+          "title": "Ontologies Are So Back: Why AI Agents Are Reviving the Semantic Web",
+          "url": "https://www.latent.space/p/ontologies-agentic-systems",
+          "source": "latent-space",
+          "publishedAt": "2026-07-30T11:17:55.000Z"
+        },
         {
           "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
           "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
@@ -57,65 +69,6 @@
           "url": "https://openai.com/index/scientific-computing-agentic-ai",
           "source": "openai",
           "publishedAt": "2026-07-28T17:00:00.000Z"
-        },
-        {
-          "title": "Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI",
-          "url": "https://www.latent.space/p/chatgpt-work",
-          "source": "latent-space",
-          "publishedAt": "2026-07-28T15:26:30.000Z"
-        },
-        {
-          "title": "[AINews] Much ado about Open Weights",
-          "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
-          "source": "latent-space",
-          "publishedAt": "2026-07-28T06:20:13.000Z"
-        }
-      ]
-    },
-    {
-      "id": "open-models",
-      "label": "Open Models",
-      "category": "ai",
-      "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.86,
-      "weeklyCounts": [
-        375,
-        358,
-        348,
-        414,
-        58
-      ],
-      "signals": [
-        {
-          "title": "[AINews] AI is eating Finance; AIE NYC now open",
-          "url": "https://www.latent.space/p/ainews-ai-is-eating-finance-aie-nyc",
-          "source": "latent-space",
-          "publishedAt": "2026-07-29T23:32:12.000Z"
-        },
-        {
-          "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
-          "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
-          "source": "latent-space",
-          "publishedAt": "2026-07-29T00:46:52.000Z"
-        },
-        {
-          "title": "[AINews] Much ado about Open Weights",
-          "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
-          "source": "latent-space",
-          "publishedAt": "2026-07-28T06:20:13.000Z"
-        },
-        {
-          "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
-          "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
-          "source": "latent-space",
-          "publishedAt": "2026-07-25T07:25:38.000Z"
-        },
-        {
-          "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
-          "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
-          "source": "latent-space",
-          "publishedAt": "2026-07-24T04:30:12.000Z"
         }
       ]
     },
@@ -125,13 +78,13 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         81,
         60,
         57,
         76,
-        11
+        22
       ],
       "signals": [
         {
@@ -167,47 +120,18 @@
       ]
     },
     {
-      "id": "fusion",
-      "label": "Fusion Energy",
-      "category": "energy",
-      "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.86,
-      "weeklyCounts": [
-        14,
-        11,
-        14,
-        14,
-        2
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
-          "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
-          "source": "latent-space",
-          "publishedAt": "2026-07-14T01:22:27.000Z"
-        },
-        {
-          "title": "Bringing AI to the next generation of fusion energy",
-          "url": "https://deepmind.google/blog/bringing-ai-to-the-next-generation-of-fusion-energy/",
-          "source": "deepmind",
-          "publishedAt": "2025-10-23T22:04:14.000Z"
-        }
-      ]
-    },
-    {
       "id": "protein-design",
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         21,
         21,
         21,
         21,
-        3
+        6
       ],
       "signals": [
         {
@@ -231,20 +155,97 @@
       ]
     },
     {
+      "id": "open-models",
+      "label": "Open Models",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.72,
+      "weeklyCounts": [
+        375,
+        358,
+        348,
+        414,
+        115
+      ],
+      "signals": [
+        {
+          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
+          "source": "latent-space",
+          "publishedAt": "2026-07-31T04:40:54.000Z"
+        },
+        {
+          "title": "llm 0.32rc2",
+          "url": "https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-30T22:52:06.000Z"
+        },
+        {
+          "title": "[AINews] AI is eating Finance; AIE NYC now open",
+          "url": "https://www.latent.space/p/ainews-ai-is-eating-finance-aie-nyc",
+          "source": "latent-space",
+          "publishedAt": "2026-07-29T23:32:12.000Z"
+        },
+        {
+          "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
+          "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
+          "source": "latent-space",
+          "publishedAt": "2026-07-29T00:46:52.000Z"
+        },
+        {
+          "title": "[AINews] Much ado about Open Weights",
+          "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
+          "source": "latent-space",
+          "publishedAt": "2026-07-28T06:20:13.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fusion",
+      "label": "Fusion Energy",
+      "category": "energy",
+      "stage": "research",
+      "trajectory": "cooling",
+      "momentum": -0.79,
+      "weeklyCounts": [
+        14,
+        11,
+        14,
+        14,
+        3
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
+          "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
+          "source": "latent-space",
+          "publishedAt": "2026-07-14T01:22:27.000Z"
+        }
+      ]
+    },
+    {
       "id": "humanoids",
       "label": "Humanoid Robots",
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -1,
+      "momentum": -0.83,
       "weeklyCounts": [
         1,
         7,
         7,
         6,
-        0
+        1
       ],
-      "signals": []
+      "signals": [
+        {
+          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
+          "source": "latent-space",
+          "publishedAt": "2026-07-31T04:40:54.000Z"
+        }
+      ]
     }
   ]
 }
