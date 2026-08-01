@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T09:16:00.324Z",
+  "generatedAt": "2026-08-01T08:33:18.752Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -14,7 +14,7 @@
         0,
         0,
         0,
-        2
+        3
       ],
       "signals": [
         {
@@ -31,15 +31,33 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.56,
       "weeklyCounts": [
         411,
         420,
         426,
         449,
-        132
+        198
       ],
       "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
+          "source": "latent-space",
+          "publishedAt": "2026-08-01T01:38:09.000Z"
+        },
+        {
+          "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
+          "url": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-31T23:59:44.000Z"
+        },
+        {
+          "title": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
+          "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-07-31T23:13:22.000Z"
+        },
         {
           "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
           "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
@@ -51,71 +69,6 @@
           "url": "https://www.latent.space/p/ontologies-agentic-systems",
           "source": "latent-space",
           "publishedAt": "2026-07-30T11:17:55.000Z"
-        },
-        {
-          "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
-          "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
-          "source": "latent-space",
-          "publishedAt": "2026-07-29T00:46:52.000Z"
-        },
-        {
-          "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
-          "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
-          "source": "openai",
-          "publishedAt": "2026-07-29T00:00:00.000Z"
-        },
-        {
-          "title": "Scientific computing in the age of agentic AI",
-          "url": "https://openai.com/index/scientific-computing-agentic-ai",
-          "source": "openai",
-          "publishedAt": "2026-07-28T17:00:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "rag",
-      "label": "Retrieval-Augmented Generation",
-      "category": "ai",
-      "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.71,
-      "weeklyCounts": [
-        81,
-        60,
-        57,
-        76,
-        22
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
-          "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
-          "source": "latent-space",
-          "publishedAt": "2026-07-24T04:30:12.000Z"
-        },
-        {
-          "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
-          "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
-          "source": "latent-space",
-          "publishedAt": "2026-07-23T05:18:47.000Z"
-        },
-        {
-          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
-          "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
-          "source": "latent-space",
-          "publishedAt": "2026-07-14T01:22:27.000Z"
-        },
-        {
-          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-          "source": "hf",
-          "publishedAt": "2026-05-14T18:55:01.000Z"
-        },
-        {
-          "title": "Expert Support case study: Bolstering a RAG app with LLM-as-a-Judge",
-          "url": "https://huggingface.co/blog/digital-green-llm-judge",
-          "source": "hf",
-          "publishedAt": "2024-10-28T00:00:00.000Z"
         }
       ]
     },
@@ -125,13 +78,13 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.57,
       "weeklyCounts": [
         21,
         21,
         21,
         21,
-        6
+        9
       ],
       "signals": [
         {
@@ -155,20 +108,73 @@
       ]
     },
     {
+      "id": "rag",
+      "label": "Retrieval-Augmented Generation",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.58,
+      "weeklyCounts": [
+        81,
+        60,
+        57,
+        76,
+        32
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
+          "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+          "source": "latent-space",
+          "publishedAt": "2026-07-24T04:30:12.000Z"
+        },
+        {
+          "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
+          "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
+          "source": "latent-space",
+          "publishedAt": "2026-07-23T05:18:47.000Z"
+        },
+        {
+          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+          "source": "hf",
+          "publishedAt": "2026-05-14T18:55:01.000Z"
+        },
+        {
+          "title": "Expert Support case study: Bolstering a RAG app with LLM-as-a-Judge",
+          "url": "https://huggingface.co/blog/digital-green-llm-judge",
+          "source": "hf",
+          "publishedAt": "2024-10-28T00:00:00.000Z"
+        },
+        {
+          "title": "Building Cost-Efficient Enterprise RAG applications with Intel Gaudi 2 and Intel Xeon",
+          "url": "https://huggingface.co/blog/cost-efficient-rag-applications-with-intel",
+          "source": "hf",
+          "publishedAt": "2024-05-09T00:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "open-models",
       "label": "Open Models",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.72,
+      "momentum": -0.59,
       "weeklyCounts": [
         375,
         358,
         348,
         414,
-        115
+        171
       ],
       "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
+          "source": "latent-space",
+          "publishedAt": "2026-08-01T01:38:09.000Z"
+        },
         {
           "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
           "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
@@ -192,12 +198,29 @@
           "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
           "source": "latent-space",
           "publishedAt": "2026-07-29T00:46:52.000Z"
-        },
+        }
+      ]
+    },
+    {
+      "id": "humanoids",
+      "label": "Humanoid Robots",
+      "category": "robotics",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.67,
+      "weeklyCounts": [
+        1,
+        7,
+        7,
+        6,
+        2
+      ],
+      "signals": [
         {
-          "title": "[AINews] Much ado about Open Weights",
-          "url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
+          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
           "source": "latent-space",
-          "publishedAt": "2026-07-28T06:20:13.000Z"
+          "publishedAt": "2026-07-31T04:40:54.000Z"
         }
       ]
     },
@@ -215,37 +238,7 @@
         14,
         3
       ],
-      "signals": [
-        {
-          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
-          "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
-          "source": "latent-space",
-          "publishedAt": "2026-07-14T01:22:27.000Z"
-        }
-      ]
-    },
-    {
-      "id": "humanoids",
-      "label": "Humanoid Robots",
-      "category": "robotics",
-      "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.83,
-      "weeklyCounts": [
-        1,
-        7,
-        7,
-        6,
-        1
-      ],
-      "signals": [
-        {
-          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
-          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
-          "source": "latent-space",
-          "publishedAt": "2026-07-31T04:40:54.000Z"
-        }
-      ]
+      "signals": []
     }
   ]
 }
