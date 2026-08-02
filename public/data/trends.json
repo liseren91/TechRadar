@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T08:33:18.752Z",
+  "generatedAt": "2026-08-02T08:37:08.395Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -14,7 +14,7 @@
         0,
         0,
         0,
-        3
+        4
       ],
       "signals": [
         {
@@ -31,13 +31,13 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.56,
+      "momentum": -0.41,
       "weeklyCounts": [
         411,
         420,
         426,
         449,
-        198
+        263
       ],
       "signals": [
         {
@@ -78,13 +78,13 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.57,
+      "momentum": -0.43,
       "weeklyCounts": [
         21,
         21,
         21,
         21,
-        9
+        12
       ],
       "signals": [
         {
@@ -108,65 +108,18 @@
       ]
     },
     {
-      "id": "rag",
-      "label": "Retrieval-Augmented Generation",
-      "category": "ai",
-      "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.58,
-      "weeklyCounts": [
-        81,
-        60,
-        57,
-        76,
-        32
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
-          "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
-          "source": "latent-space",
-          "publishedAt": "2026-07-24T04:30:12.000Z"
-        },
-        {
-          "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
-          "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
-          "source": "latent-space",
-          "publishedAt": "2026-07-23T05:18:47.000Z"
-        },
-        {
-          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-          "source": "hf",
-          "publishedAt": "2026-05-14T18:55:01.000Z"
-        },
-        {
-          "title": "Expert Support case study: Bolstering a RAG app with LLM-as-a-Judge",
-          "url": "https://huggingface.co/blog/digital-green-llm-judge",
-          "source": "hf",
-          "publishedAt": "2024-10-28T00:00:00.000Z"
-        },
-        {
-          "title": "Building Cost-Efficient Enterprise RAG applications with Intel Gaudi 2 and Intel Xeon",
-          "url": "https://huggingface.co/blog/cost-efficient-rag-applications-with-intel",
-          "source": "hf",
-          "publishedAt": "2024-05-09T00:00:00.000Z"
-        }
-      ]
-    },
-    {
       "id": "open-models",
       "label": "Open Models",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.59,
+      "momentum": -0.45,
       "weeklyCounts": [
         375,
         358,
         348,
         414,
-        171
+        227
       ],
       "signals": [
         {
@@ -202,18 +155,65 @@
       ]
     },
     {
+      "id": "rag",
+      "label": "Retrieval-Augmented Generation",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.45,
+      "weeklyCounts": [
+        81,
+        60,
+        57,
+        76,
+        42
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
+          "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+          "source": "latent-space",
+          "publishedAt": "2026-07-24T04:30:12.000Z"
+        },
+        {
+          "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
+          "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
+          "source": "latent-space",
+          "publishedAt": "2026-07-23T05:18:47.000Z"
+        },
+        {
+          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+          "source": "hf",
+          "publishedAt": "2026-05-14T18:55:01.000Z"
+        },
+        {
+          "title": "Expert Support case study: Bolstering a RAG app with LLM-as-a-Judge",
+          "url": "https://huggingface.co/blog/digital-green-llm-judge",
+          "source": "hf",
+          "publishedAt": "2024-10-28T00:00:00.000Z"
+        },
+        {
+          "title": "Building Cost-Efficient Enterprise RAG applications with Intel Gaudi 2 and Intel Xeon",
+          "url": "https://huggingface.co/blog/cost-efficient-rag-applications-with-intel",
+          "source": "hf",
+          "publishedAt": "2024-05-09T00:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": "humanoids",
       "label": "Humanoid Robots",
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.67,
+      "momentum": -0.5,
       "weeklyCounts": [
         1,
         7,
         7,
         6,
-        2
+        3
       ],
       "signals": [
         {

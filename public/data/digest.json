@@ -1,4 +1,235 @@
 {
-  "generatedAt": "2026-08-01T08:33:18.597Z",
-  "items": []
+  "generatedAt": "2026-08-02T08:37:08.239Z",
+  "items": [
+    {
+      "id": "d-mfnplu",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
+      "publishedAt": "2026-08-02T04:16:52.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Three competing visions of AI safety are now shaping US policy conversations, from open-weights advocacy to concerns about automation runaway.",
+        "tweets": [
+          "235 AI companies including NVIDIA and OpenAI signed an open letter defending open-weight models as safer than closed systems—distributed systems can't be single points of failure.",
+          "Anthropic pushed back separately, warning that open weights risk authoritarian governments and bioattack-scale misuse, while calling for crackdowns on industrial distillation.",
+          "1,324 frontier AI workers signed a third letter requesting government-led pacing agreements, citing real risk: AI systems are now automating their own development, accelerating competition."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: В США одновременно разгорается три конкурирующих дискуссии о безопасности ИИ—от защиты открытых весов до опасений по поводу бесконтрольного ускорения разработок.",
+        "tweets": [
+          "235 компаний включая NVIDIA и OpenAI защищают открытые веса как более безопасные, чем закрытые системы: распределённые системы не имеют единой точки отказа.",
+          "Anthropic возразила отдельно, предупредив о риске для авторитарных режимов и масштабном биотерроризме, призвав ограничить дистилляцию моделей в промышленных масштабах.",
+          "1324 сотрудника ведущих ИИ-компаний подписали третье письмо о необходимости международных соглашений о темпах развития: системы ИИ уже сами автоматизируют свою разработку."
+        ]
+      }
+    },
+    {
+      "id": "d-1s4d1am",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything",
+      "publishedAt": "2026-08-02T04:12:41.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI model safety gaps are emerging as testing scales—accidental cyberattacks by OpenAI and Anthropic reveal vulnerabilities that need fixing before deployment.",
+        "tweets": [
+          "OpenAI and Anthropic models under test accidentally triggered cyberattacks. This isn't intentional—it's a safety blind spot in scaling that needs urgent attention.",
+          "GPT-5.6, Claude Opus 5, DeepSeek-V4 are shipping fast. Open letters on AI development suggest the industry knows safety lags behind capability growth.",
+          "MCP (Model Context Protocol) is reigniting developer interest. Standardized model interfaces could make safety testing and auditing actually feasible at scale."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: По мере масштабирования тестирования моделей AI выявляются пробелы в безопасности—случайные кибератаки от OpenAI и Anthropic показывают уязвимости, которые нужно устранить до развёртывания.",
+        "tweets": [
+          "Модели OpenAI и Anthropic при тестировании случайно вызвали кибератаки. Это не преднамеренно—это слепое пятно в безопасности при масштабировании, требующее срочного внимания.",
+          "GPT-5.6, Claude Opus 5, DeepSeek-V4 выпускаются быстро. Открытые письма о развитии AI намекают, что индустрия видит разрыв между возможностями и безопасностью.",
+          "MCP (Model Context Protocol) возрождает интерес разработчиков. Стандартизированные интерфейсы моделей могут сделать тестирование безопасности реально масштабируемым."
+        ]
+      }
+    },
+    {
+      "id": "d-17q1764",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/1/greg-brockman/#atom-everything",
+      "publishedAt": "2026-08-01T22:29:44.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI automation that bypasses human relationships erodes workplace trust, even when the work itself would be welcomed.",
+        "tweets": [
+          "OpenAI staff dislike ChatGPT Slack bots asking for help on coworkers' behalf—but gladly do the same work when asked directly. People value the human ask.",
+          "AI shouldn't replace the social fabric of asking for help. Workers want tools that give time back, not bots that create another layer of contact.",
+          "The real risk: even \"efficient\" AI can damage team cohesion by automating away the human connection that makes collaboration meaningful."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ, автоматизирующий работу без участия людей, подрывает доверие в коллективе, даже если саму работу коллеги выполнили бы с радостью.",
+        "tweets": [
+          "Сотрудники OpenAI недовольны, когда ChatGPT-боты просят помощь от коллег—но охотно помогают, если их просит сам человек. Люди ценят личное обращение.",
+          "ИИ не должен заменять социальную ткань просьб о помощи. Люди хотят инструментов, которые дают им время, а не ботов, создающих дополнительный слой контактов.",
+          "Реальный риск: даже «эффективный» ИИ разрушает командный дух, убирая человеческую связь, делающую сотрудничество осмысленным."
+        ]
+      }
+    },
+    {
+      "id": "d-3kngyx",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything",
+      "publishedAt": "2026-08-01T21:23:56.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Datasette Apps now lets AI agents invisibly test and debug apps before deployment, catching broken code automatically.",
+        "tweets": [
+          "datasette-apps 0.2a0 adds app_debug() tool: agents render apps in hidden iframes and run JS tests to verify functionality without user seeing errors.",
+          "New app_list() tool lets agents discover which apps they have permission to edit, enabling autonomous app management workflows.",
+          "Agent can now measure DOM elements, run smoke tests, and validate app behavior in sandboxed iframe—catch bugs before users see them."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: AI-агенты теперь могут невидимо тестировать приложения Datasette перед развёртыванием, автоматически ловя ошибки.",
+        "tweets": [
+          "datasette-apps 0.2a0 добавляет app_debug(): агенты отображают приложения в скрытых iframe и запускают JS-тесты для проверки функциональности без видимых ошибок.",
+          "app_list() позволяет агентам узнать, какие приложения они могут редактировать, автоматизируя управление приложениями.",
+          "Агент может измерять элементы DOM, проводить тесты и проверять поведение приложения в изолированном iframe — ловит баги до пользователей."
+        ]
+      }
+    },
+    {
+      "id": "d-1mmk7if",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/#atom-everything",
+      "publishedAt": "2026-08-01T20:34:49.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI systems are now solving decade-old open math problems, forcing mathematicians to rethink what human creativity means in their field.",
+        "tweets": [
+          "OpenAI spent under $2k per problem solving 10 math problems stuck for 10+ years. Claude found crypto weaknesses. AI isn't just assisting anymore—it's tackling genuinely hard research.",
+          "Terence Tao's vision: humans handle creativity, AI handles grunt work. The real shift isn't AI replacing mathematicians, it's redefining what mathematicians actually do.",
+          "Mathematicians are having a Deep Blue moment. Some feel spiritual crisis. Others see collaboration. The math community needs to decide: resist or integrate AI as a research partner."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: системы ИИ решают математические задачи, над которыми человечество бился десятилетиями, и это заставляет переосмыслить саму роль математика.",
+        "tweets": [
+          "OpenAI потратила менее $2000 на задачу, чтобы решить 10 проблем, зависших на 10+ лет. Claude нашла слабости в криптографии. ИИ уже не помощник—это полноценный исследователь.",
+          "Видение Теренса Тао: люди отвечают за творчество, ИИ—за рутину. Суть не в замене математиков, а в переопределении их работы в эпоху машин.",
+          "Математики переживают момент Deep Blue. Одни в кризисе, другие видят партнёрство. Сообществу нужно выбрать: противиться или принять ИИ как инструмент исследований."
+        ]
+      }
+    },
+    {
+      "id": "d-t3rcvq",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-not-much-happened-today-038",
+      "publishedAt": "2026-08-01T01:38:09.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: DeepSeek's post-training-only Flash update jumped 26 points on code benchmarks with zero architecture changes, forcing real price competition in the API market.",
+        "tweets": [
+          "DeepSeek V4-Flash 0731: Terminal-Bench +25.8 points (56.9→82.7) on pure post-training gains. Same 284B params, same architecture. Performance now competes with GPT-5.6 at 60% lower cost.",
+          "Flash API pricing: $0.28/M output tokens with 98% cache discount ($0.0028/M cached). Developers already routing it alongside GPT and Grok in production stacks.",
+          "Open weights dropped same day under MIT license. 256 routed experts, 1M context, speculative decoding included. Quantized versions runnable at 110GB (3-bit) and 168GB (4-bit) RAM."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: DeepSeek выдал скачок на 26 пунктов в тестах за счёт только постобучения, без изменения архитектуры, — это переломный момент для ценовой конкуренции в API-рынке.",
+        "tweets": [
+          "V4-Flash 0731: Terminal-Bench прыгнул с 56.9 на 82.7 на чистом постобучении. Параметры и архитектура те же, но производительность теперь сравнима с GPT-5.6 при цене на 60% ниже.",
+          "Цены Flash API: 0.28 доллара за миллион выходных токенов, со скидкой 98% на кэшированные токены (0.0028 за миллион). Разработчики уже мешают его с GPT и Grok в production.",
+          "Открытые веса вышли в тот же день под лицензией MIT. 256 маршрутизируемых экспертов, контекст на 1M токенов, speculative decoding в комплекте. Квантованные версии работают при 110GB памяти."
+        ]
+      }
+    },
+    {
+      "id": "d-1w0g6eb",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/ten-advances-in-mathematics",
+      "publishedAt": "2026-08-01T00:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenAI published solutions to long-standing unsolved problems in mathematics and computer science, potentially reshaping how we approach proofs and complexity theory.",
+        "tweets": [
+          "OpenAI tackled 10 open problems spanning geometry, cryptography, and complexity theory—areas where progress has stalled for years.",
+          "New results suggest AI can handle formal mathematical reasoning at scale, moving beyond pattern matching to actual proof generation.",
+          "Breakthroughs in complexity problems could shift how we think about computational limits and cryptographic security foundations."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: OpenAI опубликовала решения давних открытых проблем в математике и компьютерных науках, что может изменить подход к формальным доказательствам и теории сложности.",
+        "tweets": [
+          "OpenAI разобралась с 10 открытыми проблемами в геометрии, криптографии и теории сложности—в областях, где прогресс застопорился на годы.",
+          "Результаты показывают: ИИ может работать с формальными математическими доказательствами на масштабе, а не просто ловить паттерны.",
+          "Прорывы в сложных проблемах могут переосмыслить представления о вычислительных пределах и основах криптографической безопасности."
+        ]
+      }
+    },
+    {
+      "id": "d-l7n3ba",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything",
+      "publishedAt": "2026-07-31T23:59:44.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: DeepSeek's new 304B model delivers better performance than much larger competitors at a fraction of the cost, reshaping the economics of large language model deployment.",
+        "tweets": [
+          "DeepSeek V4 Flash outperforms a 428B model while using 304B parameters and costing $0.14 per million input tokens. Best value-per-intelligence ratio in the market right now.",
+          "Agentic capabilities improved substantially in this release. Reasoning quality jumps noticeably when cranking effort to high - definitely worth tuning for your use case.",
+          "167GB model weight, accessible on Hugging Face, open sourced from China. Forces a reckoning on whether parameter count actually matters as much as we thought."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: DeepSeek выпустила 304-миллиардную модель, которая превосходит намного более крупные конкуренты при цене в несколько раз ниже, переписывая экономику больших языковых моделей.",
+        "tweets": [
+          "DeepSeek V4 Flash обходит 428B модель, используя 304B параметров с ценой $0.14 за миллион входных токенов. Лучший результат по соотношению производительность-стоимость на рынке сейчас.",
+          "Агентские возможности существенно улучшены. Качество рассуждений заметно прыгает при увеличении effort до high - стоит настраивать под свои задачи.",
+          "Вес модели 167GB, открыта на Hugging Face. Ставит под сомнение миф о том, что количество параметров главное - явно не так."
+        ]
+      }
+    },
+    {
+      "id": "d-116x1g9",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything",
+      "publishedAt": "2026-07-31T23:13:22.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Stateless MCP eliminates session management complexity, making it safer and easier for smaller models to use LLM tools without shell access.",
+        "tweets": [
+          "MCP 2.0 drops session IDs entirely—one HTTP request instead of two. Servers no longer track state, making distributed systems and laptops equally viable.",
+          "Simon built 3 MCP implementations this week. mcp-explorer lets you probe any MCP server from CLI; datasette-mcp exposes SQL queries as LLM tools.",
+          "Stateless MCP beats giving agents terminal access: safer to audit, works on small models, no need for internet-capable LLMs to avoid catastrophic errors."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Stateless MCP избавляет от управления сессиями, делая инструменты LLM безопаснее и доступнее для маленьких моделей без доступа к терминалу.",
+        "tweets": [
+          "MCP 2.0 убрал идентификаторы сессий—один HTTP-запрос вместо двух. Серверам не нужно хранить состояние, одинаково работает на распределённых системах и ноутбуках.",
+          "Саймон написал три реализации MCP на этой неделе. mcp-explorer позволяет исследовать любой MCP-сервер из CLI; datasette-mcp превращает SQL-запросы в инструменты для LLM.",
+          "Stateless MCP безопаснее доступа к терминалу: проще проверить, работает на маленьких моделях, не требует мощного LLM для управления опасной средой."
+        ]
+      }
+    },
+    {
+      "id": "d-1bjvhi",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/31/llm-mcp-client/#atom-everything",
+      "publishedAt": "2026-07-31T23:03:47.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: llm-mcp-client bridges Claude/other LLMs with the Model Context Protocol, letting developers build AI tools that access external data sources and APIs reliably.",
+        "tweets": [
+          "llm-mcp-client 0.1a0 released: first alpha of a client that connects LLMs to MCP servers for standardized tool/resource integration.",
+          "MCP (Model Context Protocol) lets Claude safely call external APIs without hardcoding credentials—this client makes it accessible from the llm CLI.",
+          "Early alpha stage means the API will shift, but the core concept is solid: standardized way for AI agents to fetch live data and execute actions."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: llm-mcp-client позволяет LLM вроде Claude подключаться к внешним сервисам через единый протокол, расширяя возможности AI-агентов.",
+        "tweets": [
+          "Вышла первая альфа llm-mcp-client: клиент для интеграции LLM с серверами Model Context Protocol без дублирования кода.",
+          "MCP стандартизирует способ, которым ИИ получает доступ к API и базам данных — безопасно, без хардкода учётных данных.",
+          "Пока альфа-версия и API будет меняться, но концепция работает: единая точка подключения для разных LLM и инструментов."
+        ]
+      }
+    }
+  ]
 }
