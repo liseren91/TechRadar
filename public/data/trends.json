@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T08:37:08.395Z",
+  "generatedAt": "2026-08-03T10:04:50.486Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -14,7 +14,7 @@
         0,
         0,
         0,
-        4
+        5
       ],
       "signals": [
         {
@@ -31,13 +31,13 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.41,
+      "momentum": -0.27,
       "weeklyCounts": [
         411,
         420,
         426,
         449,
-        263
+        328
       ],
       "signals": [
         {
@@ -78,13 +78,13 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.43,
+      "momentum": -0.29,
       "weeklyCounts": [
         21,
         21,
         21,
         21,
-        12
+        15
       ],
       "signals": [
         {
@@ -113,13 +113,13 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.45,
+      "momentum": -0.32,
       "weeklyCounts": [
         375,
         358,
         348,
         414,
-        227
+        283
       ],
       "signals": [
         {
@@ -160,13 +160,13 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.45,
+      "momentum": -0.32,
       "weeklyCounts": [
         81,
         60,
         57,
         76,
-        42
+        52
       ],
       "signals": [
         {
@@ -207,13 +207,13 @@
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.5,
+      "momentum": -0.33,
       "weeklyCounts": [
         1,
         7,
         7,
         6,
-        3
+        4
       ],
       "signals": [
         {
