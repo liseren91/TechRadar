@@ -355,5 +355,16 @@
       "rag": 10,
       "protein-design": 3
     }
+  },
+  {
+    "date": "2026-08-04",
+    "topics": {
+      "llm-agents": 64,
+      "open-models": 57,
+      "humanoids": 1,
+      "post-quantum": 1,
+      "rag": 10,
+      "protein-design": 3
+    }
   }
 ]

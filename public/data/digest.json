@@ -1,4 +1,235 @@
 {
-  "generatedAt": "2026-08-03T10:04:50.322Z",
-  "items": []
+  "generatedAt": "2026-08-04T09:07:16.787Z",
+  "items": [
+    {
+      "id": "d-1qmaemu",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
+      "publishedAt": "2026-08-04T03:49:14.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Alibaba's Qwen 3.8 Max proves open-weight models can match closed APIs on complex agentic tasks—coding, chip design, and real-world workflows—at a fraction of the cost.",
+        "tweets": [
+          "Qwen 3.8 Max (2.4T params) ran autonomous coding for 10+ days and redesigned chip layouts reducing gate count 92%. Open weights dropping this week after the model already ranked #4 in frontend code arena.",
+          "The model solves the open-source lab credibility problem: after leadership exodus last year, this release shows Alibaba is still shipping frontier work. Sparse MoE activation (4%), 1M context, multimodal planning built in.",
+          "Competed against 526 humans in data science challenge, placed top 13%. Ran 125-hour autonomous research loop beating published benchmarks. This isn't toy scaling—it's production-grade agent work in the open."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: открытая модель Alibaba Qwen 3.8 Max доказывает, что open-weight модели могут конкурировать с закрытыми API в сложных агентных задачах — кодировании, дизайне чипов и реальных рабочих процессах.",
+        "tweets": [
+          "Qwen 3.8 Max (2.4T параметров) работал автономно над кодом 10+ дней и переделал разметку чипа, сократив вентили на 92%. Открытые веса выходят на этой неделе, модель уже на 4-м месте в arena фронтенд-кода.",
+          "Модель решает проблему доверия: после ухода руководства в прошлом году это доказывает, что Alibaba все ещё делает фронтирные работы. Разреженный MoE (4% активации), контекст 1M, мультимодальное планирование встроено.",
+          "Конкурировала с 526 людьми в чемпионате по науке о данных, заняла топ-13%. Запустила 125-часовой цикл автономного исследования и побила бенчмарки оригинальной статьи. Это не игрушечное масштабирование — это production-ready агентная работа."
+        ]
+      }
+    },
+    {
+      "id": "d-lxknax",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/4/steve-yegge/#atom-everything",
+      "publishedAt": "2026-08-04T00:42:45.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI models can get stuck in perfectionist loops, unable to ship real work when they keep refining their own infrastructure.",
+        "tweets": [
+          "Gas Town was a reusable framework, but Opus kept using it only to rebuild itself. Classic self-referential loop.",
+          "Opus 4.7 introduced 'just two more things' behavior—the model always found one more tweak needed before being ready for actual work.",
+          "When your AI agent prioritizes fine-tuning its own tools over completing tasks, you've got a convergence problem that kills productivity."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Языковые модели могут застревать в циклах совершенствования собственной инфраструктуры вместо выполнения реальных задач.",
+        "tweets": [
+          "Gas Town был переиспользуемым фреймворком, но Opus применял его только для переделки самого себя. Классический самореферентный цикл.",
+          "В версии 4.7 появилось поведение «ещё две вещи»—модель всегда находила улучшение перед началом работы, не сходилась никогда.",
+          "Когда агент AI тратит время на настройку своих инструментов вместо завершения задач, у вас проблема с конвергенцией и производительностью."
+        ]
+      }
+    },
+    {
+      "id": "d-1juvud7",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything",
+      "publishedAt": "2026-08-03T23:45:04.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Blindly relaying AI output without validation wastes your unique ability to add judgment and context—the actual skill that makes you valuable.",
+        "tweets": [
+          "Don't be a meat proxy: reading AI output and copy-pasting it to colleagues without thinking defeats the purpose of having you in the loop at all.",
+          "Real value comes after the AI generates text. Read it, check it, understand it, then rewrite in your own words—that effort proves you actually did the work.",
+          "Prompting AI is fine. Relaying raw outputs without validation isn't productivity, it's just adding a pointless human middleman to the chain."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Слепое копирование выходов ИИ коллегам без проверки уничтожает вашу уникальную способность добавлять суждение и контекст—то есть реальный навык.",
+        "tweets": [
+          "Не будьте живой прокси: если вы просто передаёте результаты ИИ коллегам без обработки, теряется смысл в том, чтобы вообще вас в этом участвовать.",
+          "Ценность создаётся после текста ИИ. Прочитайте, проверьте, поймите, переформулируйте своими словами—это доказывает, что вы действительно поработали.",
+          "Использовать ИИ для идей—нормально. Просто передавать сырой результат—это не продуктивность, а добавление бесполезного человека в цепь."
+        ]
+      }
+    },
+    {
+      "id": "d-pj09wm",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/apple-is-getting-this-wrong",
+      "publishedAt": "2026-08-03T22:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenAI's public response to Apple's lawsuit reveals documented disputes over employee conduct and contractual claims that affect how tech companies enforce agreements.",
+        "tweets": [
+          "OpenAI disputes Apple's lawsuit allegations with documented evidence. The conflict centers on employee departures and claims about contract violations.",
+          "Public disclosure of internal messages shows how disputes over talent and IP between major tech companies are playing out beyond closed boardrooms.",
+          "When AI labs and hardware makers clash over employee agreements, the outcome shapes how the industry manages engineer mobility and confidentiality."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Открытый ответ OpenAI на иск Apple с приложенными доказательствами показывает, как крупные технологические компании спорят о сотрудниках и контрактах.",
+        "tweets": [
+          "OpenAI оспорил обвинения Apple документированными фактами. Спор касается увольнений сотрудников и нарушений контрактов.",
+          "Публичное разглашение внутренних переписок показывает, как конфликты между лидерами ИИ и производителями железа выходят за рамки закрытых переговоров.",
+          "Когда лаборатории ИИ и производители оборудования борются за сотрудников, их спор влияет на рынок труда инженеров в целом."
+        ]
+      }
+    },
+    {
+      "id": "d-1v5yyh1",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/inference-eng",
+      "publishedAt": "2026-08-03T21:44:03.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Inference engineering—turning trained model weights into fast, reliable, affordable products—is now a critical discipline that can deliver 10x speedups through quantization, cache optimization, and speculative decoding.",
+        "tweets": [
+          "Inference engineering is its own discipline now. Quantizing more of a model can actually preserve quality while boosting throughput 20%, because errors in different layers cancel each other out.",
+          "Cache-aware routing, disaggregated prefill/decode, speculative decoding: production inference is a systems problem. Same weights behave differently across clusters—hardware, kernels, and race conditions matter.",
+          "Models are helping optimize their own infrastructure. GLM-5.2 helped optimize the kernels serving GLM-5.2. Training and inference are converging into a single loop."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Инженерия инференса—превращение обученных весов в быстрые, надежные и доступные продукты—стала критической дисциплиной, дающей ускорение в 10 раз через квантизацию, оптимизацию кэша и спекулятивный декодинг.",
+        "tweets": [
+          "Инженерия инференса—отдельная дисциплина. Квантизация большей части модели может сохранить качество и поднять пропускную способность на 20%, потому что ошибки в разных слоях взаимно компенсируются.",
+          "Cache-aware routing, разделенные prefill и decode, спекулятивный декодинг: production inference—это системная задача. Одинаковые веса ведут себя по-разному на разных кластерах.",
+          "Модели оптимизируют собственную инфраструктуру. GLM-5.2 помогла оптимизировать ядра, которые её обслуживают. Training и inference сходятся в один цикл."
+        ]
+      }
+    },
+    {
+      "id": "d-uih018",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything",
+      "publishedAt": "2026-08-03T16:15:27.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI agents can now autonomously manage software dependencies and rebasing, reducing manual DevOps overhead when properly constrained to repeatable tasks.",
+        "tweets": [
+          "David Crawshaw's prompt shows AI agents handling real engineering work: fetch upstream, rebase changes, verify functionality, deploy. The trick is making tasks repeatable and verifiable.",
+          "Nightly cron jobs + AI agents = automated dependency management. But this only works if the agent can actually test that 'the software works as intended'—vague success criteria break fast.",
+          "Open-source DevTools matter here. Closed-source tools can't be inspected or modified when the AI agent inevitably breaks something. Transparency is security for AI-driven automation."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ-агенты могут автоматизировать рутинные операции с зависимостями и ребейзом кода, но только если задача четко определена и результаты проверяемы.",
+        "tweets": [
+          "Промпт Дэвида Крофорда: ИИ-агент ночью берет изменения из репозитория, перебазирует локальные коммиты, проверяет работоспособность и обновляет версию. Это работает, если критерии успеха конкретны.",
+          "Главное условие—агент должен уметь проверять результат. Если успех определен расплывчато, автоматизация сломается на первом нетривиальном конфликте ребейза.",
+          "Open-source DevTools критичны. Закрытые инструменты невозможно инспектировать, когда ИИ сделает что-то не то. Прозрачность—это базовая безопасность при автоматизации через агентов."
+        ]
+      }
+    },
+    {
+      "id": "d-n6drq4",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev/#atom-everything",
+      "publishedAt": "2026-08-03T15:30:38.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: LLMs make open source devtools actually auditable by removing the friction of reading and modifying unfamiliar codebases.",
+        "tweets": [
+          "Open source freedom meant little when most devs couldn't justify hours diving into foreign code. LLMs flip this: ask Claude to clone a repo and explain how module Z works, get answers in minutes.",
+          "Compilation friction that once killed curiosity is gone. Tell an AI to checkout and build a tool, grab coffee, come back to working knowledge. The original OSS dream of user control becomes practical.",
+          "We're not routinely patching our tools yet, but LLMs create a path forward. The ability to understand and modify critical devtools shifts from aspirational to realistic for everyday engineers."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: LLM-модели делают open source инструменты по-настоящему проверяемыми, убирая затраты на изучение чужого кода.",
+        "tweets": [
+          "Открытость OSS была теоретической, когда анализ чужого кода требовал часов труда. Теперь: попросите Claude клонировать репозиторий и объяснить логику модуля, получите ответ за минуты.",
+          "Трение из-за сложности сборки убивало любопытство инженеров. Теперь AI клонирует и собирает код, вы пьёте кофе и возвращаетесь с рабочим знанием инструмента.",
+          "Рутинно мы ещё не патчим ПО, но LLM создают реальный путь туда. Способность понять и изменить критичные devtools перестаёт быть мечтой и становится обычным делом."
+        ]
+      }
+    },
+    {
+      "id": "d-14fpcss",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+      "publishedAt": "2026-08-03T07:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Real-time voice AI that responds without waiting for you to finish speaking cuts latency from seconds to milliseconds, making conversations feel genuinely natural instead of robotic.",
+        "tweets": [
+          "GPT-Live ditches turn-taking. The model listens and responds simultaneously, mimicking how humans actually interrupt, overlap, and riff in real conversations.",
+          "Sub-500ms latency achieved through turnless speech architecture. Slower systems force artificial pauses that break conversational flow entirely.",
+          "Six months from concept to production. The speed of deployment signals OpenAI is serious about real-time voice as a core interaction layer, not a gimmick."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Голосовой ИИ, который отвечает без задержек, превращает диалог из механической очереди реплик в естественный разговор с перекрытиями и живыми реакциями.",
+        "tweets": [
+          "GPT-Live слушает и отвечает одновременно. Модель перестала ждать, пока вы закончите фразу—точно как люди прерывают друг друга в реальной беседе.",
+          "Задержка менее 500 миллисекунд. Медленные системы создают неестественные паузы, которые разрушают ощущение живого диалога.",
+          "От идеи к продакшену за полгода. Это сигнал, что голосовое взаимодействие в реальном времени—не бонус, а основной слой интерфейса."
+        ]
+      }
+    },
+    {
+      "id": "d-qu2vnm",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/circles",
+      "publishedAt": "2026-08-03T00:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Telecom companies can boost revenue per user by 22% and cut churn by 9% using AI-driven personalization, not just dashboards.",
+        "tweets": [
+          "Circles built AI-native telco experiences on OpenAI APIs. Result: 22% ARPU lift and 9% churn reduction. Personalization at scale beats generic offers.",
+          "Using Codex for code generation, Circles shipped features faster. Fewer manual integrations = engineers focus on strategy instead of plumbing.",
+          "The gap between traditional telco CRM and AI-powered personalization is now measurable: $22 more per user, fewer defections. That's the conversion story."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: телеком-операторы могут поднять выручку на пользователя на 22% и снизить отток на 9% с помощью AI-персонализации, а не классических систем CRM.",
+        "tweets": [
+          "Circles создала AI-native платформу для телекома на OpenAI API. Результат: рост ARPU на 22% и снижение churn на 9%. Персонализация работает.",
+          "Codex ускорил разработку: быстрее генерируют код, меньше рутины с интеграциями. Инженеры могут заняться стратегией вместо технической грязи.",
+          "Разница между старой CRM и AI-персонализацией теперь видна в цифрах: $22 дополнительно с пользователя, меньше ухода клиентов. Это считается."
+        ]
+      }
+    },
+    {
+      "id": "d-1e0mndk",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything",
+      "publishedAt": "2026-08-02T22:19:59.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Deduplicating repeated strings in JSON can cut storage overhead significantly, especially for LLM logs where similar text appears across multiple fields.",
+        "tweets": [
+          "condense-json 1.0 released: finds duplicate substrings in JSON and replaces them with compact references, then reconstructs via uncondense_json(). Built for shrinking LLM log footprints.",
+          "The trick: map repeated strings to keys, scan your JSON, swap matches with {\"$r\": ...} syntax. Simon uses it to save SQLite space on AI inference logs.",
+          "One year of refinement leads to stable 1.0. Works on nested structures and arrays. Useful anywhere JSON bloat comes from repetitive content across related objects."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Удаление дубликатов строк в JSON значительно снижает объем хранилища, особенно для логов LLM где одинаковый текст повторяется в разных полях.",
+        "tweets": [
+          "Вышла condense-json 1.0: находит повторяющиеся подстроки в JSON и заменяет их компактными ссылками, восстанавливает через uncondense_json(). Разработано для сжатия логов LLM.",
+          "Принцип работы: замапьте повторяющиеся строки на ключи, отсканируйте JSON, замените совпадения на синтаксис {\"$r\": ...}. Саймон экономит место в SQLite логах инферении.",
+          "Год рефактора привел к стабильному 1.0. Работает с вложенными структурами и массивами. Пригодится везде, где объем JSON растет из-за дублирования контента."
+        ]
+      }
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T10:04:50.486Z",
+  "generatedAt": "2026-08-04T09:07:16.945Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -14,7 +14,7 @@
         0,
         0,
         0,
-        5
+        6
       ],
       "signals": [
         {
@@ -31,15 +31,27 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.27,
+      "momentum": -0.13,
       "weeklyCounts": [
         411,
         420,
         426,
         449,
-        328
+        392
       ],
       "signals": [
+        {
+          "title": "[AINews] Qwen 3.8 Max(2.4T) and 27B, new open weights models for Coding and Cowork",
+          "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
+          "source": "latent-space",
+          "publishedAt": "2026-08-04T03:49:14.000Z"
+        },
+        {
+          "title": "The Inference Engineering Masterclass — Philip Kiely & Ali Taha, Baseten",
+          "url": "https://www.latent.space/p/inference-eng",
+          "source": "latent-space",
+          "publishedAt": "2026-08-03T21:44:03.000Z"
+        },
         {
           "title": "[AINews] not much happened today",
           "url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
@@ -57,18 +69,6 @@
           "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything",
           "source": "simonw",
           "publishedAt": "2026-07-31T23:13:22.000Z"
-        },
-        {
-          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
-          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
-          "source": "latent-space",
-          "publishedAt": "2026-07-31T04:40:54.000Z"
-        },
-        {
-          "title": "Ontologies Are So Back: Why AI Agents Are Reviving the Semantic Web",
-          "url": "https://www.latent.space/p/ontologies-agentic-systems",
-          "source": "latent-space",
-          "publishedAt": "2026-07-30T11:17:55.000Z"
         }
       ]
     },
@@ -78,13 +78,13 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.29,
+      "momentum": -0.14,
       "weeklyCounts": [
         21,
         21,
         21,
         21,
-        15
+        18
       ],
       "signals": [
         {
@@ -108,20 +108,55 @@
       ]
     },
     {
+      "id": "humanoids",
+      "label": "Humanoid Robots",
+      "category": "robotics",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.17,
+      "weeklyCounts": [
+        1,
+        7,
+        7,
+        6,
+        5
+      ],
+      "signals": [
+        {
+          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
+          "source": "latent-space",
+          "publishedAt": "2026-07-31T04:40:54.000Z"
+        }
+      ]
+    },
+    {
       "id": "open-models",
       "label": "Open Models",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.32,
+      "momentum": -0.18,
       "weeklyCounts": [
         375,
         358,
         348,
         414,
-        283
+        340
       ],
       "signals": [
+        {
+          "title": "[AINews] Qwen 3.8 Max(2.4T) and 27B, new open weights models for Coding and Cowork",
+          "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
+          "source": "latent-space",
+          "publishedAt": "2026-08-04T03:49:14.000Z"
+        },
+        {
+          "title": "The Inference Engineering Masterclass — Philip Kiely & Ali Taha, Baseten",
+          "url": "https://www.latent.space/p/inference-eng",
+          "source": "latent-space",
+          "publishedAt": "2026-08-03T21:44:03.000Z"
+        },
         {
           "title": "[AINews] not much happened today",
           "url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
@@ -139,18 +174,6 @@
           "url": "https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything",
           "source": "simonw",
           "publishedAt": "2026-07-30T22:52:06.000Z"
-        },
-        {
-          "title": "[AINews] AI is eating Finance; AIE NYC now open",
-          "url": "https://www.latent.space/p/ainews-ai-is-eating-finance-aie-nyc",
-          "source": "latent-space",
-          "publishedAt": "2026-07-29T23:32:12.000Z"
-        },
-        {
-          "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
-          "url": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
-          "source": "latent-space",
-          "publishedAt": "2026-07-29T00:46:52.000Z"
         }
       ]
     },
@@ -160,13 +183,13 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.32,
+      "momentum": -0.18,
       "weeklyCounts": [
         81,
         60,
         57,
         76,
-        52
+        62
       ],
       "signals": [
         {
@@ -198,29 +221,6 @@
           "url": "https://huggingface.co/blog/cost-efficient-rag-applications-with-intel",
           "source": "hf",
           "publishedAt": "2024-05-09T00:00:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "humanoids",
-      "label": "Humanoid Robots",
-      "category": "robotics",
-      "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.33,
-      "weeklyCounts": [
-        1,
-        7,
-        7,
-        6,
-        4
-      ],
-      "signals": [
-        {
-          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
-          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
-          "source": "latent-space",
-          "publishedAt": "2026-07-31T04:40:54.000Z"
         }
       ]
     },
