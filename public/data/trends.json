@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T09:07:16.945Z",
+  "generatedAt": "2026-08-05T09:04:46.025Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -16,30 +16,41 @@
         0,
         6
       ],
-      "signals": [
-        {
-          "title": "Quoting Matthew Green",
-          "url": "https://simonwillison.net/2026/Jul/29/matthew-green/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-29T18:18:15.000Z"
-        }
-      ]
+      "signals": []
     },
     {
       "id": "llm-agents",
       "label": "LLM Agents",
       "category": "ai",
       "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.13,
+      "trajectory": "rising",
+      "momentum": 0.02,
       "weeklyCounts": [
         411,
         420,
         426,
         449,
-        392
+        458
       ],
       "signals": [
+        {
+          "title": "[AINews] Megakernels are so dead and so back",
+          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
+          "source": "latent-space",
+          "publishedAt": "2026-08-05T01:21:47.000Z"
+        },
+        {
+          "title": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+          "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-08-04T23:58:24.000Z"
+        },
+        {
+          "title": "Unpacking ChatGPT Work: the Agent for a Billion Users",
+          "url": "https://www.latent.space/p/unpacking-chatgpt-work",
+          "source": "latent-space",
+          "publishedAt": "2026-08-04T18:20:14.000Z"
+        },
         {
           "title": "[AINews] Qwen 3.8 Max(2.4T) and 27B, new open weights models for Coding and Cowork",
           "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
@@ -51,24 +62,6 @@
           "url": "https://www.latent.space/p/inference-eng",
           "source": "latent-space",
           "publishedAt": "2026-08-03T21:44:03.000Z"
-        },
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
-          "source": "latent-space",
-          "publishedAt": "2026-08-01T01:38:09.000Z"
-        },
-        {
-          "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
-          "url": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-31T23:59:44.000Z"
-        },
-        {
-          "title": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
-          "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-31T23:13:22.000Z"
         }
       ]
     },
@@ -77,14 +70,14 @@
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.14,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         21,
         21,
         21,
         21,
-        18
+        21
       ],
       "signals": [
         {
@@ -112,14 +105,14 @@
       "label": "Humanoid Robots",
       "category": "robotics",
       "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.17,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         1,
         7,
         7,
         6,
-        5
+        6
       ],
       "signals": [
         {
@@ -136,15 +129,27 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.18,
+      "momentum": -0.04,
       "weeklyCounts": [
         375,
         358,
         348,
         414,
-        340
+        398
       ],
       "signals": [
+        {
+          "title": "[AINews] Megakernels are so dead and so back",
+          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
+          "source": "latent-space",
+          "publishedAt": "2026-08-05T01:21:47.000Z"
+        },
+        {
+          "title": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+          "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-08-04T23:58:24.000Z"
+        },
         {
           "title": "[AINews] Qwen 3.8 Max(2.4T) and 27B, new open weights models for Coding and Cowork",
           "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
@@ -162,18 +167,6 @@
           "url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
           "source": "latent-space",
           "publishedAt": "2026-08-01T01:38:09.000Z"
-        },
-        {
-          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
-          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
-          "source": "latent-space",
-          "publishedAt": "2026-07-31T04:40:54.000Z"
-        },
-        {
-          "title": "llm 0.32rc2",
-          "url": "https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-07-30T22:52:06.000Z"
         }
       ]
     },
@@ -183,13 +176,13 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.18,
+      "momentum": -0.05,
       "weeklyCounts": [
         81,
         60,
         57,
         76,
-        62
+        72
       ],
       "signals": [
         {
@@ -230,15 +223,22 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.79,
+      "momentum": -0.71,
       "weeklyCounts": [
         14,
         11,
         14,
         14,
-        3
+        4
       ],
-      "signals": []
+      "signals": [
+        {
+          "title": "[AINews] Megakernels are so dead and so back",
+          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
+          "source": "latent-space",
+          "publishedAt": "2026-08-05T01:21:47.000Z"
+        }
+      ]
     }
   ]
 }
