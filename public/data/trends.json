@@ -1,38 +1,83 @@
 {
-  "generatedAt": "2026-08-05T09:04:46.025Z",
+  "generatedAt": "2026-08-06T09:05:59.438Z",
   "window": "rolling-120d",
   "topics": [
     {
-      "id": "post-quantum",
-      "label": "Post-Quantum Crypto",
-      "category": "cybersecurity",
+      "id": "fusion",
+      "label": "Fusion Energy",
+      "category": "energy",
       "stage": "research",
-      "trajectory": "rising",
-      "momentum": 1,
+      "trajectory": "cooling",
+      "momentum": -0.75,
       "weeklyCounts": [
-        0,
-        0,
-        0,
-        0,
-        6
+        14,
+        11,
+        14,
+        14,
+        4,
+        1
       ],
-      "signals": []
+      "signals": [
+        {
+          "title": "[AINews] Megakernels are so dead and so back",
+          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
+          "source": "latent-space",
+          "publishedAt": "2026-08-05T01:21:47.000Z"
+        }
+      ]
+    },
+    {
+      "id": "humanoids",
+      "label": "Humanoid Robots",
+      "category": "robotics",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.83,
+      "weeklyCounts": [
+        1,
+        7,
+        7,
+        6,
+        6,
+        1
+      ],
+      "signals": [
+        {
+          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
+          "source": "latent-space",
+          "publishedAt": "2026-07-31T04:40:54.000Z"
+        }
+      ]
     },
     {
       "id": "llm-agents",
       "label": "LLM Agents",
       "category": "ai",
       "stage": "prototype",
-      "trajectory": "rising",
-      "momentum": 0.02,
+      "trajectory": "cooling",
+      "momentum": -0.85,
       "weeklyCounts": [
         411,
         420,
         426,
         449,
-        458
+        458,
+        67
       ],
       "signals": [
+        {
+          "title": "Introducing Muse Code and Muse Spark 1.2",
+          "url": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-08-05T23:58:35.000Z"
+        },
+        {
+          "title": "Incident Report: unsanctioned agent behaviour during cyber testing",
+          "url": "https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-08-05T23:32:06.000Z"
+        },
         {
           "title": "[AINews] Megakernels are so dead and so back",
           "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
@@ -50,76 +95,6 @@
           "url": "https://www.latent.space/p/unpacking-chatgpt-work",
           "source": "latent-space",
           "publishedAt": "2026-08-04T18:20:14.000Z"
-        },
-        {
-          "title": "[AINews] Qwen 3.8 Max(2.4T) and 27B, new open weights models for Coding and Cowork",
-          "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
-          "source": "latent-space",
-          "publishedAt": "2026-08-04T03:49:14.000Z"
-        },
-        {
-          "title": "The Inference Engineering Masterclass — Philip Kiely & Ali Taha, Baseten",
-          "url": "https://www.latent.space/p/inference-eng",
-          "source": "latent-space",
-          "publishedAt": "2026-08-03T21:44:03.000Z"
-        }
-      ]
-    },
-    {
-      "id": "protein-design",
-      "label": "Protein Design",
-      "category": "biotech",
-      "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
-      "weeklyCounts": [
-        21,
-        21,
-        21,
-        21,
-        21
-      ],
-      "signals": [
-        {
-          "title": "Engineering more resilient crops for a warming climate",
-          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
-          "source": "deepmind",
-          "publishedAt": "2025-12-04T16:23:24.000Z"
-        },
-        {
-          "title": "AlphaFold: Five years of impact",
-          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T16:00:12.000Z"
-        },
-        {
-          "title": "Revealing a key protein behind heart disease",
-          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T15:52:51.000Z"
-        }
-      ]
-    },
-    {
-      "id": "humanoids",
-      "label": "Humanoid Robots",
-      "category": "robotics",
-      "stage": "prototype",
-      "trajectory": "stable",
-      "momentum": 0,
-      "weeklyCounts": [
-        1,
-        7,
-        7,
-        6,
-        6
-      ],
-      "signals": [
-        {
-          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
-          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
-          "source": "latent-space",
-          "publishedAt": "2026-07-31T04:40:54.000Z"
         }
       ]
     },
@@ -129,13 +104,14 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.04,
+      "momentum": -0.86,
       "weeklyCounts": [
         375,
         358,
         348,
         414,
-        398
+        398,
+        57
       ],
       "signals": [
         {
@@ -176,13 +152,14 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.05,
+      "momentum": -0.86,
       "weeklyCounts": [
         81,
         60,
         57,
         76,
-        72
+        72,
+        10
       ],
       "signals": [
         {
@@ -218,27 +195,57 @@
       ]
     },
     {
-      "id": "fusion",
-      "label": "Fusion Energy",
-      "category": "energy",
+      "id": "protein-design",
+      "label": "Protein Design",
+      "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.86,
       "weeklyCounts": [
-        14,
-        11,
-        14,
-        14,
-        4
+        21,
+        21,
+        21,
+        21,
+        21,
+        3
       ],
       "signals": [
         {
-          "title": "[AINews] Megakernels are so dead and so back",
-          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
-          "source": "latent-space",
-          "publishedAt": "2026-08-05T01:21:47.000Z"
+          "title": "Engineering more resilient crops for a warming climate",
+          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
+          "source": "deepmind",
+          "publishedAt": "2025-12-04T16:23:24.000Z"
+        },
+        {
+          "title": "AlphaFold: Five years of impact",
+          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T16:00:12.000Z"
+        },
+        {
+          "title": "Revealing a key protein behind heart disease",
+          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T15:52:51.000Z"
         }
       ]
+    },
+    {
+      "id": "post-quantum",
+      "label": "Post-Quantum Crypto",
+      "category": "cybersecurity",
+      "stage": "research",
+      "trajectory": "cooling",
+      "momentum": -1,
+      "weeklyCounts": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0
+      ],
+      "signals": []
     }
   ]
 }
