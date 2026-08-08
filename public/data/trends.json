@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T07:41:04.847Z",
+  "generatedAt": "2026-08-08T07:14:46.535Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,14 +8,14 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.5,
+      "momentum": -0.25,
       "weeklyCounts": [
         14,
         11,
         14,
         14,
         4,
-        2
+        3
       ],
       "signals": [
         {
@@ -32,14 +32,14 @@
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.67,
+      "momentum": -0.5,
       "weeklyCounts": [
         1,
         7,
         7,
         6,
         6,
-        2
+        3
       ],
       "signals": [
         {
@@ -56,16 +56,28 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.56,
       "weeklyCounts": [
         411,
         420,
         426,
         449,
         458,
-        133
+        200
       ],
       "signals": [
+        {
+          "title": "[AINews] Zawinski's Law of MultiAgents",
+          "url": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
+          "source": "latent-space",
+          "publishedAt": "2026-08-08T01:12:07.000Z"
+        },
+        {
+          "title": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI",
+          "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-08-07T16:18:51.000Z"
+        },
         {
           "title": "[AINews] AMD buys Taalas",
           "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
@@ -83,18 +95,6 @@
           "url": "https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything",
           "source": "simonw",
           "publishedAt": "2026-08-05T23:32:06.000Z"
-        },
-        {
-          "title": "[AINews] Megakernels are so dead and so back",
-          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
-          "source": "latent-space",
-          "publishedAt": "2026-08-05T01:21:47.000Z"
-        },
-        {
-          "title": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
-          "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-08-04T23:58:24.000Z"
         }
       ]
     },
@@ -104,14 +104,14 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.56,
       "weeklyCounts": [
         81,
         60,
         57,
         76,
         72,
-        21
+        32
       ],
       "signals": [
         {
@@ -152,14 +152,14 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.57,
       "weeklyCounts": [
         21,
         21,
         21,
         21,
         21,
-        6
+        9
       ],
       "signals": [
         {
@@ -188,16 +188,22 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.72,
+      "momentum": -0.58,
       "weeklyCounts": [
         375,
         358,
         348,
         414,
         398,
-        113
+        169
       ],
       "signals": [
+        {
+          "title": "[AINews] Zawinski's Law of MultiAgents",
+          "url": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
+          "source": "latent-space",
+          "publishedAt": "2026-08-08T01:12:07.000Z"
+        },
         {
           "title": "[AINews] AMD buys Taalas",
           "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
@@ -221,12 +227,6 @@
           "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
           "source": "latent-space",
           "publishedAt": "2026-08-04T03:49:14.000Z"
-        },
-        {
-          "title": "The Inference Engineering Masterclass — Philip Kiely & Ali Taha, Baseten",
-          "url": "https://www.latent.space/p/inference-eng",
-          "source": "latent-space",
-          "publishedAt": "2026-08-03T21:44:03.000Z"
         }
       ]
     },
