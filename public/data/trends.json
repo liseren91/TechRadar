@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T07:14:46.535Z",
+  "generatedAt": "2026-08-09T07:16:07.250Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -7,15 +7,15 @@
       "label": "Fusion Energy",
       "category": "energy",
       "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.25,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         14,
         11,
         14,
         14,
         4,
-        3
+        4
       ],
       "signals": [
         {
@@ -32,14 +32,14 @@
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.5,
+      "momentum": -0.33,
       "weeklyCounts": [
         1,
         7,
         7,
         6,
         6,
-        3
+        4
       ],
       "signals": [
         {
@@ -51,67 +51,19 @@
       ]
     },
     {
-      "id": "llm-agents",
-      "label": "LLM Agents",
-      "category": "ai",
-      "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.56,
-      "weeklyCounts": [
-        411,
-        420,
-        426,
-        449,
-        458,
-        200
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Zawinski's Law of MultiAgents",
-          "url": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
-          "source": "latent-space",
-          "publishedAt": "2026-08-08T01:12:07.000Z"
-        },
-        {
-          "title": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI",
-          "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-08-07T16:18:51.000Z"
-        },
-        {
-          "title": "[AINews] AMD buys Taalas",
-          "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
-          "source": "latent-space",
-          "publishedAt": "2026-08-07T05:13:46.000Z"
-        },
-        {
-          "title": "Introducing Muse Code and Muse Spark 1.2",
-          "url": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-08-05T23:58:35.000Z"
-        },
-        {
-          "title": "Incident Report: unsanctioned agent behaviour during cyber testing",
-          "url": "https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-08-05T23:32:06.000Z"
-        }
-      ]
-    },
-    {
       "id": "rag",
       "label": "Retrieval-Augmented Generation",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.56,
+      "momentum": -0.4,
       "weeklyCounts": [
         81,
         60,
         57,
         76,
         72,
-        32
+        43
       ],
       "signals": [
         {
@@ -147,38 +99,50 @@
       ]
     },
     {
-      "id": "protein-design",
-      "label": "Protein Design",
-      "category": "biotech",
-      "stage": "research",
+      "id": "llm-agents",
+      "label": "LLM Agents",
+      "category": "ai",
+      "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.57,
+      "momentum": -0.42,
       "weeklyCounts": [
-        21,
-        21,
-        21,
-        21,
-        21,
-        9
+        411,
+        420,
+        426,
+        449,
+        458,
+        266
       ],
       "signals": [
         {
-          "title": "Engineering more resilient crops for a warming climate",
-          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
-          "source": "deepmind",
-          "publishedAt": "2025-12-04T16:23:24.000Z"
+          "title": "[AINews] Zawinski's Law of MultiAgents",
+          "url": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
+          "source": "latent-space",
+          "publishedAt": "2026-08-08T01:12:07.000Z"
         },
         {
-          "title": "AlphaFold: Five years of impact",
-          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T16:00:12.000Z"
+          "title": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI",
+          "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-08-07T16:18:51.000Z"
         },
         {
-          "title": "Revealing a key protein behind heart disease",
-          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T15:52:51.000Z"
+          "title": "[AINews] AMD buys Taalas",
+          "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
+          "source": "latent-space",
+          "publishedAt": "2026-08-07T05:13:46.000Z"
+        },
+        {
+          "title": "Introducing Muse Code and Muse Spark 1.2",
+          "url": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-08-05T23:58:35.000Z"
+        },
+        {
+          "title": "Incident Report: unsanctioned agent behaviour during cyber testing",
+          "url": "https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything",
+          "source": "simonw",
+          "publishedAt": "2026-08-05T23:32:06.000Z"
         }
       ]
     },
@@ -188,14 +152,14 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.58,
+      "momentum": -0.43,
       "weeklyCounts": [
         375,
         358,
         348,
         414,
         398,
-        169
+        225
       ],
       "signals": [
         {
@@ -227,6 +191,42 @@
           "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
           "source": "latent-space",
           "publishedAt": "2026-08-04T03:49:14.000Z"
+        }
+      ]
+    },
+    {
+      "id": "protein-design",
+      "label": "Protein Design",
+      "category": "biotech",
+      "stage": "research",
+      "trajectory": "cooling",
+      "momentum": -0.43,
+      "weeklyCounts": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        12
+      ],
+      "signals": [
+        {
+          "title": "Engineering more resilient crops for a warming climate",
+          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
+          "source": "deepmind",
+          "publishedAt": "2025-12-04T16:23:24.000Z"
+        },
+        {
+          "title": "AlphaFold: Five years of impact",
+          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T16:00:12.000Z"
+        },
+        {
+          "title": "Revealing a key protein behind heart disease",
+          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T15:52:51.000Z"
         }
       ]
     },
