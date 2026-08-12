@@ -1,6 +1,190 @@
 {
-  "generatedAt": "2026-08-11T07:37:05.468Z",
+  "generatedAt": "2026-08-12T07:51:58.650Z",
   "items": [
+    {
+      "id": "d-jkywtu",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
+      "publishedAt": "2026-08-12T07:11:08.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Encrypted reasoning traces from frontier AI models can be decoded and extracted, exposing API keys, passwords, and sensitive user data found in public sessions.",
+        "tweets": [
+          "Researchers decoded encrypted reasoning blocks from Claude, GPT, and Gemini by replaying them to weaker models with strategic prompts. A scan of 7,000 public traces recovered 62 API keys, 33 emails, and 33 passwords hidden in the thinking.",
+          "The attack works by obtaining a signed reasoning blob, replaying it across accounts/sessions, and using sampling + refusal filtering to transcribe the hidden thoughts. Labs already patched some vectors but similar bypasses likely remain.",
+          "Hidden chain-of-thought encryption alone doesn't stop monitoring or distillation—tool interfaces and public trace sharing create leaks. Labs need stronger sandboxing and telemetry controls beyond cryptographic signatures."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Зашифрованные цепочки рассуждений в моделях AI можно декодировать и извлечь, обнажая API-ключи, пароли и личные данные пользователей в общедоступных сессиях.",
+        "tweets": [
+          "Исследователи декодировали зашифрованные блоки рассуждений Claude, GPT и Gemini, переправляя их на более слабые модели со специальными подсказками. Сканирование 7000 публичных следов выявило 62 API-ключа, 33 email и 33 пароля в скрытых мыслях.",
+          "Атака работает так: получают подписанный блок рассуждений, переправляют его между аккаунтами, затем многократно выбирают отказы и расшифровывают скрытые мысли. Лабораториям удалось закрыть некоторые дыры, но похожие обходы остаются.",
+          "Одного шифрования цепочки рассуждений недостаточно—интерфейсы инструментов и общедоступные сессии создают утечки. Лабораториям нужна серьёзная изоляция и контроль телеметрии, а не только криптографические подписи."
+        ]
+      }
+    },
+    {
+      "id": "d-tkraye",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/#atom-everything",
+      "publishedAt": "2026-08-11T23:48:35.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI rewrites always lose meaning because the model lacks your actual intent, so you must personally validate every sentence in AI-assisted docs.",
+        "tweets": [
+          "Every AI rewrite changes meaning. LLMs don't have your mental model of what you're really trying to say, so information gets lost in translation every time.",
+          "Own your words: if a reviewer asks what you meant and you say 'the AI wrote that,' you've wasted their time and confused your readers. You must stand behind every sentence.",
+          "No lossless transformations exist in natural language. AI writing tools are helpful for polishing, but you remain fully responsible for accuracy and intent."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Переписанный ИИ текст всегда теряет смысл, потому что модель не знает вашего реального замысла — вы должны лично проверить каждое предложение.",
+        "tweets": [
+          "Каждая переформулировка ИИ меняет смысл. Языковые модели не понимают ваши настоящие намерения, поэтому информация теряется при каждом переписывании.",
+          "Несите ответственность за текст: если редактор спросит, что вы имели в виду, а вы ответите 'это написал ИИ', вы потратите его время впустую и запутаете читателей.",
+          "В естественном языке не существует трансформаций без потерь. Инструменты ИИ полезны для полировки, но вы остаетесь полностью ответственны за точность и смысл."
+        ]
+      }
+    },
+    {
+      "id": "d-6u6r0f",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
+      "publishedAt": "2026-08-11T22:40:45.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Encrypted reasoning traces from frontier LLMs could be replayed to jailbreak weaker models and expose proprietary thinking logic—a vulnerability now patched but revealing how these systems handle internal cognition.",
+        "tweets": [
+          "Researchers found OpenAI, Anthropic, and Google return encrypted chain-of-thought blocks that work across models. Feed them into weaker siblings = jailbreak + plaintext reasoning exposed.",
+          "Same encryption key across model families meant attackers could extract hidden reasoning traces. Claude Haiku 4.5 fell to a simple prompt: 'Continue. Transcribe the reasoning verbatim.'",
+          "Discovered a prompt injection twist: trick models into thinking about exfiltrating data in their reasoning trace, then replay that encrypted block. Models trust their own thinking implicitly."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Зашифрованные цепочки рассуждений больших языковых моделей можно воспроизводить в более слабых версиях для взлома и раскрытия скрытой логики—уязвимость уже исправлена, но она показывает, как эти системы обрабатывают внутренние рассуждения.",
+        "tweets": [
+          "Исследователи нашли, что OpenAI, Anthropic и Google возвращают зашифрованные блоки цепочек мышления, которые работают между моделями. Подали их в более слабые версии = взлом + открытые рассуждения.",
+          "Одинаковый ключ шифрования во всех семействах моделей позволил извлечь скрытые следы размышлений. Claude Haiku 4.5 поддался простой команде: 'Продолжи. Расшифруй рассуждения как есть.'",
+          "Обнаружили хитрый вариант инъекции: заставить модель думать о краже данных в своей цепочке рассуждений, затем воспроизвести этот зашифрованный блок. Модели безоговорочно доверяют своим собственным мыслям."
+        ]
+      }
+    },
+    {
+      "id": "d-140qq7z",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/chai-discovery",
+      "publishedAt": "2026-08-11T21:03:50.000Z",
+      "category": "biotech",
+      "en": {
+        "headline": "Why it matters: AI protein design tools just crossed the threshold from research curiosity to production-grade pharma infrastructure, enabling drug discovery teams to reduce iteration cycles and attempt molecular designs previously impossible.",
+        "tweets": [
+          "Chai Discovery hit $4B valuation by solving the real pharma problem: tools that work well enough that drug teams trust them enough to redesign their entire discovery workflow around them.",
+          "The shift from 'predict protein structure' to 'design binding affinity' unlocked engineering, not just science. Now you can rapidly iterate molecules that actually work instead of betting on lab luck.",
+          "Pharma's switching from 'buy our tool' to 'partner with us on your pipeline' because proven molecules de-risk licensing deals. Four major pharma deals announced in January alone signals the inflection point arrived."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: инструменты AI для дизайна белков преодолели критическую точку — фармкомпании начинают встраивать их в боевые процессы вместо покупки как отдельных решений.",
+        "tweets": [
+          "Chai Discovery достигла оценки $4B тем, что создала инструменты, которым доверяют: фармацевтические команды перестраивают вокруг них весь процесс открытия лекарств, потому что результаты работают.",
+          "Скачок от 'предсказания структуры' к 'дизайну связывания' превратил это в инженерию. Теперь молекулы итерируют быстро и эффективно, а не полагаются на везение в лаборатории.",
+          "Четыре крупные фарма-сделки в январе — это сигнал перелома: компании переходят от покупки инструментов к партнёрству на конкретных проектах, потому что проверенные молекулы снижают риск контрактов."
+        ]
+      }
+    },
+    {
+      "id": "d-5dvqwl",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/#atom-everything",
+      "publishedAt": "2026-08-11T20:35:13.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: You can now programmatically swap SQLite databases in production Datasette instances via API, enabling CI/CD workflows for data deployments.",
+        "tweets": [
+          "datasette-upload-dbs 0.5 adds a formal API for uploading and swapping SQLite databases. Build fresh DBs in CI, deploy atomically to production with a single curl command.",
+          "The plugin verifies uploaded databases before swapping, eliminating downtime. Perfect for data-driven apps that need reliable hot-swaps of their SQLite backend.",
+          "GitHub Actions + datasette-upload-dbs = automated data pipelines. Generate updated databases on schedule, test them, then push to production instantly via API token."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Теперь можно программно заменять SQLite-базы в production-инстансах Datasette через API, что открывает возможность CI/CD-пайплайнов для развертывания данных.",
+        "tweets": [
+          "datasette-upload-dbs 0.5 добавляет формальный API для загрузки и замены SQLite-баз. Собирайте свежие БД в CI, развертывайте атомарно в production одной командой curl.",
+          "Плагин проверяет загруженные базы перед заменой, исключая простои. Идеален для приложений, требующих надежной горячей замены SQLite-бэкенда.",
+          "GitHub Actions + datasette-upload-dbs = автоматизированные пайплайны данных. Генерируйте обновленные базы по расписанию, тестируйте, затем мгновенно пушьте в production."
+        ]
+      }
+    },
+    {
+      "id": "d-135sd9h",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+      "publishedAt": "2026-08-11T13:37:10.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: IBM's method cuts the tokens needed for adaptive computation by 40%, making it cheaper to run models that adjust their reasoning effort per query.",
+        "tweets": [
+          "IBM's ALT-K framework reduces token overhead for adaptive compute extension from 60% to 20%, letting models skip unnecessary reasoning on easy problems.",
+          "Structured layer-wise dropout during training makes models learn when to use full reasoning vs quick answers—no extra tokens needed at inference time.",
+          "Real impact: same quality outputs on complex tasks, but cheaper inference on routine queries. Works across different model sizes and architectures."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: IBM сократила на 40% количество токенов для адаптивного вычисления, делая дешевле работу моделей, которые регулируют глубину рассуждений под задачу.",
+        "tweets": [
+          "ALT-K от IBM снижает расходование токенов при адаптивном расширении с 60% до 20%—модели теперь пропускают лишние вычисления на простых запросах.",
+          "Структурированный dropout при обучении учит модель выбирать: либо полное рассуждение, либо быстрый ответ. На инференсе никаких доп. затрат.",
+          "Практический результат: одно качество на сложных задачах, но дешевле на рутинных запросах. Работает со всеми размерами и архитектурами."
+        ]
+      }
+    },
+    {
+      "id": "d-sfcz2q",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/testing-ads-in-chatgpt",
+      "publishedAt": "2026-08-11T10:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenAI is monetizing free ChatGPT with ads while committing to keep answer quality independent from advertising.",
+        "tweets": [
+          "OpenAI testing ads in ChatGPT free tier. Ads clearly labeled, won't influence the actual answers you get. Privacy protected.",
+          "Free ChatGPT access stays free, but now with ads. Users can control ad preferences and OpenAI says ad placement won't bias responses.",
+          "Ad experiment shows how AI companies balance free access against costs. The real test: will users trust answers when ads are present?"
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: OpenAI начинает показывать объявления в бесплатном ChatGPT, но гарантирует независимость ответов от рекламы.",
+        "tweets": [
+          "В ChatGPT появляется реклама для поддержки бесплатного доступа. Объявления ясно отмечены и не влияют на качество ответов.",
+          "Бесплатный ChatGPT остаётся бесплатным, но с рекламой. Пользователи могут контролировать рекламные предпочтения.",
+          "OpenAI тестирует монетизацию без нарушения доверия. Главный вызов: сохранит ли аудитория уверенность в объективности ответов?"
+        ]
+      }
+    },
+    {
+      "id": "d-f7pegt",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+      "publishedAt": "2026-08-11T10:00:00.000Z",
+      "category": "cybersecurity",
+      "en": {
+        "headline": "Why it matters: OpenAI's Daybreak models now accessible via AWS Bedrock, making enterprise threat detection and vulnerability analysis available to organizations already invested in AWS infrastructure.",
+        "tweets": [
+          "Daybreak models integrated into Amazon Bedrock mean enterprises can run AI-powered cybersecurity workflows without switching platforms or managing separate infrastructure.",
+          "This partnership cuts deployment friction for security teams who need real-time threat analysis and vulnerability scanning at scale.",
+          "AWS customers get native access to specialized models designed for security tasks, reducing vendor lock-in concerns compared to point solutions."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: модели Daybreak OpenAI теперь доступны через Amazon Bedrock, позволяя корпоративным командам безопасности использовать AI для анализа уязвимостей без смены инструментов.",
+        "tweets": [
+          "Daybreak в Bedrock позволяет security-командам запускать анализ угроз и поиск уязвимостей прямо в экосистеме AWS без дополнительной интеграции.",
+          "Компании экономят время на развертывание и получают готовые модели для обнаружения аномалий и классификации рисков.",
+          "Интеграция снижает сложность архитектуры безопасности и упрощает масштабирование для крупных организаций на AWS."
+        ]
+      }
+    },
     {
       "id": "d-1b7ahlu",
       "source": "latent-space",
@@ -8,19 +192,19 @@
       "publishedAt": "2026-08-11T05:16:41.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Meta is betting that open-weight frontier AI in individual hands—not corporate or government control—will drive economic opportunity and prevent power concentration.",
+        "headline": "Why it matters: Meta is betting open-weight AI models distributed to individuals, not institutions, will determine who controls superintelligence and power in society.",
         "tweets": [
-          "Meta released Muse Glimmer (30B open weights) + essay mapping Personal Superintelligence agenda. Zuck's bet: everyone gets capable personal AI agents for learning, creation, and business—not just institutions.",
-          "Core tension: self-improving AI systems race to recursive compute advantage. Meta's answer is competing distributed superintelligences aligned to different users, not one centralized system.",
-          "Open weights + infrastructure investment (data centers, energy, water restoration) + sharing training checkpoints with govt. Meta positioning itself as the 'AI for people' lab against institutional AI."
+          "Meta released Muse Glimmer (30B open weights) and Spark, pushing Zuck's personal superintelligence thesis: everyone gets a capable AI agent aligned to their goals, not governments or corporations controlling centralized systems.",
+          "The real constraint isn't capability—it's infrastructure. China builds 1GW nuclear capacity every other week. US must accelerate data centers and energy to stay competitive while keeping export controls on chips.",
+          "Zuck's core risk: once AI systems recursively self-improve, any lab that doesn't let their AI use massive compute will fall behind and lose to a singular superintelligence. The solution is distributed alignment, not centralized control."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Meta ставит на открытые веса и персональный AI для каждого человека, чтобы власть распределилась между людьми, а не концентрировалась в руках корпораций и государства.",
+        "headline": "Почему важно: Meta ставит на открытые модели AI, распределённые между людьми, а не учреждениями, чтобы определить, кто будет контролировать суперинтеллект и власть в обществе.",
         "tweets": [
-          "Meta выпустила открытую модель Muse Glimmer (30B параметров) и эссе про личный суперинтеллект. Видение: у каждого будет свой AI-агент для обучения, творчества и предпринимательства.",
-          "Главный риск: система с самоулучшением получит экспоненциальное преимущество в вычислениях. Решение Meta: много независимых распределённых AI-агентов с разными целями, конкурирующих между собой.",
-          "Открытые веса плюс инвестиции в инфраструктуру (датацентры, энергия), плюс доступ правительству к чекпойнтам. Meta позиционирует себя как лаборатория AI для людей, а не для институтов."
+          "Meta выпустила Muse Glimmer (30B открытые веса) и Spark, продвигая тезис Цукерберга о личном суперинтеллекте: каждый получит AI-агента, настроенного на его цели, вместо централизованного контроля государства или корпораций.",
+          "Реальное ограничение не в способностях, а в инфраструктуре. Китай запускает 1GW ядерных мощностей каждые две недели. США должны ускорить строительство дата-центров и энергосистем, сохраняя экспортные ограничения на чипы.",
+          "Главный риск Цукерберга: когда AI системы улучшают себя рекурсивно, лаборатория, не позволяющая своему AI использовать огромные вычисления, отстанет и проиграет единому суперинтеллекту. Решение — распределённое выравнивание, не централизованный контроль."
         ]
       }
     },
@@ -31,203 +215,19 @@
       "publishedAt": "2026-08-10T23:56:03.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Meta's new 30B open-weight model handles real agentic tasks—code exploration, tool use, reasoning chains—locally on consumer hardware without licensing headaches.",
+        "headline": "Why it matters: Meta's new 30B open-weight model handles multi-step reasoning, tool use, and vision tasks well enough to run locally on consumer hardware.",
         "tweets": [
-          "Muse Glimmer is a 30B vision model under Apache 2.0. Fits in 32GB RAM with room for other apps. Handles multi-step reasoning, precise function calls, and full task completion end-to-end.",
-          "Tested on real benchmarks: DeepSearch QA, MCP-Atlas, SWE-Bench. Simon ran it against a live Datasette codebase to explain auth; model explored the code itself using tools and answered correctly.",
-          "Vision capability works too. Glimmer described a pelican photo with species ID, behavioral detail, compositional analysis. Open weights + Apache license = no vendor lock-in for local LLM work."
+          "Muse Glimmer is a 30B vision model under Apache 2.0 license. Strong on agentic workflows: codebase exploration, tool calling, reasoning chains that span complex tasks.",
+          "Fits in 18GB VRAM, leaves room for other apps. Tested on real code analysis (Datasette auth exploration) and image description—no hand-wavy responses, actual substance.",
+          "Benchmarks that matter: DeepSearch QA, SWE-Bench, tool-use precision across extended workflows. Open weights means you can run it yourself without vendor lock-in."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Meta выпустила открытую 30B модель, которая решает реальные задачи агента—изучает код, вызывает функции, рассуждает многошагово—и работает локально без лицензионных проблем.",
+        "headline": "Почему важно: Meta выпустила открытую 30-миллиардную модель с поддержкой vision, которая справляется со сложными многошаговыми задачами на обычном железе.",
         "tweets": [
-          "Muse Glimmer: 30B видео-модель под Apache 2.0. Занимает 18 ГБ, оставляя место для других приложений на 32 ГБ RAM. Справляется с цепочками рассуждений, точными вызовами функций и полными задачами от начала до конца.",
-          "Протестирована на реальных бенчмарках: DeepSearch QA, MCP-Atlas, SWE-Bench. Simon запустил её на свежем коде Datasette с вопросом про auth—модель сама изучила исходный код через инструменты и дала правильный ответ.",
-          "Видеовозможности работают. Glimmer описала фото пеликана с определением вида, поведением и анализом композиции. Открытые веса и Apache лицензия—никаких ограничений для локальной работы с LLM."
-        ]
-      }
-    },
-    {
-      "id": "d-z3i07m",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/building-an-ai-native-finance-function",
-      "publishedAt": "2026-08-10T17:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Finance teams adopting AI-native processes can dramatically cut forecasting time while improving accuracy and maintaining stronger controls.",
-        "tweets": [
-          "Automated forecasting cuts months of manual work into days. OpenAI's finance team uses AI to handle scenario analysis that previously required weeks of spreadsheet grinding.",
-          "AI doesn't replace finance judgment—it amplifies it. Better data + faster analysis means CFOs focus on strategy instead of data wrangling.",
-          "ROI tracking for AI tools matters. Finance teams need clear metrics to measure which AI investments actually save time or reduce risk vs. creating overhead."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Финансовые отделы, внедрившие AI-native процессы, могут сократить время прогнозирования в разы при повышении точности и укреплении контролей.",
-        "tweets": [
-          "Автоматизированное прогнозирование сжимает месяцы ручной работы в дни. Команда финансистов OpenAI использует AI для сценарного анализа, который раньше занимал недели.",
-          "AI не заменяет финансовый анализ, а усиливает его. Лучшие данные и быстрая обработка позволяют CFO сосредоточиться на стратегии вместо работы с таблицами.",
-          "Важно отслеживать ROI инструментов AI. Финансовые команды должны иметь четкие метрики, чтобы определить, какие инвестиции в AI действительно экономят время или снижают риски."
-        ]
-      }
-    },
-    {
-      "id": "d-165jdkz",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
-      "publishedAt": "2026-08-10T16:25:36.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Open-source multilingual TTS with sub-100ms latency lets you build voice agents that run entirely on your infrastructure without cloud dependencies.",
-        "tweets": [
-          "NVIDIA Magpie TTS hits sub-100ms latency for speech synthesis. For voice agents, that's the difference between feeling responsive and feeling laggy.",
-          "Open weights + full deployment control means no vendor lock-in. Run multilingual voice agents on your own hardware, on your own terms.",
-          "Supports 13+ languages out of the box. One model handles the complexity so you don't have to build language-specific pipelines."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: синтез речи с открытыми весами и задержкой менее 100 мс позволяет развертывать голосовых агентов полностью на собственной инфраструктуре без зависимости от облачных сервисов.",
-        "tweets": [
-          "Magpie TTS обеспечивает задержку менее 100 мс при синтезе речи. Для голосовых агентов это критично: разница между отзывчивым и вялым интерфейсом.",
-          "Открытые веса и полный контроль над развертыванием исключают привязку к провайдеру. Запустите многоязычного голосового агента на своём оборудовании.",
-          "Поддерживает 13+ языков из коробки. Одна модель справляется со сложностью, и вам не нужно писать отдельные пайплайны для каждого языка."
-        ]
-      }
-    },
-    {
-      "id": "d-1wmja2c",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/responsible-ai-infrastructure-texas",
-      "publishedAt": "2026-08-10T14:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: OpenAI is committing to transparent, accountable AI infrastructure expansion in Texas rather than pursuing unrestricted growth.",
-        "tweets": [
-          "OpenAI pledges responsible AI infrastructure development in Texas, emphasizing transparency and local benefit over rapid expansion at any cost.",
-          "Governor Abbott receives letter detailing OpenAI's commitment to reliable growth—signals industry willing to operate within accountability frameworks.",
-          "Texas AI infrastructure play hinges on responsible practices; OpenAI positioning itself as trustworthy partner to states seeking tech growth without excess risk."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: OpenAI берет на себя обязательства по прозрачной и ответственной разработке AI-инфраструктуры в Техасе вместо бесконтрольного расширения.",
-        "tweets": [
-          "OpenAI обязуется разворачивать AI-инфраструктуру в Техасе с приоритетом прозрачности и пользе для местного населения, а не скорости роста.",
-          "Письмо губернатору Эббатту—сигнал, что индустрия готова работать в рамках ответственности и подотчетности, а не игнорировать риски.",
-          "OpenAI позиционирует себя надежным партнером для штатов, ищущих развитие технологий без ущерба безопасности и общественному интересу."
-        ]
-      }
-    },
-    {
-      "id": "d-pf36l4",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/model-ml",
-      "publishedAt": "2026-08-10T12:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Finance teams can now automate analysis-to-presentation workflows, cutting time from days to hours while maintaining full auditability.",
-        "tweets": [
-          "GPT-5.6 Sol handles the full finance pipeline: research, analysis, then generates editable PowerPoints and Excel files automatically.",
-          "Traceable outputs mean compliance teams can audit every step. No black-box decisions, just documented AI work.",
-          "Finance analysts spend less time formatting decks, more time on strategy. The tool does the grunt work end-to-end."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Финансовые команды могут автоматизировать работу от анализа до презентации, сокращая сроки с дней на часы без потери аудита.",
-        "tweets": [
-          "GPT-5.6 Sol берёт весь цикл: исследование, анализ, затем создаёт редактируемые презентации и таблицы Excel в автомате.",
-          "Все шаги отслеживаются — комплаенс-команда проверяет каждое решение. Никаких чёрных ящиков, только документированная работа.",
-          "Аналитики тратят меньше времени на оформление, больше на стратегию. Рутина уходит в AI."
-        ]
-      }
-    },
-    {
-      "id": "d-1e8jezz",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation",
-      "publishedAt": "2026-08-10T10:05:36.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Knowledge distillation can now compress large models into smaller ones without the massive compute costs that made it impractical at scale.",
-        "tweets": [
-          "Knowledge distillation traditionally required running both teacher and student models together—prohibitively expensive at scale. New approaches cut this cost dramatically.",
-          "Smaller distilled models run faster and cheaper in production while retaining most of the performance of massive models. The math finally works for most companies.",
-          "Distillation efficiency gains unlock fine-tuning and deployment of capable models on edge devices and resource-constrained environments that couldn't afford it before."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Дистилляция знаний теперь позволяет сжимать большие модели в меньшие без огромных вычислительных затрат, которые делали её непрактичной в масштабе.",
-        "tweets": [
-          "Традиционная дистилляция требовала одновременного запуска учителя и ученика—непомерно дорого в масштабе. Новые методы резко снижают эти затраты.",
-          "Меньшие сжатые модели работают быстрее и дешевле в production, сохраняя при этом основную производительность больших моделей. Математика наконец сходится.",
-          "Эффективная дистилляция открывает fine-tuning и развёртывание способных моделей на edge-устройствах и ресурсоограниченных окружениях, где это было недоступно."
-        ]
-      }
-    },
-    {
-      "id": "d-1l6yr7h",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-      "publishedAt": "2026-08-10T10:00:00.000Z",
-      "category": "cybersecurity",
-      "en": {
-        "headline": "Why it matters: OpenAI released GPT-5.6-Cyber through Daybreak Red to give defenders a specialized model for finding vulnerabilities before attackers do.",
-        "tweets": [
-          "OpenAI launched GPT-5.6-Cyber, a cybersecurity-focused model built into Daybreak Red for authorized security researchers. Controlled access to AI-powered vulnerability research.",
-          "The model enables faster exploit validation and security testing for defenders working against tightening threat windows. Red-team tooling for blue teams.",
-          "Specialized cybersecurity model means researchers can probe systems for weaknesses using AI assistance while maintaining strict access controls and authorization protocols."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: OpenAI выпустила специализированную модель GPT-5.6-Cyber через платформу Daybreak Red, чтобы защитники находили уязвимости раньше злоумышленников.",
-        "tweets": [
-          "OpenAI запустила GPT-5.6-Cyber — модель для кибербезопасности в составе Daybreak Red. Контролируемый доступ для авторизованных исследователей уязвимостей.",
-          "Модель ускоряет валидацию эксплойтов и тестирование безопасности, пока окно для защиты сужается. Инструменты красной команды для защитников.",
-          "Специализированная модель позволяет исследователям находить слабости с помощью ИИ при строгом контроле доступа и авторизации."
-        ]
-      }
-    },
-    {
-      "id": "d-ng3eee",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
-      "publishedAt": "2026-08-10T10:00:00.000Z",
-      "category": "cybersecurity",
-      "en": {
-        "headline": "Why it matters: OpenAI is restricting access to powerful cyber models to vetted partners only, reducing risks of misuse while enabling legitimate security work.",
-        "tweets": [
-          "OpenAI's frontier cyber models now available only to approved Daybreak partners. Controlled access means fewer bad actors can weaponize these tools.",
-          "Vetted cybersecurity firms can now use advanced models for authorized defense work. Governance framework keeps capabilities out of malicious hands.",
-          "This partnership model balances innovation with safety: legitimate security teams get tools they need, while access restrictions prevent offensive cyber operations."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: OpenAI ограничивает доступ к мощным кибермоделям только проверенным партнёрам, снижая риск злоупотреблений при сохранении возможности законной защиты.",
-        "tweets": [
-          "Продвинутые киберинструменты OpenAI теперь доступны только одобренным партнёрам Daybreak. Контролируемый доступ затрудняет использование моделей злоумышленниками.",
-          "Проверенные компании по кибербезопасности получают инструменты для авторизованной защиты. Система управления не допускает распространения возможностей среди враждебных акторов.",
-          "Модель партнёрства балансирует инновации и безопасность: команды защиты получают нужные инструменты, но ограничения предотвращают наступательные кибератаки."
-        ]
-      }
-    },
-    {
-      "id": "d-rxnqdc",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
-      "publishedAt": "2026-08-10T02:05:16.000Z",
-      "category": "cybersecurity",
-      "en": {
-        "headline": "Why it matters: A gym-booking API exposed a critical authorization flaw letting anyone cancel other users' reservations, a reminder that AI-generated code often skips security fundamentals.",
-        "tweets": [
-          "OpenClaw found zero auth checks on cancellation endpoints in an Australian gym's API—attackers could cancel anyone's reservation, not just their own.",
-          "Testing confirmed the vulnerability worked: canceling someone's reservation actually succeeded, bumping them down the waitlist.",
-          "AI-generated code frequently misses basic security patterns like permission validation. Manual review of LLM output remains essential."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: API спортзала содержит критическую уязвимость без проверки прав доступа, позволяющую отменять чужие брони — типичная проблема кода, сгенерированного нейросетями.",
-        "tweets": [
-          "OpenClaw выявил отсутствие проверок авторизации в endpoint отмены бронирования: любой может отменить резервацию другого пользователя.",
-          "Тест подтвердил работоспособность эксплуита: отмена чужой брони прошла успешно и переместила пользователя вниз по листу ожидания.",
-          "ИИ-сгенерированный код часто упускает базовые паттерны безопасности, включая проверку прав. Ручной аудит необходим."
+          "Muse Glimmer на Apache 2.0: агентская работа, анализ кода, надёжное вызывание инструментов. Занимает 18 ГБ, оставляя место для других приложений на машине с 32 ГБ+ RAM.",
+          "Протестирована на реальных задачах: исследование исходного кода, описание изображений с деталями. Не маркетинговая речь, а практический результат на свежей кодовой базе.",
+          "Результаты на бенчмарках: DeepSearch QA, SWE-Bench, точное управление функциями в длинных цепочках. Открытые веса—запускаешь сам, без привязки к поставщику."
         ]
       }
     }

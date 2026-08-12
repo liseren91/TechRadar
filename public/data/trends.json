@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T07:37:05.625Z",
+  "generatedAt": "2026-08-12T07:51:58.805Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,14 +8,14 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "rising",
-      "momentum": 0.5,
+      "momentum": 0.75,
       "weeklyCounts": [
         14,
         11,
         14,
         14,
         4,
-        6
+        7
       ],
       "signals": [
         {
@@ -31,15 +31,15 @@
       "label": "Humanoid Robots",
       "category": "robotics",
       "stage": "prototype",
-      "trajectory": "stable",
-      "momentum": 0,
+      "trajectory": "rising",
+      "momentum": 0.17,
       "weeklyCounts": [
         1,
         7,
         7,
         6,
         6,
-        6
+        7
       ],
       "signals": [
         {
@@ -55,17 +55,23 @@
       "label": "Retrieval-Augmented Generation",
       "category": "ai",
       "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.1,
+      "trajectory": "rising",
+      "momentum": 0.07,
       "weeklyCounts": [
         81,
         60,
         57,
         76,
         72,
-        65
+        77
       ],
       "signals": [
+        {
+          "title": "[AINews] How to steal a Reasoning Trace",
+          "url": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
+          "source": "latent-space",
+          "publishedAt": "2026-08-12T07:11:08.000Z"
+        },
         {
           "title": "[AINews] AMD buys Taalas",
           "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
@@ -89,12 +95,6 @@
           "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
           "source": "hf",
           "publishedAt": "2026-05-14T18:55:01.000Z"
-        },
-        {
-          "title": "Expert Support case study: Bolstering a RAG app with LLM-as-a-Judge",
-          "url": "https://huggingface.co/blog/digital-green-llm-judge",
-          "source": "hf",
-          "publishedAt": "2024-10-28T00:00:00.000Z"
         }
       ]
     },
@@ -103,17 +103,23 @@
       "label": "LLM Agents",
       "category": "ai",
       "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.13,
+      "trajectory": "rising",
+      "momentum": 0.02,
       "weeklyCounts": [
         411,
         420,
         426,
         449,
         458,
-        399
+        466
       ],
       "signals": [
+        {
+          "title": "[AINews] How to steal a Reasoning Trace",
+          "url": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
+          "source": "latent-space",
+          "publishedAt": "2026-08-12T07:11:08.000Z"
+        },
         {
           "title": "[AINews] Muse Glimmer and Spark: Open Weights return Personal Superintelligence promise",
           "url": "https://www.latent.space/p/ainews-muse-glimmer-and-spark-open",
@@ -137,12 +143,6 @@
           "url": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
           "source": "latent-space",
           "publishedAt": "2026-08-08T01:12:07.000Z"
-        },
-        {
-          "title": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI",
-          "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-08-07T16:18:51.000Z"
         }
       ]
     },
@@ -151,15 +151,15 @@
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.14,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         21,
         21,
         21,
         21,
         21,
-        18
+        21
       ],
       "signals": [
         {
@@ -188,16 +188,22 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.15,
+      "momentum": -0.01,
       "weeklyCounts": [
         375,
         358,
         348,
         414,
         398,
-        339
+        396
       ],
       "signals": [
+        {
+          "title": "[AINews] How to steal a Reasoning Trace",
+          "url": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
+          "source": "latent-space",
+          "publishedAt": "2026-08-12T07:11:08.000Z"
+        },
         {
           "title": "[AINews] Muse Glimmer and Spark: Open Weights return Personal Superintelligence promise",
           "url": "https://www.latent.space/p/ainews-muse-glimmer-and-spark-open",
@@ -221,12 +227,6 @@
           "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
           "source": "latent-space",
           "publishedAt": "2026-08-07T05:13:46.000Z"
-        },
-        {
-          "title": "[AINews] Megakernels are so dead and so back",
-          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
-          "source": "latent-space",
-          "publishedAt": "2026-08-05T01:21:47.000Z"
         }
       ]
     },
