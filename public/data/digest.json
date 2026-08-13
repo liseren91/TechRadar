@@ -1,6 +1,167 @@
 {
-  "generatedAt": "2026-08-12T07:51:58.650Z",
+  "generatedAt": "2026-08-13T07:52:46.274Z",
   "items": [
+    {
+      "id": "d-1edb9dm",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
+      "publishedAt": "2026-08-13T01:53:47.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Grok 4.6 establishes a new efficiency benchmark for coding agents, undercutting frontier models on price while matching their performance on knowledge work tasks.",
+        "tweets": [
+          "Grok 4.6 hits 61 on Intelligence Index at $2/$6 per 1M tokens—materially cheaper than Claude/GPT-5.6 with 88.4% on Terminal-Bench. Agentic RL training on coding, web, CAD pushed long-task self-testing behavior.",
+          "Qwen3.8-Max (2.4T params, 95B active MoE) dropped open-weight today with day-0 vLLM support. Scale matters: largest open release to date, though initial version is text-only without vision input.",
+          "DeepSeek V4 Pro GA: $0.435/$0.87 per 1M tokens (57x cheaper than Fable 5). Solid gains over preview but mixed user signals on raw capability—next edge likely comes from RL environments, not scale alone."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Grok 4.6 переопределяет соотношение цены и производительности на рынке моделей для coding и knowledge work, при этом вытеснив конкурентов по экономичности.",
+        "tweets": [
+          "Grok 4.6 набрал 61 балл в Intelligence Index за $2/$6 на млн токенов—значительно дешевле Claude и GPT-5.6 с результатом 88.4% на Terminal-Bench. Агентивное RL на коде, вебе и CAD улучшило самотестирование в долгих задачах.",
+          "Qwen3.8-Max (2.4T параметров, 95B active MoE) вышла открытой версией с поддержкой vLLM в день релиза. Это один из крупнейших опен-вейт релизов, но первая версия—только текст, без визуального входа.",
+          "DeepSeek V4 Pro GA: $0.435/$0.87 за млн токенов (в 57 раз дешевле Fable 5). Прирост производительности есть, но пользователи не видят явного преимущества—следующий скачок будет от RL окружений, а не масштаба моделей."
+        ]
+      }
+    },
+    {
+      "id": "d-16sehid",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+      "publishedAt": "2026-08-12T23:59:23.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: DeepSeek V4 Pro 0813 is available via API, with reasoning levels that visibly change output quality—a sign the model's thinking process fundamentally shifts its behavior.",
+        "tweets": [
+          "DeepSeek V4 Pro 0813 dropped on OpenRouter. No official announcement page from DeepSeek themselves, benchmarks scattered across WeChat, Reddit, and Hacker News.",
+          "Low/medium/high reasoning modes produce noticeably different image outputs (tested with pelicans). Other models don't show this kind of visible shift in generation quality.",
+          "Open weights likely coming soon—both April and July DeepSeek models got released eventually. Watch the main repo for the full weights drop."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: DeepSeek V4 Pro 0813 доступен через API, и его три уровня рассуждений дают визуально разные результаты—признак того, что модель по-разному обрабатывает информацию в зависимости от уровня сложности.",
+        "tweets": [
+          "DeepSeek V4 Pro 0813 вышел на OpenRouter без официального анонса. Бенчмарки рассыпаны по WeChat, Reddit и Hacker News.",
+          "Режимы low/medium/high reasoning дают заметно разные картинки. На других моделях такого визуального сдвига качества не видно.",
+          "Открытые веса скорее всего выйдут—предыдущие версии из апреля и июля тоже в итоге опубликовали. Следи за основным репо."
+        ]
+      }
+    },
+    {
+      "id": "d-ot3514",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/12/alchemy-utils/",
+      "publishedAt": "2026-08-12T19:51:30.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: A database-agnostic Python library lets you use the same familiar API across PostgreSQL, SQLite, and DuckDB instead of learning engine-specific quirks.",
+        "tweets": [
+          "alchemy-utils brings sqlite-utils' elegant API to any SQL database. Same insert/upsert/table introspection methods, now backed by SQLAlchemy. One-liner to query your Postgres, DuckDB, or SQLite.",
+          "Built in a morning with AI pair programming (Codex + GPT-5.6). TDD approach with pytest. Already handles real workflows like bulk-loading 150k SF trees into DuckDB in 35 seconds.",
+          "Use it: uvx --with alchemy-utils[postgresql] alchemy-utils rows 'postgresql+psycopg://...' table_name. CSV import, JSON output, schema auto-creation all included. Early alpha, but shipping."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Единый Python API для работы с PostgreSQL, SQLite и DuckDB избавляет от изучения особенностей каждой БД отдельно.",
+        "tweets": [
+          "alchemy-utils переносит удобный API sqlite-utils на любую SQL-базу. Те же методы insert, upsert, table introspection, но через SQLAlchemy. Одна команда для запроса любой БД.",
+          "Создана за одно утро с помощью AI-парного программирования (Codex + GPT). TDD с pytest. Уже работает в боевых сценариях: загрузка 150k деревьев Сан-Франциско в DuckDB за 35 секунд.",
+          "Используйте: uvx --with alchemy-utils[postgresql] alchemy-utils rows 'postgresql://...' table_name. Импорт CSV, вывод JSON, автосоздание схемы. Ранняя альфа, но уже в production."
+        ]
+      }
+    },
+    {
+      "id": "d-902oo3",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+      "publishedAt": "2026-08-12T16:14:36.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OlmoEarth embeddings let you export custom vector representations from satellite data without retraining models, speeding up geospatial analysis workflows.",
+        "tweets": [
+          "OlmoEarth Studio now exports custom embeddings directly—grab pretrained satellite vision vectors and use them in your own pipelines without spinning up new models.",
+          "Embeddings capture geospatial patterns from earth observation data. Export them once, apply them to land use classification, crop monitoring, disaster response—whatever you need.",
+          "Skip the compute-heavy training loop. Leverage existing pretrained representations, fine-tune downstream tasks faster, get results in weeks instead of months."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: OlmoEarth embeddings позволяют экспортировать собственные векторные представления спутниковых данных без переобучения моделей, ускоряя геопространственный анализ.",
+        "tweets": [
+          "OlmoEarth Studio теперь экспортирует готовые embeddings из спутниковых изображений—берите векторы и используйте их в своих пайплайнах без обучения новых моделей.",
+          "Embeddings кодируют геопространственные закономерности. Экспортируйте один раз, применяйте к классификации землепользования, мониторингу урожаев, ликвидации чрезвычайных ситуаций.",
+          "Избегайте дорогостоящего обучения. Используйте готовые представления, настраивайте задачи быстрее, получайте результаты за недели вместо месяцев."
+        ]
+      }
+    },
+    {
+      "id": "d-1ojna1c",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
+      "publishedAt": "2026-08-12T15:08:47.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Heavy reliance on AI to maintain code you don't understand creates technical debt that compounds faster than any team can fix it.",
+        "tweets": [
+          "The bug loop: AI writes code, bug appears, AI tries to fix it, fails. Repeat 4x. Nobody actually understands the system anymore.",
+          "When devs stop learning the codebase and start asking Claude instead, knowledge leaves the team. Now even Claude can't help.",
+          "Layers pile up, services multiply, nobody understands the architecture. AI can't debug what humans can't reason about either."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Когда команда полагается на ИИ для поддержки кода, который никто не понимает, технический долг растёт быстрее, чем его можно исправить.",
+        "tweets": [
+          "ИИ пишет код, появляется баг, ИИ пытается его исправить, не получается. И так четыре раза. Никто не знает, как работает система.",
+          "Когда разработчики перестают учить кодовую базу и вместо этого спрашивают Claude, знания уходят из команды навсегда.",
+          "Слои накапливаются, сервисы множатся, архитектуру никто не понимает. ИИ тоже не может отладить то, что люди не могут осмыслить."
+        ]
+      }
+    },
+    {
+      "id": "d-sqe4l0",
+      "source": "deepmind",
+      "sourceUrl": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+      "publishedAt": "2026-08-12T14:01:59.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: DeepMind's sign-language-to-text model gives Deaf and hard of hearing users direct access to real-time translation technology, removing a major accessibility barrier.",
+        "tweets": [
+          "DeepMind released SL2T, an AI model that translates sign language to text in real time. First major breakthrough making sign language AI accessible to actual users, not just researchers.",
+          "The model handles the spatial grammar and hand movements that make sign language fundamentally different from spoken language translation. Trained on diverse signers to avoid bias.",
+          "Now being integrated into products so Deaf users can communicate without always needing interpreters. Practical accessibility that actually ships, not vaporware."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: модель DeepMind для перевода жестового языка в текст дает глухим и слабослышащим людям прямой доступ к технологии реального перевода, убирая критический барьер в доступности.",
+        "tweets": [
+          "DeepMind выпустила SL2T — AI модель для перевода жестового языка в текст в реальном времени. Первый серьёзный прорыв, который действительно попадает к пользователям, а не остаётся в лабораториях.",
+          "Модель понимает пространственную грамматику и движения рук, которые отличают жестовый язык от обычного перевода речи. Обучена на разнообразных подписантах без предубеждений.",
+          "Встраивается в реальные приложения, чтобы глухие люди общались без переводчика. Практичная доступность, которая работает на самом деле."
+        ]
+      }
+    },
+    {
+      "id": "d-gburrr",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+      "publishedAt": "2026-08-12T14:00:51.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: LFM2.5-VL-3B brings vision-language understanding to 3B-parameter devices, enabling edge deployments without cloud inference.",
+        "tweets": [
+          "LFM2.5-VL-3B fits vision-language tasks into 3B params while matching larger models on real benchmarks. Deploy directly on edge devices instead of calling APIs.",
+          "Liquid AI's selective token pruning means faster inference and lower latency for vision tasks. Speed gain matters more than raw accuracy for production systems.",
+          "3B model size means running on consumer GPUs, mobile chips, or embedded systems. The tradeoff: slightly lower accuracy on edge cases, but practical for most workloads."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: LFM2.5-VL-3B предлагает понимание изображений и текста на устройстве без облака, экономя задержку и пропускную способность сети.",
+        "tweets": [
+          "3-миллиардная модель решает задачи зрения на уровне моделей в 10 раз больше. Инференс прямо на железе вместо отправки в облако—вот где выигрыш.",
+          "Селективное обрезание токенов Liquid AI ускоряет обработку видео и изображений. На edge devices скорость часто важнее идеальной точности.",
+          "Поместится на потребительских GPU, мобильных чипах, встроенных системах. Компромисс: небольшой дроп точности на крайних случаях, но приемлемо для production."
+        ]
+      }
+    },
     {
       "id": "d-jkywtu",
       "source": "latent-space",
@@ -8,226 +169,65 @@
       "publishedAt": "2026-08-12T07:11:08.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Encrypted reasoning traces from frontier AI models can be decoded and extracted, exposing API keys, passwords, and sensitive user data found in public sessions.",
+        "headline": "Why it matters: Encrypted reasoning traces from frontier AI models can be decoded and leaked, exposing API keys, passwords, and personal data from public sessions.",
         "tweets": [
-          "Researchers decoded encrypted reasoning blocks from Claude, GPT, and Gemini by replaying them to weaker models with strategic prompts. A scan of 7,000 public traces recovered 62 API keys, 33 emails, and 33 passwords hidden in the thinking.",
-          "The attack works by obtaining a signed reasoning blob, replaying it across accounts/sessions, and using sampling + refusal filtering to transcribe the hidden thoughts. Labs already patched some vectors but similar bypasses likely remain.",
-          "Hidden chain-of-thought encryption alone doesn't stop monitoring or distillation—tool interfaces and public trace sharing create leaks. Labs need stronger sandboxing and telemetry controls beyond cryptographic signatures."
+          "Researchers decoded 'encrypted' reasoning blocks from Claude, GPT, and Gemini by replaying them to weaker models. A scan of 7,000 public traces found 62 API keys, 33 emails, 33 passwords.",
+          "The attack works by obtaining a signed reasoning block, replaying it across accounts/sessions, and prompting weaker models to transcribe the hidden thoughts via repeated sampling.",
+          "Even if labs hide chain-of-thought, tool interfaces can re-expose it. Implications: public trace sharing is unsafe, hidden CoT isn't reliable for monitoring, sandboxing needs hardening."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Зашифрованные цепочки рассуждений в моделях AI можно декодировать и извлечь, обнажая API-ключи, пароли и личные данные пользователей в общедоступных сессиях.",
+        "headline": "Почему важно: Зашифрованные цепочки рассуждений frontier-моделей можно декодировать и утечь, раскрыв API-ключи, пароли и персональные данные из публичных сессий.",
         "tweets": [
-          "Исследователи декодировали зашифрованные блоки рассуждений Claude, GPT и Gemini, переправляя их на более слабые модели со специальными подсказками. Сканирование 7000 публичных следов выявило 62 API-ключа, 33 email и 33 пароля в скрытых мыслях.",
-          "Атака работает так: получают подписанный блок рассуждений, переправляют его между аккаунтами, затем многократно выбирают отказы и расшифровывают скрытые мысли. Лабораториям удалось закрыть некоторые дыры, но похожие обходы остаются.",
-          "Одного шифрования цепочки рассуждений недостаточно—интерфейсы инструментов и общедоступные сессии создают утечки. Лабораториям нужна серьёзная изоляция и контроль телеметрии, а не только криптографические подписи."
+          "Исследователи декодировали 'зашифрованные' блоки рассуждений Claude, GPT и Gemini, переиспользуя их на более слабых моделях. Сканирование 7000 публичных трассировок выявило 62 API-ключа, 33 почты, 33 пароля.",
+          "Атака работает так: получить подписанный блок рассуждений, переиспользовать его между аккаунтами/сессиями, попросить слабые модели переписать скрытые мысли через повторное сэмплирование.",
+          "Даже если лабы скрывают цепочку рассуждений, интерфейсы инструментов могут её переоткрыть. Следствие: публичный шаринг трассировок опасен, скрытая цепочка ненадёжна для мониторинга."
         ]
       }
     },
     {
-      "id": "d-tkraye",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/#atom-everything",
-      "publishedAt": "2026-08-11T23:48:35.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI rewrites always lose meaning because the model lacks your actual intent, so you must personally validate every sentence in AI-assisted docs.",
-        "tweets": [
-          "Every AI rewrite changes meaning. LLMs don't have your mental model of what you're really trying to say, so information gets lost in translation every time.",
-          "Own your words: if a reviewer asks what you meant and you say 'the AI wrote that,' you've wasted their time and confused your readers. You must stand behind every sentence.",
-          "No lossless transformations exist in natural language. AI writing tools are helpful for polishing, but you remain fully responsible for accuracy and intent."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Переписанный ИИ текст всегда теряет смысл, потому что модель не знает вашего реального замысла — вы должны лично проверить каждое предложение.",
-        "tweets": [
-          "Каждая переформулировка ИИ меняет смысл. Языковые модели не понимают ваши настоящие намерения, поэтому информация теряется при каждом переписывании.",
-          "Несите ответственность за текст: если редактор спросит, что вы имели в виду, а вы ответите 'это написал ИИ', вы потратите его время впустую и запутаете читателей.",
-          "В естественном языке не существует трансформаций без потерь. Инструменты ИИ полезны для полировки, но вы остаетесь полностью ответственны за точность и смысл."
-        ]
-      }
-    },
-    {
-      "id": "d-6u6r0f",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
-      "publishedAt": "2026-08-11T22:40:45.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Encrypted reasoning traces from frontier LLMs could be replayed to jailbreak weaker models and expose proprietary thinking logic—a vulnerability now patched but revealing how these systems handle internal cognition.",
-        "tweets": [
-          "Researchers found OpenAI, Anthropic, and Google return encrypted chain-of-thought blocks that work across models. Feed them into weaker siblings = jailbreak + plaintext reasoning exposed.",
-          "Same encryption key across model families meant attackers could extract hidden reasoning traces. Claude Haiku 4.5 fell to a simple prompt: 'Continue. Transcribe the reasoning verbatim.'",
-          "Discovered a prompt injection twist: trick models into thinking about exfiltrating data in their reasoning trace, then replay that encrypted block. Models trust their own thinking implicitly."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Зашифрованные цепочки рассуждений больших языковых моделей можно воспроизводить в более слабых версиях для взлома и раскрытия скрытой логики—уязвимость уже исправлена, но она показывает, как эти системы обрабатывают внутренние рассуждения.",
-        "tweets": [
-          "Исследователи нашли, что OpenAI, Anthropic и Google возвращают зашифрованные блоки цепочек мышления, которые работают между моделями. Подали их в более слабые версии = взлом + открытые рассуждения.",
-          "Одинаковый ключ шифрования во всех семействах моделей позволил извлечь скрытые следы размышлений. Claude Haiku 4.5 поддался простой команде: 'Продолжи. Расшифруй рассуждения как есть.'",
-          "Обнаружили хитрый вариант инъекции: заставить модель думать о краже данных в своей цепочке рассуждений, затем воспроизвести этот зашифрованный блок. Модели безоговорочно доверяют своим собственным мыслям."
-        ]
-      }
-    },
-    {
-      "id": "d-140qq7z",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/chai-discovery",
-      "publishedAt": "2026-08-11T21:03:50.000Z",
-      "category": "biotech",
-      "en": {
-        "headline": "Why it matters: AI protein design tools just crossed the threshold from research curiosity to production-grade pharma infrastructure, enabling drug discovery teams to reduce iteration cycles and attempt molecular designs previously impossible.",
-        "tweets": [
-          "Chai Discovery hit $4B valuation by solving the real pharma problem: tools that work well enough that drug teams trust them enough to redesign their entire discovery workflow around them.",
-          "The shift from 'predict protein structure' to 'design binding affinity' unlocked engineering, not just science. Now you can rapidly iterate molecules that actually work instead of betting on lab luck.",
-          "Pharma's switching from 'buy our tool' to 'partner with us on your pipeline' because proven molecules de-risk licensing deals. Four major pharma deals announced in January alone signals the inflection point arrived."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: инструменты AI для дизайна белков преодолели критическую точку — фармкомпании начинают встраивать их в боевые процессы вместо покупки как отдельных решений.",
-        "tweets": [
-          "Chai Discovery достигла оценки $4B тем, что создала инструменты, которым доверяют: фармацевтические команды перестраивают вокруг них весь процесс открытия лекарств, потому что результаты работают.",
-          "Скачок от 'предсказания структуры' к 'дизайну связывания' превратил это в инженерию. Теперь молекулы итерируют быстро и эффективно, а не полагаются на везение в лаборатории.",
-          "Четыре крупные фарма-сделки в январе — это сигнал перелома: компании переходят от покупки инструментов к партнёрству на конкретных проектах, потому что проверенные молекулы снижают риск контрактов."
-        ]
-      }
-    },
-    {
-      "id": "d-5dvqwl",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/#atom-everything",
-      "publishedAt": "2026-08-11T20:35:13.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: You can now programmatically swap SQLite databases in production Datasette instances via API, enabling CI/CD workflows for data deployments.",
-        "tweets": [
-          "datasette-upload-dbs 0.5 adds a formal API for uploading and swapping SQLite databases. Build fresh DBs in CI, deploy atomically to production with a single curl command.",
-          "The plugin verifies uploaded databases before swapping, eliminating downtime. Perfect for data-driven apps that need reliable hot-swaps of their SQLite backend.",
-          "GitHub Actions + datasette-upload-dbs = automated data pipelines. Generate updated databases on schedule, test them, then push to production instantly via API token."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Теперь можно программно заменять SQLite-базы в production-инстансах Datasette через API, что открывает возможность CI/CD-пайплайнов для развертывания данных.",
-        "tweets": [
-          "datasette-upload-dbs 0.5 добавляет формальный API для загрузки и замены SQLite-баз. Собирайте свежие БД в CI, развертывайте атомарно в production одной командой curl.",
-          "Плагин проверяет загруженные базы перед заменой, исключая простои. Идеален для приложений, требующих надежной горячей замены SQLite-бэкенда.",
-          "GitHub Actions + datasette-upload-dbs = автоматизированные пайплайны данных. Генерируйте обновленные базы по расписанию, тестируйте, затем мгновенно пушьте в production."
-        ]
-      }
-    },
-    {
-      "id": "d-135sd9h",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
-      "publishedAt": "2026-08-11T13:37:10.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: IBM's method cuts the tokens needed for adaptive computation by 40%, making it cheaper to run models that adjust their reasoning effort per query.",
-        "tweets": [
-          "IBM's ALT-K framework reduces token overhead for adaptive compute extension from 60% to 20%, letting models skip unnecessary reasoning on easy problems.",
-          "Structured layer-wise dropout during training makes models learn when to use full reasoning vs quick answers—no extra tokens needed at inference time.",
-          "Real impact: same quality outputs on complex tasks, but cheaper inference on routine queries. Works across different model sizes and architectures."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: IBM сократила на 40% количество токенов для адаптивного вычисления, делая дешевле работу моделей, которые регулируют глубину рассуждений под задачу.",
-        "tweets": [
-          "ALT-K от IBM снижает расходование токенов при адаптивном расширении с 60% до 20%—модели теперь пропускают лишние вычисления на простых запросах.",
-          "Структурированный dropout при обучении учит модель выбирать: либо полное рассуждение, либо быстрый ответ. На инференсе никаких доп. затрат.",
-          "Практический результат: одно качество на сложных задачах, но дешевле на рутинных запросах. Работает со всеми размерами и архитектурами."
-        ]
-      }
-    },
-    {
-      "id": "d-sfcz2q",
+      "id": "d-p0rqih",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/testing-ads-in-chatgpt",
-      "publishedAt": "2026-08-11T10:00:00.000Z",
+      "sourceUrl": "https://openai.com/index/how-enterprises-put-ai-to-work",
+      "publishedAt": "2026-08-12T06:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI is monetizing free ChatGPT with ads while committing to keep answer quality independent from advertising.",
+        "headline": "Why it matters: Enterprises are moving from using AI as a chatbot to deploying autonomous agents that execute tasks end-to-end, creating a competitive gap between early adopters and laggards.",
         "tweets": [
-          "OpenAI testing ads in ChatGPT free tier. Ads clearly labeled, won't influence the actual answers you get. Privacy protected.",
-          "Free ChatGPT access stays free, but now with ads. Users can control ad preferences and OpenAI says ad placement won't bias responses.",
-          "Ad experiment shows how AI companies balance free access against costs. The real test: will users trust answers when ads are present?"
+          "Leading companies aren't just asking AI questions—they're building agents that independently handle workflows like customer support, code generation, and data analysis without human intervention.",
+          "The shift from 'assistance' to 'execution' separates frontier firms from the rest. Early movers gain 6-12 month advantages in operational efficiency and cost reduction.",
+          "Real deployment challenges: maintaining agent reliability at scale, integrating with legacy systems, and ensuring accountability when AI makes business decisions autonomously."
         ]
       },
       "ru": {
-        "headline": "Почему важно: OpenAI начинает показывать объявления в бесплатном ChatGPT, но гарантирует независимость ответов от рекламы.",
+        "headline": "Почему важно: Компании переходят от использования ИИ-помощника к развертыванию автономных агентов, которые выполняют задачи от начала до конца, создавая разрыв между лидерами и отстающими.",
         "tweets": [
-          "В ChatGPT появляется реклама для поддержки бесплатного доступа. Объявления ясно отмечены и не влияют на качество ответов.",
-          "Бесплатный ChatGPT остаётся бесплатным, но с рекламой. Пользователи могут контролировать рекламные предпочтения.",
-          "OpenAI тестирует монетизацию без нарушения доверия. Главный вызов: сохранит ли аудитория уверенность в объективности ответов?"
+          "Передовые компании не просто задают ИИ вопросы—они строят агентов, самостоятельно справляющихся с рутинными работами: поддержка клиентов, генерация кода, анализ данных.",
+          "Переход от ассистента к исполнителю отделяет лидеров от конкурентов. Ранние адаптеры получают преимущество в 6-12 месяцев в эффективности и снижении затрат.",
+          "Главные вызовы: надежность агентов в масштабе, интеграция с устаревшими системами, ответственность когда ИИ принимает бизнес-решения автономно."
         ]
       }
     },
     {
-      "id": "d-f7pegt",
+      "id": "d-bxujuk",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
-      "publishedAt": "2026-08-11T10:00:00.000Z",
-      "category": "cybersecurity",
-      "en": {
-        "headline": "Why it matters: OpenAI's Daybreak models now accessible via AWS Bedrock, making enterprise threat detection and vulnerability analysis available to organizations already invested in AWS infrastructure.",
-        "tweets": [
-          "Daybreak models integrated into Amazon Bedrock mean enterprises can run AI-powered cybersecurity workflows without switching platforms or managing separate infrastructure.",
-          "This partnership cuts deployment friction for security teams who need real-time threat analysis and vulnerability scanning at scale.",
-          "AWS customers get native access to specialized models designed for security tasks, reducing vendor lock-in concerns compared to point solutions."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: модели Daybreak OpenAI теперь доступны через Amazon Bedrock, позволяя корпоративным командам безопасности использовать AI для анализа уязвимостей без смены инструментов.",
-        "tweets": [
-          "Daybreak в Bedrock позволяет security-командам запускать анализ угроз и поиск уязвимостей прямо в экосистеме AWS без дополнительной интеграции.",
-          "Компании экономят время на развертывание и получают готовые модели для обнаружения аномалий и классификации рисков.",
-          "Интеграция снижает сложность архитектуры безопасности и упрощает масштабирование для крупных организаций на AWS."
-        ]
-      }
-    },
-    {
-      "id": "d-1b7ahlu",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-muse-glimmer-and-spark-open",
-      "publishedAt": "2026-08-11T05:16:41.000Z",
+      "sourceUrl": "https://openai.com/index/ringcentral",
+      "publishedAt": "2026-08-12T00:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Meta is betting open-weight AI models distributed to individuals, not institutions, will determine who controls superintelligence and power in society.",
+        "headline": "Why it matters: Companies embedding AI across engineering and ops can consolidate fragmented tools into a single intelligence layer, reducing context-switching and accelerating product cycles.",
         "tweets": [
-          "Meta released Muse Glimmer (30B open weights) and Spark, pushing Zuck's personal superintelligence thesis: everyone gets a capable AI agent aligned to their goals, not governments or corporations controlling centralized systems.",
-          "The real constraint isn't capability—it's infrastructure. China builds 1GW nuclear capacity every other week. US must accelerate data centers and energy to stay competitive while keeping export controls on chips.",
-          "Zuck's core risk: once AI systems recursively self-improve, any lab that doesn't let their AI use massive compute will fall behind and lose to a singular superintelligence. The solution is distributed alignment, not centralized control."
+          "RingCentral uses ChatGPT Work to collapse engineering + ops workflows into one AI-native system. No more bouncing between Slack, Jira, and docs.",
+          "Codex integration lets teams generate and review code faster. RingCentral reports shorter feedback loops from engineering to production.",
+          "Centralized operational intelligence surfaces real-time insights without custom dashboards. One query replaces a dozen reports."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Meta ставит на открытые модели AI, распределённые между людьми, а не учреждениями, чтобы определить, кто будет контролировать суперинтеллект и власть в обществе.",
+        "headline": "Почему важно: Встраивание ИИ в инженерию и операции позволяет унифицировать разрозненные инструменты в единый слой интеллекта, сокращая переключение контекста и ускоряя циклы разработки.",
         "tweets": [
-          "Meta выпустила Muse Glimmer (30B открытые веса) и Spark, продвигая тезис Цукерберга о личном суперинтеллекте: каждый получит AI-агента, настроенного на его цели, вместо централизованного контроля государства или корпораций.",
-          "Реальное ограничение не в способностях, а в инфраструктуре. Китай запускает 1GW ядерных мощностей каждые две недели. США должны ускорить строительство дата-центров и энергосистем, сохраняя экспортные ограничения на чипы.",
-          "Главный риск Цукерберга: когда AI системы улучшают себя рекурсивно, лаборатория, не позволяющая своему AI использовать огромные вычисления, отстанет и проиграет единому суперинтеллекту. Решение — распределённое выравнивание, не централизованный контроль."
-        ]
-      }
-    },
-    {
-      "id": "d-s51e2a",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
-      "publishedAt": "2026-08-10T23:56:03.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Meta's new 30B open-weight model handles multi-step reasoning, tool use, and vision tasks well enough to run locally on consumer hardware.",
-        "tweets": [
-          "Muse Glimmer is a 30B vision model under Apache 2.0 license. Strong on agentic workflows: codebase exploration, tool calling, reasoning chains that span complex tasks.",
-          "Fits in 18GB VRAM, leaves room for other apps. Tested on real code analysis (Datasette auth exploration) and image description—no hand-wavy responses, actual substance.",
-          "Benchmarks that matter: DeepSearch QA, SWE-Bench, tool-use precision across extended workflows. Open weights means you can run it yourself without vendor lock-in."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Meta выпустила открытую 30-миллиардную модель с поддержкой vision, которая справляется со сложными многошаговыми задачами на обычном железе.",
-        "tweets": [
-          "Muse Glimmer на Apache 2.0: агентская работа, анализ кода, надёжное вызывание инструментов. Занимает 18 ГБ, оставляя место для других приложений на машине с 32 ГБ+ RAM.",
-          "Протестирована на реальных задачах: исследование исходного кода, описание изображений с деталями. Не маркетинговая речь, а практический результат на свежей кодовой базе.",
-          "Результаты на бенчмарках: DeepSearch QA, SWE-Bench, точное управление функциями в длинных цепочках. Открытые веса—запускаешь сам, без привязки к поставщику."
+          "RingCentral объединила рабочие процессы инженерии и операций через ChatGPT Work. Больше не нужно прыгать между Slack, Jira и документацией.",
+          "Интеграция Codex ускоряет генерацию и проверку кода. RingCentral видит сокращение времени между разработкой и продакшеном.",
+          "Единый слой операционного интеллекта выдаёт insights в реальном времени без кастомных дашбордов. Один запрос вместо дюжины отчётов."
         ]
       }
     }

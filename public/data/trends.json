@@ -1,71 +1,54 @@
 {
-  "generatedAt": "2026-08-12T07:51:58.805Z",
+  "generatedAt": "2026-08-13T07:52:46.420Z",
   "window": "rolling-120d",
   "topics": [
     {
-      "id": "fusion",
-      "label": "Fusion Energy",
-      "category": "energy",
+      "id": "post-quantum",
+      "label": "Post-Quantum Crypto",
+      "category": "cybersecurity",
       "stage": "research",
-      "trajectory": "rising",
-      "momentum": 0.75,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
-        14,
-        11,
-        14,
-        14,
-        4,
-        7
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Megakernels are so dead and so back",
-          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
-          "source": "latent-space",
-          "publishedAt": "2026-08-05T01:21:47.000Z"
-        }
-      ]
-    },
-    {
-      "id": "humanoids",
-      "label": "Humanoid Robots",
-      "category": "robotics",
-      "stage": "prototype",
-      "trajectory": "rising",
-      "momentum": 0.17,
-      "weeklyCounts": [
-        1,
-        7,
-        7,
+        0,
+        0,
+        0,
+        0,
         6,
-        6,
-        7
+        0,
+        0
       ],
-      "signals": [
-        {
-          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
-          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
-          "source": "latent-space",
-          "publishedAt": "2026-07-31T04:40:54.000Z"
-        }
-      ]
+      "signals": []
     },
     {
       "id": "rag",
       "label": "Retrieval-Augmented Generation",
       "category": "ai",
       "stage": "early-adopter",
-      "trajectory": "rising",
-      "momentum": 0.07,
+      "trajectory": "cooling",
+      "momentum": -0.83,
       "weeklyCounts": [
         81,
         60,
         57,
         76,
         72,
-        77
+        77,
+        13
       ],
       "signals": [
+        {
+          "title": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
+          "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
+          "source": "latent-space",
+          "publishedAt": "2026-08-13T01:53:47.000Z"
+        },
+        {
+          "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
+          "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+          "source": "hf",
+          "publishedAt": "2026-08-12T16:14:36.000Z"
+        },
         {
           "title": "[AINews] How to steal a Reasoning Trace",
           "url": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
@@ -83,18 +66,6 @@
           "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
           "source": "latent-space",
           "publishedAt": "2026-07-24T04:30:12.000Z"
-        },
-        {
-          "title": "[AINews] \"Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro\"",
-          "url": "https://www.latent.space/p/ainews-laguna-s-21-released-cheaper",
-          "source": "latent-space",
-          "publishedAt": "2026-07-23T05:18:47.000Z"
-        },
-        {
-          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-          "source": "hf",
-          "publishedAt": "2026-05-14T18:55:01.000Z"
         }
       ]
     },
@@ -103,17 +74,73 @@
       "label": "LLM Agents",
       "category": "ai",
       "stage": "prototype",
-      "trajectory": "rising",
-      "momentum": 0.02,
+      "trajectory": "cooling",
+      "momentum": -0.85,
       "weeklyCounts": [
         411,
         420,
         426,
         449,
         458,
-        466
+        466,
+        68
       ],
       "signals": [
+        {
+          "title": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
+          "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
+          "source": "latent-space",
+          "publishedAt": "2026-08-13T01:53:47.000Z"
+        },
+        {
+          "title": "[AINews] How to steal a Reasoning Trace",
+          "url": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
+          "source": "latent-space",
+          "publishedAt": "2026-08-12T07:11:08.000Z"
+        },
+        {
+          "title": "From assistance to execution: How enterprises put AI to work",
+          "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+          "source": "openai",
+          "publishedAt": "2026-08-12T06:00:00.000Z"
+        },
+        {
+          "title": "[AINews] Muse Glimmer and Spark: Open Weights return Personal Superintelligence promise",
+          "url": "https://www.latent.space/p/ainews-muse-glimmer-and-spark-open",
+          "source": "latent-space",
+          "publishedAt": "2026-08-11T05:16:41.000Z"
+        },
+        {
+          "title": "Introducing Muse Glimmer",
+          "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
+          "source": "simonw",
+          "publishedAt": "2026-08-10T23:56:03.000Z"
+        }
+      ]
+    },
+    {
+      "id": "open-models",
+      "label": "Open Models",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.86,
+      "weeklyCounts": [
+        375,
+        358,
+        348,
+        414,
+        398,
+        396,
+        57
+      ],
+      "signals": [
+        {
+          "title": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
+          "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
+          "source": "latent-space",
+          "publishedAt": "2026-08-13T01:53:47.000Z"
+        },
         {
           "title": "[AINews] How to steal a Reasoning Trace",
           "url": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
@@ -128,15 +155,9 @@
         },
         {
           "title": "Introducing Muse Glimmer",
-          "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
+          "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
           "source": "simonw",
           "publishedAt": "2026-08-10T23:56:03.000Z"
-        },
-        {
-          "title": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
-          "url": "https://huggingface.co/blog/muse-glimmer",
-          "source": "hf",
-          "publishedAt": "2026-08-10T00:00:00.000Z"
         },
         {
           "title": "[AINews] Zawinski's Law of MultiAgents",
@@ -147,19 +168,45 @@
       ]
     },
     {
+      "id": "fusion",
+      "label": "Fusion Energy",
+      "category": "energy",
+      "stage": "research",
+      "trajectory": "cooling",
+      "momentum": -0.86,
+      "weeklyCounts": [
+        14,
+        11,
+        14,
+        14,
+        4,
+        7,
+        1
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Megakernels are so dead and so back",
+          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
+          "source": "latent-space",
+          "publishedAt": "2026-08-05T01:21:47.000Z"
+        }
+      ]
+    },
+    {
       "id": "protein-design",
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
         21,
         21,
         21,
         21,
         21,
-        21
+        21,
+        3
       ],
       "signals": [
         {
@@ -183,69 +230,29 @@
       ]
     },
     {
-      "id": "open-models",
-      "label": "Open Models",
-      "category": "ai",
-      "stage": "early-adopter",
+      "id": "humanoids",
+      "label": "Humanoid Robots",
+      "category": "robotics",
+      "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.01,
+      "momentum": -0.86,
       "weeklyCounts": [
-        375,
-        358,
-        348,
-        414,
-        398,
-        396
+        1,
+        7,
+        7,
+        6,
+        6,
+        7,
+        1
       ],
       "signals": [
         {
-          "title": "[AINews] How to steal a Reasoning Trace",
-          "url": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
+          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
           "source": "latent-space",
-          "publishedAt": "2026-08-12T07:11:08.000Z"
-        },
-        {
-          "title": "[AINews] Muse Glimmer and Spark: Open Weights return Personal Superintelligence promise",
-          "url": "https://www.latent.space/p/ainews-muse-glimmer-and-spark-open",
-          "source": "latent-space",
-          "publishedAt": "2026-08-11T05:16:41.000Z"
-        },
-        {
-          "title": "Introducing Muse Glimmer",
-          "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
-          "source": "simonw",
-          "publishedAt": "2026-08-10T23:56:03.000Z"
-        },
-        {
-          "title": "[AINews] Zawinski's Law of MultiAgents",
-          "url": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
-          "source": "latent-space",
-          "publishedAt": "2026-08-08T01:12:07.000Z"
-        },
-        {
-          "title": "[AINews] AMD buys Taalas",
-          "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
-          "source": "latent-space",
-          "publishedAt": "2026-08-07T05:13:46.000Z"
+          "publishedAt": "2026-07-31T04:40:54.000Z"
         }
       ]
-    },
-    {
-      "id": "post-quantum",
-      "label": "Post-Quantum Crypto",
-      "category": "cybersecurity",
-      "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -1,
-      "weeklyCounts": [
-        0,
-        0,
-        0,
-        0,
-        6,
-        0
-      ],
-      "signals": []
     }
   ]
 }
