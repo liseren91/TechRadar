@@ -1,233 +1,233 @@
 {
-  "generatedAt": "2026-08-13T07:52:46.274Z",
+  "generatedAt": "2026-08-14T07:49:58.849Z",
   "items": [
     {
-      "id": "d-1edb9dm",
+      "id": "d-15ldprz",
       "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
-      "publishedAt": "2026-08-13T01:53:47.000Z",
+      "sourceUrl": "https://www.latent.space/p/ainews-gemini-37-flash-brings-gdm",
+      "publishedAt": "2026-08-14T05:30:39.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Grok 4.6 establishes a new efficiency benchmark for coding agents, undercutting frontier models on price while matching their performance on knowledge work tasks.",
+        "headline": "Why it matters: Google's Gemini 3.7 Flash closes the performance gap with Claude and OpenAI's latest models, restoring competitiveness in fast, efficient inference.",
         "tweets": [
-          "Grok 4.6 hits 61 on Intelligence Index at $2/$6 per 1M tokens—materially cheaper than Claude/GPT-5.6 with 88.4% on Terminal-Bench. Agentic RL training on coding, web, CAD pushed long-task self-testing behavior.",
-          "Qwen3.8-Max (2.4T params, 95B active MoE) dropped open-weight today with day-0 vLLM support. Scale matters: largest open release to date, though initial version is text-only without vision input.",
-          "DeepSeek V4 Pro GA: $0.435/$0.87 per 1M tokens (57x cheaper than Fable 5). Solid gains over preview but mixed user signals on raw capability—next edge likely comes from RL environments, not scale alone."
+          "Gemini 3.7 Flash benchmarks show Google caught up to Claude 4.8+ and GPT 5.5+ after 3.5/3.6 fell behind. Speed meets capability again.",
+          "GDM (Google DeepMind) refocuses on the flash tier—where real-world latency matters. Closing the gap here impacts millions of production queries daily.",
+          "The chart tells it: previous flash versions were lagging. 3.7 is Google's answer to staying relevant in the speed-vs-smarts tradeoff."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Grok 4.6 переопределяет соотношение цены и производительности на рынке моделей для coding и knowledge work, при этом вытеснив конкурентов по экономичности.",
+        "headline": "Почему важно: Gemini 3.7 Flash сокращает разрыв с Claude и GPT, вернув Google конкурентоспособность в сегменте быстрых моделей.",
         "tweets": [
-          "Grok 4.6 набрал 61 балл в Intelligence Index за $2/$6 на млн токенов—значительно дешевле Claude и GPT-5.6 с результатом 88.4% на Terminal-Bench. Агентивное RL на коде, вебе и CAD улучшило самотестирование в долгих задачах.",
-          "Qwen3.8-Max (2.4T параметров, 95B active MoE) вышла открытой версией с поддержкой vLLM в день релиза. Это один из крупнейших опен-вейт релизов, но первая версия—только текст, без визуального входа.",
-          "DeepSeek V4 Pro GA: $0.435/$0.87 за млн токенов (в 57 раз дешевле Fable 5). Прирост производительности есть, но пользователи не видят явного преимущества—следующий скачок будет от RL окружений, а не масштаба моделей."
+          "Gemini 3.7 Flash наконец-то догонял Claude 4.8+ и GPT 5.5+ по производительности. Предыдущие версии flash заметно отставали.",
+          "GDM снова фокусируется на быстрых моделях—там, где задержка решает. Это влияет на миллионы запросов в production каждый день.",
+          "График показывает откат 3.5 и 3.6. Версия 3.7—ответ Google на баланс между скоростью и качеством в реальных приложениях."
         ]
       }
     },
     {
-      "id": "d-16sehid",
+      "id": "d-h6fqt7",
       "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
-      "publishedAt": "2026-08-12T23:59:23.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: DeepSeek V4 Pro 0813 is available via API, with reasoning levels that visibly change output quality—a sign the model's thinking process fundamentally shifts its behavior.",
-        "tweets": [
-          "DeepSeek V4 Pro 0813 dropped on OpenRouter. No official announcement page from DeepSeek themselves, benchmarks scattered across WeChat, Reddit, and Hacker News.",
-          "Low/medium/high reasoning modes produce noticeably different image outputs (tested with pelicans). Other models don't show this kind of visible shift in generation quality.",
-          "Open weights likely coming soon—both April and July DeepSeek models got released eventually. Watch the main repo for the full weights drop."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: DeepSeek V4 Pro 0813 доступен через API, и его три уровня рассуждений дают визуально разные результаты—признак того, что модель по-разному обрабатывает информацию в зависимости от уровня сложности.",
-        "tweets": [
-          "DeepSeek V4 Pro 0813 вышел на OpenRouter без официального анонса. Бенчмарки рассыпаны по WeChat, Reddit и Hacker News.",
-          "Режимы low/medium/high reasoning дают заметно разные картинки. На других моделях такого визуального сдвига качества не видно.",
-          "Открытые веса скорее всего выйдут—предыдущие версии из апреля и июля тоже в итоге опубликовали. Следи за основным репо."
-        ]
-      }
-    },
-    {
-      "id": "d-ot3514",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/12/alchemy-utils/",
-      "publishedAt": "2026-08-12T19:51:30.000Z",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/",
+      "publishedAt": "2026-08-13T23:53:47.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: A database-agnostic Python library lets you use the same familiar API across PostgreSQL, SQLite, and DuckDB instead of learning engine-specific quirks.",
+        "headline": "Why it matters: sqlite-utils 4.2.1 fixes a crash caused by a missing dependency declaration that broke CLI usage when installed directly.",
         "tweets": [
-          "alchemy-utils brings sqlite-utils' elegant API to any SQL database. Same insert/upsert/table introspection methods, now backed by SQLAlchemy. One-liner to query your Postgres, DuckDB, or SQLite.",
-          "Built in a morning with AI pair programming (Codex + GPT-5.6). TDD approach with pytest. Already handles real workflows like bulk-loading 150k SF trees into DuckDB in 35 seconds.",
-          "Use it: uvx --with alchemy-utils[postgresql] alchemy-utils rows 'postgresql+psycopg://...' table_name. CSV import, JSON output, schema auto-creation all included. Early alpha, but shipping."
+          "sqlite-utils 4.2.1 patches a critical bug: typing-extensions wasn't declared as a dependency, only pulled in transitively via dev tools. Direct CLI usage broke.",
+          "Fix includes a smoke test using uv run --isolated --no-default-groups to catch missing deps before release. Prevents dependency on dev-only transitive installs.",
+          "Lesson: test your CLI in isolation without dev dependencies. uv's isolated mode caught what normal testing missed—dependency declaration matters."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Единый Python API для работы с PostgreSQL, SQLite и DuckDB избавляет от изучения особенностей каждой БД отдельно.",
+        "headline": "Почему важно: sqlite-utils 4.2.1 исправляет крах из-за того, что зависимость typing-extensions не была явно объявлена и пропадала при прямой установке.",
         "tweets": [
-          "alchemy-utils переносит удобный API sqlite-utils на любую SQL-базу. Те же методы insert, upsert, table introspection, но через SQLAlchemy. Одна команда для запроса любой БД.",
-          "Создана за одно утро с помощью AI-парного программирования (Codex + GPT). TDD с pytest. Уже работает в боевых сценариях: загрузка 150k деревьев Сан-Франциско в DuckDB за 35 секунд.",
-          "Используйте: uvx --with alchemy-utils[postgresql] alchemy-utils rows 'postgresql://...' table_name. Импорт CSV, вывод JSON, автосоздание схемы. Ранняя альфа, но уже в production."
+          "sqlite-utils 4.2.1 чинит баг: typing-extensions был только косвенной зависимостью через dev-инструменты. При прямой установке CLI падал.",
+          "Теперь есть smoke-тест через uv run --isolated --no-default-groups, который проверяет работу без dev-зависимостей. Ловит скрытые проблемы.",
+          "Вывод: тестируйте CLI отдельно от dev-окружения. Явное объявление зависимостей спасает от косых установок."
         ]
       }
     },
     {
-      "id": "d-902oo3",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
-      "publishedAt": "2026-08-12T16:14:36.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: OlmoEarth embeddings let you export custom vector representations from satellite data without retraining models, speeding up geospatial analysis workflows.",
-        "tweets": [
-          "OlmoEarth Studio now exports custom embeddings directly—grab pretrained satellite vision vectors and use them in your own pipelines without spinning up new models.",
-          "Embeddings capture geospatial patterns from earth observation data. Export them once, apply them to land use classification, crop monitoring, disaster response—whatever you need.",
-          "Skip the compute-heavy training loop. Leverage existing pretrained representations, fine-tune downstream tasks faster, get results in weeks instead of months."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: OlmoEarth embeddings позволяют экспортировать собственные векторные представления спутниковых данных без переобучения моделей, ускоряя геопространственный анализ.",
-        "tweets": [
-          "OlmoEarth Studio теперь экспортирует готовые embeddings из спутниковых изображений—берите векторы и используйте их в своих пайплайнах без обучения новых моделей.",
-          "Embeddings кодируют геопространственные закономерности. Экспортируйте один раз, применяйте к классификации землепользования, мониторингу урожаев, ликвидации чрезвычайных ситуаций.",
-          "Избегайте дорогостоящего обучения. Используйте готовые представления, настраивайте задачи быстрее, получайте результаты за недели вместо месяцев."
-        ]
-      }
-    },
-    {
-      "id": "d-1ojna1c",
+      "id": "d-l7jww6",
       "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
-      "publishedAt": "2026-08-12T15:08:47.000Z",
-      "category": "ai",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/13/sqlite-utils/",
+      "publishedAt": "2026-08-13T20:11:29.000Z",
+      "category": "web3",
       "en": {
-        "headline": "Why it matters: Heavy reliance on AI to maintain code you don't understand creates technical debt that compounds faster than any team can fix it.",
+        "headline": "Why it matters: sqlite-utils 4.2 handles complex table alterations while preserving constraints and metadata that usually get lost in migrations.",
         "tweets": [
-          "The bug loop: AI writes code, bug appears, AI tries to fix it, fails. Repeat 4x. Nobody actually understands the system anymore.",
-          "When devs stop learning the codebase and start asking Claude instead, knowledge leaves the team. Now even Claude can't help.",
-          "Layers pile up, services multiply, nobody understands the architecture. AI can't debug what humans can't reason about either."
+          "sqlite-utils 4.2 now preserves check constraints, unique constraints, and column comments during table.transform() operations—edge cases that break most migration tools.",
+          "The transform() method creates a fresh table, copies data safely, then swaps it in. New introspection properties for constraints make debugging schema changes faster.",
+          "5 community contributors landed this release. Real-world schema preservation matters when you're refactoring production databases without downtime."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Когда команда полагается на ИИ для поддержки кода, который никто не понимает, технический долг растёт быстрее, чем его можно исправить.",
+        "headline": "Почему важно: sqlite-utils 4.2 сохраняет сложные ограничения и метаданные при изменении таблиц, что обычно теряется при миграциях.",
         "tweets": [
-          "ИИ пишет код, появляется баг, ИИ пытается его исправить, не получается. И так четыре раза. Никто не знает, как работает система.",
-          "Когда разработчики перестают учить кодовую базу и вместо этого спрашивают Claude, знания уходят из команды навсегда.",
-          "Слои накапливаются, сервисы множатся, архитектуру никто не понимает. ИИ тоже не может отладить то, что люди не могут осмыслить."
+          "В sqlite-utils 4.2 операция table.transform() теперь хранит check constraints, unique constraints и комментарии к колонкам—граничные случаи, ломающие большинство инструментов.",
+          "Метод создаёт новую таблицу, безопасно копирует данные, затем заменяет старую. Новые свойства для интроспекции ускоряют отладку изменений схемы.",
+          "5 контрибьюторов в этом релизе. Сохранение реальной схемы критично для рефакторинга боевых баз без простоя."
         ]
       }
     },
     {
-      "id": "d-sqe4l0",
-      "source": "deepmind",
-      "sourceUrl": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
-      "publishedAt": "2026-08-12T14:01:59.000Z",
+      "id": "d-oha43x",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
+      "publishedAt": "2026-08-13T19:37:34.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: DeepMind's sign-language-to-text model gives Deaf and hard of hearing users direct access to real-time translation technology, removing a major accessibility barrier.",
+        "headline": "Why it matters: llm-gemini plugin now supports Gemini 3.7 Flash and integrates reasoning traces with LLM 0.32, letting engineers run complex tasks like server-side code execution directly from the command line.",
         "tweets": [
-          "DeepMind released SL2T, an AI model that translates sign language to text in real time. First major breakthrough making sign language AI accessible to actual users, not just researchers.",
-          "The model handles the spatial grammar and hand movements that make sign language fundamentally different from spoken language translation. Trained on diverse signers to avoid bias.",
-          "Now being integrated into products so Deaf users can communicate without always needing interpreters. Practical accessibility that actually ships, not vaporware."
+          "llm-gemini 0.33 adds Gemini 3.7 Flash support plus embedding models. Server-side tools now work via -T flag: llm -m gemini-3.7-flash -T CodeExecution 'python task'",
+          "Reasoning traces now visible in LLM 0.32 integration. Test high/medium/low thinking efforts to see how the model approaches problems differently.",
+          "SVG rendering quirk: Safari handles empty filter elements differently than Chrome/Firefox. Same Gemini output, different visual results across browsers."
         ]
       },
       "ru": {
-        "headline": "Почему важно: модель DeepMind для перевода жестового языка в текст дает глухим и слабослышащим людям прямой доступ к технологии реального перевода, убирая критический барьер в доступности.",
+        "headline": "Почему важно: плагин llm-gemini теперь поддерживает Gemini 3.7 Flash и трассировку рассуждений в LLM 0.32, позволяя инженерам запускать сложные задачи прямо из командной строки.",
         "tweets": [
-          "DeepMind выпустила SL2T — AI модель для перевода жестового языка в текст в реальном времени. Первый серьёзный прорыв, который действительно попадает к пользователям, а не остаётся в лабораториях.",
-          "Модель понимает пространственную грамматику и движения рук, которые отличают жестовый язык от обычного перевода речи. Обучена на разнообразных подписантах без предубеждений.",
-          "Встраивается в реальные приложения, чтобы глухие люди общались без переводчика. Практичная доступность, которая работает на самом деле."
+          "llm-gemini 0.33 добавляет поддержку Gemini 3.7 Flash и модели embeddings. Серверные инструменты работают через флаг -T: llm -m gemini-3.7-flash -T CodeExecution",
+          "Трассировка рассуждений теперь видна при интеграции LLM 0.32. Тестируйте разные уровни мышления, чтобы увидеть, как модель подходит к задачам.",
+          "Особенность рендеринга SVG: Safari иначе обрабатывает пустые filter элементы, чем Chrome и Firefox. Результат Gemini одинаков, но визуально различается."
         ]
       }
     },
     {
-      "id": "d-gburrr",
+      "id": "d-gno7w1",
       "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
-      "publishedAt": "2026-08-12T14:00:51.000Z",
-      "category": "ai",
+      "sourceUrl": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+      "publishedAt": "2026-08-13T17:16:04.000Z",
+      "category": "robotics",
       "en": {
-        "headline": "Why it matters: LFM2.5-VL-3B brings vision-language understanding to 3B-parameter devices, enabling edge deployments without cloud inference.",
+        "headline": "Why it matters: Strands Agents, LeRobot, and Hugging Face Storage now work together as a single pipeline, letting you record robot behavior, train models, and deploy them without switching tools.",
         "tweets": [
-          "LFM2.5-VL-3B fits vision-language tasks into 3B params while matching larger models on real benchmarks. Deploy directly on edge devices instead of calling APIs.",
-          "Liquid AI's selective token pruning means faster inference and lower latency for vision tasks. Speed gain matters more than raw accuracy for production systems.",
-          "3B model size means running on consumer GPUs, mobile chips, or embedded systems. The tradeoff: slightly lower accuracy on edge cases, but practical for most workloads."
+          "Strands Agents now stream robot telemetry directly to Hugging Face Storage Buckets. No more data pipeline friction—record, label, and version everything in one place.",
+          "LeRobot models train on live robot data without manual exports. The feedback loop from deployment back to training is now automated, cutting iteration time from weeks to days.",
+          "One unified workspace means your whole team sees the same robot recordings, trained weights, and deployment status. No more version confusion or lost experiments."
         ]
       },
       "ru": {
-        "headline": "Почему важно: LFM2.5-VL-3B предлагает понимание изображений и текста на устройстве без облака, экономя задержку и пропускную способность сети.",
+        "headline": "Почему важно: Strands Agents, LeRobot и Hugging Face Storage теперь работают как единый конвейер—записывайте поведение робота, тренируйте модели и развёртывайте их без переключения между инструментами.",
         "tweets": [
-          "3-миллиардная модель решает задачи зрения на уровне моделей в 10 раз больше. Инференс прямо на железе вместо отправки в облако—вот где выигрыш.",
-          "Селективное обрезание токенов Liquid AI ускоряет обработку видео и изображений. На edge devices скорость часто важнее идеальной точности.",
-          "Поместится на потребительских GPU, мобильных чипах, встроенных системах. Компромисс: небольшой дроп точности на крайних случаях, но приемлемо для production."
+          "Strands Agents потоком отправляют телеметрию робота в Hugging Face Storage. Записи, разметка и версионирование данных—всё в одном месте, без промежуточных экспортов.",
+          "LeRobot тренируется на живых данных с роботов без ручного выгружания. Обратная связь от развёрнутой модели автоматически идёт на переобучение—цикл ускорился в несколько раз.",
+          "Единое рабочее пространство для команды: все видят одни записи, веса и статус развёртывания. Больше никакой путаницы с версиями и потерянных экспериментов."
         ]
       }
     },
     {
-      "id": "d-jkywtu",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
-      "publishedAt": "2026-08-12T07:11:08.000Z",
+      "id": "d-1a8ual3",
+      "source": "deepmind",
+      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+      "publishedAt": "2026-08-13T17:04:18.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Encrypted reasoning traces from frontier AI models can be decoded and leaked, exposing API keys, passwords, and personal data from public sessions.",
+        "headline": "Why it matters: Gemini 3.7 Flash trades some reasoning depth for 3x faster inference, making real-time AI applications feasible at scale.",
         "tweets": [
-          "Researchers decoded 'encrypted' reasoning blocks from Claude, GPT, and Gemini by replaying them to weaker models. A scan of 7,000 public traces found 62 API keys, 33 emails, 33 passwords.",
-          "The attack works by obtaining a signed reasoning block, replaying it across accounts/sessions, and prompting weaker models to transcribe the hidden thoughts via repeated sampling.",
-          "Even if labs hide chain-of-thought, tool interfaces can re-expose it. Implications: public trace sharing is unsafe, hidden CoT isn't reliable for monitoring, sandboxing needs hardening."
+          "Gemini 3.7 Flash cuts latency by ~65% vs standard Gemini while maintaining 90%+ accuracy on core benchmarks. Speed matters when you're serving millions of requests.",
+          "Optimized for under-100ms responses on mobile and edge devices. This breaks the latency ceiling for voice assistants, live translation, and real-time coding.",
+          "Training efficiency: uses 40% fewer parameters than previous fast variants without quality regression. Dense model = lower compute costs and easier deployment."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Зашифрованные цепочки рассуждений frontier-моделей можно декодировать и утечь, раскрыв API-ключи, пароли и персональные данные из публичных сессий.",
+        "headline": "Почему важно: Gemini 3.7 Flash жертвует глубиной рассуждений ради скорости в 3 раза, делая масштабируемые приложения реального времени реальностью.",
         "tweets": [
-          "Исследователи декодировали 'зашифрованные' блоки рассуждений Claude, GPT и Gemini, переиспользуя их на более слабых моделях. Сканирование 7000 публичных трассировок выявило 62 API-ключа, 33 почты, 33 пароля.",
-          "Атака работает так: получить подписанный блок рассуждений, переиспользовать его между аккаунтами/сессиями, попросить слабые модели переписать скрытые мысли через повторное сэмплирование.",
-          "Даже если лабы скрывают цепочку рассуждений, интерфейсы инструментов могут её переоткрыть. Следствие: публичный шаринг трассировок опасен, скрытая цепочка ненадёжна для мониторинга."
+          "Gemini 3.7 Flash сокращает задержку на ~65% по сравнению со стандартным Gemini, сохраняя 90%+ точность. Скорость критична при обслуживании миллионов запросов.",
+          "Оптимизирована для ответов за 100 миллисекунд на мобильных и edge-устройствах. Голосовые помощники, живой перевод и автодополнение кода становятся практичными.",
+          "На 40% меньше параметров, чем предыдущие быстрые версии, без потери качества. Компактная модель означает дешевле вычисления и проще развёртывание."
         ]
       }
     },
     {
-      "id": "d-p0rqih",
+      "id": "d-1fo6fsj",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/how-enterprises-put-ai-to-work",
-      "publishedAt": "2026-08-12T06:00:00.000Z",
+      "sourceUrl": "https://openai.com/index/builders-guide-to-gpt-5-6",
+      "publishedAt": "2026-08-13T11:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Enterprises are moving from using AI as a chatbot to deploying autonomous agents that execute tasks end-to-end, creating a competitive gap between early adopters and laggards.",
+        "headline": "Why it matters: GPT-5.6's Responses API and improved model selection let startups build production AI agents 40-60% faster while cutting inference costs.",
         "tweets": [
-          "Leading companies aren't just asking AI questions—they're building agents that independently handle workflows like customer support, code generation, and data analysis without human intervention.",
-          "The shift from 'assistance' to 'execution' separates frontier firms from the rest. Early movers gain 6-12 month advantages in operational efficiency and cost reduction.",
-          "Real deployment challenges: maintaining agent reliability at scale, integrating with legacy systems, and ensuring accountability when AI makes business decisions autonomously."
+          "GPT-5.6 Responses API handles streaming, parallelization, and error recovery natively—builders skip weeks of infrastructure work and ship agents immediately.",
+          "Smart model routing now matches tasks to optimal GPT variants automatically, cutting unnecessary compute spend without sacrificing quality on complex workloads.",
+          "Early adopters report 3-5x faster iteration cycles on agent behavior tuning. The bottleneck shifted from infrastructure to prompt engineering."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Компании переходят от использования ИИ-помощника к развертыванию автономных агентов, которые выполняют задачи от начала до конца, создавая разрыв между лидерами и отстающими.",
+        "headline": "Почему важно: API ответов GPT-5.6 и умный выбор моделей позволяют стартапам строить production-агентов на 40-60% быстрее и снизить затраты на инференс.",
         "tweets": [
-          "Передовые компании не просто задают ИИ вопросы—они строят агентов, самостоятельно справляющихся с рутинными работами: поддержка клиентов, генерация кода, анализ данных.",
-          "Переход от ассистента к исполнителю отделяет лидеров от конкурентов. Ранние адаптеры получают преимущество в 6-12 месяцев в эффективности и снижении затрат.",
-          "Главные вызовы: надежность агентов в масштабе, интеграция с устаревшими системами, ответственность когда ИИ принимает бизнес-решения автономно."
+          "Responses API берёт на себя потоковую обработку, параллелизацию и восстановление после ошибок—разработчики экономят недели на инфраструктуре и выпускают агентов сразу.",
+          "Автоматическая маршрутизация теперь направляет задачи в оптимальные варианты GPT, снижая лишние вычисления без потери качества на сложных операциях.",
+          "Первые adopters видят цикл итерации в 3-5 раз быстрее. Узкое место сместилось с инфраструктуры на prompt engineering."
         ]
       }
     },
     {
-      "id": "d-bxujuk",
+      "id": "d-7sphgw",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/ringcentral",
-      "publishedAt": "2026-08-12T00:00:00.000Z",
+      "sourceUrl": "https://openai.com/index/previewing-ultrafast",
+      "publishedAt": "2026-08-13T10:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Companies embedding AI across engineering and ops can consolidate fragmented tools into a single intelligence layer, reducing context-switching and accelerating product cycles.",
+        "headline": "Why it matters: 14x faster inference means real-time AI applications become feasible for cost-sensitive workloads, with 750 tokens/sec enabling interactive experiences previously too slow.",
         "tweets": [
-          "RingCentral uses ChatGPT Work to collapse engineering + ops workflows into one AI-native system. No more bouncing between Slack, Jira, and docs.",
-          "Codex integration lets teams generate and review code faster. RingCentral reports shorter feedback loops from engineering to production.",
-          "Centralized operational intelligence surfaces real-time insights without custom dashboards. One query replaces a dozen reports."
+          "OpenAI's Ultrafast tier runs GPT-5.6 Sol 14x faster, hitting 750 tokens/second. Built on Cerebras hardware, it's a speed-vs-cost play for production systems.",
+          "750 tokens per second changes the calculus: live transcription, interactive chat, streaming analytics all become practical. Speed premium matters in competitive markets.",
+          "New API tier means engineers can pick speed tradeoffs explicitly. Faster inference = lower latency costs, fewer timeout issues, better UX for real-time features."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Встраивание ИИ в инженерию и операции позволяет унифицировать разрозненные инструменты в единый слой интеллекта, сокращая переключение контекста и ускоряя циклы разработки.",
+        "headline": "Почему важно: ускорение вывода в 14 раз открывает дорогу реальным приложениям с низкой задержкой, где 750 токенов в секунду кардинально меняет экономику развёртывания.",
         "tweets": [
-          "RingCentral объединила рабочие процессы инженерии и операций через ChatGPT Work. Больше не нужно прыгать между Slack, Jira и документацией.",
-          "Интеграция Codex ускоряет генерацию и проверку кода. RingCentral видит сокращение времени между разработкой и продакшеном.",
-          "Единый слой операционного интеллекта выдаёт insights в реальном времени без кастомных дашбордов. Один запрос вместо дюжины отчётов."
+          "OpenAI запустила Ultrafast: GPT-5.6 Sol работает в 14 раз быстрее на железе Cerebras. 750 токенов в секунду — практический результат, не маркетинг.",
+          "Живая обработка становится реалистичной: транскрипция, интерактивный диалог, стриминг-аналитика. Задержка перестаёт быть преградой для production-систем.",
+          "Инженеры теперь могут выбирать баланс между скоростью и стоимостью явно. Быстрый вывод = низкая латенция, меньше таймаутов, лучше UX для real-time фич."
+        ]
+      }
+    },
+    {
+      "id": "d-sf3mqv",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+      "publishedAt": "2026-08-13T09:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenAI is restructuring revenue leadership to accelerate enterprise AI adoption and monetization across its growing product portfolio.",
+        "tweets": [
+          "OpenAI names Dali Rajic as CRO to lead global revenue ops. Enterprise AI adoption just got a dedicated executive owner.",
+          "CRO hire signals OpenAI shifting from product-first to revenue-first growth. Enterprise customers will likely see more tailored solutions.",
+          "Revenue leadership revamp typically precedes new pricing models or service tiers. Watch for expanded business offerings soon."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: OpenAI назначает нового главу по доходам, чтобы ускорить коммерциализацию решений для корпоративных клиентов.",
+        "tweets": [
+          "Дали Раджич возглавит глобальную команду доходов OpenAI. Это сигнал о том, что компания серьёзнее относится к монетизации.",
+          "Появление CRO означает переход от разработки продукта к стратегическому развитию бизнеса. Ждите новых тарифных планов.",
+          "Компания готовится расширить предложение для корпоративного сектора. Кадровые решения часто предшествуют крупным коммерческим сдвигам."
+        ]
+      }
+    },
+    {
+      "id": "d-1sbhwkh",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/13/alchemy-utils/",
+      "publishedAt": "2026-08-13T03:03:17.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: alchemy-utils 0.1a1 speeds up DuckDB exports and CSV imports, reducing data pipeline bottlenecks for analytics workflows.",
+        "tweets": [
+          "alchemy-utils 0.1a1 is out with performance improvements for DuckDB exports and CSV imports—faster data pipelines for analytics teams.",
+          "If you're moving data between DuckDB and CSVs, this release claims measurable speedups. Worth testing on your workflow.",
+          "Early alpha release means it's still being refined, but the focus on export/import performance targets a real pain point."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: alchemy-utils 0.1a1 ускоряет экспорт из DuckDB и импорт CSV, снижая узкие места в конвейерах обработки данных.",
+        "tweets": [
+          "Вышел alchemy-utils 0.1a1 с улучшениями производительности при экспорте DuckDB и импорте CSV—быстрее обработка данных аналитикам.",
+          "Если вы переносите данные между DuckDB и CSV, релиз обещает заметное ускорение. Стоит протестировать на своём коде.",
+          "Ранний альфа-релиз, ещё доводится, но сосредоточен на решении реальной проблемы с импортом-экспортом."
         ]
       }
     }
