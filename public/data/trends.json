@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T07:49:58.988Z",
+  "generatedAt": "2026-08-15T06:57:20.638Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -26,7 +26,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.68,
+      "momentum": -0.51,
       "weeklyCounts": [
         81,
         60,
@@ -34,9 +34,15 @@
         76,
         72,
         77,
-        25
+        38
       ],
       "signals": [
+        {
+          "title": "Don't classify. Hallucinate!",
+          "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+          "source": "simonw",
+          "publishedAt": "2026-08-14T21:54:35.000Z"
+        },
         {
           "title": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
           "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
@@ -60,12 +66,6 @@
           "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
           "source": "latent-space",
           "publishedAt": "2026-08-07T05:13:46.000Z"
-        },
-        {
-          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-          "source": "hf",
-          "publishedAt": "2026-05-14T18:55:01.000Z"
         }
       ]
     },
@@ -75,7 +75,7 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.57,
       "weeklyCounts": [
         411,
         420,
@@ -83,7 +83,7 @@
         449,
         458,
         466,
-        134
+        199
       ],
       "signals": [
         {
@@ -124,7 +124,7 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.57,
       "weeklyCounts": [
         14,
         11,
@@ -132,7 +132,7 @@
         14,
         4,
         7,
-        2
+        3
       ],
       "signals": [
         {
@@ -149,7 +149,7 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.57,
       "weeklyCounts": [
         21,
         21,
@@ -157,7 +157,7 @@
         21,
         21,
         21,
-        6
+        9
       ],
       "signals": [
         {
@@ -186,7 +186,7 @@
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.57,
       "weeklyCounts": [
         1,
         7,
@@ -194,7 +194,7 @@
         6,
         6,
         7,
-        2
+        3
       ],
       "signals": [
         {
@@ -211,7 +211,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.72,
+      "momentum": -0.58,
       "weeklyCounts": [
         375,
         358,
@@ -219,7 +219,7 @@
         414,
         398,
         396,
-        112
+        167
       ],
       "signals": [
         {
