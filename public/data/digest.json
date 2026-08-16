@@ -1,6 +1,52 @@
 {
-  "generatedAt": "2026-08-15T06:57:20.500Z",
+  "generatedAt": "2026-08-16T06:58:50.613Z",
   "items": [
+    {
+      "id": "d-14rg0ee",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/flue-2",
+      "publishedAt": "2026-08-15T15:46:22.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Flue 2 brings React-style hooks to agent development, making agents dynamic and composable instead of static configurations.",
+        "tweets": [
+          "Flue 2 ditched file-based routing for React-style hooks. Agents now manage state, adapt in real-time, and compose capabilities dynamically. Most customers build one agent, not five routes.",
+          "16 built-in hooks (useSkill, useTool, useSubagent) let support bots verify users first, then unlock account tools. Configuration changes mid-conversation based on context.",
+          "Fred Schott realized React's composability beats Next.js concepts for agents. The harness matters more than routing. Flue runs on Pi, an open minimal foundation."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Flue 2 добавляет React-стиль хуки для агентов, делая их динамичными и композируемыми вместо статических конфигураций.",
+        "tweets": [
+          "Flue 2 отказался от файловой маршрутизации в пользу React-хуков. Агенты управляют состоянием, адаптируются в реальном времени, динамически добавляют возможности. Большинство клиентов строят один агент.",
+          "16 встроенных хуков (useSkill, useTool, useSubagent) позволяют боту поддержки сначала проверить пользователя, потом дать доступ к инструментам аккаунта. Конфигурация меняется во время диалога.",
+          "Фред Шотт понял, что композируемость React подходит для агентов лучше, чем концепции Next.js. Harness важнее маршрутизации. Flue работает на основе Pi, минимального открытого фреймворка."
+        ]
+      }
+    },
+    {
+      "id": "d-z2iqtc",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/15/cors-chat/",
+      "publishedAt": "2026-08-15T14:49:54.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: A browser-based chat UI that works with any OpenAI-compatible endpoint lets you test local and remote LLMs without backend friction.",
+        "tweets": [
+          "CORS Chat is a web UI for testing OpenAI-compatible chat endpoints. Works with LM Studio, OpenRouter, and other compatible servers.",
+          "Conversations auto-save in browser storage and export as JSON. Built to test Qwen 3.8 27B locally on M5 MacBook and NVIDIA DGX.",
+          "Clever detail: detects SVG generation mid-stream and renders images progressively as tokens arrive, not waiting for completion."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Веб-интерфейс для чата, совместимый с любой OpenAI-подобной API, позволяет тестировать локальные и удалённые модели без лишних сложностей.",
+        "tweets": [
+          "CORS Chat — это веб-интерфейс для тестирования эндпоинтов чата, совместимых с OpenAI. Работает с LM Studio, OpenRouter и другими сервисами.",
+          "Диалоги автоматически сохраняются в браузере и экспортируются как JSON. Создан для тестирования Qwen 3.8 27B локально на M5 MacBook и NVIDIA DGX.",
+          "Интересная деталь: замечает SVG во время генерации и отрисовывает изображения прогрессивно, не ожидая завершения потока токенов."
+        ]
+      }
+    },
     {
       "id": "d-1t12f6y",
       "source": "simonw",
@@ -8,19 +54,19 @@
       "publishedAt": "2026-08-15T03:22:00.000Z",
       "category": "biotech",
       "en": {
-        "headline": "Why it matters: A single Northern Gannet has survived 14 years in the Pacific, thousands of miles from its Atlantic home, revealing unexpected resilience in ocean birds.",
+        "headline": "Why it matters: A single Northern Gannet thriving 2,000 miles from its natural Atlantic range reveals how climate shifts and ocean currents are reshaping marine wildlife distribution.",
         "tweets": [
-          "Morris the gannet is the only known Northern Gannet in the entire Pacific Ocean. He arrived at the Farallon Islands 14 years ago and now lives at Pillar Point Harbor near San Francisco.",
-          "A white bird with a yellow head hanging with black cormorants makes Morris instantly recognizable. He's become a local celebrity, easy to spot near the harbor sign from the commercial pier.",
-          "Morris survived 14 years on the wrong ocean. His presence raises questions about how seabirds navigate, adapt to new ecosystems, and what drives long-distance colonization."
+          "Morris the gannet has lived 14 years in California's Pacific waters—the only known Atlantic gannet on this coast. Species boundaries are blurring faster than taxonomists can track them.",
+          "One bird surviving solo in the wrong ocean challenges assumptions about habitat requirements. Climate change may be opening new niches faster than we understand the consequences.",
+          "Pillar Point Harbor became Morris's home by accident or necessity. What starts as a rare sighting could signal the leading edge of range expansion for Atlantic seabirds."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Одиночный северный олуша выжил 14 лет в Тихом океане, в тысячах километров от своего атлантического дома, раскрывая неожиданную живучесть морских птиц.",
+        "headline": "Почему важно: Одна северная олуша, выжившая в Тихом океане за 2000 км от своего ареала, показывает, как климатические сдвиги перестраивают распределение морской фауны.",
         "tweets": [
-          "Моррис — единственный известный северный олуша во всём Тихом океане. Он прибыл на Фаралоновы острова 14 лет назад и теперь живёт в гавани Пиллар-Пойнт рядом с Сан-Франциско.",
-          "Белая птица с жёлтой головой среди чёрных бакланов моментально узнаётся. Моррис стал местной знаменитостью, его легко увидеть у пирса у знака гавани.",
-          "Моррис прожил 14 лет в чужом океане. Его присутствие ставит вопросы о навигации птиц, адаптации к новым экосистемам и факторах дальней колонизации."
+          "Моррис прожил 14 лет в водах Калифорнии—единственная атлантическая олуша на тихоокеанском побережье. Видовые границы размываются быстрее, чем мы их описываем.",
+          "Одна птица, выжившая в чужом океане, заставляет пересмотреть представления об условиях обитания. Климат меняет доступные ниши быстрее, чем мы понимаем последствия.",
+          "Морс мог прибыть случайно или вынужденно, но теперь Пилар Пойнт—его дом. Редкое наблюдение может быть началом расширения ареала атлантических птиц на запад."
         ]
       }
     },
@@ -31,19 +77,19 @@
       "publishedAt": "2026-08-14T21:54:35.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Skip expensive tag matching by having LLMs invent tags, then map them to your existing vocabulary via embeddings—solves the scaling problem for untagged content.",
+        "headline": "Why it matters: Instead of forcing LLMs to pick from thousands of existing tags, have them invent relevant ones, then match those inventions to your actual vocabulary using embeddings—scalable tagging without constraint.",
         "tweets": [
-          "Instead of feeding 1,856 tags to an LLM (expensive, slow), ask it to invent relevant tags freely, then use vector embeddings to find the closest real tags in your corpus.",
-          "Show the model examples of your tag structure (hierarchical paths, style, granularity) so its hallucinations are actually useful and semantically aligned with your vocabulary.",
-          "This dodge trades expensive token math for cheaper embedding similarity search. Works especially well for legacy content where manual tagging is too tedious."
+          "Stop asking LLMs to choose from massive tag vocabularies. Have them hallucinate what tags should exist, then use vector embeddings to find your real tags closest to their ideas.",
+          "The trick: show the model your tag structure by example, let it generate freely, then semantic search maps its output to your actual corpus. Works at scale without feeding thousands of options.",
+          "Doug Turnbull's approach sidesteps the constraint problem entirely. LLMs are better at creative generation than forced choice from huge lists. Embeddings do the grounding work."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Вместо скармливания всех тегов в LLM позвольте модели придумать релевантные теги, а потом найдите похожие реальные теги через embedding—это решает проблему масштабирования.",
+        "headline": "Почему важно: Вместо того чтобы заставлять LLM выбирать из тысяч существующих тегов, дайте ей придумать нужные, а потом сопоставьте эти придумки с реальным словарём через embeddings—масштабируемая разметка без ограничений.",
         "tweets": [
-          "Попросите LLM фантазировать над тегами вместо выбора из 1,856 вариантов. Потом embeddings найдут ближайшие реальные теги из вашего словаря за копейки.",
-          "Покажите модели примеры структуры ваших тегов (иерархия, стиль, детализация), чтобы фантазии модели совпадали с вашим реальным словарём.",
-          "Выигрыш: дешевле по токенам, чем кормить всё сразу. Отлично работает для старого контента, где ручное тегирование—пытка."
+          "Не просите LLM выбирать из огромного словаря тегов. Пусть она придумает, какие теги должны быть, а вы найдёте через embeddings самые близкие к её идеям реальные теги.",
+          "Суть метода: покажите модели структуру тегов на примерах, дайте ей творить свободно, потом семантический поиск привяжет результат к вашему корпусу. Работает в масштабе без перечисления тысяч вариантов.",
+          "Подход Дага Тёрнбулла обходит проблему ограничений. LLM лучше генерируют креативно, чем выбирают из больших списков. Embeddings делают якорение в реальность."
         ]
       }
     },
@@ -54,19 +100,19 @@
       "publishedAt": "2026-08-14T05:30:39.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Gemini 3.7 Flash closes the performance gap with Claude and GPT's latest models, reshaping the competitive landscape for fast inference.",
+        "headline": "Why it matters: Google's Gemini 3.7 Flash closes a widening performance gap against Claude and GPT, signaling renewed competition in the fast-inference model tier.",
         "tweets": [
-          "Gemini 3.7 Flash benchmarks show Google finally catching up to Claude 4.8+ and GPT 5.5+ on speed-to-capability tradeoff. The older Flash versions had visibly fallen behind.",
-          "GDM (likely a proprietary metric) gets a meaningful boost. This matters because fastest models often compromise on reasoning—3.7 Flash appears to break that pattern.",
-          "Three-way AI race just got tighter. When all top labs ship comparable speed and quality, differentiation shifts to deployment, cost, and reliability rather than raw capability."
+          "Gemini 3.7 Flash shows measurable gains over 3.5/3.6 versions. Google's catching up to Claude 4.8+ and GPT 5.5+ on the speed-vs-quality tradeoff that matters for production.",
+          "Fast inference models are the actual battleground now. Everyone ships these at scale; the gap here determines whether your API bill stays reasonable.",
+          "GDM (Grok Diffusion Model?) benchmarks back in focus. When your cheaper models start winning benchmarks again, it changes deployment economics for companies choosing inference providers."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Gemini 3.7 Flash закрывает разрыв в производительности с последними версиями Claude и GPT, переформатируя конкуренцию в сегменте быстрого вывода.",
+        "headline": "Почему важно: Gemini 3.7 Flash сокращает отставание от Claude и GPT, обостряя конкуренцию в сегменте быстрых моделей для боевого применения.",
         "tweets": [
-          "Gemini 3.7 Flash наконец-то сравнялась с Claude 4.8+ и GPT 5.5+ по соотношению скорость-качество. Старые версии Flash явно отставали и это было заметно на графиках.",
-          "GDM получает значимое улучшение. Это важно, потому что самые быстрые модели часто теряют в рассуждениях—3.7 Flash похоже разрушает этот паттерн.",
-          "Трёхсторонняя гонка ИИ ужесточилась. Когда все лидеры выпускают сопоставимые скорость и качество, преимущество переходит к развёртыванию, цене и надёжности вместо сырой мощи."
+          "Gemini 3.7 Flash показывает рост производительности против 3.5/3.6. Google догоняет Claude 4.8+ и GPT 5.5+ в балансе скорость-качество, критичном для промышленного использования.",
+          "Быстрые модели вывода — реальное поле боя. Все их масштабируют; разница здесь определяет стоимость API и выбор провайдера для компаний.",
+          "Бенчмарки GDM вернулись в фокус. Когда дешёвые модели вновь побеждают в тестах, это меняет экономику развёртывания для клиентов крупных сервисов."
         ]
       }
     },
@@ -77,19 +123,19 @@
       "publishedAt": "2026-08-14T00:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Open source AI models are now competitive with closed alternatives on most benchmarks, reshaping how enterprises choose between proprietary and community-built systems.",
+        "headline": "Why it matters: Open models are now competitive with closed systems on most benchmarks, forcing a shift in how AI capabilities are distributed and monetized.",
         "tweets": [
-          "Open models now match or beat closed APIs on standard evals. Cost and latency advantages mean enterprises can finally justify moving inference in-house instead of paying per token.",
-          "Model fragmentation is real: 50+ viable architectures in circulation, each optimized for different hardware constraints. Winners aren't decided by capability alone anymore.",
-          "Fine-tuning on consumer GPUs is now the norm. A team with a $5K budget can adapt a base model faster than waiting for closed-model API improvements."
+          "Open models hit parity with frontier closed models on standard benchmarks this summer. The gap that existed 18 months ago is effectively closed for most use cases.",
+          "Fine-tuning and retrieval augmentation made open models practical for production. Raw model quality matters less than integration architecture now.",
+          "Model size consolidation accelerated: 7B and 13B models handle 80% of real-world tasks. Bigger isn't always better when you can optimize deployment."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Open source модели теперь не уступают закрытым системам по метрикам качества, что меняет выбор предприятий в пользу независимых разработок вместо проприетарных решений.",
+        "headline": "Почему важно: открытые модели достигли паритета с закрытыми системами по большинству метрик, что переформатирует распределение AI-возможностей и бизнес-модели.",
         "tweets": [
-          "Открытые модели сравнялись с закрытыми по тестам. Экономия на задержке и стоимости токена позволяет компаниям запускать инференс локально вместо платёжек за API.",
-          "На рынке более 50 жизнеспособных архитектур, каждая оптимизирована под разное железо. Победители определяются не только качеством, но и практической применимостью.",
-          "Дообучение моделей на обычных GPU стало стандартом. Команда с бюджетом $5K адаптирует базовую модель быстрее, чем получит ответ от разработчиков закрытой системы."
+          "Открытые модели сравнялись с фронтиерными закрытыми по стандартным тестам. Разрыв, существовавший 18 месяцев назад, практически исчез для основных задач.",
+          "Fine-tuning и retrieval augmentation сделали открытые модели боевыми для production. Качество сырой модели теперь менее важно, чем архитектура интеграции.",
+          "Размер моделей стабилизировался: 7B и 13B решают 80% реальных задач. Больший размер уже не гарантирует преимущество при грамотной оптимизации."
         ]
       }
     },
@@ -100,19 +146,19 @@
       "publishedAt": "2026-08-13T23:53:47.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: sqlite-utils 4.2.1 fixes a crash caused by a missing dependency declaration that went undetected in testing.",
+        "headline": "Why it matters: sqlite-utils 4.2.1 fixes a crash caused by a missing dependency declaration, and introduces better isolation testing to catch similar packaging issues early.",
         "tweets": [
-          "sqlite-utils 4.2 broke when installed standalone via uvx because typing-extensions wasn't declared as a dependency, only hidden in dev dependencies.",
-          "The fix: use 'uv run --isolated --no-default-groups' to smoke-test CLI tools without dev deps and catch these gaps before release.",
-          "Key lesson: dev dependency groups can mask missing runtime dependencies. Explicit isolation testing prevents silent failures in production installs."
+          "sqlite-utils 4.2 crashed because typing_extensions wasn't listed as a direct dependency—it was hidden in dev deps. 4.2.1 fixes it.",
+          "New smoke test workflow: 'uv run --isolated --no-default-groups sqlite-utils --help' catches missing deps without relying on dev environment cruft.",
+          "Lesson: transitive dependencies can masquerade as optional. Explicit dependency declarations + isolated test runs prevent silent breakage for end users."
         ]
       },
       "ru": {
-        "headline": "Почему важно: sqlite-utils 4.2.1 исправляет крах из-за незадекларированной зависимости, которая не обнаружилась при тестировании.",
+        "headline": "Почему важно: sqlite-utils 4.2.1 исправляет крах из-за пропущенного объявления зависимости и добавляет тесты изоляции для ловли подобных проблем упаковки.",
         "tweets": [
-          "sqlite-utils 4.2 ломалось при прямой установке через uvx, потому что typing-extensions не был указан зависимостью, а только скрывался в dev-группе.",
-          "Решение: используйте 'uv run --isolated --no-default-groups' для проверки CLI без dev-зависимостей и ловите такие баги перед релизом.",
-          "Вывод: dev-группы могут скрывать недостающие runtime-зависимости. Изолированное тестирование предотвращает тихие ошибки при установке."
+          "sqlite-utils 4.2 падал потому что typing_extensions не был указан прямой зависимостью — он скрывался в dev dependencies. Версия 4.2.1 это исправляет.",
+          "Новый smoke-тест: 'uv run --isolated --no-default-groups sqlite-utils --help' ловит пропущенные зависимости без полагания на мусор из dev окружения.",
+          "Урок: транзитивные зависимости могут выглядеть опциональными. Явное объявление зависимостей плюс изолированные тесты предотвращают скрытые поломки для пользователей."
         ]
       }
     },
@@ -123,19 +169,19 @@
       "publishedAt": "2026-08-13T20:11:29.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: sqlite-utils 4.2 makes complex database schema changes safer by preserving constraints and metadata that previously got lost during table transformations.",
+        "headline": "Why it matters: sqlite-utils 4.2 makes complex database schema changes reliable by preserving constraints and metadata that previously got lost during table transformations.",
         "tweets": [
-          "sqlite-utils 4.2 upgrades table.transform() to handle edge cases: check constraints, unique constraints, and column comments now survive alter table operations instead of vanishing.",
-          "The new version adds introspection properties for check constraints, giving developers better visibility into what schema constraints actually exist on their tables.",
-          "transform() still works by creating a fresh table and copying data over, but now preserves the full schema definition instead of leaving behind broken constraints."
+          "sqlite-utils 4.2 transforms() now preserves check constraints, unique constraints, and column comments when rebuilding tables. Complex alter operations that previously lost schema details now work safely.",
+          "New introspection properties let you inspect check constraints programmatically. Means you can audit and manipulate database schemas without manual SQL wrangling.",
+          "table.transform() recreates tables from scratch to support alter operations SQLite doesn't natively allow. 4.2 handles the edge cases—comments, constraints, metadata—that broke before."
         ]
       },
       "ru": {
-        "headline": "Почему важно: sqlite-utils 4.2 делает сложные изменения схемы БД безопаснее, сохраняя ограничения и метаданные, которые раньше теряются при трансформации таблиц.",
+        "headline": "Почему важно: sqlite-utils 4.2 делает сложные изменения схемы БД надёжными, сохраняя ограничения и метаданные, которые раньше теряли при трансформации таблиц.",
         "tweets": [
-          "sqlite-utils 4.2 улучшил table.transform(): проверочные ограничения, уникальные ограничения и комментарии к колонкам теперь сохраняются при операциях alter table вместо того чтобы исчезать.",
-          "Новая версия добавила свойства интроспекции для check constraints, давая разработчикам лучше видеть какие ограничения схемы действительно существуют в таблице.",
-          "transform() по-прежнему создаёт новую таблицу и копирует данные, но теперь сохраняет полное определение схемы вместо потери ограничений."
+          "transform() теперь не теряет check constraints, unique constraints и комментарии к колонкам при перестроении таблиц. Операции, которые раньше уничтожали метаданные, теперь работают безопасно.",
+          "Новые свойства интроспекции позволяют программно читать check constraints. Больше не нужно вручную писать SQL для проверки и изменения схемы БД.",
+          "transform() пересоздаёт таблицы с нуля, чтобы поддержать операции, которые SQLite не поддерживает нативно. 4.2 справляется с граничными случаями—комментариями, ограничениями, метаданными."
         ]
       }
     },
@@ -146,19 +192,19 @@
       "publishedAt": "2026-08-13T19:37:34.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: llm-gemini plugin now supports Gemini 3.7 Flash and embedding models, with reasoning traces and server-side tool execution via the LLM CLI.",
+        "headline": "Why it matters: llm-gemini plugin now supports Gemini 3.7 Flash and reasoning traces, making it easier to debug AI decisions through a command-line interface.",
         "tweets": [
-          "llm-gemini 0.33 adds Gemini 3.7 Flash, 3.6 Flash, 3.5 Flash-lite, and two embedding models. Compatible with LLM 0.32 for reasoning trace visibility.",
-          "New server-side tool execution: llm -m gemini-3.7-flash -T CodeExecution lets you run Python directly. Try: 'use python to calculate (factorial of 13) * 3'",
-          "Gemini 3.7 Flash removes 'minimal' thinking effort option from 3.6. High reasoning effort still produces capable outputs (tested on pelican SVG art)."
+          "llm-gemini 0.33 adds Gemini 3.7 Flash support plus reasoning traces you can inspect. New server-side tools let you run Python directly: llm -m gemini-3.7-flash -T CodeExecution.",
+          "Plugin now compatible with LLM 0.32. Access to embedding models gemini-embedding-2 and gemini-embedding-001, plus gemini-3.6-flash and gemini-3.5-flash-lite variants.",
+          "Gemini 3.7 drops 'minimal' thinking effort option, leaving medium and high. Useful for balancing speed vs reasoning depth when tackling complex problems."
         ]
       },
       "ru": {
-        "headline": "Почему важно: плагин llm-gemini теперь поддерживает Gemini 3.7 Flash, трассировку рассуждений и выполнение инструментов на сервере через CLI.",
+        "headline": "Почему важно: плагин llm-gemini теперь поддерживает Gemini 3.7 Flash и трассировку рассуждений, облегчая отладку решений ИИ через командную строку.",
         "tweets": [
-          "llm-gemini 0.33 добавляет поддержку Gemini 3.7 Flash, 3.6 Flash, 3.5 Flash-lite и двух моделей эмбеддинга. Совместим с LLM 0.32 для отображения трассировки рассуждений.",
-          "Выполнение инструментов на сервере: llm -m gemini-3.7-flash -T CodeExecution запускает Python напрямую. Пример: (факториал 13) * 3.",
-          "В Gemini 3.7 Flash убрана опция 'minimal' для уровня рассуждений. Высокий уровень рассуждений по-прежнему дает качественные результаты."
+          "llm-gemini 0.33 добавил Gemini 3.7 Flash и видимые трассы рассуждений. Серверные инструменты запускают Python напрямую: llm -m gemini-3.7-flash -T CodeExecution.",
+          "Совместимость с LLM 0.32. Доступ к моделям эмбеддинга gemini-embedding-2 и gemini-embedding-001, плюс варианты gemini-3.6-flash и gemini-3.5-flash-lite.",
+          "Gemini 3.7 убрал опцию 'minimal' для глубины рассуждений. Остались только medium и high для баланса между скоростью и сложностью анализа."
         ]
       }
     },
@@ -169,65 +215,19 @@
       "publishedAt": "2026-08-13T17:16:04.000Z",
       "category": "robotics",
       "en": {
-        "headline": "Why it matters: End-to-end robot training pipelines now exist where you record real-world data, train models, and deploy them without leaving one platform.",
+        "headline": "Why it matters: A unified platform for robot learning eliminates data silos, cutting weeks of pipeline engineering to get robots from real-world data to deployed policies.",
         "tweets": [
-          "Strands Agents + LeRobot + HF Storage create a complete loop: record robot actions in the field, stream data directly to training, deploy updated models—no manual file shuffling.",
-          "Real robot data flows straight from hardware to training infrastructure to production. Cuts iteration time and eliminates the bottleneck of moving terabytes between tools.",
-          "This workflow matters because scaling robotics requires fast feedback cycles. You can now test policy changes on real robots within hours instead of days."
+          "Strands + LeRobot + HF Buckets = single workflow: record robot actions, train policies, deploy—no manual data shuffling between tools.",
+          "Real-world robot data stays streaming-ready; no conversion bottlenecks. Engineers focus on training, not infrastructure plumbing.",
+          "Open-source LeRobot models train on unified datasets; easier to share reproducible robot behaviors across teams and organizations."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Роботы теперь можно обучать в едином конвейере—записывать действия, тренировать модели и развёртывать их в одной системе без ручной переделки данных.",
+        "headline": "Почему важно: Единая платформа для обучения роботов устраняет разрозненность данных, сокращая недели инженерной работы от реальных данных к развёрнутым политикам поведения.",
         "tweets": [
-          "Strands Agents + LeRobot + хранилище HF создают замкнутый цикл: робот записывает действия, данные идут прямо на обучение, обновлённая модель развёртывается автоматически.",
-          "Данные реальных роботов не прыгают между инструментами. Вместо этого один поток от железа к обучению к продакшену. Экономия времени и исключение узких мест при передаче терабайт.",
-          "Для масштабирования робототехники нужны быстрые циклы обратной связи. Теперь можно тестировать изменения политик на реальных роботах за часы, а не дни."
-        ]
-      }
-    },
-    {
-      "id": "d-1a8ual3",
-      "source": "deepmind",
-      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
-      "publishedAt": "2026-08-13T17:04:18.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Gemini 3.7 Flash trades some capability for speed and cost, making advanced AI accessible to more developers building real-time applications.",
-        "tweets": [
-          "Gemini 3.7 Flash cuts latency and inference costs significantly vs larger models while handling complex reasoning, multimodal input, and 100K token context.",
-          "Optimized for production use cases: real-time chat, search summaries, code generation. Speed boost lets you serve more users on same compute budget.",
-          "Not a replacement for full Gemini Pro—trades 5-10% accuracy on complex tasks for 3-5x faster responses. Know your tradeoff before switching."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Gemini 3.7 Flash жертвует частью возможностей ради скорости и дешевизны, давая разработчикам доступ к продвинутому ИИ для приложений реального времени.",
-        "tweets": [
-          "Gemini 3.7 Flash снижает задержку и стоимость инференса против больших моделей, справляясь со сложной логикой, мультимодальными данными и контекстом в 100K токенов.",
-          "Оптимизирован для production: реал-тайм чаты, сводки поиска, генерация кода. Ускорение позволяет обслужить больше пользователей на том же железе.",
-          "Не замена Pro—теряет 5-10% точности на сложных задачах ради ускорения в 3-5 раз. Выбирайте модель осознанно в зависимости от ваших нужд."
-        ]
-      }
-    },
-    {
-      "id": "d-1fo6fsj",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/builders-guide-to-gpt-5-6",
-      "publishedAt": "2026-08-13T11:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: GPT-5.6's Responses API and improved model selection let startups cut inference costs while deploying smarter agents faster.",
-        "tweets": [
-          "GPT-5.6 Responses API simplifies building AI agents by handling structured outputs natively—no more wrestling with JSON parsing.",
-          "Smart model selection routes requests to the right GPT version automatically, cutting costs 40-60% without sacrificing quality.",
-          "Startups report 3x faster agent deployment when switching from GPT-4 to GPT-5.6, freeing engineering time for product features."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: API Responses и умный выбор моделей в GPT-5.6 помогают стартапам снизить затраты на инференс и развертывать агентов быстрее.",
-        "tweets": [
-          "Responses API в GPT-5.6 натурально выдает структурированный вывод—можно забыть о костылях с парсингом JSON.",
-          "Автоматическая маршрутизация запросов к нужной версии модели экономит 40-60% на расходах без потери качества.",
-          "Стартапы развертывают агентов в 3 раза быстрее на GPT-5.6, высвобождая инженеров для разработки фич вместо отладки."
+          "Strands + LeRobot + HF Buckets = один workflow: запись действий робота, обучение, развёртывание—без ручной передачи данных между инструментами.",
+          "Данные реальных роботов готовы к потоковой передаче; нет узких мест при конвертации. Инженеры сосредоточены на обучении, не на инфраструктуре.",
+          "Open-source модели LeRobot учатся на едином наборе данных; проще делиться воспроизводимым поведением роботов между командами."
         ]
       }
     }
