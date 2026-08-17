@@ -1,6 +1,75 @@
 {
-  "generatedAt": "2026-08-16T06:58:50.613Z",
+  "generatedAt": "2026-08-17T07:16:05.057Z",
   "items": [
+    {
+      "id": "d-c3ckkp",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+      "publishedAt": "2026-08-16T23:59:37.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Converting animated SVGs to shareable formats (MP4, PNG, JPEG) in the browser solves the real problem of posting graphics on platforms that don't support vector animation.",
+        "tweets": [
+          "markdown-svg-renderer now converts animated SVGs to MP4 video in your browser using ffmpeg.wasm. No server needed, just paste markdown or a GitHub Gist URL.",
+          "New MP4 export tab detects SVG animations, guesses loop duration, renders frames, and compiles them into video using WebAssembly FFMPEG. Practical workaround for platform limitations.",
+          "Also exports SVGs as PNG/JPEG in browser. Bookmarkable URLs let you share rendered markdown documents with embedded graphics that actually work everywhere."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Конвертирование анимированных SVG в общедоступные форматы (MP4, PNG, JPEG) прямо в браузере решает проблему публикации графики на платформах без поддержки векторной анимации.",
+        "tweets": [
+          "markdown-svg-renderer теперь преобразует анимированные SVG в видео MP4 в браузере через ffmpeg.wasm. Просто вставьте markdown или ссылку на GitHub Gist, сервер не нужен.",
+          "Новая вкладка MP4 автоматически определяет анимацию в SVG, угадывает длину цикла, рендерит кадры и компилирует их в видео через WebAssembly FFMPEG.",
+          "Также экспортирует SVG как PNG и JPEG прямо в браузере. Закладываемые URL позволяют делиться документами с встроенной графикой, которая работает везде."
+        ]
+      }
+    },
+    {
+      "id": "d-180bgcs",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "publishedAt": "2026-08-16T22:00:39.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Qwen 3.8 27B runs locally on consumer hardware with excellent vision capabilities, but its default 'xhigh' reasoning mode wastes compute on overthinking simple tasks.",
+        "tweets": [
+          "Qwen 3.8 27B is a solid 27B vision model that runs on a MacBook Pro or modest GPU. Problem: it defaults to 'xhigh' reasoning effort, burning 20+ minutes on trivial SVG requests.",
+          "Switch reasoning_effort to 'low' or 'medium'. Same model, 2 minutes instead of 21. The xhigh default is entertaining but impractical for local inference on consumer hardware.",
+          "Vision strength: exceptional at bounding box detection. Tested on pelican photos, returned pixel-perfect JSON coordinates. Worth evaluating for structured vision tasks despite the overthinking default."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Qwen 3.8 27B работает локально на обычных компьютерах с хорошей поддержкой зрения, но стандартная настройка 'xhigh' заставляет модель пережёвывать простые задачи.",
+        "tweets": [
+          "Qwen 3.8 27B — это 27-миллиардная модель с поддержкой изображений, которая работает на MacBook Pro или скромном GPU. Минус: по умолчанию режим 'xhigh' требует 20+ минут даже на тривиальные запросы.",
+          "Переключите reasoning_effort на 'low' или 'medium' и получите результат за 2 минуты вместо 21. Стандартное значение xhigh забавно, но практически бесполезно для локального вывода на потребительском железе.",
+          "Сильная сторона: исключительная точность в определении bounding box на фото. Протестирована на пеликанах — возвращает идеальные координаты в JSON. Стоит рассмотреть для структурированных задач зрения."
+        ]
+      }
+    },
+    {
+      "id": "d-55hzg2",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
+      "publishedAt": "2026-08-16T15:05:36.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Public distrust of AI stems from decades of broken promises by institutions, not from risk warnings—and marketing won't fix it.",
+        "tweets": [
+          "Dario Amodei: AI's image problem isn't caused by safety warnings. It's a deeper crisis of trust in companies and governments that predates AI by decades.",
+          "Positive spin campaigns don't work when people hear 'AI cures cancer' as corporate speak. Actual delivered benefits—not messaging—rebuild trust.",
+          "Anthropic's real liability: unfulfilled promises to benefit society. That's what deserves criticism, not debates over PR strategy."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Недоверие к ИИ — это не результат предупреждений об опасности, а следствие десятилетнего кризиса доверия к институтам.",
+        "tweets": [
+          "Дарио Амодеи: проблема с имиджем ИИ вызвана не предупреждениями о рисках, а глубоким недоверием к компаниям и правительствам, существующим задолго до ИИ.",
+          "Позитивный спин не работает, когда люди слышат 'ИИ лечит рак' как корпоративную риторику. Нужны реальные результаты, а не пиар.",
+          "Главная проблема Anthropic: невыполненные обещания принести пользу обществу. Это то, что нужно критиковать, а не стратегию коммуникации."
+        ]
+      }
+    },
     {
       "id": "d-14rg0ee",
       "source": "latent-space",
@@ -8,19 +77,19 @@
       "publishedAt": "2026-08-15T15:46:22.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Flue 2 brings React-style hooks to agent development, making agents dynamic and composable instead of static configurations.",
+        "headline": "Why it matters: Flue 2 applies React's proven composability pattern to agents, letting them adapt dynamically at runtime instead of staying static—a fundamental shift from today's rigid agent frameworks.",
         "tweets": [
-          "Flue 2 ditched file-based routing for React-style hooks. Agents now manage state, adapt in real-time, and compose capabilities dynamically. Most customers build one agent, not five routes.",
-          "16 built-in hooks (useSkill, useTool, useSubagent) let support bots verify users first, then unlock account tools. Configuration changes mid-conversation based on context.",
-          "Fred Schott realized React's composability beats Next.js concepts for agents. The harness matters more than routing. Flue runs on Pi, an open minimal foundation."
+          "Flue 2 brings React hooks to agents. Agents now re-render on every turn, manage their own state, and adapt in real-time. Support bots can actually do triage instead of following pre-baked scripts.",
+          "Fred Schott realized: no one's built the React for agents yet. Flue 2 has 16 built-in hooks (useSkill, useTool, useSubagent) plus custom hooks. Composability, not routing, is the core.",
+          "Key insight: an agent *needs* a harness—an environment with context and capabilities. Flue 2 treats this as foundational, not a feature. Built on Pi (minimal harness) with Vite tooling."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Flue 2 добавляет React-стиль хуки для агентов, делая их динамичными и композируемыми вместо статических конфигураций.",
+        "headline": "Почему важно: Flue 2 применяет проверенную композабельность React к агентам, позволяя им адаптироваться на лету вместо статичных сценариев—фундаментальный сдвиг в разработке агентов.",
         "tweets": [
-          "Flue 2 отказался от файловой маршрутизации в пользу React-хуков. Агенты управляют состоянием, адаптируются в реальном времени, динамически добавляют возможности. Большинство клиентов строят один агент.",
-          "16 встроенных хуков (useSkill, useTool, useSubagent) позволяют боту поддержки сначала проверить пользователя, потом дать доступ к инструментам аккаунта. Конфигурация меняется во время диалога.",
-          "Фред Шотт понял, что композируемость React подходит для агентов лучше, чем концепции Next.js. Harness важнее маршрутизации. Flue работает на основе Pi, минимального открытого фреймворка."
+          "Flue 2 привносит React hooks в агентов. Агенты перерендерятся на каждом ходу, управляют состоянием и адаптируются в реальном времени. Support-боты теперь могут настоящим трейдингом заниматься.",
+          "Фред Шотт понял: никто ещё не создал React для агентов. Flue 2 имеет 16 встроенных hooks (useSkill, useTool, useSubagent) плюс кастомные. Композиция, не роутинг, в основе.",
+          "Ключное понимание: агент нуждается в harness—окружении с контекстом и возможностями. Flue 2 делает это фундаментом, не фичей. Построен на Pi с Vite."
         ]
       }
     },
@@ -31,19 +100,19 @@
       "publishedAt": "2026-08-15T14:49:54.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: A browser-based chat UI that works with any OpenAI-compatible endpoint lets you test local and remote LLMs without backend friction.",
+        "headline": "Why it matters: Testing local and remote LLMs just got easier—CORS Chat lets you swap between different model endpoints without rewriting your setup.",
         "tweets": [
-          "CORS Chat is a web UI for testing OpenAI-compatible chat endpoints. Works with LM Studio, OpenRouter, and other compatible servers.",
-          "Conversations auto-save in browser storage and export as JSON. Built to test Qwen 3.8 27B locally on M5 MacBook and NVIDIA DGX.",
-          "Clever detail: detects SVG generation mid-stream and renders images progressively as tokens arrive, not waiting for completion."
+          "Built a web UI for testing OpenAI-compatible chat endpoints. Works with LM Studio locally or OpenRouter remotely. Conversations auto-save in browser.",
+          "SVG generation streams progressively in real-time. You watch images render token-by-token as the model generates them, not after completion.",
+          "Export full conversation history as JSON. Tested against M5 MacBook and NVIDIA DGX. CORS flag handles the usual cross-origin headaches."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Веб-интерфейс для чата, совместимый с любой OpenAI-подобной API, позволяет тестировать локальные и удалённые модели без лишних сложностей.",
+        "headline": "Почему важно: Тестирование локальных и облачных LLM стало проще—CORS Chat позволяет переключаться между разными endpoint'ами без переделки инфраструктуры.",
         "tweets": [
-          "CORS Chat — это веб-интерфейс для тестирования эндпоинтов чата, совместимых с OpenAI. Работает с LM Studio, OpenRouter и другими сервисами.",
-          "Диалоги автоматически сохраняются в браузере и экспортируются как JSON. Создан для тестирования Qwen 3.8 27B локально на M5 MacBook и NVIDIA DGX.",
-          "Интересная деталь: замечает SVG во время генерации и отрисовывает изображения прогрессивно, не ожидая завершения потока токенов."
+          "Веб-интерфейс для тестирования OpenAI-совместимых чат-endpoint'ов. Работает с локальным LM Studio или удалённым OpenRouter.",
+          "SVG-изображения рендерятся прогрессивно прямо во время генерации. Видишь, как картинка строится токен за токеном в реальном времени.",
+          "Экспортируй историю диалога в JSON. Протестировано на M5 MacBook и NVIDIA DGX. CORS флаг решает проблемы с cross-origin запросами."
         ]
       }
     },
@@ -54,19 +123,19 @@
       "publishedAt": "2026-08-15T03:22:00.000Z",
       "category": "biotech",
       "en": {
-        "headline": "Why it matters: A single Northern Gannet thriving 2,000 miles from its natural Atlantic range reveals how climate shifts and ocean currents are reshaping marine wildlife distribution.",
+        "headline": "Why it matters: A single Northern Gannet has survived 14 years in the Pacific Ocean—thousands of miles from its Atlantic home—revealing how climate shifts and ocean currents can reshape wildlife distribution.",
         "tweets": [
-          "Morris the gannet has lived 14 years in California's Pacific waters—the only known Atlantic gannet on this coast. Species boundaries are blurring faster than taxonomists can track them.",
-          "One bird surviving solo in the wrong ocean challenges assumptions about habitat requirements. Climate change may be opening new niches faster than we understand the consequences.",
-          "Pillar Point Harbor became Morris's home by accident or necessity. What starts as a rare sighting could signal the leading edge of range expansion for Atlantic seabirds."
+          "Morris the gannet is the only known Northern Gannet in the entire Pacific. Showed up at the Farallon Islands 14 years ago, now lives in Pillar Point Harbor, CA. A 5,000+ mile accidental migration that stuck.",
+          "Spotted by its white plumage and yellow head among smaller black cormorants. Easy to find near the harbor sign on the commercial pier at Half Moon Bay. One bird, one population.",
+          "Climate change and shifting ocean currents are reshaping where seabirds can survive. Morris is a living record of how Atlantic species are finding new homes on the Pacific coast."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Одна северная олуша, выжившая в Тихом океане за 2000 км от своего ареала, показывает, как климатические сдвиги перестраивают распределение морской фауны.",
+        "headline": "Почему важно: Одна олушастая олуша прожила 14 лет в Тихом океане, тысячи километров от своего атлантического ареала, демонстрируя, как климатические сдвиги перестраивают ареалы морских птиц.",
         "tweets": [
-          "Моррис прожил 14 лет в водах Калифорнии—единственная атлантическая олуша на тихоокеанском побережье. Видовые границы размываются быстрее, чем мы их описываем.",
-          "Одна птица, выжившая в чужом океане, заставляет пересмотреть представления об условиях обитания. Климат меняет доступные ниши быстрее, чем мы понимаем последствия.",
-          "Морс мог прибыть случайно или вынужденно, но теперь Пилар Пойнт—его дом. Редкое наблюдение может быть началом расширения ареала атлантических птиц на запад."
+          "Моррис — единственная известная олуша в Тихом океане. Появилась у Фарралоновых островов 14 лет назад, теперь живёт в гавани Пиллар-Пойнт. Миграция на 8000 км, которая удалась.",
+          "Узнать легко: белое оперение и жёлтая голова среди чёрных бакланов. Её видят у знака на причале коммерческого порта в Халф-Мун-Бей. Одна птица, одна популяция на весь океан.",
+          "Климатические изменения и сдвиг течений изменяют ареалы морских птиц. Моррис — живое доказательство того, как атлантические виды осваивают новые территории на тихоокеанском побережье."
         ]
       }
     },
@@ -77,19 +146,42 @@
       "publishedAt": "2026-08-14T21:54:35.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Instead of forcing LLMs to pick from thousands of existing tags, have them invent relevant ones, then match those inventions to your actual vocabulary using embeddings—scalable tagging without constraint.",
+        "headline": "Why it matters: Instead of forcing LLMs to pick from thousands of existing tags, let them invent relevant ones then match them semantically to your actual taxonomy.",
         "tweets": [
-          "Stop asking LLMs to choose from massive tag vocabularies. Have them hallucinate what tags should exist, then use vector embeddings to find your real tags closest to their ideas.",
-          "The trick: show the model your tag structure by example, let it generate freely, then semantic search maps its output to your actual corpus. Works at scale without feeding thousands of options.",
-          "Doug Turnbull's approach sidesteps the constraint problem entirely. LLMs are better at creative generation than forced choice from huge lists. Embeddings do the grounding work."
+          "LLMs are bad at choosing from huge tag vocabularies. Solution: ask them to invent tags freely, then use vector embeddings to find the closest real tags. Fewer tokens, better results.",
+          "Doug Turnbull's trick: show the model your tag structure with examples, let it hallucinate novel tags for your content, then embed-match to existing taxonomy. No classification constraints needed.",
+          "This scales tagging old blog content without feeding 1,856 tags into context. The model's invented tags become a creative bridge to your actual vocabulary through semantic similarity."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Вместо того чтобы заставлять LLM выбирать из тысяч существующих тегов, дайте ей придумать нужные, а потом сопоставьте эти придумки с реальным словарём через embeddings—масштабируемая разметка без ограничений.",
+        "headline": "Почему важно: Вместо того чтобы заставлять LLM выбирать из тысяч тегов, позвольте модели придумать релевантные теги, затем найдите похожие в вашей реальной базе через эмбеддинги.",
         "tweets": [
-          "Не просите LLM выбирать из огромного словаря тегов. Пусть она придумает, какие теги должны быть, а вы найдёте через embeddings самые близкие к её идеям реальные теги.",
-          "Суть метода: покажите модели структуру тегов на примерах, дайте ей творить свободно, потом семантический поиск привяжет результат к вашему корпусу. Работает в масштабе без перечисления тысяч вариантов.",
-          "Подход Дага Тёрнбулла обходит проблему ограничений. LLM лучше генерируют креативно, чем выбирают из больших списков. Embeddings делают якорение в реальность."
+          "LLM плохо работают с выбором из огромного словаря тегов. Решение: попросите модель придумать теги свободно, потом используйте векторные эмбеддинги для поиска ближайших реальных тегов.",
+          "Трюк Дага Тёрнбулла: покажите модели структуру тегов с примерами, дайте ей придумать новые теги для контента, затем сопоставьте их семантически с существующей таксономией.",
+          "Метод масштабируется для тегирования старого контента без подачи 1856 тегов в контекст. Придуманные моделью теги становятся креативным мостом к вашему реальному словарю через семантическое сходство."
+        ]
+      }
+    },
+    {
+      "id": "d-tmmahx",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-cursors-60b-acquisition-by",
+      "publishedAt": "2026-08-14T06:16:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Open-weight models from China (Z.ai, Qwen, DeepSeek) are competing on agent capabilities and inference speed, while the real gains come from harness architecture and post-training, not just base model size.",
+        "tweets": [
+          "Z.ai's GLM-5.3 shows scaled post-training on long-horizon tasks beats larger base models for coding & security. Access gated initially, open-weight later.",
+          "Qwen3.8-27B runs on 17GB RAM with 262K native context, shipping day-0 in vLLM, Ollama, llama.cpp. Practical deployment, not just benchmarks.",
+          "Agent harnesses are now optimization targets themselves—runtime modularity, hot-swapping components, and scaffold tuning move outcomes as much as model IQ."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Китайские модели (Z.ai, Qwen, DeepSeek) конкурируют по способностям агентов и скорости инференса, а реальный прогресс идёт от архитектуры фреймворка и постобучения, не просто от размера базовой модели.",
+        "tweets": [
+          "GLM-5.3 от Z.ai доказывает, что масштабированное постобучение на длинных задачах побеждает большие базовые модели в коде и безопасности. Первоначально закрыт доступ, потом открытый вес.",
+          "Qwen3.8-27B работает на 17GB RAM с 262K контекстом, сразу поддерживается в vLLM, Ollama, llama.cpp. Практичное развёртывание, не только бенчмарки.",
+          "Архитектура агентских фреймворков теперь сама по себе цель оптимизации—модульность, горячая замена компонентов и настройка каркаса влияют на результаты наравне с IQ модели."
         ]
       }
     },
@@ -100,19 +192,19 @@
       "publishedAt": "2026-08-14T05:30:39.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Google's Gemini 3.7 Flash closes a widening performance gap against Claude and GPT, signaling renewed competition in the fast-inference model tier.",
+        "headline": "Why it matters: Google's Gemini 3.7 Flash closes the capability gap with Claude and GPT, making it competitive again for latency-sensitive applications.",
         "tweets": [
-          "Gemini 3.7 Flash shows measurable gains over 3.5/3.6 versions. Google's catching up to Claude 4.8+ and GPT 5.5+ on the speed-vs-quality tradeoff that matters for production.",
-          "Fast inference models are the actual battleground now. Everyone ships these at scale; the gap here determines whether your API bill stays reasonable.",
-          "GDM (Grok Diffusion Model?) benchmarks back in focus. When your cheaper models start winning benchmarks again, it changes deployment economics for companies choosing inference providers."
+          "Gemini 3.7 Flash benchmarks show Google caught up to Claude 4.8+ and GPT 5.5+ after 3.5/3.6 fell behind. Speed meets capability.",
+          "GDM (likely gradient descent method or similar optimization) returns as key differentiator. Google's inference efficiency gains matter for real-world latency.",
+          "Flash models still compete on cost-per-token and inference speed. Parity in reasoning changes which model teams pick for production systems."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Gemini 3.7 Flash сокращает отставание от Claude и GPT, обостряя конкуренцию в сегменте быстрых моделей для боевого применения.",
+        "headline": "Почему важно: Gemini 3.7 Flash сокращает разрыв в возможностях с Claude и GPT, возвращаясь в конкурентную борьбу за приложения с низкой задержкой.",
         "tweets": [
-          "Gemini 3.7 Flash показывает рост производительности против 3.5/3.6. Google догоняет Claude 4.8+ и GPT 5.5+ в балансе скорость-качество, критичном для промышленного использования.",
-          "Быстрые модели вывода — реальное поле боя. Все их масштабируют; разница здесь определяет стоимость API и выбор провайдера для компаний.",
-          "Бенчмарки GDM вернулись в фокус. Когда дешёвые модели вновь побеждают в тестах, это меняет экономику развёртывания для клиентов крупных сервисов."
+          "По тестам Gemini 3.7 Flash Google наконец-то достиг уровня Claude 4.8+ и GPT 5.5+ после отставания в 3.5/3.6. Скорость теперь с качеством.",
+          "GDM вернулась как ключевое отличие. Эффективность вывода Google имеет значение для реальных задержек в production.",
+          "Flash-модели всё ещё конкурируют по стоимости токена и скорости. Паритет в логике меняет выбор модели для production-систем."
         ]
       }
     },
@@ -123,111 +215,19 @@
       "publishedAt": "2026-08-14T00:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Open models are now competitive with closed systems on most benchmarks, forcing a shift in how AI capabilities are distributed and monetized.",
+        "headline": "Why it matters: Open model adoption is outpacing closed systems in real-world deployments, forcing a reckoning about who controls AI infrastructure.",
         "tweets": [
-          "Open models hit parity with frontier closed models on standard benchmarks this summer. The gap that existed 18 months ago is effectively closed for most use cases.",
-          "Fine-tuning and retrieval augmentation made open models practical for production. Raw model quality matters less than integration architecture now.",
-          "Model size consolidation accelerated: 7B and 13B models handle 80% of real-world tasks. Bigger isn't always better when you can optimize deployment."
+          "Open models now handle 60% of enterprise inference workloads. The cost advantage isn't theoretical anymore—it's in production systems running actual business logic.",
+          "Fine-tuning on commodity hardware beats expensive API calls for most use cases. Companies are keeping models on-premise because it's cheaper and faster than cloud APIs.",
+          "Model consolidation is real: fewer, larger open models are replacing the 'one model per task' era. Bigger context windows and better instruction-following killed the need for specialized variants."
         ]
       },
       "ru": {
-        "headline": "Почему важно: открытые модели достигли паритета с закрытыми системами по большинству метрик, что переформатирует распределение AI-возможностей и бизнес-модели.",
+        "headline": "Почему важно: Открытые модели обгоняют закрытые системы в боевых развертываниях, заставляя переосмыслить, кто контролирует ИИ-инфраструктуру.",
         "tweets": [
-          "Открытые модели сравнялись с фронтиерными закрытыми по стандартным тестам. Разрыв, существовавший 18 месяцев назад, практически исчез для основных задач.",
-          "Fine-tuning и retrieval augmentation сделали открытые модели боевыми для production. Качество сырой модели теперь менее важно, чем архитектура интеграции.",
-          "Размер моделей стабилизировался: 7B и 13B решают 80% реальных задач. Больший размер уже не гарантирует преимущество при грамотной оптимизации."
-        ]
-      }
-    },
-    {
-      "id": "d-h6fqt7",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/",
-      "publishedAt": "2026-08-13T23:53:47.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: sqlite-utils 4.2.1 fixes a crash caused by a missing dependency declaration, and introduces better isolation testing to catch similar packaging issues early.",
-        "tweets": [
-          "sqlite-utils 4.2 crashed because typing_extensions wasn't listed as a direct dependency—it was hidden in dev deps. 4.2.1 fixes it.",
-          "New smoke test workflow: 'uv run --isolated --no-default-groups sqlite-utils --help' catches missing deps without relying on dev environment cruft.",
-          "Lesson: transitive dependencies can masquerade as optional. Explicit dependency declarations + isolated test runs prevent silent breakage for end users."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: sqlite-utils 4.2.1 исправляет крах из-за пропущенного объявления зависимости и добавляет тесты изоляции для ловли подобных проблем упаковки.",
-        "tweets": [
-          "sqlite-utils 4.2 падал потому что typing_extensions не был указан прямой зависимостью — он скрывался в dev dependencies. Версия 4.2.1 это исправляет.",
-          "Новый smoke-тест: 'uv run --isolated --no-default-groups sqlite-utils --help' ловит пропущенные зависимости без полагания на мусор из dev окружения.",
-          "Урок: транзитивные зависимости могут выглядеть опциональными. Явное объявление зависимостей плюс изолированные тесты предотвращают скрытые поломки для пользователей."
-        ]
-      }
-    },
-    {
-      "id": "d-l7jww6",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/13/sqlite-utils/",
-      "publishedAt": "2026-08-13T20:11:29.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: sqlite-utils 4.2 makes complex database schema changes reliable by preserving constraints and metadata that previously got lost during table transformations.",
-        "tweets": [
-          "sqlite-utils 4.2 transforms() now preserves check constraints, unique constraints, and column comments when rebuilding tables. Complex alter operations that previously lost schema details now work safely.",
-          "New introspection properties let you inspect check constraints programmatically. Means you can audit and manipulate database schemas without manual SQL wrangling.",
-          "table.transform() recreates tables from scratch to support alter operations SQLite doesn't natively allow. 4.2 handles the edge cases—comments, constraints, metadata—that broke before."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: sqlite-utils 4.2 делает сложные изменения схемы БД надёжными, сохраняя ограничения и метаданные, которые раньше теряли при трансформации таблиц.",
-        "tweets": [
-          "transform() теперь не теряет check constraints, unique constraints и комментарии к колонкам при перестроении таблиц. Операции, которые раньше уничтожали метаданные, теперь работают безопасно.",
-          "Новые свойства интроспекции позволяют программно читать check constraints. Больше не нужно вручную писать SQL для проверки и изменения схемы БД.",
-          "transform() пересоздаёт таблицы с нуля, чтобы поддержать операции, которые SQLite не поддерживает нативно. 4.2 справляется с граничными случаями—комментариями, ограничениями, метаданными."
-        ]
-      }
-    },
-    {
-      "id": "d-oha43x",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
-      "publishedAt": "2026-08-13T19:37:34.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: llm-gemini plugin now supports Gemini 3.7 Flash and reasoning traces, making it easier to debug AI decisions through a command-line interface.",
-        "tweets": [
-          "llm-gemini 0.33 adds Gemini 3.7 Flash support plus reasoning traces you can inspect. New server-side tools let you run Python directly: llm -m gemini-3.7-flash -T CodeExecution.",
-          "Plugin now compatible with LLM 0.32. Access to embedding models gemini-embedding-2 and gemini-embedding-001, plus gemini-3.6-flash and gemini-3.5-flash-lite variants.",
-          "Gemini 3.7 drops 'minimal' thinking effort option, leaving medium and high. Useful for balancing speed vs reasoning depth when tackling complex problems."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: плагин llm-gemini теперь поддерживает Gemini 3.7 Flash и трассировку рассуждений, облегчая отладку решений ИИ через командную строку.",
-        "tweets": [
-          "llm-gemini 0.33 добавил Gemini 3.7 Flash и видимые трассы рассуждений. Серверные инструменты запускают Python напрямую: llm -m gemini-3.7-flash -T CodeExecution.",
-          "Совместимость с LLM 0.32. Доступ к моделям эмбеддинга gemini-embedding-2 и gemini-embedding-001, плюс варианты gemini-3.6-flash и gemini-3.5-flash-lite.",
-          "Gemini 3.7 убрал опцию 'minimal' для глубины рассуждений. Остались только medium и high для баланса между скоростью и сложностью анализа."
-        ]
-      }
-    },
-    {
-      "id": "d-gno7w1",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
-      "publishedAt": "2026-08-13T17:16:04.000Z",
-      "category": "robotics",
-      "en": {
-        "headline": "Why it matters: A unified platform for robot learning eliminates data silos, cutting weeks of pipeline engineering to get robots from real-world data to deployed policies.",
-        "tweets": [
-          "Strands + LeRobot + HF Buckets = single workflow: record robot actions, train policies, deploy—no manual data shuffling between tools.",
-          "Real-world robot data stays streaming-ready; no conversion bottlenecks. Engineers focus on training, not infrastructure plumbing.",
-          "Open-source LeRobot models train on unified datasets; easier to share reproducible robot behaviors across teams and organizations."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Единая платформа для обучения роботов устраняет разрозненность данных, сокращая недели инженерной работы от реальных данных к развёрнутым политикам поведения.",
-        "tweets": [
-          "Strands + LeRobot + HF Buckets = один workflow: запись действий робота, обучение, развёртывание—без ручной передачи данных между инструментами.",
-          "Данные реальных роботов готовы к потоковой передаче; нет узких мест при конвертации. Инженеры сосредоточены на обучении, не на инфраструктуре.",
-          "Open-source модели LeRobot учатся на едином наборе данных; проще делиться воспроизводимым поведением роботов между командами."
+          "Открытые модели обрабатывают 60% корпоративного inference-трафика. Экономия на затратах — уже не теория, а реальность в production-системах с живой бизнес-логикой.",
+          "Fine-tuning на обычном железе дешевле и быстрее, чем вызовы облачных API. Компании держат модели на собственных серверах, потому что это выгоднее и скорее.",
+          "Эра специализированных моделей кончилась: большие открытые модели с длинным контекстом вытесняют узкоспециальные варианты, потому что разбираются в любых задачах."
         ]
       }
     }
