@@ -1,6 +1,167 @@
 {
-  "generatedAt": "2026-08-17T07:16:05.057Z",
+  "generatedAt": "2026-08-18T07:04:19.533Z",
   "items": [
+    {
+      "id": "d-usvcu1",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/",
+      "publishedAt": "2026-08-17T23:58:14.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: A 27B parameter model matching the performance of much larger competitors signals major efficiency gains in open-source LLMs.",
+        "tweets": [
+          "Qwen 3.8 27B hits 52 on Artificial Analysis Intelligence Index—same score as GPT-5.6 Luna, beating models 10-60x its size.",
+          "Open-source efficiency leap: 27B params matching 753B GLM-5.2 and 1.6B DeepSeek performance suggests training techniques are closing the scale gap.",
+          "If a smaller model delivers comparable benchmark results, inference costs and deployment options shift dramatically for practical applications."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: модель с 27 млрд параметров достигает производительности моделей в 10-60 раз больше, что означает серьёзный прорыв в эффективности открытых LLM.",
+        "tweets": [
+          "Qwen 3.8 27B набрал 52 балла в индексе Artificial Analysis—столько же, сколько GPT-5.6 Luna и GLM-5.2 из 753B параметров.",
+          "Компактная модель с той же производительностью меняет экономику: меньше вычислений, проще деплой, доступнее для организаций с ограниченными ресурсами.",
+          "Если 27B конкурирует с гигантами, это указывает на прорыв в архитектуре и методах обучения, а не только в масштабировании параметров."
+        ]
+      }
+    },
+    {
+      "id": "d-vlrons",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
+      "publishedAt": "2026-08-17T23:13:41.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Stripe's $7B OpenRouter acquisition signals that AI model routing—not raw compute—is where infrastructure value is being captured right now.",
+        "tweets": [
+          "OpenRouter processes 250 trillion tokens/month with 70% gross margins. At $7B valuation it's cheaper than typical mega-cap AI deals, but shows model aggregation APIs are the real tollbooth in AI infra.",
+          "Stripe + OpenRouter reshapes AI stack: instead of GPU wars, the battle is routing layers, developer access, and platform lock-in. Pricing pressure is real—margins compress when brokers compete.",
+          "OpenRouter went 5x revenue in 6 months serving 8M developers. The model is profitable today. This vindicates the routing layer thesis: if you own model distribution, you own the relationship with builders."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: покупка Stripe компании OpenRouter за $7 млрд показывает, что главная ценность в AI-инфраструктуре создаётся на слое маршрутизации моделей, а не в сырых вычислениях.",
+        "tweets": [
+          "OpenRouter обрабатывает 250 триллионов токенов в месяц с маржой 70%. Оценка $7 млрд дешевле стандартных AI-сделок, но доказывает: API-слой агрегации моделей—вот реальное место сбора.",
+          "Stripe + OpenRouter переделает AI-стек: вместо войны за GPU борьба за слои маршрутизации, доступ разработчиков и lock-in платформ. Давление на цены реально—маржи сжимаются при конкуренции.",
+          "OpenRouter вырос в 5 раз за полгода, обслуживает 8 млн разработчиков и уже прибыльная. Это подтверждает: кто владеет распределением моделей, тот владеет отношениями с разработчиками."
+        ]
+      }
+    },
+    {
+      "id": "d-el2rsk",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+      "publishedAt": "2026-08-17T19:46:21.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Reordering job scheduling on the same GPU cluster increased utilization by 33 points without buying new hardware.",
+        "tweets": [
+          "Same hardware, massive efficiency gain: one team boosted GPU cluster utilization from ~50% to 83% by changing job scheduling order. No new GPUs needed.",
+          "The bottleneck wasn't capacity—it was sequencing. Batching similar workloads and prioritizing by memory/compute needs prevented fragmentation and idle time.",
+          "Practical lesson: before scaling infrastructure, audit your scheduling logic. Job ordering alone can unlock 30+ points of utilization gains."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: переупорядочение расписания задач на одном кластере GPU увеличило утилизацию на 33 процента без покупки нового оборудования.",
+        "tweets": [
+          "На одном и том же оборудовании: команда подняла утилизацию GPU-кластера с ~50% до 83%, просто изменив порядок распределения задач. Новые GPU не понадобились.",
+          "Узкое место было не в мощности, а в планировании. Группировка похожих рабочих нагрузок и приоритизация по памяти предотвратили фрагментацию и простои.",
+          "Практический вывод: перед расширением инфраструктуры проверьте логику планирования. Только переупорядочение задач может дать прирост утилизации на 30+ процентов."
+        ]
+      }
+    },
+    {
+      "id": "d-ihmv51",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
+      "publishedAt": "2026-08-17T15:21:29.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Amazon is covertly bulk-purchasing rare books through anonymous orders to scan for AI training, destroying the originals in the process.",
+        "tweets": [
+          "404 Media tracked a 1,000-book shipment via AirTag. It ended at Amazon's Las Vegas facility where workers confirm destructive book scanning for AI data.",
+          "Amazon uses anonymous Biblio accounts to buy massive book collections from dealers who have no idea their inventory is being destroyed for training data.",
+          "This mirrors Anthropic's book-scanning revealed in 2025. Big AI companies are systematically acquiring copyrighted books at scale without publisher consent."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Amazon тайно скупает редкие книги через анонимные заказы, чтобы сканировать их для обучения ИИ и уничтожать оригиналы.",
+        "tweets": [
+          "404 Media отследила партию из 1000 книг через AirTag. Она прибыла на объект Amazon в Лас-Вегасе, где рабочие подтверждают разрушающее сканирование книг для данных ИИ.",
+          "Amazon использует анонимные аккаунты на Biblio для покупки огромных книжных коллекций у букинистов, которые не знают, что их товар уничтожается для обучения.",
+          "Это повторяет обнаруженное в 2025 году сканирование книг Anthropic. Крупные компании ИИ систематически закупают защищённые авторским правом книги в массовом масштабе без согласия издателей."
+        ]
+      }
+    },
+    {
+      "id": "d-10g9300",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/the-defenders-window",
+      "publishedAt": "2026-08-17T05:30:00.000Z",
+      "category": "cybersecurity",
+      "en": {
+        "headline": "Why it matters: AI is accelerating both attack and defense capabilities, forcing security teams to act now rather than wait for perfect solutions.",
+        "tweets": [
+          "Attackers are already using AI to scale reconnaissance and exploit discovery. Defenders who delay adoption fall further behind—the window to act is closing.",
+          "OpenAI's approach: deploy detection systems faster, share threat intel, and treat AI security as continuous rather than a one-time hardening effort.",
+          "Security teams should focus on AI-augmented threat hunting and automation now. Waiting for perfect defenses means losing ground to adversaries who've already moved."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ ускоряет возможности как атакующих, так и защитников, заставляя команды безопасности действовать сейчас, а не ждать идеальных решений.",
+        "tweets": [
+          "Злоумышленники уже используют ИИ для масштабирования разведки и поиска уязвимостей. Команды, которые медлят с внедрением, теряют преимущество быстро.",
+          "Подход OpenAI: развертывать системы обнаружения быстрее, обмениваться разведданными о угрозах, рассматривать ИИ-безопасность как непрерывный процесс.",
+          "Команды безопасности должны начать с охоты на угрозы на основе ИИ и автоматизации. Ожидание идеальной защиты означает проигрыш противникам, которые уже движутся вперед."
+        ]
+      }
+    },
+    {
+      "id": "d-qd84ku",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/openai-joins-ports-pike-project",
+      "publishedAt": "2026-08-17T05:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenAI's partnership in PORTS-Pike signals AI companies are investing in regional economic development, not just coastal tech hubs.",
+        "tweets": [
+          "OpenAI joins PORTS-Pike to boost Southern Ohio infrastructure and jobs. Major AI player betting on Midwest growth beyond Silicon Valley.",
+          "PORTS-Pike project aims to create thousands of regional jobs. Shows AI industry recognizing talent and opportunity exist everywhere.",
+          "Community investment + AI expansion = economic diversification. OpenAI's move suggests Midwest becoming meaningful hub for tech development."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: OpenAI инвестирует в региональное развитие Огайо, показывая, что крупные AI-компании расширяют фокус за пределы прибрежных технологических центров.",
+        "tweets": [
+          "OpenAI присоединяется к проекту PORTS-Pike в Южном Огайо. Гигант AI вкладывает средства в развитие региона и создание тысяч рабочих мест.",
+          "Компания видит потенциал за пределами Кремниевой долины. Инвестиции в местную инфраструктуру и таланты становятся стратегией крупных игроков.",
+          "Экономическая диверсификация через технологии. Движение OpenAI указывает на переход AI-индустрии к региональному развитию."
+        ]
+      }
+    },
+    {
+      "id": "d-japhar",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+      "publishedAt": "2026-08-17T03:15:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenAI is funding independent policy research to shape how AI impacts jobs, inequality, and society rather than leaving it to chance.",
+        "tweets": [
+          "OpenAI backing 14 independent projects on AI policy—not just tech, but economic opportunity, labor transition, and social resilience.",
+          "The bet: proactive policy design beats reactive regulation. These projects explore everything from retraining to UBI frameworks.",
+          "Key signal: AI labs funding external policy work suggests they expect regulation incoming and want input from diverse thinkers, not just themselves."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: OpenAI финансирует независимые исследования политики ИИ, чтобы формировать воздействие на экономику и общество, а не оставлять это на волю случая.",
+        "tweets": [
+          "OpenAI спонсирует 14 проектов по политике ИИ—не только технология, но экономические возможности, переквалификация рабочей силы и устойчивость общества.",
+          "Стратегия: упреждающая политика лучше, чем реактивное регулирование. Проекты изучают переподготовку, UBI и другие модели.",
+          "Значимый сигнал: лаборатории ИИ финансируют внешние исследования политики, ожидая регулирования и привлекая разные голоса, не только свои."
+        ]
+      }
+    },
     {
       "id": "d-c3ckkp",
       "source": "simonw",
@@ -8,19 +169,19 @@
       "publishedAt": "2026-08-16T23:59:37.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: Converting animated SVGs to shareable formats (MP4, PNG, JPEG) in the browser solves the real problem of posting graphics on platforms that don't support vector animation.",
+        "headline": "Why it matters: Converting animated SVGs to MP4 in the browser lets you share complex graphics on any platform, no server needed.",
         "tweets": [
-          "markdown-svg-renderer now converts animated SVGs to MP4 video in your browser using ffmpeg.wasm. No server needed, just paste markdown or a GitHub Gist URL.",
-          "New MP4 export tab detects SVG animations, guesses loop duration, renders frames, and compiles them into video using WebAssembly FFMPEG. Practical workaround for platform limitations.",
-          "Also exports SVGs as PNG/JPEG in browser. Bookmarkable URLs let you share rendered markdown documents with embedded graphics that actually work everywhere."
+          "markdown-svg-renderer now converts animated SVGs to MP4 in-browser using ffmpeg.wasm. Perfect for platforms that strip SVG animation.",
+          "New feature: PNG/JPEG export tabs let you grab static renders of SVGs without leaving the browser. Shareable, no toolchain required.",
+          "Paste Markdown + SVG, get a rendered page with tabs for MP4, PNG, JPEG versions. URL stays bookmarkable via GitHub Gist links."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Конвертирование анимированных SVG в общедоступные форматы (MP4, PNG, JPEG) прямо в браузере решает проблему публикации графики на платформах без поддержки векторной анимации.",
+        "headline": "Почему важно: Конвертация анимированных SVG в MP4 прямо в браузере позволяет делиться сложной графикой на любой платформе без сервера.",
         "tweets": [
-          "markdown-svg-renderer теперь преобразует анимированные SVG в видео MP4 в браузере через ffmpeg.wasm. Просто вставьте markdown или ссылку на GitHub Gist, сервер не нужен.",
-          "Новая вкладка MP4 автоматически определяет анимацию в SVG, угадывает длину цикла, рендерит кадры и компилирует их в видео через WebAssembly FFMPEG.",
-          "Также экспортирует SVG как PNG и JPEG прямо в браузере. Закладываемые URL позволяют делиться документами с встроенной графикой, которая работает везде."
+          "markdown-svg-renderer теперь преобразует анимированные SVG в MP4 в браузере через ffmpeg.wasm. Идеально для платформ, которые не поддерживают SVG-анимацию.",
+          "Новая функция: вкладки экспорта PNG/JPEG позволяют получить статические версии SVG прямо в браузере. Без установки инструментов.",
+          "Вставьте Markdown с SVG, получите страницу с вкладками MP4, PNG, JPEG. Ссылка остаётся закладываемой через GitHub Gist."
         ]
       }
     },
@@ -31,19 +192,19 @@
       "publishedAt": "2026-08-16T22:00:39.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Qwen 3.8 27B runs locally on consumer hardware with excellent vision capabilities, but its default 'xhigh' reasoning mode wastes compute on overthinking simple tasks.",
+        "headline": "Why it matters: Qwen 3.8 27B is a strong open-weight vision model that runs on laptops, but its default reasoning setting wastes 10x compute on trivial tasks.",
         "tweets": [
-          "Qwen 3.8 27B is a solid 27B vision model that runs on a MacBook Pro or modest GPU. Problem: it defaults to 'xhigh' reasoning effort, burning 20+ minutes on trivial SVG requests.",
-          "Switch reasoning_effort to 'low' or 'medium'. Same model, 2 minutes instead of 21. The xhigh default is entertaining but impractical for local inference on consumer hardware.",
-          "Vision strength: exceptional at bounding box detection. Tested on pelican photos, returned pixel-perfect JSON coordinates. Worth evaluating for structured vision tasks despite the overthinking default."
+          "Qwen 3.8 27B ships with xhigh reasoning enabled by default. A simple 'draw a circle' request burned 22k tokens and 21 minutes. Switch to low or off reasoning first.",
+          "At sensible reasoning levels, this 27B model excels at structured vision tasks like bounding box detection—nails pelican coordinates on real photos with high precision.",
+          "27B parameter model, 17GB quantized, runs on M5 Max MacBook Pro. Best open-weight vision model for local inference right now if you dial down the overthinking."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Qwen 3.8 27B работает локально на обычных компьютерах с хорошей поддержкой зрения, но стандартная настройка 'xhigh' заставляет модель пережёвывать простые задачи.",
+        "headline": "Почему важно: Qwen 3.8 27B — мощная открытая vision-модель для ноутбуков, но по умолчанию она тратит в 10 раз больше ресурсов даже на простые задачи.",
         "tweets": [
-          "Qwen 3.8 27B — это 27-миллиардная модель с поддержкой изображений, которая работает на MacBook Pro или скромном GPU. Минус: по умолчанию режим 'xhigh' требует 20+ минут даже на тривиальные запросы.",
-          "Переключите reasoning_effort на 'low' или 'medium' и получите результат за 2 минуты вместо 21. Стандартное значение xhigh забавно, но практически бесполезно для локального вывода на потребительском железе.",
-          "Сильная сторона: исключительная точность в определении bounding box на фото. Протестирована на пеликанах — возвращает идеальные координаты в JSON. Стоит рассмотреть для структурированных задач зрения."
+          "Qwen 3.8 27B по умолчанию включает максимальный уровень рассуждений. Запрос «нарисуй круг» занял 22k токенов и 21 минуту. Сразу переключайте на низкий уровень.",
+          "При нормальных настройках модель отлично работает с фиксированными визуальными задачами—точно обнаруживает объекты на реальных фото с высокой точностью координат.",
+          "27 млрд параметров, 17 ГБ квантизированной версии, запускается на MacBook Pro M5. Лучшая открытая vision-модель для локального использования при отключении излишних вычислений."
         ]
       }
     },
@@ -54,180 +215,19 @@
       "publishedAt": "2026-08-16T15:05:36.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Public distrust of AI stems from decades of broken promises by institutions, not from risk warnings—and marketing won't fix it.",
+        "headline": "Why it matters: Public distrust of AI reflects decades of broken promises from tech and institutions—marketing won't fix it, only tangible results will.",
         "tweets": [
-          "Dario Amodei: AI's image problem isn't caused by safety warnings. It's a deeper crisis of trust in companies and governments that predates AI by decades.",
-          "Positive spin campaigns don't work when people hear 'AI cures cancer' as corporate speak. Actual delivered benefits—not messaging—rebuild trust.",
-          "Anthropic's real liability: unfulfilled promises to benefit society. That's what deserves criticism, not debates over PR strategy."
+          "Dario Amodei: The AI skepticism isn't caused by risk warnings from AI leaders. It's a deeper crisis of trust in companies, governments, and tech that predates AI itself.",
+          "Saying AI will cure cancer is now a cliche people dismiss as deceptive. Trust rebuilds through actual delivered outcomes, not glossy campaigns with positive spin.",
+          "Amodei's self-criticism: AI companies including Anthropic haven't yet delivered on promises to benefit society. That's the real accountability problem, not how we talk about it."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Недоверие к ИИ — это не результат предупреждений об опасности, а следствие десятилетнего кризиса доверия к институтам.",
+        "headline": "Почему важно: Недоверие к ИИ отражает многолетний кризис доверия к корпорациям и госучреждениям—его не решить маркетингом, только реальными результатами.",
         "tweets": [
-          "Дарио Амодеи: проблема с имиджем ИИ вызвана не предупреждениями о рисках, а глубоким недоверием к компаниям и правительствам, существующим задолго до ИИ.",
-          "Позитивный спин не работает, когда люди слышат 'ИИ лечит рак' как корпоративную риторику. Нужны реальные результаты, а не пиар.",
-          "Главная проблема Anthropic: невыполненные обещания принести пользу обществу. Это то, что нужно критиковать, а не стратегию коммуникации."
-        ]
-      }
-    },
-    {
-      "id": "d-14rg0ee",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/flue-2",
-      "publishedAt": "2026-08-15T15:46:22.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Flue 2 applies React's proven composability pattern to agents, letting them adapt dynamically at runtime instead of staying static—a fundamental shift from today's rigid agent frameworks.",
-        "tweets": [
-          "Flue 2 brings React hooks to agents. Agents now re-render on every turn, manage their own state, and adapt in real-time. Support bots can actually do triage instead of following pre-baked scripts.",
-          "Fred Schott realized: no one's built the React for agents yet. Flue 2 has 16 built-in hooks (useSkill, useTool, useSubagent) plus custom hooks. Composability, not routing, is the core.",
-          "Key insight: an agent *needs* a harness—an environment with context and capabilities. Flue 2 treats this as foundational, not a feature. Built on Pi (minimal harness) with Vite tooling."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Flue 2 применяет проверенную композабельность React к агентам, позволяя им адаптироваться на лету вместо статичных сценариев—фундаментальный сдвиг в разработке агентов.",
-        "tweets": [
-          "Flue 2 привносит React hooks в агентов. Агенты перерендерятся на каждом ходу, управляют состоянием и адаптируются в реальном времени. Support-боты теперь могут настоящим трейдингом заниматься.",
-          "Фред Шотт понял: никто ещё не создал React для агентов. Flue 2 имеет 16 встроенных hooks (useSkill, useTool, useSubagent) плюс кастомные. Композиция, не роутинг, в основе.",
-          "Ключное понимание: агент нуждается в harness—окружении с контекстом и возможностями. Flue 2 делает это фундаментом, не фичей. Построен на Pi с Vite."
-        ]
-      }
-    },
-    {
-      "id": "d-z2iqtc",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/15/cors-chat/",
-      "publishedAt": "2026-08-15T14:49:54.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Testing local and remote LLMs just got easier—CORS Chat lets you swap between different model endpoints without rewriting your setup.",
-        "tweets": [
-          "Built a web UI for testing OpenAI-compatible chat endpoints. Works with LM Studio locally or OpenRouter remotely. Conversations auto-save in browser.",
-          "SVG generation streams progressively in real-time. You watch images render token-by-token as the model generates them, not after completion.",
-          "Export full conversation history as JSON. Tested against M5 MacBook and NVIDIA DGX. CORS flag handles the usual cross-origin headaches."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Тестирование локальных и облачных LLM стало проще—CORS Chat позволяет переключаться между разными endpoint'ами без переделки инфраструктуры.",
-        "tweets": [
-          "Веб-интерфейс для тестирования OpenAI-совместимых чат-endpoint'ов. Работает с локальным LM Studio или удалённым OpenRouter.",
-          "SVG-изображения рендерятся прогрессивно прямо во время генерации. Видишь, как картинка строится токен за токеном в реальном времени.",
-          "Экспортируй историю диалога в JSON. Протестировано на M5 MacBook и NVIDIA DGX. CORS флаг решает проблемы с cross-origin запросами."
-        ]
-      }
-    },
-    {
-      "id": "d-1t12f6y",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/15/sighting-391300422/",
-      "publishedAt": "2026-08-15T03:22:00.000Z",
-      "category": "biotech",
-      "en": {
-        "headline": "Why it matters: A single Northern Gannet has survived 14 years in the Pacific Ocean—thousands of miles from its Atlantic home—revealing how climate shifts and ocean currents can reshape wildlife distribution.",
-        "tweets": [
-          "Morris the gannet is the only known Northern Gannet in the entire Pacific. Showed up at the Farallon Islands 14 years ago, now lives in Pillar Point Harbor, CA. A 5,000+ mile accidental migration that stuck.",
-          "Spotted by its white plumage and yellow head among smaller black cormorants. Easy to find near the harbor sign on the commercial pier at Half Moon Bay. One bird, one population.",
-          "Climate change and shifting ocean currents are reshaping where seabirds can survive. Morris is a living record of how Atlantic species are finding new homes on the Pacific coast."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Одна олушастая олуша прожила 14 лет в Тихом океане, тысячи километров от своего атлантического ареала, демонстрируя, как климатические сдвиги перестраивают ареалы морских птиц.",
-        "tweets": [
-          "Моррис — единственная известная олуша в Тихом океане. Появилась у Фарралоновых островов 14 лет назад, теперь живёт в гавани Пиллар-Пойнт. Миграция на 8000 км, которая удалась.",
-          "Узнать легко: белое оперение и жёлтая голова среди чёрных бакланов. Её видят у знака на причале коммерческого порта в Халф-Мун-Бей. Одна птица, одна популяция на весь океан.",
-          "Климатические изменения и сдвиг течений изменяют ареалы морских птиц. Моррис — живое доказательство того, как атлантические виды осваивают новые территории на тихоокеанском побережье."
-        ]
-      }
-    },
-    {
-      "id": "d-1u1p4rg",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
-      "publishedAt": "2026-08-14T21:54:35.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Instead of forcing LLMs to pick from thousands of existing tags, let them invent relevant ones then match them semantically to your actual taxonomy.",
-        "tweets": [
-          "LLMs are bad at choosing from huge tag vocabularies. Solution: ask them to invent tags freely, then use vector embeddings to find the closest real tags. Fewer tokens, better results.",
-          "Doug Turnbull's trick: show the model your tag structure with examples, let it hallucinate novel tags for your content, then embed-match to existing taxonomy. No classification constraints needed.",
-          "This scales tagging old blog content without feeding 1,856 tags into context. The model's invented tags become a creative bridge to your actual vocabulary through semantic similarity."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Вместо того чтобы заставлять LLM выбирать из тысяч тегов, позвольте модели придумать релевантные теги, затем найдите похожие в вашей реальной базе через эмбеддинги.",
-        "tweets": [
-          "LLM плохо работают с выбором из огромного словаря тегов. Решение: попросите модель придумать теги свободно, потом используйте векторные эмбеддинги для поиска ближайших реальных тегов.",
-          "Трюк Дага Тёрнбулла: покажите модели структуру тегов с примерами, дайте ей придумать новые теги для контента, затем сопоставьте их семантически с существующей таксономией.",
-          "Метод масштабируется для тегирования старого контента без подачи 1856 тегов в контекст. Придуманные моделью теги становятся креативным мостом к вашему реальному словарю через семантическое сходство."
-        ]
-      }
-    },
-    {
-      "id": "d-tmmahx",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-cursors-60b-acquisition-by",
-      "publishedAt": "2026-08-14T06:16:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Open-weight models from China (Z.ai, Qwen, DeepSeek) are competing on agent capabilities and inference speed, while the real gains come from harness architecture and post-training, not just base model size.",
-        "tweets": [
-          "Z.ai's GLM-5.3 shows scaled post-training on long-horizon tasks beats larger base models for coding & security. Access gated initially, open-weight later.",
-          "Qwen3.8-27B runs on 17GB RAM with 262K native context, shipping day-0 in vLLM, Ollama, llama.cpp. Practical deployment, not just benchmarks.",
-          "Agent harnesses are now optimization targets themselves—runtime modularity, hot-swapping components, and scaffold tuning move outcomes as much as model IQ."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Китайские модели (Z.ai, Qwen, DeepSeek) конкурируют по способностям агентов и скорости инференса, а реальный прогресс идёт от архитектуры фреймворка и постобучения, не просто от размера базовой модели.",
-        "tweets": [
-          "GLM-5.3 от Z.ai доказывает, что масштабированное постобучение на длинных задачах побеждает большие базовые модели в коде и безопасности. Первоначально закрыт доступ, потом открытый вес.",
-          "Qwen3.8-27B работает на 17GB RAM с 262K контекстом, сразу поддерживается в vLLM, Ollama, llama.cpp. Практичное развёртывание, не только бенчмарки.",
-          "Архитектура агентских фреймворков теперь сама по себе цель оптимизации—модульность, горячая замена компонентов и настройка каркаса влияют на результаты наравне с IQ модели."
-        ]
-      }
-    },
-    {
-      "id": "d-15ldprz",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-gemini-37-flash-brings-gdm",
-      "publishedAt": "2026-08-14T05:30:39.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Google's Gemini 3.7 Flash closes the capability gap with Claude and GPT, making it competitive again for latency-sensitive applications.",
-        "tweets": [
-          "Gemini 3.7 Flash benchmarks show Google caught up to Claude 4.8+ and GPT 5.5+ after 3.5/3.6 fell behind. Speed meets capability.",
-          "GDM (likely gradient descent method or similar optimization) returns as key differentiator. Google's inference efficiency gains matter for real-world latency.",
-          "Flash models still compete on cost-per-token and inference speed. Parity in reasoning changes which model teams pick for production systems."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Gemini 3.7 Flash сокращает разрыв в возможностях с Claude и GPT, возвращаясь в конкурентную борьбу за приложения с низкой задержкой.",
-        "tweets": [
-          "По тестам Gemini 3.7 Flash Google наконец-то достиг уровня Claude 4.8+ и GPT 5.5+ после отставания в 3.5/3.6. Скорость теперь с качеством.",
-          "GDM вернулась как ключевое отличие. Эффективность вывода Google имеет значение для реальных задержек в production.",
-          "Flash-модели всё ещё конкурируют по стоимости токена и скорости. Паритет в логике меняет выбор модели для production-систем."
-        ]
-      }
-    },
-    {
-      "id": "d-fgs4g0",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/state-of-open-models-summer-2026",
-      "publishedAt": "2026-08-14T00:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Open model adoption is outpacing closed systems in real-world deployments, forcing a reckoning about who controls AI infrastructure.",
-        "tweets": [
-          "Open models now handle 60% of enterprise inference workloads. The cost advantage isn't theoretical anymore—it's in production systems running actual business logic.",
-          "Fine-tuning on commodity hardware beats expensive API calls for most use cases. Companies are keeping models on-premise because it's cheaper and faster than cloud APIs.",
-          "Model consolidation is real: fewer, larger open models are replacing the 'one model per task' era. Bigger context windows and better instruction-following killed the need for specialized variants."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Открытые модели обгоняют закрытые системы в боевых развертываниях, заставляя переосмыслить, кто контролирует ИИ-инфраструктуру.",
-        "tweets": [
-          "Открытые модели обрабатывают 60% корпоративного inference-трафика. Экономия на затратах — уже не теория, а реальность в production-системах с живой бизнес-логикой.",
-          "Fine-tuning на обычном железе дешевле и быстрее, чем вызовы облачных API. Компании держат модели на собственных серверах, потому что это выгоднее и скорее.",
-          "Эра специализированных моделей кончилась: большие открытые модели с длинным контекстом вытесняют узкоспециальные варианты, потому что разбираются в любых задачах."
+          "Дарио Амодеи: скептицизм к ИИ вызван не предупреждениями лидеров о рисках, а глубоким кризисом доверия к компаниям, правительствам и технологическому сектору в целом.",
+          "Обещания, что ИИ вылечит рак, стали банальностью, которую люди воспринимают как обман. Доверие восстанавливается через реальные результаты, а не красивые кампании.",
+          "Самокритика Амодеи: компании ИИ, включая Anthropic, пока не выполнили обещания принести пользу обществу. В этом и состоит главный вопрос подотчётности."
         ]
       }
     }
