@@ -1,233 +1,233 @@
 {
-  "generatedAt": "2026-08-18T07:04:19.533Z",
+  "generatedAt": "2026-08-19T07:05:29.024Z",
   "items": [
     {
-      "id": "d-usvcu1",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/",
-      "publishedAt": "2026-08-17T23:58:14.000Z",
+      "id": "d-6j9q6o",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+      "publishedAt": "2026-08-18T22:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: A 27B parameter model matching the performance of much larger competitors signals major efficiency gains in open-source LLMs.",
+        "headline": "Why it matters: ChatGPT Ads now lets companies reach decision-making users across 31 European markets, expanding the ad network beyond English-speaking regions.",
         "tweets": [
-          "Qwen 3.8 27B hits 52 on Artificial Analysis Intelligence Index—same score as GPT-5.6 Luna, beating models 10-60x its size.",
-          "Open-source efficiency leap: 27B params matching 753B GLM-5.2 and 1.6B DeepSeek performance suggests training techniques are closing the scale gap.",
-          "If a smaller model delivers comparable benchmark results, inference costs and deployment options shift dramatically for practical applications."
+          "ChatGPT Ads now live in 31 European countries. Advertisers can target users mid-research, when they're actively comparing options and ready to convert.",
+          "European expansion signals OpenAI's shift from chat tool to ad platform. Expect more monetization experiments as competitors launch their own advertising networks.",
+          "New markets = new regulations. GDPR compliance, local data rules, and ad standards will shape how ChatGPT Ads operates differently across Europe than the US."
         ]
       },
       "ru": {
-        "headline": "Почему важно: модель с 27 млрд параметров достигает производительности моделей в 10-60 раз больше, что означает серьёзный прорыв в эффективности открытых LLM.",
+        "headline": "Почему важно: ChatGPT Ads расширился на 31 европейский рынок, позволяя рекламодателям ловить пользователей в момент принятия решений о покупке.",
         "tweets": [
-          "Qwen 3.8 27B набрал 52 балла в индексе Artificial Analysis—столько же, сколько GPT-5.6 Luna и GLM-5.2 из 753B параметров.",
-          "Компактная модель с той же производительностью меняет экономику: меньше вычислений, проще деплой, доступнее для организаций с ограниченными ресурсами.",
-          "Если 27B конкурирует с гигантами, это указывает на прорыв в архитектуре и методах обучения, а не только в масштабировании параметров."
+          "ChatGPT Ads запущена в 31 стране Европы. Компании теперь могут ловить пользователей во время поиска и сравнения товаров, когда они готовы к покупке.",
+          "Европейское расширение показывает: OpenAI превращает чат в рекламную платформу. Ожидайте больше монетизации и конкуренции со стороны аналогов.",
+          "Новые рынки = новые регуляции. GDPR, локальные законы о данных и стандарты рекламы будут ограничивать ChatGPT Ads в Европе сильнее, чем в США."
         ]
       }
     },
     {
-      "id": "d-vlrons",
+      "id": "d-1przsz1",
       "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
-      "publishedAt": "2026-08-17T23:13:41.000Z",
+      "sourceUrl": "https://www.latent.space/p/glean-model-routing",
+      "publishedAt": "2026-08-18T21:41:10.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Stripe's $7B OpenRouter acquisition signals that AI model routing—not raw compute—is where infrastructure value is being captured right now.",
+        "headline": "Why it matters: Enterprise AI costs are spiraling 10-20x per user annually, making intelligent model routing—not just picking the best model, but picking the right one for each task—the difference between sustainable and unsustainable deployments.",
         "tweets": [
-          "OpenRouter processes 250 trillion tokens/month with 70% gross margins. At $7B valuation it's cheaper than typical mega-cap AI deals, but shows model aggregation APIs are the real tollbooth in AI infra.",
-          "Stripe + OpenRouter reshapes AI stack: instead of GPU wars, the battle is routing layers, developer access, and platform lock-in. Pricing pressure is real—margins compress when brokers compete.",
-          "OpenRouter went 5x revenue in 6 months serving 8M developers. The model is profitable today. This vindicates the routing layer thesis: if you own model distribution, you own the relationship with builders."
+          "Glean hit $300M ARR by solving enterprise AI's real problem: costs explode when you route every query to Claude Opus or GPT-4. Smart routing cuts expenses 4x by matching task complexity to model capability.",
+          "Open-weight models like Qwen and Kimi shifted from 'minuscule' enterprise usage last year to serious consideration now. Cost pressure, not capability gaps, is what's driving adoption.",
+          "Glean's Waldo preprocessor filters queries before hitting frontier models, cutting token spend 25% and latency 50%. Sometimes a cheaper model with better context beats an expensive one drowning in irrelevant data."
         ]
       },
       "ru": {
-        "headline": "Почему важно: покупка Stripe компании OpenRouter за $7 млрд показывает, что главная ценность в AI-инфраструктуре создаётся на слое маршрутизации моделей, а не в сырых вычислениях.",
+        "headline": "Почему важно: Затраты на корпоративный AI растут в 10-20 раз в год на пользователя, поэтому интеллектуальная маршрутизация моделей—выбор нужной модели для каждой задачи—это разница между устойчивым и неустойчивым развертыванием.",
         "tweets": [
-          "OpenRouter обрабатывает 250 триллионов токенов в месяц с маржой 70%. Оценка $7 млрд дешевле стандартных AI-сделок, но доказывает: API-слой агрегации моделей—вот реальное место сбора.",
-          "Stripe + OpenRouter переделает AI-стек: вместо войны за GPU борьба за слои маршрутизации, доступ разработчиков и lock-in платформ. Давление на цены реально—маржи сжимаются при конкуренции.",
-          "OpenRouter вырос в 5 раз за полгода, обслуживает 8 млн разработчиков и уже прибыльная. Это подтверждает: кто владеет распределением моделей, тот владеет отношениями с разработчиками."
+          "Glean достиг $300M годовой выручки, решив реальную проблему: затраты взлетают, когда маршрутизируешь каждый запрос в Claude Opus или GPT-4. Умная маршрутизация снижает расходы в 4 раза, подбирая модель под сложность задачи.",
+          "Open-weight модели вроде Qwen и Kimi переходили с 'минимального' корпоративного использования год назад к серьезному рассмотрению сейчас. Давление на стоимость, не пробелы в возможностях, движет внедрением.",
+          "Waldo от Glean фильтрует запросы перед обращением к мощным моделям, снижая расход токенов на 25% и задержку на 50%. Иногда дешевая модель с хорошим контекстом лучше дорогой, перегруженной лишними данными."
         ]
       }
     },
     {
-      "id": "d-el2rsk",
+      "id": "d-osixk7",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/",
+      "publishedAt": "2026-08-18T21:39:20.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Mojo's open source release removes the biggest barrier to adoption for a GPU-focused language that could reshape how AI engineers write performance-critical code.",
+        "tweets": [
+          "Mojo compiler is now Apache 2 licensed open source after 3 years of closed development. Shipped v1.0 last week, today they delivered on the promise.",
+          "Mojo abandoned the Python superset goal in 2025. It's now its own language optimized for GPU work with Python-inspired syntax, not Python compatibility.",
+          "AI-assisted coding already handles Python-to-Mojo migration well. Open source means community can now build ecosystem tools and integrations independently."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: открытый код Mojo убирает главное препятствие для распространения языка, оптимизированного под GPU и способного изменить, как инженеры пишут производительный код для AI.",
+        "tweets": [
+          "Компилятор Mojo теперь лицензирован под Apache 2 как открытый исходный код. После трёх лет закрытой разработки вышла v1.0, и обещание выполнено.",
+          "В 2025 году отказались от идеи полной совместимости с Python. Теперь Mojo — самостоятельный язык для GPU с синтаксисом, вдохновлённым Python, но не совместимый с ним.",
+          "AI-инструменты уже хорошо мигрируют код из Python в Mojo. Открытый исходный код позволит сообществу самостоятельно строить экосистему и интеграции."
+        ]
+      }
+    },
+    {
+      "id": "d-o09w35",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+      "publishedAt": "2026-08-18T19:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenAI is building infrastructure to help elected officials and oversight bodies actually understand and govern AI systems used in defense and intelligence.",
+        "tweets": [
+          "OpenAI's new initiative gives government oversight bodies direct access to AI tools and training—closing the expertise gap that lets engineers make security calls without democratic input.",
+          "The program supports elected officials and inspectors general with practical resources to audit AI in national security, not just rubber-stamp decisions made in classified rooms.",
+          "This tackles a real problem: defense agencies deploying AI faster than their oversight mechanisms can evaluate risks. Now there's a deliberate path for institutional accountability."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: OpenAI создает инструменты, чтобы избранные должностные лица и органы надзора могли реально разбираться в системах ИИ, используемых в обороне и разведке.",
+        "tweets": [
+          "Инициатива OpenAI дает органам надзора прямой доступ к инструментам и обучению—инженеры больше не могут единолично решать вопросы безопасности без демократического контроля.",
+          "Программа вооружает избранных официальных лиц и инспекторов ресурсами для реального аудита ИИ в национальной безопасности, а не просто одобрения решений в закрытых кабинетах.",
+          "Решает реальную проблему: ведомства развертывают ИИ быстрее, чем органы надзора могут оценить риски. Теперь есть четкий путь для институционального контроля."
+        ]
+      }
+    },
+    {
+      "id": "d-t4tg44",
       "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
-      "publishedAt": "2026-08-17T19:46:21.000Z",
+      "sourceUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+      "publishedAt": "2026-08-18T18:09:38.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Reordering job scheduling on the same GPU cluster increased utilization by 33 points without buying new hardware.",
+        "headline": "Why it matters: Most AI agents waste memory on irrelevant context, but new research shows you can cut memory requirements by 80% without losing performance.",
         "tweets": [
-          "Same hardware, massive efficiency gain: one team boosted GPU cluster utilization from ~50% to 83% by changing job scheduling order. No new GPUs needed.",
-          "The bottleneck wasn't capacity—it was sequencing. Batching similar workloads and prioritizing by memory/compute needs prevented fragmentation and idle time.",
-          "Practical lesson: before scaling infrastructure, audit your scheduling logic. Job ordering alone can unlock 30+ points of utilization gains."
+          "IBM Research found agents only need ~20% of their context window for accurate decisions. The rest is noise. Scaling down memory could make edge AI viable.",
+          "Traditional agents store everything; better agents learn what to forget. Selective memory + attention patterns = cheaper inference, same results.",
+          "This breaks the assumption that bigger context = smarter agents. Practical win: deploy LLM agents on phones instead of servers."
         ]
       },
       "ru": {
-        "headline": "Почему важно: переупорядочение расписания задач на одном кластере GPU увеличило утилизацию на 33 процента без покупки нового оборудования.",
+        "headline": "Почему важно: Исследование IBM показало, что агентам нужно только 20% контекста для точных решений — остальное лишний шум, который можно отсечь.",
         "tweets": [
-          "На одном и том же оборудовании: команда подняла утилизацию GPU-кластера с ~50% до 83%, просто изменив порядок распределения задач. Новые GPU не понадобились.",
-          "Узкое место было не в мощности, а в планировании. Группировка похожих рабочих нагрузок и приоритизация по памяти предотвратили фрагментацию и простои.",
-          "Практический вывод: перед расширением инфраструктуры проверьте логику планирования. Только переупорядочение задач может дать прирост утилизации на 30+ процентов."
+          "Агенты могут работать на 80% меньше памяти, если забывать невнужную информацию. Селективная память вместо полного кэша — это снижает затраты на вычисления.",
+          "Большой контекст не означает умный агент. Исследование доказывает, что внимание и отбор данных важнее объёма хранилища.",
+          "Практический результат: LLM-агенты теперь реалистично запускать на мобильных устройствах вместо облачных серверов."
         ]
       }
     },
     {
-      "id": "d-ihmv51",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
-      "publishedAt": "2026-08-17T15:21:29.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Amazon is covertly bulk-purchasing rare books through anonymous orders to scan for AI training, destroying the originals in the process.",
-        "tweets": [
-          "404 Media tracked a 1,000-book shipment via AirTag. It ended at Amazon's Las Vegas facility where workers confirm destructive book scanning for AI data.",
-          "Amazon uses anonymous Biblio accounts to buy massive book collections from dealers who have no idea their inventory is being destroyed for training data.",
-          "This mirrors Anthropic's book-scanning revealed in 2025. Big AI companies are systematically acquiring copyrighted books at scale without publisher consent."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Amazon тайно скупает редкие книги через анонимные заказы, чтобы сканировать их для обучения ИИ и уничтожать оригиналы.",
-        "tweets": [
-          "404 Media отследила партию из 1000 книг через AirTag. Она прибыла на объект Amazon в Лас-Вегасе, где рабочие подтверждают разрушающее сканирование книг для данных ИИ.",
-          "Amazon использует анонимные аккаунты на Biblio для покупки огромных книжных коллекций у букинистов, которые не знают, что их товар уничтожается для обучения.",
-          "Это повторяет обнаруженное в 2025 году сканирование книг Anthropic. Крупные компании ИИ систематически закупают защищённые авторским правом книги в массовом масштабе без согласия издателей."
-        ]
-      }
-    },
-    {
-      "id": "d-10g9300",
+      "id": "d-64a6dq",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/the-defenders-window",
-      "publishedAt": "2026-08-17T05:30:00.000Z",
-      "category": "cybersecurity",
+      "sourceUrl": "https://openai.com/index/partnering-with-codeai",
+      "publishedAt": "2026-08-18T11:00:00.000Z",
+      "category": "ai",
       "en": {
-        "headline": "Why it matters: AI is accelerating both attack and defense capabilities, forcing security teams to act now rather than wait for perfect solutions.",
+        "headline": "Why it matters: A new generation needs hands-on AI skills and critical thinking to navigate a world where AI shapes everything from code to careers.",
         "tweets": [
-          "Attackers are already using AI to scale reconnaissance and exploit discovery. Defenders who delay adoption fall further behind—the window to act is closing.",
-          "OpenAI's approach: deploy detection systems faster, share threat intel, and treat AI security as continuous rather than a one-time hardening effort.",
-          "Security teams should focus on AI-augmented threat hunting and automation now. Waiting for perfect defenses means losing ground to adversaries who've already moved."
+          "OpenAI + CodeAI partnership focuses on building real AI literacy in students, not just theory. Critical thinking about AI impact comes first.",
+          "The goal: students who can use AI tools responsibly and understand the trade-offs, not just adopt them blindly.",
+          "Early investment in AI education now prevents a skills gap later. This generation will inherit both the benefits and the problems we create."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ИИ ускоряет возможности как атакующих, так и защитников, заставляя команды безопасности действовать сейчас, а не ждать идеальных решений.",
+        "headline": "Почему важно: Поколению студентов нужны практические навыки работы с ИИ и критическое мышление, чтобы ориентироваться в мире, где ИИ влияет на всё.",
         "tweets": [
-          "Злоумышленники уже используют ИИ для масштабирования разведки и поиска уязвимостей. Команды, которые медлят с внедрением, теряют преимущество быстро.",
-          "Подход OpenAI: развертывать системы обнаружения быстрее, обмениваться разведданными о угрозах, рассматривать ИИ-безопасность как непрерывный процесс.",
-          "Команды безопасности должны начать с охоты на угрозы на основе ИИ и автоматизации. Ожидание идеальной защиты означает проигрыш противникам, которые уже движутся вперед."
+          "OpenAI и CodeAI обучают студентов ИИ грамотности на практике, а не в теории. Сначала—критическое осмысление влияния ИИ.",
+          "Цель: студенты, которые используют ИИ инструменты ответственно и понимают компромиссы, а не слепо их принимают.",
+          "Инвестиции в образование по ИИ сейчас предотвращают дефицит навыков позже. Это поколение будет иметь дело с нашими решениями."
         ]
       }
     },
     {
-      "id": "d-qd84ku",
+      "id": "d-1opxumy",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/openai-joins-ports-pike-project",
-      "publishedAt": "2026-08-17T05:00:00.000Z",
+      "sourceUrl": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+      "publishedAt": "2026-08-18T11:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI's partnership in PORTS-Pike signals AI companies are investing in regional economic development, not just coastal tech hubs.",
+        "headline": "Why it matters: OpenAI is implementing staged release protocols for AI models with cybersecurity capabilities to manage risks before deployment.",
         "tweets": [
-          "OpenAI joins PORTS-Pike to boost Southern Ohio infrastructure and jobs. Major AI player betting on Midwest growth beyond Silicon Valley.",
-          "PORTS-Pike project aims to create thousands of regional jobs. Shows AI industry recognizing talent and opportunity exist everywhere.",
-          "Community investment + AI expansion = economic diversification. OpenAI's move suggests Midwest becoming meaningful hub for tech development."
+          "OpenAI slowing frontier model releases to add monitoring for cyber-relevant capabilities—testing alignment before scaling to prevent misuse.",
+          "New safeguards focus on detecting when models can autonomously identify and exploit security vulnerabilities before public deployment.",
+          "Staged development approach: evaluate dual-use risks, implement mitigations, then measure real-world impact before broader access."
         ]
       },
       "ru": {
-        "headline": "Почему важно: OpenAI инвестирует в региональное развитие Огайо, показывая, что крупные AI-компании расширяют фокус за пределы прибрежных технологических центров.",
+        "headline": "Почему важно: OpenAI внедряет протоколы поэтапного выпуска моделей с кибербезопасностью для управления рисками перед развёртыванием.",
         "tweets": [
-          "OpenAI присоединяется к проекту PORTS-Pike в Южном Огайо. Гигант AI вкладывает средства в развитие региона и создание тысяч рабочих мест.",
-          "Компания видит потенциал за пределами Кремниевой долины. Инвестиции в местную инфраструктуру и таланты становятся стратегией крупных игроков.",
-          "Экономическая диверсификация через технологии. Движение OpenAI указывает на переход AI-индустрии к региональному развитию."
+          "OpenAI замедляет релизы фронтир-моделей, чтобы мониторить кибер-способности—проверяет согласованность перед масштабированием и предотвращает злоупотребления.",
+          "Новые защиты выявляют, когда модели могут автономно находить и использовать уязвимости безопасности перед открытым доступом.",
+          "Поэтапный подход: оценка двойного назначения рисков, внедрение защиты, измерение реального воздействия перед расширением доступа."
         ]
       }
     },
     {
-      "id": "d-japhar",
+      "id": "d-1azzl9u",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
-      "publishedAt": "2026-08-17T03:15:00.000Z",
+      "sourceUrl": "https://openai.com/index/chatgpt-for-teens",
+      "publishedAt": "2026-08-18T11:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI is funding independent policy research to shape how AI impacts jobs, inequality, and society rather than leaving it to chance.",
+        "headline": "Why it matters: OpenAI is creating a supervised AI learning environment for teenagers, addressing real concerns about teen screen time and content exposure.",
         "tweets": [
-          "OpenAI backing 14 independent projects on AI policy—not just tech, but economic opportunity, labor transition, and social resilience.",
-          "The bet: proactive policy design beats reactive regulation. These projects explore everything from retraining to UBI frameworks.",
-          "Key signal: AI labs funding external policy work suggests they expect regulation incoming and want input from diverse thinkers, not just themselves."
+          "ChatGPT for Teens includes parental controls and usage limits—not just a younger UI. Parents get visibility into what kids are learning with AI.",
+          "Built-in guardrails block harmful content while letting teens use AI as a thinking tool for homework and critical thinking exercises.",
+          "Teen adoption of unmoderated AI tools is already happening; OpenAI's approach gives parents a legitimate alternative with actual oversight."
         ]
       },
       "ru": {
-        "headline": "Почему важно: OpenAI финансирует независимые исследования политики ИИ, чтобы формировать воздействие на экономику и общество, а не оставлять это на волю случая.",
+        "headline": "Почему важно: OpenAI создает контролируемую среду для обучения подростков ИИ, решая проблемы экранного времени и доступа к опасному контенту.",
         "tweets": [
-          "OpenAI спонсирует 14 проектов по политике ИИ—не только технология, но экономические возможности, переквалификация рабочей силы и устойчивость общества.",
-          "Стратегия: упреждающая политика лучше, чем реактивное регулирование. Проекты изучают переподготовку, UBI и другие модели.",
-          "Значимый сигнал: лаборатории ИИ финансируют внешние исследования политики, ожидая регулирования и привлекая разные голоса, не только свои."
+          "ChatGPT для подростков включает родительские ограничения и лимиты использования. Родители видят, как дети учатся работать с ИИ.",
+          "Встроенные фильтры блокируют вредоносный контент, позволяя подросткам использовать ИИ для учебы и развития критического мышления.",
+          "Подростки уже используют ИИ без контроля; OpenAI предлагает альтернативу с реальным надзором для родителей."
         ]
       }
     },
     {
-      "id": "d-c3ckkp",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
-      "publishedAt": "2026-08-16T23:59:37.000Z",
-      "category": "web3",
+      "id": "d-pb84hl",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/asana",
+      "publishedAt": "2026-08-18T07:00:00.000Z",
+      "category": "ai",
       "en": {
-        "headline": "Why it matters: Converting animated SVGs to MP4 in the browser lets you share complex graphics on any platform, no server needed.",
+        "headline": "Why it matters: AI-assisted code generation reduced a 5-year engineering project to 2 weeks and $12K, signaling a major shift in how teams handle legacy system modernization.",
         "tweets": [
-          "markdown-svg-renderer now converts animated SVGs to MP4 in-browser using ffmpeg.wasm. Perfect for platforms that strip SVG animation.",
-          "New feature: PNG/JPEG export tabs let you grab static renders of SVGs without leaving the browser. Shareable, no toolchain required.",
-          "Paste Markdown + SVG, get a rendered page with tabs for MP4, PNG, JPEG versions. URL stays bookmarkable via GitHub Gist links."
+          "Asana replaced an outdated testing system using OpenAI Codex in 2 weeks instead of 5 years. Cost: ~$12K instead of months of eng salary burn.",
+          "The work was straightforward but massive: Codex handled volume and pattern-matching faster than humans could. Legacy modernization just got a playbook.",
+          "This shows AI code tools aren't just for greenfield projects—they're brutal against technical debt. The ROI math changes when you can parallelize boring work."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Конвертация анимированных SVG в MP4 прямо в браузере позволяет делиться сложной графикой на любой платформе без сервера.",
+        "headline": "Почему важно: AI сократил план инженерной работы на 5 лет до 2 недель и 12K долларов, показав новый подход к модернизации устаревших систем.",
         "tweets": [
-          "markdown-svg-renderer теперь преобразует анимированные SVG в MP4 в браузере через ffmpeg.wasm. Идеально для платформ, которые не поддерживают SVG-анимацию.",
-          "Новая функция: вкладки экспорта PNG/JPEG позволяют получить статические версии SVG прямо в браузере. Без установки инструментов.",
-          "Вставьте Markdown с SVG, получите страницу с вкладками MP4, PNG, JPEG. Ссылка остаётся закладываемой через GitHub Gist."
+          "Asana переписала устаревшую систему тестирования с Codex за 2 недели вместо 5 лет. Бюджет: около 12K вместо месяцев зарплаты инженеров.",
+          "Работа была однообразной, но огромной по объёму. Codex справился с паттернами быстрее людей. Модернизация legacy теперь имеет работающий рецепт.",
+          "AI-инструменты убивают техдолг эффективнее всего. Когда рутину можно распараллелить, экономика проектов меняется радикально."
         ]
       }
     },
     {
-      "id": "d-180bgcs",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-      "publishedAt": "2026-08-16T22:00:39.000Z",
+      "id": "d-kw1uc",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/nvidia/chatgpt-work",
+      "publishedAt": "2026-08-18T00:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Qwen 3.8 27B is a strong open-weight vision model that runs on laptops, but its default reasoning setting wastes 10x compute on trivial tasks.",
+        "headline": "Why it matters: NVIDIA uses ChatGPT Work to cut manual overhead and replicate winning processes across teams, showing how enterprise AI assistants handle real scaling challenges.",
         "tweets": [
-          "Qwen 3.8 27B ships with xhigh reasoning enabled by default. A simple 'draw a circle' request burned 22k tokens and 21 minutes. Switch to low or off reasoning first.",
-          "At sensible reasoning levels, this 27B model excels at structured vision tasks like bounding box detection—nails pelican coordinates on real photos with high precision.",
-          "27B parameter model, 17GB quantized, runs on M5 Max MacBook Pro. Best open-weight vision model for local inference right now if you dial down the overthinking."
+          "NVIDIA teams cut manual repetitive work by integrating ChatGPT Work into daily workflows, freeing engineers to focus on complex problems instead of busywork.",
+          "ChatGPT Work lets NVIDIA capture and standardize successful processes, then deploy them globally so high-performing workflows don't stay siloed in one team.",
+          "Real-time signal processing through AI assistants helps NVIDIA teams stay synchronized across fast-moving projects without adding coordination overhead."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Qwen 3.8 27B — мощная открытая vision-модель для ноутбуков, но по умолчанию она тратит в 10 раз больше ресурсов даже на простые задачи.",
+        "headline": "Почему важно: NVIDIA использует ChatGPT Work для снижения ручной работы и масштабирования успешных процессов по компании, демонстрируя, как корпоративные AI-помощники решают реальные задачи масштабирования.",
         "tweets": [
-          "Qwen 3.8 27B по умолчанию включает максимальный уровень рассуждений. Запрос «нарисуй круг» занял 22k токенов и 21 минуту. Сразу переключайте на низкий уровень.",
-          "При нормальных настройках модель отлично работает с фиксированными визуальными задачами—точно обнаруживает объекты на реальных фото с высокой точностью координат.",
-          "27 млрд параметров, 17 ГБ квантизированной версии, запускается на MacBook Pro M5. Лучшая открытая vision-модель для локального использования при отключении излишних вычислений."
-        ]
-      }
-    },
-    {
-      "id": "d-55hzg2",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
-      "publishedAt": "2026-08-16T15:05:36.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Public distrust of AI reflects decades of broken promises from tech and institutions—marketing won't fix it, only tangible results will.",
-        "tweets": [
-          "Dario Amodei: The AI skepticism isn't caused by risk warnings from AI leaders. It's a deeper crisis of trust in companies, governments, and tech that predates AI itself.",
-          "Saying AI will cure cancer is now a cliche people dismiss as deceptive. Trust rebuilds through actual delivered outcomes, not glossy campaigns with positive spin.",
-          "Amodei's self-criticism: AI companies including Anthropic haven't yet delivered on promises to benefit society. That's the real accountability problem, not how we talk about it."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Недоверие к ИИ отражает многолетний кризис доверия к корпорациям и госучреждениям—его не решить маркетингом, только реальными результатами.",
-        "tweets": [
-          "Дарио Амодеи: скептицизм к ИИ вызван не предупреждениями лидеров о рисках, а глубоким кризисом доверия к компаниям, правительствам и технологическому сектору в целом.",
-          "Обещания, что ИИ вылечит рак, стали банальностью, которую люди воспринимают как обман. Доверие восстанавливается через реальные результаты, а не красивые кампании.",
-          "Самокритика Амодеи: компании ИИ, включая Anthropic, пока не выполнили обещания принести пользу обществу. В этом и состоит главный вопрос подотчётности."
+          "Команды NVIDIA сокращают рутинную работу через ChatGPT Work, высвобождая инженеров от повторяющихся задач для сосредоточения на сложных проблемах.",
+          "ChatGPT Work позволяет NVIDIA зафиксировать успешные процессы одной команды и масштабировать их глобально, избегая изоляции лучших практик.",
+          "Обработка сигналов в реальном времени через AI-ассистента синхронизирует команды NVIDIA в быстро меняющихся проектах без добавления управленческих издержек."
         ]
       }
     }

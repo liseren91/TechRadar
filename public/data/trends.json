@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T07:04:19.657Z",
+  "generatedAt": "2026-08-19T07:05:29.172Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,7 +8,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "rising",
-      "momentum": 0.04,
+      "momentum": 0.23,
       "weeklyCounts": [
         81,
         60,
@@ -16,7 +16,7 @@
         76,
         72,
         77,
-        80
+        95
       ],
       "signals": [
         {
@@ -52,30 +52,12 @@
       ]
     },
     {
-      "id": "post-quantum",
-      "label": "Post-Quantum Crypto",
-      "category": "cybersecurity",
-      "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
-      "weeklyCounts": [
-        0,
-        0,
-        0,
-        0,
-        6,
-        0,
-        0
-      ],
-      "signals": []
-    },
-    {
       "id": "fusion",
       "label": "Fusion Energy",
       "category": "energy",
       "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.14,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         14,
         11,
@@ -83,7 +65,7 @@
         14,
         4,
         7,
-        6
+        7
       ],
       "signals": [
         {
@@ -99,8 +81,8 @@
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.14,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         21,
         21,
@@ -108,7 +90,7 @@
         21,
         21,
         21,
-        18
+        21
       ],
       "signals": [
         {
@@ -136,8 +118,8 @@
       "label": "Humanoid Robots",
       "category": "robotics",
       "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.14,
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
         1,
         7,
@@ -145,7 +127,7 @@
         6,
         6,
         7,
-        6
+        7
       ],
       "signals": [
         {
@@ -157,12 +139,30 @@
       ]
     },
     {
+      "id": "post-quantum",
+      "label": "Post-Quantum Crypto",
+      "category": "cybersecurity",
+      "stage": "research",
+      "trajectory": "stable",
+      "momentum": 0,
+      "weeklyCounts": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0
+      ],
+      "signals": []
+    },
+    {
       "id": "open-models",
       "label": "Open Models",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.15,
+      "momentum": -0.01,
       "weeklyCounts": [
         375,
         358,
@@ -170,9 +170,15 @@
         414,
         398,
         396,
-        336
+        394
       ],
       "signals": [
+        {
+          "title": "Frontier Model Cost and Open-Weights Popularity is Driving Demand for Model Routing",
+          "url": "https://www.latent.space/p/glean-model-routing",
+          "source": "latent-space",
+          "publishedAt": "2026-08-18T21:41:10.000Z"
+        },
         {
           "title": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
           "url": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/",
@@ -196,12 +202,6 @@
           "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
           "source": "simonw",
           "publishedAt": "2026-08-15T14:49:54.000Z"
-        },
-        {
-          "title": "[AINews] Cursor's $60B acquisition by SpaceXai closes",
-          "url": "https://www.latent.space/p/ainews-cursors-60b-acquisition-by",
-          "source": "latent-space",
-          "publishedAt": "2026-08-14T06:16:00.000Z"
         }
       ]
     },
@@ -211,7 +211,7 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.16,
+      "momentum": -0.02,
       "weeklyCounts": [
         411,
         420,
@@ -219,9 +219,15 @@
         449,
         458,
         466,
-        392
+        456
       ],
       "signals": [
+        {
+          "title": "Frontier Model Cost and Open-Weights Popularity is Driving Demand for Model Routing",
+          "url": "https://www.latent.space/p/glean-model-routing",
+          "source": "latent-space",
+          "publishedAt": "2026-08-18T21:41:10.000Z"
+        },
         {
           "title": "[AINews] Stripe buys OpenRouter for $7B",
           "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
@@ -245,12 +251,6 @@
           "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
           "source": "latent-space",
           "publishedAt": "2026-08-13T01:53:47.000Z"
-        },
-        {
-          "title": "[AINews] How to steal a Reasoning Trace",
-          "url": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
-          "source": "latent-space",
-          "publishedAt": "2026-08-12T07:11:08.000Z"
         }
       ]
     }
