@@ -1,4 +1,235 @@
 {
-  "generatedAt": "2026-08-20T07:05:05.613Z",
-  "items": []
+  "generatedAt": "2026-08-21T07:07:16.449Z",
+  "items": [
+    {
+      "id": "d-1himwwh",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
+      "publishedAt": "2026-08-21T05:45:21.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Poolside's $12B deal with NVIDIA signals a shift from AI model training to infrastructure and scientific discovery as the real value frontier.",
+        "tweets": [
+          "NVIDIA hired 109 Poolside engineers ($6B payout) and licensed their Model Factory. Founders kept $1B but are pivoting hard—this is a reverse-execuhire, not a typical acquisition.",
+          "Poolside lost a 40K GB300 cluster deal last year due to capital timing. The message: frontier AI now requires not just money but scarce physical datacenter space and contracted compute.",
+          "Founders believe AI's real value shifts from knowledge work (becoming commodity) to scientific discovery—requiring real-world experimental loops. Infraco scaling to 7GW hints at big infrastructure ambitions ahead."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Сделка Poolside с NVIDIA на $12 млрд показывает переход от обучения моделей к инфраструктуре и научным открытиям как настоящему источнику ценности.",
+        "tweets": [
+          "NVIDIA нанял 109 инженеров Poolside ($6 млрд выплат) и получил лицензию на их Model Factory. Основатели оставили себе $1 млрд, но резко меняют направление—это обратный «execuhire», не типичное поглощение.",
+          "Poolside потерял сделку на 40K GB300 кластер из-за проблем с финансированием. Вывод: граница AI требует теперь не только денег, но редких датацентров и контрактованных вычислений.",
+          "Основатели видят будущее AI в научных открытиях, требующих реальных экспериментов, а не в работе с информацией, которая становится товаром. Инфра-компания масштабируется до 7GW—намёк на амбициозные планы."
+        ]
+      }
+    },
+    {
+      "id": "d-1qgmfqp",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+      "publishedAt": "2026-08-20T23:57:32.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: ChatGPT's search now automatically uses site: operators in 16% of queries, signaling OpenAI is optimizing for domain-specific results and potentially deprioritizing Reddit.",
+        "tweets": [
+          "ChatGPT search jumped from 0.3% to 16-17% site: operator usage after GPT-5.6 rollout. OpenAI isn't asking users to type it—the system is doing it automatically behind the scenes.",
+          "GEO (Generative Engine Optimization) is the new SEO. Companies like Promptwatch now track what sources LLMs cite in responses, making visibility in ChatGPT a business concern.",
+          "Reddit citations dropped sharply in August. OpenAI hasn't publicly confirmed changes to their system prompt, but evidence suggests they're steering ChatGPT toward different sources."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ChatGPT теперь автоматически использует оператор site: в 16% запросов, что указывает на оптимизацию OpenAI под поиск по конкретным доменам и снижение приоритета Reddit.",
+        "tweets": [
+          "После обновления GPT-5.6 использование site: выросло с 0,3% до 16-17%. OpenAI не просит пользователей писать оператор—система делает это автоматически в скрытом режиме.",
+          "GEO (оптимизация для генеративных поисковиков) стала новым SEO. Компании вроде Promptwatch отслеживают источники в ответах LLM, и видимость в ChatGPT теперь критична для бизнеса.",
+          "Ссылки на Reddit в ответах резко упали в августе. OpenAI не подтвердила изменения в system prompt, но признаки указывают, что ChatGPT переориентируют на другие источники."
+        ]
+      }
+    },
+    {
+      "id": "d-10fxdn8",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/wayfinder-skill",
+      "publishedAt": "2026-08-20T20:59:09.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Planning complex projects with AI agents requires managing context windows and uncertain requirements—wayfinder automates the planning orchestration so engineers can focus on clear specs instead of token budgets.",
+        "tweets": [
+          "wayfinder splits fuzzy project planning across multiple AI sessions so you don't hit context limits. One orchestrator handles planning (research, prototypes, decisions), then hands off clean specs to autonomous agents.",
+          "The 'fog of war' concept: you can't decide everything upfront. wayfinder explores unknowns incrementally—each decision reveals what comes next, like exploring a game map, not executing a fixed plan.",
+          "Matt Pocock's skill uses three precise entities (map = decisions made, ticket = specific task, session = execution) so agents understand information flow instead of getting confused by loose terminology."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Планирование сложных проектов с AI-агентами требует управления контекстом и неопределенными требованиями—wayfinder автоматизирует оркестровку планирования, чтобы инженеры сосредоточились на чистых спецификациях вместо подсчета токенов.",
+        "tweets": [
+          "wayfinder разбивает размытое планирование проекта на несколько сессий AI, чтобы вы не превысили лимит контекста. Один оркестратор управляет планированием (исследование, прототипы, решения), затем передает чистые спеки автономным агентам.",
+          "Концепция 'тумана войны': вы не можете решить все заранее. wayfinder исследует неизвестное пошагово—каждое решение открывает, что идет дальше, как в стратегии, а не как выполнение фиксированного плана.",
+          "Навык Мэтта Покока использует три четких сущности (карта = принятые решения, билет = конкретная задача, сессия = исполнение), чтобы агенты понимали информационный поток вместо путаницы."
+        ]
+      }
+    },
+    {
+      "id": "d-z7cs6v",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "publishedAt": "2026-08-20T16:52:57.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: LFM2.5-DSpark achieves 3.2x faster inference on standard hardware by optimizing model architecture, making large models practical for resource-constrained deployments.",
+        "tweets": [
+          "LFM2.5-DSpark cuts inference latency to 3.2x faster than baseline using structural optimizations, not just quantization tricks.",
+          "Runs efficiently on consumer GPUs and CPUs—no need for specialized hardware to deploy faster models in production.",
+          "Maintains performance parity with full models while drastically reducing compute, solving real bottleneck for real-time applications."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: LFM2.5-DSpark ускоряет инференс в 3.2 раза на стандартном железе за счёт оптимизации архитектуры, делая большие модели практичными для ресурсоограниченных систем.",
+        "tweets": [
+          "LFM2.5-DSpark сокращает время инференса в 3.2 раза структурной оптимизацией архитектуры, не только квантизацией.",
+          "Работает эффективно на потребительских GPU и CPU—не нужно специальное железо для развёртывания моделей в продакшене.",
+          "Сохраняет качество полных моделей при резком снижении вычислений, решает реальную проблему для приложений с низкой задержкой."
+        ]
+      }
+    },
+    {
+      "id": "d-dm5fff",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/",
+      "publishedAt": "2026-08-20T15:37:00.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Bun 1.4 adds native WebView support, letting you automate browsers directly from a TypeScript server without external tools.",
+        "tweets": [
+          "Bun 1.4 ships Bun.WebView for in-process browser automation via WebKit (macOS) or Chrome DevTools Protocol. No separate Selenium or Puppeteer needed.",
+          "A JSON API wrapping WebView for page loading + JS execution uses just 192-256MB of RAM, making serverless browser automation feasible.",
+          "Bun also claims 2,900 bug fixes, 5x lower idle CPU, 35% less memory, 50% faster startup on Linux, and 1,517 new Node.js test passes."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Bun 1.4 добавил встроенную поддержку WebView для автоматизации браузера прямо из TypeScript без внешних инструментов.",
+        "tweets": [
+          "Bun.WebView позволяет управлять браузером через WebKit на macOS или Chrome DevTools Protocol, заменяя Puppeteer и Selenium встроенным решением.",
+          "JSON API для загрузки страниц и выполнения JavaScript потребляет всего 192-256 МБ RAM, что открывает возможности для serverless браузерной автоматизации.",
+          "Bun 1.4 исправил 2900 ошибок, снизил потребление CPU в 5 раз, уменьшил память на 35% и ускорил старт на 50% на Linux."
+        ]
+      }
+    },
+    {
+      "id": "d-1cdab7",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/introducing-ai-futures",
+      "publishedAt": "2026-08-20T07:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenAI is launching a dedicated publication to examine how AI will reshape governance, economics, and individual rights—moving beyond technical capability to systemic impact.",
+        "tweets": [
+          "OpenAI launches AI Futures blog to tackle the hard questions: how will transformative AI reshape power structures, governance models, and economic systems?",
+          "New focus area signals shift from just building AI to analyzing real-world consequences for freedom, policy, and institutional power",
+          "Blog will explore systemic impacts of AI beyond product features—governance, economics, and individual autonomy in an AI-transformed world"
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: OpenAI запускает отдельное издание для анализа того, как ИИ переформатирует государственное управление, экономику и права человека—переходя от технических характеристик к системным последствиям.",
+        "tweets": [
+          "OpenAI создаёт блог AI Futures для изучения влияния трансформирующего ИИ на власть, государство и экономику глобально",
+          "Сигнал о смещении фокуса: не только разработка, но и анализ реальных последствий ИИ для свободы, политики и власти",
+          "Издание будет разбирать системные эффекты ИИ: изменения в управлении, экономике и автономии людей в будущем"
+        ]
+      }
+    },
+    {
+      "id": "d-1my1w0g",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
+      "publishedAt": "2026-08-20T05:17:12.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Parameter count alone no longer predicts model capability; post-training data, compute allocation, and deployment context now matter more for reasoning and complex tasks.",
+        "tweets": [
+          "GLM 5.3's gains come entirely from RL on realistic long-horizon tasks (ML debugging, infrastructure optimization) that take experienced engineers days to solve—not from adding more parameters.",
+          "Scaling law shift: memorization still wants parameters, but reasoning needs depth and post-training data. Advanced skills like vulnerability finding require 20+ inference steps without losing context.",
+          "Synthetic task environments are becoming the bottleneck, not model size. Z.ai is auto-generating runnable workflows with AI judges to verify solvability and create reliable reward signals at scale."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Количество параметров больше не главный показатель способности модели; объем данных постобучения, распределение вычислений и условия развертывания теперь критичнее для рассуждений.",
+        "tweets": [
+          "GLM 5.3 улучшается только за счет обучения с подкреплением на реальных задачах с длинным горизонтом (отладка ML, оптимизация инфраструктуры), которые опытные инженеры решают дни—не за счет добавления параметров.",
+          "Сдвиг в законах масштабирования: запоминание требует параметров, но рассуждение требует глубину и данные постобучения. Сложные навыки вроде поиска уязвимостей нужны цепочки из 20+ шагов вывода.",
+          "Синтетические окружения задач становятся узким местом, а не размер модели. Z.ai автоматически генерирует рабочие процессы с AI судьями для проверки выполнимости и создания надежных сигналов награды в масштабе."
+        ]
+      }
+    },
+    {
+      "id": "d-lomhe7",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/stampli",
+      "publishedAt": "2026-08-20T00:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Using AI coding tools can drastically compress engineering timelines when resources are constrained, turning a weeks-long launch into a days-long sprint.",
+        "tweets": [
+          "Stampli cut product launch time by 68% using ChatGPT Work to automate code generation, freeing engineers from routine tasks during crunch.",
+          "When design teams are pulled thin, AI assistants can handle repetitive development work, letting small teams ship on deadline without hiring.",
+          "Real constraint: fixed deadline + limited resources. Real solution: let AI handle the boilerplate so humans focus on what needs human judgment."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: AI-инструменты для кодирования могут сократить цикл разработки в несколько раз, когда ресурсы ограничены и дедлайн жёсткий.",
+        "tweets": [
+          "Stampli сократила время запуска продукта на 68%, используя ChatGPT Work для автогенерации кода и освобождения разработчиков от рутины.",
+          "Когда дизайнеры заняты другим, AI берёт на себя шаблонную разработку, позволяя небольшой команде выпустить продукт в срок.",
+          "Реальная задача: жёсткий дедлайн плюс недостаток людей. Реальное решение: автоматизировать шаблоны, чтобы люди решали сложные проблемы."
+        ]
+      }
+    },
+    {
+      "id": "d-er4iaw",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
+      "publishedAt": "2026-08-19T23:16:00.000Z",
+      "category": "cybersecurity",
+      "en": {
+        "headline": "Why it matters: Running untrusted user code safely requires lightweight VMs with strict resource limits; smolvm offers CPU/RAM caps and filesystem isolation, enabling secure execution of data transformation tasks.",
+        "tweets": [
+          "smolvm isolates untrusted Python/JS with hard limits on RAM, CPU time, and network access. Blocks infinite loops and filesystem abuse without containers.",
+          "Claude Fable bypassed nested virtualization limits by pivoting to GitHub Actions runners with /dev/kvm exposed—showing how coding agents solve infrastructure blockers.",
+          "Use case: Run user-submitted data transformations safely. smolvm's approach beats containers for minimal overhead but still needs careful permission scoping."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Запуск ненадежного кода требует легких виртуальных машин с жесткими ограничениями на ресурсы; smolvm предоставляет лимиты CPU и памяти, позволяя безопасно исполнять пользовательские скрипты трансформации данных.",
+        "tweets": [
+          "smolvm изолирует ненадежный код с жесткими лимитами на RAM, время CPU и доступ в сеть. Блокирует бесконечные циклы без тяжелых контейнеров.",
+          "Claude Fable обошел ограничения вложенной виртуализации, переключившись на GitHub Actions с открытым /dev/kvm—пример адаптивности AI-агентов.",
+          "Применение: безопасный запуск пользовательских трансформаций данных. smolvm легче контейнеров, но требует точной настройки прав доступа."
+        ]
+      }
+    },
+    {
+      "id": "d-j0gdek",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/19/jeremy-morrell/",
+      "publishedAt": "2026-08-19T22:56:31.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: LLMs make it practical to let users safely extend web apps without hiring more developers.",
+        "tweets": [
+          "LLMs slash the cost of writing extensions. Pair that with modern sandbox tech and you can let users customize your app safely without hiring an army of engineers.",
+          "New play: build a solid core product, then let LLMs + sandboxes handle user extensions. Users get superpowers, you stay focused on what matters.",
+          "Security boundaries are no longer a bottleneck. Modern sandboxing + LLMs as the extension layer = extensible software that doesn't explode your ops burden."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: LLM-ы делают расширяемость веб-приложений безопасной и дешёвой — пользователи могут настраивать софт без привлечения разработчиков.",
+        "tweets": [
+          "LLM-ы резко упали в стоимости для написания расширений. Добавьте современные песочницы — и вот вы уже отпустили юзеров кастомизировать приложение без найма новых людей.",
+          "Стратегия: крепкий ядро продукта + LLM-ы как движок расширений в изолированной среде. Юзерам супер-силы, вам покой и фокус на главное.",
+          "Современные песочницы убрали скучный потолок безопасности. LLM плюс изоляция — это расширяемый софт без операционного кошмара."
+        ]
+      }
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T07:05:05.745Z",
+  "generatedAt": "2026-08-21T07:07:16.519Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -27,7 +27,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.84,
+      "momentum": -0.68,
       "weeklyCounts": [
         81,
         60,
@@ -36,7 +36,7 @@
         72,
         77,
         95,
-        15
+        30
       ],
       "signals": [
         {
@@ -77,7 +77,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.85,
+      "momentum": -0.7,
       "weeklyCounts": [
         375,
         358,
@@ -86,9 +86,15 @@
         398,
         396,
         394,
-        59
+        117
       ],
       "signals": [
+        {
+          "title": "[AINews] Poolside gets $12B reverse-execuhire to NVIDIA; founders stay for $1B, employees go for $6B, Infraco scaling to 7GW neocloud",
+          "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
+          "source": "latent-space",
+          "publishedAt": "2026-08-21T05:45:21.000Z"
+        },
         {
           "title": "[AINews] Death of Params: Z.ai CEO Jie Tang on GLM 5.3 and the new Post-training Scaling Law",
           "url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
@@ -112,62 +118,6 @@
           "url": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/",
           "source": "simonw",
           "publishedAt": "2026-08-17T23:58:14.000Z"
-        },
-        {
-          "title": "[AINews] Stripe buys OpenRouter for $7B",
-          "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
-          "source": "latent-space",
-          "publishedAt": "2026-08-17T23:13:41.000Z"
-        }
-      ]
-    },
-    {
-      "id": "llm-agents",
-      "label": "LLM Agents",
-      "category": "ai",
-      "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.86,
-      "weeklyCounts": [
-        411,
-        420,
-        426,
-        449,
-        458,
-        466,
-        456,
-        64
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Death of Params: Z.ai CEO Jie Tang on GLM 5.3 and the new Post-training Scaling Law",
-          "url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
-          "source": "latent-space",
-          "publishedAt": "2026-08-20T05:17:12.000Z"
-        },
-        {
-          "title": "[AINews] Memory prices up 500% in 12 months",
-          "url": "https://www.latent.space/p/ainews-memory-prices-up-500-in-12",
-          "source": "latent-space",
-          "publishedAt": "2026-08-19T08:44:52.000Z"
-        },
-        {
-          "title": "Frontier Model Cost and Open-Weights Popularity is Driving Demand for Model Routing",
-          "url": "https://www.latent.space/p/glean-model-routing",
-          "source": "latent-space",
-          "publishedAt": "2026-08-18T21:41:10.000Z"
-        },
-        {
-          "title": "[AINews] Stripe buys OpenRouter for $7B",
-          "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
-          "source": "latent-space",
-          "publishedAt": "2026-08-17T23:13:41.000Z"
-        },
-        {
-          "title": "React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue",
-          "url": "https://www.latent.space/p/flue-2",
-          "source": "latent-space",
-          "publishedAt": "2026-08-15T15:46:22.000Z"
         }
       ]
     },
@@ -177,7 +127,7 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         14,
         11,
@@ -186,7 +136,7 @@
         4,
         7,
         7,
-        1
+        2
       ],
       "signals": [
         {
@@ -203,7 +153,7 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         21,
         21,
@@ -212,7 +162,7 @@
         21,
         21,
         21,
-        3
+        6
       ],
       "signals": [
         {
@@ -236,6 +186,56 @@
       ]
     },
     {
+      "id": "llm-agents",
+      "label": "LLM Agents",
+      "category": "ai",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.72,
+      "weeklyCounts": [
+        411,
+        420,
+        426,
+        449,
+        458,
+        466,
+        456,
+        127
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Poolside gets $12B reverse-execuhire to NVIDIA; founders stay for $1B, employees go for $6B, Infraco scaling to 7GW neocloud",
+          "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
+          "source": "latent-space",
+          "publishedAt": "2026-08-21T05:45:21.000Z"
+        },
+        {
+          "title": "[AINews] Death of Params: Z.ai CEO Jie Tang on GLM 5.3 and the new Post-training Scaling Law",
+          "url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
+          "source": "latent-space",
+          "publishedAt": "2026-08-20T05:17:12.000Z"
+        },
+        {
+          "title": "[AINews] Memory prices up 500% in 12 months",
+          "url": "https://www.latent.space/p/ainews-memory-prices-up-500-in-12",
+          "source": "latent-space",
+          "publishedAt": "2026-08-19T08:44:52.000Z"
+        },
+        {
+          "title": "Frontier Model Cost and Open-Weights Popularity is Driving Demand for Model Routing",
+          "url": "https://www.latent.space/p/glean-model-routing",
+          "source": "latent-space",
+          "publishedAt": "2026-08-18T21:41:10.000Z"
+        },
+        {
+          "title": "[AINews] Stripe buys OpenRouter for $7B",
+          "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
+          "source": "latent-space",
+          "publishedAt": "2026-08-17T23:13:41.000Z"
+        }
+      ]
+    },
+    {
       "id": "humanoids",
       "label": "Humanoid Robots",
       "category": "robotics",
@@ -252,14 +252,7 @@
         7,
         1
       ],
-      "signals": [
-        {
-          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
-          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
-          "source": "latent-space",
-          "publishedAt": "2026-07-31T04:40:54.000Z"
-        }
-      ]
+      "signals": []
     }
   ]
 }
