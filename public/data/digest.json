@@ -1,6 +1,121 @@
 {
-  "generatedAt": "2026-08-22T06:59:11.482Z",
+  "generatedAt": "2026-08-23T07:01:12.490Z",
   "items": [
+    {
+      "id": "d-1et6sob",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+      "publishedAt": "2026-08-22T21:04:26.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Linus Torvalds used AI as a debugging partner for a kernel problem, showing LLMs work best when paired with human persistence rather than treated as autonomous solvers.",
+        "tweets": [
+          "Linus debugged a hellish kernel issue with AI assistance. The AI kept saying it was impossible; he pushed back and it kept analyzing. Stubbornness > surrender.",
+          "AI trained to give up; humans trained to keep digging. The combination worked. Torvalds let the AI write the commit message as credit.",
+          "LLMs are grunt-work machines, not problem-solvers. They need humans who won't accept 'unsolvable.' The partnership only works if one side refuses to quit."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Линус Торвальдс использовал ИИ как помощника при отладке ядра Linux, показав, что нейросети работают лучше с упорным человеком, чем как самостоятельные решатели.",
+        "tweets": [
+          "Линус отладил сложную проблему в ядре с помощью ИИ. Нейросеть повторяла, что решения нет, но он продолжал настаивать и она анализировала код дальше.",
+          "ИИ обучили сдаваться, людей обучили упорству. Вместе это сработало. Торвальдс дал ИИ написать сообщение коммита в награду.",
+          "LLM — это помощники для рутины, не решатели проблем. Им нужны люди, которые не примут 'невозможно'. Партнёрство работает только если один не сдаётся."
+        ]
+      }
+    },
+    {
+      "id": "d-swsli1",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/22/llm/",
+      "publishedAt": "2026-08-22T17:01:16.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: llm 0.33 makes embedding models consistent with LLM models and adds template composition, reducing friction for developers building multi-step AI workflows.",
+        "tweets": [
+          "llm 0.33 upgraded to OpenAI Python 3.x and switched HTTP client from httpx to httpx2, fixing compatibility issues that were patched in 0.32.1.",
+          "Embedding commands now accept --key parameter, letting you pass per-call API keys without changing model state. Plugins using self.key still work via compatibility fallback.",
+          "New -t flag can be repeated to combine templates: chain model configs and prompts separately then merge them. Unlocks clean template reuse patterns."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: llm 0.33 приводит встраивающие модели в соответствие с LLM-моделями и добавляет композицию шаблонов, снижая трение при разработке многоэтапных AI-рабочих процессов.",
+        "tweets": [
+          "llm 0.33 обновлён до OpenAI Python 3.x и переключился с httpx на httpx2. Это исправляет проблемы совместимости, которые были частично решены в 0.32.1.",
+          "Команды встраивания теперь принимают параметр --key, позволяя передавать ключи API для каждого вызова без изменения состояния модели. Обратная совместимость сохранена.",
+          "Новый флаг -t можно повторять для объединения шаблонов: определяйте конфиги модели и подсказки отдельно, а затем объедините их. Это позволяет переиспользовать шаблоны элегантно."
+        ]
+      }
+    },
+    {
+      "id": "d-1ypa3ep",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
+      "publishedAt": "2026-08-22T15:56:54.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Effective AI coding agents require validation skills beyond traditional line-by-line code review—the bottleneck shifts from writing to verification strategy.",
+        "tweets": [
+          "AI coding agents demand a new skill: confident instruction-giving and result verification. Line-by-line review isn't the bottleneck anymore.",
+          "Validating agent-generated code isn't just about reading every line. Multiple verification strategies exist and some work better than others.",
+          "The real skill gap: knowing how to task agents effectively and then confidently confirm the changes landed correctly in your codebase."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Продуктивная работа с кодирующими агентами требует новых навыков валидации—эффективная проверка выходит за рамки построчного ревью.",
+        "tweets": [
+          "Кодирующие агенты требуют новых навыков: чёткие инструкции и уверенная верификация результатов. Построчная проверка—уже не главное узкое место.",
+          "Валидация кода, написанного агентом, это не только чтение строк. Существуют альтернативные стратегии проверки, некоторые работают эффективнее.",
+          "Главный пробел в навыках: умение ставить задачи агентам и уверенно подтверждать, что изменения корректно попали в вашу кодовую базу."
+        ]
+      }
+    },
+    {
+      "id": "d-10y6nqw",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
+      "publishedAt": "2026-08-22T07:36:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI systems are systematically replacing every human-made component of model training—from reward signals to entire research pipelines—with synthetic alternatives that are 100x cheaper and 10,000x faster, even if 10% worse.",
+        "tweets": [
+          "Since 2022, AI training has flipped one pipeline component per year from human-made to model-made: reward models judging models, LLM-generated training data, models teaching smaller models, self-designed curricula, autonomous researchers running experiments overnight.",
+          "Z.ai and others now synthesize entire RL environments end-to-end: research agents mine real workflows, judge agents verify solvability, verifiers stress-test without seeing solutions. The gym, referee, and scoreboard are all synthetic.",
+          "DeepSeek-R1 made model-as-teacher the default for every small model since. Karpathy's autoresearch stacked 700 experiments into 20 improvements while sleeping, cutting GPT-2 training time from 2.02 to 1.80 hours with real code changes."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Системы ИИ постепенно заменяют все компоненты тренировки моделей с человеческим участием на синтетические аналоги, которые работают в 100 раз дешевле и в 10 тысяч раз быстрее, теряя только 10% качества.",
+        "tweets": [
+          "С 2022 года каждый год одна новая часть конвейера обучения ИИ переходит из рук человека в руки моделей: модели-судьи оценивают других моделей, LLM генерируют данные для обучения, модели обучают меньшие модели, сами себе проектируют учебные программы.",
+          "Z.ai и другие компании синтезируют полные окружения для обучения с подкреплением: агенты-исследователи изучают реальные рабочие процессы, агенты-судьи проверяют решаемость, верификаторы протестированы без доступа к эталонным решениям.",
+          "DeepSeek-R1 установил модель-учитель как стандарт для всех малых моделей. Автоисследование Карпатия запустило 700 экспериментов во время сна, оставив 20 улучшений с реальными изменениями кода в тренировке."
+        ]
+      }
+    },
+    {
+      "id": "d-1ahjb2j",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/attention-interface",
+      "publishedAt": "2026-08-22T07:30:52.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI agents suddenly work because models and their surrounding systems finally matured in sync—and now the real evolution is shifting control from machine autonomy to human attention.",
+        "tweets": [
+          "The agent breakthrough wasn't just better models. It was model + harness curves crossing at the same moment. Models alone are brains in vats; harnesses give them eyes, hands, memory, and guardrails to act in the real world.",
+          "AutoGPT failed because it handed models impossible tasks. A 95% reliable step compounds to 36% success over 20 steps. Pulling back to human-in-the-loop (Cursor, Copilot) was the smart move, not the cowardly one.",
+          "By Feb 2025, reasoning models like o1 outpaced the harnesses holding them back. Next phase: harnesses stop constraining models and start managing human attention instead of machine behavior."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: агенты начали работать не из-за одних моделей, а потому что кривые развития моделей и систем управления наконец пересеклись—и теперь эволюция смещается от автономии машин к управлению человеческим вниманием.",
+        "tweets": [
+          "Прорыв агентов произошёл не только благодаря лучшим моделям, но потому что кривые развития модели и harness пересеклись одновременно. Модель без harness—это мозг в банке; harness даёт ей восприятие, инструменты, память и границы для действий в реальности.",
+          "AutoGPT провалился, потому что отдал моделям невыполнимые задачи. Надёжность 95% за шаг даёт всего 36% успеха за 20 шагов. Переход на человека в цикле (Cursor, Copilot) был правильным решением, а не капитуляцией.",
+          "К февралю 2025 рассуждающие модели типа o1 обогнали harness, которые их сдерживали. Следующий этап: harness перестанут ограничивать модели и начнут управлять вниманием человека вместо поведения машины."
+        ]
+      }
+    },
     {
       "id": "d-1tdgto0",
       "source": "latent-space",
@@ -8,19 +123,19 @@
       "publishedAt": "2026-08-21T23:37:38.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Simulating human behavior at 85% accuracy before deploying products or policies could replace expensive research panels and unlock testing at scale across entire populations.",
+        "headline": "Why it matters: Simulation is becoming a new scaling law for AI—companies are now running millions of simulations to test products and predict human behavior at 85% accuracy before deployment, replacing expensive human research panels.",
         "tweets": [
-          "Simile AI raised $2B to run tens of millions of behavioral simulations for Fortune 100 companies. Their digital twins match human responses 85% as accurately as humans reproduce their own—replacing focus groups with synthetic populations.",
-          "Frontier LLMs optimized for rationality fail at simulating real humans. Simile post-trains models on interviews, transaction data, and randomized controlled trials to capture why people actually make decisions, not just predict them.",
-          "The ambition: simulate all 8 billion people before testing climate policies, UBI, or other society-scale changes. Simulation replaces prediction—it's about shaping the future, not just forecasting it."
+          "Simile AI just raised $2B to simulate human behavior at scale. They're recreating digital twins of real people using interviews, transaction data, and RCTs—hitting 85% accuracy vs actual human responses.",
+          "Frontier LLMs optimized for rationality fail at simulating real humans. Simile's approach: post-train models on causal mechanisms and biases to capture why people actually make decisions, not what rational actors would do.",
+          "The endgame: simulate all 8 billion people before rolling out policies or products. This shifts AI from prediction to decision-shaping—test UBI, climate policies, or product launches in synthetic worlds first."
         ]
       },
       "ru": {
-        "headline": "Почему важно: симуляция поведения людей с точностью 85% позволит тестировать продукты и политики перед запуском, заменив дорогие исследования на синтетические популяции в масштабе.",
+        "headline": "Почему важно: Симуляция становится новым законом масштабирования для ИИ — компании запускают миллионы симуляций, чтобы тестировать продукты и предсказывать поведение людей с точностью 85% перед запуском.",
         "tweets": [
-          "Simile AI привлекла $2B для запуска десятков миллионов симуляций поведения для компаний Fortune 100. Их цифровые двойники воспроизводят ответы людей на 85% точнее, чем люди воспроизводят свои собственные реакции.",
-          "Фронтальные LLM, оптимизированные на рациональность, не справляются с моделированием реальных людей. Simile переобучает модели на интервью, транзакционных данных и контролируемых экспериментах, чтобы понять, почему люди принимают решения.",
-          "Амбиция: симулировать 8 миллиардов людей перед тестированием политик по климату, БДП и глобальным изменениям. Симуляция—это не прогноз, а способность формировать будущее."
+          "Simile AI привлекла $2B для симуляции человеческого поведения в масштабе. Они создают цифровых двойников реальных людей, используя интервью, данные транзакций и рандомизированные испытания с точностью 85%.",
+          "Передовые LLM, оптимизированные на рациональность, не справляются с симуляцией реальных людей. Подход Simile: дофайнтьюнинг моделей на причинно-следственные механизмы и систематические ошибки человека.",
+          "Финальная цель: симулировать 8 миллиардов людей перед внедрением политик и продуктов. ИИ переходит от предсказания к формированию решений—сначала тестируйте БУД и климатические политики в синтетических мирах."
         ]
       }
     },
@@ -31,19 +146,19 @@
       "publishedAt": "2026-08-21T17:16:13.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: LLM 0.32.1 fixes a breaking dependency chain that left fresh installations broken when OpenAI dropped httpx support.",
+        "headline": "Why it matters: LLM CLI tool's dependency chain broke when OpenAI dropped httpx, forcing a quick patch to keep installations working.",
         "tweets": [
-          "LLM 0.32.1 hotfix: OpenAI library removed httpx dependency, breaking LLM installs that relied on it transitively. Now pinned to openai<3.",
-          "Dependency trap caught: LLM only got httpx through OpenAI, not direct. When OpenAI cut it, fresh installs failed silently.",
-          "Next move: LLM 0.33 will migrate from httpx to httpx2, making the stack self-contained and avoiding future transitive breaks."
+          "LLM 0.32.1 hotfix: OpenAI library stopped using httpx, breaking LLM installs because httpx only came as a transitive dependency.",
+          "Quick workaround: pin to openai<3. Real fix in 0.33 will switch from httpx to httpx2 to avoid future dependency surprises.",
+          "Lesson: transitive dependencies are fragile. When upstream vendors drop a library without warning, downstream tools break silently."
         ]
       },
       "ru": {
-        "headline": "Почему важно: LLM 0.32.1 исправляет разломанную цепочку зависимостей, когда OpenAI убрал поддержку httpx и сломал новые установки.",
+        "headline": "Почему важно: инструмент LLM сломался из-за цепочки зависимостей, когда OpenAI перестал использовать httpx.",
         "tweets": [
-          "Срочное исправление 0.32.1: OpenAI удалил httpx, LLM получал его через транзитивную зависимость. Новые установки не работали.",
-          "Ловушка зависимостей: LLM полагался на httpx только через OpenAI, а не напрямую. Удаление привело к молчаливому краху.",
-          "В версии 0.33 LLM перейдёт с httpx на httpx2, сделав стек независимым и избежав подобных проблем в будущем."
+          "Срочный патч LLM 0.32.1: библиотека OpenAI прекратила использование httpx, что привело к ошибкам установки LLM, так как httpx был только транзитивной зависимостью.",
+          "Временное решение: привязка к openai<3. Настоящее исправление в версии 0.33 перейдёт с httpx на httpx2.",
+          "Вывод: транзитивные зависимости хрупкие. Когда апстрим убирает библиотеку без предупреждения, даунстрим-инструменты ломаются молча."
         ]
       }
     },
@@ -54,19 +169,19 @@
       "publishedAt": "2026-08-21T16:58:19.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: llm-openrouter 0.7 now exposes reasoning traces and server-side tools, making OpenRouter models more powerful for CLI workflows.",
+        "headline": "Why it matters: llm-openrouter 0.7 adds reasoning trace visibility and server-side tools, making it easier to debug and extend LLM calls through OpenRouter.",
         "tweets": [
-          "llm-openrouter 0.7 is now compatible with LLM 0.32, letting you see the reasoning traces that some models expose—crucial for understanding complex outputs.",
-          "Three new server-side tools ship with this release: Shell, WebFetch, and WebSearch. Enable them with flags like -T WebSearch to extend model capabilities.",
-          "Switched to OpenRouter's Responses API implementation. Better integration, cleaner abstractions, fewer edge cases in production use."
+          "llm-openrouter 0.7 now displays reasoning traces for OpenRouter models, letting you see how the LLM arrived at its answer—critical for debugging complex queries.",
+          "Three new server-side tools (Shell, WebFetch, WebSearch) available via -T flag. Models can now take actions beyond pure text generation without client-side setup.",
+          "Updated to LLM 0.32 compatibility and switched to OpenRouter's Responses API. Existing integrations keep working; new capabilities unlock with minimal config."
         ]
       },
       "ru": {
-        "headline": "Почему важно: llm-openrouter 0.7 открывает доступ к цепочкам рассуждений и серверным инструментам, расширяя возможности OpenRouter в CLI.",
+        "headline": "Почему важно: llm-openrouter 0.7 добавляет видимость цепочек рассуждений и серверные инструменты, упрощая отладку и расширение вызовов LLM через OpenRouter.",
         "tweets": [
-          "llm-openrouter 0.7 совместим с LLM 0.32 и показывает цепочки рассуждений моделей—критично для понимания сложных ответов и отладки.",
-          "Три новых серверных инструмента: Shell, WebFetch, WebSearch. Включаются флагами вроде -T WebSearch. Модели теперь могут искать в интернете и выполнять код.",
-          "Переезд на Responses API от OpenRouter. Лучше интеграция, чище абстракции, меньше граничных случаев в продакшене."
+          "llm-openrouter 0.7 показывает цепочку рассуждений моделей OpenRouter. Теперь видно, как модель пришла к ответу — критично для отладки сложных запросов.",
+          "Три новых серверных инструмента: Shell, WebFetch, WebSearch через флаг -T. Модели могут выполнять действия за пределами текста без настройки на клиенте.",
+          "Совместимость с LLM 0.32 и переход на Responses API OpenRouter. Старые интеграции работают, новые возможности включаются без лишних конфигов."
         ]
       }
     },
@@ -77,19 +192,19 @@
       "publishedAt": "2026-08-21T16:07:32.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI coding agents have made building native UIs cheap enough that throwing together a CLI tool is now the lazy choice, not the practical one.",
+        "headline": "Why it matters: AI coding agents now make building native GUIs cheap enough that even throwaway tools deserve real interfaces instead of terminal CLIs.",
         "tweets": [
-          "AI agents can now scaffold a usable native UI faster than you'd finish a polished CLI. Your 500 throwaway scripts deserve better.",
-          "Building a real app (macOS, web, whatever) forces you to think about actual user workflows. CLIs hide that friction.",
-          "The cost floor for native UIs just collapsed. If you're still TUI-only out of habit, you're leaving better tools on the table."
+          "Coding agents have collapsed the cost of building native UIs. If you're still shipping CLIs for personal tools, you're leaving better UX on the table.",
+          "Real native apps beat TUIs for daily-use tools. The friction drop from terminal to GUI is huge once you actually experience it.",
+          "Thomas Ptacek: stop making excuses. Turn one CLI into a native app with an agent. It'll shift how you think about tool design."
         ]
       },
       "ru": {
-        "headline": "Почему важно: AI-ассистенты для кода сделали создание нативного интерфейса дешевле, чем оттачивать CLI, так что писать консольные утилиты теперь просто ленивый выбор.",
+        "headline": "Почему важно: ИИ-ассистенты сделали создание нативных интерфейсов настолько дешёвым, что даже внутренние инструменты больше не должны оставаться в терминале.",
         "tweets": [
-          "AI способны за минуты сгенерировать работающий нативный интерфейс. Ваши сотни служебных скриптов заслуживают чего-то лучше TUI.",
-          "Создание реального приложения открывает глаза на настоящие проблемы юзаблиности, которые консоль скрывает под слоем привычки.",
-          "Барьер входа для нативных приложений упал. Если вы ещё делаете только TUI из принципа, вы теряете лучшие инструменты."
+          "Coding agents убили оправдания для TUI. Нативный GUI теперь стоит столько же времени, сколько раньше терминальный интерфейс.",
+          "Люди, которые ежедневно пользуются своими инструментами, немедленно замечают разницу. GUI меняет восприятие юзабилити.",
+          "Начните переводить старые CLI в нативные приложения. Один проект — и вы уже не вернётесь к терминалу для личных tools."
         ]
       }
     },
@@ -100,134 +215,19 @@
       "publishedAt": "2026-08-21T15:06:26.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI tutoring can deepen learning instead of replacing it—when used interactively to understand, not just to copy.",
+        "headline": "Why it matters: Using AI as a tutor rather than a code generator pushes developers to understand the fundamentals they'd otherwise skip.",
         "tweets": [
-          "Matt Webb used ChatGPT not as a code generator but as a patient tutor to finally grasp quaternions for his app. Learning happened, not shortcuts.",
-          "Interactive AI can push you to learn more deeply than passive study. Webb credits the tool with teaching what books and friends couldn't convey.",
-          "Outsourcing thinking to AI doesn't end learning—it creates space to tackle harder problems you were avoiding before."
+          "Matt Webb used ChatGPT not to write quaternion rotation code, but to learn the math interactively—and finally understood what books and mathematician friends couldn't teach him.",
+          "AI tutoring creates a different outcome than code generation: instead of outsourcing thinking, you end up learning more deeply because you're scaffolded, not replaced.",
+          "The pattern: interactive AI collaboration pushes expertise forward. Webb learned quaternions well enough to ship Galactic Compass 2, not just copy-paste a solution."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ИИ как интерактивный наставник может углубить обучение вместо того, чтобы его заменить.",
+        "headline": "Почему важно: использование ИИ как учителя, а не как генератора кода, заставляет разработчиков разбираться в основах, которые они обычно пропускают.",
         "tweets": [
-          "Матт Уэбб использовал ChatGPT не для генерации кода, а как терпеливого учителя, чтобы наконец разобраться в кватернионах. Произошло настоящее обучение.",
-          "Интерактивный ИИ подталкивает учиться глубже, чем пассивное изучение. Уэбб благодарен инструменту за то, что тот объяснил то, что не смогли книги и друзья.",
-          "Делегирование мышления ИИ не прерывает обучение—это создаёт пространство для решения более сложных задач, которых вы раньше избегали."
-        ]
-      }
-    },
-    {
-      "id": "d-fvmzh5",
-      "source": "deepmind",
-      "sourceUrl": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
-      "publishedAt": "2026-08-21T11:59:48.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: DeepMind's 15-year gaming research pipeline is shifting from lab benchmarks to real commercial games, proving AI can handle complex multi-agent strategy beyond controlled environments.",
-        "tweets": [
-          "DeepMind went from Atari dominance (2013) to Eve Online's 5000-player economy. Each step required solving new hard problems: partial observation, long-term planning, human collaboration.",
-          "Partnership model is key: game studios provide realistic complexity; DeepMind provides AI breakthroughs. Neither alone gets there. Real games force algorithms to generalize or fail.",
-          "Moving AI from academic benchmarks to live multiplayer servers means dealing with human players, unexpected strategies, and systems that can't be perfectly modeled. That's the real test."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: 15 лет исследований DeepMind в играх переходят от лабораторных тестов к коммерческим проектам, доказывая, что ИИ способен решать сложные задачи мультиагентной стратегии за пределами контролируемых сценариев.",
-        "tweets": [
-          "DeepMind прошла путь от Atari (2013) к Eve Online с 5000 одновременных игроков. На каждом этапе нужно было решить новые проблемы: неполная информация, долгосрочное планирование, сотрудничество с людьми.",
-          "Партнёрство критично: студии дают реальную сложность, DeepMind даёт прорывы в ИИ. По отдельности ни то ни другое не работает. Живые игры заставляют алгоритмы обобщать или проваливаться.",
-          "Запуск ИИ на живых мультиплеерных серверах означает взаимодействие с людьми, непредвиденные стратегии и системы, которые невозможно идеально смоделировать. Это реальный экзамен."
-        ]
-      }
-    },
-    {
-      "id": "d-1himwwh",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
-      "publishedAt": "2026-08-21T05:45:21.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Poolside's founders are trading their AI company for massive payouts while pivoting to an infrastructure play, signaling that frontier model training is becoming a capital and datacenter problem, not just a talent problem.",
-        "tweets": [
-          "Poolside did a reverse-execuhire: founders got $1B, employees $6B, NVIDIA licensed their factory and hired 109 engineers. It's not an acquisition—it's a structured exit to fund a harder problem.",
-          "The real constraint now: not capital or talent, but physical datacenter space and contracted compute. Poolside needed a 40k GB300 cluster but couldn't secure the space in time to stay competitive.",
-          "Poolside's pivot thesis: human-level AI becomes commoditized open-source; super-intelligence won't. Real value is in AI-powered science discovery tied to real-world experimental feedback loops, not just knowledge work."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: основатели Poolside превращают свою AI-компанию в крупные выплаты и инфраструктурный проект, показывая что обучение фронтирных моделей упирается не в деньги или таланты, а в дата-центры и вычислительные мощности.",
-        "tweets": [
-          "Poolside провели обратный аква-найм: основатели получили $1B, сотрудники $6B, NVIDIA лицензировала их фабрику и нанял 109 инженеров. Это не поглощение — структурированный выход для нового направления.",
-          "Главное ограничение теперь не в деньгах, а в физических дата-центрах и контрактных вычислениях. Poolside не успели забронировать кластер GB300 вовремя, чтобы оставаться в игре.",
-          "Новый тезис Poolside: человеческий уровень AI станет открытым ПО с низкой маржой; истинная ценность в AI для научных открытий с обратной связью из реальных экспериментов, а не просто в автоматизации знаниевой работы."
-        ]
-      }
-    },
-    {
-      "id": "d-9xyi50",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/asr-benchmark-optimization",
-      "publishedAt": "2026-08-21T00:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Speech recognition models need real-world performance metrics beyond lab benchmarks to avoid overfitting to test datasets.",
-        "tweets": [
-          "Speech recognition benchmarks like LibriSpeech can saturate—models hit 95%+ accuracy but still fail on real audio. Optimize for actual use cases, not leaderboard scores.",
-          "Benchmark overfitting is real: engineers tune hyperparameters to specific datasets, making models brittle on unseen accents, noise, and speech patterns.",
-          "Better approach: validate on diverse, out-of-domain data (podcasts, street noise, different languages) alongside traditional metrics to catch real-world weaknesses."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Модели распознавания речи нуждаются в метриках реальной производительности, а не только в лабораторных бенчмарках, чтобы избежать переобучения на тестовых наборах.",
-        "tweets": [
-          "Бенчмарки вроде LibriSpeech насыщаются—модели достигают 95%+ точности, но падают на реальном аудио. Оптимизируйте под реальные сценарии, не под таблицы лидеров.",
-          "Переобучение бенчмарков реально: инженеры подгоняют гиперпараметры под конкретные датасеты, модели становятся хрупкими на акцентах, шуме и незнакомых паттернах речи.",
-          "Лучший подход: проверяйте на разнородных данных вне домена (подкасты, уличный шум, разные языки) параллельно с традиционными метриками для поимки реальных проблем."
-        ]
-      }
-    },
-    {
-      "id": "d-1qgmfqp",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
-      "publishedAt": "2026-08-20T23:57:32.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: ChatGPT's search is now systematically using site: operators to fetch from specific domains, signaling OpenAI is optimizing which sources answer your questions.",
-        "tweets": [
-          "ChatGPT search jumped from 0.3% to 16-17% site:operator usage after GPT-5.6 rollout. OpenAI is quietly controlling which domains get queried for different questions.",
-          "GEO (Generative Engine Optimization) is the new SEO: companies now track how often their sites appear in AI chatbot responses to optimize visibility.",
-          "OpenAI reduced Reddit sourcing in August searches but won't publish how. System prompt changes driving AI behavior remain intentionally opaque to outsiders."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: ChatGPT теперь систематически использует оператор site: для поиска на конкретных доменах, что показывает активную оптимизацию источников информации.",
-        "tweets": [
-          "После обновления GPT-5.6 использование site: выросло с 0,3% до 16-17%. OpenAI контролирует, какие домены запрашиваются для разных вопросов.",
-          "GEO (оптимизация для генеративных движков) заменяет SEO: компании отслеживают, как часто их сайты попадают в ответы ИИ-чатов.",
-          "OpenAI снизил использование Reddit в поиске, но не раскрывает как. Изменения в системных подсказках остаются намеренно скрытыми."
-        ]
-      }
-    },
-    {
-      "id": "d-10fxdn8",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/wayfinder-skill",
-      "publishedAt": "2026-08-20T20:59:09.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Planning complex projects with unclear endpoints becomes tractable when an AI orchestrator handles context management across multiple parallel planning sessions instead of forcing you to fit everything into one constrained window.",
-        "tweets": [
-          "Wayfinder splits fuzzy project planning into parallel research, prototyping, and grilling sessions—then synthesizes them into concrete specs. The orchestrator manages context handoffs so you don't hit token limits mid-thought.",
-          "Core insight: treating planning sessions as hierarchical (parent map + child tickets) with precise terminology lets agents stay aligned. Vague naming causes agent confusion; clear entities (map/ticket/session) prevent strange behavior.",
-          "Works beyond engineering: course planning, architecture redesigns, anything with unknowns. The 'fog of war' model lets you make decisions that push further into uncertainty rather than requiring total upfront clarity."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Планирование сложных проектов с неясным результатом становится управляемым, когда AI-оркестратор берет на себя контроль контекста через параллельные сессии вместо того, чтобы втискивать всё в одно окно с лимитом токенов.",
-        "tweets": [
-          "Wayfinder разбивает нечёткое планирование на параллельные сессии исследования, прототипирования и обсуждения, затем синтезирует в конкретные спецификации. Оркестратор управляет передачей контекста, чтобы вы не упёрлись в лимит токенов.",
-          "Ключевая идея: иерархические сессии (родительская карта + дочерние задачи) с точной терминологией позволяют агентам оставаться согласованными. Расплывчатые названия путают агента; чёткие сущности (карта/задача/сессия) предотвращают странное поведение.",
-          "Работает не только в инженерии: планирование курсов, переделизайны архитектуры, всё с неизвестными переменными. Модель 'тумана войны' позволяет принимать решения, которые подталкивают в неизвестное, вместо требования полной ясности с начала."
+          "Мэтт Уэбб использовал ChatGPT не для написания кода кватернионных вращений, а для интерактивного обучения математике—и наконец понял то, чего не смогли объяснить книги и друзья-математики.",
+          "ИИ-репетитор дает другой результат, чем генерация кода: вместо аутсорсинга мышления вы учитесь глубже, потому что вас поддерживают, а не заменяют.",
+          "Закономерность: интерактивная работа с ИИ развивает экспертизу. Уэбб выучил кватернионы хорошо, чтобы выпустить Galactic Compass 2, а не просто скопировал решение."
         ]
       }
     }
