@@ -1,7 +1,39 @@
 {
-  "generatedAt": "2026-08-23T07:01:12.571Z",
+  "generatedAt": "2026-08-24T07:20:17.251Z",
   "window": "rolling-120d",
   "topics": [
+    {
+      "id": "fusion",
+      "label": "Fusion Energy",
+      "category": "energy",
+      "stage": "research",
+      "trajectory": "stable",
+      "momentum": 0,
+      "weeklyCounts": [
+        14,
+        11,
+        14,
+        14,
+        4,
+        7,
+        7,
+        7
+      ],
+      "signals": [
+        {
+          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
+          "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
+          "source": "latent-space",
+          "publishedAt": "2026-08-22T07:36:00.000Z"
+        },
+        {
+          "title": "[AINews] Megakernels are so dead and so back",
+          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
+          "source": "latent-space",
+          "publishedAt": "2026-08-05T01:21:47.000Z"
+        }
+      ]
+    },
     {
       "id": "post-quantum",
       "label": "Post-Quantum Crypto",
@@ -22,44 +54,12 @@
       "signals": []
     },
     {
-      "id": "fusion",
-      "label": "Fusion Energy",
-      "category": "energy",
-      "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.29,
-      "weeklyCounts": [
-        14,
-        11,
-        14,
-        14,
-        4,
-        7,
-        7,
-        5
-      ],
-      "signals": [
-        {
-          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
-          "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
-          "source": "latent-space",
-          "publishedAt": "2026-08-22T07:36:00.000Z"
-        },
-        {
-          "title": "[AINews] Megakernels are so dead and so back",
-          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
-          "source": "latent-space",
-          "publishedAt": "2026-08-05T01:21:47.000Z"
-        }
-      ]
-    },
-    {
       "id": "rag",
       "label": "Retrieval-Augmented Generation",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.37,
+      "momentum": -0.21,
       "weeklyCounts": [
         81,
         60,
@@ -68,7 +68,7 @@
         72,
         77,
         95,
-        60
+        75
       ],
       "signals": [
         {
@@ -109,7 +109,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.42,
+      "momentum": -0.27,
       "weeklyCounts": [
         375,
         358,
@@ -118,7 +118,7 @@
         398,
         396,
         394,
-        230
+        286
       ],
       "signals": [
         {
@@ -159,7 +159,7 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.43,
+      "momentum": -0.29,
       "weeklyCounts": [
         21,
         21,
@@ -168,7 +168,7 @@
         21,
         21,
         21,
-        12
+        15
       ],
       "signals": [
         {
@@ -197,7 +197,7 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.45,
+      "momentum": -0.31,
       "weeklyCounts": [
         411,
         420,
@@ -206,7 +206,7 @@
         458,
         466,
         456,
-        251
+        313
       ],
       "signals": [
         {

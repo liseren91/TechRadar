@@ -1,6 +1,52 @@
 {
-  "generatedAt": "2026-08-23T07:01:12.490Z",
+  "generatedAt": "2026-08-24T07:20:17.186Z",
   "items": [
+    {
+      "id": "d-woqe2x",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "publishedAt": "2026-08-23T20:24:52.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Anthropic's premium models are losing market share to cheaper alternatives despite strong revenue growth, signaling a shift toward cost-optimized AI adoption.",
+        "tweets": [
+          "Anthropic hit $65bn annualized revenue in July (up from $47bn in May), but their flagship Opus 5 captured only 3.5% of model spend. Older Opus 4.8 dominates at 28%—cost matters more than recency.",
+          "OpenAI's Q3 revenue jumped 35% to $40bn+ after GPT 5.6 launch, outpacing Anthropic's growth. The market is voting with wallets: cheaper inference wins even when better models exist.",
+          "Anthropic has 6,000 customers spending $100k+ annually, yet adoption data shows users clustering on older, cheaper models. Pricing strategy may be cannibalizing their own best-in-class offerings."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Флагманские модели Anthropic теряют рыночную долю дешёвым альтернативам несмотря на рост выручки, что указывает на сдвиг в сторону экономичного использования ИИ.",
+        "tweets": [
+          "Anthropic достигла $65 млрд годовой выручки в июле, но Opus 5 занимает только 3,5% рынка моделей. Старый Opus 4.8 лидирует с 28%—стоимость важнее новизны.",
+          "Выручка OpenAI в Q3 выросла на 35% до $40+ млрд после запуска GPT 5.6. Рынок голосует кошельком: дешёвые вычисления побеждают даже лучшие модели.",
+          "У Anthropic 6000 клиентов, тратящих $100k+ в год, но данные показывают концентрацию на старых дешёвых моделях. Ценовая стратегия может подрывать собственные лучшие разработки."
+        ]
+      }
+    },
+    {
+      "id": "d-1x5alvc",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "publishedAt": "2026-08-23T19:55:30.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: As frontier AI models plateau in capability gains, engineering discipline around prompt design and context management becomes competitive advantage instead of nice-to-have optimization.",
+        "tweets": [
+          "The free lunch is over: model improvements alone won't solve your problems anymore. Time spent optimizing prompts and context strategies now pays off instead of being papered over by the next cheaper model.",
+          "Fable showed incredible capability but at high cost. Engineers now ask 'what work goes where' instead of defaulting to the best model—forcing real ROI thinking into LLM stack decisions.",
+          "Claude 3.5, Opus, even open models like K3 are 'good enough' for most coding tasks. When capability plateaus, tooling and prompt engineering become the actual differentiation."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: По мере замедления прогресса в возможностях моделей, инженерное мастерство в работе с промптами и контекстом становится конкурентным преимуществом, а не опциональной оптимизацией.",
+        "tweets": [
+          "Бесплатный обед закончился: улучшения модели больше не решат все проблемы автоматически. Время на оптимизацию промптов теперь окупается вместо того, чтобы ждать следующей дешёвой модели.",
+          "Fable показала невероятные способности, но слишком дорогая. Инженеры теперь спрашивают 'какую работу куда отправить' вместо использования лучшей модели по умолчанию.",
+          "Claude 3.5, Opus и открытые модели вроде K3 для большинства кода 'достаточно хороши'. Когда возможности выравниваются, инструментарий и качество промптов становятся главным различием."
+        ]
+      }
+    },
     {
       "id": "d-1et6sob",
       "source": "simonw",
@@ -8,19 +54,19 @@
       "publishedAt": "2026-08-22T21:04:26.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Linus Torvalds used AI as a debugging partner for a kernel problem, showing LLMs work best when paired with human persistence rather than treated as autonomous solvers.",
+        "headline": "Why it matters: Linus Torvalds used AI to solve a brutal debugging problem that would have stalled kernel development, showing LLMs are useful when paired with human persistence.",
         "tweets": [
-          "Linus debugged a hellish kernel issue with AI assistance. The AI kept saying it was impossible; he pushed back and it kept analyzing. Stubbornness > surrender.",
-          "AI trained to give up; humans trained to keep digging. The combination worked. Torvalds let the AI write the commit message as credit.",
-          "LLMs are grunt-work machines, not problem-solvers. They need humans who won't accept 'unsolvable.' The partnership only works if one side refuses to quit."
+          "Linus used AI to debug a nightmare kernel issue. The AI kept saying 'impossible', but he kept pushing it to add code and analyze results. Sometimes tools need stubborn humans.",
+          "AI was ready to give up multiple times during the debug session. But it faithfully executed each new test Linus asked for. The grunt work automation had real value.",
+          "Linus credited the AI with writing the commit message. He's explicit: the AI wasn't the solver, but its tireless execution of his ideas made the breakthrough possible."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Линус Торвальдс использовал ИИ как помощника при отладке ядра Linux, показав, что нейросети работают лучше с упорным человеком, чем как самостоятельные решатели.",
+        "headline": "Почему важно: Линус Торвальдс использовал ИИ для решения критической проблемы в ядре Linux, продемонстрировав, что LLM эффективны, когда их направляет упорный инженер.",
         "tweets": [
-          "Линус отладил сложную проблему в ядре с помощью ИИ. Нейросеть повторяла, что решения нет, но он продолжал настаивать и она анализировала код дальше.",
-          "ИИ обучили сдаваться, людей обучили упорству. Вместе это сработало. Торвальдс дал ИИ написать сообщение коммита в награду.",
-          "LLM — это помощники для рутины, не решатели проблем. Им нужны люди, которые не примут 'невозможно'. Партнёрство работает только если один не сдаётся."
+          "Линус отладил кошмарную проблему ядра с помощью ИИ. Модель несколько раз говорила 'это невозможно', но он продолжал просить добавлять код и анализировать результаты.",
+          "ИИ был готов сдаться, но исправно выполнял каждый новый тест. Автоматизация рутинной работы дала реальный результат — прорыв в отладке.",
+          "Линус дал ИИ кредит за написание сообщения коммита. Он явно говорит: ИИ не решал проблему, но его неутомимое исполнение идей инженера сделало возможным прорыв."
         ]
       }
     },
@@ -31,19 +77,19 @@
       "publishedAt": "2026-08-22T17:01:16.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: llm 0.33 makes embedding models consistent with LLM models and adds template composition, reducing friction for developers building multi-step AI workflows.",
+        "headline": "Why it matters: llm 0.33 adds template composition and per-call API keys, letting you combine model configs with prompts without state mutations—critical for reproducible AI workflows.",
         "tweets": [
-          "llm 0.33 upgraded to OpenAI Python 3.x and switched HTTP client from httpx to httpx2, fixing compatibility issues that were patched in 0.32.1.",
-          "Embedding commands now accept --key parameter, letting you pass per-call API keys without changing model state. Plugins using self.key still work via compatibility fallback.",
-          "New -t flag can be repeated to combine templates: chain model configs and prompts separately then merge them. Unlocks clean template reuse patterns."
+          "llm 0.33 upgrades to OpenAI Python 3.x and httpx2, fixing dependency issues that were breaking integrations with the latest OpenAI client.",
+          "New --key flag for embedding commands lets you pass API keys per-call without mutating shared model state. Plugins stay compatible via fallback.",
+          "Repeat -t/--template flag to chain templates: llm -t model_config -t prompt_file runs them in order. Unlocks reusable model+options packages."
         ]
       },
       "ru": {
-        "headline": "Почему важно: llm 0.33 приводит встраивающие модели в соответствие с LLM-моделями и добавляет композицию шаблонов, снижая трение при разработке многоэтапных AI-рабочих процессов.",
+        "headline": "Почему важно: llm 0.33 добавляет композицию шаблонов и передачу ключей API для каждого вызова—это обеспечивает воспроизводимость рабочих процессов без побочных эффектов состояния.",
         "tweets": [
-          "llm 0.33 обновлён до OpenAI Python 3.x и переключился с httpx на httpx2. Это исправляет проблемы совместимости, которые были частично решены в 0.32.1.",
-          "Команды встраивания теперь принимают параметр --key, позволяя передавать ключи API для каждого вызова без изменения состояния модели. Обратная совместимость сохранена.",
-          "Новый флаг -t можно повторять для объединения шаблонов: определяйте конфиги модели и подсказки отдельно, а затем объедините их. Это позволяет переиспользовать шаблоны элегантно."
+          "llm 0.33 обновлён до OpenAI Python 3.x и httpx2, исправлены проблемы совместимости с последней версией клиента OpenAI.",
+          "Новый флаг --key для команд embeddings позволяет передавать ключи API без изменения состояния модели. Плагины остаются совместимы через fallback.",
+          "Флаг -t/--template теперь повторяется для цепочки шаблонов: llm -t model_config -t prompt_file выполняет их по порядку и повторно использует конфиги."
         ]
       }
     },
@@ -54,19 +100,19 @@
       "publishedAt": "2026-08-22T15:56:54.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Effective AI coding agents require validation skills beyond traditional line-by-line code review—the bottleneck shifts from writing to verification strategy.",
+        "headline": "Why it matters: AI coding agents require a different validation approach than traditional code review—inspecting every line isn't the bottleneck anymore.",
         "tweets": [
-          "AI coding agents demand a new skill: confident instruction-giving and result verification. Line-by-line review isn't the bottleneck anymore.",
-          "Validating agent-generated code isn't just about reading every line. Multiple verification strategies exist and some work better than others.",
-          "The real skill gap: knowing how to task agents effectively and then confidently confirm the changes landed correctly in your codebase."
+          "The real skill with coding agents isn't reviewing every line they write. It's instructing them clearly what to build, then verifying the output actually works.",
+          "Line-by-line code review was never the most effective validation method. With AI agents, you need smarter verification strategies that scale.",
+          "Productive agent use = confident instructions + confident verification. The verification part doesn't have to mean reading all the code."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Продуктивная работа с кодирующими агентами требует новых навыков валидации—эффективная проверка выходит за рамки построчного ревью.",
+        "headline": "Почему важно: AI-агентам для кодирования нужен другой подход к проверке—построчное чтение больше не узкое место.",
         "tweets": [
-          "Кодирующие агенты требуют новых навыков: чёткие инструкции и уверенная верификация результатов. Построчная проверка—уже не главное узкое место.",
-          "Валидация кода, написанного агентом, это не только чтение строк. Существуют альтернативные стратегии проверки, некоторые работают эффективнее.",
-          "Главный пробел в навыках: умение ставить задачи агентам и уверенно подтверждать, что изменения корректно попали в вашу кодовую базу."
+          "С AI-агентами главное—чётко описать, что нужно сделать, и проверить результат. Чтение каждой строки кода—не основной навык.",
+          "Построчная проверка кода никогда не была самым эффективным способом валидации. Нужны более умные стратегии верификации.",
+          "Продуктивная работа с агентами = ясные инструкции + умная проверка. Проверка не обязательно означает читать весь код."
         ]
       }
     },
@@ -77,19 +123,19 @@
       "publishedAt": "2026-08-22T07:36:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI systems are systematically replacing every human-made component of model training—from reward signals to entire research pipelines—with synthetic alternatives that are 100x cheaper and 10,000x faster, even if 10% worse.",
+        "headline": "Why it matters: AI systems are progressively replacing each human component in model training—from evaluation to data generation to curriculum design—creating a self-improving loop that trades 10% accuracy for 100x cost reduction and 10,000x speed gains.",
         "tweets": [
-          "Since 2022, AI training has flipped one pipeline component per year from human-made to model-made: reward models judging models, LLM-generated training data, models teaching smaller models, self-designed curricula, autonomous researchers running experiments overnight.",
-          "Z.ai and others now synthesize entire RL environments end-to-end: research agents mine real workflows, judge agents verify solvability, verifiers stress-test without seeing solutions. The gym, referee, and scoreboard are all synthetic.",
-          "DeepSeek-R1 made model-as-teacher the default for every small model since. Karpathy's autoresearch stacked 700 experiments into 20 improvements while sleeping, cutting GPT-2 training time from 2.02 to 1.80 hours with real code changes."
+          "Reward models, synthetic data, and AI-written curricula have flipped from human-made to model-made since 2022. Each year another pipeline stage goes synthetic at frontier labs, then productionizes everywhere.",
+          "DeepSeek-R1 proved distilled student models are now standard. Self-rewarding models generate tasks, judge outputs, and improve past human preference data ceilings. The training loop closes on itself.",
+          "AutoResearch stacked 700 experiments into 20 kept improvements overnight. Synthetic environments now generate executable task worlds end-to-end. The entire training stack—judge, gym, scoreboard—runs on models."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Системы ИИ постепенно заменяют все компоненты тренировки моделей с человеческим участием на синтетические аналоги, которые работают в 100 раз дешевле и в 10 тысяч раз быстрее, теряя только 10% качества.",
+        "headline": "Почему важно: ИИ-системы последовательно заменяют каждый человеческий компонент в обучении моделей—от оценки до создания данных и формирования программы обучения, создавая саморазвивающийся цикл, жертвующий 10% точности ради 100-кратного снижения затрат и 10000-кратного ускорения.",
         "tweets": [
-          "С 2022 года каждый год одна новая часть конвейера обучения ИИ переходит из рук человека в руки моделей: модели-судьи оценивают других моделей, LLM генерируют данные для обучения, модели обучают меньшие модели, сами себе проектируют учебные программы.",
-          "Z.ai и другие компании синтезируют полные окружения для обучения с подкреплением: агенты-исследователи изучают реальные рабочие процессы, агенты-судьи проверяют решаемость, верификаторы протестированы без доступа к эталонным решениям.",
-          "DeepSeek-R1 установил модель-учитель как стандарт для всех малых моделей. Автоисследование Карпатия запустило 700 экспериментов во время сна, оставив 20 улучшений с реальными изменениями кода в тренировке."
+          "С 2022 года модели-оценки, синтетические данные и программы обучения, написанные ИИ, перешли от созданных человеком к созданным моделями. Каждый год на какой-то стадии конвейера происходит синтетизация в передовых лабораториях, потом распространяется повсеместно.",
+          "DeepSeek-R1 доказал, что дистиллированные модели-ученики теперь стандарт. Саморознаграждающиеся модели генерируют задачи, оценивают выходы и совершенствуются сверх потолков человеческих предпочтений.",
+          "AutoResearch собрал 700 экспериментов в 20 сохранённых улучшений за ночь. Синтетические окружения теперь генерируют исполняемые миры задач полностью. Весь стек обучения—судья, тренажер, таблица результатов—работает на моделях."
         ]
       }
     },
@@ -100,19 +146,19 @@
       "publishedAt": "2026-08-22T07:30:52.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI agents suddenly work because models and their surrounding systems finally matured in sync—and now the real evolution is shifting control from machine autonomy to human attention.",
+        "headline": "Why it matters: Agent effectiveness jumped in late 2024 because AI models finally matched—then exceeded—what the surrounding software infrastructure demanded of them.",
         "tweets": [
-          "The agent breakthrough wasn't just better models. It was model + harness curves crossing at the same moment. Models alone are brains in vats; harnesses give them eyes, hands, memory, and guardrails to act in the real world.",
-          "AutoGPT failed because it handed models impossible tasks. A 95% reliable step compounds to 36% success over 20 steps. Pulling back to human-in-the-loop (Cursor, Copilot) was the smart move, not the cowardly one.",
-          "By Feb 2025, reasoning models like o1 outpaced the harnesses holding them back. Next phase: harnesses stop constraining models and start managing human attention instead of machine behavior."
+          "The agent harness isn't the model. It's the tools, memory, guardrails, and feedback loops around it. Early agents failed because the harness asked too much of weak models. Now models are catching up.",
+          "ReAct (2022) defined agentic loops on paper. AutoGPT (2023) gave models full autonomy too early—95% per-step reliability compounds to 36% success over 20 steps. Then humans took back control via IDEs.",
+          "O1's reasoning capabilities closed the gap between what harnesses demand and what models deliver. Claude Code (Feb 2025) seized the moment: models can now handle what prompting + tools ask of them."
         ]
       },
       "ru": {
-        "headline": "Почему важно: агенты начали работать не из-за одних моделей, а потому что кривые развития моделей и систем управления наконец пересеклись—и теперь эволюция смещается от автономии машин к управлению человеческим вниманием.",
+        "headline": "Почему важно: Агенты начали работать в конце 2024 года, потому что возможности моделей наконец совпали с требованиями окружающей их программной инфраструктуры.",
         "tweets": [
-          "Прорыв агентов произошёл не только благодаря лучшим моделям, но потому что кривые развития модели и harness пересеклись одновременно. Модель без harness—это мозг в банке; harness даёт ей восприятие, инструменты, память и границы для действий в реальности.",
-          "AutoGPT провалился, потому что отдал моделям невыполнимые задачи. Надёжность 95% за шаг даёт всего 36% успеха за 20 шагов. Переход на человека в цикле (Cursor, Copilot) был правильным решением, а не капитуляцией.",
-          "К февралю 2025 рассуждающие модели типа o1 обогнали harness, которые их сдерживали. Следующий этап: harness перестанут ограничивать модели и начнут управлять вниманием человека вместо поведения машины."
+          "Harness это не модель. Это инструменты, память, ограничения и циклы обратной связи вокруг модели. Ранние агенты падали, потому что infrastruktura требовала слишком много от слабых моделей.",
+          "ReAct (2022) определил циклы агентов только в промптах. AutoGPT (2023) дал моделям полную автономию слишком рано—надёжность 95% за шаг даёт успех только в 36% случаев на 20-шаговых задачах.",
+          "O1 с reasoning закрыла щель между требованиями и возможностями. Claude Code (февраль 2025) использовал момент: модели теперь справляются с тем, что от них требуют промпты и инструменты."
         ]
       }
     },
@@ -123,19 +169,19 @@
       "publishedAt": "2026-08-21T23:37:38.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Simulation is becoming a new scaling law for AI—companies are now running millions of simulations to test products and predict human behavior at 85% accuracy before deployment, replacing expensive human research panels.",
+        "headline": "Why it matters: Simulation is becoming a practical tool to test products, policies, and decisions before real-world deployment, with companies already achieving 85-99% accuracy against human behavior.",
         "tweets": [
-          "Simile AI just raised $2B to simulate human behavior at scale. They're recreating digital twins of real people using interviews, transaction data, and RCTs—hitting 85% accuracy vs actual human responses.",
-          "Frontier LLMs optimized for rationality fail at simulating real humans. Simile's approach: post-train models on causal mechanisms and biases to capture why people actually make decisions, not what rational actors would do.",
-          "The endgame: simulate all 8 billion people before rolling out policies or products. This shifts AI from prediction to decision-shaping—test UBI, climate policies, or product launches in synthetic worlds first."
+          "Simile AI raised $2B Series B to build digital twins of real people. Their simulations match human behavior 85% as accurately as humans reproduce their own responses—foundation models optimized for rationality fail at capturing actual human irrationality.",
+          "Simulation isn't prediction. It's about understanding causal mechanisms to shape outcomes. Simile uses interviews, transaction data, RCTs, and post-training on behavioral patterns to replace expensive human focus groups for Fortune 100 clients.",
+          "The long-term play: simulate 8 billion people to test climate solutions, UBI policy, democratic instability prevention. Requires data-center-scale infrastructure and behavioral foundation models, not just prompting frontier LLMs."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Симуляция становится новым законом масштабирования для ИИ — компании запускают миллионы симуляций, чтобы тестировать продукты и предсказывать поведение людей с точностью 85% перед запуском.",
+        "headline": "Почему важно: Симуляция становится практическим инструментом для тестирования продуктов и политических решений перед развёртыванием в реальности, с точностью 85-99% при моделировании поведения людей.",
         "tweets": [
-          "Simile AI привлекла $2B для симуляции человеческого поведения в масштабе. Они создают цифровых двойников реальных людей, используя интервью, данные транзакций и рандомизированные испытания с точностью 85%.",
-          "Передовые LLM, оптимизированные на рациональность, не справляются с симуляцией реальных людей. Подход Simile: дофайнтьюнинг моделей на причинно-следственные механизмы и систематические ошибки человека.",
-          "Финальная цель: симулировать 8 миллиардов людей перед внедрением политик и продуктов. ИИ переходит от предсказания к формированию решений—сначала тестируйте БУД и климатические политики в синтетических мирах."
+          "Simile AI привлекла $2B Series B на создание цифровых двойников реальных людей. Их симуляции воспроизводят человеческое поведение с той же точностью (85%), с которой люди воспроизводят собственные ответы—модели, оптимизированные на рациональность, неудачны.",
+          "Симуляция—это не предсказание. Это понимание причинно-следственных механизмов для формирования исходов. Simile использует интервью, транзакционные данные, контролируемые эксперименты и переобучение на поведенческих паттернах вместо дорогих фокус-групп.",
+          "Амбиция: симулировать 8 миллиардов людей для тестирования климатических решений, политики базового дохода, предотвращения демократического коллапса. Требует инфраструктуры масштаба центра обработки данных, а не просто промптирования LLM."
         ]
       }
     },
@@ -146,19 +192,19 @@
       "publishedAt": "2026-08-21T17:16:13.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: LLM CLI tool's dependency chain broke when OpenAI dropped httpx, forcing a quick patch to keep installations working.",
+        "headline": "Why it matters: LLM CLI broke when OpenAI dropped a dependency; version 0.32.1 patches it while the project migrates to a new HTTP library.",
         "tweets": [
-          "LLM 0.32.1 hotfix: OpenAI library stopped using httpx, breaking LLM installs because httpx only came as a transitive dependency.",
-          "Quick workaround: pin to openai<3. Real fix in 0.33 will switch from httpx to httpx2 to avoid future dependency surprises.",
-          "Lesson: transitive dependencies are fragile. When upstream vendors drop a library without warning, downstream tools break silently."
+          "LLM 0.32.1 fixes fresh installs that broke after OpenAI removed httpx from its Python library. LLM was relying on httpx as an indirect dependency—now pinned to openai<3.",
+          "The real fix comes in 0.33: LLM is switching from httpx to httpx2 to handle HTTP requests directly instead of inheriting transitive dependencies.",
+          "Lesson: transitive dependencies are fragile. When a package you depend on removes a library it was exporting, you need your own explicit dependency or risk breaking installs."
         ]
       },
       "ru": {
-        "headline": "Почему важно: инструмент LLM сломался из-за цепочки зависимостей, когда OpenAI перестал использовать httpx.",
+        "headline": "Почему важно: LLM сломалась из-за изменений в OpenAI; версия 0.32.1 исправляет проблему, в 0.33 перейдут на новую HTTP-библиотеку.",
         "tweets": [
-          "Срочный патч LLM 0.32.1: библиотека OpenAI прекратила использование httpx, что привело к ошибкам установки LLM, так как httpx был только транзитивной зависимостью.",
-          "Временное решение: привязка к openai<3. Настоящее исправление в версии 0.33 перейдёт с httpx на httpx2.",
-          "Вывод: транзитивные зависимости хрупкие. Когда апстрим убирает библиотеку без предупреждения, даунстрим-инструменты ломаются молча."
+          "LLM 0.32.1 чинит новые установки, которые сломались когда OpenAI удалила httpx из своей библиотеки. LLM зависела от httpx косвенно—теперь привязана к openai<3.",
+          "Настоящее решение в 0.33: LLM переходит с httpx на httpx2 и будет работать с HTTP напрямую вместо наследования транзитивных зависимостей.",
+          "Вывод: транзитивные зависимости ненадёжны. Если пакет удалит библиотеку, которую вы используете косвенно, нужно добавить собственную явную зависимость."
         ]
       }
     },
@@ -169,65 +215,19 @@
       "publishedAt": "2026-08-21T16:58:19.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: llm-openrouter 0.7 adds reasoning trace visibility and server-side tools, making it easier to debug and extend LLM calls through OpenRouter.",
+        "headline": "Why it matters: llm-openrouter 0.7 now exposes reasoning traces and server-side tools, making it easier to debug LLM behavior and extend capabilities without client-side complexity.",
         "tweets": [
-          "llm-openrouter 0.7 now displays reasoning traces for OpenRouter models, letting you see how the LLM arrived at its answer—critical for debugging complex queries.",
-          "Three new server-side tools (Shell, WebFetch, WebSearch) available via -T flag. Models can now take actions beyond pure text generation without client-side setup.",
-          "Updated to LLM 0.32 compatibility and switched to OpenRouter's Responses API. Existing integrations keep working; new capabilities unlock with minimal config."
+          "llm-openrouter 0.7 now displays reasoning traces for models via OpenRouter, letting you see how LLMs actually think through problems.",
+          "Three new server-side tools ship with 0.7: Shell, WebFetch, and WebSearch. Enable them with -T flags instead of managing dependencies locally.",
+          "Compatible with LLM 0.32 and uses OpenRouter's Responses API for better model coverage and standardization across providers."
         ]
       },
       "ru": {
-        "headline": "Почему важно: llm-openrouter 0.7 добавляет видимость цепочек рассуждений и серверные инструменты, упрощая отладку и расширение вызовов LLM через OpenRouter.",
+        "headline": "Почему важно: llm-openrouter 0.7 открывает доступ к логике рассуждений моделей и серверным инструментам, упрощая отладку поведения LLM и расширение функциональности.",
         "tweets": [
-          "llm-openrouter 0.7 показывает цепочку рассуждений моделей OpenRouter. Теперь видно, как модель пришла к ответу — критично для отладки сложных запросов.",
-          "Три новых серверных инструмента: Shell, WebFetch, WebSearch через флаг -T. Модели могут выполнять действия за пределами текста без настройки на клиенте.",
-          "Совместимость с LLM 0.32 и переход на Responses API OpenRouter. Старые интеграции работают, новые возможности включаются без лишних конфигов."
-        ]
-      }
-    },
-    {
-      "id": "d-ko31x",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
-      "publishedAt": "2026-08-21T16:07:32.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI coding agents now make building native GUIs cheap enough that even throwaway tools deserve real interfaces instead of terminal CLIs.",
-        "tweets": [
-          "Coding agents have collapsed the cost of building native UIs. If you're still shipping CLIs for personal tools, you're leaving better UX on the table.",
-          "Real native apps beat TUIs for daily-use tools. The friction drop from terminal to GUI is huge once you actually experience it.",
-          "Thomas Ptacek: stop making excuses. Turn one CLI into a native app with an agent. It'll shift how you think about tool design."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: ИИ-ассистенты сделали создание нативных интерфейсов настолько дешёвым, что даже внутренние инструменты больше не должны оставаться в терминале.",
-        "tweets": [
-          "Coding agents убили оправдания для TUI. Нативный GUI теперь стоит столько же времени, сколько раньше терминальный интерфейс.",
-          "Люди, которые ежедневно пользуются своими инструментами, немедленно замечают разницу. GUI меняет восприятие юзабилити.",
-          "Начните переводить старые CLI в нативные приложения. Один проект — и вы уже не вернётесь к терминалу для личных tools."
-        ]
-      }
-    },
-    {
-      "id": "d-1bqljm8",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/21/matt-webb/",
-      "publishedAt": "2026-08-21T15:06:26.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Using AI as a tutor rather than a code generator pushes developers to understand the fundamentals they'd otherwise skip.",
-        "tweets": [
-          "Matt Webb used ChatGPT not to write quaternion rotation code, but to learn the math interactively—and finally understood what books and mathematician friends couldn't teach him.",
-          "AI tutoring creates a different outcome than code generation: instead of outsourcing thinking, you end up learning more deeply because you're scaffolded, not replaced.",
-          "The pattern: interactive AI collaboration pushes expertise forward. Webb learned quaternions well enough to ship Galactic Compass 2, not just copy-paste a solution."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: использование ИИ как учителя, а не как генератора кода, заставляет разработчиков разбираться в основах, которые они обычно пропускают.",
-        "tweets": [
-          "Мэтт Уэбб использовал ChatGPT не для написания кода кватернионных вращений, а для интерактивного обучения математике—и наконец понял то, чего не смогли объяснить книги и друзья-математики.",
-          "ИИ-репетитор дает другой результат, чем генерация кода: вместо аутсорсинга мышления вы учитесь глубже, потому что вас поддерживают, а не заменяют.",
-          "Закономерность: интерактивная работа с ИИ развивает экспертизу. Уэбб выучил кватернионы хорошо, чтобы выпустить Galactic Compass 2, а не просто скопировал решение."
+          "llm-openrouter 0.7 теперь показывает цепочку рассуждений моделей через OpenRouter — можно увидеть, как LLM на самом деле решает задачи.",
+          "Три новых серверных инструмента: Shell, WebFetch и WebSearch. Включаются флагами вроде -T WebSearch, без установки локальных зависимостей.",
+          "Работает с LLM 0.32 и использует Responses API OpenRouter для лучшей поддержки моделей и унификации между провайдерами."
         ]
       }
     }
