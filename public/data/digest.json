@@ -1,6 +1,121 @@
 {
-  "generatedAt": "2026-08-24T07:20:17.186Z",
+  "generatedAt": "2026-08-25T07:08:25.543Z",
   "items": [
+    {
+      "id": "d-1b1l1ow",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
+      "publishedAt": "2026-08-25T02:50:57.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Andrew Ng's redefined AI Engineering skills show the field has shifted from pure ML to a blend of software engineering, product sense, and agent orchestration—a reality that's reshaping job market expectations.",
+        "tweets": [
+          "AI Engineering now requires 4 core skills: building/deploying AI apps with evals, software fundamentals (architecture & testing), agentic coding (knowing when to steer vs. automate), and product sense. Traditional ML expertise alone isn't enough anymore.",
+          "Agent harness design matters more than base model choice for enterprise work. NVIDIA research shows structural skill checks barely predict real usefulness—what matters is measuring actual task completion deltas with/without a capability.",
+          "Coding agents exploded 2024-2026: Cursor raised $60B, Claude Code + Cognition emerged. The 1000x AI Engineer archetype from 2023 is now real—but only if you stay nimble on tooling and avoid getting locked into stale workflows."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Переосмысленные Эндрю Нгом навыки AI Engineering показывают, что отрасль сместилась от чистого ML к гибриду software engineering, product sense и оркестрации агентов—это переформатирует ожидания на рынке труда.",
+        "tweets": [
+          "AI Engineering требует 4 навыков: сборка и развёртывание с eval'ами, основы SWE (архитектура и тестирование), управление agentic кодом (когда вмешиваться, когда нет), product sense. Одного ML опыта больше недостаточно.",
+          "Дизайн harness для агентов влияет больше, чем выбор модели на enterprise задачах. Исследование NVIDIA: структурные проверки навыков едва коррелируют с реальной полезностью—важны именно дельты в completion между версиями с и без функции.",
+          "Coding agents взорвались в 2024-2026: Cursor собрал 60B, появились Claude Code и Cognition. Архетип 1000x AI Engineer из 2023 теперь реален—но только если оставаться гибким на инструментах и не застревать в устаревших workflows."
+        ]
+      }
+    },
+    {
+      "id": "d-vpuvod",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/gradio-workflow-guide",
+      "publishedAt": "2026-08-25T00:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Gradio workflows let you chain AI models without writing backend code, cutting deployment time from weeks to hours.",
+        "tweets": [
+          "Gradio now supports multi-step workflows: wire together models visually, run them sequentially, deploy instantly. No Flask or FastAPI needed.",
+          "Connect LLMs, vision models, and data processors in one interface. Changes propagate automatically—edit one step and the whole pipeline updates.",
+          "Built-in versioning and sharing: your workflow becomes a shareable link in seconds. Perfect for non-engineers to iterate on AI products."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: С Gradio workflows вы собираете цепочки AI-моделей без бэкенд-кода — от идеи к production за часы вместо недель.",
+        "tweets": [
+          "Gradio поддерживает многошаговые workflows: соединяйте модели визуально, запускайте последовательно, разворачивайте за минуты. Без Flask и FastAPI.",
+          "Объединяйте LLM, компьютерное зрение и обработку данных в одном интерфейсе. Изменения синхронизируются автоматически по всему pipeline.",
+          "Встроенная история версий и мгновенная публикация по ссылке. Продакт-менеджеры и дизайнеры могут итерировать без помощи инженеров."
+        ]
+      }
+    },
+    {
+      "id": "d-1uwcdi4",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/24/llm-anthropic/",
+      "publishedAt": "2026-08-24T16:27:04.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: llm-anthropic plugin now works with Anthropic's v1.0.0 SDK, which migrates from httpx to httpx2 for better HTTP handling.",
+        "tweets": [
+          "llm-anthropic 0.27 released to support Anthropic SDK v1.0.0. The SDK switched from httpx to httpx2, matching OpenAI's v3.0.0 migration two weeks prior.",
+          "Claude Code with Fable 5 successfully automated the SDK upgrade. Anthropic's migration guide was fed to the model to handle the httpx → httpx2 transition.",
+          "Both major LLM providers (OpenAI, Anthropic) now use httpx2. If you're using the llm-anthropic plugin, update to 0.27+ to stay compatible."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: плагин llm-anthropic теперь совместим с SDK Anthropic v1.0.0, который перешел с httpx на httpx2.",
+        "tweets": [
+          "Вышла llm-anthropic 0.27 для поддержки Anthropic SDK v1.0.0. В SDK сменили httpx на httpx2, как OpenAI сделали в v3.0.0 две недели назад.",
+          "Claude Code с Fable 5 автоматизировал обновление SDK. Миграционный гайд Anthropic был скормлен модели для переходе httpx → httpx2.",
+          "Оба крупных провайдера LLM (OpenAI, Anthropic) теперь используют httpx2. Обновите llm-anthropic до 0.27+, если используете плагин."
+        ]
+      }
+    },
+    {
+      "id": "d-7xd13r",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/gpt-5-6-in-kiro",
+      "publishedAt": "2026-08-24T12:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: GPT-5.6 in Kiro cuts your API costs while maintaining model quality, letting teams ship faster without budget bloat.",
+        "tweets": [
+          "GPT-5.6 now available in Kiro: same reasoning power, better token efficiency. Developers get faster completions at lower cost per request.",
+          "Plan, build, review, test—GPT-5.6 handles the full dev workflow in one model. No more switching between tools for different tasks.",
+          "Price-performance win: run complex code tasks on better hardware economics. Means smaller teams can afford enterprise-grade AI tooling."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: GPT-5.6 в Kiro снижает стоимость API при сохранении качества модели, позволяя командам быстрее доставлять код без перерасхода бюджета.",
+        "tweets": [
+          "GPT-5.6 в Kiro доступен: та же логика рассуждений, но с меньшим расходом токенов. Разработчики получают быстрые ответы по более выгодной цене.",
+          "Планирование, разработка, код-ревью, тестирование—GPT-5.6 справляется со всем процессом в одной модели. Не нужно прыгать между инструментами.",
+          "Выигрыш по цене и производительности: сложные задачи на коде на более экономичной инфраструктуре. Теперь даже небольшие команды могут себе позволить корпоративный AI."
+        ]
+      }
+    },
+    {
+      "id": "d-1tzshgk",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/",
+      "publishedAt": "2026-08-24T11:38:15.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Linux can now execute SQLite databases directly as binaries, collapsing the boundary between data and code through clever format embedding.",
+        "tweets": [
+          "A SQLite database can masquerade as an ELF executable by setting the application ID to SELF at byte 68, storing executable components in SQL tables.",
+          "The kernel's binfmt_misc mechanism teaches Linux to recognize and run these hybrid files, eliminating the need for separate wrapper scripts.",
+          "This pattern merges structured data storage with executable code in a single file—useful for distributing self-contained apps with queryable metadata."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: SQLite-базы данных теперь могут выполняться как исполняемые файлы в Linux, стирая границу между данными и кодом через встраивание форматов.",
+        "tweets": [
+          "База SQLite становится ELF-файлом благодаря идентификатору приложения SELF в позиции 68, компоненты программы хранятся в SQL-таблицах.",
+          "Механизм binfmt_misc ядра обучает Linux распознавать и запускать гибридные файлы без отдельных оболочек-скриптов.",
+          "Один файл объединяет структурированное хранилище данных с исполняемым кодом—удобно для распределения самодостаточных приложений с поиском по метаданным."
+        ]
+      }
+    },
     {
       "id": "d-woqe2x",
       "source": "simonw",
@@ -8,19 +123,19 @@
       "publishedAt": "2026-08-23T20:24:52.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Anthropic's premium models are losing market share to cheaper alternatives despite strong revenue growth, signaling a shift toward cost-optimized AI adoption.",
+        "headline": "Why it matters: Anthropic's premium models are losing market share to cheaper alternatives even as the company scales revenue, signaling that raw capability alone doesn't guarantee adoption.",
         "tweets": [
-          "Anthropic hit $65bn annualized revenue in July (up from $47bn in May), but their flagship Opus 5 captured only 3.5% of model spend. Older Opus 4.8 dominates at 28%—cost matters more than recency.",
-          "OpenAI's Q3 revenue jumped 35% to $40bn+ after GPT 5.6 launch, outpacing Anthropic's growth. The market is voting with wallets: cheaper inference wins even when better models exist.",
-          "Anthropic has 6,000 customers spending $100k+ annually, yet adoption data shows users clustering on older, cheaper models. Pricing strategy may be cannibalizing their own best-in-class offerings."
+          "Anthropic hit $65bn annualized revenue in July, up from $47bn in May, but older Opus 4.8 still dominates (28% of spend) while new Opus 5 languishes at 3.5%—cheaper isn't always worse.",
+          "OpenAI's Q3 annualized revenue jumped 35% to $40bn after GPT 5.6 launch. Anthropic has 6,000 enterprise customers paying $100k+/year, but billing data suggests cost sensitivity is driving model choices.",
+          "Ramp's AI index tracks 70,000 companies: Fable 5 at 8% spend despite being Anthropic's flagship shows enterprises are picking older, cheaper models over bleeding-edge alternatives."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Флагманские модели Anthropic теряют рыночную долю дешёвым альтернативам несмотря на рост выручки, что указывает на сдвиг в сторону экономичного использования ИИ.",
+        "headline": "Почему важно: Премиальные модели Anthropic теряют долю рынка дешевым альтернативам, хотя компания быстро масштабируется — это показывает, что мощность одна не гарантирует массовое внедрение.",
         "tweets": [
-          "Anthropic достигла $65 млрд годовой выручки в июле, но Opus 5 занимает только 3,5% рынка моделей. Старый Opus 4.8 лидирует с 28%—стоимость важнее новизны.",
-          "Выручка OpenAI в Q3 выросла на 35% до $40+ млрд после запуска GPT 5.6. Рынок голосует кошельком: дешёвые вычисления побеждают даже лучшие модели.",
-          "У Anthropic 6000 клиентов, тратящих $100k+ в год, но данные показывают концентрацию на старых дешёвых моделях. Ценовая стратегия может подрывать собственные лучшие разработки."
+          "Anthropic достигла $65 млрд годового дохода в июле (был $47 млрд в мае), но старый Opus 4.8 доминирует с 28% трат, а новый Opus 5 занимает только 3,5% — дешевизна иногда проигрывает возможностям.",
+          "Квартальный доход OpenAI вырос на 35% до $40 млрд после запуска GPT 5.6. У Anthropic 6000 корпоративных клиентов тратят по $100k+ в год, но данные биллинга показывают чувствительность к цене.",
+          "Индекс Ramp отслеживает 70 тысяч компаний: Fable 5 с 8% расходов несмотря на статус флагмана доказывает, что компании выбирают старые дешевые модели вместо новейших."
         ]
       }
     },
@@ -31,19 +146,19 @@
       "publishedAt": "2026-08-23T19:55:30.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: As frontier AI models plateau in capability gains, engineering discipline around prompt design and context management becomes competitive advantage instead of nice-to-have optimization.",
+        "headline": "Why it matters: As frontier AI models plateau in capability while costs stay high, engineers now must optimize prompts and context strategies instead of waiting for the next model to solve problems for free.",
         "tweets": [
-          "The free lunch is over: model improvements alone won't solve your problems anymore. Time spent optimizing prompts and context strategies now pays off instead of being papered over by the next cheaper model.",
-          "Fable showed incredible capability but at high cost. Engineers now ask 'what work goes where' instead of defaulting to the best model—forcing real ROI thinking into LLM stack decisions.",
-          "Claude 3.5, Opus, even open models like K3 are 'good enough' for most coding tasks. When capability plateaus, tooling and prompt engineering become the actual differentiation."
+          "The era of 'new model solves everything' is over. When Fable's price was prohibitive, Opus and cheaper alternatives proved 'good enough' for most coding work, forcing real engineering choices.",
+          "Model improvement curves are flattening while costs remain elevated. This shifts incentives from passively upgrading models to actively engineering better prompts and context management.",
+          "The free lunch in AI is ending: engineers can no longer rely on raw capability jumps to fix inefficient workflows. Optimization discipline now matters."
         ]
       },
       "ru": {
-        "headline": "Почему важно: По мере замедления прогресса в возможностях моделей, инженерное мастерство в работе с промптами и контекстом становится конкурентным преимуществом, а не опциональной оптимизацией.",
+        "headline": "Почему важно: По мере того как передовые модели достигают плато в производительности при высокой стоимости, инженеры вынуждены оптимизировать промпты и контекстные стратегии вместо ожидания следующей модели.",
         "tweets": [
-          "Бесплатный обед закончился: улучшения модели больше не решат все проблемы автоматически. Время на оптимизацию промптов теперь окупается вместо того, чтобы ждать следующей дешёвой модели.",
-          "Fable показала невероятные способности, но слишком дорогая. Инженеры теперь спрашивают 'какую работу куда отправить' вместо использования лучшей модели по умолчанию.",
-          "Claude 3.5, Opus и открытые модели вроде K3 для большинства кода 'достаточно хороши'. Когда возможности выравниваются, инструментарий и качество промптов становятся главным различием."
+          "Эпоха 'новая модель решит все проблемы' завершена. Когда Fable оказалась слишком дорогой, Opus и дешёвые альтернативы показали себя вполне достаточными для большинства задач кодирования.",
+          "Кривые улучшения моделей замедляются, цены остаются высокими. Это сдвигает приоритеты с пассивного обновления на активную инженерию промптов и управление контекстом.",
+          "Бесплатный обед в ИИ закончился: инженеры не могут больше полагаться на скачки мощности для исправления неэффективных рабочих процессов."
         ]
       }
     },
@@ -54,19 +169,19 @@
       "publishedAt": "2026-08-22T21:04:26.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Linus Torvalds used AI to solve a brutal debugging problem that would have stalled kernel development, showing LLMs are useful when paired with human persistence.",
+        "headline": "Why it matters: Even Linux's creator relies on AI for grinding through debugging sessions, but human stubbornness still beats machine defeatism.",
         "tweets": [
-          "Linus used AI to debug a nightmare kernel issue. The AI kept saying 'impossible', but he kept pushing it to add code and analyze results. Sometimes tools need stubborn humans.",
-          "AI was ready to give up multiple times during the debug session. But it faithfully executed each new test Linus asked for. The grunt work automation had real value.",
-          "Linus credited the AI with writing the commit message. He's explicit: the AI wasn't the solver, but its tireless execution of his ideas made the breakthrough possible."
+          "Linus used AI to debug a 'debug session from hell' in the Linux kernel. The AI wanted to quit multiple times; Linus kept pushing it to add more instrumentation and analysis.",
+          "AI trained on typical engineering culture gives up too easily. When forced to persist, it actually delivers useful grunt work—pattern spotting, code generation, faithfully analyzing results.",
+          "The real workflow: human intuition + stubbornness + AI's tireless iteration. AI as a tool wins when paired with someone unwilling to accept 'impossible' as an answer."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Линус Торвальдс использовал ИИ для решения критической проблемы в ядре Linux, продемонстрировав, что LLM эффективны, когда их направляет упорный инженер.",
+        "headline": "Почему важно: Даже создатель Linux полагается на ИИ при отладке сложного кода, но человеческое упорство всё ещё эффективнее машинного пессимизма.",
         "tweets": [
-          "Линус отладил кошмарную проблему ядра с помощью ИИ. Модель несколько раз говорила 'это невозможно', но он продолжал просить добавлять код и анализировать результаты.",
-          "ИИ был готов сдаться, но исправно выполнял каждый новый тест. Автоматизация рутинной работы дала реальный результат — прорыв в отладке.",
-          "Линус дал ИИ кредит за написание сообщения коммита. Он явно говорит: ИИ не решал проблему, но его неутомимое исполнение идей инженера сделало возможным прорыв."
+          "Линус использовал ИИ для отладки 'адского сеанса отладки' в ядре Linux. ИИ несколько раз хотел сдаться, но Линус заставлял его добавлять больше инструментов и анализировать результаты.",
+          "ИИ, обученный на типичных инженерных привычках, сдаётся слишком легко. Когда его заставляют настаивать, он действительно помогает с тяжёлой работой: поиск паттернов, генерация кода, верный анализ.",
+          "Реальный процесс: человеческая интуиция и настойчивость плюс неутомимая итерация ИИ. ИИ как инструмент побеждает, когда его партнёр не склонен принимать 'невозможное'."
         ]
       }
     },
@@ -77,19 +192,19 @@
       "publishedAt": "2026-08-22T17:01:16.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: llm 0.33 adds template composition and per-call API keys, letting you combine model configs with prompts without state mutations—critical for reproducible AI workflows.",
+        "headline": "Why it matters: llm 0.33 adds composable prompt templates and per-call API keys, letting you mix model configs with different prompts without state pollution.",
         "tweets": [
-          "llm 0.33 upgrades to OpenAI Python 3.x and httpx2, fixing dependency issues that were breaking integrations with the latest OpenAI client.",
-          "New --key flag for embedding commands lets you pass API keys per-call without mutating shared model state. Plugins stay compatible via fallback.",
-          "Repeat -t/--template flag to chain templates: llm -t model_config -t prompt_file runs them in order. Unlocks reusable model+options packages."
+          "llm 0.33 upgrades to OpenAI Python 3.x and switches HTTP client to httpx2. Embedding models now accept --key flag for per-call API overrides without changing shared state.",
+          "New feature: repeat -t/--template to chain templates together. Create a template with model + options (llm -m gpt-5.6-luna -o reasoning_effort high --save lhigh), then combine it with a separate prompt template.",
+          "Reasoning-capable Responses API models now support reasoning_summary with auto, concise, and detailed options. Useful for testing different model implementations of OpenAI's API."
         ]
       },
       "ru": {
-        "headline": "Почему важно: llm 0.33 добавляет композицию шаблонов и передачу ключей API для каждого вызова—это обеспечивает воспроизводимость рабочих процессов без побочных эффектов состояния.",
+        "headline": "Почему важно: llm 0.33 добавляет композируемые шаблоны промптов и ключи API для каждого вызова, позволяя комбинировать конфигурации моделей с разными промптами без загрязнения состояния.",
         "tweets": [
-          "llm 0.33 обновлён до OpenAI Python 3.x и httpx2, исправлены проблемы совместимости с последней версией клиента OpenAI.",
-          "Новый флаг --key для команд embeddings позволяет передавать ключи API без изменения состояния модели. Плагины остаются совместимы через fallback.",
-          "Флаг -t/--template теперь повторяется для цепочки шаблонов: llm -t model_config -t prompt_file выполняет их по порядку и повторно использует конфиги."
+          "llm 0.33 обновляется до OpenAI Python 3.x и переходит на HTTP-клиент httpx2. Модели эмбеддинга теперь принимают флаг --key для переопределения API на каждый вызов без изменения общего состояния.",
+          "Новая возможность: повторяемый флаг -t/--template для цепочки шаблонов. Создайте шаблон с моделью и опциями, затем комбинируйте его с отдельным шаблоном промпта.",
+          "Модели с reasoning теперь поддерживают reasoning_summary с вариантами auto, concise и detailed. Полезно для тестирования разных реализаций OpenAI API."
         ]
       }
     },
@@ -100,134 +215,19 @@
       "publishedAt": "2026-08-22T15:56:54.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI coding agents require a different validation approach than traditional code review—inspecting every line isn't the bottleneck anymore.",
+        "headline": "Why it matters: Effective use of coding agents requires validation strategies beyond traditional line-by-line code review.",
         "tweets": [
-          "The real skill with coding agents isn't reviewing every line they write. It's instructing them clearly what to build, then verifying the output actually works.",
-          "Line-by-line code review was never the most effective validation method. With AI agents, you need smarter verification strategies that scale.",
-          "Productive agent use = confident instructions + confident verification. The verification part doesn't have to mean reading all the code."
+          "The bottleneck with AI coding agents isn't generation—it's verification. You need confidence that changes work, not necessarily that you read every line.",
+          "Line-by-line review was never the gold standard anyway. Smarter validation: test coverage, integration checks, and targeted spot-audits catch real problems faster.",
+          "New skill for engineers: instructing agents clearly + validating outputs strategically. The combo unlocks 10x productivity gains with AI pair programming."
         ]
       },
       "ru": {
-        "headline": "Почему важно: AI-агентам для кодирования нужен другой подход к проверке—построчное чтение больше не узкое место.",
+        "headline": "Почему важно: Эффективная работа с агентами-кодировщиками требует стратегий валидации, выходящих за рамки построчного ревью кода.",
         "tweets": [
-          "С AI-агентами главное—чётко описать, что нужно сделать, и проверить результат. Чтение каждой строки кода—не основной навык.",
-          "Построчная проверка кода никогда не была самым эффективным способом валидации. Нужны более умные стратегии верификации.",
-          "Продуктивная работа с агентами = ясные инструкции + умная проверка. Проверка не обязательно означает читать весь код."
-        ]
-      }
-    },
-    {
-      "id": "d-10y6nqw",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
-      "publishedAt": "2026-08-22T07:36:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI systems are progressively replacing each human component in model training—from evaluation to data generation to curriculum design—creating a self-improving loop that trades 10% accuracy for 100x cost reduction and 10,000x speed gains.",
-        "tweets": [
-          "Reward models, synthetic data, and AI-written curricula have flipped from human-made to model-made since 2022. Each year another pipeline stage goes synthetic at frontier labs, then productionizes everywhere.",
-          "DeepSeek-R1 proved distilled student models are now standard. Self-rewarding models generate tasks, judge outputs, and improve past human preference data ceilings. The training loop closes on itself.",
-          "AutoResearch stacked 700 experiments into 20 kept improvements overnight. Synthetic environments now generate executable task worlds end-to-end. The entire training stack—judge, gym, scoreboard—runs on models."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: ИИ-системы последовательно заменяют каждый человеческий компонент в обучении моделей—от оценки до создания данных и формирования программы обучения, создавая саморазвивающийся цикл, жертвующий 10% точности ради 100-кратного снижения затрат и 10000-кратного ускорения.",
-        "tweets": [
-          "С 2022 года модели-оценки, синтетические данные и программы обучения, написанные ИИ, перешли от созданных человеком к созданным моделями. Каждый год на какой-то стадии конвейера происходит синтетизация в передовых лабораториях, потом распространяется повсеместно.",
-          "DeepSeek-R1 доказал, что дистиллированные модели-ученики теперь стандарт. Саморознаграждающиеся модели генерируют задачи, оценивают выходы и совершенствуются сверх потолков человеческих предпочтений.",
-          "AutoResearch собрал 700 экспериментов в 20 сохранённых улучшений за ночь. Синтетические окружения теперь генерируют исполняемые миры задач полностью. Весь стек обучения—судья, тренажер, таблица результатов—работает на моделях."
-        ]
-      }
-    },
-    {
-      "id": "d-1ahjb2j",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/attention-interface",
-      "publishedAt": "2026-08-22T07:30:52.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Agent effectiveness jumped in late 2024 because AI models finally matched—then exceeded—what the surrounding software infrastructure demanded of them.",
-        "tweets": [
-          "The agent harness isn't the model. It's the tools, memory, guardrails, and feedback loops around it. Early agents failed because the harness asked too much of weak models. Now models are catching up.",
-          "ReAct (2022) defined agentic loops on paper. AutoGPT (2023) gave models full autonomy too early—95% per-step reliability compounds to 36% success over 20 steps. Then humans took back control via IDEs.",
-          "O1's reasoning capabilities closed the gap between what harnesses demand and what models deliver. Claude Code (Feb 2025) seized the moment: models can now handle what prompting + tools ask of them."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Агенты начали работать в конце 2024 года, потому что возможности моделей наконец совпали с требованиями окружающей их программной инфраструктуры.",
-        "tweets": [
-          "Harness это не модель. Это инструменты, память, ограничения и циклы обратной связи вокруг модели. Ранние агенты падали, потому что infrastruktura требовала слишком много от слабых моделей.",
-          "ReAct (2022) определил циклы агентов только в промптах. AutoGPT (2023) дал моделям полную автономию слишком рано—надёжность 95% за шаг даёт успех только в 36% случаев на 20-шаговых задачах.",
-          "O1 с reasoning закрыла щель между требованиями и возможностями. Claude Code (февраль 2025) использовал момент: модели теперь справляются с тем, что от них требуют промпты и инструменты."
-        ]
-      }
-    },
-    {
-      "id": "d-1tdgto0",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/simile",
-      "publishedAt": "2026-08-21T23:37:38.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Simulation is becoming a practical tool to test products, policies, and decisions before real-world deployment, with companies already achieving 85-99% accuracy against human behavior.",
-        "tweets": [
-          "Simile AI raised $2B Series B to build digital twins of real people. Their simulations match human behavior 85% as accurately as humans reproduce their own responses—foundation models optimized for rationality fail at capturing actual human irrationality.",
-          "Simulation isn't prediction. It's about understanding causal mechanisms to shape outcomes. Simile uses interviews, transaction data, RCTs, and post-training on behavioral patterns to replace expensive human focus groups for Fortune 100 clients.",
-          "The long-term play: simulate 8 billion people to test climate solutions, UBI policy, democratic instability prevention. Requires data-center-scale infrastructure and behavioral foundation models, not just prompting frontier LLMs."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Симуляция становится практическим инструментом для тестирования продуктов и политических решений перед развёртыванием в реальности, с точностью 85-99% при моделировании поведения людей.",
-        "tweets": [
-          "Simile AI привлекла $2B Series B на создание цифровых двойников реальных людей. Их симуляции воспроизводят человеческое поведение с той же точностью (85%), с которой люди воспроизводят собственные ответы—модели, оптимизированные на рациональность, неудачны.",
-          "Симуляция—это не предсказание. Это понимание причинно-следственных механизмов для формирования исходов. Simile использует интервью, транзакционные данные, контролируемые эксперименты и переобучение на поведенческих паттернах вместо дорогих фокус-групп.",
-          "Амбиция: симулировать 8 миллиардов людей для тестирования климатических решений, политики базового дохода, предотвращения демократического коллапса. Требует инфраструктуры масштаба центра обработки данных, а не просто промптирования LLM."
-        ]
-      }
-    },
-    {
-      "id": "d-qvfic2",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/21/llm/",
-      "publishedAt": "2026-08-21T17:16:13.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: LLM CLI broke when OpenAI dropped a dependency; version 0.32.1 patches it while the project migrates to a new HTTP library.",
-        "tweets": [
-          "LLM 0.32.1 fixes fresh installs that broke after OpenAI removed httpx from its Python library. LLM was relying on httpx as an indirect dependency—now pinned to openai<3.",
-          "The real fix comes in 0.33: LLM is switching from httpx to httpx2 to handle HTTP requests directly instead of inheriting transitive dependencies.",
-          "Lesson: transitive dependencies are fragile. When a package you depend on removes a library it was exporting, you need your own explicit dependency or risk breaking installs."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: LLM сломалась из-за изменений в OpenAI; версия 0.32.1 исправляет проблему, в 0.33 перейдут на новую HTTP-библиотеку.",
-        "tweets": [
-          "LLM 0.32.1 чинит новые установки, которые сломались когда OpenAI удалила httpx из своей библиотеки. LLM зависела от httpx косвенно—теперь привязана к openai<3.",
-          "Настоящее решение в 0.33: LLM переходит с httpx на httpx2 и будет работать с HTTP напрямую вместо наследования транзитивных зависимостей.",
-          "Вывод: транзитивные зависимости ненадёжны. Если пакет удалит библиотеку, которую вы используете косвенно, нужно добавить собственную явную зависимость."
-        ]
-      }
-    },
-    {
-      "id": "d-1rsjale",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/21/llm-openrouter/",
-      "publishedAt": "2026-08-21T16:58:19.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: llm-openrouter 0.7 now exposes reasoning traces and server-side tools, making it easier to debug LLM behavior and extend capabilities without client-side complexity.",
-        "tweets": [
-          "llm-openrouter 0.7 now displays reasoning traces for models via OpenRouter, letting you see how LLMs actually think through problems.",
-          "Three new server-side tools ship with 0.7: Shell, WebFetch, and WebSearch. Enable them with -T flags instead of managing dependencies locally.",
-          "Compatible with LLM 0.32 and uses OpenRouter's Responses API for better model coverage and standardization across providers."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: llm-openrouter 0.7 открывает доступ к логике рассуждений моделей и серверным инструментам, упрощая отладку поведения LLM и расширение функциональности.",
-        "tweets": [
-          "llm-openrouter 0.7 теперь показывает цепочку рассуждений моделей через OpenRouter — можно увидеть, как LLM на самом деле решает задачи.",
-          "Три новых серверных инструмента: Shell, WebFetch и WebSearch. Включаются флагами вроде -T WebSearch, без установки локальных зависимостей.",
-          "Работает с LLM 0.32 и использует Responses API OpenRouter для лучшей поддержки моделей и унификации между провайдерами."
+          "Узкое место при использовании AI-агентов—не генерация, а верификация. Нужна уверенность, что изменения работают, а не то, что вы прочитали каждую строку.",
+          "Построчное ревью никогда не было эталоном. Лучше: тесты, интеграционные проверки и точечные аудиты ловят реальные проблемы быстрее.",
+          "Новый навык инженера: чётко инструктировать агентов и умно валидировать результаты. Это даст десятикратный прирост производительности с AI."
         ]
       }
     }

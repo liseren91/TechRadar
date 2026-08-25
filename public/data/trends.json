@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T07:20:17.251Z",
+  "generatedAt": "2026-08-25T07:08:25.627Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -7,8 +7,8 @@
       "label": "Fusion Energy",
       "category": "energy",
       "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
+      "trajectory": "rising",
+      "momentum": 0.14,
       "weeklyCounts": [
         14,
         11,
@@ -17,7 +17,7 @@
         4,
         7,
         7,
-        7
+        8
       ],
       "signals": [
         {
@@ -25,12 +25,6 @@
           "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
           "source": "latent-space",
           "publishedAt": "2026-08-22T07:36:00.000Z"
-        },
-        {
-          "title": "[AINews] Megakernels are so dead and so back",
-          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
-          "source": "latent-space",
-          "publishedAt": "2026-08-05T01:21:47.000Z"
         }
       ]
     },
@@ -59,7 +53,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.21,
+      "momentum": -0.04,
       "weeklyCounts": [
         81,
         60,
@@ -68,9 +62,15 @@
         72,
         77,
         95,
-        75
+        91
       ],
       "signals": [
+        {
+          "title": "[AINews] Andrew Ng gets into AI Engineering",
+          "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
+          "source": "latent-space",
+          "publishedAt": "2026-08-25T02:50:57.000Z"
+        },
         {
           "title": "[AINews] Stripe buys OpenRouter for $7B",
           "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
@@ -94,12 +94,6 @@
           "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
           "source": "latent-space",
           "publishedAt": "2026-08-13T01:53:47.000Z"
-        },
-        {
-          "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
-          "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
-          "source": "hf",
-          "publishedAt": "2026-08-12T16:14:36.000Z"
         }
       ]
     },
@@ -109,7 +103,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.27,
+      "momentum": -0.13,
       "weeklyCounts": [
         375,
         358,
@@ -118,9 +112,15 @@
         398,
         396,
         394,
-        286
+        342
       ],
       "signals": [
+        {
+          "title": "[AINews] Andrew Ng gets into AI Engineering",
+          "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
+          "source": "latent-space",
+          "publishedAt": "2026-08-25T02:50:57.000Z"
+        },
         {
           "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
           "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
@@ -144,12 +144,6 @@
           "url": "https://www.latent.space/p/ainews-memory-prices-up-500-in-12",
           "source": "latent-space",
           "publishedAt": "2026-08-19T08:44:52.000Z"
-        },
-        {
-          "title": "Frontier Model Cost and Open-Weights Popularity is Driving Demand for Model Routing",
-          "url": "https://www.latent.space/p/glean-model-routing",
-          "source": "latent-space",
-          "publishedAt": "2026-08-18T21:41:10.000Z"
         }
       ]
     },
@@ -159,7 +153,7 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.29,
+      "momentum": -0.14,
       "weeklyCounts": [
         21,
         21,
@@ -168,7 +162,7 @@
         21,
         21,
         21,
-        15
+        18
       ],
       "signals": [
         {
@@ -197,7 +191,7 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.31,
+      "momentum": -0.18,
       "weeklyCounts": [
         411,
         420,
@@ -206,9 +200,15 @@
         458,
         466,
         456,
-        313
+        375
       ],
       "signals": [
+        {
+          "title": "[AINews] Andrew Ng gets into AI Engineering",
+          "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
+          "source": "latent-space",
+          "publishedAt": "2026-08-25T02:50:57.000Z"
+        },
         {
           "title": "More than just code review",
           "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
@@ -232,12 +232,6 @@
           "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
           "source": "latent-space",
           "publishedAt": "2026-08-21T05:45:21.000Z"
-        },
-        {
-          "title": "[AINews] Death of Params: Z.ai CEO Jie Tang on GLM 5.3 and the new Post-training Scaling Law",
-          "url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
-          "source": "latent-space",
-          "publishedAt": "2026-08-20T05:17:12.000Z"
         }
       ]
     },
