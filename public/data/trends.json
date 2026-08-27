@@ -1,14 +1,34 @@
 {
-  "generatedAt": "2026-08-26T07:08:34.635Z",
+  "generatedAt": "2026-08-27T17:38:18.263Z",
   "window": "rolling-120d",
   "topics": [
+    {
+      "id": "post-quantum",
+      "label": "Post-Quantum Crypto",
+      "category": "cybersecurity",
+      "stage": "research",
+      "trajectory": "stable",
+      "momentum": 0,
+      "weeklyCounts": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signals": []
+    },
     {
       "id": "fusion",
       "label": "Fusion Energy",
       "category": "energy",
       "stage": "research",
-      "trajectory": "rising",
-      "momentum": 0.29,
+      "trajectory": "cooling",
+      "momentum": -0.78,
       "weeklyCounts": [
         14,
         11,
@@ -17,9 +37,16 @@
         4,
         7,
         7,
-        9
+        9,
+        2
       ],
       "signals": [
+        {
+          "title": "🔬“We have foundation models for language, not for physics” — Anima Anandkumar, Bren Professor of Computing",
+          "url": "https://www.latent.space/p/anima",
+          "source": "latent-space",
+          "publishedAt": "2026-08-26T15:15:39.000Z"
+        },
         {
           "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
           "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
@@ -33,8 +60,8 @@
       "label": "Retrieval-Augmented Generation",
       "category": "ai",
       "stage": "early-adopter",
-      "trajectory": "rising",
-      "momentum": 0.13,
+      "trajectory": "cooling",
+      "momentum": -0.85,
       "weeklyCounts": [
         81,
         60,
@@ -43,9 +70,16 @@
         72,
         77,
         95,
-        107
+        107,
+        16
       ],
       "signals": [
+        {
+          "title": "[AINews] Hot Chips: OpenAI’s Jalapeño, Cerebras CS-5, Groq 3 LPX, Apple M6",
+          "url": "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
+          "source": "latent-space",
+          "publishedAt": "2026-08-27T01:31:22.000Z"
+        },
         {
           "title": "[AINews] Andrew Ng gets into AI Engineering",
           "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
@@ -69,12 +103,57 @@
           "url": "https://www.latent.space/p/ainews-cursors-60b-acquisition-by",
           "source": "latent-space",
           "publishedAt": "2026-08-14T06:16:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "llm-agents",
+      "label": "LLM Agents",
+      "category": "ai",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.86,
+      "weeklyCounts": [
+        411,
+        420,
+        426,
+        449,
+        458,
+        466,
+        456,
+        437,
+        61
+      ],
+      "signals": [
+        {
+          "title": "[AINews] NVIDIA buys HuggingFace for $13B, as OpenAI publishes their HF incident retro",
+          "url": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
+          "source": "latent-space",
+          "publishedAt": "2026-08-27T01:50:54.000Z"
         },
         {
-          "title": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
-          "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
+          "title": "Lovable CTO: The Future of SaaS Is Apps That Agents Can Use",
+          "url": "https://www.latent.space/p/lovable-future-of-saas",
           "source": "latent-space",
-          "publishedAt": "2026-08-13T01:53:47.000Z"
+          "publishedAt": "2026-08-26T16:16:25.000Z"
+        },
+        {
+          "title": "[AINews] Andrew Ng gets into AI Engineering",
+          "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
+          "source": "latent-space",
+          "publishedAt": "2026-08-25T02:50:57.000Z"
+        },
+        {
+          "title": "More than just code review",
+          "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
+          "source": "simonw",
+          "publishedAt": "2026-08-22T15:56:54.000Z"
+        },
+        {
+          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
+          "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
+          "source": "latent-space",
+          "publishedAt": "2026-08-22T07:36:00.000Z"
         }
       ]
     },
@@ -83,8 +162,8 @@
       "label": "Open Models",
       "category": "ai",
       "stage": "early-adopter",
-      "trajectory": "rising",
-      "momentum": 0.01,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
         375,
         358,
@@ -93,9 +172,28 @@
         398,
         396,
         394,
-        398
+        398,
+        56
       ],
       "signals": [
+        {
+          "title": "[AINews] NVIDIA buys HuggingFace for $13B, as OpenAI publishes their HF incident retro",
+          "url": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
+          "source": "latent-space",
+          "publishedAt": "2026-08-27T01:50:54.000Z"
+        },
+        {
+          "title": "[AINews] Hot Chips: OpenAI’s Jalapeño, Cerebras CS-5, Groq 3 LPX, Apple M6",
+          "url": "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
+          "source": "latent-space",
+          "publishedAt": "2026-08-27T01:31:22.000Z"
+        },
+        {
+          "title": "Qwen3.8-Flash-Next",
+          "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
+          "source": "simonw",
+          "publishedAt": "2026-08-26T23:52:58.000Z"
+        },
         {
           "title": "[AINews] Andrew Ng gets into AI Engineering",
           "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
@@ -107,24 +205,6 @@
           "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
           "source": "latent-space",
           "publishedAt": "2026-08-22T07:36:00.000Z"
-        },
-        {
-          "title": "[AINews] Poolside gets $12B reverse-execuhire to NVIDIA; founders stay for $1B, employees go for $6B, Infraco scaling to 7GW neocloud",
-          "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
-          "source": "latent-space",
-          "publishedAt": "2026-08-21T05:45:21.000Z"
-        },
-        {
-          "title": "[AINews] Death of Params: Z.ai CEO Jie Tang on GLM 5.3 and the new Post-training Scaling Law",
-          "url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
-          "source": "latent-space",
-          "publishedAt": "2026-08-20T05:17:12.000Z"
-        },
-        {
-          "title": "[AINews] Memory prices up 500% in 12 months",
-          "url": "https://www.latent.space/p/ainews-memory-prices-up-500-in-12",
-          "source": "latent-space",
-          "publishedAt": "2026-08-19T08:44:52.000Z"
         }
       ]
     },
@@ -133,8 +213,8 @@
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
+      "trajectory": "cooling",
+      "momentum": -0.86,
       "weeklyCounts": [
         21,
         21,
@@ -143,7 +223,8 @@
         21,
         21,
         21,
-        21
+        21,
+        3
       ],
       "signals": [
         {
@@ -167,81 +248,12 @@
       ]
     },
     {
-      "id": "post-quantum",
-      "label": "Post-Quantum Crypto",
-      "category": "cybersecurity",
-      "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
-      "weeklyCounts": [
-        0,
-        0,
-        0,
-        0,
-        6,
-        0,
-        0,
-        0
-      ],
-      "signals": []
-    },
-    {
-      "id": "llm-agents",
-      "label": "LLM Agents",
-      "category": "ai",
-      "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.04,
-      "weeklyCounts": [
-        411,
-        420,
-        426,
-        449,
-        458,
-        466,
-        456,
-        437
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Andrew Ng gets into AI Engineering",
-          "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
-          "source": "latent-space",
-          "publishedAt": "2026-08-25T02:50:57.000Z"
-        },
-        {
-          "title": "More than just code review",
-          "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
-          "source": "simonw",
-          "publishedAt": "2026-08-22T15:56:54.000Z"
-        },
-        {
-          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
-          "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
-          "source": "latent-space",
-          "publishedAt": "2026-08-22T07:36:00.000Z"
-        },
-        {
-          "title": "The Evolution of the Agent Harness",
-          "url": "https://www.latent.space/p/attention-interface",
-          "source": "latent-space",
-          "publishedAt": "2026-08-22T07:30:52.000Z"
-        },
-        {
-          "title": "[AINews] Poolside gets $12B reverse-execuhire to NVIDIA; founders stay for $1B, employees go for $6B, Infraco scaling to 7GW neocloud",
-          "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
-          "source": "latent-space",
-          "publishedAt": "2026-08-21T05:45:21.000Z"
-        }
-      ]
-    },
-    {
       "id": "humanoids",
       "label": "Humanoid Robots",
       "category": "robotics",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -1,
       "weeklyCounts": [
         1,
         7,
@@ -250,7 +262,8 @@
         6,
         7,
         7,
-        1
+        1,
+        0
       ],
       "signals": []
     }

@@ -1,233 +1,233 @@
 {
-  "generatedAt": "2026-08-26T07:08:34.567Z",
+  "generatedAt": "2026-08-27T17:38:18.180Z",
   "items": [
     {
-      "id": "d-1x7ormq",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/",
-      "publishedAt": "2026-08-25T22:59:30.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: EVE Online's migration from 16-year-old Python 2.7 to Python 3 shows how to upgrade massive legacy codebases at scale without breaking a live service.",
-        "tweets": [
-          "EVE Online is upgrading 2.4M lines of Stackless Python 2.7 code to Python 3. They're using futurize automation + manual review of ~20k behavioral differences (like 1/2 being 0 vs 0.5).",
-          "The game has run on Stackless Python since 2003. Last upgrade was 2010. This migration handles real production constraints that typical greenfield projects never face.",
-          "EVE already proved the path forward: their newer Carbon engine replaced Stackless with open-source scheduler library. Now they're applying those lessons to the main game."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Миграция EVE Online с Python 2.7 на Python 3 показывает, как модернизировать массивные легаси-системы без остановки боевого сервиса.",
-        "tweets": [
-          "EVE Online переводит 2,4 млн строк кода Stackless Python 2.7 на Python 3. Используют автоматизацию futurize и ручную проверку ~20k различий поведения (например 1/2 = 0 vs 0.5).",
-          "Игра работает на Stackless Python с 2003 года. Последнее обновление было в 2010. Миграция должна учитывать реальные ограничения production, которых нет в новых проектах.",
-          "EVE уже нашла решение: новый движок Carbon заменил Stackless на open-source библиотеку планировщика. Теперь применяют тот же подход к основной игре."
-        ]
-      }
-    },
-    {
-      "id": "d-1my651s",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-      "publishedAt": "2026-08-25T15:14:14.000Z",
+      "id": "d-1rto48v",
+      "source": "deepmind",
+      "sourceUrl": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+      "publishedAt": "2026-08-27T16:11:32.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: IBM's Granite 4.2 shows how production LLMs balance performance, cost, and practical constraints that academic papers rarely discuss.",
+        "headline": "Why it matters: Gemini 1.1 Flash adds fine-tuning and structured outputs to give developers precise control over model behavior without the cost of larger models.",
         "tweets": [
-          "Granite 4.2 uses multi-stage training pipeline: pretraining on domain-specific corpora, then instruction-tuning on curated datasets. Real production teams skip the shortcuts.",
-          "Model sizes from 8B to 176B parameters. Smaller models handle edge cases better when tuned for specific domains—bigger isn't always the answer for enterprise workloads.",
-          "Built-in safety guardrails and code execution validation during training, not bolted on after. Prevents costly failures in regulated industries without sacrificing capability."
+          "Gemini 1.1 Flash now supports fine-tuning: customize the model on your own data for domain-specific tasks while keeping latency and costs low compared to larger variants.",
+          "Structured outputs ensure AI responses follow your exact schema—JSON, function calls, or custom formats—eliminating unreliable parsing and enabling reliable system integration.",
+          "Same multimodal foundation as flagship Gemini, but optimized for speed and economy: build production AI apps that actually fit your inference budget."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Granite 4.2 от IBM показывает, как боевые LLM балансируют производительность, стоимость и практические ограничения, которые в академических статьях не разбирают.",
+        "headline": "Почему важно: Gemini 1.1 Flash получила дообучение и структурированный вывод, дав разработчикам точный контроль над поведением модели без переплаты за большие версии.",
         "tweets": [
-          "Granite 4.2 использует многоэтапное обучение: претрейнинг на специализированных корпусах, потом инструкционный тюнинг на отобранных датасетах. Боевые команды не берут короткие пути.",
-          "Модели от 8B до 176B параметров. Меньшие модели лучше справляются со краевыми случаями при тюнинге под конкретный домен—больший размер не всегда нужен для корпоративных задач.",
-          "Встроенные механизмы безопасности и проверка кода прямо при обучении, а не приклеены потом. Это предотвращает дорогие сбои в регулируемых отраслях без потери возможностей."
+          "Gemini 1.1 Flash теперь поддерживает дообучение на собственных данных для узкоспециализированных задач, сохраняя низкую задержку и дешевле больших аналогов.",
+          "Структурированный вывод гарантирует, что ответы AI следуют вашей схеме — JSON, вызовы функций, произвольные форматы — исключая ненадёжный парсинг.",
+          "Мультимодальная база как у флагмана, но оптимизирована по скорости и стоимости — строите production AI в рамках реального бюджета инференса."
         ]
       }
     },
     {
-      "id": "d-1dqndyb",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-      "publishedAt": "2026-08-25T11:39:24.000Z",
+      "id": "d-5nqb64",
+      "source": "deepmind",
+      "sourceUrl": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+      "publishedAt": "2026-08-27T12:59:16.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: A 4-bit quantized model can now beat the performance of its full-precision version, making efficient inference practical without accuracy trade-offs.",
+        "headline": "Why it matters: Double-blind evaluations remove evaluator bias from AI assessments, making benchmarks more reliable and preventing labs from gaming results.",
         "tweets": [
-          "4-bit quantization with 'healing' technique recovers lost accuracy during compression—quantized model outperforms original full-precision weights on benchmarks.",
-          "Smaller models run faster on edge devices and cost less to serve, but usually sacrifice accuracy. This approach flips that assumption.",
-          "Key insight: post-quantization optimization can compensate for bit-depth loss better than previously thought possible. Real production win, not lab curiosity."
+          "DeepMind is running double-blind evals where evaluators don't know which AI system produced each response. Sounds basic, but it's the first time the field has done this systematically.",
+          "Evaluator bias is real: knowing a response came from Claude vs. GPT-4 vs. your competitor shifts how humans score it. Double-blind methodology fixes that in one shot.",
+          "The catch: scaling human evaluation is expensive and slow. But if we want trustworthy AI benchmarks instead of marketing contests, this is the unglamorous work that matters."
         ]
       },
       "ru": {
-        "headline": "Почему важно: 4-битная квантованная модель может превзойти по производительности исходную полноточную версию, сделав эффективный вывод практичным без потери точности.",
+        "headline": "Почему важно: Двойные слепые тесты избавляют оценку ИИ от предвзятости экспертов, делая бенчмарки надежнее и предотвращая манипуляции результатами.",
         "tweets": [
-          "Техника 'исцеления' при 4-битном квантовании восстанавливает потерянную точность—квантованная модель превосходит оригинальные полноточные веса на тестах.",
-          "Меньшие модели работают быстрее на мобильных устройствах и дешевле в обслуживании, но обычно теряют в точности. Этот подход меняет правила игры.",
-          "Ключевой момент: пост-квантизационная оптимизация может компенсировать потери точности лучше, чем считалось ранее. Реальный выигрыш для production, не лабораторный трюк."
+          "DeepMind применил двойные слепые оценки: эксперты не знают, какая система создала ответ. Просто, но это первый раз в истории, когда индустрия это делает по-настоящему.",
+          "Предвзятость оценщика работает: если видишь, что ответ от Claude или GPT-4, оценка меняется. Двойной слепой метод закрывает эту дыру сразу.",
+          "Проблема в масштабе: человеческая оценка дорогая и медленная. Но если хочешь честные бенчмарки вместо маркетинговых войн, нужна именно такая скучная работа."
         ]
       }
     },
     {
-      "id": "d-1kle7qs",
+      "id": "d-k4t5qv",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
-      "publishedAt": "2026-08-25T07:05:00.000Z",
+      "sourceUrl": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+      "publishedAt": "2026-08-27T09:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI becomes genuinely useful when chips, compute efficiency, model breakthroughs, and end products work together—not separately.",
+        "headline": "Why it matters: Students using ChatGPT with critical-thinking training outperform peers on real assignments, suggesting AI tools boost learning when paired with structured metacognitive skills.",
         "tweets": [
-          "Hardware alone doesn't win. OpenAI sees AI advantage as a flywheel: better chips enable larger models, which train more efficiently, making products cheaper and faster to deploy.",
-          "The real cost curve matters more than raw capability. As compute stacks improve across the board, useful AI moves from expensive research to commodity infrastructure.",
-          "Full-stack thinking beats point solutions. Companies optimizing only models or only chips miss how each layer compounds—efficiency gains compound across the entire pipeline."
+          "1,000+ student study: ChatGPT users with critical-thinking training scored higher on university assignments than control groups, showing AI isn't a shortcut—it's a thinking amplifier.",
+          "The gap: students trained to question, evaluate, and refine AI outputs produced more original work than those using ChatGPT alone or no AI at all.",
+          "Critical thinking instruction matters more than the tool. Students who learned to probe assumptions and validate claims got real cognitive gains, not just faster answers."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ИИ становится по-настоящему полезным только когда чипы, вычисления, модели и продукты работают вместе как единая система.",
+        "headline": "Почему важно: Студенты, использующие ChatGPT с обучением критическому мышлению, показывают лучшие результаты на реальных заданиях, что говорит о синергии между ИИ и метакогнитивными навыками.",
         "tweets": [
-          "Один только железо не решит задачу. OpenAI видит преимущество ИИ как маховик: лучшие чипы позволяют больше параметров, модели тренируются эффективнее, продукты дешевеют.",
-          "Кривая стоимости важнее сырой мощности. По мере совершенствования всего стека ИИ переходит из дорогой науки в товарную инфраструктуру.",
-          "Системный подход бьет точечные решения. Компании, оптимизирующие только модели или только железо, упускают, как каждый уровень усиливает эффект от других."
+          "Исследование 1000+ студентов: те, кто работал с ChatGPT и обучался критическому анализу, написали лучше других. ИИ—не шпаргалка, а усилитель мышления.",
+          "Ключевое отличие: студенты, научившиеся проверять, оценивать и переделывать ответы ИИ, создали более оригинальные работы, чем группы без обучения.",
+          "Навыки важнее инструмента. Обучение ставить под сомнение предположения и валидировать информацию дало реальный прирост, а не просто скорость ответов."
         ]
       }
     },
     {
-      "id": "d-16lzk97",
+      "id": "d-1psfy2j",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/jalapeno-first-results",
-      "publishedAt": "2026-08-25T07:00:00.000Z",
+      "sourceUrl": "https://openai.com/index/expanding-our-presence-in-brazil",
+      "publishedAt": "2026-08-27T03:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI's custom Jalapeño chip reduces inference costs and latency, making real-time AI applications economically viable at scale.",
+        "headline": "Why it matters: OpenAI is betting on Brazil as a key market for AI adoption, signaling where global AI infrastructure investment is heading next.",
         "tweets": [
-          "OpenAI built Jalapeño, a custom inference chip optimized for speed and power efficiency. Early results beat industry standards on throughput and latency.",
-          "Custom silicon cuts inference costs and energy per request. This matters for deploying large models in production where every millisecond and watt counts.",
-          "Jalapeño targets the inference bottleneck: running trained models fast is now as important as training them. Specialized hardware gives OpenAI a competitive edge."
+          "OpenAI is ramping up operations in Brazil with developer programs and business partnerships. Latin America is becoming a major AI battleground.",
+          "Local engagement matters: OpenAI isn't just selling API access—they're building community infrastructure to drive AI adoption from the ground up.",
+          "Brazil's 215M population and growing tech scene make it a strategic hub. Expect more AI vendors to follow suit in Latin America soon."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Специализированный чип Jalapeño от OpenAI снижает затраты на вывод моделей и задержку, делая реал-тайм AI приложения экономически жизнеспособными.",
+        "headline": "Почему важно: OpenAI рассматривает Бразилию как ключевой рынок для внедрения ИИ, что указывает на новые приоритеты в глобальной стратегии расширения.",
         "tweets": [
-          "OpenAI разработала Jalapeño — кастомный чип для инференса с лучшей энергоэффективностью. Ранние результаты превосходят промышленные стандарты по пропускной способности.",
-          "Собственный кремний снижает стоимость и энергопотребление одного запроса. Это критично при развертывании больших моделей, где каждая миллисекунда на счету.",
-          "Jalapeño решает узкое место инференса: быстрый запуск готовых моделей теперь столь же важен, как и их обучение. Специализированный чип — конкурентное преимущество."
+          "OpenAI усиливает присутствие в Бразилии через программы для разработчиков и партнерства с компаниями. Латинская Америка становится полем конкуренции больших игроков ИИ.",
+          "Локальное присутствие критично: OpenAI строит сообщество, а не просто продаёт API. Это влияет на скорость внедрения технологии в регионе.",
+          "Бразилия с населением 215 млн и растущей IT-сценой—стратегический хаб. Ожидайте расширения конкурентов в Латинской Америке."
         ]
       }
     },
     {
-      "id": "d-1b1l1ow",
+      "id": "d-1wwa3yf",
       "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
-      "publishedAt": "2026-08-25T02:50:57.000Z",
+      "sourceUrl": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
+      "publishedAt": "2026-08-27T01:50:54.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Andrew Ng's framework codifies AI Engineering as a distinct skill set combining LLM deployment, software fundamentals, agentic coding, and product sense—reshaping how companies hire and train for AI work.",
+        "headline": "Why it matters: NVIDIA's $13B acquisition of HuggingFace signals consolidation in open-source AI infrastructure, while Chinese models like GLM-5.3-Flash prove competitiveness at fraction of the cost.",
         "tweets": [
-          "Andrew Ng identifies 4 core AI Engineering skills: building/deploying AI apps, software fundamentals, agentic coding, and product sense. Not all about prompts—disciplined evals, system design, and agent orchestration now table stakes.",
-          "Agent quality increasingly shaped by harness design, not just base model. NVIDIA work shows structural skill checks barely predict real usefulness (ρ=0.14); practical skill lift measurement now the focus for enterprise AI.",
-          "Coding agents leveled up from 2024-2026: Cursor, Claude Code, Cline matured the space. Smart engineers know when to intervene vs. let agents run, how to specify clearly, and how to avoid production disasters—requires continuous learning."
+          "NVIDIA pays $13B for HuggingFace—80x revenue multiple. The bet: open-weight model distribution becomes critical infrastructure as frontier labs compete on price and performance.",
+          "GLM-5.3-Flash (aka Ox Alpha) matches Claude Opus on coding at $0.09/task vs $0.68 for GPT-5.6 Terra. Chinese open models now winning on cost-performance despite Western dominance narrative.",
+          "The real story: GLM-5.3-Flash's efficiency comes from brutal token pricing ($0.15/$0.50 in/out), not frugal architecture. Economics matter more than raw capability in agentic workloads."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Эндрю Нг определил четыре ключевых навыка AI-инженера—развёртывание приложений, фундамент ПО, работа с агентами и product sense. Это переопределяет найм и обучение в компаниях.",
+        "headline": "Почему важно: NVIDIA покупает HuggingFace за $13 млрд в момент, когда китайские модели типа GLM-5.3-Flash доказывают конкурентоспособность при дроблении стоимости.",
         "tweets": [
-          "Четыре столпа AI-инженерии по Нгу: развёртывание LLM-приложений, software fundamentals, работа с кодирующими агентами и понимание бизнеса. Дело не только в промптах—нужны дисциплинированные evals и архитектура систем.",
-          "Качество агентов теперь зависит от harness'а больше, чем от модели. По NVIDIA, формальные проверки навыков почти не коррелируют с реальной полезностью; компании переходят на измерение практического прироста.",
-          "Кодирующие агенты эволюционировали в 2024-2026: Cursor, Claude Code, Cline стали зрелыми инструментами. Опытные инженеры знают, когда вмешаться, как правильно специфицировать задачу и как не сломать боевую базу данных."
+          "NVIDIA платит $13 млрд за HuggingFace—в 80 раз больше годовой выручки. Ставка: открытое распределение моделей становится критической инфраструктурой по мере ужесточения конкуренции на цену и производительность.",
+          "GLM-5.3-Flash сравнивается с Claude Opus в кодировании за $0.09/задачу против $0.68 у GPT-5.6 Terra. Китайские открытые модели выигрывают по соотношению цена/производительность несмотря на западную доминацию.",
+          "Суть: эффективность GLM-5.3-Flash—это безжалостное ценообразование токенов ($0.15/$0.50), не архитектура. Экономика важнее сырой мощности для агентных рабочих нагрузок."
         ]
       }
     },
     {
-      "id": "d-1wtfps8",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "category": "cybersecurity",
-      "en": {
-        "headline": "Why it matters: State-sponsored actors are now using AI to scale disinformation campaigns, making coordinated influence operations harder to detect and faster to deploy.",
-        "tweets": [
-          "Russian operation used AI to generate content for fake think tanks, impersonating Israeli institutions to appear credible. Hundreds of accounts banned.",
-          "The fake 'sovereignty index' praised authoritarian governance and attacked Western democracies—automated at scale to reach multiple platforms simultaneously.",
-          "OpenAI's takeaway: expect more state actors weaponizing LLMs for influence ops. Detection requires behavioral analysis, not just content checks."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Государственные операторы теперь используют AI для масштабирования дезинформационных кампаний, которые сложнее обнаружить и быстрее распространяются.",
-        "tweets": [
-          "Российская операция использовала AI для генерации контента под видом израильского аналитического центра. Сотни аккаунтов заблокированы.",
-          "Поддельный индекс суверенитета автоматически хвалил авторитарное управление и критиковал демократии Запада на многих платформах одновременно.",
-          "Вывод OpenAI: готовьтесь к расширению AI-инструментов в государственных информационных операциях. Требуется анализ поведения, не только проверка контента."
-        ]
-      }
-    },
-    {
-      "id": "d-8mr795",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/introducing-admin-plugin",
-      "publishedAt": "2026-08-25T00:00:00.000Z",
+      "id": "d-zypcib",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
+      "publishedAt": "2026-08-27T01:31:22.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: ChatGPT Work teams can now manage users, permissions, and resource limits directly through a dedicated admin plugin instead of manual processes.",
+        "headline": "Why it matters: OpenAI's custom Jalapeño chip beats NVIDIA on inference efficiency, signaling that labs can now compete with NVIDIA on cost-per-inference, not just raw performance.",
         "tweets": [
-          "ChatGPT Work now has an Admin plugin that lets workspace managers handle user access, permissions, and usage limits without leaving the chat interface.",
-          "Track workspace usage patterns and manage member roles in real-time. The plugin surfaces analytics to help admins make informed resource decisions.",
-          "One less tool to juggle—permission management, member administration, and limit adjustments all move into ChatGPT where your team already works."
+          "OpenAI's Jalapeño delivers 1.5–1.9× better performance-per-watt and 1.7–3.6× lower latency than GB200/GB300 on real workloads. Deployment starts end of year. Gen 2 already deep in dev.",
+          "Agent harness quality now matters more than model choice. Microsoft's AutoSaddler patches prompts and tool configs offline, gaining +9 to +10 points on benchmarks. Scaffolding beats model swaps.",
+          "Long-horizon software refactoring is hard: SWE Refactor Bench sees only 5.4% success on repository migrations (C→Rust, Maven→Gradle). 13 of 20 tasks unsolved by anyone."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Администраторы рабочих пространств ChatGPT могут теперь управлять доступом, правами и лимитами прямо через встроенный плагин без переключения между инструментами.",
+        "headline": "Почему важно: собственный чип OpenAI Jalapeño обыгрывает NVIDIA по эффективности вывода, показывая, что лаборатории могут конкурировать с NVIDIA по стоимости инференса, а не только по производительности.",
         "tweets": [
-          "Admin-плагин для ChatGPT Work позволяет управлять пользователями, правами доступа и лимитами прямо в интерфейсе чата вместо ручных операций.",
-          "Отслеживайте использование пространства и управляйте ролями участников в реальном времени с аналитикой для принятия решений по ресурсам.",
-          "Один инструмент вместо нескольких—управление доступом, добавление пользователей и настройка лимитов теперь в том месте, где работает ваша команда."
+          "Jalapeño показывает производительность в 1,5–1,9× лучше на ватт и задержку в 1,7–3,6× ниже, чем GB200/GB300 на реальных нагрузках. Развёртывание начнётся в конце года.",
+          "Качество обвязки агента теперь важнее выбора модели. AutoSaddler от Microsoft оптимизирует промпты и конфиги инструментов офлайн, набирая +9–+10 баллов на бенчмарках.",
+          "Рефакторинг больших кодовых баз очень сложен: на SWE Refactor Bench успех составляет только 5,4%. Даже миграции вроде C→Rust успешны менее чем в половине случаев."
         ]
       }
     },
     {
-      "id": "d-vpuvod",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/gradio-workflow-guide",
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Gradio workflows let you chain AI models together visually without writing orchestration code, cutting deployment time from weeks to hours.",
-        "tweets": [
-          "Gradio's new workflow system connects multiple AI models in a DAG. No more glue code—drag nodes, set dependencies, hit deploy.",
-          "Visual workflow editor catches errors before runtime. See data flow between models in real-time, debug faster than traditional pipelines.",
-          "One-click sharing of entire workflows. Your teammates can run, modify, and iterate on multi-model systems without touching infrastructure."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Градио позволяет соединять модели ИИ визуально без написания кода оркестрации, сокращая время развёртывания с недель до часов.",
-        "tweets": [
-          "Новая система Градио строит граф вычислений из блоков моделей. Никакого клея между компонентами—тащи узлы, задаёшь зависимости, деплой готов.",
-          "Визуальный редактор ловит ошибки до запуска. Видишь поток данных между моделями в реальном времени, отлаживаешь быстрее старых пайплайнов.",
-          "Одна кнопка—и весь воркфлоу доступен коллегам. Они запускают, меняют и итерируют мультимодельные системы без доступа к инфре."
-        ]
-      }
-    },
-    {
-      "id": "d-1uwcdi4",
+      "id": "d-1kv5uc5",
       "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/24/llm-anthropic/",
-      "publishedAt": "2026-08-24T16:27:04.000Z",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
+      "publishedAt": "2026-08-26T23:52:58.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: llm-anthropic 0.27 updates the Anthropic plugin to work with the new anthropic v1.0.0 library that switched its HTTP client from httpx to httpx2.",
+        "headline": "Why it matters: Qwen's new 125B MoE model with only 6B active parameters shows how sparse architectures deliver frontier performance at lower inference cost.",
         "tweets": [
-          "llm-anthropic 0.27 now compatible with Anthropic's v1.0.0 Python library. The main change: migration from httpx to httpx2, following OpenAI's similar update two weeks prior.",
-          "Used Claude Code to automate the SDK upgrade by feeding it Anthropic's migration guide—the AI generated a working PR that got tests passing.",
-          "If you use the llm CLI with Anthropic models, update llm-anthropic to 0.27 to maintain compatibility with the latest Anthropic SDK."
+          "Qwen3.8-Flash-Next is a 125B multimodal MoE with just 6B active params—preview of Qwen4 architecture. Means cheaper inference without sacrificing capability.",
+          "Two quantized versions tested: 72.5GB UD-IQ1_S and 78.9GB UD-Q2_K_XL on DGX Spark. Sparse activation gives significant speed boost over dense models.",
+          "Open weights multimodal model from Qwen running on Unsloth quantizations. Early indicator that MoE sparse routing is becoming standard for efficient LLMs."
         ]
       },
       "ru": {
-        "headline": "Почему важно: llm-anthropic 0.27 обновляет плагин Anthropic для работы с новой библиотекой anthropic v1.0.0, которая переходит с httpx на httpx2.",
+        "headline": "Почему важно: новая модель Qwen с 125B параметрами и только 6B активных показывает, как разреженные архитектуры достигают производительности фронтира с меньшей стоимостью инференса.",
         "tweets": [
-          "llm-anthropic 0.27 совместим с Anthropic v1.0.0. Главное изменение: переход с httpx на httpx2, как и сделала OpenAI две недели назад.",
-          "Обновление SDK автоматизировали с помощью Claude Code, скормив ему гайд миграции Anthropic. AI сгенерировала работающий PR с пройденными тестами.",
-          "Если используете llm CLI с моделями Anthropic, обновите llm-anthropic до 0.27 для совместимости с новым SDK."
+          "Qwen3.8-Flash-Next — 125B мультимодальная MoE с 6B активных параметров. Предварительный вид архитектуры Qwen4. Меньше траты на инференс при сохранении качества.",
+          "Два варианта квантизации на DGX Spark: 72.5GB UD-IQ1_S и 78.9GB UD-Q2_K_XL. Разреженная активация даёт значительное ускорение по сравнению с плотными моделями.",
+          "Открытые веса, мультимодальность, квантизация Unsloth. Сигнал: разреженная маршрутизация MoE становится стандартом для эффективных LLM."
+        ]
+      }
+    },
+    {
+      "id": "d-1u2rp3",
+      "source": "deepmind",
+      "sourceUrl": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+      "publishedAt": "2026-08-26T17:01:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Gemini 3.5 Transcribe brings semantic understanding to speech recognition, catching context that traditional STT misses.",
+        "tweets": [
+          "Gemini 3.5 Transcribe uses language models to understand what's being said, not just transcribe phonetically. Better accuracy on technical terms and homophones.",
+          "Fixes the big STT problem: it now grasps context to pick the right word when multiple options sound identical. Real-world accuracy jump.",
+          "DeepMind's upgrade targets the error-prone bits engineers hit constantly—jargon, product names, domain-specific vocab. Fewer manual corrections needed."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Gemini 3.5 Transcribe добавляет семантическое понимание в распознавание речи, поймая смыслы, которые пропускают обычные системы.",
+        "tweets": [
+          "Gemini 3.5 Transcribe использует языковые модели, чтобы понять смысл, а не просто переписать звуки. Выше точность на техническими терминах и омонимами.",
+          "Решает классическую проблему STT: теперь система улавливает контекст и выбирает правильное слово из звучащих одинаково вариантов. Реальный прыжок в качестве.",
+          "DeepMind нацелился на ошибкоопасные моменты—жаргон, названия продуктов, профессиональная лексика. Меньше ручного исправления транскриптов."
+        ]
+      }
+    },
+    {
+      "id": "d-12yf7ar",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/lovable-future-of-saas",
+      "publishedAt": "2026-08-26T16:16:25.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: SaaS apps are becoming invisible—agents will call their capabilities directly instead of humans opening interfaces, forcing builders to redesign everything for machine-first workflows.",
+        "tweets": [
+          "Lovable pivots from app-builder to agent platform. Apps now expose capabilities as tools via MCP servers, so ChatGPT/Claude can use them without opening UI. One app, two interfaces.",
+          "In 3 years: GPT Engineer → prototype tool → production app builder → internal software → now agent-orchestration layer. Company hit $500M ARR, $13.3B valuation on compounding LLM gains.",
+          "The shift: instead of building 10 separate apps, build one 'company brain'—central agent accessing all capabilities async, scheduling tasks, reusing workflows across org. Interface becomes irrelevant."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: SaaS-приложения становятся невидимыми—агенты будут вызывать их функции напрямую вместо того, чтобы люди открывали интерфейсы, заставляя разработчиков переделывать всё под машины.",
+        "tweets": [
+          "Lovable переходит от конструктора приложений к платформе агентов. Приложения теперь раскрывают функции как инструменты через MCP-серверы, чтобы ChatGPT и Claude могли их использовать без UI.",
+          "За 3 года: GPT Engineer → прототипирование → production-приложения → внутренний софт → слой для оркестрации агентов. Компания достигла $500M годового дохода при оценке $13,3B.",
+          "Сдвиг: вместо создания 10 отдельных приложений создаёшь одного 'корпоративного помощника'—центральный агент со всеми функциями, асинхронные задачи, переиспользование логики. Интерфейс становится ненужным."
+        ]
+      }
+    },
+    {
+      "id": "d-1u55x93",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/anima",
+      "publishedAt": "2026-08-26T15:15:39.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Physics simulation needs different AI than language—neural operators built on mathematical structure beat brute-force scaling where data is scarce.",
+        "tweets": [
+          "Foundation models for language won't work for physics. Weather, fusion, fluid dynamics have billions of grid dimensions. Neural Operators encode physical priors instead—FourCastNet predicts months ahead on consumer GPUs.",
+          "The bitter lesson breaks down at physical scale. Transformers need trillions of tokens for industrial-grade resolution. Anima Anandkumar's approach: bake spherical harmonics and multi-scale structure into networks, not tokens.",
+          "Physical world is forgiving. Plasma disruption prediction needs only thousands of samples, runs a million times faster than traditional simulation. Structure beats data volume when modeling continuous systems."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Физику моделируют не как язык — нейронные операторы, встроенные в математическую структуру, работают там, где данных мало.",
+        "tweets": [
+          "Масштабирование трансформеров упирается в физику. Промышленное предсказание погоды требует сотен миллиардов координат сетки. Вместо этого Anima Anandkumar встраивает сферические гармоники в архитектуру сети.",
+          "FourCastNet предсказывает погоду на месяцы вперёд на обычных GPU. Физические приоры и многомасштабная структура заменяют голодный аппетит к данным классических трансформеров.",
+          "Физический мир щедрее, чем кажется. Предсказание срывов плазмы работает на тысячах примеров, в миллион раз быстрее симуляций. Встроенная структура важнее объёма данных для непрерывных систем."
         ]
       }
     }

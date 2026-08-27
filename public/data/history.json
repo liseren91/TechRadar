@@ -602,5 +602,15 @@
       "fusion": 1,
       "protein-design": 3
     }
+  },
+  {
+    "date": "2026-08-27",
+    "topics": {
+      "llm-agents": 61,
+      "open-models": 56,
+      "rag": 16,
+      "fusion": 2,
+      "protein-design": 3
+    }
   }
 ]
