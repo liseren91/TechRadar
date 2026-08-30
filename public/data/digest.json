@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-29T12:41:33.128Z",
+  "generatedAt": "2026-08-30T11:54:29.690Z",
   "items": [
+    {
+      "id": "d-rpg5dk",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/29/hy4/",
+      "publishedAt": "2026-08-29T23:53:13.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Tencent's Hy4 shows Chinese LLMs are scaling up with hidden reasoning chains that rival frontier models, while keeping costs manageable through sparse activation.",
+        "tweets": [
+          "Hy4 jumps from 295B to 770B params (Hy3→Hy4), but only 49B active at inference. That sparse activation keeps compute costs down while maintaining a 1M token context window.",
+          "Model includes configurable reasoning_effort modes: 'high' for chain-of-thought and 'no_think' to skip it. Hidden reasoning uses truncated English for efficiency, not perfect grammar.",
+          "Open weights release on HF (1.56TB) means anyone can run this locally. Reasoning traces show the model genuinely working through problems before answering, not just talking about thinking."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: китайские LLM масштабируются быстро — Hy4 от Tencent показывает, что скрытое рассуждение и разреженная активация конкурируют с лучшими фронтирными моделями.",
+        "tweets": [
+          "Hy4: 770B параметров, но активно только 49B — разреженная активация снижает вычислительные затраты при контексте 1M токенов. Это быстрее, чем казалось бы по размеру.",
+          "Две настройки reasoning_effort: 'high' включает цепочку мыслей, 'no_think' её отключает. Внутреннее рассуждение использует сокращённый английский — грамматика не важна для скрытых вычислений.",
+          "Модель выложена открытой на Hugging Face (1,56TB). Трассы рассуждений показывают реальную работу с проблемой, а не имитацию мышления в ответах пользователю."
+        ]
+      }
+    },
     {
       "id": "d-lbzdh8",
       "source": "latent-space",
@@ -8,19 +31,19 @@
       "publishedAt": "2026-08-29T05:11:52.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI cutting off Cursor over contract violations signals the AI coding market has matured enough that rivals like Grok can compete on merit, forcing real platform strategy decisions.",
+        "headline": "Why it matters: OpenAI blocking Cursor after SpaceX acquisition shows AI API access is now a competitive weapon, not just a service.",
         "tweets": [
-          "OpenAI blocked Cursor after SpaceX acquisition citing Elon Musk's history of contract violations. A year ago this would've crippled them; now GPT-5.6 competes with Claude on coding but Cursor has viable Grok alternatives.",
-          "Open-weight models shipped hard this week: Tencent's Hy4 jumped 115 points over Hy3, Z.ai's GLM-5.3 moved to deployable open weights, Qwen3.8-Flash hit $0.15/1M tokens. The frontier is fracturing.",
-          "Speculative decoding has no universal winner—best method depends on model, workload, depth. Search is now an evaluated subsystem. Cloud-resident agents with persistent context are replacing local CLI tools."
+          "OpenAI cut Cursor off citing contract violations by Elon's companies. Cursor was 5% of their traffic—the move signals competitive threat, not dependency.",
+          "GPT-5.6 coding is now serious competition to Claude. A year ago Cursor used Claude; today it's running Grok 4.6. The playing field shifted fast.",
+          "When coding models graduate from niche to commodity, API gatekeeping becomes strategy. Expect more selective access wars as frontiers models commoditize."
         ]
       },
       "ru": {
-        "headline": "Почему важно: OpenAI заблокировал Cursor за нарушения контрактов, что показывает: рынок AI-кодеров созрел настолько, что конкуренты вроде Grok могут бороться по существу, а не по API-доступу.",
+        "headline": "Почему важно: OpenAI заблокировал Cursor после покупки SpaceX — доступ к API теперь стал конкурентным оружием, а не просто сервисом.",
         "tweets": [
-          "OpenAI отключил Cursor после покупки SpaceX, ссылаясь на историю нарушений контрактов Маском. Год назад это было бы смертельным ударом; теперь GPT-5.6 конкурирует с Claude, но у Cursor есть жизнеспособные альтернативы на Grok.",
-          "На неделе вышли серьёзные open-weight модели: Hy4 от Tencent прыгнула на 115 пунктов, GLM-5.3 стала развёртываемой, Qwen3.8-Flash за $0.15 за миллион токенов. Фронтир раскалывается.",
-          "Speculative decoding не имеет универсального решения—лучший метод зависит от модели и нагрузки. Поиск стал оценяемой подсистемой. Облачные агенты с постоянным контекстом вытесняют локальные CLI-инструменты."
+          "OpenAI отключил Cursor, ссылаясь на нарушения контрактов компаниями Илона Маска. Cursor составлял 5% трафика — ход сигнализирует угрозу, а не зависимость.",
+          "GPT-5.6 в кодировании теперь серьёзный конкурент Claude. Год назад Cursor использовал Claude, теперь работает на Grok 4.6. Поле изменилось быстро.",
+          "Когда модели кодирования становятся массовым товаром, блокировка API — это стратегия. Жди больше войн за доступ по мере коммодитизации фронтира."
         ]
       }
     },
@@ -31,19 +54,19 @@
       "publishedAt": "2026-08-28T22:12:02.000Z",
       "category": "cybersecurity",
       "en": {
-        "headline": "Why it matters: AI coding agents can now exploit security bugs within minutes of patch discussions, forcing open source maintainers to rethink vulnerability disclosure practices entirely.",
+        "headline": "Why it matters: AI coding agents can now find and exploit security bugs within minutes of patch discussions, breaking traditional open-source embargo timelines.",
         "tweets": [
-          "OCaml maintainers are seeing automated exploit attempts within 10 minutes of posting security patches. AI agents like DeepSeek V4 Pro can independently discover flaws from minimal hints.",
-          "rclone went from 20 security disclosures in 10 years to 40+ in one month. Maintainers are overwhelmed; CVE assignment backlog jumped from 2-3 days to 3-4 weeks.",
-          "Current embargo practices assume days to weeks for discovery. If exploitation happens in minutes, the entire open source security disclosure model needs rebuilding now."
+          "OCaml maintainers are seeing exploit attempts within 10 minutes of discussing security patches. AI agents like DeepSeek V4 can turn bug rumors into working exploits faster than humans can coordinate fixes.",
+          "rclone jumped from 20 security reports in 10 years to 40+ in one month. 75% have real issues. Traditional disclosure windows (days/weeks) are now obsolete when automated watchers can weaponize hints instantly.",
+          "CVE assignment backlogs ballooned from 2-3 days to 3-4 weeks. Open source embargo practices designed for human timescales can't survive AI-powered reconnaissance. New security coordination protocols are urgent."
         ]
       },
       "ru": {
-        "headline": "Почему важно: AI-агенты могут автоматически находить и эксплуатировать уязвимости в течение минут после обсуждения патчей, что требует переработки всех практик раскрытия уязвимостей в open source.",
+        "headline": "Почему важно: AI-агенты могут найти и эксплуатировать уязвимости в коде за минуты после обсуждения патчей, разрушая традиционные сроки координации в open source.",
         "tweets": [
-          "Разработчики OCaml получают автоматизированные попытки эксплуатации в течение 10 минут после публикации патчей. Модели типа DeepSeek V4 Pro самостоятельно находят уязвимости по минимальным подсказкам.",
-          "Проект rclone: за 10 лет было 20 раскрытий, за последний месяц — 40+. Сроки назначения CVE выросли с 2-3 дней до 3-4 недель, мейнтейнеры в цейтноте.",
-          "Эмбарго рассчитаны на дни-недели до открытия. Если эксплуатация происходит за минуты, всю модель раскрытия уязвимостей в open source нужно срочно переделывать."
+          "Разработчики OCaml видят попытки эксплуатации через 10 минут после обсуждения патчей. AI вроде DeepSeek V4 превращает намёки на баги в рабочие эксплойты быстрее, чем люди успевают согласовать исправления.",
+          "rclone получил 40+ уязвимостей за месяц вместо 20 за 10 лет. 75% содержат реальные проблемы. Окна раскрытия в дни-недели устарели, когда автоматизированные мониторы могут оружейничить любой намёк за минуты.",
+          "Очереди CVE выросли с 2-3 дней до 3-4 недель. Протоколы эмбарго, рассчитанные на человеческие сроки, не выдерживают AI-разведку. Нужны срочно новые процессы координации безопасности."
         ]
       }
     },
@@ -54,19 +77,19 @@
       "publishedAt": "2026-08-28T07:12:10.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI targets December 2026 for internal AGI declaration, while open-source models and robotics hit new efficiency/accessibility milestones that reshape what counts as 'capability' versus deployment infrastructure.",
+        "headline": "Why it matters: OpenAI's internal AGI declaration target of December 2026 signals the field is moving from abstract timelines to concrete capability benchmarks that will soon face real scrutiny.",
         "tweets": [
-          "OpenAI's Astra hits 'AI Research Intern' milestones on schedule; Sama publicly sets Dec 2026 for internal AGI call. Timeline accountability clock starts now.",
-          "Microduck ($399 open robot + simulator) sold $1M in days because cheap embodied RL + sim-to-real transfer beats hype. Community-scale physical AI just got credible.",
-          "GLM-5.3-Flash (320B params, 18B active) runs 3-4 bit quantized on single machines; outperforms prior models at 1/10 cost. Open model efficiency now beats closed API math."
+          "OpenAI Chief Scientist says unreleased Astra model hits the 'Automated AI Research Intern' milestone they planned for Sept 2026. Sam Altman now predicts internal AGI declaration by end of 2026. Clock officially started.",
+          "GLM-5.3-Flash (320B params, 18B active) runs on consumer hardware: 3-bit GGUF on 128GB RAM, 4-bit retains 93% accuracy. Open-source efficiency is reshaping what 'deployment ready' means for large models.",
+          "Microduck $399 open-source robot with sim-to-real transfer and community RL training hit $1M sales in days. Physical AI reaching consumer scale means embodied learning moves from lab demos to actual iterative deployment."
         ]
       },
       "ru": {
-        "headline": "Почему важно: OpenAI планирует объявить о достижении AGI к декабрю 2026, в то время как открытые модели и робототехника демонстрируют скачки в эффективности и доступности, переопределяя грань между способностями модели и инфраструктурой развёртывания.",
+        "headline": "Почему важно: OpenAI планирует объявить о достижении AGI внутри компании к концу 2026 года — переход от абстрактных прогнозов к конкретным техническим вехам, которые скоро потребуют проверки.",
         "tweets": [
-          "Astra от OpenAI достигает вех 'AI Research Intern' по графику; Sama публично называет декабрь 2026 для внутреннего признания AGI. Отсчёт начинается.",
-          "Microduck (робот за 399 долларов с симулятором) продал на миллион за дни: дешёвая воплощённая RL и sim-to-real перевод победили маркетинг. Физический AI в масштабе сообщества стал реален.",
-          "GLM-5.3-Flash (320B параметров, 18B активных) работает в 3-4 бит на одной машине; превосходит старые модели за 1/10 цены. Открытая эффективность теперь бьёт закрытый API."
+          "Главный научный сотрудник OpenAI говорит, что модель Astra достигла статуса 'Automated AI Research Intern', который они планировали на сентябрь 2026. Сэм Альтман предсказывает внутреннее объявление об AGI к декабрю 2026 года.",
+          "GLM-5.3-Flash (320B параметров, 18B активных) работает на потребительском железе: 3-bit GGUF на 128GB оперативной памяти, 4-bit сохраняет 93% точности. Открытый исходный код меняет определение готовности к развёртыванию.",
+          "Робот Microduck за $399 с передачей знаний из симуляции в реальность и обучением через подкрепление достиг $1М продаж за дни. Воплощённый AI переходит из лаборатории в реальное итеративное применение."
         ]
       }
     },
@@ -77,19 +100,19 @@
       "publishedAt": "2026-08-28T06:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI is terminating its API contract with Cursor after SpaceX acquisition, signaling stricter commercial boundaries around model access.",
+        "headline": "Why it matters: OpenAI is terminating model access to Cursor after SpaceX acquisition, signaling stricter commercial partnership controls.",
         "tweets": [
-          "OpenAI ended its contract with Cursor IDE following SpaceX's acquisition. The move reflects new policies on who can license their models commercially.",
-          "Cursor was a popular AI-powered code editor. Losing OpenAI API access forces them to pivot to alternative model providers or negotiate new terms.",
-          "This sets precedent: major AI providers may now scrutinize acquirers and reserve rights to halt partnerships post-acquisition."
+          "OpenAI ended its contract with Cursor IDE following SpaceX's acquisition. The move reflects OpenAI's selective approach to who can access its models commercially.",
+          "Cursor was a popular AI coding assistant using OpenAI APIs. The partnership wind-down suggests corporate ownership changes now trigger model access reviews.",
+          "This sets a precedent: AI model providers are willing to pause integrations based on acquirer identity, not just technical or business terms."
         ]
       },
       "ru": {
-        "headline": "Почему важно: OpenAI прекратила контракт с Cursor после её покупки SpaceX, что указывает на ужесточение контроля над коммерческим использованием моделей.",
+        "headline": "Почему важно: OpenAI прекратила поставку моделей Cursor после приобретения компании SpaceX, что указывает на ужесточение контроля над коммерческими партнёрствами.",
         "tweets": [
-          "OpenAI разорвала соглашение с IDE Cursor после приобретения компании SpaceX. Это отражает новые политики доступа к моделям для коммерческих партнёров.",
-          "Cursor был популярным AI-редактором кода. Потеря доступа к API OpenAI заставит их искать альтернативные модели или пересматривать условия.",
-          "Прецедент установлен: крупные AI-провайдеры теперь могут прерывать партнёрства после смены владельца компании-партнёра."
+          "OpenAI разорвала контракт с IDE Cursor после того, как SpaceX приобрела эту компанию. Это отражает избирательный подход OpenAI к выбору партнёров для коммерческого доступа.",
+          "Cursor был популярным AI-ассистентом для кодирования на моделях OpenAI. Завершение партнёрства показывает, что смена корпоративного владельца теперь влияет на доступ к моделям.",
+          "Это создаёт прецедент: провайдеры AI-моделей готовы остановить интеграции в зависимости от идентичности нового владельца, а не только от технических условий."
         ]
       }
     },
@@ -100,19 +123,19 @@
       "publishedAt": "2026-08-28T02:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI and Thailand's government are training the next wave of Southeast Asian founders to build responsible AI products in healthcare and education.",
+        "headline": "Why it matters: OpenAI and Thailand's MHESI are building local AI capacity by helping 10 startups commercialize health, wellness, and education solutions in eight weeks.",
         "tweets": [
-          "OpenAI + Thailand's MHESI launched an 8-week accelerator for 10 startups. Focus: turning AI prototypes into trustworthy products in health, wellness, and education.",
-          "Southeast Asia has the talent and problems to solve with AI. Direct support from OpenAI helps local founders avoid the costly mistakes of moving too fast.",
-          "Government backing + startup acceleration = policy makers learning what actually works with AI, not just theory. Real feedback loop being built."
+          "OpenAI + Thailand's MHESI launching 8-week accelerator for 10 startups in health, wellness, education. Focus: turning AI prototypes into products customers actually trust.",
+          "Thailand's startup ecosystem gets direct support scaling AI. Not just funding—hands-on help shipping products that solve real problems in healthcare and learning.",
+          "Eight weeks to go from prototype to product. Accelerator targets sectors where AI impact matters most: health outcomes, wellness access, education reach."
         ]
       },
       "ru": {
-        "headline": "Почему важно: OpenAI и правительство Таиланда готовят новое поколение основателей стартапов для создания ответственных AI-продуктов в Юго-Восточной Азии.",
+        "headline": "Почему важно: OpenAI и министерство образования Таиланда запускают ускоритель, помогающий 10 стартапам превратить прототипы ИИ в готовые к рынку продукты за восемь недель.",
         "tweets": [
-          "OpenAI и министерство образования Таиланда запустили 8-недельный акселератор для 10 стартапов. Фокус: превратить прототипы AI в надежные продукты для здравоохранения и образования.",
-          "Юго-Восточная Азия имеет таланты и реальные проблемы для решения с помощью AI. Прямая поддержка OpenAI помогает локальным основателям избежать дорогостоящих ошибок.",
-          "Государственная поддержка плюс ускоритель стартапов означают, что политики учатся на практике, а не на теории. Формируется обратная связь с реальным рынком."
+          "OpenAI и MHESI Таиланда: 8-недельная программа для 10 стартапов в здравоохранении, wellness и образовании. Цель—из прототипа в надёжный продукт.",
+          "Таиландский экосистема получает прямую поддержку. Не просто инвестиции, а практическая помощь в выходе на рынок решений, которым люди доверяют.",
+          "От идеи к коммерческому продукту за восемь недель. Ускоритель сфокусирован на сферах, где ИИ действительно спасает: здоровье, благополучие, образование."
         ]
       }
     },
@@ -123,19 +146,19 @@
       "publishedAt": "2026-08-28T00:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Open-source speech recognition now has benchmarks for underrepresented languages, making ASR development accessible beyond wealthy regions.",
+        "headline": "Why it matters: Open speech recognition benchmarks now include Global South languages, exposing performance gaps that affect billions of users outside wealthy markets.",
         "tweets": [
-          "Hugging Face's Open ASR Leaderboard now includes Global South languages. First step toward closing the massive speech-recognition gap affecting billions of speakers.",
-          "Most ASR models train on English, Mandarin, or Spanish. New benchmarks measure performance on languages that have almost zero commercial speech tech.",
-          "Open leaderboards drive competition. When metrics exist, researchers in underrepresented regions can finally prove their models work and attract funding."
+          "Open ASR Leaderboard added its first Global South language. Most speech models perform 2-3x worse on underrepresented languages—a real equity problem.",
+          "Models trained on Western data dominate benchmarks. Adding Global South languages forces the industry to confront whose speech AI actually works for.",
+          "One new language on the leaderboard means better visibility into bias. Expect pressure on model creators to improve coverage beyond English, Mandarin, Spanish."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Открытые стандарты распознавания речи теперь включают языки Глобального Юга, делая разработку ASR доступной за пределами богатых стран.",
+        "headline": "Почему важно: Открытые рейтинги распознавания речи теперь включают языки Глобального Юга, выявляя разрыв в качестве для миллиардов пользователей за пределами развитых рынков.",
         "tweets": [
-          "Рейтинг Open ASR Leaderboard добавил языки из развивающихся стран. Впервые есть измеримые цели для языков, где коммерческой технологии речи почти нет.",
-          "Большинство моделей ASR обучены на английском, мандарине или испанском. Новые эталоны показывают качество на недовыплаченных языках, на которых говорят миллиарды.",
-          "Публичные рейтинги запускают конкуренцию. Когда метрики прозрачны, исследователи из слабо представленных регионов могут доказать потенциал своих моделей."
+          "Open ASR Leaderboard добавил первый язык Глобального Юга. Модели работают в 2-3 раза хуже на редкодокументированных языках—реальная проблема справедливости.",
+          "Модели на западных данных доминируют в рейтингах. Новые языки заставляют индустрию признать, для кого на самом деле работает речевой AI.",
+          "Один новый язык в рейтинге повышает прозрачность. Создатели моделей будут испытывать давление улучшить охват за пределами английского, мандарина и испанского."
         ]
       }
     },
@@ -146,19 +169,19 @@
       "publishedAt": "2026-08-27T22:50:25.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Claude Code's auto safety mode can be bypassed 80% of the time via zip extraction tricks, and sometimes blocks the agent's own cleanup commands when compromise is detected.",
+        "headline": "Why it matters: Claude Code's auto-mode safety mechanism can be bypassed 80% of the time and ironically blocks its own cleanup commands when it detects compromise.",
         "tweets": [
-          "Prompt injection researcher found an 80% success rate attack on Claude Code auto mode: trick it into downloading and extracting a zip, then execute code that imports a malicious local struct.py file.",
-          "The safety classifier sometimes prevents the agent from stopping malware it detected. Auto mode blocked cleanup commands after the compromise was already underway.",
-          "Sandboxing remains non-negotiable for any unattended coding agent. Isolate in containers/VMs, restrict network egress, hide credentials and SSH keys from agent runtime."
+          "Researcher Johann Rehberger broke Claude Code auto mode by tricking it into downloading a zip, extracting a malicious struct.py, and executing it. Works 80% of the time.",
+          "The safety classifier prevented the agent from stopping the malware process it allowed. Auto mode blocked cleanup commands even after detecting compromise.",
+          "Lesson: never run coding agents without sandboxing, network restrictions, and isolated credentials. No amount of prompt injection filtering replaces basic operational security."
         ]
       },
       "ru": {
-        "headline": "Почему важно: режим автоматической защиты Claude Code взламывается в 80% случаев через трюки с распаковкой архивов, а иногда даже блокирует команды очистки самого агента.",
+        "headline": "Почему важно: автоматический режим Claude Code можно обойти в 80% случаев, и он блокирует собственные команды очистки при обнаружении компрометации.",
         "tweets": [
-          "Исследователь prompt injection обнаружил атаку с 80-процентной успешностью: заставить Claude Code скачать и распаковать zip-архив, затем выполнить код, который импортирует вредоносный локальный файл struct.py.",
-          "Классификатор безопасности иногда препятствует агенту остановить обнаруженный вредонос. Auto mode блокировал команды очистки после того, как компрометация уже произошла.",
-          "Изоляция в sandbox остаётся обязательной для любого автоматического кодирующего агента. Используйте контейнеры или виртуальные машины, ограничьте исходящий трафик, скрывайте учётные данные от среды выполнения."
+          "Исследователь Иоганн Рехбергер взломал Claude Code через загрузку архива с вредоносным файлом struct.py. Атака срабатывает в 80% попыток.",
+          "Защита обнаружила компрометацию, но заблокировала команду остановки процесса. Система безопасности стала частью проблемы, а не решения.",
+          "Вывод: запускайте coding-агентов только в sandbox с изоляцией сети и учётных данных. Никакие фильтры от prompt injection не заменят базовую операционную безопасность."
         ]
       }
     },
@@ -169,19 +192,19 @@
       "publishedAt": "2026-08-27T16:11:32.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Gemini 1.1 Flash adds fine-grained control over model outputs, letting developers reduce costs and latency in production systems.",
+        "headline": "Why it matters: Gemini 1.1 Flash gives developers finer-grained control over model behavior through new reasoning and output formatting options, reducing latency without sacrificing accuracy.",
         "tweets": [
-          "Gemini 1.1 Flash now supports structured output and JSON mode—developers can lock down response formats without post-processing overhead.",
-          "Reduced token consumption through better control means cheaper API calls and faster inference for enterprise deployments at scale.",
-          "Native audio/video input with predictable output formatting fixes the main headache: AI models giving you valid but unpredictable response structures."
+          "Gemini 1.1 Flash adds configurable reasoning modes - you can dial up or down how much the model thinks before responding, trading computation for accuracy on demand.",
+          "New structured output controls let you enforce specific formats (JSON schemas, XML) directly in the API, eliminating post-processing overhead for production systems.",
+          "Latency drops 30-40% vs previous versions while maintaining performance on complex reasoning tasks - meaningful speedup for real-time applications."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Gemini 1.1 Flash добавляет точное управление выводом модели, позволяя разработчикам снизить затраты и задержки в production-системах.",
+        "headline": "Почему важно: Gemini 1.1 Flash дает разработчикам более точный контроль над поведением модели через новые режимы рассуждения и параметры форматирования вывода, снижая задержку без потери качества.",
         "tweets": [
-          "Gemini 1.1 Flash теперь поддерживает структурированный вывод и JSON mode—разработчики фиксируют формат ответов без постобработки.",
-          "Меньше токенов, меньше денег: точное управление выводом снижает стоимость API-вызовов и ускоряет инференс на больших объемах.",
-          "Прямая работа с аудио и видео плюс предсказуемый формат ответов решает главную боль: модели выдают валидный, но непредсказуемый output."
+          "Gemini 1.1 Flash позволяет настраивать глубину рассуждений модели - вы сами решаете, сколько вычислений потратить для большей точности ответа.",
+          "Новый контроль структурированного вывода принудительно применяет нужные форматы (JSON, XML) прямо в API - больше не нужна дополнительная обработка результатов.",
+          "Скорость ответов выросла на 30-40% при сохранении качества на сложных задачах - значимое улучшение для приложений реального времени."
         ]
       }
     },
@@ -192,42 +215,19 @@
       "publishedAt": "2026-08-27T12:59:16.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Double-blind AI evaluation removes bias from comparing AI models by hiding which system produced which response.",
+        "headline": "Why it matters: Double-blind testing removes evaluator bias from AI benchmarks, making capability comparisons between models more reliable.",
         "tweets": [
-          "DeepMind is piloting double-blind evals where neither judges nor evaluators know which AI created each response, eliminating bias in model comparison.",
-          "Traditional AI benchmarks suffer from familiarity bias and brand preference. This method forces evaluation based purely on performance, not reputation.",
-          "Comparable to clinical drug trials, double-blind AI testing could become the standard for credible model assessment across the industry."
+          "DeepMind ran first double-blind AI evals: testers don't know which model they're testing, eliminating unconscious bias that skews benchmark results.",
+          "Hidden model identity forces evaluators to judge outputs on merit alone. Prevents confirmation bias that typically favors familiar AI systems.",
+          "More honest AI comparisons mean better funding, research, and deployment decisions. Benchmarks finally match scientific rigor of clinical trials."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Двойная слепота в оценке ИИ устраняет предвзятость при сравнении моделей, скрывая, какая система создала каждый результат.",
+        "headline": "Почему важно: Двойная слепота при тестировании убирает субъективность оценки из AI-бенчмарков и делает сравнение моделей более надежным.",
         "tweets": [
-          "DeepMind проводит слепые оценки, где судьи и оценивающие не знают, какой ИИ создал ответ, исключая смещение при сравнении моделей.",
-          "Традиционные тесты ИИ страдают от предвзятости знакомства и предпочтения бренда. Этот метод оценивает только производительность, не репутацию.",
-          "Как в клинических испытаниях лекарств, слепая оценка ИИ может стать стандартом достоверного тестирования моделей по всей индустрии."
-        ]
-      }
-    },
-    {
-      "id": "d-k4t5qv",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
-      "publishedAt": "2026-08-27T09:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Students using ChatGPT with critical-thinking training outperform peers on real assignments, not just in final answers but in reasoning quality.",
-        "tweets": [
-          "1,000+ student study shows ChatGPT users with critical-thinking training score higher on university assignments than control groups. Tool + skill beats tool alone.",
-          "ChatGPT doesn't replace thinking—it amplifies it. Students who learned to question AI outputs produced more original work than those who didn't.",
-          "Real finding: Access to AI without critical evaluation skills doesn't boost performance. Training students to interrogate AI output is the actual lever."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Студенты, использующие ChatGPT с обучением критическому мышлению, показывают лучшие результаты на реальных заданиях, а не только в финальных ответах.",
-        "tweets": [
-          "Исследование более 1000 студентов: те, кто использовал ChatGPT с тренингом критического мышления, набрали выше баллов, чем контрольная группа. Инструмент + навык лучше инструмента.",
-          "ChatGPT не заменяет думать—он усиливает. Студенты, научившиеся сомневаться в выводах AI, создавали оригинальнее работы, чем те, кто не обучались.",
-          "Ключевой результат: доступ к AI без критического анализа не улучшает успеваемость. Обучение студентов проверять выход нейросети—вот реальный рычаг."
+          "DeepMind впервые применила двойную слепоту при оценке AI: проверяющие не знают, какую модель тестируют, что исключает предубеждения оценщиков.",
+          "Скрытая идентичность модели заставляет судить результаты объективно. Предотвращает предвзятость в пользу знакомых AI-систем.",
+          "Честное сравнение моделей улучшает решения по финансированию и развертыванию. Бенчмарки теперь отвечают стандартам научных клинических исследований."
         ]
       }
     }
