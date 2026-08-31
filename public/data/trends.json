@@ -1,7 +1,40 @@
 {
-  "generatedAt": "2026-08-30T11:54:29.771Z",
+  "generatedAt": "2026-08-31T13:48:25.640Z",
   "window": "rolling-120d",
   "topics": [
+    {
+      "id": "fusion",
+      "label": "Fusion Energy",
+      "category": "energy",
+      "stage": "research",
+      "trajectory": "rising",
+      "momentum": 0.11,
+      "weeklyCounts": [
+        14,
+        11,
+        14,
+        14,
+        4,
+        7,
+        7,
+        9,
+        10
+      ],
+      "signals": [
+        {
+          "title": "🔬“We have foundation models for language, not for physics” — Anima Anandkumar, Bren Professor of Computing",
+          "url": "https://www.latent.space/p/anima",
+          "source": "latent-space",
+          "publishedAt": "2026-08-26T15:15:39.000Z"
+        },
+        {
+          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
+          "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
+          "source": "latent-space",
+          "publishedAt": "2026-08-22T07:36:00.000Z"
+        }
+      ]
+    },
     {
       "id": "post-quantum",
       "label": "Post-Quantum Crypto",
@@ -23,45 +56,12 @@
       "signals": []
     },
     {
-      "id": "fusion",
-      "label": "Fusion Energy",
-      "category": "energy",
-      "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.11,
-      "weeklyCounts": [
-        14,
-        11,
-        14,
-        14,
-        4,
-        7,
-        7,
-        9,
-        8
-      ],
-      "signals": [
-        {
-          "title": "🔬“We have foundation models for language, not for physics” — Anima Anandkumar, Bren Professor of Computing",
-          "url": "https://www.latent.space/p/anima",
-          "source": "latent-space",
-          "publishedAt": "2026-08-26T15:15:39.000Z"
-        },
-        {
-          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
-          "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
-          "source": "latent-space",
-          "publishedAt": "2026-08-22T07:36:00.000Z"
-        }
-      ]
-    },
-    {
       "id": "llm-agents",
       "label": "LLM Agents",
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.43,
+      "momentum": -0.29,
       "weeklyCounts": [
         411,
         420,
@@ -71,7 +71,7 @@
         466,
         456,
         437,
-        247
+        309
       ],
       "signals": [
         {
@@ -107,63 +107,12 @@
       ]
     },
     {
-      "id": "rag",
-      "label": "Retrieval-Augmented Generation",
-      "category": "ai",
-      "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.43,
-      "weeklyCounts": [
-        81,
-        60,
-        57,
-        76,
-        72,
-        77,
-        95,
-        107,
-        61
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Hot Chips: OpenAI’s Jalapeño, Cerebras CS-5, Groq 3 LPX, Apple M6",
-          "url": "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
-          "source": "latent-space",
-          "publishedAt": "2026-08-27T01:31:22.000Z"
-        },
-        {
-          "title": "[AINews] Andrew Ng gets into AI Engineering",
-          "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
-          "source": "latent-space",
-          "publishedAt": "2026-08-25T02:50:57.000Z"
-        },
-        {
-          "title": "[AINews] Stripe buys OpenRouter for $7B",
-          "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
-          "source": "latent-space",
-          "publishedAt": "2026-08-17T23:13:41.000Z"
-        },
-        {
-          "title": "[AINews] Cursor's $60B acquisition by SpaceXai closes",
-          "url": "https://www.latent.space/p/ainews-cursors-60b-acquisition-by",
-          "source": "latent-space",
-          "publishedAt": "2026-08-14T06:16:00.000Z"
-        },
-        {
-          "title": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
-          "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
-          "source": "latent-space",
-          "publishedAt": "2026-08-13T01:53:47.000Z"
-        }
-      ]
-    },
-    {
       "id": "protein-design",
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.43,
+      "momentum": -0.29,
       "weeklyCounts": [
         21,
         21,
@@ -173,7 +122,7 @@
         21,
         21,
         21,
-        12
+        15
       ],
       "signals": [
         {
@@ -202,7 +151,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.44,
+      "momentum": -0.3,
       "weeklyCounts": [
         375,
         358,
@@ -212,7 +161,7 @@
         396,
         394,
         398,
-        224
+        280
       ],
       "signals": [
         {
@@ -244,6 +193,57 @@
           "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
           "source": "latent-space",
           "publishedAt": "2026-08-25T02:50:57.000Z"
+        }
+      ]
+    },
+    {
+      "id": "rag",
+      "label": "Retrieval-Augmented Generation",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.3,
+      "weeklyCounts": [
+        81,
+        60,
+        57,
+        76,
+        72,
+        77,
+        95,
+        107,
+        75
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Hot Chips: OpenAI’s Jalapeño, Cerebras CS-5, Groq 3 LPX, Apple M6",
+          "url": "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
+          "source": "latent-space",
+          "publishedAt": "2026-08-27T01:31:22.000Z"
+        },
+        {
+          "title": "[AINews] Andrew Ng gets into AI Engineering",
+          "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
+          "source": "latent-space",
+          "publishedAt": "2026-08-25T02:50:57.000Z"
+        },
+        {
+          "title": "[AINews] Stripe buys OpenRouter for $7B",
+          "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
+          "source": "latent-space",
+          "publishedAt": "2026-08-17T23:13:41.000Z"
+        },
+        {
+          "title": "[AINews] Cursor's $60B acquisition by SpaceXai closes",
+          "url": "https://www.latent.space/p/ainews-cursors-60b-acquisition-by",
+          "source": "latent-space",
+          "publishedAt": "2026-08-14T06:16:00.000Z"
+        },
+        {
+          "title": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
+          "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
+          "source": "latent-space",
+          "publishedAt": "2026-08-13T01:53:47.000Z"
         }
       ]
     },
