@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T13:48:25.640Z",
+  "generatedAt": "2026-09-01T11:38:59.738Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,7 +8,7 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "rising",
-      "momentum": 0.11,
+      "momentum": 0.33,
       "weeklyCounts": [
         14,
         11,
@@ -18,7 +18,7 @@
         7,
         7,
         9,
-        10
+        12
       ],
       "signals": [
         {
@@ -56,63 +56,12 @@
       "signals": []
     },
     {
-      "id": "llm-agents",
-      "label": "LLM Agents",
-      "category": "ai",
-      "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.29,
-      "weeklyCounts": [
-        411,
-        420,
-        426,
-        449,
-        458,
-        466,
-        456,
-        437,
-        309
-      ],
-      "signals": [
-        {
-          "title": "[AINews] OpenAI shuts off Cursor",
-          "url": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
-          "source": "latent-space",
-          "publishedAt": "2026-08-29T05:11:52.000Z"
-        },
-        {
-          "title": "[AINews] OpenAI to reach AGI bar by end-2026",
-          "url": "https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by",
-          "source": "latent-space",
-          "publishedAt": "2026-08-28T07:12:10.000Z"
-        },
-        {
-          "title": "[AINews] NVIDIA buys HuggingFace for $13B, as OpenAI publishes their HF incident retro",
-          "url": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
-          "source": "latent-space",
-          "publishedAt": "2026-08-27T01:50:54.000Z"
-        },
-        {
-          "title": "Lovable CTO: The Future of SaaS Is Apps That Agents Can Use",
-          "url": "https://www.latent.space/p/lovable-future-of-saas",
-          "source": "latent-space",
-          "publishedAt": "2026-08-26T16:16:25.000Z"
-        },
-        {
-          "title": "[AINews] Andrew Ng gets into AI Engineering",
-          "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
-          "source": "latent-space",
-          "publishedAt": "2026-08-25T02:50:57.000Z"
-        }
-      ]
-    },
-    {
       "id": "protein-design",
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.29,
+      "momentum": -0.14,
       "weeklyCounts": [
         21,
         21,
@@ -122,7 +71,7 @@
         21,
         21,
         21,
-        15
+        18
       ],
       "signals": [
         {
@@ -146,12 +95,63 @@
       ]
     },
     {
+      "id": "llm-agents",
+      "label": "LLM Agents",
+      "category": "ai",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.15,
+      "weeklyCounts": [
+        411,
+        420,
+        426,
+        449,
+        458,
+        466,
+        456,
+        437,
+        372
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier",
+          "url": "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
+          "source": "latent-space",
+          "publishedAt": "2026-09-01T04:36:54.000Z"
+        },
+        {
+          "title": "Introducing wrapture",
+          "url": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
+          "source": "simonw",
+          "publishedAt": "2026-08-31T23:59:36.000Z"
+        },
+        {
+          "title": "[AINews] OpenAI shuts off Cursor",
+          "url": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
+          "source": "latent-space",
+          "publishedAt": "2026-08-29T05:11:52.000Z"
+        },
+        {
+          "title": "[AINews] OpenAI to reach AGI bar by end-2026",
+          "url": "https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by",
+          "source": "latent-space",
+          "publishedAt": "2026-08-28T07:12:10.000Z"
+        },
+        {
+          "title": "[AINews] NVIDIA buys HuggingFace for $13B, as OpenAI publishes their HF incident retro",
+          "url": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
+          "source": "latent-space",
+          "publishedAt": "2026-08-27T01:50:54.000Z"
+        }
+      ]
+    },
+    {
       "id": "open-models",
       "label": "Open Models",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.3,
+      "momentum": -0.16,
       "weeklyCounts": [
         375,
         358,
@@ -161,9 +161,15 @@
         396,
         394,
         398,
-        280
+        335
       ],
       "signals": [
+        {
+          "title": "[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier",
+          "url": "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
+          "source": "latent-space",
+          "publishedAt": "2026-09-01T04:36:54.000Z"
+        },
         {
           "title": "[AINews] OpenAI shuts off Cursor",
           "url": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
@@ -187,12 +193,6 @@
           "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
           "source": "simonw",
           "publishedAt": "2026-08-26T23:52:58.000Z"
-        },
-        {
-          "title": "[AINews] Andrew Ng gets into AI Engineering",
-          "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
-          "source": "latent-space",
-          "publishedAt": "2026-08-25T02:50:57.000Z"
         }
       ]
     },
@@ -202,7 +202,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.3,
+      "momentum": -0.18,
       "weeklyCounts": [
         81,
         60,
@@ -212,7 +212,7 @@
         77,
         95,
         107,
-        75
+        88
       ],
       "signals": [
         {
@@ -240,10 +240,10 @@
           "publishedAt": "2026-08-14T06:16:00.000Z"
         },
         {
-          "title": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
-          "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
-          "source": "latent-space",
-          "publishedAt": "2026-08-13T01:53:47.000Z"
+          "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
+          "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+          "source": "hf",
+          "publishedAt": "2026-08-12T16:14:36.000Z"
         }
       ]
     },
