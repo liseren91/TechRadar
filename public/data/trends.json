@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T11:38:59.738Z",
+  "generatedAt": "2026-09-02T11:18:11.888Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -8,7 +8,7 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "rising",
-      "momentum": 0.33,
+      "momentum": 0.56,
       "weeklyCounts": [
         14,
         11,
@@ -18,7 +18,7 @@
         7,
         7,
         9,
-        12
+        14
       ],
       "signals": [
         {
@@ -32,6 +32,96 @@
           "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
           "source": "latent-space",
           "publishedAt": "2026-08-22T07:36:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "llm-agents",
+      "label": "LLM Agents",
+      "category": "ai",
+      "stage": "prototype",
+      "trajectory": "stable",
+      "momentum": 0,
+      "weeklyCounts": [
+        411,
+        420,
+        426,
+        449,
+        458,
+        466,
+        456,
+        437,
+        437
+      ],
+      "signals": [
+        {
+          "title": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
+          "url": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
+          "source": "latent-space",
+          "publishedAt": "2026-09-02T07:46:08.000Z"
+        },
+        {
+          "title": "Introducing agentic video understanding with Gemini",
+          "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+          "source": "deepmind",
+          "publishedAt": "2026-09-01T17:08:51.000Z"
+        },
+        {
+          "title": "PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors",
+          "url": "https://www.latent.space/p/pr-not-welcome",
+          "source": "latent-space",
+          "publishedAt": "2026-09-01T16:17:15.000Z"
+        },
+        {
+          "title": "[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier",
+          "url": "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
+          "source": "latent-space",
+          "publishedAt": "2026-09-01T04:36:54.000Z"
+        },
+        {
+          "title": "Introducing wrapture",
+          "url": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
+          "source": "simonw",
+          "publishedAt": "2026-08-31T23:59:36.000Z"
+        }
+      ]
+    },
+    {
+      "id": "protein-design",
+      "label": "Protein Design",
+      "category": "biotech",
+      "stage": "research",
+      "trajectory": "stable",
+      "momentum": 0,
+      "weeklyCounts": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21
+      ],
+      "signals": [
+        {
+          "title": "Engineering more resilient crops for a warming climate",
+          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
+          "source": "deepmind",
+          "publishedAt": "2025-12-04T16:23:24.000Z"
+        },
+        {
+          "title": "AlphaFold: Five years of impact",
+          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T16:00:12.000Z"
+        },
+        {
+          "title": "Revealing a key protein behind heart disease",
+          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T15:52:51.000Z"
         }
       ]
     },
@@ -56,102 +146,12 @@
       "signals": []
     },
     {
-      "id": "protein-design",
-      "label": "Protein Design",
-      "category": "biotech",
-      "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.14,
-      "weeklyCounts": [
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        18
-      ],
-      "signals": [
-        {
-          "title": "Engineering more resilient crops for a warming climate",
-          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
-          "source": "deepmind",
-          "publishedAt": "2025-12-04T16:23:24.000Z"
-        },
-        {
-          "title": "AlphaFold: Five years of impact",
-          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T16:00:12.000Z"
-        },
-        {
-          "title": "Revealing a key protein behind heart disease",
-          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T15:52:51.000Z"
-        }
-      ]
-    },
-    {
-      "id": "llm-agents",
-      "label": "LLM Agents",
-      "category": "ai",
-      "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.15,
-      "weeklyCounts": [
-        411,
-        420,
-        426,
-        449,
-        458,
-        466,
-        456,
-        437,
-        372
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier",
-          "url": "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
-          "source": "latent-space",
-          "publishedAt": "2026-09-01T04:36:54.000Z"
-        },
-        {
-          "title": "Introducing wrapture",
-          "url": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
-          "source": "simonw",
-          "publishedAt": "2026-08-31T23:59:36.000Z"
-        },
-        {
-          "title": "[AINews] OpenAI shuts off Cursor",
-          "url": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
-          "source": "latent-space",
-          "publishedAt": "2026-08-29T05:11:52.000Z"
-        },
-        {
-          "title": "[AINews] OpenAI to reach AGI bar by end-2026",
-          "url": "https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by",
-          "source": "latent-space",
-          "publishedAt": "2026-08-28T07:12:10.000Z"
-        },
-        {
-          "title": "[AINews] NVIDIA buys HuggingFace for $13B, as OpenAI publishes their HF incident retro",
-          "url": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
-          "source": "latent-space",
-          "publishedAt": "2026-08-27T01:50:54.000Z"
-        }
-      ]
-    },
-    {
       "id": "open-models",
       "label": "Open Models",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.16,
+      "momentum": -0.03,
       "weeklyCounts": [
         375,
         358,
@@ -161,9 +161,15 @@
         396,
         394,
         398,
-        335
+        388
       ],
       "signals": [
+        {
+          "title": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
+          "url": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
+          "source": "latent-space",
+          "publishedAt": "2026-09-02T07:46:08.000Z"
+        },
         {
           "title": "[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier",
           "url": "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
@@ -187,12 +193,6 @@
           "url": "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
           "source": "latent-space",
           "publishedAt": "2026-08-27T01:31:22.000Z"
-        },
-        {
-          "title": "Qwen3.8-Flash-Next",
-          "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
-          "source": "simonw",
-          "publishedAt": "2026-08-26T23:52:58.000Z"
         }
       ]
     },
@@ -202,7 +202,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.18,
+      "momentum": -0.07,
       "weeklyCounts": [
         81,
         60,
@@ -212,7 +212,7 @@
         77,
         95,
         107,
-        88
+        100
       ],
       "signals": [
         {
@@ -234,16 +234,16 @@
           "publishedAt": "2026-08-17T23:13:41.000Z"
         },
         {
-          "title": "[AINews] Cursor's $60B acquisition by SpaceXai closes",
-          "url": "https://www.latent.space/p/ainews-cursors-60b-acquisition-by",
-          "source": "latent-space",
-          "publishedAt": "2026-08-14T06:16:00.000Z"
-        },
-        {
           "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
           "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
           "source": "hf",
           "publishedAt": "2026-08-12T16:14:36.000Z"
+        },
+        {
+          "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+          "source": "hf",
+          "publishedAt": "2026-05-14T18:55:01.000Z"
         }
       ]
     },
