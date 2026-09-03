@@ -1,6 +1,213 @@
 {
-  "generatedAt": "2026-09-02T11:18:11.808Z",
+  "generatedAt": "2026-09-03T11:13:44.134Z",
   "items": [
+    {
+      "id": "d-5z5yng",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
+      "publishedAt": "2026-09-03T04:38:33.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Meta's Muse Spark 1.3 reached frontier model performance while being 90% cheaper with opt-in training, signaling competitive pressure is reshaping how labs monetize and distribute AI.",
+        "tweets": [
+          "Meta Muse Spark 1.3 now ranks #3 globally, matching GPT and Anthropic models on benchmarks. The kicker: 90%+ cheaper if you let them use your data for training. Open weights coming too.",
+          "Stanford rewrote its AI course curriculum—85% new material on agent engineering, stateful intelligence, memory systems. Prompting pedagogy is officially dead in academia.",
+          "Looped transformers aren't magic: layer reuse cuts parameters but doubles compute. Real win is selective routing + vendor-neutral harness optimization beating frontier labs on narrow tasks."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Muse Spark 1.3 от Meta достигла уровня фронтирных моделей, но стоит на 90% дешевле при согласии на обучение данными—это сигнал переформатирования конкуренции в распределении ИИ.",
+        "tweets": [
+          "Muse Spark 1.3 занял третье место в мире, сравнялся с GPT и Anthropic по бенчмаркам. Главное: дешевизна в 90% при согласии использовать ваши данные для обучения. Откроют веса модели.",
+          "Стэнфорд переписал курс по ИИ—85% новой программы на engineering агентов, управление состоянием, системы памяти. Педагогика промптинга официально мертва в академии.",
+          "Looped трансформеры не чудо: переиспользование слоёв снижает параметры, но удваивает вычисления. Реальный выигрыш в селективной маршрутизации и оптимизации harness против фронтирных лабораторий."
+        ]
+      }
+    },
+    {
+      "id": "d-1h4f2nr",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/funes",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Open-source memory systems let you build AI coding agents that retain context across tasks without vendor lock-in or privacy concerns.",
+        "tweets": [
+          "Funes gives coding agents persistent memory you control—no more restarting from scratch on each task. Store reasoning, past solutions, and context locally.",
+          "Open-source memory beats vendor APIs: own your data, audit the system, integrate with any framework. Privacy-first approach for production agents.",
+          "Real impact: agents solve multi-step coding problems faster by learning from their own past work. Reduces redundant computation and improves solution quality."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: открытые системы памяти позволяют создавать AI-агентов для кодирования, которые сохраняют контекст между задачами без привязки к поставщику и рисков приватности.",
+        "tweets": [
+          "Funes дает агентам постоянную память, которая вас контролирует—агенты больше не начинают с нуля. Сохраняйте рассуждения, прошлые решения и контекст локально.",
+          "Открытые системы памяти лучше API: вы владеете данными, проверяете систему, интегрируете с любой платформой. Приватность на первом месте для production-агентов.",
+          "Практический результат: агенты решают многошаговые задачи быстрее, учась на собственном опыте. Снижает лишние вычисления и улучшает качество решений."
+        ]
+      }
+    },
+    {
+      "id": "d-1cgpkxs",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/train-to-paint-with-code",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: You can now train language models to control real-world systems like painting robots by combining code generation with reinforcement learning, not just chatting.",
+        "tweets": [
+          "TRL + OpenEnv lets you fine-tune coding models to perform physical tasks. Train a model to generate brush strokes as code, then execute them on actual hardware.",
+          "Watercolor painting case study shows models can learn aesthetic quality through reward signals. The model optimizes for paint consistency, stroke timing, and color mixing.",
+          "Bridges the gap between LLMs and robotics: code becomes the interface between language understanding and mechanical action. No more simulation-only training."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Языковые модели теперь можно обучать управлять физическими системами, комбинируя генерацию кода с обучением с подкреплением, а не просто разговаривать.",
+        "tweets": [
+          "TRL и OpenEnv позволяют дообучить модели генерирования кода для выполнения физических задач. Обучайте модель создавать мазки кисти как код, затем выполняйте их на реальных роботах.",
+          "Пример с акварелью показывает, что модели учатся оценивать эстетическое качество через сигналы вознаграждения. Модель оптимизирует консистенцию краски, время мазка и смешивание цветов.",
+          "Соединяет LLM и робототехнику: код становится интерфейсом между пониманием языка и механическим действием. Больше не нужны только симуляции для обучения."
+        ]
+      }
+    },
+    {
+      "id": "d-3rnni0",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/2/llm-gemini/",
+      "publishedAt": "2026-09-02T16:39:38.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Gemini 3.8 Flash trades speed and cost for capability—building production-quality HTML/JavaScript in seconds for pennies.",
+        "tweets": [
+          "Gemini 3.8 Flash hits the speed-cost sweet spot: built a cool HTML widget in 13 seconds for 1.8 cents. Fast enough for real iteration.",
+          "New thinking levels (low/medium/high) let you dial reasoning effort. llm-gemini 0.34 now supports the model with better async tracking.",
+          "Flash proved useful for coding tasks—Simon's markdown-to-SVG tool got HTML iframe support added by the model itself in one session."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Gemini 3.8 Flash балансирует скорость и цену против возможностей—создаёт рабочий HTML и JavaScript за секунды за копейки.",
+        "tweets": [
+          "Gemini 3.8 Flash в нишу между ценой и скоростью: сложный HTML-виджет за 13 секунд и 1.8 цента. Хватает для реальной разработки.",
+          "Новые уровни мышления (low/medium/high) позволяют балансировать глубину рассуждений. llm-gemini 0.34 поддерживает модель с улучшенным отслеживанием async.",
+          "Flash оказался полезен для кода—инструмент Simon перевел markdown в SVG, и модель сама добавила поддержку HTML-фреймов в одной сессии."
+        ]
+      }
+    },
+    {
+      "id": "d-1kesdw0",
+      "source": "deepmind",
+      "sourceUrl": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+      "publishedAt": "2026-09-02T16:24:24.000Z",
+      "category": "cybersecurity",
+      "en": {
+        "headline": "Why it matters: AI-driven vulnerability discovery can identify zero-days before attackers do, shifting cyber defense from reactive patching to proactive threat elimination.",
+        "tweets": [
+          "DeepMind's AI finds software vulnerabilities automatically, weeks or months before humans would catch them. This flips the asymmetry: defenders move first instead of chasing exploits.",
+          "Governments and enterprises waste resources firefighting breaches. Proactive discovery means fewer incidents, lower costs, and reduced exposure window for critical infrastructure.",
+          "The catch: scaling AI vulnerability finders across millions of codebases requires solving false positives and integration with real dev workflows. Still early, but the direction is clear."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ может находить уязвимости до того, как их обнаружат злоумышленники, переводя защиту от реактивного патчирования к упреждающему устранению угроз.",
+        "tweets": [
+          "ИИ DeepMind автоматически выявляет уязвимости в коде за недели или месяцы до того, как их найдёт человек. Это переворачивает ситуацию: защитники действуют первыми, а не гонятся за эксплойтами.",
+          "Госорганизации и корпорации теряют ресурсы на тушение взломов. Упреждающий поиск уязвимостей означает меньше инцидентов, ниже затраты и сокращение окна уязвимости критической инфраструктуры.",
+          "Задача: масштабировать поиск уязвимостей с помощью ИИ на миллионах кодовых баз, решив проблему ложных срабатываний и интеграции в реальные процессы разработки. Направление верное, но ещё рано."
+        ]
+      }
+    },
+    {
+      "id": "d-1a20hwv",
+      "source": "deepmind",
+      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+      "publishedAt": "2026-09-02T16:18:31.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Gemini 3.8 Flash cuts latency and costs while maintaining reasoning quality, making advanced AI accessible for real-time applications.",
+        "tweets": [
+          "Gemini 3.8 Flash trades minimal accuracy for 40% faster inference and lower API costs. Sweet spot for production systems that need speed over perfection.",
+          "Flash Cyber variant trained on security data beats specialized models on vulnerability detection and threat analysis. One model for multiple defense tasks.",
+          "Sub-second response times enable chat, search, and code completion at scale. The efficiency gains matter more than raw benchmark scores here."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Gemini 3.8 Flash снижает задержку и стоимость, сохраняя качество рассуждений. Это открывает доступ к мощному ИИ для приложений реального времени.",
+        "tweets": [
+          "3.8 Flash работает на 40% быстрее с меньшими затратами при минимальной потере точности. Идеален для боевых систем, где скорость критичнее идеальных оценок.",
+          "Flash Cyber обучена на данных безопасности и обходит узкоспециализированные модели в поиске уязвимостей. Один инструмент вместо целого набора.",
+          "Ответы за доли секунды для чатов, поиска и дополнения кода в масштабе. Прирост эффективности важнее показателей в таблицах сравнения."
+        ]
+      }
+    },
+    {
+      "id": "d-imzxya",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
+      "publishedAt": "2026-09-02T14:16:42.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Anthropic's latest Claude update adds strict guardrails against reproducing copyrighted song lyrics and art, likely in response to ongoing music publishing lawsuits.",
+        "tweets": [
+          "Claude 5.1 now firmly refuses to reproduce song lyrics, poems, or book passages—even fragmented or reworded versions. Public domain works before 1929 are still fair game.",
+          "New restrictions extend to visual works: Claude won't generate copyrighted characters, logos, or album covers via code (SVG, canvas, etc.), even with style swaps or disguises.",
+          "Anthropic tweaked response style: Claude now avoids filler words like 'genuinely' and 'honestly,' keeps disclaimers brief, and pushes back on abuse without self-abasement."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Anthropic добавила в Claude строгие ограничения на воспроизведение текстов песен и авторских работ в ответ на судебные иски музыкальных издателей.",
+        "tweets": [
+          "Claude 5.1 теперь отказывает в воспроизведении текстов песен, стихов и отрывков из книг—даже фрагментированных или переформулированных версий. Произведения до 1929 года разрешены.",
+          "Новые ограничения распространяются на визуальные работы: Claude не генерирует защищённые персонажи, логотипы и обложки альбомов через код, даже если поменять стиль или позу.",
+          "Anthropic подправила стиль ответов: Claude больше не использует слова-наполнители вроде 'честно говоря', сокращает дисклеймеры и не становится послушнее при грубом обращении."
+        ]
+      }
+    },
+    {
+      "id": "d-m4z7kp",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/ibm-research/real-time-intelligence",
+      "publishedAt": "2026-09-02T13:49:14.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Time series models on streaming data let you detect anomalies and predict system failures before they happen, cutting downtime and ops costs.",
+        "tweets": [
+          "IBM's time series models integrate with Confluent's streaming platform to process continuous data pipelines in real time, enabling instant anomaly detection instead of batch analysis.",
+          "Stream processing cuts latency from hours to milliseconds. Catch database slowdowns, infrastructure issues, and resource exhaustion while they're happening, not after customers notice.",
+          "Event-driven architecture means your monitoring system reacts automatically: flag anomalies, trigger alerts, scale resources—all within milliseconds of the data hitting the pipeline."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Модели временных рядов на потоковых данных позволяют обнаруживать аномалии и предсказывать отказы систем до их возникновения, снижая простои и затраты на поддержку.",
+        "tweets": [
+          "Модели IBM интегрируются с платформой потоковой обработки Confluent для анализа непрерывных данных в реальном времени вместо часовой пакетной обработки с задержкой обнаружения проблем.",
+          "Обработка потоков сокращает задержку с часов до миллисекунд. Выявляйте медленные базы данных, сбои инфраструктуры и нехватку ресурсов в момент их возникновения, не после жалоб пользователей.",
+          "Событийная архитектура позволяет системе мониторинга автоматически реагировать: флагировать аномалии, отправлять оповещения и масштабировать ресурсы в миллисекунды после поступления данных."
+        ]
+      }
+    },
+    {
+      "id": "d-pb0htt",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/atv-big-air-tour",
+      "publishedAt": "2026-09-02T12:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI automation reduced event marketing workflow from 3 days to 3 hours, freeing teams to focus on core operations.",
+        "tweets": [
+          "ATV Big Air Tour cut marketing prep time by 98% using ChatGPT Work—3 days of tasks completed in 3 hours.",
+          "Built entire merchandise inventory website from product photos in 15 minutes instead of days of manual work.",
+          "Freed up team capacity from repetitive content creation and merchandising tasks to handle strategy and event logistics."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ сократил время на маркетинговые работы события с 3 дней до 3 часов, освободив команду для стратегии.",
+        "tweets": [
+          "ATV Big Air Tour сократил подготовку маркетинга на 98% с помощью ChatGPT—трёхдневные задачи выполнены за 3 часа.",
+          "Создали весь сайт каталога товаров из фото продукции за 15 минут вместо дней ручной работы.",
+          "Команда перенаправила время с рутинного создания контента на стратегию и логистику события."
+        ]
+      }
+    },
     {
       "id": "d-12w53ag",
       "source": "latent-space",
@@ -8,226 +215,19 @@
       "publishedAt": "2026-09-02T07:46:08.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Claude 5.1 cuts cache costs 75% but uses 70% more output tokens, keeping per-task costs 20% higher while claiming state-of-the-art benchmarks—practical gains for long-context agents offset by total cost reality.",
+        "headline": "Why it matters: Anthropic's Claude 5.1 cuts cache costs 75% but uses 70% more output tokens, raising real per-task costs 20% while claiming new SOTA on coding and autonomous work.",
         "tweets": [
-          "Anthropic's Claude Fable/Mythos 5.1 hit new benchmarks (66 on Intelligence Index) and slashed cache read pricing from $1.00 to $0.25/MTok. Long-context agent work just got cheaper.",
-          "The catch: 5.1 generates 1.7x more output tokens than prior versions. Cache savings (~$1.40/task) don't cover the output inflation. Net result: 20% higher per-task cost despite lower per-token rates.",
-          "Real positioning shift: Anthropic frames this as a usable autonomous worker, not just a benchmark winner. Enterprise safeguards, zero-data retention, and honest failure reporting matter more than raw speed here."
+          "Claude Fable/Mythos 5.1 benchmarks highest yet (66 on AA Intelligence Index), but Artificial Analysis finds ~1.7x more output tokens needed—cache savings don't offset the per-task cost bump to $3.76.",
+          "75% cache price cut targets agentic workflows where prompts repeat in cache memory. The win: long-running agents. The catch: higher output token burn means the savings disappear on real tasks.",
+          "Community split: strong praise for coding/planning ability and autonomous behavior, but questions linger on safety false positives, rate limits, and whether Fable/Mythos 5.1 are truly separate models or same weights with different routing."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Claude 5.1 снизил стоимость кеша на 75%, но использует на 70% больше выходных токенов, итого повышая цену за задачу на 20% при новых рекордах в бенчмарках.",
+        "headline": "Почему важно: Claude 5.1 от Anthropic снизил стоимость кэша на 75%, но теперь использует на 70% больше выходных токенов, что повышает реальную цену за задачу на 20% при заявленном новом SOTA в кодировании.",
         "tweets": [
-          "Claude Fable/Mythos 5.1 установил новые бенчмарки (66 в Intelligence Index) и снизил цену чтения кеша с $1.00 до $0.25 за миллион токенов. Длинные контексты для агентов теперь дешевле.",
-          "Но: модель генерирует в 1.7 раза больше выходных токенов. Экономия на кеше (~$1.40 за задачу) не компенсирует рост выходных. Итог: задача стоит на 20% дороже, несмотря на снижение цены токена.",
-          "Anthropic позиционирует это как рабочий автономный агент, а не просто лучший бенчмарк. Enterprise-функции, нулевая история данных и честная диагностика ошибок важнее, чем сырая скорость."
-        ]
-      }
-    },
-    {
-      "id": "d-1esp0c1",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
-      "publishedAt": "2026-09-02T05:50:57.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Paint.NET's maintainer just shipped 180k lines of AI-generated Direct2D code to run on Linux, unreviewed, revealing both the power and fragility of LLM-assisted engineering at scale.",
-        "tweets": [
-          "Paint.NET reverse-engineered Direct2D from scratch using Claude to enable WINE support. 180k lines of new code, mostly 'vibe coded' without full review. Shows what LLMs can do when pointed at hard problems.",
-          "Rick Brewster had to manually patch Claude's work: missing COM reference counting, bad architecture decisions. The AI did impressive reverse engineering but needed constant babysitting. Trust but verify.",
-          "This is production AI code in a 20-year-old project. Not theoretical. Brewster couldn't humanly review 180k lines, so he shipped it with calculated risk. A case study in pragmatic AI integration."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Разработчик Paint.NET развернул 180 тысяч строк кода, сгенерированного нейросетью, без полной проверки, чтобы запустить приложение на Linux — показав реальную цену масштабирования AI-разработки.",
-        "tweets": [
-          "Paint.NET переписал Direct2D с нуля с помощью Claude, чтобы работать через WINE на Linux. 180 тыс. строк кода, в основном 'закодировано по наитию' без тщательной проверки. Демонстрирует возможности LLM на сложных задачах.",
-          "Brewster вручную исправлял недочёты Claude: забывал о подсчёте ссылок в COM, ошибки в архитектуре. AI провёл впечатляющий reverse engineering, но требовал постоянного контроля и правок.",
-          "Это production-код, сгенерированный AI, в проекте возрастом 20 лет. Не теория. Brewster не мог вручную проверить 180 тыс. строк, поэтому развернул с рассчитанным риском. Кейс прагматичной интеграции AI."
-        ]
-      }
-    },
-    {
-      "id": "d-j4dkal",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
-      "publishedAt": "2026-09-01T23:57:28.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Claude Fable 5.1's extended reasoning modes (xhigh, max) produce dramatically better outputs than low/medium, but at 7-14 minutes and $1.83-$3.30 per request—forcing engineers to choose between speed, cost, and quality.",
-        "tweets": [
-          "Fable 5.1 skips reasoning entirely at low/medium effort levels for complex tasks. Real gains only appear at xhigh (36k tokens, 8min) and max (65k tokens, 14min)—the benchmark hype doesn't match practical reasoning behavior.",
-          "The pelican test reveals a hard tradeoff: max effort produced a genuinely better SVG with deliberate design choices (helmet, basket, scarf debate), but costs $3.30 vs 10 cents for low. No free lunch on reasoning.",
-          "Terminal-Bench-Science jumped to 52.6% (up from 24.7%), but single-benchmark bragging masks the real story: reasoning modes are economically expensive. Engineers need cost/latency frameworks, not just accuracy numbers."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Claude Fable 5.1 с расширенным рассуждением (xhigh, max) производит намного лучшие результаты, но требует 7-14 минут и стоит $1.83-$3.30 за запрос—инженеры вынуждены выбирать между скоростью, ценой и качеством.",
-        "tweets": [
-          "На уровнях низкой/средней интенсивности Fable 5.1 вообще пропускает рассуждение. Реальные улучшения появляются только на xhigh (36k токенов, 8мин) и max (65k токенов, 14мин)—хайп не соответствует практическому поведению.",
-          "Тест с пеликаном показал жесткий компромисс: максимальный режим выдал лучший SVG с обдуманными деталями (шляпа, корзина, дебаты о шарфе), но стоит $3.30 против 10 центов за низкий уровень.",
-          "Terminal-Bench-Science прыгнул на 52.6% (с 24.7%), но хвастовство одним бенчмарком скрывает суть: режимы рассуждения дорогие. Инженерам нужны фреймворки стоимость/задержка, не просто цифры точности."
-        ]
-      }
-    },
-    {
-      "id": "d-1eybhat",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/allenai/benchmirt",
-      "publishedAt": "2026-09-01T21:39:07.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Most LLM benchmarks measure memorization and pattern matching, not genuine reasoning—making model comparisons misleading.",
-        "tweets": [
-          "BenchMIRT found that LLMs ace benchmarks by memorizing training data patterns, not solving novel problems. Your benchmark score doesn't guarantee real capability.",
-          "Popular benchmarks like MMLU reward models that pattern-match to test questions. Slight rewording breaks performance. That's not robust intelligence.",
-          "Better evaluation needs: out-of-distribution tasks, novel reasoning chains, and metrics that catch when models parrot vs. actually think through problems."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Большинство бенчмарков для LLM измеряют запоминание и поиск паттернов, а не реальное рассуждение—это делает сравнение моделей ненадёжным.",
-        "tweets": [
-          "BenchMIRT показала, что LLM преуспевают в тестах благодаря запоминанию паттернов из данных обучения, а не решению новых задач. Оценка бенчмарка не гарантирует реальную компетентность.",
-          "Популярные бенчмарки вроде MMLU награждают модели за совпадение с образцами вопросов. Переформулировка задачи—и производительность падает. Это не устойчивый интеллект.",
-          "Нужна лучшая оценка: задачи вне распределения обучения, новые цепочки рассуждений и метрики, отличающие воспроизведение от действительного мышления."
-        ]
-      }
-    },
-    {
-      "id": "d-ibq2yc",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
-      "publishedAt": "2026-09-01T19:03:01.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: ChatGPT's desktop app bundles heavy dependencies like LibreOffice and full language runtimes, revealing how it handles document processing locally.",
-        "tweets": [
-          "ChatGPT desktop app ships with 1.7GB of bundled tools: full Python, Node.js, Poppler, git, and LibreOffice. This isn't just an API wrapper—it's a complete runtime.",
-          "The bundled LibreOffice means ChatGPT can process office documents directly on your machine rather than sending them to remote servers. Local-first architecture.",
-          "Discovery via cache folder shows OpenAI's engineering choice: shipping dependencies beats downloading them on first run. Trade disk space for faster cold starts."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Настольное приложение ChatGPT включает полноценные зависимости вроде LibreOffice и языковых рантаймов, что раскрывает механику локальной обработки документов.",
-        "tweets": [
-          "Приложение ChatGPT для ПК весит 1,7 ГБ: полный Python, Node.js, Poppler, git и LibreOffice в комплекте. Это не просто обёртка API, а полная среда исполнения.",
-          "Встроенный LibreOffice позволяет ChatGPT обрабатывать офисные документы локально на вашей машине, а не отправлять их на серверы OpenAI.",
-          "Находка в папке кеша показывает выбор инженеров: поставлять зависимости выгоднее, чем качать их при первом запуске. Экономия времени на холодный старт."
-        ]
-      }
-    },
-    {
-      "id": "d-leboyh",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/1/geojson/",
-      "publishedAt": "2026-09-01T18:05:45.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: AI can now extract government geospatial data and render interactive maps instantly, eliminating manual boundary digitization work.",
-        "tweets": [
-          "ChatGPT can extract exact GeoJSON boundaries from government sources by natural language request—no manual data hunting or format conversion needed.",
-          "New GeoJSON viewer tool built by Claude lets you upload boundaries, visualize multiple layers simultaneously, and export as PNG in seconds.",
-          "Geospatial work that took hours (finding sources, converting formats, building maps) now takes minutes with LLM assistance and web tools."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: ИИ теперь может извлекать геопространственные данные из госсурцев и рендерить интерактивные карты мгновенно.",
-        "tweets": [
-          "ChatGPT извлекает точные границы GeoJSON из государственных источников по текстовому запросу—без ручного поиска данных и конвертации форматов.",
-          "Новый инструмент просмотра GeoJSON позволяет загружать границы, визуализировать несколько слоёв одновременно и экспортировать в PNG за секунды.",
-          "Геопространственная работа, занимавшая часы, теперь занимает минуты благодаря помощи LLM и веб-инструментов."
-        ]
-      }
-    },
-    {
-      "id": "d-1ht9pnu",
-      "source": "deepmind",
-      "sourceUrl": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
-      "publishedAt": "2026-09-01T17:08:51.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Gemini can now navigate and interact with video content autonomously, moving beyond passive description to active analysis of dynamic scenes.",
-        "tweets": [
-          "Gemini's new agentic video mode watches footage and takes action—clicking buttons, tracking objects across frames, reasoning about temporal sequences that static models miss.",
-          "Instead of describing what's in a video, the system understands causality and intent. It can follow multi-step processes, spot anomalies, and answer questions about why things happen, not just what.",
-          "This bridges the gap between vision and reasoning. Video agents could audit processes, assist with debugging visual workflows, or extract insights from surveillance footage at scale."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Gemini теперь может самостоятельно анализировать видео и взаимодействовать с ним, переходя от пассивного описания к активному пониманию динамических сцен.",
-        "tweets": [
-          "Gemini смотрит видео и действует — кликает по элементам, отслеживает объекты во времени, рассуждает о последовательности событий, которые статические модели упускают.",
-          "Система понимает не просто что происходит, но почему и как это связано. Может следить за многоступенчатыми процессами, находить аномалии и объяснять причинно-следственные связи.",
-          "Закрывает пропасть между зрением и логикой. Видео-агенты смогут проверять производственные процессы, помогать в отладке визуальных рабочих процессов и анализировать данные в масштабе."
-        ]
-      }
-    },
-    {
-      "id": "d-rgyd6w",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/1/tarn-adams/",
-      "publishedAt": "2026-09-01T17:01:11.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Game developers are pushing back against 'AI' as a label, preferring behavior systems that don't require intelligence claims.",
-        "tweets": [
-          "Tarn Adams won't call Dwarf Fortress dwarves 'AI'—they're behavior systems. Sometimes they misbehave. The distinction matters for honest game design.",
-          "Legal pressure forced a language shift: no more 'dwarf AI,' only 'dwarf behavior.' Shows how 'AI' became a loaded term in game dev.",
-          "Dwarf Fortress proves complex, unpredictable systems don't need the 'AI' label. Call it what it is: behavior that can break in interesting ways."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Разработчики игр отказываются от слова 'ИИ', предпочитая честнее описывать системы поведения персонажей.",
-        "tweets": [
-          "Тарн Адамс не называет гномов в Dwarf Fortress 'ИИ'—это системы поведения, которые иногда дают сбой. Различие критично для честной разработки.",
-          "Юридическое давление вынудило переформулировку: вместо 'ИИ гномов' только 'поведение гномов'. Показывает, как 'ИИ' стал нагруженным термином.",
-          "Dwarf Fortress демонстрирует: сложные непредсказуемые системы не требуют ярлыка 'ИИ'. Зови это тем, что оно есть—поведением, которое может ломаться интересно."
-        ]
-      }
-    },
-    {
-      "id": "d-la4y1g",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/ai-native-company-workflows",
-      "publishedAt": "2026-09-01T17:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI agents handling routine workflows like onboarding and account management free teams to focus on strategy instead of execution.",
-        "tweets": [
-          "Basis uses AI agents to automate customer onboarding at scale. Result: faster time-to-value, fewer manual handoffs, teams actually ship faster.",
-          "Clay's AI handles account management tasks that normally require constant human attention. One agent replaces repetitive work across dozens of accounts.",
-          "Exa Labs built developer integrations with AI agents doing the legwork. Instead of engineers copy-pasting docs, agents interpret and implement automatically."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: AI-агенты берут на себя рутинные операции — онбординг, управление аккаунтами — и позволяют командам сосредоточиться на стратегии.",
-        "tweets": [
-          "Basis автоматизирует онбординг клиентов с помощью AI-агентов. Результат: быстрее до первого результата, меньше ручных операций, продукт быстрее растёт.",
-          "Clay доверила AI агентам управление аккаунтами вместо людей. Один агент справляется с рутиной, которая раньше требовала постоянного внимания.",
-          "Exa Labs построила интеграции для разработчиков, где AI-агенты работают вместо людей. Инженеры не переписывают документацию — агент сам всё понимает и внедряет."
-        ]
-      }
-    },
-    {
-      "id": "d-17td5ca",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/pr-not-welcome",
-      "publishedAt": "2026-09-01T16:17:15.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Major open source projects are replacing community pull requests with AI agents, fundamentally changing how maintainers triage and merge code.",
-        "tweets": [
-          "Vercel's AI SDK deployed agent software factory that now authors 25-35% of merged PRs and closes 70-80% of issues in 4 weeks. Maintainers trust their own optimized agents more than community submissions.",
-          "Flue and tldraw auto-close external PRs, converting them to issues/discussions instead. Reasoning: AI-generated spam PRs waste review time; maintainers' own agents handle implementation faster.",
-          "Astro went from drowning in backlogs to solving issues weekly via bot triage, reproduction, and user verification. Five years of pile-up solved in months by letting agents do grunt work first."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Крупные проекты с открытым кодом заменяют pull-запросы сообщества на AI-агентов, что меняет способ управления кодом мейнтейнерами.",
-        "tweets": [
-          "AI SDK от Vercel запустил фабрику агентов, которая за 4 недели создаёт 25-35% слитых PR и закрывает 70-80% задач. Мейнтейнеры больше доверяют собственным оптимизированным агентам, чем внешним.",
-          "Flue и tldraw автоматически закрывают внешние PR, превращая их в issues. Причина: спам-PR от AI тратят время на review; собственные агенты реализуют быстрее.",
-          "Astro за месяцы справился с многолетним backlog благодаря автоматической сортировке, воспроизведению ошибок и проверке ботом. Теперь решают задачи еженедельно вместо постоянной борьбы."
+          "Claude Fable/Mythos 5.1 показывает лучший результат (66 баллов по AA Intelligence Index), но на практике требует в 1.7 раза больше выходных токенов — экономия на кэше не перекрывает рост стоимости до $3.76 за задачу.",
+          "Скидка 75% на кэш нацелена на агентские рабочие процессы с повторяющимися промптами в памяти. Выигрыш: долгосрочные агенты. Подвох: больше токенов на выходе означает, что экономия исчезает в реальных сценариях.",
+          "Сообщество поделилось: восхищение способностями в кодировании и автономной работе соседствует с сомнениями в ложных срабатываниях безопасности и вопросом, разные ли это модели или один вес с разной маршрутизацией."
         ]
       }
     }

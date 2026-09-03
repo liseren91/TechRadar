@@ -1,47 +1,56 @@
 {
-  "generatedAt": "2026-09-02T11:18:11.888Z",
+  "generatedAt": "2026-09-03T11:13:44.216Z",
   "window": "rolling-120d",
   "topics": [
     {
-      "id": "fusion",
-      "label": "Fusion Energy",
-      "category": "energy",
-      "stage": "research",
-      "trajectory": "rising",
-      "momentum": 0.56,
+      "id": "humanoids",
+      "label": "Humanoid Robots",
+      "category": "robotics",
+      "stage": "prototype",
+      "trajectory": "stable",
+      "momentum": 0,
       "weeklyCounts": [
-        14,
-        11,
-        14,
-        14,
-        4,
+        1,
         7,
         7,
-        9,
-        14
+        6,
+        6,
+        7,
+        7,
+        1,
+        0,
+        0
       ],
-      "signals": [
-        {
-          "title": "🔬“We have foundation models for language, not for physics” — Anima Anandkumar, Bren Professor of Computing",
-          "url": "https://www.latent.space/p/anima",
-          "source": "latent-space",
-          "publishedAt": "2026-08-26T15:15:39.000Z"
-        },
-        {
-          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
-          "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
-          "source": "latent-space",
-          "publishedAt": "2026-08-22T07:36:00.000Z"
-        }
-      ]
+      "signals": []
+    },
+    {
+      "id": "post-quantum",
+      "label": "Post-Quantum Crypto",
+      "category": "cybersecurity",
+      "stage": "research",
+      "trajectory": "stable",
+      "momentum": 0,
+      "weeklyCounts": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signals": []
     },
     {
       "id": "llm-agents",
       "label": "LLM Agents",
       "category": "ai",
       "stage": "prototype",
-      "trajectory": "stable",
-      "momentum": 0,
+      "trajectory": "cooling",
+      "momentum": -0.85,
       "weeklyCounts": [
         411,
         420,
@@ -51,9 +60,16 @@
         466,
         456,
         437,
-        437
+        437,
+        65
       ],
       "signals": [
+        {
+          "title": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
+          "url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
+          "source": "latent-space",
+          "publishedAt": "2026-09-03T04:38:33.000Z"
+        },
         {
           "title": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
           "url": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
@@ -77,73 +93,8 @@
           "url": "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
           "source": "latent-space",
           "publishedAt": "2026-09-01T04:36:54.000Z"
-        },
-        {
-          "title": "Introducing wrapture",
-          "url": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
-          "source": "simonw",
-          "publishedAt": "2026-08-31T23:59:36.000Z"
         }
       ]
-    },
-    {
-      "id": "protein-design",
-      "label": "Protein Design",
-      "category": "biotech",
-      "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
-      "weeklyCounts": [
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21
-      ],
-      "signals": [
-        {
-          "title": "Engineering more resilient crops for a warming climate",
-          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
-          "source": "deepmind",
-          "publishedAt": "2025-12-04T16:23:24.000Z"
-        },
-        {
-          "title": "AlphaFold: Five years of impact",
-          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T16:00:12.000Z"
-        },
-        {
-          "title": "Revealing a key protein behind heart disease",
-          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T15:52:51.000Z"
-        }
-      ]
-    },
-    {
-      "id": "post-quantum",
-      "label": "Post-Quantum Crypto",
-      "category": "cybersecurity",
-      "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
-      "weeklyCounts": [
-        0,
-        0,
-        0,
-        0,
-        6,
-        0,
-        0,
-        0,
-        0
-      ],
-      "signals": []
     },
     {
       "id": "open-models",
@@ -151,7 +102,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.03,
+      "momentum": -0.86,
       "weeklyCounts": [
         375,
         358,
@@ -161,9 +112,16 @@
         396,
         394,
         398,
-        388
+        388,
+        54
       ],
       "signals": [
+        {
+          "title": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
+          "url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
+          "source": "latent-space",
+          "publishedAt": "2026-09-03T04:38:33.000Z"
+        },
         {
           "title": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
           "url": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
@@ -187,12 +145,80 @@
           "url": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
           "source": "latent-space",
           "publishedAt": "2026-08-27T01:50:54.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fusion",
+      "label": "Fusion Energy",
+      "category": "energy",
+      "stage": "research",
+      "trajectory": "cooling",
+      "momentum": -0.86,
+      "weeklyCounts": [
+        14,
+        11,
+        14,
+        14,
+        4,
+        7,
+        7,
+        9,
+        14,
+        2
+      ],
+      "signals": [
+        {
+          "title": "🔬“We have foundation models for language, not for physics” — Anima Anandkumar, Bren Professor of Computing",
+          "url": "https://www.latent.space/p/anima",
+          "source": "latent-space",
+          "publishedAt": "2026-08-26T15:15:39.000Z"
         },
         {
-          "title": "[AINews] Hot Chips: OpenAI’s Jalapeño, Cerebras CS-5, Groq 3 LPX, Apple M6",
-          "url": "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
+          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
+          "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
           "source": "latent-space",
-          "publishedAt": "2026-08-27T01:31:22.000Z"
+          "publishedAt": "2026-08-22T07:36:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "protein-design",
+      "label": "Protein Design",
+      "category": "biotech",
+      "stage": "research",
+      "trajectory": "cooling",
+      "momentum": -0.86,
+      "weeklyCounts": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        3
+      ],
+      "signals": [
+        {
+          "title": "Engineering more resilient crops for a warming climate",
+          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
+          "source": "deepmind",
+          "publishedAt": "2025-12-04T16:23:24.000Z"
+        },
+        {
+          "title": "AlphaFold: Five years of impact",
+          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T16:00:12.000Z"
+        },
+        {
+          "title": "Revealing a key protein behind heart disease",
+          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T15:52:51.000Z"
         }
       ]
     },
@@ -202,7 +228,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.07,
+      "momentum": -0.88,
       "weeklyCounts": [
         81,
         60,
@@ -212,7 +238,8 @@
         77,
         95,
         107,
-        100
+        100,
+        12
       ],
       "signals": [
         {
@@ -246,26 +273,6 @@
           "publishedAt": "2026-05-14T18:55:01.000Z"
         }
       ]
-    },
-    {
-      "id": "humanoids",
-      "label": "Humanoid Robots",
-      "category": "robotics",
-      "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -1,
-      "weeklyCounts": [
-        1,
-        7,
-        7,
-        6,
-        6,
-        7,
-        7,
-        1,
-        0
-      ],
-      "signals": []
     }
   ]
 }
