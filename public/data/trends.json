@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T11:13:44.216Z",
+  "generatedAt": "2026-09-04T11:17:23.690Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -50,7 +50,7 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.85,
+      "momentum": -0.7,
       "weeklyCounts": [
         411,
         420,
@@ -61,9 +61,21 @@
         456,
         437,
         437,
-        65
+        130
       ],
       "signals": [
+        {
+          "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
+          "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
+          "source": "latent-space",
+          "publishedAt": "2026-09-04T05:18:11.000Z"
+        },
+        {
+          "title": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
+          "url": "https://www.latent.space/p/astra",
+          "source": "latent-space",
+          "publishedAt": "2026-09-03T21:09:41.000Z"
+        },
         {
           "title": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
           "url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
@@ -81,70 +93,6 @@
           "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
           "source": "deepmind",
           "publishedAt": "2026-09-01T17:08:51.000Z"
-        },
-        {
-          "title": "PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors",
-          "url": "https://www.latent.space/p/pr-not-welcome",
-          "source": "latent-space",
-          "publishedAt": "2026-09-01T16:17:15.000Z"
-        },
-        {
-          "title": "[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier",
-          "url": "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
-          "source": "latent-space",
-          "publishedAt": "2026-09-01T04:36:54.000Z"
-        }
-      ]
-    },
-    {
-      "id": "open-models",
-      "label": "Open Models",
-      "category": "ai",
-      "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.86,
-      "weeklyCounts": [
-        375,
-        358,
-        348,
-        414,
-        398,
-        396,
-        394,
-        398,
-        388,
-        54
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
-          "url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
-          "source": "latent-space",
-          "publishedAt": "2026-09-03T04:38:33.000Z"
-        },
-        {
-          "title": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
-          "url": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
-          "source": "latent-space",
-          "publishedAt": "2026-09-02T07:46:08.000Z"
-        },
-        {
-          "title": "[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier",
-          "url": "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
-          "source": "latent-space",
-          "publishedAt": "2026-09-01T04:36:54.000Z"
-        },
-        {
-          "title": "[AINews] OpenAI shuts off Cursor",
-          "url": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
-          "source": "latent-space",
-          "publishedAt": "2026-08-29T05:11:52.000Z"
-        },
-        {
-          "title": "[AINews] NVIDIA buys HuggingFace for $13B, as OpenAI publishes their HF incident retro",
-          "url": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
-          "source": "latent-space",
-          "publishedAt": "2026-08-27T01:50:54.000Z"
         }
       ]
     },
@@ -154,7 +102,7 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         14,
         11,
@@ -165,7 +113,7 @@
         7,
         9,
         14,
-        2
+        4
       ],
       "signals": [
         {
@@ -188,7 +136,7 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
         21,
         21,
@@ -199,7 +147,7 @@
         21,
         21,
         21,
-        3
+        6
       ],
       "signals": [
         {
@@ -223,12 +171,64 @@
       ]
     },
     {
+      "id": "open-models",
+      "label": "Open Models",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.72,
+      "weeklyCounts": [
+        375,
+        358,
+        348,
+        414,
+        398,
+        396,
+        394,
+        398,
+        388,
+        107
+      ],
+      "signals": [
+        {
+          "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
+          "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
+          "source": "latent-space",
+          "publishedAt": "2026-09-04T05:18:11.000Z"
+        },
+        {
+          "title": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
+          "url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
+          "source": "latent-space",
+          "publishedAt": "2026-09-03T04:38:33.000Z"
+        },
+        {
+          "title": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
+          "url": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
+          "source": "latent-space",
+          "publishedAt": "2026-09-02T07:46:08.000Z"
+        },
+        {
+          "title": "[AINews] Fal’s H3 Max Live breaks the infinite videogen barrier",
+          "url": "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
+          "source": "latent-space",
+          "publishedAt": "2026-09-01T04:36:54.000Z"
+        },
+        {
+          "title": "[AINews] OpenAI shuts off Cursor",
+          "url": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
+          "source": "latent-space",
+          "publishedAt": "2026-08-29T05:11:52.000Z"
+        }
+      ]
+    },
+    {
       "id": "rag",
       "label": "Retrieval-Augmented Generation",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.88,
+      "momentum": -0.76,
       "weeklyCounts": [
         81,
         60,
@@ -239,9 +239,15 @@
         95,
         107,
         100,
-        12
+        24
       ],
       "signals": [
+        {
+          "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
+          "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
+          "source": "latent-space",
+          "publishedAt": "2026-09-04T05:18:11.000Z"
+        },
         {
           "title": "[AINews] Hot Chips: OpenAI’s Jalapeño, Cerebras CS-5, Groq 3 LPX, Apple M6",
           "url": "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
@@ -253,12 +259,6 @@
           "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
           "source": "latent-space",
           "publishedAt": "2026-08-25T02:50:57.000Z"
-        },
-        {
-          "title": "[AINews] Stripe buys OpenRouter for $7B",
-          "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
-          "source": "latent-space",
-          "publishedAt": "2026-08-17T23:13:41.000Z"
         },
         {
           "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
