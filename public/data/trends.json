@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T10:35:21.200Z",
+  "generatedAt": "2026-09-06T10:55:44.123Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -50,7 +50,7 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.55,
+      "momentum": -0.41,
       "weeklyCounts": [
         411,
         420,
@@ -61,9 +61,15 @@
         456,
         437,
         437,
-        195
+        259
       ],
       "signals": [
+        {
+          "title": "OpenClaw Power, MacBook Simplicity: Five Days With Grok Bot",
+          "url": "https://www.latent.space/p/grok-bot",
+          "source": "latent-space",
+          "publishedAt": "2026-09-05T15:01:02.000Z"
+        },
         {
           "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
           "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
@@ -87,12 +93,6 @@
           "url": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
           "source": "latent-space",
           "publishedAt": "2026-09-02T07:46:08.000Z"
-        },
-        {
-          "title": "Introducing agentic video understanding with Gemini",
-          "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
-          "source": "deepmind",
-          "publishedAt": "2026-09-01T17:08:51.000Z"
         }
       ]
     },
@@ -102,7 +102,7 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.57,
+      "momentum": -0.43,
       "weeklyCounts": [
         14,
         11,
@@ -113,7 +113,7 @@
         7,
         9,
         14,
-        6
+        8
       ],
       "signals": [
         {
@@ -136,7 +136,7 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.57,
+      "momentum": -0.43,
       "weeklyCounts": [
         21,
         21,
@@ -147,7 +147,7 @@
         21,
         21,
         21,
-        9
+        12
       ],
       "signals": [
         {
@@ -176,7 +176,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.59,
+      "momentum": -0.45,
       "weeklyCounts": [
         375,
         358,
@@ -187,7 +187,7 @@
         394,
         398,
         388,
-        160
+        212
       ],
       "signals": [
         {
@@ -228,7 +228,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.64,
+      "momentum": -0.52,
       "weeklyCounts": [
         81,
         60,
@@ -239,7 +239,7 @@
         95,
         107,
         100,
-        36
+        48
       ],
       "signals": [
         {
