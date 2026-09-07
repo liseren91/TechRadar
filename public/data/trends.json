@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T10:55:44.123Z",
+  "generatedAt": "2026-09-07T12:31:27.588Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -50,7 +50,7 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.41,
+      "momentum": -0.26,
       "weeklyCounts": [
         411,
         420,
@@ -61,9 +61,15 @@
         456,
         437,
         437,
-        259
+        324
       ],
       "signals": [
+        {
+          "title": "Research acceleration: The view inside OpenAI",
+          "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
+          "source": "simonw",
+          "publishedAt": "2026-09-06T23:57:40.000Z"
+        },
         {
           "title": "OpenClaw Power, MacBook Simplicity: Five Days With Grok Bot",
           "url": "https://www.latent.space/p/grok-bot",
@@ -87,12 +93,6 @@
           "url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
           "source": "latent-space",
           "publishedAt": "2026-09-03T04:38:33.000Z"
-        },
-        {
-          "title": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
-          "url": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
-          "source": "latent-space",
-          "publishedAt": "2026-09-02T07:46:08.000Z"
         }
       ]
     },
@@ -102,7 +102,7 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.43,
+      "momentum": -0.29,
       "weeklyCounts": [
         14,
         11,
@@ -113,7 +113,7 @@
         7,
         9,
         14,
-        8
+        10
       ],
       "signals": [
         {
@@ -136,7 +136,7 @@
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.43,
+      "momentum": -0.29,
       "weeklyCounts": [
         21,
         21,
@@ -147,7 +147,7 @@
         21,
         21,
         21,
-        12
+        15
       ],
       "signals": [
         {
@@ -176,7 +176,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.45,
+      "momentum": -0.32,
       "weeklyCounts": [
         375,
         358,
@@ -187,7 +187,7 @@
         394,
         398,
         388,
-        212
+        264
       ],
       "signals": [
         {
@@ -228,7 +228,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.52,
+      "momentum": -0.4,
       "weeklyCounts": [
         81,
         60,
@@ -239,7 +239,7 @@
         95,
         107,
         100,
-        48
+        60
       ],
       "signals": [
         {
