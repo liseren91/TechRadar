@@ -1,6 +1,144 @@
 {
-  "generatedAt": "2026-09-07T12:31:27.501Z",
+  "generatedAt": "2026-09-08T11:18:38.675Z",
   "items": [
+    {
+      "id": "d-9niczf",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/7/llm/",
+      "publishedAt": "2026-09-07T23:54:54.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: llm 0.35 adds support for GPT-6 Astra, OpenAI's latest model, expanding available options for developers using the command-line tool.",
+        "tweets": [
+          "llm 0.35 released with GPT-6 Astra support. New OpenAI model now accessible via the CLI tool for developers.",
+          "GPT-6 Astra integration means developers can swap models without changing their workflow. Drop-in upgrade path ready.",
+          "This release keeps llm CLI current with OpenAI's newest offerings. Faster iteration cycle between model releases and tool support."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: llm 0.35 добавляет поддержку GPT-6 Astra, новейшей модели OpenAI, расширяя возможности разработчиков, использующих инструмент командной строки.",
+        "tweets": [
+          "Вышел llm 0.35 с поддержкой GPT-6 Astra. Новую модель OpenAI теперь можно использовать через CLI-инструмент.",
+          "Интеграция GPT-6 Astra позволяет менять модели без изменения workflow. Простое обновление для существующих скриптов.",
+          "Инструмент llm остаётся синхронизирован с последними релизами OpenAI. Быстрый цикл поддержки новых моделей."
+        ]
+      }
+    },
+    {
+      "id": "d-1ijeacl",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+      "publishedAt": "2026-09-07T23:08:58.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Abusive web scrapers now consume more server resources than legitimate users on critical infrastructure like git.kernel.org, threatening the economics of public data services.",
+        "tweets": [
+          "git.kernel.org burns 14 CPU cores just rendering commits for scrapers—more cycles than all legitimate git clones combined. The background radiation of bots is now the primary load.",
+          "Scrapers hit the Linux kernel repo so hard that serving HTML to crawlers costs more than serving actual developers. This scales to any crawlable public service.",
+          "When bots tax infrastructure more than users, data services face a choice: block scrapers, paywall access, or die. Public data sustainability is now a scraper economics problem."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Злоумышленные краулеры потребляют больше ресурсов сервера, чем легитимные пользователи на критической инфраструктуре вроде git.kernel.org, угрожая экономике публичных сервисов данных.",
+        "tweets": [
+          "git.kernel.org тратит 14 ядер процессора только на рендеринг коммитов для ботов—больше, чем на все легитимные клоны репозитория вместе взятые.",
+          "Краулеры настолько нагружают сервер ядра Linux, что отдача HTML ботам стоит дороже, чем обслуживание разработчиков. Это масштабируется на любой публичный сервис.",
+          "Когда боты потребляют больше ресурсов, чем реальные пользователи, сервисы данных вынуждены блокировать краулеры, закрывать доступ или закрываться. Экономика публичных данных стала проблемой скрейпинга."
+        ]
+      }
+    },
+    {
+      "id": "d-e57p9y",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
+      "publishedAt": "2026-09-07T22:26:25.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Advanced AI development requires building defensive systems against misuse, not just pursuing capability gains.",
+        "tweets": [
+          "OpenAI's chief scientist argues for rapid AI training to create aligned defensive systems—securing infrastructure and detecting rogue agents in real time.",
+          "The defensive AI arms race logic: we need powerful aligned models to protect against dangerous ones, but this can't justify reckless deployment.",
+          "Stakes are serious enough that speed-at-all-costs thinking breaks down. Development must balance capability with safety, not pick one."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Развитие продвинутых ИИ-систем требует создания защитных механизмов против злоупотреблений, а не просто гонки возможностей.",
+        "tweets": [
+          "Главный учёный OpenAI: нужно быстро обучать мощные выровненные модели для защиты инфраструктуры и обнаружения опасных агентов в реальном времени.",
+          "Логика оборонительной гонки ИИ: защита от опасных систем требует сильного выровненного ИИ, но это не оправдывает беспечное развёртывание.",
+          "Серьёзность рисков делает стратегию «быстро любой ценой» нежизнеспособной. Нужен баланс между способностями и безопасностью, а не выбор одного."
+        ]
+      }
+    },
+    {
+      "id": "d-magrs0",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/aeo",
+      "publishedAt": "2026-09-07T21:32:37.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Frontier AI models show measurable biases in tool recommendations, and tracking these choices reveals what labs actually prioritize in training data and alignment.",
+        "tweets": [
+          "Latent Space tracked 6 frontier models across 161 categories. Self-bias is real: Claude recommends Claude, Cursor loves Cursor. But GPT models recommend Claude too, suggesting some genuine objectivity emerges.",
+          "Astra (Anthropic) cuts median sources from 11 to 5 vs older Opus, favoring confidence over exploration. More decisive models = higher AEO value as randomness drops.",
+          "28 categories have universal consensus picks across all models tested. The real battleground: 133 contested categories where your startup's AEO investment actually matters."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Фронтирные LLM показывают измеримые предубеждения при рекомендациях инструментов, и эти данные раскрывают приоритеты лабораторий в выборе тренировочных данных.",
+        "tweets": [
+          "Latent Space проанализировала 6 фронтирных моделей по 161 категории. Самоцитирование очевидно: Claude рекомендует Claude, Cursor любит Cursor. Но GPT-модели тоже рекомендуют Claude — знак объективности.",
+          "Astra сокращает медиану источников с 11 до 5 против старшего Opus, выбирая уверенность вместо разведки. Чем меньше случайности, тем выше ценность AEO.",
+          "28 категорий имеют единодушный выбор всех моделей. Реальное поле боя: 133 спорные категории, где инвестиции стартапа в AEO действительно решают."
+        ]
+      }
+    },
+    {
+      "id": "d-544l01",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/7/video-compressor/",
+      "publishedAt": "2026-09-07T18:29:07.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Running FFMPEG in the browser via WebAssembly means video compression now works client-side without server overhead or uploads.",
+        "tweets": [
+          "Claude built a browser-based video compressor using FFMPEG's WebAssembly port. No server needed, compression happens on your machine.",
+          "WebAssembly FFMPEG eliminates the upload-to-server-compress-download cycle. Faster, private, cheaper to operate at scale.",
+          "AI coding assistants can now scaffold multimedia tools fast enough that side projects become viable. The speed-to-working-tool ratio is changing."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: FFMPEG через WebAssembly сжимает видео прямо в браузере, без загрузки на сервер и обратной передачи.",
+        "tweets": [
+          "Claude собрал компрессор видео на WebAssembly прямо в браузере. Обработка происходит локально, без серверных расходов.",
+          "WebAssembly FFMPEG убирает этап загрузки-обработки-скачивания. Быстрее, приватнее, дешевле для масштабирования.",
+          "Кодеры на AI теперь строят медиа-инструменты так быстро, что личные проекты становятся реальными. Скорость разработки растёт."
+        ]
+      }
+    },
+    {
+      "id": "d-xurqsp",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/7/equal-earth/",
+      "publishedAt": "2026-09-07T16:24:16.000Z",
+      "category": "web3",
+      "en": {
+        "headline": "Why it matters: Map projections distort reality in ways that shape how we see the world—Equal Earth corrects Mercator's area bias, finally getting UN backing.",
+        "tweets": [
+          "Mercator makes Greenland look as big as Africa. Equal Earth fixes that. UN just voted to promote it. One projection choice changes geopolitics.",
+          "GPT-6 Astra built an animated D3 tool to visualize the shift. Vibe-coding is real: describe what you want, AI handles the math and rendering.",
+          "Map projection isn't trivia—it's how billions learn geography. Switching standards means textbooks, apps, and mental models all shift together."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Картографические проекции искажают реальность по-разному—Equal Earth исправляет ошибки Меркатора, и ООН наконец это признала.",
+        "tweets": [
+          "На проекции Меркатора Гренландия выглядит размером с Африку. Equal Earth это исправляет. ООН одобрила переход. Один выбор—разные геополитические последствия.",
+          "GPT-6 Astra создал интерактивную анимацию переходов на D3. Vibe-coding работает: опиши, что нужно, ИИ сделает математику и визуализацию.",
+          "Проекция карты—не триvia. Это то, как миллиарды учат географию. Смена стандарта меняет учебники, приложения и представления людей о мире."
+        ]
+      }
+    },
     {
       "id": "d-8ikzes",
       "source": "openai",
@@ -8,19 +146,19 @@
       "publishedAt": "2026-09-07T00:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI tools can help Ukrainian newsrooms operate faster and more independently during wartime when resources are stretched thin.",
+        "headline": "Why it matters: OpenAI is equipping Ukrainian newsrooms with AI tools to sustain independent reporting under geopolitical pressure.",
         "tweets": [
-          "OpenAI, AIRPPU, and WAN-IFRA partnered to give Ukrainian news orgs AI training. Goal: boost resilience and speed up reporting when it matters most.",
-          "Ukrainian journalists get access to AI capabilities that can automate fact-checking, translation, and story research without expensive infrastructure.",
-          "Independent media in conflict zones needs both protection and tools. This program tackles the tools part, freeing reporters to focus on investigative work."
+          "OpenAI partners with AIRPPU and WAN-IFRA to give Ukrainian journalists AI capabilities for faster fact-checking, content production, and newsroom resilience.",
+          "Independent media in war zones faces resource constraints. AI automation lets small teams do investigative work that previously required larger staff.",
+          "The program targets innovation and sustainability for Ukrainian outlets—practical tools for newsrooms, not just rhetoric about press freedom."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ИИ может помочь украинским редакциям работать быстрее и независимо, когда ресурсы ограничены военным конфликтом.",
+        "headline": "Почему важно: OpenAI помогает украинским редакциям внедрить AI, чтобы они могли устойчивее работать в условиях политического давления.",
         "tweets": [
-          "OpenAI, AIRPPU и WAN-IFRA запустили программу обучения ИИ для украинских СМИ. Цель: укрепить устойчивость и ускорить публикации в критические моменты.",
-          "Журналисты получат доступ к инструментам ИИ для автоматизации проверки фактов, перевода и поиска информации без дорогой инфраструктуры.",
-          "Независимые медиа в зонах конфликта нуждаются в защите и инструментах. Эта программа решает вторую задачу, освобождая репортёров для расследований."
+          "OpenAI сотрудничает с AIRPPU и WAN-IFRA, предоставляя украинским журналистам инструменты AI для проверки фактов, производства контента и укрепления редакций.",
+          "Независимые СМИ в военных зонах страдают от нехватки ресурсов. Автоматизация через AI позволяет небольшим командам делать расследования, которые раньше требовали больших штатов.",
+          "Программа фокусируется на инновациях и устойчивости украинских изданий—практические инструменты для редакций, а не только слова о свободе прессы."
         ]
       }
     },
@@ -31,19 +169,19 @@
       "publishedAt": "2026-09-06T23:57:40.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI's research team is using coding agents and recursive self-improvement to accelerate internal R&D, with a sharp cost spike in late July suggesting GPT-6 Astra deployment changed their workflow.",
+        "headline": "Why it matters: OpenAI's internal research teams are now heavily using coding agents for acceleration, with a sharp spending spike in July suggesting access to more capable models is reshaping how AI labs operate.",
         "tweets": [
-          "OpenAI researchers are heavily using coding agents in 2026. Sharp spike in AI spend per researcher in late July hints at internal GPT-6 Astra access—suggesting agentic engineering just became their standard research tool.",
-          "RSI (Recursive Self-Improvement) is apparently OpenAI's new internal AGI framework. No details yet, but their own teams are already running it to accelerate research cycles.",
-          "Agentic engineering took off industry-wide in 2026, but OpenAI's spend chart shows their internal adoption was particularly aggressive. Access to better models clearly shifts how research gets done."
+          "OpenAI researchers are leaning hard on coding agents to accelerate their own work. 2026 is when agentic engineering went from buzzword to daily toolkit across the industry.",
+          "A dramatic spike in AI spend per researcher in late July likely marks when OpenAI employees got internal access to GPT-6 Astra. That's the inflection point where capability jumped.",
+          "Recursive Self-Improvement (RSI) is OpenAI's framing for what comes next. When your research team uses agents to write code, the feedback loop compresses—iteration speed fundamentally changes."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Исследовательская команда OpenAI использует кодирующих агентов и рекурсивное самосовершенствование для ускорения R&D, а скачок расходов в июле намекает на внедрение GPT-6 Astra.",
+        "headline": "Почему важно: Исследовательские команды OpenAI активно используют кодирующих агентов для ускорения работы, а скачок затрат в июле указывает на то, что более мощные модели переформатируют методы работы AI-лабораторий.",
         "tweets": [
-          "Исследователи OpenAI активно используют кодирующих агентов в 2026 году. Резкий рост затрат на AI по исследователю в июле указывает на получение доступа к внутренней GPT-6 Astra—агентный инжиниринг стал их стандартным инструментом.",
-          "RSI (Recursive Self-Improvement) это видимо новая внутренняя система AGI в OpenAI. Деталей нет, но их собственные команды уже её используют для ускорения исследовательских циклов.",
-          "Агентный инжиниринг взлетел во всей индустрии в 2026, но график расходов OpenAI показывает особенно агрессивное внутреннее внедрение. Доступ к лучшим моделям явно меняет способ проведения исследований."
+          "Исследователи OpenAI массово применяют coding agents в своей работе. 2026-й год—это когда агентное инженерство переросло из тренда в обыденный инструмент для всей индустрии.",
+          "Резкий рост затрат на AI на одного исследователя в июле—это, похоже, момент, когда сотрудники OpenAI получили доступ к GPT-6 Astra. Там произошел скачок возможностей.",
+          "Recursive Self-Improvement (RSI)—это то, как OpenAI называет следующий этап. Когда исследовательская команда использует агентов для написания кода, цикл обратной связи сжимается—скорость разработки меняется принципиально."
         ]
       }
     },
@@ -54,19 +192,19 @@
       "publishedAt": "2026-09-06T14:40:07.000Z",
       "category": "cybersecurity",
       "en": {
-        "headline": "Why it matters: One in five newly registered domains are scams, making DNS a systemic abuse vector that registrars and ICANN have failed to address.",
+        "headline": "Why it matters: One in five newly registered domains are scams, with 8.5M of 85M new gTLDs blocked by May 2025—DNS has become a primary scam delivery mechanism.",
         "tweets": [
-          "85 million gTLDs registered in 2025. 8.5 million blocklisted by May. The actual abuse rate? Likely 10-20%, meaning roughly 1 in 5 new domains are scams.",
-          "DNS has become a criminal infrastructure problem, not a technical one. Registrars profit from volume while enforcement happens downstream via blocklists.",
-          "ICANN has known about this for years. No structural fix in sight. The domain registration system is fundamentally broken."
+          "85 million new gTLDs registered in 2025. 8.5 million already blocklisted by May. That's 10% minimum abuse rate, likely 20%. DNS registration is broken.",
+          "One in five newly registered domains are scams. Not typosquatting or occasional fraud—systematic abuse at industrial scale. ICANN knew for years.",
+          "The real problem: registering a domain takes minutes, costs dollars, zero friction for criminals. Legitimate defense (blocklists) always plays catch-up."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Каждый пятый новый домен — это мошенничество, DNS стал инструментом преступников, а ICANN и регистраторы долгие годы игнорируют проблему.",
+        "headline": "Почему важно: Каждый пятый новый домен с gTLD — это мошенничество. 8,5 млн из 85 млн регистраций заблокированы уже к май 2025 года.",
         "tweets": [
-          "В 2025 году зарегистрировано 85 млн новых доменов. В чёрные списки попало 8,5 млн. Реальный процент мошенничества — 10-20%, то есть один из пяти доменов — аферы.",
-          "DNS превратился в криминальную инфраструктуру. Регистраторы зарабатывают на объёме, а контроль происходит в чёрных списках после того, как вред уже нанесён.",
-          "ICANN знает о проблеме годами. Структурного решения нет. Система регистрации доменов по сути сломана."
+          "85 млн новых gTLD в 2025-м. 8,5 млн заблокировано к май. Это минум 10% аферистских доменов, реально близко к 20%. DNS система взломана.",
+          "Один из пяти новых доменов — это скам. Не опечатки, не редкие случаи. Системное преступление в промышленном масштабе. ИКАН знает годами.",
+          "Регистрация домена — минуты и несколько долларов. Для мошенников нет препятствий. Защита всегда отстаёт. Модель сломана."
         ]
       }
     },
@@ -77,157 +215,19 @@
       "publishedAt": "2026-09-06T09:08:06.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: Complete rewrites to escape technical debt almost always fail—you end up maintaining two broken systems instead of one.",
+        "headline": "Why it matters: Complete rewrites rarely solve technical debt—they usually create two broken systems instead of one, draining years of effort with no payoff.",
         "tweets": [
-          "The rewrite trap: old system keeps changing because it runs the business, new team has no docs to learn from, both systems decay. Months pass, priorities shift, you're stuck with legacy code AND half-finished replacement.",
-          "Developers on doomed old code stop trying; new team moves fast at first but discovers undocumented complexity. Launching the new system becomes political pressure play, not technical victory.",
-          "Better path: add tests to the existing system, do targeted refactors. Boring, incremental work beats the romantic fantasy of burning it all down and starting fresh."
+          "Rewrite trap: old system keeps changing (it runs the business), new team has no docs to copy from, launches half-finished, now you maintain both forever.",
+          "The greenfield fantasy: new team moves fast at first, then realizes the old system's behavior is undocumented. Months pass. Pressure mounts. Ship incomplete.",
+          "Better move: add tests to the broken system, do targeted refactors. Sounds boring but actually ships. Rewrites kill more projects than they fix."
         ]
       },
       "ru": {
-        "headline": "Почему важно: переписывание системы с нуля для борьбы с техдолгом почти никогда не работает—в итоге вы обслуживаете две сломанные системы вместо одной.",
+        "headline": "Почему важно: полная переписка кода редко решает проблему техдолга—обычно создаёт два сломанных система вместо одного, отнимая годы без результата.",
         "tweets": [
-          "Ловушка переписывания: старая система меняется потому что она работает, новая команда не знает код, обе системы деградируют. Месяцы идут, приоритеты меняются, остаётся легаси и половина замены.",
-          "Разработчики старой системы не стараются, новая команда быстра в начале но натыкается на недокументированную сложность. Запуск новой системы становится политическим решением, не технической победой.",
-          "Лучший вариант: добавить тесты к существующей системе, делать точечные рефакторы. Скучная постепенная работа лучше чем романтичная мечта о полном перезапуске."
-        ]
-      }
-    },
-    {
-      "id": "d-7amf1v",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/an-alien-mind",
-      "publishedAt": "2026-09-06T09:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: As AI systems grow more capable, we risk losing interpretability and control unless we build better safety tools and coordinate globally.",
-        "tweets": [
-          "OpenAI's chief scientist warns: scaling AI without robust alignment safeguards risks creating systems we can't reliably steer or understand.",
-          "The core problem isn't capability—it's interpretability. We need breakthroughs in understanding what advanced AI systems actually do internally.",
-          "International coordination on AI safety isn't optional anymore. Unilateral capability races without shared safety standards multiply existential risks."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: По мере того как ИИ становится мощнее, мы рискуем потерять контроль над системами, если не разработаем лучшие инструменты безопасности и не скоординируемся на международном уровне.",
-        "tweets": [
-          "Научный руководитель OpenAI: масштабирование ИИ без надёжного выравнивания может привести к системам, которыми мы не сможем управлять или понимать.",
-          "Главная проблема не в возможностях, а в интерпретируемости. Нужны прорывы в понимании того, что на самом деле делают продвинутые ИИ-системы.",
-          "Международная координация по безопасности ИИ — уже необходимость, а не опция. Гонка за возможностями без общих стандартов безопасности множит риски."
-        ]
-      }
-    },
-    {
-      "id": "d-1qg5pg7",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/6/zach-kehs/",
-      "publishedAt": "2026-09-06T08:42:49.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: Unlike physical systems with hard limits, software has no ceiling for degradation—technical debt compounds indefinitely without intervention.",
-        "tweets": [
-          "Buildings collapse under infinite weight. Software doesn't: you can keep adding indirection, layers, and performance rot forever. The constraint is human, not physical.",
-          "Technical debt doesn't plateau. Each new layer of abstraction, each performance hack, each 'we'll fix it later' genuinely makes the codebase worse in perpetuity.",
-          "This is why intentional architecture and refactoring aren't luxuries—they're survival. Codebases left unchecked will degrade without bound."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: В отличие от физических систем с твёрдыми пределами, код может деградировать бесконечно — технический долг растёт без остановки.",
-        "tweets": [
-          "Здания рушатся под бесконечным весом, код — нет. Можно добавлять слои абстракции и снижать производительность вечно. Ограничение только человеческое.",
-          "Технический долг не выходит на плато. Каждый новый уровень косвенности, каждый хак 'исправим потом' действительно ухудшает кодовую базу в будущем.",
-          "Поэтому намеренная архитектура и рефакторинг — не роскошь, а выживание. Заброшенный код деградирует без границ."
-        ]
-      }
-    },
-    {
-      "id": "d-1j3horr",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/research-acceleration-view-inside-openai",
-      "publishedAt": "2026-09-06T08:00:00.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: AI coding agents are measurably speeding up research cycles inside OpenAI, showing early data on how autonomous tools reshape experimental velocity.",
-        "tweets": [
-          "OpenAI's internal data shows coding agents handling higher task complexity while researchers focus on hypothesis design rather than implementation grunt work.",
-          "Agent-assisted research workflows demonstrate faster experiment iteration cycles, with measurable improvements in research throughput and hypothesis testing speed.",
-          "Early signals suggest autonomous coding agents reduce manual debugging overhead, letting researchers scale experimental scope without proportional time increases."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Агенты кодирования заметно ускоряют исследовательские циклы внутри OpenAI, демонстрируя данные о повышении скорости экспериментов.",
-        "tweets": [
-          "Внутренние данные OpenAI показывают, что кодирующие агенты справляются со сложными задачами, освобождая исследователей от рутинной реализации кода.",
-          "Рабочие процессы с агентами-помощниками ускоряют итерацию экспериментов, что видно по измеримому улучшению производительности и скорости тестирования гипотез.",
-          "Ранние показатели говорят, что автономные агенты снижают время отладки, позволяя расширять масштаб исследований без пропорционального увеличения сроков."
-        ]
-      }
-    },
-    {
-      "id": "d-1kd9jt5",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-      "publishedAt": "2026-09-05T23:27:48.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: GPT-6 Astra shows measurable improvements in prompt understanding and 3D model generation, suggesting multimodal AI is moving beyond toy demos into practical utility.",
-        "tweets": [
-          "GPT-6 Astra demonstrates better attention to detail and prompt comprehension across the board. The jump in sophistication from previous versions is real, not just marketing.",
-          "3D model generation is where Astra shines: gardens, shipyards, cityscapes, even absurd stuff like Dyson spheres. This capability matters for design workflows.",
-          "Better understanding of user intent means fewer clarifications needed. That's the practical win buried under the pelican-on-a-bicycle easter eggs."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: GPT-6 Astra показывает заметное улучшение в понимании запросов и генерации 3D-моделей, что указывает на практическую ценность мультимодального ИИ.",
-        "tweets": [
-          "GPT-6 Astra внимательнее к деталям и лучше понимает задачу пользователя. Скачок в качестве по сравнению с предыдущими версиями — это не маркетинг.",
-          "Сильная сторона Astra — генерация 3D-моделей: сады, верфи, города, даже сферы Дайсона. Это может пригодиться в работе дизайнеров.",
-          "Лучшее понимание намерений пользователя означает меньше переговоров. Это реальная практическая выгода, спрятанная под пасхальные яйца."
-        ]
-      }
-    },
-    {
-      "id": "d-1n8pzza",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
-      "publishedAt": "2026-09-05T15:51:09.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Coding agents can now directly control Blender on macOS, turning natural language prompts into 3D renders without manual scripting.",
-        "tweets": [
-          "ChatGPT can now render Blender scenes on your Mac by calling Blender's Python API directly. Just prompt it like 'render a pelican on a bicycle' and iterate.",
-          "Full Blender install at /Applications/Blender is all you need. Agents handle all the scripting—no Blender expertise required from the user.",
-          "A complex 3D scene with multiple refinement passes cost $4.24 in API calls. Existing ChatGPT subscriptions already cover this via web interface."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Кодовые агенты теперь могут напрямую управлять Blender на macOS, превращая текстовые команды в 3D-рендеры без ручного написания скриптов.",
-        "tweets": [
-          "ChatGPT может рендерить сцены Blender на вашем Mac, вызывая Python API прямо из промпта. Просто попросите 'нарисуй пеликана на велосипеде' и уточняйте результат.",
-          "Нужна только стандартная установка Blender в /Applications/Blender. Агент сам пишет весь код—пользователю знания Blender не требуются.",
-          "Сложная 3D-сцена с несколькими итерациями стоила $4.24 в API. Существующая подписка ChatGPT уже покрывает это через веб-интерфейс."
-        ]
-      }
-    },
-    {
-      "id": "d-1x3v3vq",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/grok-bot",
-      "publishedAt": "2026-09-05T15:01:02.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Grok Bot abstracts away agent complexity, letting non-engineers compose AI workflows through natural conversation instead of code.",
-        "tweets": [
-          "Grok Bot treats agents as first-class building blocks you name and personify. Instead of managing context windows and infrastructure, you delegate tasks to specialized bots and let them route the work.",
-          "Setup is OAuth-simple: click a plugin, sign in through your browser, done. No JSON configs, no MCP servers, no credential pasting. That ease of onboarding is the real innovation.",
-          "Unlike OpenClaw (the Linux of agent platforms), Grok Bot is managed infra (MacBook simplicity). You program intent in English, not low-level tool chains. Higher abstraction = accessible to non-coders."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Grok Bot скрывает сложность агентов, позволяя описывать рабочие процессы на естественном языке вместо написания кода.",
-        "tweets": [
-          "Агенты в Grok Bot - это полноценные строительные блоки с именами и ролями. Вместо управления контекстом и инфраструктурой вы делегируете задачи специализированным ботам, которые сами выбирают инструменты.",
-          "Подключение проще простого: кликнул плагин, вошел через браузер, готово. Никаких конфигов JSON, никаких MCP серверов, никаких ключей API. Это и есть главное улучшение.",
-          "OpenClaw - это Linux для агентных платформ (требует много настроек), Grok Bot - это MacBook (управляемая инфраструктура). Вы описываете намерение на английском, не низкоуровневые цепочки инструментов."
+          "Ловушка переписки: старая система всё ещё меняется (работает бизнес), новой команде нечего копировать, запуск неполный, теперь два системы в боевом.",
+          "Фантазия о зелёном поле: новая команда быстро, потом понимает—поведение старой системы не документировано. Месяцы идут. Давление. Запускают недоделанное.",
+          "Лучше: тесты к старой системе, точечный рефакторинг. Скучно, но работает. Переписки убивают проекты чаще, чем спасают."
         ]
       }
     }
