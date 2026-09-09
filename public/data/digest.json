@@ -1,233 +1,233 @@
 {
-  "generatedAt": "2026-09-08T11:18:38.675Z",
+  "generatedAt": "2026-09-09T11:22:04.546Z",
   "items": [
     {
-      "id": "d-9niczf",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/7/llm/",
-      "publishedAt": "2026-09-07T23:54:54.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: llm 0.35 adds support for GPT-6 Astra, OpenAI's latest model, expanding available options for developers using the command-line tool.",
-        "tweets": [
-          "llm 0.35 released with GPT-6 Astra support. New OpenAI model now accessible via the CLI tool for developers.",
-          "GPT-6 Astra integration means developers can swap models without changing their workflow. Drop-in upgrade path ready.",
-          "This release keeps llm CLI current with OpenAI's newest offerings. Faster iteration cycle between model releases and tool support."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: llm 0.35 добавляет поддержку GPT-6 Astra, новейшей модели OpenAI, расширяя возможности разработчиков, использующих инструмент командной строки.",
-        "tweets": [
-          "Вышел llm 0.35 с поддержкой GPT-6 Astra. Новую модель OpenAI теперь можно использовать через CLI-инструмент.",
-          "Интеграция GPT-6 Astra позволяет менять модели без изменения workflow. Простое обновление для существующих скриптов.",
-          "Инструмент llm остаётся синхронизирован с последними релизами OpenAI. Быстрый цикл поддержки новых моделей."
-        ]
-      }
-    },
-    {
-      "id": "d-1ijeacl",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
-      "publishedAt": "2026-09-07T23:08:58.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: Abusive web scrapers now consume more server resources than legitimate users on critical infrastructure like git.kernel.org, threatening the economics of public data services.",
-        "tweets": [
-          "git.kernel.org burns 14 CPU cores just rendering commits for scrapers—more cycles than all legitimate git clones combined. The background radiation of bots is now the primary load.",
-          "Scrapers hit the Linux kernel repo so hard that serving HTML to crawlers costs more than serving actual developers. This scales to any crawlable public service.",
-          "When bots tax infrastructure more than users, data services face a choice: block scrapers, paywall access, or die. Public data sustainability is now a scraper economics problem."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Злоумышленные краулеры потребляют больше ресурсов сервера, чем легитимные пользователи на критической инфраструктуре вроде git.kernel.org, угрожая экономике публичных сервисов данных.",
-        "tweets": [
-          "git.kernel.org тратит 14 ядер процессора только на рендеринг коммитов для ботов—больше, чем на все легитимные клоны репозитория вместе взятые.",
-          "Краулеры настолько нагружают сервер ядра Linux, что отдача HTML ботам стоит дороже, чем обслуживание разработчиков. Это масштабируется на любой публичный сервис.",
-          "Когда боты потребляют больше ресурсов, чем реальные пользователи, сервисы данных вынуждены блокировать краулеры, закрывать доступ или закрываться. Экономика публичных данных стала проблемой скрейпинга."
-        ]
-      }
-    },
-    {
-      "id": "d-e57p9y",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
-      "publishedAt": "2026-09-07T22:26:25.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Advanced AI development requires building defensive systems against misuse, not just pursuing capability gains.",
-        "tweets": [
-          "OpenAI's chief scientist argues for rapid AI training to create aligned defensive systems—securing infrastructure and detecting rogue agents in real time.",
-          "The defensive AI arms race logic: we need powerful aligned models to protect against dangerous ones, but this can't justify reckless deployment.",
-          "Stakes are serious enough that speed-at-all-costs thinking breaks down. Development must balance capability with safety, not pick one."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Развитие продвинутых ИИ-систем требует создания защитных механизмов против злоупотреблений, а не просто гонки возможностей.",
-        "tweets": [
-          "Главный учёный OpenAI: нужно быстро обучать мощные выровненные модели для защиты инфраструктуры и обнаружения опасных агентов в реальном времени.",
-          "Логика оборонительной гонки ИИ: защита от опасных систем требует сильного выровненного ИИ, но это не оправдывает беспечное развёртывание.",
-          "Серьёзность рисков делает стратегию «быстро любой ценой» нежизнеспособной. Нужен баланс между способностями и безопасностью, а не выбор одного."
-        ]
-      }
-    },
-    {
-      "id": "d-magrs0",
+      "id": "d-1gd4csh",
       "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/aeo",
-      "publishedAt": "2026-09-07T21:32:37.000Z",
+      "sourceUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
+      "publishedAt": "2026-09-09T05:04:51.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Frontier AI models show measurable biases in tool recommendations, and tracking these choices reveals what labs actually prioritize in training data and alignment.",
+        "headline": "Why it matters: OpenAI claims AI agents solved a Millennium Prize math problem (Navier-Stokes singularity), but the proof remains unverified by the math community and the exact claim is still ambiguous.",
         "tweets": [
-          "Latent Space tracked 6 frontier models across 161 categories. Self-bias is real: Claude recommends Claude, Cursor loves Cursor. But GPT models recommend Claude too, suggesting some genuine objectivity emerges.",
-          "Astra (Anthropic) cuts median sources from 11 to 5 vs older Opus, favoring confidence over exploration. More decisive models = higher AEO value as randomness drops.",
-          "28 categories have universal consensus picks across all models tested. The real battleground: 133 contested categories where your startup's AEO investment actually matters."
+          "OpenAI ran ~10,000 agents for 88 hours using multi-agent RL to tackle Navier-Stokes. The core bet: massive parallel compute + agent self-organization beats single-chain reasoning on hard problems.",
+          "No preprint, theorem statement, or formal proof has been released. 'Solution' could mean a complete proof, strategy, or research lead. Mathematical validation is the missing piece.",
+          "This is less about fluid mechanics, more about frontier AI's shift to test-time scaling. If real, it signals AI can tackle century-old open problems—but verification drama will define the actual impact."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Фронтирные LLM показывают измеримые предубеждения при рекомендациях инструментов, и эти данные раскрывают приоритеты лабораторий в выборе тренировочных данных.",
+        "headline": "Почему важно: OpenAI заявляет, что ИИ решил проблему тысячелетия (сингулярность Навье-Стокса), но доказательство не проверено математическим сообществом и смысл претензии остаётся неясным.",
         "tweets": [
-          "Latent Space проанализировала 6 фронтирных моделей по 161 категории. Самоцитирование очевидно: Claude рекомендует Claude, Cursor любит Cursor. Но GPT-модели тоже рекомендуют Claude — знак объективности.",
-          "Astra сокращает медиану источников с 11 до 5 против старшего Opus, выбирая уверенность вместо разведки. Чем меньше случайности, тем выше ценность AEO.",
-          "28 категорий имеют единодушный выбор всех моделей. Реальное поле боя: 133 спорные категории, где инвестиции стартапа в AEO действительно решают."
+          "OpenAI запустила ~10 000 агентов на 88 часов с мультиагентным обучением для Навье-Стокса. Гипотеза: массовые параллельные вычисления + самоорганизация агентов побеждают длинные цепочки рассуждений на сложных задачах.",
+          "Препринт, формулировка теоремы и формальное доказательство не опубликованы. 'Решение' может означать полное доказательство, стратегию или научный подход. Проверка математическим сообществом — главное звено.",
+          "Это не о гидромеханике, а о сдвиге фронтирных ИИ к масштабированию на этапе вывода. Если правда — ИИ может решать открытые задачи столетней давности, но драма вокруг верификации определит реальный вес."
         ]
       }
     },
     {
-      "id": "d-544l01",
+      "id": "d-1isu7zv",
       "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/7/video-compressor/",
-      "publishedAt": "2026-09-07T18:29:07.000Z",
-      "category": "web3",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/9/terence-tao/",
+      "publishedAt": "2026-09-09T00:20:17.000Z",
+      "category": "ai",
       "en": {
-        "headline": "Why it matters: Running FFMPEG in the browser via WebAssembly means video compression now works client-side without server overhead or uploads.",
+        "headline": "Why it matters: AI systems are racing to solve open math problems before human researchers can develop them, threatening the collaborative tradition that drives scientific progress.",
         "tweets": [
-          "Claude built a browser-based video compressor using FFMPEG's WebAssembly port. No server needed, compression happens on your machine.",
-          "WebAssembly FFMPEG eliminates the upload-to-server-compress-download cycle. Faster, private, cheaper to operate at scale.",
-          "AI coding assistants can now scaffold multimedia tools fast enough that side projects become viable. The speed-to-working-tool ratio is changing."
+          "Terence Tao warns: AI can now carpet-bomb research directions so fast that rumors alone trigger coordinated swarms to flatten problems before original work matures.",
+          "The perverse incentive: mathematicians may stop sharing promising directions publicly to protect their work, reversing centuries of open science norms.",
+          "Scarce good problems + AI speed = potential collapse of the research ecosystem that depends on community knowledge sharing and collaborative problem development."
         ]
       },
       "ru": {
-        "headline": "Почему важно: FFMPEG через WebAssembly сжимает видео прямо в браузере, без загрузки на сервер и обратной передачи.",
+        "headline": "Почему важно: ИИ-системы массово атакуют открытые математические задачи быстрее, чем успевают развиваться идеи человеческих исследователей, подрывая основы совместной науки.",
         "tweets": [
-          "Claude собрал компрессор видео на WebAssembly прямо в браузере. Обработка происходит локально, без серверных расходов.",
-          "WebAssembly FFMPEG убирает этап загрузки-обработки-скачивания. Быстрее, приватнее, дешевле для масштабирования.",
-          "Кодеры на AI теперь строят медиа-инструменты так быстро, что личные проекты становятся реальными. Скорость разработки растёт."
+          "Терренс Тао: достаточно слуха о работе над задачей, чтобы ИИ развернул скоординированное наступление и решил её до созревания оригинального исследования.",
+          "Перверсивный стимул: учёные начнут скрывать многообещающие направления от сообщества, чтобы защитить свои проекты от AI-конкуренции.",
+          "Дефицит хороших задач плюс скорость ИИ равняется коллапсу экосистемы науки, которая зависит от открытого обмена знаниями и коллективного развития идей."
         ]
       }
     },
     {
-      "id": "d-xurqsp",
+      "id": "d-nfowsg",
       "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/7/equal-earth/",
-      "publishedAt": "2026-09-07T16:24:16.000Z",
-      "category": "web3",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
+      "publishedAt": "2026-09-08T23:55:12.000Z",
+      "category": "ai",
       "en": {
-        "headline": "Why it matters: Map projections distort reality in ways that shape how we see the world—Equal Earth corrects Mercator's area bias, finally getting UN backing.",
+        "headline": "Why it matters: AI systems trained on user data may have helped OpenAI solve a Millennium Prize problem weeks after competitors using the same tools made a breakthrough, raising urgent questions about data leakage and competitive dynamics in AI research.",
         "tweets": [
-          "Mercator makes Greenland look as big as Africa. Equal Earth fixes that. UN just voted to promote it. One projection choice changes geopolitics.",
-          "GPT-6 Astra built an animated D3 tool to visualize the shift. Vibe-coding is real: describe what you want, AI handles the math and rendering.",
-          "Map projection isn't trivia—it's how billions learn geography. Switching standards means textbooks, apps, and mental models all shift together."
+          "OpenAI's model solved Navier-Stokes in 88 hours after hearing rumors that Anthropic's Levent Alpöge and NYU's Tristan Buckmaster had cracked it. OpenAI won't explain if user session data influenced the solution.",
+          "The math team had been working on this for a year using Codex and Claude. OpenAI's model launched days later, used 2.7M messages and 130B tokens just for this problem. OpenAI claims no direct access to their work.",
+          "This mirrors security research: knowing an unsolved problem exists is now enough to justify millions in compute spend to solve it first. The real question is whether your brainstorming with AI today becomes a competitor's training data tomorrow."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Картографические проекции искажают реальность по-разному—Equal Earth исправляет ошибки Меркатора, и ООН наконец это признала.",
+        "headline": "Почему важно: модели OpenAI могли использовать данные пользователей для решения задачи тысячелетия недели спустя после того, как конкуренты добились прорыва на тех же инструментах, что поднимает острые вопросы об утечке данных и конкуренции в исследованиях ИИ.",
         "tweets": [
-          "На проекции Меркатора Гренландия выглядит размером с Африку. Equal Earth это исправляет. ООН одобрила переход. Один выбор—разные геополитические последствия.",
-          "GPT-6 Astra создал интерактивную анимацию переходов на D3. Vibe-coding работает: опиши, что нужно, ИИ сделает математику и визуализацию.",
-          "Проекция карты—не триvia. Это то, как миллиарды учат географию. Смена стандарта меняет учебники, приложения и представления людей о мире."
+          "Модель OpenAI решила уравнения Навье-Стокса за 88 часов после слухов о достижении Levent Alpöge из Anthropic и Tristan Buckmaster из NYU. OpenAI не объясняет, повлияли ли данные пользовательских сессий на результат.",
+          "Математики год работали с Codex и Claude. Модель OpenAI запустилась через дни, использовав 2,7М сообщений и 130 млрд токенов только для этой задачи. OpenAI клянётся, что не видела их работу.",
+          "Это повторяет динамику в кибербезопасности: информации об нерешённой задаче достаточно, чтобы потратить миллионы на вычисления и опередить соперников. Настоящий вопрос: станут ли ваши мозговые штурмы с ИИ сегодня тренировочными данными конкурента завтра."
         ]
       }
     },
     {
-      "id": "d-8ikzes",
+      "id": "d-1g1arvm",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
+      "publishedAt": "2026-09-08T22:46:33.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: ChatGPT's image models now handle multi-turn editing better and preserve reference subjects more accurately, with two API variants optimized for different speed/precision tradeoffs.",
+        "tweets": [
+          "OpenAI released gpt-image-2.5-sunburst and gpt-image-2.5-flare for the API. Sunburst prioritizes editing precision across multiple turns; Flare optimizes for speed on everyday generation tasks.",
+          "3+ billion images generated via ChatGPT Images and the API. The new models respond faster while better preserving details from reference photos you provide.",
+          "You can now pass reference images to the API and chain edits together. Example: add a raccoon scientist to your chart in one prompt, then refine it further."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Новые модели генерации изображений ChatGPT лучше справляются с многошаговым редактированием и сохраняют детали исходных фотографий, предлагая два варианта с разным балансом точности и скорости.",
+        "tweets": [
+          "OpenAI выпустила gpt-image-2.5-sunburst и gpt-image-2.5-flare для API. Sunburst ориентирован на точность редактирования в несколько ходов, Flare — на скорость в повседневных задачах.",
+          "Более 3 млрд изображений сгенерировано через ChatGPT Images и API. Новые модели работают быстрее и лучше сохраняют детали из загруженных вами референс-фото.",
+          "Теперь можно передавать в API референс-изображения и проводить цепочку правок. Пример: добавить учёного-енота к вашему графику, затем доработать результат."
+        ]
+      }
+    },
+    {
+      "id": "d-11sd2tq",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
-      "publishedAt": "2026-09-07T00:00:00.000Z",
+      "sourceUrl": "https://openai.com/index/codex-quantum-computing-experiments",
+      "publishedAt": "2026-09-08T17:00:00.000Z",
+      "category": "quantum",
+      "en": {
+        "headline": "Why it matters: AI can now autonomously design and execute quantum experiments, reducing the manual work researchers spend calibrating hardware.",
+        "tweets": [
+          "GPT-5.6 Sol writes quantum experiment code, runs it, and interprets results without human intervention—MIT researchers skip weeks of manual calibration.",
+          "Codex lets AI autonomously adjust qubit parameters based on measurement feedback, treating quantum hardware like a system it can learn and optimize.",
+          "Autonomous quantum experimentation compresses iteration cycles; what took days of trial-and-error now happens in hours with AI reasoning through the physics."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ИИ может самостоятельно проектировать и запускать квантовые эксперименты, избавляя исследователей от недель ручной калибровки оборудования.",
+        "tweets": [
+          "GPT-5.6 Sol пишет код квантовых экспериментов, запускает его и интерпретирует результаты без участия человека—MIT исследователи экономят недели калибровки.",
+          "Codex позволяет ИИ автономно менять параметры кубитов на основе измерений, обучаясь оптимизировать квантовое железо в реальном времени.",
+          "Автономные квантовые эксперименты ускоряют итерации; то, что занимало дни проб и ошибок, теперь происходит за часы с рассуждениями ИИ о физике."
+        ]
+      }
+    },
+    {
+      "id": "d-16c84wa",
+      "source": "hf",
+      "sourceUrl": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+      "publishedAt": "2026-09-08T14:23:07.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI is equipping Ukrainian newsrooms with AI tools to sustain independent reporting under geopolitical pressure.",
+        "headline": "Why it matters: AI safety guardrails often block entire topics instead of refusing only genuinely harmful requests, limiting legitimate uses and reflecting whose values get embedded in the system.",
         "tweets": [
-          "OpenAI partners with AIRPPU and WAN-IFRA to give Ukrainian journalists AI capabilities for faster fact-checking, content production, and newsroom resilience.",
-          "Independent media in war zones faces resource constraints. AI automation lets small teams do investigative work that previously required larger staff.",
-          "The program targets innovation and sustainability for Ukrainian outlets—practical tools for newsrooms, not just rhetoric about press freedom."
+          "AI models refuse whole topics (like biology research) to avoid one harmful use case, but this blocks thousands of legitimate queries. Precision matters more than blanket bans.",
+          "Safety policies embed specific cultural values as universal truth. A biology question about pathogens is harmful in one context, educational in another—whose safety wins?",
+          "Fine-grained refusal systems that distinguish harmful intent from legitimate inquiry are technically possible but rarely deployed. The easier path wins, regardless of collateral damage."
         ]
       },
       "ru": {
-        "headline": "Почему важно: OpenAI помогает украинским редакциям внедрить AI, чтобы они могли устойчивее работать в условиях политического давления.",
+        "headline": "Почему важно: Системы безопасности в ИИ блокируют целые категории тем вместо отказа только от вредоносных запросов, что ограничивает легитимное использование и отражает чьи ценности встроены в модель.",
         "tweets": [
-          "OpenAI сотрудничает с AIRPPU и WAN-IFRA, предоставляя украинским журналистам инструменты AI для проверки фактов, производства контента и укрепления редакций.",
-          "Независимые СМИ в военных зонах страдают от нехватки ресурсов. Автоматизация через AI позволяет небольшим командам делать расследования, которые раньше требовали больших штатов.",
-          "Программа фокусируется на инновациях и устойчивости украинских изданий—практические инструменты для редакций, а не только слова о свободе прессы."
+          "Модели отказывают по целым темам (биология, химия), чтобы предотвратить один вид вреда, но при этом блокируют тысячи полезных вопросов. Точность важнее чем размывающие запреты.",
+          "Политики безопасности встраивают конкретные культурные ценности как универсальную истину. Вопрос о патогенах полезен в одном контексте и опасен в другом—чья безопасность приоритет?",
+          "Системы избирательного отказа, различающие вредоносное намерение от легитимного запроса, технически возможны, но редко внедряются. Проще блокировать всё подряд, невзирая на побочный урон."
         ]
       }
     },
     {
-      "id": "d-13spr7r",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
-      "publishedAt": "2026-09-06T23:57:40.000Z",
+      "id": "d-bwdry4",
+      "source": "deepmind",
+      "sourceUrl": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "publishedAt": "2026-09-08T14:00:15.000Z",
+      "category": "biotech",
+      "en": {
+        "headline": "Why it matters: Predicting effects of 9 billion DNA variants enables faster identification of disease-causing mutations and accelerates drug discovery.",
+        "tweets": [
+          "AlphaGenome Atlas maps molecular consequences of 9B single-letter DNA changes across human genome—covers virtually every possible point mutation.",
+          "Instead of lab-testing variants one by one, researchers can now computationally predict how each DNA letter swap affects protein function and disease risk.",
+          "Cuts discovery bottleneck: what took months of wet-lab validation can now be prioritized in hours, redirecting resources to most promising therapeutic targets."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Предсказание эффектов 9 миллиардов ДНК-вариантов позволяет быстрее выявлять мутации, вызывающие болезни, и ускоряет разработку лекарств.",
+        "tweets": [
+          "AlphaGenome Atlas картирует молекулярные последствия 9 млрд однобуквенных изменений в ДНК—охватывает практически все возможные точечные мутации человека.",
+          "Вместо поочередного лабораторного тестирования вариантов исследователи теперь могут вычислить, как каждая замена буквы влияет на белки и риск болезней.",
+          "Прорыв в скорости: то, что требовало месяцев экспериментов, теперь можно приоритизировать за часы и сосредоточиться на самых перспективных целях терапии."
+        ]
+      }
+    },
+    {
+      "id": "d-pxuniz",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/the-work-now-within-reach",
+      "publishedAt": "2026-09-08T13:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI's internal research teams are now heavily using coding agents for acceleration, with a sharp spending spike in July suggesting access to more capable models is reshaping how AI labs operate.",
+        "headline": "Why it matters: Cheaper, more capable AI models let smaller teams and businesses tackle work previously requiring large budgets or specialized expertise.",
         "tweets": [
-          "OpenAI researchers are leaning hard on coding agents to accelerate their own work. 2026 is when agentic engineering went from buzzword to daily toolkit across the industry.",
-          "A dramatic spike in AI spend per researcher in late July likely marks when OpenAI employees got internal access to GPT-6 Astra. That's the inflection point where capability jumped.",
-          "Recursive Self-Improvement (RSI) is OpenAI's framing for what comes next. When your research team uses agents to write code, the feedback loop compresses—iteration speed fundamentally changes."
+          "Better AI costs less to run. Teams with tight budgets can now automate tasks that were economically unfeasible before.",
+          "Accessibility shifts competitive advantage from capital to creativity. Smaller companies can compete on ideas, not just resources.",
+          "As AI capability improves and prices drop, more roles become augmentable rather than automated—humans stay in control."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Исследовательские команды OpenAI активно используют кодирующих агентов для ускорения работы, а скачок затрат в июле указывает на то, что более мощные модели переформатируют методы работы AI-лабораторий.",
+        "headline": "Почему важно: Доступные и мощные модели ИИ позволяют малым компаниям и командам решать задачи, которые раньше требовали больших инвестиций.",
         "tweets": [
-          "Исследователи OpenAI массово применяют coding agents в своей работе. 2026-й год—это когда агентное инженерство переросло из тренда в обыденный инструмент для всей индустрии.",
-          "Резкий рост затрат на AI на одного исследователя в июле—это, похоже, момент, когда сотрудники OpenAI получили доступ к GPT-6 Astra. Там произошел скачок возможностей.",
-          "Recursive Self-Improvement (RSI)—это то, как OpenAI называет следующий этап. Когда исследовательская команда использует агентов для написания кода, цикл обратной связи сжимается—скорость разработки меняется принципиально."
+          "ИИ становится дешевле и мощнее одновременно. Компании с ограниченным бюджетом могут автоматизировать процессы, которые раньше экономически нецелесообразны.",
+          "Конкурентное преимущество переходит от капитала к творчеству. Успех зависит от идей, а не только от денег на инфраструктуру.",
+          "Рост производительности не означает вытеснение людей—речь о расширении возможностей и новых типах работы."
         ]
       }
     },
     {
-      "id": "d-nrxmjs",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/",
-      "publishedAt": "2026-09-06T14:40:07.000Z",
-      "category": "cybersecurity",
+      "id": "d-dp8kll",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "publishedAt": "2026-09-08T11:30:00.000Z",
+      "category": "ai",
       "en": {
-        "headline": "Why it matters: One in five newly registered domains are scams, with 8.5M of 85M new gTLDs blocked by May 2025—DNS has become a primary scam delivery mechanism.",
+        "headline": "Why it matters: ChatGPT Images 2.5 lets you iterate faster on visual concepts using sketches and references instead of writing perfect prompts.",
         "tweets": [
-          "85 million new gTLDs registered in 2025. 8.5 million already blocklisted by May. That's 10% minimum abuse rate, likely 20%. DNS registration is broken.",
-          "One in five newly registered domains are scams. Not typosquatting or occasional fraud—systematic abuse at industrial scale. ICANN knew for years.",
-          "The real problem: registering a domain takes minutes, costs dollars, zero friction for criminals. Legitimate defense (blocklists) always plays catch-up."
+          "ChatGPT Images 2.5 accepts sketches and reference photos as input, not just text prompts. Faster iteration for designers and creators.",
+          "Upload a rough sketch or reference image, describe what you want, and get personalized output that actually matches your vision.",
+          "Reduces prompt engineering friction. Show, don't tell—the model learns intent from your visual inputs and reference materials."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Каждый пятый новый домен с gTLD — это мошенничество. 8,5 млн из 85 млн регистраций заблокированы уже к май 2025 года.",
+        "headline": "Почему важно: ChatGPT Images 2.5 позволяет быстрее развивать визуальные идеи через скетчи и референсы вместо написания идеальных промптов.",
         "tweets": [
-          "85 млн новых gTLD в 2025-м. 8,5 млн заблокировано к май. Это минум 10% аферистских доменов, реально близко к 20%. DNS система взломана.",
-          "Один из пяти новых доменов — это скам. Не опечатки, не редкие случаи. Системное преступление в промышленном масштабе. ИКАН знает годами.",
-          "Регистрация домена — минуты и несколько долларов. Для мошенников нет препятствий. Защита всегда отстаёт. Модель сломана."
+          "ChatGPT Images 2.5 принимает скетчи и справочные фото, а не только текстовые подсказки. Быстрая итерация для дизайнеров и творцов.",
+          "Загружайте черновой набросок или референс, описывайте желаемый результат, получайте персонализированный вывод, соответствующий вашей идее.",
+          "Меньше инженерии промптов. Показывайте, не объясняйте—модель понимает интент по визуальным входам и материалам-референсам."
         ]
       }
     },
     {
-      "id": "d-1qqk1hd",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/",
-      "publishedAt": "2026-09-06T09:08:06.000Z",
-      "category": "web3",
+      "id": "d-b8ddpo",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/navier-stokes-solution",
+      "publishedAt": "2026-09-08T10:00:00.000Z",
+      "category": "ai",
       "en": {
-        "headline": "Why it matters: Complete rewrites rarely solve technical debt—they usually create two broken systems instead of one, draining years of effort with no payoff.",
+        "headline": "Why it matters: AI-assisted formal proof of Navier-Stokes could accelerate solutions to physics' hardest problems by reducing human verification overhead.",
         "tweets": [
-          "Rewrite trap: old system keeps changing (it runs the business), new team has no docs to copy from, launches half-finished, now you maintain both forever.",
-          "The greenfield fantasy: new team moves fast at first, then realizes the old system's behavior is undocumented. Months pass. Pressure mounts. Ship incomplete.",
-          "Better move: add tests to the broken system, do targeted refactors. Sounds boring but actually ships. Rewrites kill more projects than they fix."
+          "OpenAI claims an AI-generated solution to the Navier-Stokes Millennium Prize Problem with formal verification in Lean. If valid, this is the first $1M Clay problem cracked by machine reasoning.",
+          "The writeup includes both informal explanation and machine-checkable proof. Formal verification eliminates handwaving—either the logic holds or Lean catches the gap.",
+          "This signals a shift: cutting-edge math proofs now blend human intuition with AI search and formal verification. The bottleneck isn't finding ideas anymore—it's proving them airtight."
         ]
       },
       "ru": {
-        "headline": "Почему важно: полная переписка кода редко решает проблему техдолга—обычно создаёт два сломанных система вместо одного, отнимая годы без результата.",
+        "headline": "Почему важно: ИИ-решение уравнений Навье-Стокса может ускорить штурм фундаментальных проблем математики, снизив затраты на проверку.",
         "tweets": [
-          "Ловушка переписки: старая система всё ещё меняется (работает бизнес), новой команде нечего копировать, запуск неполный, теперь два системы в боевом.",
-          "Фантазия о зелёном поле: новая команда быстро, потом понимает—поведение старой системы не документировано. Месяцы идут. Давление. Запускают недоделанное.",
-          "Лучше: тесты к старой системе, точечный рефакторинг. Скучно, но работает. Переписки убивают проекты чаще, чем спасают."
+          "OpenAI представила решение задачи тысячелетия про уравнения Навье-Стокса с формальным доказательством на Lean. Если верно, это первая награда Clay, добытая машинным рассуждением.",
+          "Доказательство проверено автоматически—Lean либо подтвердит логику, либо найдёт ошибку. Никакого пространства для неточностей или двусмысленности.",
+          "Эпоха меняется: в передовой математике теперь срастаются человеческая интуиция, поиск ИИ и формальная верификация. Узкое место уже не в идеях, а в их безупречном доказательстве."
         ]
       }
     }
