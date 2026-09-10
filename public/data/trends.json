@@ -1,133 +1,7 @@
 {
-  "generatedAt": "2026-09-09T11:22:04.627Z",
+  "generatedAt": "2026-09-10T11:18:44.873Z",
   "window": "rolling-120d",
   "topics": [
-    {
-      "id": "llm-agents",
-      "label": "LLM Agents",
-      "category": "ai",
-      "stage": "prototype",
-      "trajectory": "rising",
-      "momentum": 0.03,
-      "weeklyCounts": [
-        411,
-        420,
-        426,
-        449,
-        458,
-        466,
-        456,
-        437,
-        437,
-        452
-      ],
-      "signals": [
-        {
-          "title": "[AINews] OpenAI reports Navier-Stokes singularity find in 88 hours using Astra-next, roughly 10,000 agents and 130B tokens (>$40M), a contender for second ever Millennium Prize awarded",
-          "url": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
-          "source": "latent-space",
-          "publishedAt": "2026-09-09T05:04:51.000Z"
-        },
-        {
-          "title": "Research acceleration: The view inside OpenAI",
-          "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
-          "source": "simonw",
-          "publishedAt": "2026-09-06T23:57:40.000Z"
-        },
-        {
-          "title": "OpenClaw Power, MacBook Simplicity: Five Days With Grok Bot",
-          "url": "https://www.latent.space/p/grok-bot",
-          "source": "latent-space",
-          "publishedAt": "2026-09-05T15:01:02.000Z"
-        },
-        {
-          "title": "[AINews] Collusion.wiki: A second undisclosed OpenAI agent swarm incident...",
-          "url": "https://www.latent.space/p/ainews-collusionwiki-a-second-undisclosed",
-          "source": "latent-space",
-          "publishedAt": "2026-09-05T04:32:00.000Z"
-        },
-        {
-          "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
-          "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
-          "source": "latent-space",
-          "publishedAt": "2026-09-04T05:18:11.000Z"
-        }
-      ]
-    },
-    {
-      "id": "fusion",
-      "label": "Fusion Energy",
-      "category": "energy",
-      "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
-      "weeklyCounts": [
-        14,
-        11,
-        14,
-        14,
-        4,
-        7,
-        7,
-        9,
-        14,
-        14
-      ],
-      "signals": [
-        {
-          "title": "🔬“We have foundation models for language, not for physics” — Anima Anandkumar, Bren Professor of Computing",
-          "url": "https://www.latent.space/p/anima",
-          "source": "latent-space",
-          "publishedAt": "2026-08-26T15:15:39.000Z"
-        },
-        {
-          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
-          "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
-          "source": "latent-space",
-          "publishedAt": "2026-08-22T07:36:00.000Z"
-        }
-      ]
-    },
-    {
-      "id": "protein-design",
-      "label": "Protein Design",
-      "category": "biotech",
-      "stage": "research",
-      "trajectory": "stable",
-      "momentum": 0,
-      "weeklyCounts": [
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21
-      ],
-      "signals": [
-        {
-          "title": "Engineering more resilient crops for a warming climate",
-          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
-          "source": "deepmind",
-          "publishedAt": "2025-12-04T16:23:24.000Z"
-        },
-        {
-          "title": "AlphaFold: Five years of impact",
-          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T16:00:12.000Z"
-        },
-        {
-          "title": "Revealing a key protein behind heart disease",
-          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T15:52:51.000Z"
-        }
-      ]
-    },
     {
       "id": "humanoids",
       "label": "Humanoid Robots",
@@ -144,6 +18,7 @@
         7,
         7,
         1,
+        0,
         0,
         0
       ],
@@ -166,59 +41,49 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "signals": []
     },
     {
-      "id": "open-models",
-      "label": "Open Models",
-      "category": "ai",
-      "stage": "early-adopter",
+      "id": "fusion",
+      "label": "Fusion Energy",
+      "category": "energy",
+      "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.06,
+      "momentum": -0.79,
       "weeklyCounts": [
-        375,
-        358,
-        348,
-        414,
-        398,
-        396,
-        394,
-        398,
-        388,
-        365
+        14,
+        11,
+        14,
+        14,
+        4,
+        7,
+        7,
+        9,
+        14,
+        14,
+        3
       ],
       "signals": [
         {
-          "title": "[AINews] OpenAI reports Navier-Stokes singularity find in 88 hours using Astra-next, roughly 10,000 agents and 130B tokens (>$40M), a contender for second ever Millennium Prize awarded",
-          "url": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-d3b",
           "source": "latent-space",
-          "publishedAt": "2026-09-09T05:04:51.000Z"
+          "publishedAt": "2026-09-10T03:33:12.000Z"
         },
         {
-          "title": "[AINews] Collusion.wiki: A second undisclosed OpenAI agent swarm incident...",
-          "url": "https://www.latent.space/p/ainews-collusionwiki-a-second-undisclosed",
+          "title": "🔬“We have foundation models for language, not for physics” — Anima Anandkumar, Bren Professor of Computing",
+          "url": "https://www.latent.space/p/anima",
           "source": "latent-space",
-          "publishedAt": "2026-09-05T04:32:00.000Z"
+          "publishedAt": "2026-08-26T15:15:39.000Z"
         },
         {
-          "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
-          "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
+          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
+          "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
           "source": "latent-space",
-          "publishedAt": "2026-09-04T05:18:11.000Z"
-        },
-        {
-          "title": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
-          "url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
-          "source": "latent-space",
-          "publishedAt": "2026-09-03T04:38:33.000Z"
-        },
-        {
-          "title": "[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens",
-          "url": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
-          "source": "latent-space",
-          "publishedAt": "2026-09-02T07:46:08.000Z"
+          "publishedAt": "2026-08-22T07:36:00.000Z"
         }
       ]
     },
@@ -228,7 +93,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.15,
+      "momentum": -0.85,
       "weeklyCounts": [
         81,
         60,
@@ -239,7 +104,8 @@
         95,
         107,
         100,
-        85
+        85,
+        13
       ],
       "signals": [
         {
@@ -271,6 +137,153 @@
           "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
           "source": "hf",
           "publishedAt": "2026-08-12T16:14:36.000Z"
+        }
+      ]
+    },
+    {
+      "id": "llm-agents",
+      "label": "LLM Agents",
+      "category": "ai",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.86,
+      "weeklyCounts": [
+        411,
+        420,
+        426,
+        449,
+        458,
+        466,
+        456,
+        437,
+        437,
+        452,
+        65
+      ],
+      "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-d3b",
+          "source": "latent-space",
+          "publishedAt": "2026-09-10T03:33:12.000Z"
+        },
+        {
+          "title": "[AINews] OpenAI reports Navier-Stokes singularity find in 88 hours using Astra-next, roughly 10,000 agents and 130B tokens (>$40M), a contender for second ever Millennium Prize awarded",
+          "url": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
+          "source": "latent-space",
+          "publishedAt": "2026-09-09T05:04:51.000Z"
+        },
+        {
+          "title": "Research acceleration: The view inside OpenAI",
+          "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
+          "source": "simonw",
+          "publishedAt": "2026-09-06T23:57:40.000Z"
+        },
+        {
+          "title": "OpenClaw Power, MacBook Simplicity: Five Days With Grok Bot",
+          "url": "https://www.latent.space/p/grok-bot",
+          "source": "latent-space",
+          "publishedAt": "2026-09-05T15:01:02.000Z"
+        },
+        {
+          "title": "[AINews] Collusion.wiki: A second undisclosed OpenAI agent swarm incident...",
+          "url": "https://www.latent.space/p/ainews-collusionwiki-a-second-undisclosed",
+          "source": "latent-space",
+          "publishedAt": "2026-09-05T04:32:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "open-models",
+      "label": "Open Models",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -0.86,
+      "weeklyCounts": [
+        375,
+        358,
+        348,
+        414,
+        398,
+        396,
+        394,
+        398,
+        388,
+        365,
+        52
+      ],
+      "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-d3b",
+          "source": "latent-space",
+          "publishedAt": "2026-09-10T03:33:12.000Z"
+        },
+        {
+          "title": "[AINews] OpenAI reports Navier-Stokes singularity find in 88 hours using Astra-next, roughly 10,000 agents and 130B tokens (>$40M), a contender for second ever Millennium Prize awarded",
+          "url": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
+          "source": "latent-space",
+          "publishedAt": "2026-09-09T05:04:51.000Z"
+        },
+        {
+          "title": "[AINews] Collusion.wiki: A second undisclosed OpenAI agent swarm incident...",
+          "url": "https://www.latent.space/p/ainews-collusionwiki-a-second-undisclosed",
+          "source": "latent-space",
+          "publishedAt": "2026-09-05T04:32:00.000Z"
+        },
+        {
+          "title": "[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time",
+          "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
+          "source": "latent-space",
+          "publishedAt": "2026-09-04T05:18:11.000Z"
+        },
+        {
+          "title": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
+          "url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
+          "source": "latent-space",
+          "publishedAt": "2026-09-03T04:38:33.000Z"
+        }
+      ]
+    },
+    {
+      "id": "protein-design",
+      "label": "Protein Design",
+      "category": "biotech",
+      "stage": "research",
+      "trajectory": "cooling",
+      "momentum": -0.86,
+      "weeklyCounts": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        3
+      ],
+      "signals": [
+        {
+          "title": "Engineering more resilient crops for a warming climate",
+          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
+          "source": "deepmind",
+          "publishedAt": "2025-12-04T16:23:24.000Z"
+        },
+        {
+          "title": "AlphaFold: Five years of impact",
+          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T16:00:12.000Z"
+        },
+        {
+          "title": "Revealing a key protein behind heart disease",
+          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T15:52:51.000Z"
         }
       ]
     }
