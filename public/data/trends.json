@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T11:20:16.042Z",
+  "generatedAt": "2026-09-12T10:45:18.429Z",
   "window": "rolling-120d",
   "topics": [
     {
@@ -52,7 +52,7 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.57,
+      "momentum": -0.36,
       "weeklyCounts": [
         14,
         11,
@@ -64,7 +64,7 @@
         9,
         14,
         14,
-        6
+        9
       ],
       "signals": [
         {
@@ -93,7 +93,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.69,
+      "momentum": -0.54,
       "weeklyCounts": [
         81,
         60,
@@ -105,7 +105,7 @@
         107,
         100,
         85,
-        26
+        39
       ],
       "signals": [
         {
@@ -146,7 +146,7 @@
       "category": "ai",
       "stage": "prototype",
       "trajectory": "cooling",
-      "momentum": -0.71,
+      "momentum": -0.56,
       "weeklyCounts": [
         411,
         420,
@@ -158,9 +158,21 @@
         437,
         437,
         452,
-        132
+        200
       ],
       "signals": [
+        {
+          "title": "[AINews] DeepSeek v4.1-Flash: 763B-P8B-D16B novel causal Encoder–Decoder architecture with vision marks the Return of the Whale",
+          "url": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
+          "source": "latent-space",
+          "publishedAt": "2026-09-12T05:56:05.000Z"
+        },
+        {
+          "title": "Quoting Boris Cherny",
+          "url": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+          "source": "simonw",
+          "publishedAt": "2026-09-11T17:47:11.000Z"
+        },
         {
           "title": "Datasette 1.0a39 and 0.65.4 security releases",
           "url": "https://simonwillison.net/2026/Sep/11/datasette-security/",
@@ -178,59 +190,6 @@
           "url": "https://openai.com/index/introducing-the-agents-api",
           "source": "openai",
           "publishedAt": "2026-09-10T00:00:00.000Z"
-        },
-        {
-          "title": "[AINews] OpenAI reports Navier-Stokes singularity find in 88 hours using Astra-next, roughly 10,000 agents and 130B tokens (>$40M), a contender for second ever Millennium Prize awarded",
-          "url": "https://www.latent.space/p/ainews-openai-reports-navier-stokes",
-          "source": "latent-space",
-          "publishedAt": "2026-09-09T05:04:51.000Z"
-        },
-        {
-          "title": "Research acceleration: The view inside OpenAI",
-          "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
-          "source": "simonw",
-          "publishedAt": "2026-09-06T23:57:40.000Z"
-        }
-      ]
-    },
-    {
-      "id": "protein-design",
-      "label": "Protein Design",
-      "category": "biotech",
-      "stage": "research",
-      "trajectory": "cooling",
-      "momentum": -0.71,
-      "weeklyCounts": [
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        21,
-        6
-      ],
-      "signals": [
-        {
-          "title": "Engineering more resilient crops for a warming climate",
-          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
-          "source": "deepmind",
-          "publishedAt": "2025-12-04T16:23:24.000Z"
-        },
-        {
-          "title": "AlphaFold: Five years of impact",
-          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T16:00:12.000Z"
-        },
-        {
-          "title": "Revealing a key protein behind heart disease",
-          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T15:52:51.000Z"
         }
       ]
     },
@@ -240,7 +199,7 @@
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.72,
+      "momentum": -0.57,
       "weeklyCounts": [
         375,
         358,
@@ -252,9 +211,15 @@
         398,
         388,
         365,
-        104
+        157
       ],
       "signals": [
+        {
+          "title": "[AINews] DeepSeek v4.1-Flash: 763B-P8B-D16B novel causal Encoder–Decoder architecture with vision marks the Return of the Whale",
+          "url": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
+          "source": "latent-space",
+          "publishedAt": "2026-09-12T05:56:05.000Z"
+        },
         {
           "title": "[AINews] not much happened today",
           "url": "https://www.latent.space/p/ainews-not-much-happened-today-d3b",
@@ -278,12 +243,47 @@
           "url": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
           "source": "latent-space",
           "publishedAt": "2026-09-04T05:18:11.000Z"
+        }
+      ]
+    },
+    {
+      "id": "protein-design",
+      "label": "Protein Design",
+      "category": "biotech",
+      "stage": "research",
+      "trajectory": "cooling",
+      "momentum": -0.57,
+      "weeklyCounts": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        9
+      ],
+      "signals": [
+        {
+          "title": "Engineering more resilient crops for a warming climate",
+          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
+          "source": "deepmind",
+          "publishedAt": "2025-12-04T16:23:24.000Z"
         },
         {
-          "title": "[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training",
-          "url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
-          "source": "latent-space",
-          "publishedAt": "2026-09-03T04:38:33.000Z"
+          "title": "AlphaFold: Five years of impact",
+          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T16:00:12.000Z"
+        },
+        {
+          "title": "Revealing a key protein behind heart disease",
+          "url": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
+          "source": "deepmind",
+          "publishedAt": "2025-11-25T15:52:51.000Z"
         }
       ]
     }
