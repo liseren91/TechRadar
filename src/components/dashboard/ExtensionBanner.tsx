@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
-import { Chrome, X, Download } from 'lucide-react'
+import { Puzzle, X, Download } from 'lucide-react'
 import { useLanguage } from '@/lib/i18n'
 import { InstallationGuide } from './InstallationGuide'
 
@@ -25,10 +25,8 @@ export function ExtensionBanner() {
 
   return (
     <>
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#00f0ff]/10 via-[#ff00aa]/10 to-[#a855f7]/10 border border-white/10 backdrop-blur-sm"
         >
@@ -49,7 +47,7 @@ export function ExtensionBanner() {
             {/* Icon */}
             <div className="flex items-center gap-4">
               <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center">
-                <Chrome className="w-6 h-6 text-[#00f0ff]" />
+                <Puzzle className="w-6 h-6 text-[#00f0ff]" />
               </div>
 
               {/* Text */}
@@ -83,7 +81,7 @@ export function ExtensionBanner() {
               </button>
               <button
                 onClick={handleDismiss}
-                className="flex items-center justify-center w-10 h-10 text-white/40 hover:text-white/70 hover:bg-white/5 rounded-lg transition-all"
+                className="flex items-center justify-center w-10 h-10 text-white/60 hover:text-white/70 hover:bg-white/5 rounded-lg transition-all"
                 title={t.extensionDismiss}
               >
                 <X className="w-5 h-5" />

@@ -4,7 +4,7 @@ import {
   X,
   Download,
   FolderOpen,
-  Chrome,
+  Puzzle,
   ToggleRight,
   Upload,
   Loader2,
@@ -90,7 +90,7 @@ export function InstallationGuide({ isOpen, onClose }: InstallationGuideProps) {
       number: 3,
       title: t.step3Title,
       description: t.step3Desc,
-      icon: Chrome,
+      icon: Puzzle,
       color: '#22c55e',
       link: 'chrome://extensions',
     },
@@ -139,7 +139,7 @@ export function InstallationGuide({ isOpen, onClose }: InstallationGuideProps) {
           {/* Close button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 z-10 p-2 text-white/40 hover:text-white/80 hover:bg-white/5 rounded-lg transition-all"
+            className="absolute top-4 right-4 z-10 p-2 text-white/60 hover:text-white/80 hover:bg-white/5 rounded-lg transition-all"
           >
             <X className="w-5 h-5" />
           </button>
@@ -150,7 +150,7 @@ export function InstallationGuide({ isOpen, onClose }: InstallationGuideProps) {
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00f0ff]/20 to-[#ff00aa]/20 border border-white/10 flex items-center justify-center">
-                  <Chrome className="w-5 h-5 text-[#00f0ff]" />
+                  <Puzzle className="w-5 h-5 text-[#00f0ff]" />
                 </div>
                 <h2 className="text-xl sm:text-2xl font-bold text-white">
                   {t.installationGuide}
@@ -289,7 +289,7 @@ export function InstallationGuide({ isOpen, onClose }: InstallationGuideProps) {
                               <code className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-lg text-[#00f0ff] font-mono text-xs">
                                 {step.link}
                               </code>
-                              <span className="text-white/30">
+                              <span className="text-white/55">
                                 ← Copy this URL
                               </span>
                             </motion.div>
@@ -300,7 +300,7 @@ export function InstallationGuide({ isOpen, onClose }: InstallationGuideProps) {
                         <ChevronRight
                           className={`w-5 h-5 flex-shrink-0 transition-all ${
                             isActive
-                              ? 'text-white/40 translate-x-0'
+                              ? 'text-white/60 translate-x-0'
                               : 'text-white/10 -translate-x-1'
                           }`}
                         />
