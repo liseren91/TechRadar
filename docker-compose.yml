@@ -1,0 +1,45 @@
+services:
+  techradar:
+    build:
+      context: .
+      args:
+        # Default server address of the "Download Extension" build (changeable
+        # in the extension's Settings); set for a deployed host.
+        EXTENSION_BACKEND_URL: ${EXTENSION_BACKEND_URL:-http://localhost:3000}
+    image: ghcr.io/lazarevtill/techradar:latest
+    ports:
+      - '3000:3000'
+    environment:
+      # Live data comes from public APIs and the digest from public raw URLs.
+      PORT: 3000
+      # Jev (TypeSafe) assigns feed categories. Without it every live item is
+      # shown as "Unclassified". Read from the host env / .env, never inlined.
+      TYPESAFE_API_KEY: ${TYPESAFE_API_KEY:-}
+      # Optional contact emails: raise the MyMemory translation quota and use
+      # OpenAlex's polite pool. Read from the host env / .env.
+      MYMEMORY_EMAIL: ${MYMEMORY_EMAIL:-}
+      OPENALEX_MAILTO: ${OPENALEX_MAILTO:-}
+      # Optional, server-side only: more GitHub searches per refresh.
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+      # Optional webhooks ({"text": ...}): weekly report and source alerts.
+      REPORT_WEBHOOK_URL: ${REPORT_WEBHOOK_URL:-}
+      REPORT_WATCH: ${REPORT_WATCH:-}
+      WATCH_WEBHOOK_URL: ${WATCH_WEBHOOK_URL:-}
+      ALERT_WEBHOOK_URL: ${ALERT_WEBHOOK_URL:-}
+      # Protects operator actions and data; set it on an internet-facing host.
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      # Optional: keep backups off the data volume (see README, Backups).
+      # BACKUP_DIR: /backups
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-}
+      # Point at a different fork's generated data if needed:
+      # DIGEST_DATA_BASE_URL: https://raw.githubusercontent.com/<owner>/TechRadar/main/public/data
+    volumes:
+      # Jev verdicts and the history store (with its daily backups): survive
+      # rebuilds, so unchanged items are never re-sent and history accumulates.
+      - techradar-cache:/app/.cache
+      # - ./backups:/backups   # with BACKUP_DIR=/backups
+    # One replica only: the history is a single SQLite file.
+    restart: unless-stopped
+
+volumes:
+  techradar-cache:

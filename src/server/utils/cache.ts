@@ -99,32 +99,6 @@ export function invalidateAllCache(): number {
 }
 
 /**
- * Get cache statistics
- */
-export function getCacheStats(): {
-  size: number
-  keys: string[]
-  entries: Array<{ key: string; expiresIn: number; age: number }>
-} {
-  const now = Date.now()
-  const entries: Array<{ key: string; expiresIn: number; age: number }> = []
-
-  for (const [key, entry] of cacheStore.entries()) {
-    entries.push({
-      key,
-      expiresIn: Math.round((entry.expiresAt - now) / 1000),
-      age: Math.round((now - entry.createdAt) / 1000),
-    })
-  }
-
-  return {
-    size: cacheStore.size,
-    keys: Array.from(cacheStore.keys()),
-    entries,
-  }
-}
-
-/**
  * Helper to get or set cache with a factory function
  * Useful for wrapping async operations
  */
@@ -149,12 +123,19 @@ export const CACHE_KEYS = {
   GITHUB: 'tech-feed:github',
   ARXIV: 'tech-feed:arxiv',
   HACKERNEWS: 'tech-feed:hackernews',
-  SEMANTIC_SCHOLAR: 'tech-feed:semantic-scholar',
+  OPENALEX: 'tech-feed:openalex',
   PUBMED: 'tech-feed:pubmed',
   HAL: 'tech-feed:hal',
   CINII: 'tech-feed:cinii',
-  CNKI: 'tech-feed:cnki',
+  OPENALEX_ZH: 'tech-feed:openalex-zh',
+  HF_PAPERS: 'tech-feed:hf-papers',
+  HF_MODELS: 'tech-feed:hf-models',
+  PREPRINTS: 'tech-feed:biorxiv',
+  LOBSTERS: 'tech-feed:lobsters',
+  DEVTO: 'tech-feed:devto',
   MULTILINGUAL: 'tech-feed:multilingual',
+  DIGEST: 'digest:latest',
+  TRENDS: 'digest:trends',
 } as const
 
 // TTL constants

@@ -11,8 +11,12 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as PublicRouteImport } from './routes/_public'
 import { Route as PublicIndexRouteImport } from './routes/_public/index'
-import { Route as PublicTestParsersRouteImport } from './routes/_public/test-parsers'
-import { Route as ApiHelloRouteImport } from './routes/_api/hello'
+import { Route as ApiApiExportRouteImport } from './routes/_api/api.export'
+import { Route as ApiApiExtensionFeedRouteImport } from './routes/_api/api.extension-feed'
+import { Route as ApiApiHealthRouteImport } from './routes/_api/api.health'
+import { Route as ApiApiReportRouteImport } from './routes/_api/api.report'
+import { Route as ApiApiFontsCjkRouteImport } from './routes/_api/api.fonts.cjk'
+import { Route as ApiApiFontsFileSplatRouteImport } from './routes/_api/api.fonts.file.$'
 
 const PublicRoute = PublicRouteImport.update({
   id: '/_public',
@@ -23,50 +27,105 @@ const PublicIndexRoute = PublicIndexRouteImport.update({
   path: '/',
   getParentRoute: () => PublicRoute,
 } as any)
-const PublicTestParsersRoute = PublicTestParsersRouteImport.update({
-  id: '/test-parsers',
-  path: '/test-parsers',
-  getParentRoute: () => PublicRoute,
+const ApiApiExportRoute = ApiApiExportRouteImport.update({
+  id: '/_api/api/export',
+  path: '/api/export',
+  getParentRoute: () => rootRouteImport,
 } as any)
-const ApiHelloRoute = ApiHelloRouteImport.update({
-  id: '/_api/hello',
-  path: '/hello',
+const ApiApiExtensionFeedRoute = ApiApiExtensionFeedRouteImport.update({
+  id: '/_api/api/extension-feed',
+  path: '/api/extension-feed',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiApiHealthRoute = ApiApiHealthRouteImport.update({
+  id: '/_api/api/health',
+  path: '/api/health',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiApiReportRoute = ApiApiReportRouteImport.update({
+  id: '/_api/api/report',
+  path: '/api/report',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiApiFontsCjkRoute = ApiApiFontsCjkRouteImport.update({
+  id: '/_api/api/fonts/cjk',
+  path: '/api/fonts/cjk',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiApiFontsFileSplatRoute = ApiApiFontsFileSplatRouteImport.update({
+  id: '/_api/api/fonts/file/$',
+  path: '/api/fonts/file/$',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
-  '/hello': typeof ApiHelloRoute
-  '/test-parsers': typeof PublicTestParsersRoute
   '/': typeof PublicIndexRoute
+  '/api/export': typeof ApiApiExportRoute
+  '/api/extension-feed': typeof ApiApiExtensionFeedRoute
+  '/api/health': typeof ApiApiHealthRoute
+  '/api/report': typeof ApiApiReportRoute
+  '/api/fonts/cjk': typeof ApiApiFontsCjkRoute
+  '/api/fonts/file/$': typeof ApiApiFontsFileSplatRoute
 }
 export interface FileRoutesByTo {
-  '/hello': typeof ApiHelloRoute
-  '/test-parsers': typeof PublicTestParsersRoute
   '/': typeof PublicIndexRoute
+  '/api/export': typeof ApiApiExportRoute
+  '/api/extension-feed': typeof ApiApiExtensionFeedRoute
+  '/api/health': typeof ApiApiHealthRoute
+  '/api/report': typeof ApiApiReportRoute
+  '/api/fonts/cjk': typeof ApiApiFontsCjkRoute
+  '/api/fonts/file/$': typeof ApiApiFontsFileSplatRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/_public': typeof PublicRouteWithChildren
-  '/_api/hello': typeof ApiHelloRoute
-  '/_public/test-parsers': typeof PublicTestParsersRoute
   '/_public/': typeof PublicIndexRoute
+  '/_api/api/export': typeof ApiApiExportRoute
+  '/_api/api/extension-feed': typeof ApiApiExtensionFeedRoute
+  '/_api/api/health': typeof ApiApiHealthRoute
+  '/_api/api/report': typeof ApiApiReportRoute
+  '/_api/api/fonts/cjk': typeof ApiApiFontsCjkRoute
+  '/_api/api/fonts/file/$': typeof ApiApiFontsFileSplatRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/hello' | '/test-parsers' | '/'
+  fullPaths:
+    | '/'
+    | '/api/export'
+    | '/api/extension-feed'
+    | '/api/health'
+    | '/api/report'
+    | '/api/fonts/cjk'
+    | '/api/fonts/file/$'
   fileRoutesByTo: FileRoutesByTo
-  to: '/hello' | '/test-parsers' | '/'
+  to:
+    | '/'
+    | '/api/export'
+    | '/api/extension-feed'
+    | '/api/health'
+    | '/api/report'
+    | '/api/fonts/cjk'
+    | '/api/fonts/file/$'
   id:
     | '__root__'
     | '/_public'
-    | '/_api/hello'
-    | '/_public/test-parsers'
     | '/_public/'
+    | '/_api/api/export'
+    | '/_api/api/extension-feed'
+    | '/_api/api/health'
+    | '/_api/api/report'
+    | '/_api/api/fonts/cjk'
+    | '/_api/api/fonts/file/$'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   PublicRoute: typeof PublicRouteWithChildren
-  ApiHelloRoute: typeof ApiHelloRoute
+  ApiApiExportRoute: typeof ApiApiExportRoute
+  ApiApiExtensionFeedRoute: typeof ApiApiExtensionFeedRoute
+  ApiApiHealthRoute: typeof ApiApiHealthRoute
+  ApiApiReportRoute: typeof ApiApiReportRoute
+  ApiApiFontsCjkRoute: typeof ApiApiFontsCjkRoute
+  ApiApiFontsFileSplatRoute: typeof ApiApiFontsFileSplatRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -74,7 +133,7 @@ declare module '@tanstack/react-router' {
     '/_public': {
       id: '/_public'
       path: ''
-      fullPath: ''
+      fullPath: '/'
       preLoaderRoute: typeof PublicRouteImport
       parentRoute: typeof rootRouteImport
     }
@@ -85,30 +144,56 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PublicIndexRouteImport
       parentRoute: typeof PublicRoute
     }
-    '/_public/test-parsers': {
-      id: '/_public/test-parsers'
-      path: '/test-parsers'
-      fullPath: '/test-parsers'
-      preLoaderRoute: typeof PublicTestParsersRouteImport
-      parentRoute: typeof PublicRoute
+    '/_api/api/export': {
+      id: '/_api/api/export'
+      path: '/api/export'
+      fullPath: '/api/export'
+      preLoaderRoute: typeof ApiApiExportRouteImport
+      parentRoute: typeof rootRouteImport
     }
-    '/_api/hello': {
-      id: '/_api/hello'
-      path: '/hello'
-      fullPath: '/hello'
-      preLoaderRoute: typeof ApiHelloRouteImport
+    '/_api/api/extension-feed': {
+      id: '/_api/api/extension-feed'
+      path: '/api/extension-feed'
+      fullPath: '/api/extension-feed'
+      preLoaderRoute: typeof ApiApiExtensionFeedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_api/api/health': {
+      id: '/_api/api/health'
+      path: '/api/health'
+      fullPath: '/api/health'
+      preLoaderRoute: typeof ApiApiHealthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_api/api/report': {
+      id: '/_api/api/report'
+      path: '/api/report'
+      fullPath: '/api/report'
+      preLoaderRoute: typeof ApiApiReportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_api/api/fonts/cjk': {
+      id: '/_api/api/fonts/cjk'
+      path: '/api/fonts/cjk'
+      fullPath: '/api/fonts/cjk'
+      preLoaderRoute: typeof ApiApiFontsCjkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_api/api/fonts/file/$': {
+      id: '/_api/api/fonts/file/$'
+      path: '/api/fonts/file/$'
+      fullPath: '/api/fonts/file/$'
+      preLoaderRoute: typeof ApiApiFontsFileSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
 }
 
 interface PublicRouteChildren {
-  PublicTestParsersRoute: typeof PublicTestParsersRoute
   PublicIndexRoute: typeof PublicIndexRoute
 }
 
 const PublicRouteChildren: PublicRouteChildren = {
-  PublicTestParsersRoute: PublicTestParsersRoute,
   PublicIndexRoute: PublicIndexRoute,
 }
 
@@ -117,7 +202,12 @@ const PublicRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   PublicRoute: PublicRouteWithChildren,
-  ApiHelloRoute: ApiHelloRoute,
+  ApiApiExportRoute: ApiApiExportRoute,
+  ApiApiExtensionFeedRoute: ApiApiExtensionFeedRoute,
+  ApiApiHealthRoute: ApiApiHealthRoute,
+  ApiApiReportRoute: ApiApiReportRoute,
+  ApiApiFontsCjkRoute: ApiApiFontsCjkRoute,
+  ApiApiFontsFileSplatRoute: ApiApiFontsFileSplatRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

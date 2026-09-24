@@ -1,115 +1,136 @@
+import { TypeSafeClient, noul } from '@typesafe-ai/sdk'
+import { TOPIC_LABELS, topicQuestion } from '../../src/lib/trend-topics'
+import { contentHash } from '../../src/server/utils/verdict-store'
 import type { SignalSnapshot, Signal } from './momentum'
 
-export const TOPIC_LABELS: Record<
-  string,
-  { label: string; category: string; stage: string; keywords: string[] }
-> = {
-  'llm-agents': {
-    label: 'LLM Agents',
-    category: 'ai',
-    stage: 'prototype',
-    keywords: [
-      'llm agent',
-      'agent framework',
-      'agentic',
-      'ai agent',
-      'tool use',
-    ],
-  },
-  rag: {
-    label: 'Retrieval-Augmented Generation',
-    category: 'ai',
-    stage: 'early-adopter',
-    keywords: ['rag', 'retrieval augmented', 'vector database', 'embeddings'],
-  },
-  'open-models': {
-    label: 'Open Models',
-    category: 'ai',
-    stage: 'early-adopter',
-    keywords: [
-      'open model',
-      'open-weight',
-      'llama',
-      'mistral',
-      'qwen',
-      'gemma',
-    ],
-  },
-  'post-quantum': {
-    label: 'Post-Quantum Crypto',
-    category: 'cybersecurity',
-    stage: 'research',
-    keywords: ['post-quantum', 'pqc', 'lattice cryptography'],
-  },
-  'quantum-hardware': {
-    label: 'Quantum Hardware',
-    category: 'quantum',
-    stage: 'research',
-    keywords: ['qubit', 'quantum processor', 'quantum computer'],
-  },
-  humanoids: {
-    label: 'Humanoid Robots',
-    category: 'robotics',
-    stage: 'prototype',
-    keywords: ['humanoid', 'optimus', 'boston dynamics', 'figure robot'],
-  },
-  fusion: {
-    label: 'Fusion Energy',
-    category: 'energy',
-    stage: 'research',
-    keywords: ['fusion', 'tokamak', 'plasma confinement'],
-  },
-  'protein-design': {
-    label: 'Protein Design',
-    category: 'biotech',
-    stage: 'research',
-    keywords: ['alphafold', 'protein design', 'protein folding'],
-  },
+// Topic definitions live in src/lib/trend-topics.ts, shared with the live
+// feed's cross-source convergence so both tag against the same list.
+export { TOPIC_LABELS } from '../../src/lib/trend-topics'
+
+/** Noul probability at or above which a post counts toward a topic. */
+export const TOPIC_THRESHOLD = 0.5
+const CONTENT_CHAR_LIMIT = 6000
+
+export interface TopicPost {
+  title: string
+  contentText?: string
 }
 
-function escapeRegExp(s: string): string {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-}
-
-export function tagTopics(text: string): string[] {
-  const t = text || ''
-  const ids: string[] = []
-  for (const [id, def] of Object.entries(TOPIC_LABELS)) {
-    if (
-      def.keywords.some((kw) =>
-        new RegExp('\\b' + escapeRegExp(kw) + '\\b', 'i').test(t),
-      )
-    )
-      ids.push(id)
+export function buildTopicRequest(post: TopicPost) {
+  return {
+    state: {
+      title: post.title,
+      content: (post.contentText ?? '').slice(0, CONTENT_CHAR_LIMIT),
+    },
+    questions: Object.fromEntries(
+      Object.entries(TOPIC_LABELS).map(([id, def]) => [
+        id,
+        noul(topicQuestion(def, 'this post (`title` and `content`)')),
+      ]),
+    ),
   }
-  return ids
 }
 
-export function snapshotFromTexts(
-  texts: string[],
+/** Topic probabilities for one post, keyed by topic id. */
+export type AskTopics = (post: TopicPost) => Promise<Record<string, number>>
+
+export function createTopicAsker(
+  env: NodeJS.ProcessEnv = process.env,
+): AskTopics {
+  const apiKey = env.TYPESAFE_API_KEY
+  if (!apiKey) {
+    throw new Error(
+      'TYPESAFE_API_KEY is required for topic tagging (set as a GitHub Actions secret)',
+    )
+  }
+  const client = new TypeSafeClient({ apiKey })
+  return async (post) => {
+    const { answers } = await client.systemOne(buildTopicRequest(post))
+    return Object.fromEntries(
+      Object.entries(answers).map(([id, a]) => [id, a.noul]),
+    )
+  }
+}
+
+/**
+ * Topic ids per post, in input order. Throws if any request fails: trends
+ * built from a partially tagged week would read as a real momentum drop.
+ */
+/** Minimal store interface (src/server/utils/verdict-store.ts). */
+export interface TagStore {
+  get<T>(key: string, hash: string): T | undefined
+  set(key: string, hash: string, value: unknown): void
+}
+
+/**
+ * Topic ids per post, in input order. A post seen on a previous run is not
+ * sent again: the 7-day window used to re-tag every post on seven daily runs.
+ * The cache key is the post id; the hash covers the request (title, content,
+ * topic questions) and the threshold, so edits or topic changes re-tag.
+ * Throws if any request fails: trends built from a partially tagged week
+ * would read as a real momentum drop.
+ */
+export async function tagPosts(
+  posts: Array<TopicPost & { id?: string }>,
+  ask: AskTopics,
+  store?: TagStore,
+): Promise<{ tags: string[][]; sent: number }> {
+  let sent = 0
+  const tags = await Promise.all(
+    posts.map(async (post) => {
+      const key = post.id ? `topics:${post.id}` : null
+      const hash = contentHash([buildTopicRequest(post), TOPIC_THRESHOLD])
+      const known = key && store ? store.get<string[]>(key, hash) : undefined
+      if (known) return known
+      sent++
+      const byTopic = await ask(post)
+      const ids = Object.keys(TOPIC_LABELS).filter(
+        (id) => (byTopic[id] ?? 0) >= TOPIC_THRESHOLD,
+      )
+      if (key && store) store.set(key, hash, ids)
+      return ids
+    }),
+  )
+  return { tags, sent }
+}
+
+export function snapshotFromTags(
+  tags: string[][],
   date: string,
 ): SignalSnapshot {
   const topics: Record<string, number> = {}
-  for (const text of texts) {
-    for (const id of tagTopics(text)) topics[id] = (topics[id] ?? 0) + 1
+  for (const ids of tags) {
+    for (const id of ids) topics[id] = (topics[id] ?? 0) + 1
   }
   return { date, topics }
 }
 
 export function collectTopicSignals(
-  posts: Array<{ title: string; url: string; source: string; publishedAt: string; contentText?: string }>,
+  posts: Array<{
+    title: string
+    url: string
+    source: string
+    publishedAt: string
+  }>,
+  tags: string[][],
   maxPerTopic = 5,
 ): Record<string, Signal[]> {
   const byTopic: Record<string, Signal[]> = {}
-  for (const p of posts) {
-    const ids = tagTopics(`${p.title} ${p.contentText ?? ''}`)
-    for (const id of ids) {
+  for (const [i, p] of posts.entries()) {
+    for (const id of tags[i] ?? []) {
       if (!byTopic[id]) byTopic[id] = []
-      byTopic[id].push({ title: p.title, url: p.url, source: p.source, publishedAt: p.publishedAt })
+      byTopic[id].push({
+        title: p.title,
+        url: p.url,
+        source: p.source,
+        publishedAt: p.publishedAt,
+      })
     }
   }
   for (const id of Object.keys(byTopic)) {
-    byTopic[id].sort((a, b) => +new Date(b.publishedAt) - +new Date(a.publishedAt))
+    byTopic[id].sort(
+      (a, b) => +new Date(b.publishedAt) - +new Date(a.publishedAt),
+    )
     byTopic[id] = byTopic[id].slice(0, maxPerTopic)
   }
   return byTopic

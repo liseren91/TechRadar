@@ -7,23 +7,172 @@ export interface Translations {
   appTitle: string
   appSubtitle: string
   signals: string
-  anomalies: string
-  live: string
-  syncing: string
-
-  // AI Insight
-  aiInsight: string
+  updated: string
+  updating: string
   howItWorks: string
-  analyzingData: string
-  gatheringSignals: string
 
-  // Extension Banner
+  // Summary
+  totalSignals: string
+  sources: string
+  languages: string
+  highlighted: string
+  judgedByJev: string
+  noJevKey: string
+  categoryDistribution: string
+  maturity: string
+  refreshData: string
+
+  // Highlight reasons
+  reasonFastRising: string
+  reasonFastRisingDesc: string
+  reasonConverging: string
+  reasonConvergingDesc: string
+  reasonNovel: string
+  reasonNovelDesc: string
+  reasonUnderRadar: string
+  reasonUnderRadarDesc: string
+  onSources: string
+  reasonCrossSource: string
+  reasonCrossSourceDesc: string
+  sameWorkOn: string
+
+  // Highlights panel
+  highlightsTitle: string
+  highlightsHint: string
+  highlightsEmpty: string
+
+  // Topics panel
+  topicsTitle: string
+  topicsHint: string
+  topicsEmpty: string
+  discoveredTitle: string
+  healthCol: string
+  adminTokenNeeded: string
+  adminToken: string
+  rebuildThrottled: string
+  rebuildHint: string
+  healthUnavailable: string
+  healthAllOk: string
+  feedAge: string
+  storageSize: string
+  healthDetailNeedsToken: string
+  healthOk: string
+  healthDegraded: string
+  healthDown: string
+  usageToday: string
+  lastBackup: string
+  weekTitle: string
+  weekMakers: string
+  topicHistoryLabel: string
+  topicOrigin: string
+  trackRecordNotJudged: string
+  velocityMeasured: string
+  velocityEstimated: string
+  firstSeenOn: string
+  focusedOn: string
+  clearFilter: string
+  watchChip: string
+  weekLoading: string
+  weekNothing: string
+  weekNewItems: string
+  watchLabel: string
+  watchPlaceholder: string
+  watchSave: string
+  weekUnavailable: string
+  weekRequestFailed: string
+  watchTitle: string
+  weekWas: string
+  weekTopics: string
+  weekThemesAdded: string
+  weekThemesRetired: string
+  weekRisers: string
+  weekNoRisers: string
+  weekCrossSource: string
+  trackRecord: string
+  trackRecordHint: string
+  trackRecordPending: string
+  trackDiscovered: string
+  alsoOn: string
+  discoveredHint: string
+  discoveredTag: string
+  discoveredSince: string
+  items: string
+
+  // Radar
+  liveRadar: string
+  radarAxisX: string
+  radarAxisY: string
+  radarLegendSize: string
+  radarUnscored: string
+  all: string
+  loadingLiveData: string
+  failedToLoadRadar: string
+  noDataForCategory: string
+  clickForDetails: string
+  points: string
+
+  // Signal detail
+  signalScore: string
+  reach: string
+  velocity: string
+  novelty: string
+  substance: string
+  recency: string
+  notMeasured: string
+  noJudgment: string
+  stars: string
+  hnPoints: string
+  citations: string
+  upvotes: string
+  likes: string
+  reactions: string
+  whyItMatters: string
+  viewOn: string
+  daysAgo: string
+  today: string
+  topics: string
+
+  // Feed
+  liveFeed: string
+  highlightedOnly: string
+  source: string
+  category: string
+  stage: string
+  language: string
+  allSources: string
+  allCategories: string
+  allStages: string
+  allLanguages: string
+  sortBy: string
+  sortRecent: string
+  sortSignal: string
+  sortEngagement: string
+  failedToFetchLiveData: string
+  pleaseTryAgainLater: string
+  retry: string
+  noSignalsMatchFilters: string
+  resetFilters: string
+  viewOriginal: string
+  showTranslation: string
+  autoTranslated: string
+  translateToRussian: string
+  translating: string
+  originalLanguage: string
+
+  // Digest
+  digestTitle: string
+  digestSubtitle: string
+  digestReadOriginal: string
+  digestUpdated: string
+  digestStale: string
+  digestEmpty: string
+  digestError: string
+
+  // Extension
   extensionTitle: string
   extensionDescription: string
   extensionCta: string
   extensionDismiss: string
-
-  // Extension Installation Guide
   installationGuide: string
   installationGuideSubtitle: string
   step1Title: string
@@ -37,33 +186,19 @@ export interface Translations {
   step5Title: string
   step5Desc: string
   downloadExtension: string
+  downloading: string
+  downloaded: string
   close: string
   proTip: string
   proTipText: string
 
-  // Anomaly Trend History
-  anomalyTrendHistory: string
-  trackingUnusualActivity: string
-  totalAnomalies: string
-  avgPerDay: string
-  peakDay: string
-  trend: string
-  rising: string
-  falling: string
-  stable: string
-  byCategory: string
-  noDataForPeriod: string
-  loadingData: string
-  currentAnomalies: string
-  historyTab: string
-
-  // Parser Control Panel
+  // Parser control
   parserControl: string
+  parserMetrics: string
   runParser: string
   parserRunning: string
   lastRun: string
   itemsCollected: string
-  itemsAnalyzed: string
   parserStatus: string
   idle: string
   running: string
@@ -73,84 +208,35 @@ export interface Translations {
   justNow: string
   minutesAgo: string
   hoursAgo: string
-  sourcesProcessed: string
-  parserMetrics: string
-  forceRefresh: string
-  clearCache: string
-  cacheCleared: string
+  sourceDetails: string
+  judged: string
 
-  // Stats Panel
-  totalSignals: string
-  liveSources: string
-  avgImpact: string
-  anomaliesLabel: string
-  topRisingThisWeek: string
-  categoryDistribution: string
-  noAnomaliesDetected: string
-  loadingCategories: string
-  maturity: string
-  refreshData: string
+  // Info modal
+  infoTitle: string
+  infoSubtitle: string
+  infoSourcesTitle: string
+  infoSourcesDesc: string
+  infoCategoriesTitle: string
+  infoCategoriesDesc: string
+  infoScoringTitle: string
+  infoScoringDesc: string
+  infoReachDesc: string
+  infoVelocityDesc: string
+  infoRecencyDesc: string
+  infoNoveltyDesc: string
+  infoSubstanceDesc: string
+  infoConvergenceDesc: string
+  infoHighlightsTitle: string
+  infoHighlightsDesc: string
+  infoMaturityTitle: string
+  infoMaturityDesc: string
+  infoDisclaimer: string
 
-  // Tech Radar
-  liveRadar: string
-  radarAxisX: string
-  radarAxisY: string
-  radarAxisZ: string
-  all: string
-  loadingLiveData: string
-  failedToLoadRadar: string
-  noDataForCategory: string
-  clickForDetails: string
-  anomaly: string
-  impact: string
-  hype: string
-  ago: string
-  daysAgo: string
-  whyItMatters: string
-  viewOn: string
-
-  // Tech Feed
-  liveFeed: string
-  updated: string
-  anomaliesOnly: string
-  source: string
-  category: string
-  stage: string
-  allSources: string
-  allCategories: string
-  allStages: string
-  recent: string
-  liveDataFrom: string
-  failedToFetchLiveData: string
-  pleaseTryAgainLater: string
-  retry: string
-  noSignalsMatchFilters: string
-  resetFilters: string
-  today: string
-  strategicInsight: string
-
-  // Evolution Chains
-  evolutionChains: string
-  active: string
-  evolutionChainsWillAppear: string
-  trajectoryAnalysis: string
-  strongMomentumDetected: string
-  expectedToAdvance: string
-  stableActivity: string
-  monitoringForBreakthrough: string
-  trackingSignals: string
-  fromResearchToAdoption: string
-  evolution: string
-
-  // Maturity Stages
+  // Maturity stages
   research: string
   prototype: string
   earlyAdopter: string
   massMarket: string
-  researchDesc: string
-  prototypeDesc: string
-  earlyAdopterDesc: string
-  massMarketDesc: string
 
   // Categories
   aiMl: string
@@ -161,26 +247,24 @@ export interface Translations {
   quantum: string
   space: string
   security: string
+  unclassified: string
 
   // Sources
   github: string
   arxiv: string
-  techcrunch: string
   hackerNews: string
-  semanticScholar: string
+  openAlex: string
   pubmed: string
   hal: string
-  cnki: string
+  openAlexZh: string
+  hfPapers: string
+  hfModels: string
+  preprints: string
+  lobsters: string
+  devto: string
   cinii: string
 
-  // Languages
-  language: string
-  allLanguages: string
-  originalLanguage: string
-  translated: string
-  translatedFrom: string
-  viewOriginal: string
-  autoTranslated: string
+  // Language names
   english: string
   chinese: string
   japanese: string
@@ -191,99 +275,222 @@ export interface Translations {
   korean: string
   portuguese: string
 
-  // Citations
-  citations: string
-  citationCount: string
-  highCitation: string
-  sortByCitations: string
-
-  // Multilingual
-  multilingualSources: string
-  globalResearch: string
-  academicPapers: string
-  highImpactResearch: string
-
   // Footer
   footerVersion: string
   footerSubtitle: string
-  realTimeDataFrom: string
 
   // Misc
   loading: string
   error: string
-  months: string
 }
 
 export const translations: Record<Language, Translations> = {
   en: {
-    // Header
     appTitle: 'Tech Evolution Radar',
-    appSubtitle: 'Global Research Feed • 9 Sources • Multilingual',
+    appSubtitle: 'Research and engineering signals from thirteen sources',
     signals: 'signals',
-    anomalies: 'anomalies',
-    live: 'LIVE',
-    syncing: 'SYNCING',
+    updated: 'Updated',
+    updating: 'Updating',
+    howItWorks: 'How it works',
 
-    // AI Insight
-    aiInsight: 'AI Insight',
-    howItWorks: 'How It Works',
-    analyzingData: 'Analyzing Data',
-    gatheringSignals: 'Gathering Signals',
+    totalSignals: 'Signals',
+    sources: 'Sources',
+    languages: 'Languages',
+    highlighted: 'Highlighted',
+    judgedByJev: 'Judged by Jev',
+    noJevKey:
+      'Ranked from engagement only: TYPESAFE_API_KEY is not set, so novelty, substance and topic convergence are unavailable.',
+    categoryDistribution: 'By category',
+    maturity: 'Maturity',
+    refreshData: 'Refresh data',
 
-    // Extension Banner
-    extensionTitle: 'Tech Evolution Radar Extension',
+    reasonFastRising: 'Fast-rising',
+    reasonFastRisingDesc:
+      'Gaining attention much faster than its peers on the same source',
+    reasonConverging: 'Converging',
+    reasonConvergingDesc:
+      'The strongest item of a tracked topic that appears on four or more sources in this fetch',
+    reasonNovel: 'New capability',
+    reasonNovelDesc:
+      'Jev judges it likely to describe a capability not available before',
+    reasonUnderRadar: 'Under the radar',
+    reasonUnderRadarDesc:
+      'Judged a new capability while still drawing little attention',
+    onSources: 'on {n} sources',
+    reasonCrossSource: 'Cross-source',
+    reasonCrossSourceDesc:
+      'The same work (by arXiv id, DOI, repository or link) appears on several sources, e.g. a paper, its code and a discussion',
+    sameWorkOn: 'same work on {n} sources',
+
+    highlightsTitle: 'Highlights',
+    highlightsHint: 'Only items with a stated reason',
+    highlightsEmpty: 'Nothing stands out in this fetch',
+
+    topicsTitle: 'Topics across sources',
+    topicsHint: 'Tracked topics and where they show up now',
+    topicsEmpty: 'No tracked topic appears on more than one source',
+    discoveredTitle: 'Discovered by the radar',
+    healthCol: 'Health',
+    adminTokenNeeded: 'This server requires the operator token (ADMIN_TOKEN).',
+    adminToken: 'Operator token',
+    rebuildThrottled:
+      'A rebuild just ran; the next one is possible in {s} s. The feed also rebuilds on its own every few minutes.',
+    rebuildHint: 'Clear the source caches and rebuild the feed now',
+    healthUnavailable:
+      'Source health is unavailable (the history store did not answer).',
+    healthAllOk: 'All sources report',
+    feedAge: 'feed built {m} min ago',
+    storageSize: 'history {mb} MB',
+    healthDetailNeedsToken:
+      'Usage and storage are shown with the operator token.',
+    healthOk: 'ok',
+    healthDegraded: 'thin',
+    healthDown: 'down',
+    usageToday:
+      'Jev today: {sent} requests sent, {cached} answered from cache · {failed} failed calls',
+    lastBackup: 'last backup',
+    weekTitle: 'This week',
+    weekMakers:
+      'Most active makers (labs, companies, people publishing new work on several fronts)',
+    topicHistoryLabel: '{total} new works in 30 days, {week} in the last 7',
+    topicOrigin: 'first seen on {source}, {date}',
+    trackRecordNotJudged:
+      '{n} could not be judged (metric unreadable or no comparison group)',
+    velocityMeasured: '+{n}/day measured',
+    velocityEstimated: '≈{n}/day on average',
+    firstSeenOn: 'first seen {date}',
+    focusedOn: 'Showing only',
+    clearFilter: 'Remove filter',
+    watchChip: 'watch',
+    weekLoading: 'Loading the weekly report…',
+    weekNothing:
+      'Nothing to compare yet: the history grows with every day the server runs.',
+    weekNewItems: '{n} new items',
+    watchLabel: 'Watch',
+    watchPlaceholder:
+      'terms to follow, comma-separated (e.g. Mamba, GRPO, perovskite)',
+    watchSave: 'Save',
+    weekUnavailable:
+      'The weekly report needs the history store, which is unavailable on this server.',
+    weekRequestFailed: 'Could not load the weekly report. It retries shortly.',
+    watchTitle: 'Your watch terms (items this week)',
+    weekWas: 'last week {n}',
+    weekTopics: 'Topics, items this week',
+    weekThemesAdded: 'New themes',
+    weekThemesRetired: 'Gone quiet',
+    weekRisers: 'Fastest growing',
+    weekNoRisers: 'Growth appears after an item is seen on two different days.',
+    weekCrossSource: 'Same work on several sources',
+    trackRecord: 'Track record',
+    trackRecordHint:
+      'How past highlights turned out after {days} days: the share that grew more than the median of a random sample from the same source. A random pick scores about 50%. For discovered themes: the share that kept appearing.',
+    trackRecordPending: 'measuring {n} highlights · first results on {date}',
+    trackDiscovered: 'Discovered themes',
+    alsoOn: 'also on',
+    discoveredHint:
+      'Terms that suddenly appeared across several sources and that Jev confirmed name a technology. Added automatically (at most 3 a day, 20 in total) and retired after two quiet weeks.',
+    discoveredTag: 'discovered',
+    discoveredSince: 'since {date}',
+    items: 'items',
+
+    liveRadar: 'Radar',
+    radarAxisX: 'days ago',
+    radarAxisY: 'signal',
+    radarLegendSize: 'Dot size: reach within its source',
+    radarUnscored: 'unscored items are not plotted',
+    all: 'All',
+    loadingLiveData: 'Loading live data',
+    failedToLoadRadar: 'Failed to load radar data',
+    noDataForCategory: 'No scored items in this category',
+    clickForDetails: 'Enter or click for details',
+    points: 'points',
+
+    signalScore: 'Signal',
+    reach: 'Reach',
+    velocity: 'Velocity',
+    novelty: 'Novelty',
+    substance: 'Substance',
+    recency: 'Recency',
+    notMeasured: 'not measured',
+    noJudgment: 'no judgment',
+    stars: 'stars',
+    hnPoints: 'points',
+    citations: 'citations',
+    upvotes: 'upvotes',
+    likes: 'likes',
+    reactions: 'reactions',
+    whyItMatters: 'Context',
+    viewOn: 'Open on',
+    daysAgo: 'd ago',
+    today: 'Today',
+    topics: 'Topics',
+
+    liveFeed: 'Feed',
+    highlightedOnly: 'Highlighted only',
+    source: 'Source',
+    category: 'Category',
+    stage: 'Stage',
+    language: 'Language',
+    allSources: 'All sources',
+    allCategories: 'All categories',
+    allStages: 'All stages',
+    allLanguages: 'All languages',
+    sortBy: 'Sort',
+    sortRecent: 'Recent',
+    sortSignal: 'Signal',
+    sortEngagement: 'Reach',
+    failedToFetchLiveData: 'Failed to fetch live data',
+    pleaseTryAgainLater: 'Please try again later',
+    retry: 'Retry',
+    noSignalsMatchFilters: 'No signals match these filters',
+    resetFilters: 'Reset filters',
+    viewOriginal: 'Original',
+    showTranslation: 'Translation',
+    autoTranslated: 'Machine-translated',
+    translateToRussian: 'Translate to Russian',
+    translating: 'Translating',
+    originalLanguage: 'Original language',
+
+    digestTitle: 'AI blog digest',
+    digestSubtitle: 'Daily summaries of engineering blogs, written by Claude',
+    digestReadOriginal: 'Read original',
+    digestUpdated: 'Updated',
+    digestStale: 'Digest may be out of date',
+    digestEmpty: 'No digest entries yet',
+    digestError: 'Could not load the digest',
+
+    extensionTitle: 'New-tab extension',
     extensionDescription:
-      'Get real-time updates and notifications for the latest tech trends.',
-    extensionCta: 'Install Extension',
+      'The same radar as a Chrome new-tab page, fetched directly from GitHub, arXiv and Hacker News.',
+    extensionCta: 'Install',
     extensionDismiss: 'Dismiss',
-
-    // Extension Installation Guide
-    installationGuide: 'Installation Guide',
+    installationGuide: 'Install the extension',
     installationGuideSubtitle:
-      'Follow these steps to install the Tech Evolution Radar Chrome extension.',
-    step1Title: 'Download the Extension',
-    step1Desc: 'Click the download button to get the extension zip file.',
-    step2Title: 'Extract the Zip File',
-    step2Desc:
-      'Unzip the downloaded file to a folder on your computer. Remember this location.',
-    step3Title: 'Open Chrome Extensions',
-    step3Desc:
-      'Go to chrome://extensions in your browser or Menu → More Tools → Extensions.',
-    step4Title: 'Enable Developer Mode',
-    step4Desc:
-      'Toggle on "Developer mode" in the top-right corner of the extensions page.',
-    step5Title: 'Load the Extension',
+      'Five steps; the extension is loaded unpacked from a folder.',
+    step1Title: 'Download the extension',
+    step1Desc: 'Get the zip file with the packaged extension.',
+    step2Title: 'Extract the zip file',
+    step2Desc: 'Unzip it to a folder you will keep.',
+    step3Title: 'Open Chrome extensions',
+    step3Desc: 'Go to chrome://extensions, or Menu, More tools, Extensions.',
+    step4Title: 'Enable developer mode',
+    step4Desc: 'Toggle "Developer mode" in the top-right corner.',
+    step5Title: 'Load the extension',
     step5Desc:
       'Click "Load unpacked" and select the extracted folder (tech-radar-extension).',
-    downloadExtension: 'Download Extension',
+    downloadExtension: 'Download extension',
+    downloading: 'Downloading',
+    downloaded: 'Downloaded',
     close: 'Close',
-    proTip: 'Pro Tip',
-    proTipText:
-      'After installation, open a new tab to see the Tech Evolution Radar dashboard!',
+    proTip: 'Tip',
+    proTipText: 'After installing, open a new tab to see the radar.',
 
-    // Anomaly Trend History
-    anomalyTrendHistory: 'Anomaly Trend History',
-    trackingUnusualActivity: 'Tracking Unusual Activity',
-    totalAnomalies: 'Total Anomalies',
-    avgPerDay: 'Avg Per Day',
-    peakDay: 'Peak Day',
-    trend: 'Trend',
-    rising: 'Rising',
-    falling: 'Falling',
-    stable: 'Stable',
-    byCategory: 'By Category',
-    noDataForPeriod: 'No data for this period',
-    loadingData: 'Loading data...',
-    currentAnomalies: 'Current Anomalies',
-    historyTab: 'History',
-
-    // Parser Control Panel
-    parserControl: 'Parser Control',
-    runParser: 'Run Parser',
-    parserRunning: 'Parsing...',
-    lastRun: 'Last Run',
+    parserControl: 'Parser control',
+    parserMetrics: 'Operator tooling: fetch state per source',
+    runParser: 'Run parser',
+    parserRunning: 'Running',
+    lastRun: 'Last run',
     itemsCollected: 'Collected',
-    itemsAnalyzed: 'Analyzed',
     parserStatus: 'Status',
     idle: 'Idle',
     running: 'Running',
@@ -293,87 +500,46 @@ export const translations: Record<Language, Translations> = {
     justNow: 'Just now',
     minutesAgo: 'min ago',
     hoursAgo: 'h ago',
-    sourcesProcessed: 'Sources',
-    parserMetrics: 'Parser Metrics',
-    forceRefresh: 'Force Refresh',
-    clearCache: 'Clear Cache',
-    cacheCleared: 'Cache cleared',
+    sourceDetails: 'Per source',
+    judged: 'judged',
 
-    // Stats Panel
-    totalSignals: 'Total Signals',
-    liveSources: 'Live Sources',
-    avgImpact: 'Avg Impact',
-    anomaliesLabel: 'Anomalies',
-    topRisingThisWeek: 'Top Rising This Week',
-    categoryDistribution: 'Category Distribution',
-    noAnomaliesDetected: 'No anomalies detected yet',
-    loadingCategories: 'Loading categories...',
-    maturity: 'MATURITY',
-    refreshData: 'Refresh data',
+    infoTitle: 'How the radar works',
+    infoSubtitle: 'What is measured, what is judged, and what is highlighted',
+    infoSourcesTitle: 'Sources',
+    infoSourcesDesc:
+      'GitHub repositories created this week, new arXiv submissions across ten fields, the Hacker News and Lobsters front pages, the most-reacted DEV (dev.to) articles of the day, Hugging Face Daily Papers and trending models, bioRxiv and medRxiv preprints, the most-cited recent journal and conference work on OpenAlex, PubMed, HAL (France), CiNii (Japan) and Chinese-language journals on OpenAlex. All fetched by the server (GitHub optionally with a token), cached for five minutes, and served stale-while-revalidate.',
+    infoCategoriesTitle: 'Categories',
+    infoCategoriesDesc:
+      'Each item is assigned to one of eight areas by TypeSafe’s Jev model, one request per item. Items outside every area are dropped. Without a key, items show as unclassified; nothing is guessed from keywords.',
+    infoScoringTitle: 'Signal score',
+    infoScoringDesc:
+      'Sources report attention on incomparable scales, and several report none. Every item is placed among its own source’s peers in the current fetch; absolute thresholds are not used. The score is a weighted mean of the components below that are actually available for the item. Missing components are left out, never guessed; an item with nothing measurable has no score.',
+    infoReachDesc:
+      'Percentile of stars, points, upvotes, likes, reactions or citations within the source.',
+    infoVelocityDesc:
+      'Percentile of engagement gained per day within the source. Measured from the previous day’s observation when the radar has one (shown as “+N/day measured”); otherwise averaged over the item’s age (“≈N/day on average”).',
+    infoRecencyDesc:
+      'Age decay with a half-life per source: one day for Hacker News, a week for GitHub, weeks for papers.',
+    infoNoveltyDesc:
+      'Jev rates the item on a four-level rubric from commentary to step change; the probability of "new capability" or above is used.',
+    infoSubstanceDesc:
+      'Jev’s probability that the item is a concrete technical artifact rather than news or opinion.',
+    infoConvergenceDesc:
+      'Jev tags each item with tracked topics, and themes the radar discovered are matched by name; convergence counts the distinct sources carrying the same topic in this fetch, or the same work (by arXiv id, DOI, repository or link), whichever is higher.',
+    infoHighlightsTitle: 'Highlights',
+    infoHighlightsDesc:
+      'An item is emphasized only when an explicit rule fires, and the reason is shown with it: fast-rising (a robust outlier in velocity among its source peers), cross-source (the strongest item of a work that appears on two or more sources), converging (the strongest item of a topic that is on four or more sources), new capability (novelty probability at or above 0.5), or under the radar (the same, while reach is still low).',
+    infoMaturityTitle: 'Maturity',
+    infoMaturityDesc:
+      'Stage comes from counts in code: stars or points for engineering sources, citations for papers.',
+    infoDisclaimer:
+      'Rankings are algorithmic and should inform, not replace, your own reading.',
 
-    // Tech Radar
-    liveRadar: 'Live Radar',
-    radarAxisX: 'X: Days Ago',
-    radarAxisY: 'Y: Impact Score',
-    radarAxisZ: 'Size: Hype Volume',
-    all: 'All',
-    loadingLiveData: 'Loading live data...',
-    failedToLoadRadar: 'Failed to load radar data',
-    noDataForCategory: 'No data points for selected category',
-    clickForDetails: 'Click for details',
-    anomaly: 'Anomaly',
-    impact: 'Impact',
-    hype: 'Hype',
-    ago: 'Ago',
-    daysAgo: 'd ago',
-    whyItMatters: 'Why It Matters',
-    viewOn: 'View on',
-
-    // Tech Feed
-    liveFeed: 'Live Feed',
-    updated: 'Updated',
-    anomaliesOnly: 'Anomalies Only',
-    source: 'Source',
-    category: 'Category',
-    stage: 'Stage',
-    allSources: 'All Sources',
-    allCategories: 'All Categories',
-    allStages: 'All Stages',
-    recent: 'Recent',
-    liveDataFrom: 'Global data from 9 sources in 5+ languages',
-    failedToFetchLiveData: 'Failed to fetch live data',
-    pleaseTryAgainLater: 'Please try again later',
-    retry: 'Retry',
-    noSignalsMatchFilters: 'No signals match your filters',
-    resetFilters: 'Reset filters',
-    today: 'Today',
-    strategicInsight: 'Strategic Insight',
-
-    // Evolution Chains
-    evolutionChains: 'Evolution Chains',
-    active: 'active',
-    evolutionChainsWillAppear:
-      'Evolution chains will appear as more signals are collected',
-    trajectoryAnalysis: 'Trajectory Analysis',
-    strongMomentumDetected: 'Strong momentum detected with',
-    expectedToAdvance: 'Expected to advance to',
-    stableActivity: 'Stable activity in',
-    monitoringForBreakthrough: 'Monitoring for breakthrough signals.',
-    trackingSignals: 'Tracking',
-    fromResearchToAdoption: 'from research to adoption',
-    evolution: 'Evolution',
-
-    // Maturity Stages
     research: 'Research',
     prototype: 'Prototype',
-    earlyAdopter: 'Early Adopter',
-    massMarket: 'Mass Market',
-    researchDesc: 'Academic papers and theoretical foundations',
-    prototypeDesc: 'Working demos and proof-of-concepts',
-    earlyAdopterDesc: 'Production use by innovators',
-    massMarketDesc: 'Widespread industry adoption',
+    earlyAdopter: 'Early adopter',
+    massMarket: 'Mass market',
 
-    // Categories
     aiMl: 'AI / ML',
     energy: 'Energy',
     biotech: 'BioTech',
@@ -382,26 +548,22 @@ export const translations: Record<Language, Translations> = {
     quantum: 'Quantum',
     space: 'Space',
     security: 'Security',
+    unclassified: 'Unclassified',
 
-    // Sources
     github: 'GitHub',
     arxiv: 'arXiv',
-    techcrunch: 'TechCrunch',
     hackerNews: 'Hacker News',
-    semanticScholar: 'Semantic Scholar',
+    openAlex: 'OpenAlex',
     pubmed: 'PubMed',
     hal: 'HAL (France)',
-    cnki: 'CNKI (China)',
+    openAlexZh: 'OpenAlex (China)',
+    hfPapers: 'HF Papers',
+    hfModels: 'HF Models',
+    preprints: 'bioRxiv / medRxiv',
+    lobsters: 'Lobsters',
+    devto: 'DEV',
     cinii: 'CiNii (Japan)',
 
-    // Languages
-    language: 'Language',
-    allLanguages: 'All Languages',
-    originalLanguage: 'Original',
-    translated: 'Translated',
-    translatedFrom: 'Translated from',
-    viewOriginal: 'View original',
-    autoTranslated: 'Auto-translated',
     english: 'English',
     chinese: 'Chinese',
     japanese: 'Japanese',
@@ -412,188 +574,269 @@ export const translations: Record<Language, Translations> = {
     korean: 'Korean',
     portuguese: 'Portuguese',
 
-    // Citations
-    citations: 'citations',
-    citationCount: 'Citation Count',
-    highCitation: 'High Citation',
-    sortByCitations: 'Sort by Citations',
+    footerVersion: 'Tech Evolution Radar',
+    footerSubtitle:
+      'Live data from GitHub, arXiv, Hacker News, Lobsters, DEV, Hugging Face, bioRxiv, medRxiv, OpenAlex, PubMed, HAL and CiNii',
 
-    // Multilingual
-    multilingualSources: 'Multilingual Sources',
-    globalResearch: 'Global Research',
-    academicPapers: 'Academic Papers',
-    highImpactResearch: 'High-Impact Research',
-
-    // Footer
-    footerVersion: 'Tech Evolution Radar v2.0 • Global Multilingual Feed',
-    footerSubtitle: 'Real-time data from 9 sources across 5+ languages',
-    realTimeDataFrom:
-      'Real-time data from GitHub, arXiv, Semantic Scholar, PubMed, HAL, CNKI, CiNii & Hacker News',
-
-    // Misc
-    loading: 'Loading...',
+    loading: 'Loading',
     error: 'Error',
-    months: 'months',
   },
   ru: {
-    // Header
-    appTitle: 'Радар Эволюции Технологий',
-    appSubtitle: 'Глобальная лента • 9 источников • Мультиязычный',
+    appTitle: 'Радар эволюции технологий',
+    appSubtitle: 'Сигналы из исследований и инженерии, тринадцать источников',
     signals: 'сигналов',
-    anomalies: 'аномалий',
-    live: 'ОНЛАЙН',
-    syncing: 'СИНХР.',
-
-    // AI Insight
-    aiInsight: 'Аналитика ИИ',
+    updated: 'Обновлено',
+    updating: 'Обновление',
     howItWorks: 'Как это работает',
-    analyzingData: 'Анализ данных',
-    gatheringSignals: 'Сбор сигналов',
 
-    // Extension Banner
-    extensionTitle: 'Расширение для Радара Эволюции Технологий',
-    extensionDescription:
-      'Получайте актуальные обновления и уведомления о последних тенденциях.',
-    extensionCta: 'Установить расширение',
-    extensionDismiss: 'Отклонить',
-
-    // Extension Installation Guide
-    installationGuide: 'Инструкция по установке',
-    installationGuideSubtitle:
-      'Следуйте этим шагам для установки расширения Радара Эволюции Технологий.',
-    step1Title: 'Скачайте расширение',
-    step1Desc: 'Нажмите кнопку загрузки, чтобы получить zip-файл расширения.',
-    step2Title: 'Распакуйте архив',
-    step2Desc:
-      'Распакуйте скачанный файл в папку на вашем компьютере. Запомните это место.',
-    step3Title: 'Откройте расширения Chrome',
-    step3Desc:
-      'Перейдите на chrome://extensions в браузере или Меню → Дополнительные инструменты → Расширения.',
-    step4Title: 'Включите режим разработчика',
-    step4Desc:
-      'Включите "Режим разработчика" в правом верхнем углу страницы расширений.',
-    step5Title: 'Загрузите расширение',
-    step5Desc:
-      'Нажмите "Загрузить распакованное" и выберите распакованную папку (tech-radar-extension).',
-    downloadExtension: 'Скачать расширение',
-    close: 'Закрыть',
-    proTip: 'Совет',
-    proTipText:
-      'После установки откройте новую вкладку, чтобы увидеть панель Радара Эволюции Технологий!',
-
-    // Anomaly Trend History
-    anomalyTrendHistory: 'История тренда аномалий',
-    trackingUnusualActivity: 'Отслеживание необычной активности',
-    totalAnomalies: 'Всего аномалий',
-    avgPerDay: 'Среднее в день',
-    peakDay: 'Пиковый день',
-    trend: 'Тренд',
-    rising: 'Рост',
-    falling: 'Спад',
-    stable: 'Стабильный',
-    byCategory: 'По категориям',
-    noDataForPeriod: 'Нет данных за этот период',
-    loadingData: 'Загрузка данных...',
-    currentAnomalies: 'Текущие аномалии',
-    historyTab: 'История',
-
-    // Parser Control Panel
-    parserControl: 'Управление парсером',
-    runParser: 'Запустить парсер',
-    parserRunning: 'Парсинг...',
-    lastRun: 'Последнее выполнение',
-    itemsCollected: 'Собранные',
-    itemsAnalyzed: 'Анализированные',
-    parserStatus: 'Статус',
-    idle: 'Ожидание',
-    running: 'Запущен',
-    completed: 'Завершен',
-    failed: 'Неудача',
-    neverRun: 'Никогда',
-    justNow: 'Только что',
-    minutesAgo: 'мин. назад',
-    hoursAgo: 'ч. назад',
-    sourcesProcessed: 'Источники',
-    parserMetrics: 'Метрики парсера',
-    forceRefresh: 'Принудительная перезагрузка',
-    clearCache: 'Очистить кэш',
-    cacheCleared: 'Кэш очищен',
-
-    // Stats Panel
-    totalSignals: 'Всего сигналов',
-    liveSources: 'Источники',
-    avgImpact: 'Ср. влияние',
-    anomaliesLabel: 'Аномалии',
-    topRisingThisWeek: 'Топ роста за неделю',
-    categoryDistribution: 'Распределение по категориям',
-    noAnomaliesDetected: 'Аномалии пока не обнаружены',
-    loadingCategories: 'Загрузка категорий...',
-    maturity: 'ЗРЕЛОСТЬ',
+    totalSignals: 'Сигналы',
+    sources: 'Источники',
+    languages: 'Языки',
+    highlighted: 'Выделено',
+    judgedByJev: 'Оценено Jev',
+    noJevKey:
+      'Ранжирование только по вовлечённости: TYPESAFE_API_KEY не задан, поэтому новизна, содержательность и совпадение тем недоступны.',
+    categoryDistribution: 'По категориям',
+    maturity: 'Зрелость',
     refreshData: 'Обновить данные',
 
-    // Tech Radar
-    liveRadar: 'Радар',
-    radarAxisX: 'X: Дней назад',
-    radarAxisY: 'Y: Оценка влияния',
-    radarAxisZ: 'Размер: Объём хайпа',
-    all: 'Все',
-    loadingLiveData: 'Загрузка данных...',
-    failedToLoadRadar: 'Не удалось загрузить данные радара',
-    noDataForCategory: 'Нет данных для выбранной категории',
-    clickForDetails: 'Нажмите для подробностей',
-    anomaly: 'Аномалия',
-    impact: 'Влияние',
-    hype: 'Хайп',
-    ago: 'Назад',
-    daysAgo: 'д. назад',
-    whyItMatters: 'Почему это важно',
-    viewOn: 'Смотреть на',
+    reasonFastRising: 'Быстрый рост',
+    reasonFastRisingDesc:
+      'Набирает внимание заметно быстрее соседей по тому же источнику',
+    reasonConverging: 'Совпадение тем',
+    reasonConvergingDesc:
+      'Самая сильная запись по отслеживаемой теме, которая встречается в четырёх и более источниках',
+    reasonNovel: 'Новая возможность',
+    reasonNovelDesc:
+      'По оценке Jev, вероятно описывает возможность, которой раньше не было',
+    reasonUnderRadar: 'Вне поля зрения',
+    reasonUnderRadarDesc:
+      'Оценено как новая возможность, пока привлекая мало внимания',
+    onSources: 'в {n} источниках',
+    reasonCrossSource: 'В нескольких источниках',
+    reasonCrossSourceDesc:
+      'Одна и та же работа (по arXiv id, DOI, репозиторию или ссылке) есть в нескольких источниках: например, статья, её код и обсуждение',
+    sameWorkOn: 'одна работа в {n} источниках',
 
-    // Tech Feed
+    highlightsTitle: 'Главное',
+    highlightsHint: 'Только сигналы с указанной причиной',
+    highlightsEmpty: 'В этой выборке ничего не выделяется',
+
+    topicsTitle: 'Темы в разных источниках',
+    topicsHint: 'Отслеживаемые темы и где они встречаются сейчас',
+    topicsEmpty: 'Ни одна тема не встречается более чем в одном источнике',
+    discoveredTitle: 'Найдено радаром',
+    healthCol: 'Состояние',
+    adminTokenNeeded: 'Этому серверу нужен токен оператора (ADMIN_TOKEN).',
+    adminToken: 'Токен оператора',
+    rebuildThrottled:
+      'Пересборка только что была; следующая возможна через {s} с. Лента и так пересобирается каждые несколько минут.',
+    rebuildHint: 'Сбросить кэши источников и пересобрать ленту сейчас',
+    healthUnavailable:
+      'Состояние источников недоступно (хранилище истории не ответило).',
+    healthAllOk: 'Все источники отвечают',
+    feedAge: 'лента собрана {m} мин назад',
+    storageSize: 'история {mb} МБ',
+    healthDetailNeedsToken: 'Расход и хранилище видны с токеном оператора.',
+    healthOk: 'в норме',
+    healthDegraded: 'мало данных',
+    healthDown: 'не отвечает',
+    usageToday:
+      'Jev сегодня: отправлено {sent}, из кэша {cached} · ошибок {failed}',
+    lastBackup: 'последняя копия',
+    weekTitle: 'Эта неделя',
+    weekMakers:
+      'Самые активные авторы (лаборатории, компании, люди с новыми работами)',
+    topicHistoryLabel: '{total} новых работ за 30 дней, {week} за последние 7',
+    topicOrigin: 'впервые: {source}, {date}',
+    trackRecordNotJudged:
+      '{n} не удалось оценить (метрика недоступна или нет группы сравнения)',
+    velocityMeasured: '+{n}/день по замеру',
+    velocityEstimated: '≈{n}/день в среднем',
+    firstSeenOn: 'впервые замечено {date}',
+    focusedOn: 'Только',
+    clearFilter: 'Убрать фильтр',
+    watchChip: 'слежу',
+    weekLoading: 'Загружаем недельный отчёт…',
+    weekNothing:
+      'Сравнивать пока не с чем: история растёт с каждым днём работы сервера.',
+    weekNewItems: '{n} новых записей',
+    watchLabel: 'Следить',
+    watchPlaceholder:
+      'термины через запятую (например, Mamba, GRPO, перовскит)',
+    watchSave: 'Сохранить',
+    weekUnavailable:
+      'Недельному отчёту нужно хранилище истории, а на этом сервере оно недоступно.',
+    weekRequestFailed:
+      'Не удалось загрузить недельный отчёт. Скоро попробуем снова.',
+    watchTitle: 'Ваши термины (записи за неделю)',
+    weekWas: 'неделей раньше {n}',
+    weekTopics: 'Темы, записей за неделю',
+    weekThemesAdded: 'Новые темы',
+    weekThemesRetired: 'Затихли',
+    weekRisers: 'Быстрее всего растут',
+    weekNoRisers: 'Рост виден, когда запись встречена в два разных дня.',
+    weekCrossSource: 'Одна работа в нескольких источниках',
+    trackRecord: 'Точность',
+    trackRecordHint:
+      'Как сработали прошлые выделения через {days} дней: доля тех, что выросли сильнее медианы случайной выборки из того же источника. Случайный выбор даёт около 50%. Для найденных тем — доля тех, что продолжили появляться.',
+    trackRecordPending: 'измеряем {n} выделений · первые результаты {date}',
+    trackDiscovered: 'Найденные темы',
+    alsoOn: 'также в',
+    discoveredHint:
+      'Термины, внезапно появившиеся в нескольких источниках, которые Jev подтвердил как названия технологий. Добавляются автоматически (не более 3 в день и 20 всего) и снимаются после двух тихих недель.',
+    discoveredTag: 'найдено',
+    discoveredSince: 'с {date}',
+    items: 'записей',
+
+    liveRadar: 'Радар',
+    radarAxisX: 'дней назад',
+    radarAxisY: 'сигнал',
+    radarLegendSize: 'Размер точки: охват внутри источника',
+    radarUnscored: 'записи без оценки не показаны',
+    all: 'Все',
+    loadingLiveData: 'Загрузка данных',
+    failedToLoadRadar: 'Не удалось загрузить данные радара',
+    noDataForCategory: 'В этой категории нет оценённых записей',
+    clickForDetails: 'Enter или клик для подробностей',
+    points: 'точек',
+
+    signalScore: 'Сигнал',
+    reach: 'Охват',
+    velocity: 'Скорость',
+    novelty: 'Новизна',
+    substance: 'Содержательность',
+    recency: 'Свежесть',
+    notMeasured: 'не измеряется',
+    noJudgment: 'нет оценки',
+    stars: 'звёзд',
+    hnPoints: 'очков',
+    citations: 'цитирований',
+    upvotes: 'голосов',
+    likes: 'лайков',
+    reactions: 'реакций',
+    whyItMatters: 'Контекст',
+    viewOn: 'Открыть на',
+    daysAgo: 'д назад',
+    today: 'Сегодня',
+    topics: 'Темы',
+
     liveFeed: 'Лента',
-    updated: 'Обновлено',
-    anomaliesOnly: 'Только аномалии',
+    highlightedOnly: 'Только выделенные',
     source: 'Источник',
     category: 'Категория',
     stage: 'Стадия',
+    language: 'Язык',
     allSources: 'Все источники',
     allCategories: 'Все категории',
     allStages: 'Все стадии',
-    recent: 'Новые',
-    liveDataFrom: 'Глобальные данные из 9 источников на 5+ языках',
+    allLanguages: 'Все языки',
+    sortBy: 'Сортировка',
+    sortRecent: 'Новые',
+    sortSignal: 'Сигнал',
+    sortEngagement: 'Охват',
     failedToFetchLiveData: 'Не удалось загрузить данные',
-    pleaseTryAgainLater: 'Пожалуйста, попробуйте позже',
+    pleaseTryAgainLater: 'Попробуйте позже',
     retry: 'Повторить',
-    noSignalsMatchFilters: 'Нет сигналов по вашим фильтрам',
+    noSignalsMatchFilters: 'Нет сигналов по этим фильтрам',
     resetFilters: 'Сбросить фильтры',
-    today: 'Сегодня',
-    strategicInsight: 'Стратегический анализ',
+    viewOriginal: 'Оригинал',
+    showTranslation: 'Перевод',
+    autoTranslated: 'Машинный перевод',
+    translateToRussian: 'Перевести на русский',
+    translating: 'Перевод',
+    originalLanguage: 'Язык оригинала',
 
-    // Evolution Chains
-    evolutionChains: 'Цепочки эволюции',
-    active: 'активных',
-    evolutionChainsWillAppear:
-      'Цепочки эволюции появятся по мере сбора сигналов',
-    trajectoryAnalysis: 'Анализ траектории',
-    strongMomentumDetected: 'Обнаружен сильный импульс с',
-    expectedToAdvance: 'Ожидается переход на стадию',
-    stableActivity: 'Стабильная активность в',
-    monitoringForBreakthrough: 'Мониторинг прорывных сигналов.',
-    trackingSignals: 'Отслеживание',
-    fromResearchToAdoption: 'от исследований до внедрения',
-    evolution: 'Эволюция',
+    digestTitle: 'Дайджест AI-блогов',
+    digestSubtitle: 'Ежедневные сводки инженерных блогов, написанные Claude',
+    digestReadOriginal: 'Читать оригинал',
+    digestUpdated: 'Обновлено',
+    digestStale: 'Дайджест может быть устаревшим',
+    digestEmpty: 'Записей дайджеста пока нет',
+    digestError: 'Не удалось загрузить дайджест',
 
-    // Maturity Stages
+    extensionTitle: 'Расширение для новой вкладки',
+    extensionDescription:
+      'Тот же радар на странице новой вкладки Chrome: данные берутся напрямую из GitHub, arXiv и Hacker News.',
+    extensionCta: 'Установить',
+    extensionDismiss: 'Скрыть',
+    installationGuide: 'Установка расширения',
+    installationGuideSubtitle:
+      'Пять шагов; расширение загружается из распакованной папки.',
+    step1Title: 'Скачайте расширение',
+    step1Desc: 'Получите zip-архив с упакованным расширением.',
+    step2Title: 'Распакуйте архив',
+    step2Desc: 'Распакуйте его в папку, которую не будете удалять.',
+    step3Title: 'Откройте расширения Chrome',
+    step3Desc:
+      'Перейдите на chrome://extensions или: Меню, Дополнительные инструменты, Расширения.',
+    step4Title: 'Включите режим разработчика',
+    step4Desc: 'Включите «Режим разработчика» в правом верхнем углу.',
+    step5Title: 'Загрузите расширение',
+    step5Desc:
+      'Нажмите «Загрузить распакованное» и выберите распакованную папку (tech-radar-extension).',
+    downloadExtension: 'Скачать расширение',
+    downloading: 'Загрузка',
+    downloaded: 'Скачано',
+    close: 'Закрыть',
+    proTip: 'Подсказка',
+    proTipText: 'После установки откройте новую вкладку, чтобы увидеть радар.',
+
+    parserControl: 'Управление парсером',
+    parserMetrics: 'Инструменты оператора: состояние выборки по источникам',
+    runParser: 'Запустить парсер',
+    parserRunning: 'Выполняется',
+    lastRun: 'Последний запуск',
+    itemsCollected: 'Собрано',
+    parserStatus: 'Статус',
+    idle: 'Ожидание',
+    running: 'Выполняется',
+    completed: 'Завершено',
+    failed: 'Ошибка',
+    neverRun: 'Никогда',
+    justNow: 'Только что',
+    minutesAgo: 'мин назад',
+    hoursAgo: 'ч назад',
+    sourceDetails: 'По источникам',
+    judged: 'оценено',
+
+    infoTitle: 'Как работает радар',
+    infoSubtitle: 'Что измеряется, что оценивается и что выделяется',
+    infoSourcesTitle: 'Источники',
+    infoSourcesDesc:
+      'Репозитории GitHub, созданные на этой неделе, новые статьи arXiv по десяти направлениям, главные страницы Hacker News и Lobsters, самые популярные за день статьи DEV (dev.to), Hugging Face Daily Papers и популярные модели, препринты bioRxiv и medRxiv, самые цитируемые свежие журнальные и конференционные работы в OpenAlex, PubMed, HAL (Франция), CiNii (Япония) и китайскоязычные журналы в OpenAlex. Всё собирает сервер (GitHub — при желании с токеном), кэш на пять минут, отдаётся по схеме stale-while-revalidate.',
+    infoCategoriesTitle: 'Категории',
+    infoCategoriesDesc:
+      'Каждую запись относит к одной из восьми областей модель Jev от TypeSafe, по одному запросу на запись. Записи вне всех областей отбрасываются. Без ключа записи показываются как «без категории»; по ключевым словам ничего не угадывается.',
+    infoScoringTitle: 'Оценка сигнала',
+    infoScoringDesc:
+      'Источники измеряют внимание в несопоставимых единицах, а некоторые не измеряют вовсе. Каждая запись сравнивается с соседями по своему источнику в текущей выборке; абсолютные пороги не используются. Оценка — взвешенное среднее тех компонентов ниже, которые для записи реально доступны. Недостающие компоненты не додумываются; запись, у которой нечего измерить, оценки не получает.',
+    infoReachDesc:
+      'Перцентиль звёзд, очков, голосов, лайков, реакций или цитирований внутри источника.',
+    infoVelocityDesc:
+      'Перцентиль прироста вовлечённости за день внутри источника. Если есть вчерашний замер, прирост измерен («+N/день по замеру»); иначе это среднее за возраст записи («≈N/день в среднем»).',
+    infoRecencyDesc:
+      'Затухание по возрасту с периодом полураспада на источник: день для Hacker News, неделя для GitHub, недели для статей.',
+    infoNoveltyDesc:
+      'Jev оценивает запись по четырёхуровневой шкале от комментария до качественного скачка; используется вероятность уровня «новая возможность» и выше.',
+    infoSubstanceDesc:
+      'Вероятность по оценке Jev, что запись — конкретный технический артефакт, а не новость или мнение.',
+    infoConvergenceDesc:
+      'Jev помечает записи отслеживаемыми темами, а найденные радаром темы сопоставляются по названию; совпадение — число разных источников с одной темой в текущей выборке или с одной и той же работой (по arXiv id, DOI, репозиторию или ссылке), смотря что больше.',
+    infoHighlightsTitle: 'Выделение',
+    infoHighlightsDesc:
+      'Запись выделяется только когда срабатывает явное правило, и причина показывается рядом: быстрый рост (устойчивый выброс по скорости среди соседей по источнику), в нескольких источниках (самая сильная запись работы, которая есть в двух и более источниках), совпадение тем (самая сильная запись темы, которая есть в четырёх и более источниках), новая возможность (вероятность новизны не ниже 0,5) или вне поля зрения (то же при пока низком охвате).',
+    infoMaturityTitle: 'Зрелость',
+    infoMaturityDesc:
+      'Стадия вычисляется в коде из счётчиков: звёзды или очки для инженерных источников, цитирования для статей.',
+    infoDisclaimer:
+      'Ранжирование алгоритмическое и должно помогать чтению, а не заменять его.',
+
     research: 'Исследование',
     prototype: 'Прототип',
     earlyAdopter: 'Ранние последователи',
     massMarket: 'Массовый рынок',
-    researchDesc: 'Научные статьи и теоретические основы',
-    prototypeDesc: 'Рабочие демо и доказательства концепции',
-    earlyAdopterDesc: 'Использование инноваторами в продакшене',
-    massMarketDesc: 'Широкое внедрение в индустрии',
 
-    // Categories
     aiMl: 'ИИ / ML',
     energy: 'Энергетика',
     biotech: 'Биотех',
@@ -602,26 +845,22 @@ export const translations: Record<Language, Translations> = {
     quantum: 'Квантовые',
     space: 'Космос',
     security: 'Безопасность',
+    unclassified: 'Без категории',
 
-    // Sources
     github: 'GitHub',
     arxiv: 'arXiv',
-    techcrunch: 'TechCrunch',
     hackerNews: 'Hacker News',
-    semanticScholar: 'Semantic Scholar',
+    openAlex: 'OpenAlex',
     pubmed: 'PubMed',
     hal: 'HAL (Франция)',
-    cnki: 'CNKI (Китай)',
+    openAlexZh: 'OpenAlex (Китай)',
+    hfPapers: 'HF Papers',
+    hfModels: 'Модели HF',
+    preprints: 'bioRxiv / medRxiv',
+    lobsters: 'Lobsters',
+    devto: 'DEV',
     cinii: 'CiNii (Япония)',
 
-    // Languages
-    language: 'Язык',
-    allLanguages: 'Все языки',
-    originalLanguage: 'Оригинал',
-    translated: 'Переведено',
-    translatedFrom: 'Переведено с',
-    viewOriginal: 'Показать оригинал',
-    autoTranslated: 'Авто-перевод',
     english: 'Английский',
     chinese: 'Китайский',
     japanese: 'Японский',
@@ -632,29 +871,12 @@ export const translations: Record<Language, Translations> = {
     korean: 'Корейский',
     portuguese: 'Португальский',
 
-    // Citations
-    citations: 'цитирований',
-    citationCount: 'Число цитирований',
-    highCitation: 'Высокое цитирование',
-    sortByCitations: 'По цитированиям',
+    footerVersion: 'Радар эволюции технологий',
+    footerSubtitle:
+      'Живые данные из GitHub, arXiv, Hacker News, Lobsters, DEV, Hugging Face, bioRxiv, medRxiv, OpenAlex, PubMed, HAL и CiNii',
 
-    // Multilingual
-    multilingualSources: 'Мультиязычные источники',
-    globalResearch: 'Глобальные исследования',
-    academicPapers: 'Научные статьи',
-    highImpactResearch: 'Высокоцитируемые исследования',
-
-    // Footer
-    footerVersion:
-      'Радар Эволюции Технологий v2.0 • Глобальная мультиязычная лента',
-    footerSubtitle: 'Данные в реальном времени из 9 источников на 5+ языках',
-    realTimeDataFrom:
-      'Данные в реальном времени из GitHub, arXiv, Semantic Scholar, PubMed, HAL, CNKI, CiNii и Hacker News',
-
-    // Misc
-    loading: 'Загрузка...',
+    loading: 'Загрузка',
     error: 'Ошибка',
-    months: 'месяцев',
   },
 }
 
@@ -676,6 +898,7 @@ export const getLocalizedCategories = (lang: Language) => ({
   quantum: translations[lang].quantum,
   space: translations[lang].space,
   cybersecurity: translations[lang].security,
+  uncategorized: translations[lang].unclassified,
 })
 
 // Helper to get localized language names
@@ -691,15 +914,37 @@ export const getLocalizedLanguages = (lang: Language) => ({
   pt: translations[lang].portuguese,
 })
 
-// Helper to get localized source labels (updated)
+// Helper to get localized source labels
 export const getLocalizedSources = (lang: Language) => ({
   github: translations[lang].github,
   arxiv: translations[lang].arxiv,
-  techcrunch: translations[lang].techcrunch,
   hackernews: translations[lang].hackerNews,
-  'semantic-scholar': translations[lang].semanticScholar,
+  openalex: translations[lang].openAlex,
   pubmed: translations[lang].pubmed,
   hal: translations[lang].hal,
-  cnki: translations[lang].cnki,
+  'openalex-zh': translations[lang].openAlexZh,
+  'hf-papers': translations[lang].hfPapers,
+  'hf-models': translations[lang].hfModels,
+  biorxiv: translations[lang].preprints,
+  lobsters: translations[lang].lobsters,
+  devto: translations[lang].devto,
   cinii: translations[lang].cinii,
 })
+
+/** Localized label and description for a highlight reason. */
+export const getLocalizedReasons = (lang: Language) => {
+  const t = translations[lang]
+  return {
+    'fast-rising': { label: t.reasonFastRising, desc: t.reasonFastRisingDesc },
+    converging: { label: t.reasonConverging, desc: t.reasonConvergingDesc },
+    'cross-source': {
+      label: t.reasonCrossSource,
+      desc: t.reasonCrossSourceDesc,
+    },
+    novel: { label: t.reasonNovel, desc: t.reasonNovelDesc },
+    'under-the-radar': {
+      label: t.reasonUnderRadar,
+      desc: t.reasonUnderRadarDesc,
+    },
+  }
+}

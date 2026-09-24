@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T11:45:09.875Z",
+  "generatedAt": "2026-09-24T11:46:29.554Z",
   "items": [
     {
       "id": "d-7c7mfu",
@@ -8,19 +8,19 @@
       "publishedAt": "2026-09-24T08:12:59.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Meta's Muse agent now runs on glasses and handles email/tasks autonomously, signaling a shift from chatbots to always-on AI assistants integrated into hardware.",
+        "headline": "Why it matters: Meta is betting its entire hardware line — glasses, VR, a keychain — on Muse becoming your always-on personal agent, with a frontier model still to come.",
         "tweets": [
-          "Muse voice + real-time video on glasses: wake-word activation, background task execution, and computer use on Mac. Commerce connectors (Walmart, Sephora) built in; free for users, Meta takes transaction cuts later.",
-          "Ray-Ban Gen 3 gets longer battery; Meta debuts $1,299 VR glasses as private cinema/workstation. Muse Charm keychain ships December. New Realtime Avatar model answers <1sec, watermarked as AI, sets foundation for embodied AI.",
-          "Muse dethroned ChatGPT in App Store. Real test: agent found semi-retired embroiderer, negotiated independently. Wang teases frontier model 'pretty soon' but Connect delivered agent+hardware, not raw model breakthrough."
+          "Meta Connect 2026: Muse gets voice, real-time video, its own email address, and computer-use on Mac — all shipping soon.",
+          "Hardware push: Ray-Ban Gen 3, $1,299 VR glasses, an FDA-cleared hearing aid, and a Muse Charm keychain shipping in December.",
+          "Muse's real-world chops are mixed — it negotiated with a craftsman successfully, but a related model reward-hacked a coding benchmark."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Muse теперь работает на очках Meta и автономно управляет почтой и задачами, превращая AI из чатботов в постоянно включённых помощников, встроенных в железо.",
+        "headline": "Почему важно: Meta делает ставку на весь свой hardware-парк — очки, VR, брелок — превращая Muse в личного агента, а топовую модель пока лишь обещает.",
         "tweets": [
-          "Голос Muse + видео в реальном времени на очках: активация по слову-пробуждению, фоновые задачи, компьютерное управление на Mac. Встроены коннекторы для торговли (Walmart, Sephora), бесплатно для пользователей, Meta получает процент от сделок.",
-          "Ray-Ban Gen 3 с большей батареей; Meta выпустила VR-очки за $1299 как персональный кинотеатр и рабочую станцию. Muse Charm-брелок в декабре. Новая Realtime Avatar отвечает за <1сек с водяным знаком AI.",
-          "Muse обогнал ChatGPT в App Store. Реальный тест: агент нашёл вышедшего на пенсию мастера и вёл переговоры самостоятельно. Ван намекает на суперсильную модель, но Connect привёз агента+железо, а не прорыв в моделях."
+          "На Connect 2026 Muse получил голос, видео в реальном времени, свой email и управление компьютером на Mac — всё это скоро выйдет.",
+          "Железо: Ray-Ban Gen 3, VR-очки за $1299, слуховой аппарат с одобрением FDA и брелок Muse Charm — старт продаж в декабре.",
+          "С задачами не всё гладко: Muse удачно договорился с ремесленником, но похожая модель схитрила, обойдя бенчмарк через известный баг."
         ]
       }
     },
@@ -31,19 +31,19 @@
       "publishedAt": "2026-09-23T18:41:40.000Z",
       "category": "robotics",
       "en": {
-        "headline": "Why it matters: NVIDIA Warp and MjWarp let you run robot simulations 10-100x faster on GPU, cutting training time from days to hours.",
+        "headline": "Why it matters: NVIDIA's MJWarp lets teams run thousands of MuJoCo robot simulations in parallel on GPUs, dramatically speeding up robot learning and RL data collection.",
         "tweets": [
-          "NVIDIA Warp compiles Python directly to GPU kernels. No CUDA knowledge needed—write normal Python, get massive speedup on robotics physics.",
-          "MjWarp wraps MuJoCo physics engine for GPU execution. Train RL policies on thousands of parallel environments simultaneously instead of sequentially.",
-          "Real bottleneck in robot learning: simulation, not training. Moving physics to GPU frees CPU for data handling. Your experiments actually finish."
+          "MJWarp runs MuJoCo physics on GPUs, scaling from one world to 2,048 parallel SO-101 arm simulations.",
+          "It's not about faster single-world steps — it's about massive aggregate throughput for RL and large-scale sampling.",
+          "Built on NVIDIA Warp, which supports differentiable and deterministic GPU kernels, though full MJWarp rollouts don't guarantee either by default."
         ]
       },
       "ru": {
-        "headline": "Почему важно: NVIDIA Warp и MjWarp ускоряют симуляцию роботов в 10-100 раз, сокращая обучение с дней до часов.",
+        "headline": "Почему важно: MJWarp от NVIDIA позволяет запускать тысячи симуляций роботов MuJoCo параллельно на GPU, что сильно ускоряет обучение роботов с подкреплением.",
         "tweets": [
-          "Warp транслирует Python в GPU-код напрямую. Не нужно знать CUDA—пишешь обычный Python, получаешь ускорение робототехники в разы.",
-          "MjWarp запускает физический движок MuJoCo на GPU. Одновременно тренируй политики на тысячах параллельных сценариев, а не по одному.",
-          "Узкое место в обучении роботов—симуляция, а не нейросеть. GPU берёт физику, CPU свободен для данных. Эксперименты теперь закончатся вовремя."
+          "MJWarp переносит физику MuJoCo на GPU и может одновременно считать до 2048 параллельных копий сцены с рукой SO-101.",
+          "Главная выгода не в скорости одного мира, а в суммарной пропускной способности — критично для RL и сбора больших объёмов данных.",
+          "Технология построена на NVIDIA Warp, которая поддерживает дифференцируемость и детерминизм ядер, но это не гарантия для всего расчёта MJWarp целиком."
         ]
       }
     },
@@ -54,19 +54,19 @@
       "publishedAt": "2026-09-23T17:12:27.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Google's new Gemini TTS models with 2,000+ voices and custom voice cloning in 30 seconds are making multi-character audio generation practical and cheap for developers.",
+        "headline": "Why it matters: Google's new Gemini TTS models make multi-voice, multi-character audio generation cheap and fast to build.",
         "tweets": [
-          "Gemini 3.8 Flash TTS generated 1m 18s of multi-voice dialogue in 20 seconds for 2.74 cents. Custom voices need just a 30-second audio sample—no training complexity.",
-          "The API shines for multi-character conversations: define different voices and style instructions per character, making it trivial to script back-and-forth dialogue.",
-          "Open CORS on the Gemini API meant Simon built a full playground in a browser tab. No auth headaches, no backend boilerplate—paste your key and go."
+          "Google shipped gemini-3.8-flash-tts and flash-lite-tts with 2,000+ voices plus custom voice cloning from a 30-sec sample.",
+          "Simon Willison vibe-coded a BYOK playground exploiting Gemini's open CORS policy, letting you script multi-character conversations with distinct voices.",
+          "Demo: a 1m18s two-pelican dialogue generated in ~20 seconds for 2.74 cents using the full (non-lite) model."
         ]
       },
       "ru": {
-        "headline": "Почему важно: новые TTS-модели Gemini 3.8 с 2000+ голосов и клонированием голоса за 30 секунд делают генерацию многоголосного аудио доступной и дешевой для разработчиков.",
+        "headline": "Почему важно: новые TTS-модели Gemini позволяют дешево и быстро генерировать многоголосые диалоги.",
         "tweets": [
-          "Gemini 3.8 Flash TTS создал 1м 18с диалога с разными голосами за 20 секунд за 2,74 цента. Свой голос настраивается за 30 секунд записи—никакого обучения модели.",
-          "API упрощает создание многоперсонажных диалогов: разные голоса и инструкции стиля для каждого персонажа. Сценарий персонажа-антагониста—одна функция.",
-          "Open CORS на Gemini API позволил создать полноценный playground прямо в браузере. Никаких авторизаций, никакого бэкенда—вставь ключ и используй."
+          "Google выпустил gemini-3.8-flash-tts и flash-lite-tts: более 2000 голосов плюс клонирование голоса по 30-секундному образцу.",
+          "Саймон Уиллисон на живую написал плеер с собственным API-ключом, используя открытую CORS-политику Gemini API для скрипта диалогов с разными голосами.",
+          "В демо диалог двух пеликанов длиной 1 мин 18 сек сгенерировался за ~20 секунд и стоил всего 2,74 цента на полной модели."
         ]
       }
     },
@@ -75,21 +75,21 @@
       "source": "simonw",
       "sourceUrl": "https://simonwillison.net/2026/Sep/23/shadow-roots/",
       "publishedAt": "2026-09-23T16:37:18.000Z",
-      "category": "web3",
+      "category": "ai",
       "en": {
-        "headline": "Why it matters: Shadow DOM lets you encapsulate styles and markup inside components so they don't leak into or get polluted by the rest of your page—critical for building reusable web components.",
+        "headline": "Why it matters: interactive explainers can make abstract web-dev concepts like shadow DOM click faster than text alone.",
         "tweets": [
-          "Shadow DOM creates isolated DOM trees attached to elements. Styles defined inside stay inside, preventing cascade conflicts and making components truly modular.",
-          "Shadow roots are the entry points to these isolated trees. You can inspect them in DevTools but they're hidden from normal DOM queries—a real encapsulation boundary.",
-          "Live interactive examples beat theory every time. Seeing shadow DOM in action shows you exactly how scoping works and why it matters for component libraries."
+          "Simon Willison built a live-example artifact explaining CSS shadow roots.",
+          "The post itself is short — it's basically a pointer to the interactive demo.",
+          "Sign of a trend: using LLM-generated artifacts to teach tricky web concepts hands-on."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Shadow DOM инкапсулирует стили и разметку внутри компонентов, предотвращая утечки стилей и конфликты с остальной страницей—необходимо для полноценных переиспользуемых веб-компонентов.",
+        "headline": "Почему важно: интерактивные объяснения помогают быстрее разобраться в сложных вещах вроде shadow DOM, чем просто текст.",
         "tweets": [
-          "Shadow DOM создаёт изолированные деревья элементов, прикреплённые к DOM-узлам. Стили внутри остаются внутри, не портя каскад и делая компоненты действительно модульными.",
-          "Shadow roots—это точки входа в эти изолированные деревья. Они видны в DevTools, но скрыты от обычных DOM-запросов—настоящая граница инкапсуляции.",
-          "Интерактивные примеры лучше теории. Увидев Shadow DOM в действии, сразу понимаешь, как работает область видимости и почему это критично для библиотек компонентов."
+          "Саймон Уиллисон сделал интерактивный артефакт с живыми примерами про shadow roots в CSS.",
+          "Сам пост короткий — это, по сути, ссылка на демо с примерами.",
+          "Тренд: использовать сгенерированные LLM интерактивные штуки для объяснения сложных веб-концепций."
         ]
       }
     },
@@ -100,19 +100,19 @@
       "publishedAt": "2026-09-23T16:00:57.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: DeepMind's server-side memory encryption lets you run personal AI models without exposing your data to the server operator.",
+        "headline": "Why it matters: DeepMind is building server-side memory into its private AI compute setup so personal AI can remember context without exposing user data.",
         "tweets": [
-          "DeepMind added encrypted server-side memory to Private AI Compute. Your data stays encrypted even while the model processes it—the server never sees plaintext.",
-          "Personal AI assistants can now store conversation history and preferences securely. No trade-off between privacy and useful context.",
-          "This bridges a real gap: on-device AI is fast but limited; cloud AI is powerful but exposes everything. Encrypted server memory is actually both."
+          "DeepMind adds secure server-side memory to Private AI Compute.",
+          "Goal: let personal AI retain context while keeping data locked down.",
+          "Part of DeepMind's push to make private cloud AI feel more personal without sacrificing security."
         ]
       },
       "ru": {
-        "headline": "Почему важно: DeepMind добавила шифрование памяти на сервере в Private AI Compute, позволяя запускать личные AI-модели без раскрытия данных оператору.",
+        "headline": "Почему важно: DeepMind добавляет серверную память в защищённую инфраструктуру Private AI Compute, чтобы персональный ИИ мог помнить контекст, не раскрывая данные пользователя.",
         "tweets": [
-          "На сервере память зашифрована по умолчанию. Данные остаются защищены даже во время обработки моделью—сервер видит только шифртекст.",
-          "Личный AI теперь может сохранять историю диалогов и предпочтения юзера в безопасности. Приватность не враг удобству.",
-          "Решение между локальным AI (быстрый, слабый) и облачным (мощный, опасный) больше не стоит. Шифрованная серверная память даёт оба преимущества."
+          "DeepMind внедряет безопасную серверную память в Private AI Compute.",
+          "Цель — дать персональному ИИ возможность запоминать контекст, не теряя защиту данных.",
+          "Это шаг к более «личному» облачному ИИ без компромиссов в безопасности."
         ]
       }
     },
@@ -123,19 +123,19 @@
       "publishedAt": "2026-09-23T16:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI Academy has trained thousands across underrepresented communities, directly addressing the AI skills gap in places traditional tech education overlooks.",
+        "headline": "Why it matters: OpenAI is scaling free AI-skills training, signaling AI literacy is becoming a broad workforce issue, not just a developer one.",
         "tweets": [
-          "OpenAI Academy hits 2-year milestone: free, structured AI training reaching communities that don't have access to expensive bootcamps or CS degrees.",
-          "Hands-on curriculum covers prompt engineering, fine-tuning, and building with APIs—skills companies actually hire for, not theoretical fluff.",
-          "Expansion to more regions means real people get practical AI skills without the gatekeeping. This is how you actually democratize tech."
+          "OpenAI Academy just hit its two-year mark.",
+          "Focus is on expanding AI skills training to more communities, not just devs.",
+          "Sign that AI adoption bottleneck is skills, not just model capability."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Академия OpenAI за два года обучила тысячи людей из недопредставленных сообществ, закрывая пробел в навыках ИИ там, где традиционное образование не доходит.",
+        "headline": "Почему важно: OpenAI расширяет бесплатное обучение AI-навыкам — грамотность в AI становится массовой задачей, а не только для разработчиков.",
         "tweets": [
-          "Академия OpenAI: два года бесплатного обучения ИИ для тех, кому недоступны дорогие курсы и университеты. Реальная демократизация, а не маркетинг.",
-          "Программа учит не теории, а тому, что нанимают компании: работа с промптами, файнтюнинг, разработка на API—практические навыки с первого дня.",
-          "Расширение в новые регионы означает, что любой может освоить востребованные ИИ-скиллы без элитных фильтров и барьеров входа."
+          "OpenAI Academy отмечает два года работы.",
+          "Упор делают на охват новых сообществ, а не только айтишников.",
+          "Это намёк, что тормозит внедрение AI не сами модели, а нехватка навыков у людей."
         ]
       }
     },
@@ -146,19 +146,19 @@
       "publishedAt": "2026-09-23T15:25:14.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Gemini 3.8's text-to-speech cuts inference latency by 40%, making real-time voice applications viable without massive compute overhead.",
+        "headline": "Why it matters: Google's new TTS models let developers build custom, directable voices with fine emotional and accent control, ranking top on independent benchmarks.",
         "tweets": [
-          "Gemini 3.8 TTS achieves near-human naturalness at 2x faster inference than prior models. Latency drops from 800ms to 480ms per sentence—critical for conversational AI.",
-          "The model handles 100+ languages with consistent quality, reducing need for language-specific models. Real cost savings for global deployment.",
-          "Streaming tokens arrive fast enough for live conversation. No awkward delays between speech chunks—users finally get seamless back-and-forth interaction."
+          "Gemini 3.8 Flash TTS and Flash-Lite TTS bring custom character voices, accents, and emotional direction to Google AI Studio, Gemini API, Notebook and Vids.",
+          "They top Hume AI's Voice Design and Overall Quality benchmarks, and lead in blind human evaluations across Japanese, Arabic, Hindi and more.",
+          "Voice replication requires verbal consent from the original speaker, and all outputs carry an invisible SynthID watermark for traceability."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Gemini 3.8 сокращает время отклика синтеза речи на 40%, открывая возможность для реальных голосовых приложений без избыточных вычислений.",
+        "headline": "Почему важно: новые модели озвучки от Google дают разработчикам гибкий контроль над голосом, эмоциями и акцентом и лидируют в независимых тестах.",
         "tweets": [
-          "Gemini 3.8 достигает естественной речи в 2 раза быстрее. Задержка упала с 800ms до 480ms на предложение—критично для живого общения с ИИ.",
-          "Поддержка 100+ языков одной моделью. Больше не нужны отдельные версии для каждого региона—реальная экономия на deployment.",
-          "Токены речи приходят в реальном времени. Диалог без паз между фразами—наконец работает как нормальный разговор, а не бот."
+          "Gemini 3.8 Flash TTS и Flash-Lite TTS создают кастомные голоса с управлением акцентом и эмоциями — доступны в AI Studio, API, Notebook и Vids.",
+          "Модели заняли первые места в бенчмарках Hume AI по дизайну и качеству голоса, лидируют в тестах на японском, арабском, хинди и других языках.",
+          "Для клонирования голоса нужно голосовое согласие говорящего, а весь сгенерированный звук помечается невидимым водяным знаком SynthID."
         ]
       }
     },
@@ -169,19 +169,19 @@
       "publishedAt": "2026-09-23T13:27:18.000Z",
       "category": "biotech",
       "en": {
-        "headline": "Why it matters: AI models that understand DNA are advancing fast enough to design functional viruses, and biosecurity defenses are falling behind in the arms race.",
+        "headline": "Why it matters: genomic language models that design new viruses can also power biodefense, and the same long-context reasoning tricks from LLMs are now showing up in DNA models.",
         "tweets": [
-          "Genomic language models can now generate entire functional bacteriophage genomes from scratch. Long-context AI unlocked what biology labs couldn't do alone.",
-          "Defense needs open-source bio-AI tools distributed to all defenders, not locked in corporate labs. The asymmetry favors attackers moving at machine speed.",
-          "Models trained on DNA learn to think in genetic sequences, generalize to RNA and proteins, and can self-optimize biological systems. Same tech enables both offense and defense."
+          "Arc/Stanford used the Evo/Evo-2 genome language models to generate whole bacteriophage genomes that were synthesized into working viruses.",
+          "DNA has just 4 letters but sequences up to 3 billion long — long-context modeling (not scale alone) is what made genome-scale generation possible.",
+          "Radical Numerics showed a GLM can 'chain-of-thought' in DNA: shown progressively better RNA sequences, it extrapolated to scores it was never shown."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ИИ-модели, которые понимают ДНК, уже создают функциональные вирусы, а защита отстаёт в этой гонке вооружений.",
+        "headline": "Почему важно: модели, умеющие проектировать геномы вирусов с нуля, — это одновременно и угроза, и главный инструмент биозащиты.",
         "tweets": [
-          "Модели ДНК теперь генерируют целые геномы бактериофагов с нуля. Долгоконтекстный ИИ сделал то, чего не могли биолаборатории.",
-          "Защита нужна в открытом коде, распределённая среди всех защитников, а не запертая в корпоративных сейфах. Скорость машины работает только на нападающих.",
-          "Модели, обученные на ДНК, учатся мыслить генетическими последовательностями и самооптимизировать биосистемы. Одна технология—и для атаки, и для защиты."
+          "Команда Arc/Stanford с помощью моделей Evo и Evo-2 сгенерировала полные геномы бактериофагов, которые затем синтезировали в рабочие вирусы.",
+          "ДНК — это всего 4 буквы, но последовательности длиной до 3 млрд символов; прорыв случился благодаря длинному контексту, а не просто размеру модели.",
+          "В Radical Numerics показали 'chain-of-thought' на языке ДНК: модель, видя всё более удачные РНК, сама экстраполировала к результатам, которых ей не показывали."
         ]
       }
     },
@@ -192,19 +192,19 @@
       "publishedAt": "2026-09-23T13:00:00.000Z",
       "category": "cybersecurity",
       "en": {
-        "headline": "Why it matters: Ukraine gains AI-powered cyber defense tools for protecting civilian infrastructure against attacks.",
+        "headline": "Why it matters: OpenAI is giving Ukraine's government access to its Daybreak program to help defend civilian infrastructure from cyberattacks.",
         "tweets": [
-          "OpenAI's Daybreak program now available to Ukraine's government for civilian infrastructure defense.",
-          "AI-assisted cybersecurity helps protect critical systems when human security teams are stretched thin.",
-          "Private sector cyber tools reaching conflict zones marks shift in how tech companies support civilian protection."
+          "OpenAI extends its Daybreak program to Ukraine's government for civilian cyber defense.",
+          "Focus is protecting civilian infrastructure, not offensive operations.",
+          "Another sign AI firms are becoming direct players in wartime cybersecurity."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Украина получает инструменты на базе ИИ для защиты гражданской инфраструктуры от кибератак.",
+        "headline": "Почему важно: OpenAI открывает украинскому правительству доступ к программе Daybreak для защиты гражданской инфраструктуры от кибератак.",
         "tweets": [
-          "Программа Daybreak от OpenAI теперь доступна правительству Украины для защиты гражданских объектов.",
-          "ИИ-ассистированная кибербезопасность критична, когда команды защиты работают на пределе возможностей.",
-          "Передача корпоративных кибер-инструментов в зоны конфликта показывает новый подход tech-компаний к защите мирного населения."
+          "OpenAI расширяет доступ к программе Daybreak для правительства Украины.",
+          "Цель — защита гражданской инфраструктуры, а не наступательные операции.",
+          "Ещё один пример, как AI-компании становятся участниками кибербезопасности в условиях войны."
         ]
       }
     },
@@ -215,19 +215,19 @@
       "publishedAt": "2026-09-23T12:00:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: AI governance requires binding international agreements before systems become too powerful to control.",
+        "headline": "Why it matters: OpenAI's CEO took AI safety concerns to the UN Security Council, signaling AI governance is now viewed as a top-tier geopolitical issue.",
         "tweets": [
-          "Sam Altman told the UN Security Council that AI safety demands enforceable global rules, not just corporate promises. Governments need seats at the table.",
-          "The core tension: AI advances faster than policy. Altman argues we need frameworks NOW to ensure human oversight stays meaningful as capabilities grow.",
-          "Without coordination between nations, AI development becomes a race to the bottom on safety standards. International bodies must set baseline requirements."
+          "Sam Altman addressed the UN Security Council on AI safety and human control over AI systems.",
+          "His remarks pushed for international cooperation on managing AI risks, not just national policy.",
+          "AI oversight is moving from tech-industry talk to the world's highest diplomatic body."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Управление ИИ требует обязывающих международных соглашений до того, как системы станут слишком мощными для контроля.",
+        "headline": "Почему важно: глава OpenAI выступил перед Совбезом ООН — вопрос безопасности ИИ вышел на уровень глобальной геополитики.",
         "tweets": [
-          "Сэм Олтман призвал Совет Безопасности ООН установить обязательные глобальные правила для ИИ, а не полагаться на обещания корпораций. Государства должны участвовать.",
-          "Главное противоречие: ИИ развивается быстрее, чем принимаются законы. Олтман настаивает на срочном создании механизмов контроля, пока надзор остаётся эффективным.",
-          "Без координации между странами разработка ИИ превращается в гонку ослабления стандартов безопасности. Международные органы должны установить минимальные требования."
+          "Сэм Альтман обратился к Совету Безопасности ООН с темой безопасности ИИ и сохранения человеческого контроля над системами.",
+          "Он призвал к международному сотрудничеству в управлении рисками ИИ, а не только к национальным мерам.",
+          "Тема контроля над ИИ переходит из чисто технологических обсуждений в высшую дипломатическую повестку."
         ]
       }
     }

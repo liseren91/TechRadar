@@ -1,11 +1,9 @@
-import { useQuery } from '@tanstack/react-query'
+import { queryOptions, useQuery, useQueryClient } from '@tanstack/react-query'
 import {
   fetchTechFeedFn,
-  fetchGitHubFeedFn,
-  fetchArxivFeedFn,
-  fetchHackerNewsFeedFn,
-  fetchMultilingualFeedFn,
   invalidateTechFeedCacheFn,
+  type InvalidateResult,
+  type TechFeedStats,
 } from '@/server/functions/tech-feed'
 import type {
   TechItem,
@@ -14,6 +12,13 @@ import type {
   DataSource,
   OriginalLanguage,
 } from '@/lib/tech-categories'
+
+import type { DiscoveredTheme } from '@/lib/trend-topics'
+import { watchMatcher } from '@/lib/watch'
+import type { TrackRecord } from '@/server/store/predictions'
+import type { TopicSeries } from '@/server/store/series'
+
+export type { TechFeedStats }
 
 // Transform serialized items back to proper TechItem format
 function transformItems(
@@ -25,139 +30,82 @@ function transformItems(
   }))
 }
 
-export interface TechFeedStats {
-  totalSignals: number
-  anomaliesThisWeek: number
-  activeChains: number
-  topCategory: TechCategory
-  avgImpactScore: number
-  sourceCount?: number
-  languageCount?: number
+export const EMPTY_STATS: TechFeedStats = {
+  totalSignals: 0,
+  highlighted: 0,
+  byReason: {
+    'fast-rising': 0,
+    converging: 0,
+    'cross-source': 0,
+    novel: 0,
+    'under-the-radar': 0,
+  },
+  judged: 0,
+  topCategory: 'ai',
+  sourceCount: 0,
+  languageCount: 0,
 }
 
 export interface UseTechFeedResult {
   items: TechItem[]
   stats: TechFeedStats
   isLoading: boolean
+  isFetching: boolean
   isError: boolean
   error: Error | null
   refetch: () => void
   /** Force refresh - invalidates server cache and refetches fresh data */
-  forceRefresh: () => Promise<void>
+  forceRefresh: (token?: string) => Promise<InvalidateResult>
   fetchedAt: Date | null
+  /** Themes the radar discovered itself. */
+  themes: DiscoveredTheme[]
+  /** How past highlights turned out; null without the history store. */
+  trackRecord: TrackRecord | null
+  /** Per topic: new works per day (last 30 days) and where it started. */
+  topicSeries: Record<string, TopicSeries>
 }
 
+/** Shared with the route loader, which prefetches it during SSR. */
+export const techFeedQuery = queryOptions({
+  queryKey: ['tech-feed'],
+  queryFn: () => fetchTechFeedFn(),
+  staleTime: 5 * 60 * 1000, // 5 minutes
+})
+
 export function useTechFeed(): UseTechFeedResult {
-  const { data, isLoading, isError, error, refetch } = useQuery({
-    queryKey: ['tech-feed'],
-    queryFn: () => fetchTechFeedFn(),
-    staleTime: 5 * 60 * 1000, // 5 minutes
+  const { data, isLoading, isFetching, isError, error, refetch } = useQuery({
+    ...techFeedQuery,
     refetchInterval: 10 * 60 * 1000, // Refetch every 10 minutes
     retry: 2,
   })
 
-  // Force refresh - invalidates server cache first, then refetches
-  const forceRefresh = async () => {
-    try {
-      await invalidateTechFeedCacheFn()
-      console.log('[TechFeed] Server cache invalidated, refetching...')
-    } catch (err) {
-      console.error('[TechFeed] Failed to invalidate cache:', err)
-    }
-    void refetch()
+  const queryClient = useQueryClient()
+
+  // Force refresh - clears the server caches (operator token and throttle
+  // apply), then refetches. The rebuild also writes history, so views derived
+  // from it (source health, the weekly report) are refreshed after it.
+  const forceRefresh = async (token?: string): Promise<InvalidateResult> => {
+    const result = await invalidateTechFeedCacheFn({ data: { token } })
+    if (!result.ok) return result
+    await refetch()
+    void queryClient.invalidateQueries({ queryKey: ['health'] })
+    void queryClient.invalidateQueries({ queryKey: ['weekly-report'] })
+    return result
   }
 
   return {
     items: data ? transformItems(data.items) : [],
-    stats: data?.stats ?? {
-      totalSignals: 0,
-      anomaliesThisWeek: 0,
-      activeChains: 0,
-      topCategory: 'ai',
-      avgImpactScore: 0,
-      sourceCount: 0,
-      languageCount: 0,
-    },
+    stats: data?.stats ?? EMPTY_STATS,
     isLoading,
+    isFetching,
     isError,
     error: error as Error | null,
     refetch,
     forceRefresh,
     fetchedAt: data?.fetchedAt ? new Date(data.fetchedAt) : null,
-  }
-}
-
-// Individual source hooks for more granular control
-export function useGitHubFeed() {
-  const { data, isLoading, isError, error, refetch } = useQuery({
-    queryKey: ['github-feed'],
-    queryFn: () => fetchGitHubFeedFn(),
-    staleTime: 5 * 60 * 1000,
-    retry: 2,
-  })
-
-  return {
-    items: data ? transformItems(data.items) : [],
-    isLoading,
-    isError,
-    error: error as Error | null,
-    refetch,
-    fetchedAt: data?.fetchedAt ? new Date(data.fetchedAt) : null,
-  }
-}
-
-export function useArxivFeed() {
-  const { data, isLoading, isError, error, refetch } = useQuery({
-    queryKey: ['arxiv-feed'],
-    queryFn: () => fetchArxivFeedFn(),
-    staleTime: 5 * 60 * 1000,
-    retry: 2,
-  })
-
-  return {
-    items: data ? transformItems(data.items) : [],
-    isLoading,
-    isError,
-    error: error as Error | null,
-    refetch,
-    fetchedAt: data?.fetchedAt ? new Date(data.fetchedAt) : null,
-  }
-}
-
-export function useHackerNewsFeed() {
-  const { data, isLoading, isError, error, refetch } = useQuery({
-    queryKey: ['hackernews-feed'],
-    queryFn: () => fetchHackerNewsFeedFn(),
-    staleTime: 5 * 60 * 1000,
-    retry: 2,
-  })
-
-  return {
-    items: data ? transformItems(data.items) : [],
-    isLoading,
-    isError,
-    error: error as Error | null,
-    refetch,
-    fetchedAt: data?.fetchedAt ? new Date(data.fetchedAt) : null,
-  }
-}
-
-// Multilingual sources hook
-export function useMultilingualFeed() {
-  const { data, isLoading, isError, error, refetch } = useQuery({
-    queryKey: ['multilingual-feed'],
-    queryFn: () => fetchMultilingualFeedFn(),
-    staleTime: 5 * 60 * 1000,
-    retry: 2,
-  })
-
-  return {
-    items: data ? transformItems(data.items) : [],
-    isLoading,
-    isError,
-    error: error as Error | null,
-    refetch,
-    fetchedAt: data?.fetchedAt ? new Date(data.fetchedAt) : null,
+    themes: data?.themes ?? [],
+    trackRecord: data?.trackRecord ?? null,
+    topicSeries: data?.topicSeries ?? {},
   }
 }
 
@@ -166,9 +114,13 @@ export interface FilterOptions {
   category?: TechCategory | 'all'
   source?: DataSource | 'all'
   maturity?: MaturityStage | 'all'
-  anomaliesOnly?: boolean
-  sortBy?: 'recent' | 'impact' | 'hype' | 'citations'
+  highlightedOnly?: boolean
+  sortBy?: 'recent' | 'signal' | 'engagement'
   language?: OriginalLanguage | 'all'
+  /** Tracked topic or discovered theme id carried by the item. */
+  topic?: string | null
+  /** Watch term mentioned in title or summary. */
+  watch?: string | null
 }
 
 export function useFilteredTechFeed(filters: FilterOptions = {}) {
@@ -176,6 +128,7 @@ export function useFilteredTechFeed(filters: FilterOptions = {}) {
     items,
     stats,
     isLoading,
+    isFetching,
     isError,
     error,
     refetch,
@@ -197,26 +150,35 @@ export function useFilteredTechFeed(filters: FilterOptions = {}) {
       (i) => i.maturityStage === filters.maturity,
     )
   }
-  if (filters.anomaliesOnly) {
-    filteredItems = filteredItems.filter((i) => i.isAnomaly)
+  if (filters.highlightedOnly) {
+    filteredItems = filteredItems.filter((i) => i.signal.reasons.length > 0)
   }
   if (filters.language && filters.language !== 'all') {
     filteredItems = filteredItems.filter(
       (i) => i.originalLanguage === filters.language,
     )
   }
+  if (filters.topic) {
+    const topic = filters.topic
+    filteredItems = filteredItems.filter((i) => i.signal.topics.includes(topic))
+  }
+  if (filters.watch) {
+    const match = watchMatcher(filters.watch)
+    filteredItems = filteredItems.filter((i) =>
+      match(`${i.title}\n${i.summary}`),
+    )
+  }
 
-  // Apply sorting
+  // Apply sorting. Unscored items (nothing measurable) sort last.
   switch (filters.sortBy) {
-    case 'impact':
-      filteredItems.sort((a, b) => b.impactScore - a.impactScore)
-      break
-    case 'hype':
-      filteredItems.sort((a, b) => b.hypeVolume - a.hypeVolume)
-      break
-    case 'citations':
+    case 'signal':
       filteredItems.sort(
-        (a, b) => (b.citationCount || 0) - (a.citationCount || 0),
+        (a, b) => (b.signal.score ?? -1) - (a.signal.score ?? -1),
+      )
+      break
+    case 'engagement':
+      filteredItems.sort(
+        (a, b) => (b.signal.reach ?? -1) - (a.signal.reach ?? -1),
       )
       break
     case 'recent':
@@ -250,6 +212,7 @@ export function useFilteredTechFeed(filters: FilterOptions = {}) {
     allItems: items,
     stats,
     isLoading,
+    isFetching,
     isError,
     error,
     refetch,
@@ -260,25 +223,50 @@ export function useFilteredTechFeed(filters: FilterOptions = {}) {
   }
 }
 
-// Radar data transformation
+export interface RadarPoint {
+  id: string
+  title: string
+  /** Days since publication (0 = today). */
+  x: number
+  /** Composite signal score, 0..1. */
+  y: number
+  /** Reach within the source, 0..1; unranked sources get a small fixed dot. */
+  z: number
+  category: TechCategory
+  maturity: MaturityStage
+  highlighted: boolean
+}
+
+/** The radar shows recent signals; older items stay in the feed only. */
+export const RADAR_MAX_DAYS = 180
+
+// Radar data transformation. Items without a score have no y position and
+// are left off the chart rather than drawn at a made-up height; so are items
+// older than RADAR_MAX_DAYS, which would squash the time axis.
 export function useRadarData() {
   const { items, isLoading, isError } = useTechFeed()
 
-  const radarData = items.map((item) => ({
-    id: item.id,
-    title: item.title.slice(0, 40) + (item.title.length > 40 ? '...' : ''),
-    x: Math.floor(
-      (new Date().getTime() - item.publishedAt.getTime()) /
-        (1000 * 60 * 60 * 24),
-    ), // days ago
-    y: item.impactScore,
-    z: Math.log10(item.hypeVolume + 1) * 20, // normalized bubble size
-    category: item.category,
-    maturity: item.maturityStage,
-    isAnomaly: item.isAnomaly,
-    originalLanguage: item.originalLanguage,
-    citationCount: item.citationCount,
-  }))
+  const radarData: RadarPoint[] = items.flatMap((item) =>
+    item.signal.score === null ||
+    (Date.now() - item.publishedAt.getTime()) / 86_400_000 > RADAR_MAX_DAYS
+      ? []
+      : [
+          {
+            id: item.id,
+            title:
+              item.title.slice(0, 60) + (item.title.length > 60 ? '…' : ''),
+            x: Math.floor(
+              (new Date().getTime() - item.publishedAt.getTime()) /
+                (1000 * 60 * 60 * 24),
+            ),
+            y: item.signal.score,
+            z: item.signal.reach ?? 0.2,
+            category: item.category,
+            maturity: item.maturityStage,
+            highlighted: item.signal.reasons.length > 0,
+          },
+        ],
+  )
 
   return { radarData, items, isLoading, isError }
 }

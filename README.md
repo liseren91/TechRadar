@@ -1,348 +1,293 @@
 # Tech Evolution Radar (TechRadar)
 
-Дашборд для отслеживания технологических сигналов: как «шум» превращается в тренды. Приложение агрегирует данные из открытых источников, классифицирует их по категориям и стадиям зрелости, выявляет аномалии и показывает эволюционные цепочки технологий.
+A dashboard for watching how technical noise turns into trends. It aggregates
+research and engineering signals from thirteen open sources, assigns each to a
+category and a maturity stage, ranks it among its source peers, and emphasizes
+an item only when there is a stated reason to. It remembers what it has seen,
+so it can show what a single snapshot cannot: the same work spreading across
+sources, attention growing day over day, themes nobody listed, and how often
+its own highlights turned out right.
 
-Доступны публичный веб-дашборд (без входа и серверного хранилища) и расширение для Chrome, которое заменяет страницу новой вкладки.
+Two clients ship from this repository: a public web dashboard (no login) and a
+Chrome extension that replaces the new-tab page. The server keeps a small
+SQLite history on its volume.
 
-## Возможности
+## Features
 
-- **Tech Radar** — интерактивная scatter-карта сигналов по категориям и стадиям зрелости
-- **Tech Feed** — лента событий с фильтрацией по источникам, категориям и языку
-- **AI Insight** — автоматическая сводка по текущим данным, трендам и аномалиям
-- **Evolution Chains** — цепочки развития технологий от research до mass-market
-- **Anomaly Detection** — выявление необычных всплесков активности
-- **Daily Digest** — ежедневный AI-дайджест блогов (Anthropic, OpenAI, DeepMind и др.)
-- **Мультиязычность** — интерфейс и контент на английском и русском
-- **Chrome Extension** — та же аналитика на странице новой вкладки
+- **Radar** — scatter of scored signals: x = days ago, y = signal score, dot
+  size = reach within the source, accent ring = highlighted.
+- **Feed** — every item with source, stage, engagement, score and, where a
+  rule fires, its highlight reason; filters by source, language, category
+  and stage; sort by recency, signal or reach.
+- **Highlights** — items with a reason: fast-rising, the same work on several
+  sources, converging topic, new capability, or under the radar.
+- **Topics across sources** — tracked topics and themes the radar discovered
+  itself, with where they appear now, their last 30 days and where each
+  started. A row narrows the feed.
+- **This week** — what changed: topic movement, works that reached several
+  sources, the fastest growth, the most active makers, and your watch terms.
+- **Track record** — how past highlights did after 14 days against a random
+  sample from the same source and day.
+- **AI blog digest** — daily Claude-written summaries of engineering blogs
+  (EN/RU), generated in CI.
+- **Languages** — English and Russian UI; non-English items are
+  machine-translated with the original one click away.
+- **Chrome extension** — [download the latest build](https://github.com/lazarevtill/TechRadar/releases/latest/download/tech-radar-extension.zip)
+  (unzip → `chrome://extensions` → Developer mode → Load unpacked). The same feed on every new tab, served by your
+  TechRadar server (the extension holds no keys and calls no other API), with
+  an offline copy and a retry banner when the server is unreachable.
 
-## Стек
+## Stack
 
-| Слой | Технологии |
-|------|------------|
-| Frontend | React 19, TanStack Router, TanStack Query, Tailwind CSS 4, shadcn/ui, Recharts, Motion |
-| Backend | TanStack Start (SSR), server functions |
-| Runtime | Bun, Vite |
-| AI | Anthropic API (генерация дайджеста в CI) |
-| Тесты | Vitest, Testing Library |
+| Layer    | Technology                                                  |
+| -------- | ----------------------------------------------------------- |
+| Frontend | React 19, TanStack Router, TanStack Query, Tailwind CSS 4   |
+| Backend  | TanStack Start (SSR), server functions, in-memory cache     |
+| Runtime  | Bun, Vite                                                   |
+| AI       | TypeSafe Jev (categories, novelty, topics); Claude (digest) |
+| Tests    | Vitest                                                      |
 
-## Быстрый старт
+## Quick start
 
-### Требования
-
-- [Bun](https://bun.sh/) (рекомендуется) или Node.js 22+
-
-### Установка
+Requires [Bun](https://bun.sh/) (Node.js 22.13+ also runs the Vite app and
+tests).
 
 ```bash
 bun install
-bun run dev
+bun run dev        # http://localhost:3000
 ```
 
-Файл `.env` **не обязателен** — дашборд работает без секретов, данные берутся из публичных API.
-
-Опционально (аналитика):
+No `.env` is required to run: live data comes from public APIs. With
+`TYPESAFE_API_KEY` set, Jev categorizes items and judges novelty, substance,
+topics and discovered themes; without it items show as unclassified and are
+ranked from engagement only (the dashboard says so).
 
 ```bash
 cp .env.example .env
-# задайте VITE_INSTRUMENTATION_SCRIPT_SRC, если нужен скрипт метрик
 ```
 
-### Разработка
+| Variable                          | Purpose                                                                       |
+| --------------------------------- | ----------------------------------------------------------------------------- |
+| `TYPESAFE_API_KEY`                | Jev judgments (required by `generate:feed`)                                   |
+| `ANTHROPIC_API_KEY`               | Digest summaries, `generate:feed` only                                        |
+| `GITHUB_TOKEN`                    | More GitHub searches per refresh (no scopes)                                  |
+| `MYMEMORY_EMAIL`                  | Tenfold MyMemory translation quota                                            |
+| `OPENALEX_MAILTO`                 | OpenAlex polite pool                                                          |
+| `ADMIN_TOKEN`                     | Protects operator actions and data — **set it on any internet-facing server** |
+| `HISTORY_DB`                      | History database file (default `.cache/history.db`)                           |
+| `HISTORY_RETAIN_DAYS`             | Days of history kept (default 365)                                            |
+| `BACKUP_DIR`                      | Where daily backups go (default `backups/` next to the database)              |
+| `FEED_SCHEDULE_MINUTES`           | Rebuild cadence (default 5; 0 = only on requests, no maintenance)             |
+| `REPORT_WEBHOOK_URL`              | Weekly report, posted as `{"text": …}`                                        |
+| `REPORT_WATCH`                    | Server-side watch terms (weekly report and immediate alerts)                  |
+| `WATCH_WEBHOOK_URL`               | Immediate watch alerts (default: `REPORT_WEBHOOK_URL`)                        |
+| `ALERT_WEBHOOK_URL`               | Source down / recovered alerts                                                |
+| `PUBLIC_BASE_URL`                 | Link appended to the weekly report                                            |
+| `JEV_CACHE_FILE`                  | Where Jev verdicts persist (default `.cache/jev-verdicts.json`)               |
+| `DIGEST_DATA_BASE_URL`            | Read another fork's `public/data`                                             |
+| `DIGEST_MODEL`, `DIGEST_BATCH`, … | Digest pipeline tuning (see `.env.example`)                                   |
+| `VITE_INSTRUMENTATION_SCRIPT_SRC` | Analytics script injected in `<head>`                                         |
 
-```bash
-bun run dev
-```
-
-Приложение будет доступно на [http://localhost:3000](http://localhost:3000).
+Keys and webhook URLs never reach client code, `public/data`, or the
+extension; `check:secrets` scans generated data in CI.
 
 ### Production
 
 ```bash
-bun run build
-bun run start
+bun run build      # routes, type check, client + server, extension package
+bun run start      # Bun server on PORT (default 3000), serves ./dist
 ```
 
-Предпросмотр production-сборки без отдельного сервера:
+`server.ts` preloads `dist/client` assets into memory (ETag, gzip; tunable via
+`ASSET_PRELOAD_*`) and delegates the rest to the built SSR handler. The server
+entry (`src/server.ts`) also starts the rebuild schedule.
+
+### Docker
 
 ```bash
-bun run serve
+docker compose up --build                                  # http://localhost:3000
+docker run -p 3000:3000 -v techradar-cache:/app/.cache ghcr.io/lazarevtill/techradar:latest
 ```
 
-## Переменные окружения
+Images are published to GHCR after CI passes on `main`. For a real
+deployment — a VPS over SSH with HTTPS, Railway, or another platform — follow
+[`docs/deploy.md`](docs/deploy.md); coding agents (Claude Code, Codex, Cursor)
+can run it from [`AGENTS.md`](AGENTS.md).
 
-### Что нужно для запуска
+## How signals are scored
 
-| Сценарий | Нужны ли секреты? |
-|----------|-------------------|
-| `bun run dev` — локальная разработка | **Нет** |
-| `bun run build` + `bun run start` — production | **Нет** |
-| Chrome Extension | **Нет** (данные из публичных API и GitHub raw) |
-| `bun run generate:feed` — локальная генерация дайджеста | **Да** — `ANTHROPIC_API_KEY` |
-| CI (`generate-feed` workflow) | **Да** — secret `ANTHROPIC_API_KEY` в GitHub |
+Sources report attention on incomparable scales (stars, points, citations)
+and several report none (arXiv, PubMed, HAL, CiNii), so no absolute threshold
+is used. Each item is placed among its own source's peers in the current
+fetch (`src/lib/signal-model.ts`):
 
-Приложение **не использует** внешнюю БД, Appwrite или другие платформы с API-ключами. Кэш live-данных — in-memory на сервере.
+| Component   | Meaning                                                                                       |
+| ----------- | --------------------------------------------------------------------------------------------- |
+| reach       | percentile of stars / points / likes / reactions / citations within the source                |
+| velocity    | percentile of engagement gained per day: measured since yesterday when known, else an average |
+| recency     | age decay with a per-source half-life                                                         |
+| novelty     | Jev: probability the item describes a capability that did not exist before                    |
+| substance   | Jev: probability it is a concrete technical artifact, not commentary                          |
+| convergence | distinct sources carrying one of the item's topics, or the same work, whichever is higher     |
 
-### Опционально (`.env`)
+The score is a weighted mean over the components available for the item;
+missing components are left out, never guessed, and an item with nothing
+measurable is shown unscored. Highlight reasons are explicit rules —
+fast-rising (robust velocity outlier among source peers), cross-source (the
+same work, by arXiv id / DOI / repository / link, on two or more sources),
+converging (a topic on four or more sources), new capability (novelty ≥ 0.5),
+under the radar (novel while reach is still low) — and are always shown with
+the item. Maturity (research → prototype → early adopter → mass market) comes
+from counts in code.
 
-Скопируйте `.env.example` → `.env` только если нужны дополнительные настройки:
+## Data sources
 
-| Переменная | Обязательна | Описание |
-|------------|-------------|----------|
-| `VITE_INSTRUMENTATION_SCRIPT_SRC` | Нет | URL скрипта аналитики/инструментации в `<head>` |
+| Source           | What is collected                                     |
+| ---------------- | ----------------------------------------------------- |
+| GitHub           | Repositories created this week (stars, forks, topics) |
+| arXiv            | Newest submissions across ten fields                  |
+| Hacker News      | Top 100 stories                                       |
+| Lobsters         | Front page                                            |
+| DEV (dev.to)     | Most-reacted articles of the day                      |
+| HF Papers        | Hugging Face Daily Papers of the last week            |
+| HF Models        | Models trending on the Hugging Face Hub               |
+| bioRxiv, medRxiv | Recent preprints                                      |
+| OpenAlex         | Most-cited recent journal and conference work         |
+| OpenAlex (China) | Recent Chinese-language journal research              |
+| PubMed           | Recent biomedical research                            |
+| HAL              | French research archive                               |
+| CiNii            | Japanese research articles                            |
 
-### Генерация дайджеста
+All keyless (GitHub optionally with a token). The server rebuilds the feed
+every five minutes and serves it stale-while-revalidate; each source gets a
+30-second budget per rebuild. Not included, for now: patents (the USPTO Open
+Data Portal requires an API key), Reddit and Bluesky (both refuse keyless
+access). Mastodon trending links were measured and left out (general news).
 
-| Переменная | Обязательна | Где |
-|------------|-------------|-----|
-| `ANTHROPIC_API_KEY` | Да, только для `generate:feed` | Локально в `.env` или GitHub Actions secret |
+The digest pipeline (`bun run generate:feed`, daily in CI) writes
+`public/data/{digest,trends,history}.json`: blog summaries and the topic
+momentum of blog posts. That series counts blog posts; the server's history
+store counts live-source items and discovered themes. They answer different
+questions and are kept separate.
 
-```bash
-# Локальный прогон пайплайна (не нужен для dev-сервера)
-ANTHROPIC_API_KEY=sk-ant-... bun run generate:feed
-```
+## Chrome extension
 
-> **Важно:** `ANTHROPIC_API_KEY` не должен попадать в репозиторий, клиентский код, `public/data/*.json` или расширение Chrome. Скрипт `check:secrets` проверяет артефакты перед коммитом в CI.
+Sources live in `chrome-extension/`; `bun run build:extension` packages them
+into `dist/extension/tech-radar-extension.zip` (also downloadable from the
+dashboard and from the latest GitHub release). Load `dist/extension/unpacked`
+via `chrome://extensions/` with Developer mode on. The extension talks only to
+your TechRadar server (address in its Settings) and holds no keys; it keeps
+the last feed and weekly report for offline use. See
+`chrome-extension/README.md`.
 
-### Production-сервер (`server.ts`)
+## Running it for months
 
-Все переменные ниже опциональны — есть разумные значения по умолчанию:
+- **One replica.** The history is a SQLite file and the feed cache lives in
+  memory: run exactly one server per history volume. Two servers writing the
+  same file, or behind a load balancer, would record everything twice.
+- **Schedule.** The server rebuilds on its own (`FEED_SCHEDULE_MINUTES`), so
+  history, discovery, the track record, backups and alerts keep running with
+  no visitors.
+- **Health.** `GET /api/health` lists every source (`ok`, `degraded`, `down`)
+  and why; `?strict=1` answers 503 when something is wrong — use it for
+  ongoing uptime monitoring. Deploy-time checks (the Docker healthcheck,
+  Railway) use the plain endpoint, which fails only when the server or its
+  history store is down, so an upstream source outage never fails a deploy. With `ADMIN_TOKEN` set, the
+  usage ledger and storage details need `Authorization: Bearer <token>`, and
+  so does forcing a rebuild from the dashboard. `ALERT_WEBHOOK_URL` hears
+  about sources going down and recovering.
+- **Backups.** Once a day the database is copied with `VACUUM INTO` to
+  `BACKUP_DIR` (default `backups/` on the same volume; the newest 7 are kept).
+  The VPS setup in [`docs/deploy.md`](docs/deploy.md) puts them on the host,
+  outside the volume, and shows the tested restore procedure. A database
+  written by a newer build is refused rather than downgraded.
+- **Exports.** `GET /api/export?kind=series|predictions|themes&format=csv|json`
+  returns the history as tables.
 
-| Переменная | По умолчанию | Описание |
-|------------|--------------|----------|
-| `PORT` | `3000` | Порт HTTP-сервера |
-| `ASSET_PRELOAD_MAX_SIZE` | `5242880` (5 MB) | Макс. размер файла для preload в память |
-| `ASSET_PRELOAD_INCLUDE_PATTERNS` | все файлы | Glob-паттерны для preload |
-| `ASSET_PRELOAD_EXCLUDE_PATTERNS` | — | Исключения из preload |
-| `ASSET_PRELOAD_VERBOSE_LOGGING` | `false` | Подробные логи preload |
-| `ASSET_PRELOAD_ENABLE_ETAG` | `true` | ETag для статики |
-| `ASSET_PRELOAD_ENABLE_GZIP` | `true` | Gzip для статики |
-| `IMAGINE_PREVIEW` | `false` | Отключить кэширование (preview-режим) |
+## Security model
 
-## Источники данных
+The server holds every key; clients hold none.
 
-### Live-парсеры (server functions)
+- **What a client can do.** Everything the extension (or anyone who can reach
+  the server) calls is read-only: `GET /api/extension-feed`, `/api/report`,
+  `/api/health`, `/api/export`, the CJK font relay (strict path allowlist)
+  and the dashboard's read server functions. These send `CORS *` because
+  they carry no credentials and change nothing. Reports and exports are cached
+  server-side, so repeated calls cannot multiply work.
+- **What costs or changes something.** Forcing a rebuild (clears the caches
+  and re-fetches every source) requires `ADMIN_TOKEN` when it is set and is
+  limited to once per two minutes for everyone. The dashboard's "translate"
+  button is public but limited to 30 calls a minute for the whole server
+  (MyMemory's quota is shared). Jev and Claude are called only by the server
+  itself, on its own schedule, with results cached per item.
+- **Operator data.** `/api/health` is public for status (what monitors and the
+  extension read); the usage ledger and storage need `ADMIN_TOKEN`.
+- **Transport.** The extension accepts `http://` for local and LAN servers
+  (`localhost`, `192.168.*`, …). For anything else use HTTPS (a reverse proxy
+  in front of the server): the feed is public data, but watch terms describe
+  the reader, so the extension sends them only over HTTPS or to a local
+  server and says so when it leaves them out.
+- **A server you do not trust.** The server address is a user setting, so the
+  extension treats every answer as untrusted: all text and attribute values
+  are escaped, numbers coerced, links limited to `http(s)`, and its CSP allows
+  only its own scripts (`script-src 'self'`, no inline handlers).
 
-| Источник | Что собирается |
-|----------|----------------|
-| GitHub | Репозитории по темам (stars, forks, topics) |
-| arXiv | Научные препринты |
-| Hacker News | Популярные истории |
-| Semantic Scholar | Высокоцитируемые статьи |
-| PubMed | Биомедицинские исследования |
-| HAL | Французский научный архив |
-| CiNii / CNKI | Японские и китайские публикации |
-
-Данные кэшируются на сервере. Панель **Parser Control** на дашборде позволяет принудительно обновить кэш и посмотреть метрики по источникам.
-
-### Статический дайджест
-
-Скрипт `generate:feed` собирает RSS/Atom-ленты AI-блогов, суммаризирует посты через Anthropic и сохраняет результат в `public/data/`:
-
-- `digest.json` — последние новости с переводом EN/RU
-- `trends.json` — тренды по темам
-- `history.json` — исторические снимки для momentum-анализа
-
-## Категории и стадии
-
-**Категории:** AI, Energy, Biotech, Robotics, Web3, Quantum, Space, Cybersecurity
-
-**Стадии зрелости:** Research → Prototype → Early Adopter → Mass Market
-
-## Chrome Extension
-
-Расширение находится в `chrome-extension/` и заменяет стандартную страницу новой вкладки.
-
-### Установка вручную
-
-1. Откройте `chrome://extensions/`
-2. Включите «Режим разработчика»
-3. Нажмите «Загрузить распакованное расширение» и выберите папку `chrome-extension/`
-
-Или скачайте ZIP через баннер на веб-дашборде (server function `downloadExtensionFn`).
-
-### Как расширение показывает дашборд во вкладке браузера
-
-**Короткий ответ:** расширение не «подключается» к сайту и не обновляет его. Оно **подменяет** страницу новой вкладки собственным дашбордом и самостоятельно загружает данные из открытых API и статических JSON-файлов репозитория.
-
-#### 1. Подмена новой вкладки
-
-В `manifest.json` задано:
-
-```json
-"chrome_url_overrides": { "newtab": "newtab.html" }
-```
-
-После установки каждый раз, когда вы открываете новую вкладку (`Ctrl+T`), Chrome вместо пустой страницы или Google загружает `chrome-extension://<id>/newtab.html` — локальную HTML-страницу расширения с тем же UI, что и веб-дашборд (радар, лента, AI Insight, цепочки эволюции).
-
-#### 2. Загрузка данных при открытии вкладки
-
-При загрузке страницы `app.js` запускает `init()`:
-
-```javascript
-await fetchAllData()   // GitHub, arXiv, Hacker News
-await fetchTrends()    // trends.json из репозитория
-await fetchDigest()    // digest.json из репозитория
-render()
-setInterval(fetchAllData, 10 * 60 * 1000)  // автообновление каждые 10 мин
-```
-
-То есть **каждая новая вкладка** — это свежий запуск дашборда: сначала проверяется кэш, затем при необходимости идут сетевые запросы.
-
-#### 3. Откуда берутся данные
-
-| Тип данных | Источник | Как обновляется |
-|------------|----------|-----------------|
-| Live-сигналы (радар, лента, статистика) | Прямые запросы из браузера к `api.github.com`, `export.arxiv.org`, `hacker-news.firebaseio.com` | При каждом открытии вкладки (если кэш старше 5 мин) + автообновление каждые 10 мин + кнопка Refresh |
-| AI Blog Digest | `digest.json` на GitHub (`raw.githubusercontent.com/.../public/data/digest.json`) | Ежедневно через CI (`generate-feed` workflow) |
-| Тренды по темам | `trends.json` — тот же путь | Ежедневно через CI |
-| Переводы EN→RU | MyMemory Translation API | По запросу пользователя, с LRU-кэшем |
-
-Расширение **не ходит на ваш сервер** (`localhost:3000` или production). Оно работает автономно: live-данные — напрямую из публичных API, дайджест и тренды — из статики в репозитории.
-
-#### 4. Кэширование в браузере
-
-Чтобы не перегружать API при частом открытии вкладок, данные сохраняются в `chrome.storage.local`:
-
-| Ключ | TTL | Содержимое |
-|------|-----|------------|
-| `techRadarCache` | 5 мин | Сигналы GitHub/arXiv/HN + статистика |
-| `techRadarDigest` | 6 ч | AI-дайджест блогов |
-| `techRadarTrends` | 6 ч | Тренды по темам |
-| `techRadarLanguage` | — | Выбранный язык (EN/RU) |
-
-Если кэш ещё свежий — вкладка отрисовывается мгновенно из локального хранилища. Если устарел — идёт фоновый fetch и UI перерисовывается.
-
-#### 5. Связь с веб-дашбордом
-
-Веб-сайт и расширение — **два независимых клиента** с похожим интерфейсом:
-
-```mermaid
-flowchart TB
-    subgraph ext [Chrome Extension — новая вкладка]
-        NT[newtab.html + app.js]
-        CS[chrome.storage.local]
-        NT --> CS
-    end
-
-    subgraph web [Веб-дашборд]
-        React[React + TanStack Start]
-        SF[server functions + кэш]
-        React --> SF
-    end
-
-    subgraph sources [Общие источники]
-        GH[GitHub API]
-        AX[arXiv API]
-        HN[Hacker News API]
-        JSON["public/data/*.json\n(digest, trends)"]
-    end
-
-    NT -->|fetch напрямую| GH
-    NT -->|fetch напрямую| AX
-    NT -->|fetch напрямую| HN
-    NT -->|fetch| JSON
-
-    SF --> GH
-    SF --> AX
-    SF --> HN
-    SF --> JSON
-
-    CI[GitHub Actions\ngenerate:feed] -->|commit daily| JSON
-```
-
-| | Веб-дашборд | Chrome Extension |
-|---|-------------|------------------|
-| Где работает | Сайт (SSR + server functions) | Локально в браузере |
-| Live-источники | GitHub, arXiv, HN + Semantic Scholar, PubMed, HAL… | GitHub, arXiv, HN |
-| Дайджест/тренды | Через server functions / static | Напрямую с GitHub raw |
-| Кэш | Серверный (in-memory) | `chrome.storage.local` |
-| Обновление | TanStack Query + кнопка в Parser Control | При открытии вкладки + interval 10 мин |
-
-**Итого:** установив расширение, вы получаете живой дашборд **на каждой новой вкладке** — Chrome подставляет его вместо стандартной страницы, а `app.js` сам подтягивает и кэширует данные. Веб-сайт при этом не меняется; оба клиента параллельно читают одни и те же внешние источники.
-
-## Структура проекта
+## Project structure
 
 ```
 TechRadar/
-├── chrome-extension/       # Расширение для Chrome
-├── public/data/              # Статический дайджест (генерируется CI)
+├── chrome-extension/         # New-tab extension (plain ES modules)
+├── public/data/              # Generated digest, trends, history (CI)
 ├── scripts/
-│   ├── generate-feed/        # Пайплайн дайджеста и трендов
-│   └── check-no-secrets.ts   # Проверка утечки секретов в артефактах
+│   ├── generate-feed/        # Digest and trends pipeline
+│   ├── build-extension.ts    # Extension packager
+│   ├── probe-novelty.ts      # Jev rubric calibration probe (manual)
+│   ├── probe-discovery.ts    # Theme candidates and Jev verdicts (manual)
+│   ├── smoke-store.ts        # History store on Bun's SQLite (CI)
+│   └── check-no-secrets.ts   # Secret scan for generated data
 ├── src/
-│   ├── components/
-│   │   ├── dashboard/        # UI дашборда (Radar, Feed, AI Insight…)
-│   │   └── ui/               # shadcn/ui компоненты
-│   ├── hooks/                # React hooks (feed, anomaly)
-│   ├── lib/                  # Категории, i18n, утилиты
-│   ├── routes/               # File-based routing (TanStack Router)
+│   ├── components/dashboard/ # Dashboard UI
+│   ├── components/ui/        # shadcn/ui components
+│   ├── hooks/                # TanStack Query hooks
+│   ├── lib/                  # Domain model, signal model, topics, i18n
+│   ├── routes/               # File-based routing; _api/ = extension-feed,
+│   │                         #   report, health, export, fonts
+│   ├── server.ts             # Server entry: SSR handler + rebuild schedule
 │   └── server/
-│       ├── functions/        # Server functions (feed, translation…)
-│       └── utils/            # Кэш, fetch helpers
-├── server.ts                 # Production-сервер на Bun
-└── .github/workflows/        # CI (generate-feed)
+│       ├── functions/        # Feed, report, health, alerts, maintenance
+│       ├── store/            # History store (SQLite): identity, discovery,
+│       │                     #   track record, report, series, ops
+│       └── utils/            # Jev judges, verdict store, cache, fetch
+├── server.ts                 # Production Bun server
+└── .github/workflows/        # CI (verify, generate-feed, publish-image)
 ```
 
-## Скрипты
+## Scripts
 
-| Команда | Описание |
-|---------|----------|
-| `bun run dev` | Dev-сервер (Vite, порт 3000) |
-| `bun run start` | Production-сервер (Bun) |
-| `bun run build` | Сборка клиента и сервера |
-| `bun run test` | Запуск тестов (Vitest) |
-| `bun run lint` | ESLint |
-| `bun run format` | Prettier (запись) |
-| `bun run format:check` | Prettier (проверка) |
-| `bun run generate:routes` | Регенерация route tree |
-| `bun run generate:feed` | Генерация digest/trends/history |
-| `bun run check:secrets` | Проверка секретов в data-файлах |
-| `bun run clean` | Очистка артефактов сборки |
+| Command                   | Description                                   |
+| ------------------------- | --------------------------------------------- |
+| `bun run dev`             | Vite dev server on :3000                      |
+| `bun run build`           | Full production build incl. extension package |
+| `bun run start`           | Production server                             |
+| `bun run test`            | Vitest unit tests                             |
+| `bun run typecheck`       | TypeScript                                    |
+| `bun run lint`            | ESLint                                        |
+| `bun run format:check`    | Prettier check (`format` writes)              |
+| `bun run build:extension` | Package the extension only                    |
+| `bun run generate:routes` | Regenerate the route tree                     |
+| `bun run generate:feed`   | Regenerate digest, trends and history         |
+| `bun run check:secrets`   | Scan `public/data` for key-shaped strings     |
 
-## CI: ежедневный дайджест
+## Development notes
 
-Workflow `.github/workflows/generate-feed.yml` запускается по расписанию (~06:17 UTC) и вручную через `workflow_dispatch`:
+- Routes: `src/routes/_public/` is the dashboard, `_api/` raw handlers;
+  `src/routeTree.gen.ts` is generated.
+- UI text goes through `src/lib/i18n/translations.ts` (EN and RU).
+- Add shadcn components with `pnpx shadcn@latest add <component>`.
+- `CLAUDE.md` holds the detailed architecture notes and conventions.
 
-1. Устанавливает зависимости
-2. Запускает `bun run generate:feed` с `ANTHROPIC_API_KEY`
-3. Проверяет отсутствие секретов в артефактах
-4. Коммитит обновлённые `public/data/*.json`
+## Learn more
 
-Для настройки секрета:
-
-```bash
-gh secret set ANTHROPIC_API_KEY
-```
-
-## Разработка
-
-### Маршруты
-
-File-based routing в `src/routes/`:
-
-- `_public/` — публичный дашборд (`/`)
-- `_api/` — API-эндпоинты
-
-### shadcn/ui
-
-Добавление компонентов:
-
-```bash
-pnpx shadcn@latest add button
-```
-
-### Тесты
-
-```bash
-bun run test
-```
-
-Тесты покрывают server functions, generate-feed pipeline и проверку секретов.
-
-## Learn More
-
-- [TanStack Router](https://tanstack.com/router)
-- [TanStack Start](https://tanstack.com/start)
-- [TanStack Query](https://tanstack.com/query)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [shadcn/ui](https://ui.shadcn.com/)
+- [TanStack Router](https://tanstack.com/router) · [TanStack Start](https://tanstack.com/start) · [TanStack Query](https://tanstack.com/query)
+- [Tailwind CSS](https://tailwindcss.com/) · [shadcn/ui](https://ui.shadcn.com/)
+- [TypeSafe](https://docs.typesafe.ai/)
