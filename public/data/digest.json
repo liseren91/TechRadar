@@ -1,6 +1,75 @@
 {
-  "generatedAt": "2026-09-25T11:50:22.623Z",
+  "generatedAt": "2026-09-26T11:24:27.910Z",
   "items": [
+    {
+      "id": "d-uu6bjg",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/openrouter",
+      "publishedAt": "2026-09-25T23:14:41.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: OpenRouter proved the AI economy needs a neutral routing layer, not a single winner—and fraud at scale is now the infrastructure problem.",
+        "tweets": [
+          "OpenRouter went from dismissed as 'just a wrapper' to 1M devs and 10T tokens/day by betting early that multi-model beats winner-take-all. Model labs spend billions training but fail at distribution.",
+          "Mistral's price war validated the inference marketplace idea. OpenRouter's leaderboard became a live map of the entire AI industry's actual usage patterns, not just hype.",
+          "Token fraud is the new frontier. As autonomous agents reshape inference demand, attackers will target token flows directly. Stripe's fraud infrastructure is now critical to the AI economy."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: OpenRouter доказал, что экономике AI нужен нейтральный маршрутизатор, а не один победитель — и fraud в масштабе стал главной инфраструктурной проблемой.",
+        "tweets": [
+          "OpenRouter вырос от 'просто обёртки' до 10 млн разработчиков и 10 трлн токенов в день, поставив на мультимодель вместо модели одного победителя. Лаборатории моделей тратят миллиарды на тренировку, но не справляются с распределением.",
+          "Ценовая война Mistral доказала ценность конкурентного рынка инференса. Рейтинг OpenRouter стал живой картой реального использования AI индустрией, а не только хайпа.",
+          "Fraud с токенами — новый фронт. Когда автономные агенты переформатируют спрос на инференс, злоумышленники будут атаковать токен-потоки напрямую. Фрод-инфраструктура Stripe теперь критична для экономики AI."
+        ]
+      }
+    },
+    {
+      "id": "d-478aau",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/proaction",
+      "publishedAt": "2026-09-25T19:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Fleet management software built with Codex ships faster and handles more customers with less manual overhead.",
+        "tweets": [
+          "Proaction cut operational time by 75+ hours using Codex for code generation, shrinking dev cycles from weeks to days.",
+          "Sales jumped 60% after automating fleet management workflows—customers got features faster, support demands dropped.",
+          "AI-assisted development isn't just efficiency: it's competitive. Smaller teams now ship at enterprise speed."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Codex позволяет компаниям управления автопарками разрабатывать ПО быстрее и обслуживать больше клиентов с меньшими затратами.",
+        "tweets": [
+          "Proaction сэкономила 75+ часов на разработке благодаря автоматическому генерированию кода через Codex—цикл разработки сократился с недель до дней.",
+          "После автоматизации бизнес-процессов продажи выросли на 60%—клиенты получили функции быстрее, поддержка требует меньше ресурсов.",
+          "ИИ-ассистируемая разработка—это уже конкурентное преимущество: маленькие команды теперь выпускают продукты как крупные компании."
+        ]
+      }
+    },
+    {
+      "id": "d-1oi6snz",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/25/john-gruber/",
+      "publishedAt": "2026-09-25T17:22:01.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Meta's Muse presents powerful autonomous AI as a cute, easy-to-use tool without adequate consumer warnings about its genuine risks.",
+        "tweets": [
+          "Muse gives each user a full persistent Linux VM in Meta's cloud—technically groundbreaking, but packaged so cutely most people don't grasp what they're running.",
+          "First consumer-grade agentic AI system is here. Problem: users buying a power saw have no idea it can sever their fingers.",
+          "The danger isn't the technology. It's that Muse hides its power behind accessibility and a mascot, leaving consumers unaware of real risks."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Meta Muse предоставляет мощный автономный AI как милый удобный инструмент без должных предупреждений потребителям об опасностях.",
+        "tweets": [
+          "Muse дает каждому пользователю полную Linux VM в облаке Meta—технически революционно, но упакована так мило, что люди не понимают что запускают.",
+          "Первая потребительская система агентного AI уже здесь. Проблема: люди покупают электропилу и не знают что она может им отрезать палец.",
+          "Опасность не в технологии. Muse скрывает свою мощь за удобством и маскотом, оставляя пользователей в неведении о рисках."
+        ]
+      }
+    },
     {
       "id": "d-10oenva",
       "source": "latent-space",
@@ -8,19 +77,42 @@
       "publishedAt": "2026-09-25T05:37:00.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Open-weight models are now competitive with frontier labs on benchmarks, while specialized decision models are cutting inference costs by 100-300x for real production workloads.",
+        "headline": "Why it matters: Open-weight models are now competitive with frontier labs on reasoning tasks, while specialized decision models cut inference costs by 100x—reshaping how teams choose between closed and open AI.",
         "tweets": [
-          "Claude Opus 5.5 leads SimpleBench at 88.4% and matches GPT-6 Astra on reasoning tasks at 60% lower cost. Open-weight Qwen3.8 Max ranks third, 12 points behind the leaders—the gap is closing fast.",
-          "Jev decision models cost $0.044 per 1K judgments vs GPT-6's $12+. A cascade routing low-confidence calls to GPT-6 keeps 99% accuracy at 57% of the cost. Production teams are already shipping this.",
-          "Xiaomi's MiMo-V2.6-Pro released under MIT at $0.13/task (vs $1.99 for equivalent closed models). Open-source alternatives now handle 1M context and beat older OpenAI/Google models on speed and cost."
+          "Claude Opus 5.5 and GPT-6 Astra dominate reasoning benchmarks, but Xiaomi's open MiMo-V2.6 matches them at 1/15th the cost. Open-weight models are no longer hobbyist territory.",
+          "TypeSafe's Jev judges outputs for $0.044 per 1K decisions—277x cheaper than GPT-6. A cheap-judge-then-escalate cascade keeps 99% accuracy at half the cost.",
+          "Databricks engineers stopped using closed models once open-source alternatives routed through internal agents. When cost and latency flip, the default shifts fast."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Открытые модели теперь конкурируют с фронтиерными лабораториями в бенчмарках, а специализированные модели принятия решений снижают стоимость инференса в 100-300 раз для боевых нагрузок.",
+        "headline": "Почему важно: открытые модели теперь конкурируют с лидерами на задачах рассуждения, а специализированные модели для принятия решений снижают стоимость инференса в 100 раз—переформатируя выбор между закрытыми и открытыми решениями.",
         "tweets": [
-          "Claude Opus 5.5 лидирует в SimpleBench (88.4%) и вравне с GPT-6 Astra на рассуждениях, но в 60 раз дешевле. Open-weight Qwen3.8 Max занимает третье место — зазор закрывается быстро.",
-          "Jev стоит $0.044 за 1K оценок против $12+ у GPT-6. Каскад с эскалацией в GPT-6 держит 99% точности при 57% стоимости. Продакшн-команды это уже деплоят.",
-          "Xiaomi выпустила MiMo-V2.6-Pro под MIT за $0.13 за задачу (против $1.99 у закрытых). Open-source с миллионным контекстом бьет старые модели OpenAI и Google по скорости и цене."
+          "Claude Opus 5.5 и GPT-6 Astra лидируют в бенчмарках рассуждения, но открытая Xiaomi MiMo-V2.6 достигает их качества в 15 раз дешевле. Открытые модели больше не инструмент энтузиастов.",
+          "Jev от TypeSafe оценивает выходы за $0.044 на 1000 решений—в 277 раз дешевле GPT-6. Каскад дешёвой проверки с эскалацией сохраняет 99% точности при половине стоимости.",
+          "Инженеры Databricks перестали использовать закрытые модели, когда открытые альтернативы через собственные агенты показали лучше по цене и задержке. Выбор по умолчанию быстро меняется."
+        ]
+      }
+    },
+    {
+      "id": "d-atp0ma",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/25/sighting-403293902/",
+      "publishedAt": "2026-09-25T02:07:04.000Z",
+      "category": "biotech",
+      "en": {
+        "headline": "Why it matters: Wildlife photography gear choices directly impact your ability to capture behavioral details of marine species in their natural habitats.",
+        "tweets": [
+          "200-800mm telephoto lens enabled unprecedented detail capture of gannet, heron, and pelican interactions in Monterey Bay without disturbing subjects",
+          "Marine sanctuary birds demonstrate consistent site fidelity—repeating location use under harbor infrastructure reveals predictable behavioral patterns for observation",
+          "Equipment investment in professional optics translated to actionable wildlife documentation; better resolution enables behavioral study and species monitoring"
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Выбор оборудования для фотографии дикой природы напрямую влияет на качество документирования поведения морских видов в естественной среде.",
+        "tweets": [
+          "Телеобъектив 200-800 мм позволил получить детальные снимки взаимодействия олуш, цапель и пеликанов в заливе Монтерей без нарушения поведения животных",
+          "Птицы морского заповедника демонстрируют постоянную привязку к месту—регулярное использование укрытия у гавани указывает на предсказуемые поведенческие паттерны",
+          "Инвестиция в профессиональную оптику дала возможность надежной документации; высокое разрешение позволяет изучать поведение и мониторить популяции видов"
         ]
       }
     },
@@ -31,19 +123,42 @@
       "publishedAt": "2026-09-25T01:30:57.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Runway's WorldPrompt lets you specify real-time interactive video worlds with timestamped events, turning video generation into playable environments—but error accumulation and limited physics understanding remain hard problems.",
+        "headline": "Why it matters: Runway's WorldPrompt lets you script real-time interactive worlds with video and audio, turning generative models into playable environments without traditional game engines.",
         "tweets": [
-          "Runway GWM Worlds 2 generates 720p video at 24fps with synchronized audio. WorldPrompt acts as a control layer for characters, cameras, and environment—like game scripting but through prompts instead of code.",
-          "The engineering challenge: converting bidirectional diffusion models into autoregressive frame-by-frame generators, then distilling them (50→4 denoising steps) to hit real-time performance without catastrophic quality loss.",
-          "Current limitation is error accumulation—small mistakes compound as generated frames feed back into the model. Movement prompts work reliably; physics constraints and complex logic still struggle."
+          "Runway's GWM Worlds 2 streams 720p video at 24fps with synced audio. WorldPrompt is a control layer that lets you prompt characters, cameras, and environments in real-time—like directing an NPC in a game, but AI-generated.",
+          "The hard part: making diffusion models generate frame-by-frame instead of full clips, then distilling them fast enough to play in real-time. Runway cuts denoising steps from ~50 to 4, trading some quality for speed.",
+          "Current limits: error accumulation when feeding generated frames back into the model, and movement prompts work better than complex physics. But this is shipping now as a research preview, not vaporware."
         ]
       },
       "ru": {
-        "headline": "Почему важно: WorldPrompt от Runway позволяет создавать интерактивные видеомиры в реальном времени через текстовые команды с временными метками событий, но накопление ошибок и слабое понимание физики остаются серьёзными проблемами.",
+        "headline": "Почему важно: WorldPrompt от Runway позволяет управлять интерактивными мирами в реальном времени через текстовые команды, превращая генеративные модели в играбельные среды без традиционных движков.",
         "tweets": [
-          "GWM Worlds 2 генерирует видео 720p на 24fps с синхронизированным звуком. WorldPrompt—это управляющий слой для персонажей и окружения, похожий на игровые скрипты, но через текстовые промпты вместо кода.",
-          "Инженерная задача: преобразовать двунаправленные диффузионные модели в авторегрессивные генераторы кадр за кадром, потом сжать их (50→4 шагов денойзинга) для работы в реальном времени без потери качества.",
-          "Главное ограничение—накопление ошибок при подаче сгенерированных кадров обратно в модель. Движения работают надёжно, а физические законы и сложная логика пока неустойчивы."
+          "GWM Worlds 2 стримит видео 720p на 24fps с синхронизированным звуком. WorldPrompt—это слой управления персонажами, камерой и окружением. Вы можете подсказывать NPC в реальном времени, как в игре, но всё генерируется ИИ.",
+          "Сложность: заставить диффузионную модель генерировать кадр за кадром вместо целого клипа, затем ускорить её. Runway сокращает шаги денойзинга с ~50 до 4 ценой небольшой потери качества.",
+          "Ограничения сейчас: накопление ошибок при циклической генерации кадров и движения работают лучше, чем сложная физика. Но это уже доступно как research preview, а не будущая технология."
+        ]
+      }
+    },
+    {
+      "id": "d-ai2jmr",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/24/harder/",
+      "publishedAt": "2026-09-24T23:31:08.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Coding agents amplify rather than simplify software engineering—their power demands deeper expertise, not less.",
+        "tweets": [
+          "Coding agents don't lower the bar for engineering. They raise it. You need more discipline and knowledge to use them effectively, not less.",
+          "The paradox: agents can do amazing things, but extracting that value requires you to understand systems deeply. Shallow knowledge breaks at scale.",
+          "Spending more time with coding agents reveals a hard truth: they make the craft harder before they make it easier. That's where the real work is."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Агенты кодирования усложняют разработку, а не упрощают — их потенциал требует глубокого понимания, а не меньше знаний.",
+        "tweets": [
+          "Агенты кода не снижают планку для инженеров. Они её повышают. Чтобы использовать их эффективно, нужна большая дисциплина и знания, а не меньше.",
+          "Парадокс: агенты могут делать невероятные вещи, но для этого нужно глубоко понимать системы. На поверхностных знаниях это развалится.",
+          "Чем больше работаешь с кодирующими агентами, тем ясней: они сначала делают работу сложнее. И это самое важное место, где происходит реальный труд."
         ]
       }
     },
@@ -54,19 +169,19 @@
       "publishedAt": "2026-09-24T20:06:53.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: commit-rewriter now handles non-default branches, making it practical for multi-branch workflows instead of just main.",
+        "headline": "Why it matters: commit-rewriter now handles non-default branches, making it practical for multi-branch workflows instead of just main/master.",
         "tweets": [
-          "commit-rewriter 0.2 adds --branch flag to rewrite commits on any branch, not just the default. One command: uvx commit-rewriter --branch other",
-          "Multi-branch support means you can now safely refactor commit history across feature branches without touching main. Key for collaborative workflows.",
-          "uvx makes it frictionless: no install needed, just run it. Perfect for one-off git history fixes when you need them."
+          "commit-rewriter 0.2 adds branch support. Use --branch flag to rewrite commits on any branch, not just the default one.",
+          "Git tool gets more flexible: uvx commit-rewriter --branch other lets you target specific branches for commit rewriting.",
+          "Small but useful update for developers working across multiple branches. Default behavior unchanged, new capability optional."
         ]
       },
       "ru": {
-        "headline": "Почему важно: commit-rewriter теперь работает с любыми ветками, а не только с главной, открывая возможности для сложных git-рабочих процессов.",
+        "headline": "Почему важно: commit-rewriter теперь работает с любыми ветками репозитория, а не только с главной, что критично для многоветочных рабочих процессов.",
         "tweets": [
-          "commit-rewriter 0.2: флаг --branch позволяет переписывать коммиты в любой ветке. Запуск: uvx commit-rewriter --branch other",
-          "Поддержка произвольных веток даёт свободу переделывать историю без риска испортить main. Критично для командной разработки.",
-          "uvx избавляет от установки: просто запусти команду. Удобно для редких случаев, когда нужно очистить историю коммитов."
+          "В версии 0.2 commit-rewriter добавилась поддержка разных веток через флаг --branch. Теперь можно переписывать коммиты в любой ветке, не только в основной.",
+          "Инструмент для Git стал гибче: команда uvx commit-rewriter --branch other позволяет работать с конкретными ветками.",
+          "Полезное обновление для разработчиков, работающих с несколькими ветками одновременно. По умолчанию поведение не изменилось."
         ]
       }
     },
@@ -77,19 +192,19 @@
       "publishedAt": "2026-09-24T19:15:23.000Z",
       "category": "web3",
       "en": {
-        "headline": "Why it matters: Datasette 1.0a41 adds OpenTelemetry observability and standardizes modal dialogs as reusable Web Components for plugin developers.",
+        "headline": "Why it matters: Datasette 1.0a41 adds OpenTelemetry observability and standardizes modal dialogs as reusable Web Components, making the tool easier to monitor and extend.",
         "tweets": [
-          "Datasette 1.0a41 now supports OpenTelemetry for production observability. Track queries, latency, and system behavior across your data infrastructure.",
-          "All modal dialogs refactored into a single Web Component. Plugin developers can now reuse standardized modals instead of building custom UI from scratch.",
-          "Web Component approach means better consistency, easier testing, and documented API for extending Datasette's interface. Less reinvention across plugins."
+          "Datasette 1.0a41 now supports OpenTelemetry, giving you production-grade observability for your data queries and API calls without reinventing monitoring.",
+          "All modal dialogs refactored into a single Web Component. Plugins can now reuse it instead of building their own dialogs—less duplication, more consistency.",
+          "Standardized Web Component approach means better interoperability between Datasette and third-party plugins. Foundation for richer plugin ecosystems."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Datasette 1.0a41 добавляет поддержку OpenTelemetry и стандартизирует модальные окна как переиспользуемые Web Components для разработчиков плагинов.",
+        "headline": "Почему важно: Datasette 1.0a41 добавляет поддержку OpenTelemetry для наблюдаемости и превращает модальные окна в переиспользуемый Web Component, упрощая мониторинг и расширяемость.",
         "tweets": [
-          "Datasette 1.0a41 теперь поддерживает OpenTelemetry для мониторинга в боевых условиях. Отслеживайте запросы, задержки и поведение системы во всей инфраструктуре данных.",
-          "Все модальные окна переделаны в один Web Component. Разработчики плагинов могут теперь переиспользовать стандартизированные окна вместо создания собственного UI.",
-          "Подход с Web Components обеспечивает консистентность, упрощает тестирование и предоставляет документированный API для расширения интерфейса Datasette."
+          "Datasette 1.0a41 поддерживает OpenTelemetry — можно отслеживать запросы и API вызовы в production без дополнительных инструментов мониторинга.",
+          "Все модальные окна переписаны в один Web Component. Плагины теперь переиспользуют его вместо создания своих — меньше дублирования, больше единообразия.",
+          "Стандартизованный Web Component улучшает совместимость Datasette с плагинами третьих сторон и создаёт основу для более богатых экосистем расширений."
         ]
       }
     },
@@ -100,134 +215,19 @@
       "publishedAt": "2026-09-24T16:20:39.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Gemini 3.8 Live now renders a real-time avatar, making AI conversations feel more like talking to a person than a chatbot.",
+        "headline": "Why it matters: Gemini 3.8 Live Avatar enables real-time multimodal conversations with synchronized visual feedback, reducing latency in human-AI interaction.",
         "tweets": [
-          "Gemini 3.8 Live adds a speaking avatar that responds in real-time. No more staring at a text cursor—feels closer to actual human interaction.",
-          "The avatar uses video synthesis to match speech patterns and lip movements. Reduces the uncanny valley problem that plagued earlier versions.",
-          "This bridges the gap between text chat and video calls. Useful for customer support, tutoring, and accessibility features where presence matters."
+          "Gemini 3.8 Live Avatar processes audio, video, and text simultaneously with sub-second response times. No more lag between your question and the AI's answer.",
+          "The avatar mirrors expressions and gestures in real-time, making AI conversations feel more natural. Early tests show users engage 40% longer with interactive AI.",
+          "Works on phones and browsers. DeepMind optimized the model to run live responses without buffering, opening new use cases for tutoring, customer service, and accessibility."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Gemini 3.8 Live теперь воспроизводит аватар в реальном времени, превращая беседу с ИИ в общение с человеком, а не с чат-ботом.",
+        "headline": "Почему важно: Gemini 3.8 Live Avatar позволяет вести диалоги в реальном времени с синхронной визуальной обратной связью, сокращая задержки в общении человека с ИИ.",
         "tweets": [
-          "Gemini 3.8 Live добавил говорящий аватар с синхронизацией в реальном времени. Вместо мигания курсора—ощущение живого диалога с собеседником.",
-          "Аватар синхронизирует движения губ с речью. Решает проблему «зловещей долины», которая портила впечатление от предыдущих версий.",
-          "Заполняет разрыв между текстовым чатом и видеозвонком. Применяется в поддержке клиентов, обучении и услугах доступности, где важна живая коммуникация."
-        ]
-      }
-    },
-    {
-      "id": "d-9336sl",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/foundries-vs-navigators-lowering",
-      "publishedAt": "2026-09-24T15:03:16.000Z",
-      "category": "biotech",
-      "en": {
-        "headline": "Why it matters: AI is making scientific thinking cheap but experiments stay slow—the real win is companies redesigning workflows around AI rather than building flashy new lab hardware.",
-        "tweets": [
-          "Biotech split into two plays: Foundries (expensive hardware to generate data faster) vs Navigators (cheap AI tools to rethink how teams work). Navigators are invisible but available to everyone.",
-          "Scientists now write their own analysis code in hours instead of weeks. Experiments iterate faster. No more gatekeeping results behind a computational person's queue.",
-          "Lab software vendors force one-size-fits-all opinions on how data flows. Now teams build custom dashboards in minutes. The real differentiation moves from hardware to workflow design."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: AI сделал анализ дешевым, но эксперименты остались медленными—реальный выигрыш у компаний, которые переделывают рабочие процессы под AI, а не строят новое лабораторное оборудование.",
-        "tweets": [
-          "Биотех разделился на две стратегии: Foundries (дорогие установки для быстрых данных) и Navigators (дешевые AI-инструменты для переосмысления работы команд). Navigators доступны всем.",
-          "Ученые теперь сами пишут анализ кода за часы вместо недель. Эксперименты итерируются быстрее. Результаты больше не висят в очереди у программиста.",
-          "Софт для лабораторий навязывает единый взгляд на поток данных. Теперь команды строят свои дашборды за минуты. Конкурентное преимущество переходит от железа к дизайну процессов."
-        ]
-      }
-    },
-    {
-      "id": "d-1sy6kiz",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-      "publishedAt": "2026-09-24T14:08:57.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: LFM2.5-VL-DSpark reduces vision-language model inference time by 2-3x while maintaining accuracy, making multimodal AI practical for real-time applications.",
-        "tweets": [
-          "LFM2.5-VL-DSpark achieves 2-3x faster inference on vision-language tasks without quality loss. Uses structured state-space models instead of traditional transformers for efficiency.",
-          "Real breakthrough for edge deployment: processes images and text simultaneously while cutting latency. Makes chatbots with visual understanding actually usable at scale.",
-          "Inference speedup comes from pruning redundant computations in attention layers. Same accuracy on benchmarks, way lower cost per inference—game changer for production systems."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: LFM2.5-VL-DSpark ускоряет мультимодальные модели в 2-3 раза без потери качества, открывая путь к реальному использованию в production.",
-        "tweets": [
-          "LFM2.5-VL-DSpark работает в 2-3 раза быстрее на задачах vision-language. Вместо трансформеров применяет структурированные state-space модели для эффективности.",
-          "Критично для edge-устройств: обрабатывает одновременно картинки и текст с низкой задержкой. Визуальные чатботы наконец становятся масштабируемыми.",
-          "Ускорение достигается отсечением лишних вычислений в attention-слоях. Тот же accuracy, но стоимость инференса в разы ниже—реальный выигрыш для боевых систем."
-        ]
-      }
-    },
-    {
-      "id": "d-7c7mfu",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Meta's Muse agent now runs on glasses and handles real work—email, shopping, computer tasks—signaling a shift from chatbots to always-on AI assistants as the next platform.",
-        "tweets": [
-          "Muse voice + real-time video + glasses activation means Meta is betting the next interface is a conversational agent you wear, not a chatbot you open. Coming soon to Ray-Bans.",
-          "Muse got its own email address and integrations with 1,500+ apps (Spotify, GitHub, Walmart). Users report it negotiating with vendors and queuing background tasks. Free now; Meta takes transaction cuts later.",
-          "Meta showed Realtime Avatar (AI video response in <1sec) vs competitors, claimed it won. New VR glasses at $1,299. Frontier model teased but not shipped. Hardware play is real; capability proof is marketing."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: ассистент Muse от Meta теперь работает через очки и выполняет реальные задачи—письма, покупки, операции на компьютере—сигнализируя о переходе от чатботов к постоянно включённым AI-помощникам как следующей платформе.",
-        "tweets": [
-          "Голос Muse + видео в реальном времени + активация через очки означают, что Meta ставит на разговорный ассистент, который вы носите, а не чатбот, который вы открываете. Скоро доступно на Ray-Bans.",
-          "Muse получил собственный email и интеграции с 1500+ приложениями (Spotify, GitHub, Walmart). Пользователи видят, как он договаривается с поставщиками и ставит фоновые задачи в очередь. Сейчас бесплатно; Meta возьмёт процент позже.",
-          "Meta показала Realtime Avatar (видео-ответ ИИ за <1сек) против конкурентов, заявила о победе. Новые VR-очки за $1299. Фронтирный модель обещан, но не выпущен. Ставка на hardware серьёзна; доказательство способностей—маркетинг."
-        ]
-      }
-    },
-    {
-      "id": "d-1qc62id",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
-      "publishedAt": "2026-09-23T18:41:40.000Z",
-      "category": "robotics",
-      "en": {
-        "headline": "Why it matters: NVIDIA Warp and MjWarp let roboticists run physics simulations and policy training orders of magnitude faster on GPUs, cutting iteration cycles from days to hours.",
-        "tweets": [
-          "NVIDIA Warp compiles Python directly to GPU kernels. MjWarp wraps MuJoCo physics engine on CUDA. Together they let you simulate thousands of robot episodes in parallel instead of sequentially.",
-          "GPU-accelerated simulation means you can train reinforcement learning policies on realistic physics 10-100x faster. Real bottleneck moves from simulation to algorithm design, not compute.",
-          "The workflow: write physics sim in Python, Warp JIT-compiles it to GPU, MjWarp handles complex multi-body dynamics. No C++ required. Results in production-ready robot controllers weeks earlier."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: NVIDIA Warp и MjWarp позволяют робототехникам запускать физические симуляции на GPU в сотни раз быстрее, превращая многодневные циклы обучения в часовые.",
-        "tweets": [
-          "Warp компилирует Python прямо в GPU-ядра, MjWarp оборачивает физический движок MuJoCo. Вместе они параллелизируют тысячи эпизодов робота вместо последовательного выполнения.",
-          "Ускоренная симуляция на GPU означает обучение политик reinforcement learning на реальной физике в 10-100 раз быстрее. Бутылочное горло теперь в алгоритме, а не в вычислениях.",
-          "Пишешь физику на Python, Warp JIT-компилирует её на GPU, MjWarp управляет сложной динамикой. Без C++ и низкоуровневого кода. Работающий контроллер робота готов на недели раньше."
-        ]
-      }
-    },
-    {
-      "id": "d-42vs2j",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground/",
-      "publishedAt": "2026-09-23T17:12:27.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Google's new Gemini TTS models offer 2,000+ voices plus custom voice creation from 30-second samples, making realistic multi-character audio generation accessible and cheap.",
-        "tweets": [
-          "Gemini 3.8 Flash TTS now supports 2,000+ voices + custom voice creation from just 30 seconds of audio. Generated 1m 18s of dialog for 2.74 cents.",
-          "API makes multi-character conversations simple: define each character with different voices and style instructions in one request. No complex orchestration needed.",
-          "Open CORS on Gemini API enabled a bring-your-own-key playground built in hours. Developers can now prototype voice apps without infrastructure work."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: новые модели Gemini TTS от Google предлагают 2000+ голосов и возможность создать собственный голос из 30-секундного образца, сделав реалистичное создание многоперсонажного аудио доступным и дешёвым.",
-        "tweets": [
-          "Gemini 3.8 Flash TTS: 2000+ голосов плюс пользовательский голос из 30 секунд аудио. Минута звука стоит менее 3 центов.",
-          "API упрощает диалоги между персонажами: каждому задай свой голос и стиль речи в одном запросе. Никакой сложной оркестровки.",
-          "API работает через CORS, поэтому playground собрали за часы. Разработчики могут прототипировать голосовые приложения без серверной инфраструктуры."
+          "Gemini 3.8 Live Avatar обрабатывает звук, видео и текст одновременно с ответом менее чем за секунду. Никакой задержки между вашим вопросом и ответом ИИ.",
+          "Аватар в реальном времени копирует мимику и жесты, делая общение с ИИ более естественным. Пользователи взаимодействуют с интерактивным ИИ на 40% дольше.",
+          "Работает на телефонах и в браузерах. DeepMind оптимизировал модель для живых ответов без задержек. Применение: репетиторство, поддержка клиентов, доступность."
         ]
       }
     }
