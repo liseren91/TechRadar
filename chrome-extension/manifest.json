@@ -2,19 +2,14 @@
   "manifest_version": 3,
   "name": "Tech Evolution Radar",
   "short_name": "TechRadar",
-  "version": "1.1.0",
-  "description": "Replace your new tab with a live tech evolution radar. Track how tech noise becomes trends - data from GitHub, arXiv & Hacker News, plus a daily AI-blog digest.",
-  "chrome_url_overrides": { "newtab": "newtab.html" },
+  "version": "1.6.0",
+  "description": "Replace your new tab with a calm tech radar: research and engineering signals from thirteen sources, prepared by your TechRadar server, plus a daily AI-blog digest.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
   "permissions": ["storage"],
-  "host_permissions": [
-    "https://api.github.com/*",
-    "https://export.arxiv.org/*",
-    "https://hacker-news.firebaseio.com/*",
-    "https://api.mymemory.translated.net/*",
-    "https://raw.githubusercontent.com/*"
-  ],
   "content_security_policy": {
-    "extension_pages": "default-src 'self'; connect-src 'self' https://api.github.com https://export.arxiv.org https://hacker-news.firebaseio.com https://api.mymemory.translated.net https://raw.githubusercontent.com; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'"
+    "extension_pages": "default-src 'self'; script-src 'self'; object-src 'none'; connect-src 'self' http: https:; img-src 'self' data:; style-src 'self' 'unsafe-inline' http: https:; font-src http: https:"
   },
   "icons": {
     "16": "icons/icon16.png",
@@ -22,5 +17,7 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "action": { "default_title": "Tech Evolution Radar" }
+  "action": {
+    "default_title": "Tech Evolution Radar"
+  }
 }

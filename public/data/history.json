@@ -895,155 +895,165 @@
   {
     "date": "2026-09-24",
     "topics": {
-      "open-models": 53,
-      "llm-agents": 61,
-      "fusion": 5,
-      "rag": 13,
-      "humanoids": 1,
-      "protein-design": 3
+      "llm-agents": 13,
+      "multimodal": 3,
+      "ai-safety": 8,
+      "generative-media": 2,
+      "ai-coding": 6,
+      "open-models": 2,
+      "small-models": 2,
+      "rag": 1,
+      "supply-chain-security": 1
     }
   },
   {
     "date": "2026-09-25",
     "topics": {
-      "llm-agents": 61,
-      "open-models": 54,
-      "protein-design": 5,
-      "humanoids": 2,
-      "fusion": 5,
-      "rag": 13
+      "multimodal": 6,
+      "generative-media": 4,
+      "llm-agents": 11,
+      "ai-safety": 7,
+      "ai-coding": 6,
+      "open-models": 2,
+      "small-models": 2,
+      "rag": 1
     }
   },
   {
     "date": "2026-09-26",
     "topics": {
-      "llm-agents": 62,
-      "rag": 14,
-      "open-models": 55,
-      "fusion": 5,
-      "protein-design": 5,
-      "humanoids": 2
+      "open-models": 3,
+      "llm-agents": 12,
+      "ai-coding": 7,
+      "multimodal": 6,
+      "generative-media": 4,
+      "ai-safety": 5,
+      "small-models": 2,
+      "rag": 1
     }
   },
   {
     "date": "2026-09-27",
     "topics": {
-      "llm-agents": 62,
-      "rag": 14,
-      "open-models": 55,
-      "fusion": 5,
-      "protein-design": 5,
-      "humanoids": 2
+      "llm-agents": 13,
+      "generative-media": 5,
+      "ai-coding": 8,
+      "open-models": 3,
+      "multimodal": 6,
+      "ai-safety": 5,
+      "small-models": 2,
+      "rag": 1
     }
   },
   {
     "date": "2026-09-28",
     "topics": {
-      "llm-agents": 64,
-      "open-models": 55,
-      "rag": 14,
-      "fusion": 5,
-      "protein-design": 5,
-      "humanoids": 2
+      "llm-agents": 13,
+      "ai-coding": 6,
+      "generative-media": 4,
+      "open-models": 3,
+      "multimodal": 6,
+      "ai-safety": 4,
+      "small-models": 1
     }
   },
   {
     "date": "2026-09-29",
     "topics": {
-      "llm-agents": 65,
-      "open-models": 56,
-      "protein-design": 6,
-      "rag": 13,
-      "fusion": 4,
-      "humanoids": 2
+      "generative-media": 5,
+      "llm-agents": 13,
+      "ai-coding": 8,
+      "ai-safety": 3,
+      "open-models": 1,
+      "multimodal": 5
     }
   },
   {
     "date": "2026-09-30",
     "topics": {
-      "llm-agents": 65,
-      "open-models": 56,
-      "protein-design": 6,
-      "rag": 12,
-      "fusion": 4,
-      "humanoids": 1
+      "llm-agents": 13,
+      "ai-coding": 8,
+      "ai-safety": 2,
+      "generative-media": 4,
+      "open-models": 1,
+      "multimodal": 5
     }
   },
   {
     "date": "2026-10-01",
     "topics": {
-      "llm-agents": 64,
-      "rag": 13,
-      "open-models": 57,
-      "protein-design": 6,
-      "fusion": 4,
-      "humanoids": 1
+      "llm-agents": 15,
+      "ai-coding": 9,
+      "ai-safety": 4,
+      "multimodal": 3,
+      "generative-media": 4,
+      "open-models": 1
     }
   },
   {
     "date": "2026-10-02",
     "topics": {
-      "open-models": 57,
-      "fusion": 4,
-      "llm-agents": 62,
-      "rag": 12,
-      "protein-design": 6,
-      "humanoids": 1
+      "llm-agents": 17,
+      "ai-coding": 9,
+      "ai-safety": 4,
+      "multimodal": 1,
+      "generative-media": 2,
+      "open-models": 1
     }
   },
   {
     "date": "2026-10-03",
     "topics": {
-      "llm-agents": 62,
-      "open-models": 57,
-      "rag": 12,
-      "fusion": 3,
-      "protein-design": 6,
-      "humanoids": 1
+      "llm-agents": 17,
+      "ai-coding": 9,
+      "open-models": 1,
+      "ai-safety": 4,
+      "multimodal": 1,
+      "generative-media": 2
     }
   },
   {
     "date": "2026-10-04",
     "topics": {
-      "llm-agents": 62,
-      "open-models": 56,
-      "rag": 12,
-      "fusion": 3,
-      "protein-design": 6,
-      "humanoids": 1
+      "llm-agents": 17,
+      "ai-coding": 9,
+      "open-models": 1,
+      "ai-safety": 4,
+      "multimodal": 1,
+      "generative-media": 1
     }
   },
   {
     "date": "2026-10-05",
     "topics": {
-      "llm-agents": 62,
-      "open-models": 56,
-      "rag": 12,
-      "fusion": 3,
-      "protein-design": 6,
-      "humanoids": 1
+      "llm-agents": 14,
+      "ai-coding": 7,
+      "open-models": 1,
+      "ai-safety": 4,
+      "multimodal": 1,
+      "generative-media": 1
     }
   },
   {
     "date": "2026-10-06",
     "topics": {
-      "llm-agents": 63,
-      "open-models": 57,
-      "rag": 12,
-      "fusion": 3,
-      "protein-design": 6,
-      "humanoids": 1
+      "open-models": 3,
+      "ai-coding": 7,
+      "llm-agents": 11,
+      "ai-safety": 3,
+      "multimodal": 1
     }
   },
   {
     "date": "2026-10-07",
     "topics": {
-      "llm-agents": 61,
-      "rag": 14,
-      "open-models": 61,
-      "fusion": 3,
-      "protein-design": 6,
-      "humanoids": 1
+      "open-models": 7,
+      "llm-agents": 12,
+      "ai-safety": 2,
+      "small-models": 1,
+      "multimodal": 1,
+      "generative-media": 2,
+      "ai-coding": 6
     }
   }
 ]
