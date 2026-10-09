@@ -1,7 +1,40 @@
 {
-  "generatedAt": "2026-10-08T13:28:07.534Z",
+  "generatedAt": "2026-10-09T13:15:56.981Z",
   "window": "rolling-120d",
   "topics": [
+    {
+      "id": "quantum-hardware",
+      "label": "Quantum Hardware",
+      "category": "quantum",
+      "stage": "research",
+      "trajectory": "rising",
+      "momentum": 1,
+      "weeklyCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signals": [
+        {
+          "title": "Synthesis Superintelligence: from Semiconductors to Superconductors — Periodic Labs’ Liam Fedus and Ekin Dogus Cubuk",
+          "url": "https://www.latent.space/p/periodic",
+          "source": "latent-space",
+          "publishedAt": "2026-10-08T16:27:54.000Z"
+        }
+      ]
+    },
     {
       "id": "post-quantum",
       "label": "Post-Quantum Crypto",
@@ -29,12 +62,51 @@
       "signals": []
     },
     {
+      "id": "humanoids",
+      "label": "Humanoid Robots",
+      "category": "robotics",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.57,
+      "weeklyCounts": [
+        1,
+        7,
+        7,
+        6,
+        6,
+        7,
+        7,
+        1,
+        0,
+        0,
+        2,
+        7,
+        12,
+        7,
+        3
+      ],
+      "signals": [
+        {
+          "title": "Synthesis Superintelligence: from Semiconductors to Superconductors — Periodic Labs’ Liam Fedus and Ekin Dogus Cubuk",
+          "url": "https://www.latent.space/p/periodic",
+          "source": "latent-space",
+          "publishedAt": "2026-10-08T16:27:54.000Z"
+        },
+        {
+          "title": "Runway’s WorldPrompt and the Engineering of Real-Time Worlds",
+          "url": "https://www.latent.space/p/runway",
+          "source": "latent-space",
+          "publishedAt": "2026-09-25T01:30:57.000Z"
+        }
+      ]
+    },
+    {
       "id": "rag",
       "label": "Retrieval-Augmented Generation",
       "category": "ai",
       "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.84,
+      "momentum": -0.68,
       "weeklyCounts": [
         81,
         60,
@@ -50,7 +122,7 @@
         103,
         93,
         87,
-        14
+        28
       ],
       "signals": [
         {
@@ -86,126 +158,12 @@
       ]
     },
     {
-      "id": "open-models",
-      "label": "Open Models",
-      "category": "ai",
-      "stage": "early-adopter",
-      "trajectory": "cooling",
-      "momentum": -0.85,
-      "weeklyCounts": [
-        375,
-        358,
-        348,
-        414,
-        398,
-        396,
-        394,
-        398,
-        388,
-        365,
-        364,
-        370,
-        384,
-        401,
-        59
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Quasi-Riemann-Hypothesis: OpenAI publishes 722 math papers solving 90 of the top 500 open math problems; “the most significant moment” in >100 years of mathematics",
-          "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
-          "source": "latent-space",
-          "publishedAt": "2026-10-07T04:55:44.000Z"
-        },
-        {
-          "title": "llm-mistral 0.16",
-          "url": "https://simonwillison.net/2026/Oct/6/llm-mistral/",
-          "source": "simonw",
-          "publishedAt": "2026-10-06T21:32:34.000Z"
-        },
-        {
-          "title": "EmbeddingGemma 2",
-          "url": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
-          "source": "simonw",
-          "publishedAt": "2026-10-06T20:37:53.000Z"
-        },
-        {
-          "title": "Introducing Mistral Large 4: Le chonk",
-          "url": "https://simonwillison.net/2026/Oct/6/le-chonk/",
-          "source": "simonw",
-          "publishedAt": "2026-10-06T20:18:19.000Z"
-        },
-        {
-          "title": "Mistral Large 4",
-          "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/",
-          "source": "simonw",
-          "publishedAt": "2026-10-06T18:20:58.000Z"
-        }
-      ]
-    },
-    {
-      "id": "llm-agents",
-      "label": "LLM Agents",
-      "category": "ai",
-      "stage": "prototype",
-      "trajectory": "cooling",
-      "momentum": -0.86,
-      "weeklyCounts": [
-        411,
-        420,
-        426,
-        449,
-        458,
-        466,
-        456,
-        437,
-        437,
-        452,
-        469,
-        463,
-        440,
-        436,
-        61
-      ],
-      "signals": [
-        {
-          "title": "[AINews] Claude Haiku 5.5 — better than GPT-6 Luna at the same pricing",
-          "url": "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
-          "source": "latent-space",
-          "publishedAt": "2026-10-08T07:27:51.000Z"
-        },
-        {
-          "title": "Can a Cloud-Native Harness Make Agents Reliable Beyond the Desktop?",
-          "url": "https://www.latent.space/p/stacklok",
-          "source": "latent-space",
-          "publishedAt": "2026-10-07T14:10:45.000Z"
-        },
-        {
-          "title": "[AINews] Quasi-Riemann-Hypothesis: OpenAI publishes 722 math papers solving 90 of the top 500 open math problems; “the most significant moment” in >100 years of mathematics",
-          "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
-          "source": "latent-space",
-          "publishedAt": "2026-10-07T04:55:44.000Z"
-        },
-        {
-          "title": "[AINews] Reflection Beam - 501B-A23B American Open Model",
-          "url": "https://www.latent.space/p/ainews-reflection-beam-501b-a23b",
-          "source": "latent-space",
-          "publishedAt": "2026-10-06T06:28:43.000Z"
-        },
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-cee",
-          "source": "latent-space",
-          "publishedAt": "2026-10-03T08:45:15.000Z"
-        }
-      ]
-    },
-    {
       "id": "protein-design",
       "label": "Protein Design",
       "category": "biotech",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.69,
       "weeklyCounts": [
         21,
         21,
@@ -221,9 +179,15 @@
         21,
         35,
         42,
-        6
+        13
       ],
       "signals": [
+        {
+          "title": "Synthesis Superintelligence: from Semiconductors to Superconductors — Periodic Labs’ Liam Fedus and Ekin Dogus Cubuk",
+          "url": "https://www.latent.space/p/periodic",
+          "source": "latent-space",
+          "publishedAt": "2026-10-08T16:27:54.000Z"
+        },
         {
           "title": "[AINews] Opus 5.5 is good at explainer videos",
           "url": "https://www.latent.space/p/ainews-opus-55-is-good-at-explainer",
@@ -247,45 +211,120 @@
           "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
           "source": "deepmind",
           "publishedAt": "2025-12-04T16:23:24.000Z"
-        },
-        {
-          "title": "AlphaFold: Five years of impact",
-          "url": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
-          "source": "deepmind",
-          "publishedAt": "2025-11-25T16:00:12.000Z"
         }
       ]
     },
     {
-      "id": "humanoids",
-      "label": "Humanoid Robots",
-      "category": "robotics",
-      "stage": "prototype",
+      "id": "open-models",
+      "label": "Open Models",
+      "category": "ai",
+      "stage": "early-adopter",
       "trajectory": "cooling",
-      "momentum": -0.86,
+      "momentum": -0.71,
       "weeklyCounts": [
-        1,
-        7,
-        7,
-        6,
-        6,
-        7,
-        7,
-        1,
-        0,
-        0,
-        2,
-        7,
-        12,
-        7,
-        1
+        375,
+        358,
+        348,
+        414,
+        398,
+        396,
+        394,
+        398,
+        388,
+        365,
+        364,
+        370,
+        384,
+        401,
+        118
       ],
       "signals": [
         {
-          "title": "Runway’s WorldPrompt and the Engineering of Real-Time Worlds",
-          "url": "https://www.latent.space/p/runway",
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-60f",
           "source": "latent-space",
-          "publishedAt": "2026-09-25T01:30:57.000Z"
+          "publishedAt": "2026-10-08T23:29:43.000Z"
+        },
+        {
+          "title": "[AINews] Quasi-Riemann-Hypothesis: OpenAI publishes 722 math papers solving 90 of the top 500 open math problems; “the most significant moment” in >100 years of mathematics",
+          "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
+          "source": "latent-space",
+          "publishedAt": "2026-10-07T04:55:44.000Z"
+        },
+        {
+          "title": "llm-mistral 0.16",
+          "url": "https://simonwillison.net/2026/Oct/6/llm-mistral/",
+          "source": "simonw",
+          "publishedAt": "2026-10-06T21:32:34.000Z"
+        },
+        {
+          "title": "EmbeddingGemma 2",
+          "url": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
+          "source": "simonw",
+          "publishedAt": "2026-10-06T20:37:53.000Z"
+        },
+        {
+          "title": "Introducing Mistral Large 4: Le chonk",
+          "url": "https://simonwillison.net/2026/Oct/6/le-chonk/",
+          "source": "simonw",
+          "publishedAt": "2026-10-06T20:18:19.000Z"
+        }
+      ]
+    },
+    {
+      "id": "llm-agents",
+      "label": "LLM Agents",
+      "category": "ai",
+      "stage": "prototype",
+      "trajectory": "cooling",
+      "momentum": -0.72,
+      "weeklyCounts": [
+        411,
+        420,
+        426,
+        449,
+        458,
+        466,
+        456,
+        437,
+        437,
+        452,
+        469,
+        463,
+        440,
+        436,
+        123
+      ],
+      "signals": [
+        {
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-60f",
+          "source": "latent-space",
+          "publishedAt": "2026-10-08T23:29:43.000Z"
+        },
+        {
+          "title": "Synthesis Superintelligence: from Semiconductors to Superconductors — Periodic Labs’ Liam Fedus and Ekin Dogus Cubuk",
+          "url": "https://www.latent.space/p/periodic",
+          "source": "latent-space",
+          "publishedAt": "2026-10-08T16:27:54.000Z"
+        },
+        {
+          "title": "[AINews] Claude Haiku 5.5 — better than GPT-6 Luna at the same pricing",
+          "url": "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
+          "source": "latent-space",
+          "publishedAt": "2026-10-08T07:27:51.000Z"
+        },
+        {
+          "title": "Can a Cloud-Native Harness Make Agents Reliable Beyond the Desktop?",
+          "url": "https://www.latent.space/p/stacklok",
+          "source": "latent-space",
+          "publishedAt": "2026-10-07T14:10:45.000Z"
+        },
+        {
+          "title": "[AINews] Quasi-Riemann-Hypothesis: OpenAI publishes 722 math papers solving 90 of the top 500 open math problems; “the most significant moment” in >100 years of mathematics",
+          "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
+          "source": "latent-space",
+          "publishedAt": "2026-10-07T04:55:44.000Z"
         }
       ]
     },
@@ -295,7 +334,7 @@
       "category": "energy",
       "stage": "research",
       "trajectory": "cooling",
-      "momentum": -0.87,
+      "momentum": -0.74,
       "weeklyCounts": [
         14,
         11,
@@ -311,7 +350,7 @@
         28,
         33,
         23,
-        3
+        6
       ],
       "signals": [
         {

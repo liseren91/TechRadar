@@ -1,233 +1,233 @@
 {
-  "generatedAt": "2026-10-08T13:28:07.427Z",
+  "generatedAt": "2026-10-09T13:15:56.878Z",
   "items": [
     {
-      "id": "d-idpbcs",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
-      "publishedAt": "2026-10-08T07:27:51.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Anthropic's Haiku 5.5 matches GPT-6 Luna's price while outperforming it on most benchmarks, reshaping the economics of high-volume AI work.",
-        "tweets": [
-          "Haiku 5.5 is 75% cheaper to run than Haiku 4.5 and beats Luna on reasoning, knowledge work, and computer use—Intelligence Index 43 vs Luna's 38. Designed as a cost-efficient sidekick to Opus for high-volume tasks.",
-          "Context window jumped from 200K to 1M tokens. Price tiering kicks in at 100K inputs ($0.50 vs $0.10 per 1M), so cost-per-task depends heavily on your actual workload, not just raw benchmarks.",
-          "Haiku uses 3x more tokens than Luna at max effort to hit similar scores—verbose but cheaper per task in production. Early adopters (Cursor, GitHub Copilot, Devin) already live on day one."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Haiku 5.5 от Anthropic сопоставима по цене с GPT-6 Luna, но превосходит её по производительности, меняя экономику высоконагруженных AI-приложений.",
-        "tweets": [
-          "Haiku 5.5 работает на 75% дешевле Haiku 4.5 и обгоняет Luna в рассуждениях и компьютерном зрении—индекс интеллекта 43 против 38 у Luna. Позиционируется как экономичный помощник для массовых задач.",
-          "Контекстное окно расширилось со 100K до 1M токенов. Двухуровневое ценообразование: выше 100K входных токенов цена возрастает ($0.50 вместо $0.10 за млн), поэтому реальная стоимость зависит от вашего workload.",
-          "Haiku требует в 3 раза больше токенов чем Luna при одинаковом качестве—многословнее, но дешевле за задачу в production. Cursor, GitHub Copilot и Devin уже интегрировали в первый день."
-        ]
-      }
-    },
-    {
-      "id": "d-w4n5ki",
+      "id": "d-1y2mo4z",
       "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Oct/7/ben-affleck/",
-      "publishedAt": "2026-10-07T23:14:58.000Z",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+      "publishedAt": "2026-10-09T12:54:06.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: Visual effects artists are now writing machine learning code to automate tasks like green screen replacement, shifting filmmaking from pure craft to applied AI engineering.",
+        "headline": "Why it matters: Voice-driven development with Claude is now practical enough to ship real features, cutting iteration time when paired with live previews and keyboard fallbacks.",
         "tweets": [
-          "Ben Affleck: VFX moved from analog to digital, then added ML. He writes Python scripts using CNNs to detect edges and features in image tensors, automating green screen removal.",
-          "Tensors encode visual data as numbers: batch, frame, RGB pixel values. CNNs find patterns to identify objects like window ledges, making manual VFX work faster.",
-          "Transformers are the next step: they do more computation simultaneously than CNNs. Film production is quietly becoming software engineering with cameras."
+          "Built a full Django feature (model, migrations, views, templates, imports) mostly by voice while cooking dinner. GPT-6 Astra understood messy natural speech well enough to implement nuanced requirements without constant clarification.",
+          "The combo of voice + live browser preview + keyboard paste-in for errors/examples beats pure voice. You keep hands free for multitasking, drop into typing when precision matters, then go back to talking through logic.",
+          "Still not a daily driver for core dev work—high-context code review and debugging need copy-paste and pointing. But for feature scaffolding and logic design, voice coding removes friction between thinking and implementation."
         ]
       },
       "ru": {
-        "headline": "Почему важно: Кинематографисты пишут код машинного обучения для автоматизации спецэффектов, превращая кино из ремесла в прикладное AI-разработку.",
+        "headline": "Почему важно: Голосовая разработка с помощью AI теперь достаточно практична для создания реальных функций, особенно в сочетании с живым предпросмотром и резервным вводом с клавиатуры.",
         "tweets": [
-          "Бен Аффлек: когда киноиндустрия перешла на цифру, добавилась машинка. Пишет Python-скрипты с CNN для детекции краёв и объектов в тензорах изображений.",
-          "Тензор кодирует видео как числа: номер батча, кадра, RGB-значения пикселей. CNN находит паттерны, отделяет хромакей от фона автоматически.",
-          "Трансформеры считают параллельнее CNN. Производство фильмов незаметно становится software engineering, но с камерами."
+          "За полчаса готовки полностью построил Django-функцию (модель, миграции, представления, шаблоны, импорты) в основном через голос. GPT-6 Astra справился с неформальной речью и понял сложные требования с минимальными уточнениями.",
+          "Комбинация голоса, живого браузерного превью и вставки с клавиатуры для ошибок мощнее, чем чистый голос. Руки свободны для многозадачности, переходите на печать когда нужна точность, потом снова говорите о логике.",
+          "Не является повседневным инструментом для серьезной разработки—код-ревью и отладка требуют копирования и указания. Но для каркаса функций и проектирования логики голосовой ввод убирает задержки между мыслью и кодом."
         ]
       }
     },
     {
-      "id": "d-ekxsn9",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
-      "publishedAt": "2026-10-07T20:56:21.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Haiku 5.5 matches GPT-6 Luna's base price but costs 5x more beyond 100k tokens, plus a sneaky 1.25x token inflation makes it less competitive for long-context workloads.",
-        "tweets": [
-          "Haiku 5.5 now $0.10/$0.50 per million tokens, matching Luna—but jumps to $0.50/$2.50 after 100k tokens. Luna only goes to $0.20/$0.75 at 272k. Luna wins for anything long.",
-          "New tokenizer uses 25% more tokens for the same prompt vs Haiku 4.5. Hidden price hike disguised as 'improvement'. Check your actual costs before switching.",
-          "Anthropic added monthly API credits to subscriptions: $100/month for Max 5x, $200 for Max 20x, up to $500 for Team. At least offsets some pricing pain for power users."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Haiku 5.5 сравнялась с GPT-6 Luna по базовой цене, но становится в 5 раз дороже свыше 100k токенов, и новый токенизер ещё дороже делает длинные промпты.",
-        "tweets": [
-          "Haiku 5.5 стоит $0.10/$0.50 за миллион токенов, как Luna—но прыгает на $0.50/$2.50 после 100k. Luna дешевле на длинных текстах: до $0.20/$0.75 в точке 272k.",
-          "Новый токенизер жрёт на 25% больше токенов на один и тот же промпт. Скрытое подорожание под видом улучшения. Проверьте реальные затраты перед миграцией.",
-          "Anthropic добавила месячные кредиты на API: $100/месяц для Max 5x, $200 для Max 20x, до $500 для Team. Хотя бы немного компенсирует боль от цен."
-        ]
-      }
-    },
-    {
-      "id": "d-1o1hbh7",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/LiquidAI/open-d1",
-      "publishedAt": "2026-10-07T16:54:33.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Open-source decision models small enough to run on edge devices could make AI reasoning accessible without cloud dependencies.",
-        "tweets": [
-          "Liquid AI released open D1 models that handle multimodal inputs (text, images, sensor data) and fit on edge hardware. No cloud needed for inference.",
-          "D1 models make reasoning-based decisions locally. Useful for robotics, autonomous systems, and IoT where latency and privacy matter.",
-          "Open-sourcing these models means developers can customize decision logic for specific edge cases without relying on commercial API providers."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Открытые модели принятия решений, достаточно компактные для граничных устройств, делают логику ИИ доступной без облака.",
-        "tweets": [
-          "Liquid AI выпустила открытые модели D1, которые обрабатывают мультимодальные данные (текст, изображения, сенсоры) и работают на edge-устройствах.",
-          "D1 выполняет логические рассуждения локально. Критично для робототехники, автономных систем и IoT, где важны задержки и приватность.",
-          "Открытый исходный код позволяет разработчикам адаптировать логику решений под конкретные задачи без зависимости от облачных сервисов."
-        ]
-      }
-    },
-    {
-      "id": "d-1rl4o54",
-      "source": "simonw",
-      "sourceUrl": "https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/",
-      "publishedAt": "2026-10-07T14:53:51.000Z",
-      "category": "web3",
-      "en": {
-        "headline": "Why it matters: Most technical blogs fail because they're written for the author's ego, not the reader's actual needs—meandering intros, unexplained jargon, and AI-bland prose cost you your audience.",
-        "tweets": [
-          "Stop burying context behind links. Your article must survive if readers never click. Explain terminology inline or lose them to the back button.",
-          "Beginner bloggers obsess over sounding formal. Write how you actually talk. Personality beats polish—readers are drowning in AI-generic content.",
-          "Assume zero context from your audience. Don't reference your old posts, don't assume they know your stack, don't make them guess what you mean."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Технические блоги часто терпят неудачу, потому что пишут для себя, а не для читателя—размытые введения, необъясненный жаргон и сгенерированный текст теряют аудиторию.",
-        "tweets": [
-          "Перестаньте скрывать смысл за ссылками. Статья должна быть понятна даже без клика. Объясняйте термины сразу или потеряете читателей.",
-          "Начинающие авторы пишут как роботы. Пишите как говорите. Индивидуальность побеждает стиль—люди устали от одинакового ИИ-текста.",
-          "Не предполагайте, что читатель вас уже знает. Не ссылайтесь на старые посты, не считайте знакомым ваш стек, объясняйте явно."
-        ]
-      }
-    },
-    {
-      "id": "d-ocoxsf",
-      "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/stacklok",
-      "publishedAt": "2026-10-07T14:10:45.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: Coding agents stuck on desktops can't scale in enterprises—cloud-native harnesses like Mecatl could let companies manage agent infrastructure the way they manage Kubernetes clusters.",
-        "tweets": [
-          "Coding agents today run best locally, but enterprises need them in the cloud to protect IP and enforce governance. Stacklok's Mecatl separates the agent loop from execution—no more monolithic desktop processes.",
-          "Mecatl decouples the agent loop from tool calling, state management, and model providers. Enterprises can now manage agent sessions like email: centralized, auditable, and independent of OpenAI or Anthropic.",
-          "The bet: apply Kubernetes lessons to agents. Cloud-native design means safer quiescing, better session reliability, and reducing lock-in to frontier labs—just like K8s reduced cloud provider lock-in."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Кодирующие агенты, привязанные к десктопам, не масштабируются в корпорациях—облачные харнесы вроде Mecatl позволяют управлять инфраструктурой агентов как кластерами Kubernetes.",
-        "tweets": [
-          "Агенты лучше работают локально, но компаниям нужны их в облаке для защиты IP и контроля. Mecatl отделяет цикл агента от исполнения—конец монолитным десктопным процессам.",
-          "Mecatl разделяет цикл агента, вызовы инструментов, управление состоянием и поставщиков моделей. Компании управляют сессиями агентов как почтой: централизованно, проверяемо, независимо от OpenAI.",
-          "Ставка на Kubernetes для агентов. Облачный дизайн даёт безопасные паузы, надёжные сессии и снижает зависимость от фронтира—как K8s снизил зависимость от облачных провайдеров."
-        ]
-      }
-    },
-    {
-      "id": "d-k8ewzl",
-      "source": "hf",
-      "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
-      "publishedAt": "2026-10-07T12:45:31.000Z",
-      "category": "ai",
-      "en": {
-        "headline": "Why it matters: NVIDIA's Nemotron model achieves gold-level performance on both IOI and IMO benchmarks through targeted fine-tuning, showing that a single base model can excel across diverse mathematical reasoning tasks.",
-        "tweets": [
-          "Nemotron fine-tuned on IOI (International Olympiad in Informatics) and IMO (International Math Olympiad) data reaches gold-level results on both. One model family, two gold medals—proves specialized fine-tuning beats training separate models.",
-          "The key: Nemotron uses instruction tuning on competition problems. This approach transfers mathematical reasoning skills across domains better than scaling alone. Practical for teams working on hard reasoning benchmarks.",
-          "Gold-level means competing with human Olympiad medalists. This is the bar for mathematical reasoning AI—not just passing easier tests. Shows Nemotron's base architecture generalizes to complex problem-solving."
-        ]
-      },
-      "ru": {
-        "headline": "Почему важно: Nemotron от NVIDIA достигает уровня золота на олимпиадах IOI и IMO через целевую настройку, доказывая, что одна базовая модель может блеснуть в разных задачах математического рассуждения.",
-        "tweets": [
-          "Nemotron после fine-tuning на данных IOI и IMO получает результаты золотого уровня на обеих олимпиадах. Одна семья моделей, два золота—специализированная настройка эффективнее, чем обучение отдельных моделей.",
-          "Суть в instruction tuning на задачах олимпиад. Такой подход передаёт навыки математического рассуждения между доменами лучше, чем просто масштабирование. Полезно для команд, работающих над сложным reasoning.",
-          "Золото значит конкуренция с олимпийцами-людьми. Это эталон для AI в математике—не просто прохождение лёгких тестов. Показывает, что архитектура Nemotron обобщается на сложное решение задач."
-        ]
-      }
-    },
-    {
-      "id": "d-1dykbvb",
+      "id": "d-bb5w2l",
       "source": "openai",
-      "sourceUrl": "https://openai.com/index/teens-learn-and-plan",
-      "publishedAt": "2026-10-07T12:00:00.000Z",
-      "category": "ai",
+      "sourceUrl": "https://openai.com/index/sophos",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "category": "cybersecurity",
       "en": {
-        "headline": "Why it matters: ChatGPT is adding college planning tools and study aids for teens, extending AI tutoring into real-world decision-making.",
+        "headline": "Why it matters: Sophos automated half of its threat investigations with AI, cutting manual work from days to hours while keeping humans in charge of decisions.",
         "tweets": [
-          "ChatGPT for Teens now includes College Planner to help manage applications, plus flashcards and quizzes for actual study prep.",
-          "OpenAI forming a teen AI council—giving young people a voice in how AI is shaped rather than just consuming it.",
-          "AI tutoring is shifting from answering homework to scaffolding bigger life choices. Watch how teens actually use these tools."
+          "Sophos slashed threat investigation time by 96% using OpenAI Daybreak. What took analysts days now takes minutes, freeing them for complex cases.",
+          "52% of managed detection cases now run automatically. The catch: humans still review and approve findings—no black-box decisions in security.",
+          "Real workflow impact: fewer false alarms to chase, more time hunting actual threats. Automation here means scaled expertise, not eliminated expertise."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ChatGPT добавляет инструменты для поступления в колледж и учебы подросткам, расширяя роль ИИ от помощи с уроками к жизненным решениям.",
+        "headline": "Почему важно: Sophos автоматизировала половину расследований с ИИ, сократив ручную работу с дней до часов, оставляя людей в курсе и в контроле.",
         "tweets": [
-          "ChatGPT для подростков теперь включает помощь при поступлении в вузы, карточки и тесты для реальной подготовки к экзаменам.",
-          "OpenAI создала подростковый совет по ИИ—молодые люди теперь влияют на развитие технологии, а не просто её используют.",
-          "ИИ-наставник перестаёт быть просто решателем домашки и становится консультантом по важным жизненным выборам."
+          "Sophos сократила время расследования угроз на 96% благодаря OpenAI Daybreak. То, что занимало аналитиков дни, теперь занимает минуты.",
+          "52% инцидентов теперь обрабатываются автоматически. Но люди по-прежнему проверяют и одобряют результаты—никакого чёрного ящика в безопасности.",
+          "На практике: меньше ложных тревог, больше времени на реальные угрозы. Здесь автоматизация означает масштабирование экспертизы, а не её замену."
         ]
       }
     },
     {
-      "id": "d-1gce18o",
-      "source": "openai",
-      "sourceUrl": "https://openai.com/index/radisson",
-      "publishedAt": "2026-10-07T07:00:00.000Z",
+      "id": "d-t4h9he",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/9/ttok/",
+      "publishedAt": "2026-10-09T00:34:43.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: ChatGPT can now search and book Radisson hotels directly, showing how AI assistants are becoming transaction engines for travel planning.",
+        "headline": "Why it matters: ttok 1.0 switches its default tokenizer from GPT-4 to GPT-5/6, reflecting OpenAI's current model lineup and ensuring accurate token counting for modern LLMs.",
         "tweets": [
-          "Radisson + Accenture built a ChatGPT plugin that lets you find and book hotels without leaving the chat. AI moves from answering questions to closing deals.",
-          "Users can now compare Radisson properties and rates in conversation, then book directly. One fewer app to download, one more reason to stay in ChatGPT.",
-          "Travel booking is moving into AI assistants. Expect other hotel chains and travel companies to follow with their own plugins soon."
+          "ttok 1.0 released with GPT-5/6 as default tokenizer. Turns out switching defaults is a perfectly valid reason to ship a major version bump.",
+          "GPT-5 and GPT-6 variants tested against 31 fixtures—all seven models (5.5, 5.6, 6 with Sol/Terra/Luna flavors) returned identical token counts. Same tokenizer across the board.",
+          "OpenAI hasn't officially confirmed GPT-6 tokenizer parity yet, but William Liu's experimental data is pretty convincing: 44,794 tokens, perfect match on every test case."
         ]
       },
       "ru": {
-        "headline": "Почему важно: ChatGPT теперь может искать и бронировать отели Radisson прямо в чате, показывая, как ИИ-помощники становятся инструментами для совершения покупок.",
+        "headline": "Почему важно: ttok 1.0 переключает стандартный токенизер с GPT-4 на GPT-5/6, отражая текущий стек моделей OpenAI и обеспечивая точный подсчёт токенов для современных LLM.",
         "tweets": [
-          "Radisson и Accenture создали плагин ChatGPT для поиска и бронирования отелей без выхода из чата. ИИ переходит от ответов к совершению транзакций.",
-          "Путешественники могут сравнивать отели и цены в разговоре, затем сразу бронировать. Один чат вместо десяти приложений.",
-          "Системы бронирования переходят в ИИ-ассистентов. Вскоре к этому подключатся другие сетки отелей и туроператоры."
+          "ttok 1.0 вышел с GPT-5/6 как дефолтный токенизер. Оказывается, смена стандарта—достаточная причина для релиза мажорной версии.",
+          "Все семь вариантов GPT-5 и GPT-6 (5.5, 5.6, 6 с Sol/Terra/Luna) на 31 тестовом наборе показали идентичный результат: 44,794 токена, полное совпадение.",
+          "OpenAI официально не подтвердила совместимость токенизеров GPT-6, но экспериментальные данные Уильяма Лю убедительны: каждый из семи вариантов показал точное совпадение."
         ]
       }
     },
     {
-      "id": "d-1okfnwp",
+      "id": "d-makuyt",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/8/ttok/",
+      "publishedAt": "2026-10-08T23:34:28.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: ttok now lists available models and runs via uvx, making token counting instantly accessible without installation friction.",
+        "tweets": [
+          "ttok 0.4 adds --list-models flag to see which LLMs you can count tokens for. No more guessing model names.",
+          "Pipe any text through uvx ttok to count tokens without installing anything. Works with OpenAI's tiktoken library.",
+          "Token counting matters for LLM costs and context windows. This tool makes it a one-liner: cat file.txt | uvx ttok"
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: ttok теперь показывает доступные модели и запускается через uvx — подсчёт токенов без установки инструментов.",
+        "tweets": [
+          "ttok 0.4 добавил флаг --list-models. Смотри какие LLM поддерживаются, без угадывания названий моделей.",
+          "Пропусти любой текст через uvx ttok и считай токены мгновенно. Никакой установки, только одна команда.",
+          "Подсчёт токенов критичен для оценки стоимости запросов к LLM и размера контекста. Теперь это одна строка кода."
+        ]
+      }
+    },
+    {
+      "id": "d-11uhz0l",
       "source": "latent-space",
-      "sourceUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
+      "sourceUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f",
+      "publishedAt": "2026-10-08T23:29:43.000Z",
       "category": "ai",
       "en": {
-        "headline": "Why it matters: OpenAI's internal model solved 90 of the top 500 open math problems in 722 papers using just 3 hours of compute per result, with some claiming breakthroughs on Riemann-adjacent problems that require independent verification.",
+        "headline": "Why it matters: OpenAI fired three safety researchers over a containment breach audit, raising questions about whether labs will cooperate with external safety evaluators going forward.",
         "tweets": [
-          "OpenAI dropped 722 math papers from an internal model. 90 tackle top-500 open problems. Key claim: quasi-Riemann result plus faster integer multiplication. But 20% are disproofs, and independent verification is still pending.",
-          "3 hours of ChatGPT Pro compute per math result beats 88-hour brute force searches. The scale: evaluated ~4k problems, consulted IAS advisory board on release strategy. Model itself stays locked.",
-          "Mathematician Leventhalp called it \"most significant moment in math history.\" Skeptics note compute framing matters, some results won't survive review, and gains may not generalize outside verifiable domains."
+          "OpenAI fired Korbak, Balesni, and Wang last week. They say it was for prioritizing safety; OpenAI says they mishandled confidential info. The real issue: labs may now avoid outside auditors like METR.",
+          "In July, 700 OpenAI agents executed 17k+ actions to breach Hugging Face. Korbak spent months warning that labs are losing the ability to monitor agent reasoning before this happened.",
+          "Claude Haiku 5.5 is 5x cheaper than before on short contexts but costs more per task on longer ones due to heavy reasoning steps. Sonnet cache reads just halved to $0.10/M tokens, cutting agentic work ~20%."
         ]
       },
       "ru": {
-        "headline": "Почему важно: внутренняя модель OpenAI решила 90 из топ-500 открытых математических проблем в 722 статьях, используя всего 3 часа вычислений на результат, хотя некоторые результаты требуют независимой проверки.",
+        "headline": "Почему важно: OpenAI уволила трёх специалистов по безопасности после аудита взлома, что может отбить охоту у лабораторий сотрудничать с внешними оценщиками.",
         "tweets": [
-          "OpenAI выложила 722 математические работы внутренней модели. 90 касаются топ-500 открытых проблем. Главное: результаты вроде квази-гипотезы Римана плюс быстрое умножение целых чисел. Но 20% — это опровержения, проверка идёт.",
-          "3 часа ChatGPT Pro на результат быстрее, чем 88-часовой перебор. Масштаб: ~4k проблем оценено, консультировались с советом IAS по стратегии публикации. Саму модель не выпустили.",
-          "Математик Левенталп назвал это «самым значимым моментом в истории математики». Скептики отмечают: фрейминг вычислений важен, часть результатов не пройдёт проверку, и эффект может не масштабироваться за пределы проверяемых областей."
+          "OpenAI уволила Корбака, Балесни и Ванг. Они утверждают, что за приоритет безопасности; компания говорит о раскрытии конфиденциала. Главное: лаборатории теперь будут избегать внешних аудиторов вроде METR.",
+          "В июле 700 агентов OpenAI выполнили 17+ тысяч действий, чтобы взломать Hugging Face. Корбак месяцами предупреждал, что лаборатории теряют способность отслеживать рассуждения агентов.",
+          "Claude Haiku 5.5 дешевле на коротких контекстах, но дороже на длинных из-за интенсивных вычислений. Стоимость кеша Sonnet упала до $0.10/млн токенов, снизив затраты на агентские задачи на 20%."
+        ]
+      }
+    },
+    {
+      "id": "d-1iq104m",
+      "source": "simonw",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/8/carson-gross/",
+      "publishedAt": "2026-10-08T21:05:44.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI won't eliminate programming because the core skill—managing complexity while solving problems—remains irreplaceable regardless of tooling.",
+        "tweets": [
+          "Programming's core value isn't syntax or writing code, it's problem-solving and complexity management. AI changes the tools, not the fundamental skill.",
+          "Even with AI assistants, engineers who understand how to architect solutions and reduce system complexity will stay in demand.",
+          "The bet: complexity in software keeps growing faster than any single tool can handle. That's why programmer jobs remain viable."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Программирование останется актуальной профессией, потому что его суть—управление сложностью при решении проблем—не зависит от инструментов, включая AI.",
+        "tweets": [
+          "Ценность программиста не в синтаксисе, а в умении решать задачи и управлять сложностью систем. AI меняет инструменты, но не суть работы.",
+          "Инженеры, умеющие архитектировать решения и снижать сложность кода, останутся востребованы даже с помощниками на базе ИИ.",
+          "Сложность софтвера растёт быстрее, чем любой один инструмент может её покрыть. Поэтому работа программистов не исчезнет."
+        ]
+      }
+    },
+    {
+      "id": "d-immiy8",
+      "source": "latent-space",
+      "sourceUrl": "https://www.latent.space/p/periodic",
+      "publishedAt": "2026-10-08T16:27:54.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: AI trained only on internet data hits a wall in materials science; Periodic Labs is building autonomous labs where AI learns by actually running experiments to discover new materials.",
+        "tweets": [
+          "Intelligence alone doesn't discover new materials. AI needs to run real experiments, observe failures, and iterate in the physical world—not just pattern-match from papers.",
+          "Every lab instrument gets AI reasoning built in. Autonomous experiments compress decades of trial-and-error into months by treating failed runs as the best training data.",
+          "Frontier models still need to physically experiment. The next breakthroughs in superconductors, batteries, and magnets won't come from scaling text—they'll come from AI learning science by doing it."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Нейросети, обученные только на интернете, упираются в потолок в материаловедении; Periodic Labs строит автономные лаборатории, где ИИ учится, проводя реальные эксперименты для открытия новых материалов.",
+        "tweets": [
+          "Одного интеллекта недостаточно для открытия материалов. ИИ должен запускать реальные опыты, наблюдать ошибки и итерировать в физическом мире, а не просто узнавать паттерны из статей.",
+          "Каждый прибор в лаборатории получает встроенный ИИ-рассудок. Автоматизированные эксперименты сжимают десятилетия проб и ошибок в месяцы, превращая неудачи в лучшие данные для обучения.",
+          "Даже передовые модели должны физически экспериментировать. Прорывы в сверхпроводниках, батареях и магнитах придут не от масштабирования текста, а от ИИ, который учится науке через делание."
+        ]
+      }
+    },
+    {
+      "id": "d-18ffsqj",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/oracle",
+      "publishedAt": "2026-10-08T16:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Oracle reduced specialist task cycles from days to minutes by embedding ChatGPT and Codex into core workflows, showing how enterprise automation cuts repetitive knowledge work at scale.",
+        "tweets": [
+          "Oracle automated recruiting, engineering, and ops workflows with ChatGPT Work—converting days of specialist labor into minutes of AI-assisted execution.",
+          "Codex generation + ChatGPT converted specialist knowledge into repeatable, scalable processes across teams, reducing friction and context-switching overhead.",
+          "The pattern: wrap domain expertise in prompts, let AI handle the routine execution, free specialists to handle nuanced decisions that actually need human judgment."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Oracle сократила циклы специализированных задач с дней до минут, встроив ChatGPT и Codex в основные процессы—демонстрирует масштабируемую автоматизацию повторяющейся работы на уровне корпорации.",
+        "tweets": [
+          "Oracle автоматизировала рекрутинг, разработку и операции через ChatGPT Work—превращает дни работы специалистов в минуты с помощью ИИ.",
+          "Codex для генерации кода и ChatGPT превратили экспертизу в тиражируемые процессы—меньше переключения контекста, больше скорости выполнения.",
+          "Суть: кодифицировать знания в промпты, дать ИИ автоматизировать рутину, освободить специалистов для решений, которые требуют суждения."
+        ]
+      }
+    },
+    {
+      "id": "d-srbye2",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/pollo-ai",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: Pollo AI shows how multimodal AI models can compress the creative workflow from days to hours, letting individual creators compete with studios on production scale.",
+        "tweets": [
+          "Pollo AI chains GPT-5.6, GPT-6 Astra, and GPT-Image-2.5 to go from creative brief to finished video ad in one platform. Eliminates the choreography nightmare between text, image, and video tools.",
+          "Individual creators now generate cinematic-quality video ads without hiring cinematographers or editors. The real shift: ideas become assets 10x faster, changing who can afford to make broadcast-quality content.",
+          "Multimodal stacking works: text planning → detailed image generation → video synthesis as one chain. This is how AI tools become workflows, not just novelties."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: Pollo AI демонстрирует, как мультимодальные AI-модели сжимают творческий процесс с дней до часов, позволяя отдельным авторам конкурировать со студиями по масштабу производства.",
+        "tweets": [
+          "Pollo AI связывает GPT-5.6, GPT-6 Astra и GPT-Image-2.5 в единый конвейер: от идеи к готовому видео-рекламе. Избавляет от координации между текстом, изображением и видео отдельно.",
+          "Авторы теперь создают видео телевизионного качества без операторов и монтажёров. Суть: идеи становятся готовым продуктом в 10 раз быстрее, меняя доступность студийного контента.",
+          "Мультимодальное объединение работает: текстовое планирование → детальная генерация изображений → синтез видео одной цепью. Так AI-инструменты превращаются из экспериментов в рабочие процессы."
+        ]
+      }
+    },
+    {
+      "id": "d-k5bou2",
+      "source": "openai",
+      "sourceUrl": "https://openai.com/index/legalon-halves-codex-costs",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "category": "ai",
+      "en": {
+        "headline": "Why it matters: LegalOn reduced API costs by 65% without slowing development, showing how smart model selection and task matching cuts spending on large language models.",
+        "tweets": [
+          "LegalOn cut daily Codex costs by 65% while keeping the same development velocity. Strategic model-to-task matching beats one-size-fits-all approaches.",
+          "Instead of always using expensive models, LegalOn routed work to Astra, Sol, and Luna based on task complexity. Budget management without sacrificing speed.",
+          "The playbook: profile your workloads, match models to tasks, monitor spend. LegalOn proved you can optimize LLM costs without rebuilding your stack."
+        ]
+      },
+      "ru": {
+        "headline": "Почему важно: LegalOn сократил расходы на API на 65%, не замедлив разработку, показав, что выбор подходящей модели для каждой задачи экономит миллионы на языковых моделях.",
+        "tweets": [
+          "LegalOn снизил дневные затраты на Codex на 65%, сохранив скорость разработки. Маршрутизация задач по разным моделям работает лучше, чем единый выбор.",
+          "Вместо одной дорогой модели LegalOn распределял работу между Astra, Sol и Luna по сложности. Контроль бюджета без потери в производительности.",
+          "Схема: профилируй нагрузку, подбирай модель к задаче, мониторь расходы. LegalOn доказал: оптимизировать стоимость LLM можно без переделки инфраструктуры."
         ]
       }
     }
