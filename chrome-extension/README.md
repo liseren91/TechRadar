@@ -1,180 +1,108 @@
 # Tech Evolution Radar - Chrome Extension
 
-🚀 Replace your new tab with a live tech evolution radar that tracks how tech noise becomes trends and industry standards.
+Replaces the new-tab page with a calm radar of research and engineering
+signals. The extension is a thin client: **it holds no API keys and calls no
+third-party API.** Your TechRadar server fetches all thirteen sources, runs Jev
+(categories, novelty, topics), translates, and scores; the extension renders
+what `GET /api/extension-feed` returns.
 
-## ✨ Features
+## Features
 
-- **Live Data Feeds**: Real-time data from GitHub, arXiv, and Hacker News
-- **Visual Radar**: Interactive radar visualization showing tech maturity stages
-- **Category Filtering**: Filter by AI, Quantum, Robotics, Web3, BioTech, Energy, Space, and Cybersecurity
-- **Anomaly Detection**: Highlights trending items with unusual growth
-- **Multilingual**: English and Russian language support
-- **Offline Caching**: Works offline with cached data
-- **Standalone**: Runs entirely in the new tab page, no server or login required
-- **AI Blog Digest**: Daily LLM-summarized digest of top AI engineering blogs (hook headline + 3 tweet-style bullets), EN/RU, fetched from the project's public data feed.
-- **Honest Evolution Chains**: Real week-over-week topic momentum from accumulated snapshots (no fabricated metrics).
+- **One request per refresh** to your TechRadar server: feed, AI blog digest
+  and topic momentum arrive together. The extension asks for no host
+  permissions; the server's endpoints send CORS headers.
+- **Settings** (gear button, also offered on the offline banner and the error
+  screen): server address with validation and **Test connection**, language,
+  auto-refresh (off / 5 / 10 / 30 / 60 min), feed size, default source and
+  category, open links in a new tab, which panels to show, and **Clear saved
+  data** / **Reset to defaults**. Stored in `chrome.storage.sync`, so they
+  follow your Chrome profile. Changing the server discards the copy saved
+  from the previous one.
+- **Offline-first**: the last successful response is saved in
+  `chrome.storage.local` and painted immediately on every new tab. If the
+  server cannot be reached, the saved data stays on screen with a banner —
+  "Not connected to the TechRadar server — showing data saved <time>" — and a
+  **Retry** button. The failure is remembered, so later tabs keep asking the
+  server (and keep the banner) until it answers; coming back online retries
+  automatically.
+- **Same signals as the dashboard**: server-computed score and highlight
+  reasons (fast-rising, converging, new capability, under the radar), Jev
+  categories and maturity.
+- **Readable CJK text on any machine**: the server relays Noto Sans SC/JP
+  (`/api/fonts/cjk`, unicode-range slices downloaded only when needed), so
+  Chinese and Japanese titles never render as boxes.
+- **Radar**: maturity rings, category colors, hover tooltip, click to open,
+  keyboard navigation (arrows, Enter).
+- **Languages**: English and Russian UI; server-made translations are shown
+  with the original one click away.
 
-## 🚀 Quick Installation
+## Installation
 
-### Step 1: Generate Icons
+**Quickest:** download the latest build —
+[tech-radar-extension.zip](https://github.com/lazarevtill/TechRadar/releases/latest/download/tech-radar-extension.zip)
+(published by `.github/workflows/release-extension.yml` on every extension
+change to `main`) — unzip it, open `chrome://extensions`, enable **Developer
+mode**, click **Load unpacked** and pick the `tech-radar-extension` folder.
 
-Open `icons/generate-icons.html` in your browser and download all 4 icon sizes, OR run:
+**From source:**
+
+1. Run the server: `docker compose up -d` (serves `http://localhost:3000`).
+2. Build the extension: `bun run build:extension`, or use **Download
+   Extension** on the dashboard.
+3. Open `chrome://extensions/`, enable **Developer mode**, click **Load
+   unpacked** and select `dist/extension/unpacked` (or the extracted
+   `tech-radar-extension` folder).
+4. If your server is not at `http://localhost:3000`, open **Settings** (gear
+   icon) and enter its address — `localhost:3000`, a LAN address such as
+   `192.168.1.20:3000`, or `radar.example.com` (bare hosts get `https://`,
+   local and LAN hosts `http://`). **Test connection** shows what the server
+   returns before you save.
+
+A different default for fresh installs can be baked in at build time:
 
 ```bash
-# Using Node.js
-node generate-icons.js
-
-# Using ImageMagick
-cd icons
-convert icon.svg -resize 16x16 icon16.png
-convert icon.svg -resize 32x32 icon32.png
-convert icon.svg -resize 48x48 icon48.png
-convert icon.svg -resize 128x128 icon128.png
+EXTENSION_BACKEND_URL=https://radar.example.com bun run build:extension
+# Docker image whose "Download Extension" uses that default:
+EXTENSION_BACKEND_URL=https://radar.example.com docker compose up --build -d
 ```
 
-### Step 2: Load Extension in Chrome
-
-1. Open Chrome and go to `chrome://extensions/`
-2. Enable **Developer mode** (toggle in top right corner)
-3. Click **Load unpacked**
-4. Select the `chrome-extension` folder
-5. Done! Open a new tab to see the radar 🎉
-
-## 📁 File Structure
+## File structure
 
 ```
 chrome-extension/
-├── manifest.json          # Extension configuration
-├── newtab.html            # Standalone new tab page
-├── styles.css             # Styles for standalone version
-├── app.js                 # Main application logic
-├── generate-icons.js      # Node.js icon generator
-├── icons/
-│   ├── icon.svg           # Source icon (vector)
-│   ├── generate-icons.html # Browser-based icon generator
-│   ├── icon16.png         # 16x16 icon (generate this)
-│   ├── icon32.png         # 32x32 icon (generate this)
-│   ├── icon48.png         # 48x48 icon (generate this)
-│   └── icon128.png        # 128x128 icon (generate this)
-└── README.md              # This file
+├── manifest.json        # MV3 manifest; host/CSP limited to the server
+├── newtab.html          # New-tab page
+├── styles.css           # Styles
+├── app.js               # Loading, offline state, rendering
+├── lib/                 # Pure modules, unit-tested with vitest
+│   ├── backend.js       # GET /api/extension-feed + payload checks
+│   ├── config.js        # Default server URL (build-time) and cache timing
+│   ├── settings.js      # Settings: defaults, validation, URL normalization
+│   ├── icons.js         # Inline SVG icons
+│   ├── digest.js, trends-view.js, jitter.js
+│   └── __tests__/
+├── icons/               # Extension icons (generate with generate-icons.js)
+└── generate-icons.js    # Dev tool, not shipped
 ```
 
-## 🔧 Configuration
+The build walks the reference graph from `manifest.json` and ships only what
+the page loads (tests, this README and dev tools are never packaged).
 
-The extension works completely offline, fetching data directly from APIs:
-- GitHub Trending Repositories
-- arXiv Research Papers
-- Hacker News Top Stories
+## Troubleshooting
 
-Edit `app.js` to customize:
+- **"Not connected to the TechRadar server"**: start it (`docker compose up -d`),
+  or open **Settings** from the banner and check the address with **Test
+  connection**, then press **Retry**.
+- **Stale numbers**: the saved copy refreshes every 10 minutes and on the
+  refresh button; the server itself serves a snapshot at most 5 minutes old.
 
-```javascript
-const CONFIG = {
-    CACHE_DURATION: 5 * 60 * 1000,    // Cache for 5 minutes
-    REFRESH_INTERVAL: 10 * 60 * 1000, // Auto-refresh every 10 minutes
-    MAX_FEED_ITEMS: 20,               // Max items in feed
-};
-```
+## Permissions
 
-## 🎨 Customization
+- **storage**: the saved feed and your settings
+- No host permissions. The CSP keeps scripts local (`script-src 'self'`) and
+  allows remote requests only for data, styles and fonts, because the server
+  address is a user setting.
 
-### Adding More Data Sources
+## License
 
-In `app.js`, add new fetch functions following this pattern:
-
-```javascript
-async function fetchNewSource() {
-    try {
-        const response = await fetch('https://api.example.com/data');
-        const data = await response.json();
-        
-        return data.map(item => ({
-            id: `source-${item.id}`,
-            title: item.title,
-            summary: item.description,
-            source: 'new-source',
-            sourceUrl: item.url,
-            category: categorizeByKeywords(item.title),
-            maturityStage: 'research',
-            impactScore: 5,
-            hypeVolume: 1000,
-            publishedAt: new Date(item.date),
-            isAnomaly: false,
-        }));
-    } catch (error) {
-        console.error('New source error:', error);
-        return [];
-    }
-}
-```
-
-Then add it to `fetchAllData()`:
-
-```javascript
-const [githubItems, arxivItems, hnItems, newItems] = await Promise.all([
-    fetchGitHubTrending(),
-    fetchArxivPapers(),
-    fetchHackerNews(),
-    fetchNewSource(), // Add here
-]);
-```
-
-### Changing Categories
-
-Edit the `CATEGORY_KEYWORDS` object in `app.js`:
-
-```javascript
-const CATEGORY_KEYWORDS = {
-    ai: ['ai', 'gpt', 'llm', 'machine learning', ...],
-    // Add your own category
-    myCategory: ['keyword1', 'keyword2', ...],
-};
-```
-
-## 🐛 Troubleshooting
-
-### "No items found"
-- Check your internet connection
-- Click the refresh button
-- GitHub API has rate limits (60 requests/hour for unauthenticated)
-
-### Icons not showing in Chrome
-- Make sure all 4 PNG icons exist in the `icons/` folder
-- Use the icon generator to create them
-
-### Extension not loading
-- Ensure Developer mode is enabled
-- Check for errors: `chrome://extensions/` → Details → "Inspect views"
-
-### CORS errors
-- The standalone version uses direct API calls which should work
-
-## 📊 Data Sources
-
-| Source | API | Rate Limit |
-|--------|-----|------------|
-| GitHub | REST API v3 | 60/hour (unauth) |
-| arXiv | OAI-PMH | No limit |
-| Hacker News | Firebase | No limit |
-
-## 🔒 Permissions
-
-The extension requests these permissions:
-
-- **storage**: Save cached data and user preferences
-- **host_permissions**: Access APIs (GitHub, arXiv, HN, etc.)
-
-No data is sent to third parties. All processing happens locally.
-
-## 📝 License
-
-MIT License - Feel free to modify and distribute.
-
-## 🙏 Credits
-
-Built with ❤️ for the tech community.
-
-Data sources:
-- [GitHub API](https://docs.github.com/en/rest)
-- [arXiv API](https://arxiv.org/help/api)
-- [Hacker News API](https://github.com/HackerNews/API)
+MIT

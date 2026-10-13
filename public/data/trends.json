@@ -195,10 +195,10 @@
           "publishedAt": "2026-10-08T16:27:54.000Z"
         },
         {
-          "title": "Engineering more resilient crops for a warming climate",
-          "url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
-          "source": "deepmind",
-          "publishedAt": "2025-12-04T16:23:24.000Z"
+          "title": "[AINews] Pi 1.0, Pi Durable, and AIE NYC",
+          "url": "https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc",
+          "source": "latent-space",
+          "publishedAt": "2026-10-02T06:40:53.000Z"
         },
         {
           "title": "AlphaFold: Five years of impact",
@@ -275,7 +275,7 @@
       "id": "llm-agents",
       "label": "LLM Agents",
       "category": "ai",
-      "stage": "prototype",
+      "stage": "research",
       "trajectory": "cooling",
       "momentum": -0.17,
       "weeklyCounts": [
@@ -329,10 +329,10 @@
       ]
     },
     {
-      "id": "fusion",
-      "label": "Fusion Energy",
-      "category": "energy",
-      "stage": "research",
+      "id": "multimodal",
+      "label": "Multimodal Models",
+      "category": "ai",
+      "stage": "early-adopter",
       "trajectory": "cooling",
       "momentum": -0.17,
       "weeklyCounts": [
@@ -372,6 +372,56 @@
           "publishedAt": "2026-10-02T00:28:04.000Z"
         }
       ]
+    },
+    {
+      "id": "rag",
+      "label": "Retrieval-Augmented Generation",
+      "category": "ai",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -1,
+      "weeklyCounts": [
+        81,
+        60,
+        57,
+        76,
+        72,
+        77,
+        95,
+        107,
+        100,
+        85,
+        92,
+        103,
+        4,
+        0
+      ],
+      "signals": []
+    },
+    {
+      "id": "supply-chain-security",
+      "label": "Software Supply-Chain Security",
+      "category": "cybersecurity",
+      "stage": "early-adopter",
+      "trajectory": "cooling",
+      "momentum": -1,
+      "weeklyCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "signals": []
     }
   ]
 }

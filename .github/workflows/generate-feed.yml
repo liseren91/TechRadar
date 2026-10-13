@@ -2,24 +2,38 @@
 name: Generate feed
 on:
   schedule:
-    - cron: '17 6 * * *'   # daily ~06:17 UTC
+    - cron: '17 6 * * *' # daily ~06:17 UTC
   workflow_dispatch: {}
 permissions:
   contents: write
+  issues: write # so a failed run can raise one
 concurrency:
   group: generate-feed
   cancel-in-progress: false
 jobs:
   generate:
     runs-on: ubuntu-latest
+    # The job must outlive the batch AND its fallback. Docs put most batches
+    # under an hour; a measured run of 10 requests was still going at 18 min.
+    # The script gives up at DIGEST_BATCH_TIMEOUT_MIN (default 90), drains for
+    # up to 3 min, then may run 10 synchronous calls — so leave real headroom.
+    # A hard kill by Actions publishes nothing and orphans the batch.
+    timeout-minutes: 120
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: oven-sh/setup-bun@v2
-        with: { bun-version: latest }
+        with: { bun-version: 1.4.2 }
       - run: bun install --frozen-lockfile
       - name: Generate digest + trends
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Required when ANTHROPIC_API_KEY is an org-level key (not workspace-scoped);
+          # an unset secret expands to empty and scripts/generate-feed/client.ts skips it.
+          ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
+          # Jev (TypeSafe) tags each recent post with trend topics
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+          # Switch models without a code change; see scripts/generate-feed/model.ts
+          # DIGEST_MODEL: claude-sonnet-5
         run: bun run generate:feed
       - name: Verify no secrets leaked into artifacts
         run: bun run check:secrets
@@ -27,7 +41,7 @@ jobs:
         run: |
           git config user.name "techradar-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add public/data/digest.json public/data/trends.json public/data/history.json
+          git add public/data/digest.json public/data/trends.json public/data/history.json public/data/topic-tags.json
           if git diff --staged --quiet; then
             echo "No data changes"
           else
@@ -44,4 +58,37 @@ jobs:
             done
             echo "push failed after 5 attempts" >&2
             exit 1
+          fi
+
+      # A scheduled job that breaks is invisible: nobody watches the Actions
+      # tab, and the publish gate means the site keeps serving the last good
+      # digest, so the symptom is silence rather than an error.
+      - name: Raise an issue if the run failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          TITLE="Daily digest generation is failing"
+          BODY=$(cat <<TXT
+          The scheduled \`generate-feed\` run failed.
+
+          Run: $RUN_URL
+
+          \`public/data/*.json\` were not overwritten — the MIN_DIGEST_ITEMS gate
+          keeps the last good digest — so the dashboard and the extension are
+          serving stale but valid data until this is fixed.
+
+          Common causes: an expired \`ANTHROPIC_API_KEY\`, a key that is not
+          workspace-scoped (set \`ANTHROPIC_WORKSPACE_ID\`), a feed that moved
+          (the log lists unhealthy sources), or a batch that never settled.
+          TXT
+          )
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+            echo "commented on existing issue #$EXISTING"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
           fi
