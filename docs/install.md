@@ -173,6 +173,21 @@ misconfigured.
 is appended if you leave it off. `LLM_API_KEY` and `LLM_TIMEOUT_MS` (default
 120 s, because local models are slow) are optional.
 
+Hosted OpenAI-compatible APIs work the same way. `LLM_EXTRA_BODY` is a JSON
+object merged over every request, for switches no standard field covers; its
+keys win over the radar's own. Z.ai's GLM models, for one, reason before
+answering and come back empty unless reasoning is turned off:
+
+```bash
+LLM_BASE_URL=https://api.z.ai/api/paas/v4/chat/completions
+LLM_MODEL=glm-4.5-flash
+LLM_API_KEY=...
+LLM_EXTRA_BODY={"thinking":{"type":"disabled"}}
+```
+
+A value that is not a JSON object turns the model off, and `/api/health`
+says why.
+
 **From Docker, `localhost` is the container.** Use `host.docker.internal`
 (Docker Desktop, OrbStack) or the host's LAN address:
 

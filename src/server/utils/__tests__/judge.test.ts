@@ -6,6 +6,7 @@ import {
   chatUrl,
   extractJson,
   judgeConfig,
+  llmExtraBody,
   maxTokensFor,
   openAiJudge,
   readAnswers,
@@ -123,6 +124,18 @@ describe('readAnswers', () => {
     ).toEqual({ type: 'choice', choice: 'quantum' })
   })
 
+  // GLM, among others, does not enforce the schema and sends levels as JSON
+  // numbers; an integer is unambiguous.
+  it('reads an integer level sent as a number', () => {
+    expect(
+      readAnswers(questions, { area: 'ai', novelty: 2, substance: 'likely' })
+        .novelty,
+    ).toEqual({
+      type: 'score',
+      probabilities: { '0': 0, '1': 0, '2': 1, '3': 0, '4': 0 },
+    })
+  })
+
   // Carrying a label nobody chose would be worse than having no judgment:
   // the radar's existing posture is "unjudged", never a guess.
   it.each([
@@ -157,6 +170,10 @@ describe('readAnswers', () => {
     ['a hex level', { novelty: '0x2' }, /not a rubric level/],
     ['an exponent level', { novelty: '1e0' }, /not a rubric level/],
     ['a negative level', { novelty: '-1' }, /not a rubric level/],
+    ['a fractional number level', { novelty: 2.5 }, /did not answer/],
+    ['a negative number level', { novelty: -1 }, /not a rubric level/],
+    ['an out-of-rubric number level', { novelty: 9 }, /not a rubric level/],
+    ['a number as a rung', { substance: 1 }, /did not answer "substance"/],
   ])('refuses %s', (_label, override, message) => {
     const reply = {
       area: 'quantum',
@@ -295,6 +312,39 @@ describe('judgeConfig', () => {
     expect(c.detail).toMatch(/LLM_MODEL is not/)
   })
 
+  it('names the LLM_EXTRA_BODY keys it will send', () => {
+    expect(
+      judgeConfig({
+        LLM_BASE_URL: 'https://api.z.ai/api/paas/v4/chat/completions',
+        LLM_MODEL: 'glm-4.5-flash',
+        LLM_EXTRA_BODY: '{"thinking":{"type":"disabled"}}',
+      } as NodeJS.ProcessEnv).detail,
+    ).toBe(
+      'glm-4.5-flash at https://api.z.ai/api/paas/v4/chat/completions (LLM_EXTRA_BODY: thinking)',
+    )
+  })
+
+  // Sending requests nobody meant is worse than visibly having no model.
+  it.each([
+    ['{thinking: off}', /not valid JSON/],
+    ['["thinking"]', /not a JSON object/],
+    ['null', /not a JSON object/],
+  ])('turns the model off over LLM_EXTRA_BODY=%s', (raw, message) => {
+    const c = judgeConfig({
+      LLM_BASE_URL: 'http://localhost:11434',
+      LLM_MODEL: 'qwen3:8b',
+      LLM_EXTRA_BODY: raw,
+    } as NodeJS.ProcessEnv)
+    expect(c.kind).toBe('none')
+    expect(c.detail).toMatch(message)
+  })
+
+  it('treats an empty LLM_EXTRA_BODY as unset', () => {
+    expect(
+      llmExtraBody({ LLM_EXTRA_BODY: '  ' } as NodeJS.ProcessEnv),
+    ).toBeUndefined()
+  })
+
   it.each([
     [{ JUDGE_BACKEND: 'none', TYPESAFE_API_KEY: 'sk' }, 'none'],
     [{ JUDGE_BACKEND: 'openai' }, 'none'],
@@ -377,6 +427,20 @@ describe('openAiJudge over HTTP', () => {
       questions: {},
     })
     expect(got).toEqual([undefined, 'Bearer k'])
+  })
+
+  it('merges the extra body over its own fields', async () => {
+    const { url, seen } = await serve(() =>
+      completion('{"area":"ai","novelty":"1","substance":"no"}'),
+    )
+    await openAiJudge({
+      baseUrl: url,
+      model: 'm',
+      extraBody: { thinking: { type: 'disabled' }, max_tokens: 2000 },
+    }).systemOne({ state: {}, questions })
+    expect(seen[0].thinking).toEqual({ type: 'disabled' })
+    expect(seen[0].max_tokens).toBe(2000)
+    expect(seen[0].model).toBe('m')
   })
 
   it('survives a server that ignores the schema and wraps its reply', async () => {

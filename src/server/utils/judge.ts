@@ -238,7 +238,13 @@ export function readAnswers(
 ): Record<string, Answer> {
   const answers: Record<string, Answer> = {}
   for (const [key, q] of Object.entries(questions)) {
-    const raw = reply[key]
+    // Models that do not enforce the schema (GLM, for one) often send a
+    // rubric level as a JSON number. An integer is unambiguous, so it reads
+    // as its digits; anything else still has to pass the string checks.
+    const raw =
+      q.type === 'score' && Number.isSafeInteger(reply[key])
+        ? String(reply[key])
+        : reply[key]
     if (typeof raw !== 'string') {
       throw new Error(`the model did not answer "${key}"`)
     }
@@ -291,6 +297,8 @@ export interface OpenAiJudgeOptions {
   timeoutMs?: number
   /** Requests in flight at once; a local server has few slots. */
   concurrency?: number
+  /** Merged over every request body; see `llmExtraBody`. */
+  extraBody?: Record<string, unknown>
 }
 
 /**
@@ -344,7 +352,10 @@ export function openAiJudge(options: OpenAiJudgeOptions): Judge {
           ? { Authorization: `Bearer ${options.apiKey}` }
           : {}),
       },
-      body: JSON.stringify(buildChatRequest(request, options.model)),
+      body: JSON.stringify({
+        ...buildChatRequest(request, options.model),
+        ...options.extraBody,
+      }),
       timeout: options.timeoutMs ?? 120_000,
     })
     if (!response.ok) {
@@ -365,6 +376,32 @@ export function openAiJudge(options: OpenAiJudgeOptions): Judge {
     }
     return { answers: readAnswers(request.questions, extractJson(content)) }
   }
+}
+
+/**
+ * `LLM_EXTRA_BODY`: a JSON object merged over every request, for the
+ * provider switches no standard field covers. Z.ai's GLM models reason before
+ * answering unless sent `{"thinking":{"type":"disabled"}}`, and the reasoning
+ * alone outruns the token cap, so every item comes back empty. Its keys win
+ * over the radar's own (`max_tokens`, `response_format`, ...). Throws on
+ * anything but a JSON object, so a typo turns the model off visibly instead
+ * of sending requests nobody meant.
+ */
+export function llmExtraBody(
+  env: NodeJS.ProcessEnv = process.env,
+): Record<string, unknown> | undefined {
+  const raw = env.LLM_EXTRA_BODY?.trim()
+  if (!raw) return undefined
+  let parsed: unknown
+  try {
+    parsed = JSON.parse(raw)
+  } catch {
+    throw new Error('LLM_EXTRA_BODY is not valid JSON')
+  }
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+    throw new Error('LLM_EXTRA_BODY is not a JSON object')
+  }
+  return parsed as Record<string, unknown>
 }
 
 // --- choosing one ----------------------------------------------------------
@@ -419,9 +456,18 @@ export function judgeConfig(env: NodeJS.ProcessEnv = process.env): JudgeConfig {
         `LLM_BASE_URL is set to ${llm} but LLM_MODEL is not — the server needs to be told which model to answer with`,
       )
     }
+    let extra: Record<string, unknown> | undefined
+    try {
+      extra = llmExtraBody(env)
+    } catch (error) {
+      return off(`${(error as Error).message} — running with no model`)
+    }
+    const extraKeys = extra ? Object.keys(extra) : []
     return {
       kind: 'openai',
-      detail: `${model} at ${chatUrl(llm)}`,
+      detail: `${model} at ${chatUrl(llm)}${
+        extraKeys.length ? ` (LLM_EXTRA_BODY: ${extraKeys.join(', ')})` : ''
+      }`,
       calibrated: false,
       // The model is part of it: a 1.5B model's answers are not a larger
       // model's, and reusing one for the other is worse than re-asking.
@@ -497,6 +543,8 @@ function judge(): { judge: Judge | null; config: JudgeConfig } {
       apiKey: process.env.LLM_API_KEY?.trim() || undefined,
       timeoutMs: Number(process.env.LLM_TIMEOUT_MS?.trim()) || undefined,
       concurrency: Number(process.env.LLM_CONCURRENCY?.trim()) || undefined,
+      // Already parsed once by judgeConfig, which would have refused it.
+      extraBody: llmExtraBody(),
     })
     console.log(`[judge] self-hosted: ${config.detail}`)
   } else if (config.kind === 'typesafe') {

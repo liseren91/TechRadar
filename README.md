@@ -86,6 +86,7 @@ are supported and `/api/health` reports which is in force:
 | `TYPESAFE_BASE_URL`               | A TypeSafe deployment of your own instead of the hosted one                   |
 | `LLM_BASE_URL`, `LLM_MODEL`       | Judge on your own OpenAI-compatible server (Ollama, vLLM, LM Studio)          |
 | `LLM_API_KEY`, `LLM_TIMEOUT_MS`   | Optional, for that server (timeout default 120000)                            |
+| `LLM_EXTRA_BODY`                  | JSON merged over each request (GLM: `{"thinking":{"type":"disabled"}}`)       |
 | `JUDGE_BACKEND`                   | `auto` (default), `typesafe`, `openai` or `none`                              |
 | `TOPICS_FILE`                     | Your own tracked topics, read at runtime (default `config/topics.json`)       |
 | `ANTHROPIC_API_KEY`               | Digest summaries, `generate:feed` only                                        |
