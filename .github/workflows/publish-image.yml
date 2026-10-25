@@ -60,7 +60,7 @@ jobs:
             type=raw,value=sha-${{ steps.commit.outputs.short }}
 
       # Build once, start it, and require a healthy answer before pushing.
-      - uses: docker/build-push-action@v6
+      - uses: docker/build-push-action@v7
         with:
           context: .
           load: true
@@ -81,7 +81,7 @@ jobs:
           docker inspect --format '{{.State.Health.Status}}' smoke || true
           docker rm -f smoke
 
-      - uses: docker/build-push-action@v6
+      - uses: docker/build-push-action@v7
         with:
           context: .
           push: true
